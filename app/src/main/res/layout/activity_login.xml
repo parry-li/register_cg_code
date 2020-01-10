@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/login_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#58A2FA"
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_dp_10"
+        android:layout_marginLeft="@dimen/size_dp_25"
+        android:layout_marginRight="@dimen/size_dp_25"
+        android:layout_marginBottom="@dimen/size_dp_10"
+        android:background="@null"
+        android:hint="用户名"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/size_dp_25"
+        android:layout_marginRight="@dimen/size_dp_25"
+        android:background="@color/module_background" />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_dp_25"
+        android:layout_marginTop="@dimen/size_dp_15"
+        android:layout_marginRight="@dimen/size_dp_25"
+        android:layout_marginBottom="@dimen/size_dp_10"
+        android:background="@null"
+        android:hint="密码"
+        android:inputType="textPassword"
+
+        android:paddingTop="@dimen/size_dp_10"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/size_dp_25"
+        android:layout_marginRight="@dimen/size_dp_25"
+        android:background="@color/module_background" />
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/size_dp_40"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="@dimen/size_dp_40"
+        android:background="@mipmap/login_bt_un"
+        android:gravity="center"
+        android:text="登 录"
+        android:textColor="@color/module_white" />
+
+</LinearLayout>

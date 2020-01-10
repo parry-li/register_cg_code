@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/com_title_main_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/module_white"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/com_title_back"
+        android:layout_width="60dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+
+            android:src="@mipmap/cu_back"
+         />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="详情"
+        android:textColor="@android:color/black"
+        android:textSize="20.0sp" />
+
+
+    <ImageView
+        android:id="@+id/com_title_setting_iv"
+        android:layout_width="@dimen/size_dp_50"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/size_dp_20"
+        android:paddingRight="20pt"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/com_title_setting_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingLeft="50pt"
+        android:paddingRight="30pt"
+        android:text="删除"
+        android:textColor="@color/module_white"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/module_background" />
+</RelativeLayout>

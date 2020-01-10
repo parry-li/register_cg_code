@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tdr.registration">
+
+    <!--腾讯地图 sdk 要求的权限(开始)-->
+    <!--访问网络获取地图服务-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--检查网络可用性-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问WiFi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--需要外部存储写权限用于保存地图缓存-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--获取 device id 辨别设备-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--腾讯地图 sdk 要求的权限(结束)-->
+
+    <!-- 腾讯定位 sdk 要求的其他权限  (开始) -->
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 腾讯定位 sdk 要求的权限 (结束) -->
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 获取CUID，用于鉴权，请求签名等 -->
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+
+
+    <!-- 调用相机，用于实现扫描二维码，预览个性化地图编辑器生成的个性化地图样式（开发者实际开发中地图SDK不需要该权限）-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /><!-- 低版本使用该权限 -->
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" /><!-- 为了兼容低版本 -->
+
+
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- GPS定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+
+
+    <!--允许程序打开网络套接字-->
+
+
+
+    <application
+        android:name="com.tdr.registration.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--如果您key确认无误，却依然授权没有通过，请检查您的key的白名单配置 -->
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="6IHBZ-IW5WI-A6CGZ-56HQ2-FA7UZ-BDBQM" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="7483e3435cf39c10c91d10d19def1540" />
+        <!--//高德开发者申请的key-->
+
+
+        <!--百度地图-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ERS8jwWOEeEdbUOOXpgVTzlThtdB7Bsa" />
+
+
+        <activity
+            android:name="com.tdr.registration.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--<activity android:name="com.tdr.chongwu.ui.activity.CuDetailActivity" />-->
+        <!--<activity-->
+            <!--android:name="com.tdr.chongwu.ui.map.TencentMapActivity"-->
+            <!--android:label="@string/demo_label_basemap" />-->
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.tdr.registration"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+    </application>
+
+</manifest>
