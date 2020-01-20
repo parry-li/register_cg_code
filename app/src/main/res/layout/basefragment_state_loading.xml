@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/img_progress"
-            android:layout_width="@dimen/size_dp_20"
-            android:layout_height="@dimen/size_dp_20"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
             android:src="@drawable/yun_anim" />
 
         <TextView
@@ -23,7 +23,7 @@
             android:layout_marginLeft="10dp"
             android:text="努力加载中"
             android:textColor="@color/module_title_background"
-            android:textSize="@dimen/size_sp_20" />
+            android:textSize="@dimen/sp_20" />
 
     </LinearLayout>
 </RelativeLayout>

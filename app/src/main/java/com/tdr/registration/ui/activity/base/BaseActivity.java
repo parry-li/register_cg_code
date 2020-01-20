@@ -21,13 +21,19 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.google.gson.Gson;
 import com.tdr.registration.R;
 import com.tdr.registration.http.LifeSubscription;
+import com.tdr.registration.view.CustomWindowDialog;
+import com.tdr.registration.view.ZProgressHUD;
 
 import java.lang.reflect.Field;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
+import okhttp3.MediaType;
+import okhttp3.RequestBody;
 import rx.Subscription;
 import rx.subscriptions.CompositeSubscription;
 
@@ -50,12 +56,15 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
     private VelocityTracker mVelocityTracker;
     private boolean isClose = true;
     public String userid;
+    public ZProgressHUD zProgressHUD;
+    private CustomWindowDialog customBaseWindowDialog;
 
     @Override
     protected void onResume() {
         super.onResume();
         activity = this;
     }
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -75,6 +84,35 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
             mActivities.add(this);
         }
 
+        zProgressHUD = new ZProgressHUD(this);
+        zProgressHUD.setMessage("加载中");
+        customBaseWindowDialog = new CustomWindowDialog(this);
+    }
+
+    public RequestBody getRequestBody(Map<String, Object> stringMap) {
+        String strEntity = new Gson().toJson(stringMap);
+        RequestBody body = RequestBody.create(MediaType.parse("application/json;charset=UTF-8"), strEntity);
+        return body;
+    }
+
+    public void showCustomWindowDialog() {
+        showCustomWindowDialog("温馨提示", "确定退出页面？", false);
+    }
+
+    public void showCustomWindowDialog(String content) {
+        showCustomWindowDialog("温馨提示", content, false);
+    }
+
+    public void showCustomWindowDialog(String content, boolean isHidden) {
+        showCustomWindowDialog("温馨提示", content, isHidden);
+    }
+
+    public void showCustomWindowDialog(String title, String content) {
+        showCustomWindowDialog("温馨提示", content, false);
+    }
+
+    public void showCustomWindowDialog(String title, String content, boolean isHidden) {
+        customBaseWindowDialog.showCustomWindowDialog(title, content, isHidden);
     }
 
     public void goToActivity(Class Activity, Bundle bundle) {
@@ -84,8 +122,9 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
         }
         startActivity(intent);
     }
+
     public void goToActivity(Class Activity) {
-        goToActivity(Activity,null);
+        goToActivity(Activity, null);
     }
 
     public void titleBackClickListener(RelativeLayout tvBack) {
@@ -97,6 +136,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
         });
 
     }
+
     public void setWindowAlpha(float alpha) {
         WindowManager.LayoutParams lp = getWindow().getAttributes();
         lp.alpha = alpha;
@@ -110,7 +150,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
      * @param title
      */
     protected void setToolBar(Toolbar toolbar, String title) {
-        setToolBar(toolbar,title,true);
+        setToolBar(toolbar, title, true);
     }
 
     /**
@@ -118,7 +158,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
      *
      * @param title
      */
-    protected void setToolBar(Toolbar toolbar, String title , boolean enable) {
+    protected void setToolBar(Toolbar toolbar, String title, boolean enable) {
         toolbar.setTitle(title);
         setSupportActionBar(toolbar);
         toolbar.setTitleTextColor(Color.WHITE);
@@ -132,6 +172,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
             }
         });
     }
+
     private CompositeSubscription mCompositeSubscription;
 
     //用于添加rx的监听的在onDestroy中记得关闭不然会内存泄漏。
@@ -232,7 +273,6 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
     }
 
 
-
     // 根据 EditText 所在坐标和用户点击的坐标相对比，来判断是否隐藏键盘
     private boolean isShouldHideKeyboard(View v, MotionEvent event) {
         if (v != null && (v instanceof EditText)) {
@@ -247,8 +287,6 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
         }
         return false;
     }
-
-
 
 
     //    需要测滑关闭时在打开这个注释

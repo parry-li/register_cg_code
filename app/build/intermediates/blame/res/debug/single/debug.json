@@ -96,6 +96,10 @@
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\drawable\\gear_spinner_05.png"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_cp_item_city_listview.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\layout\\cp_item_city_listview.xml"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -126,6 +130,10 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_un_select_bg.png.flat",
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xhdpi\\un_select_bg.png"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_cp_ic_locate.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\cp_ic_locate.png"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -196,6 +204,10 @@
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\drawable\\gear_spinner_03.png"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_cp_ic_search.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\cp_ic_search.png"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
@@ -260,6 +272,10 @@
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\41891694b5ba3d8a84f51faacaf6e3e3\\res\\color\\mtrl_btn_bg_color_selector.xml"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_cp_item_search_result_listview.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\layout\\cp_item_search_result_listview.xml"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
@@ -308,6 +324,10 @@
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\41891694b5ba3d8a84f51faacaf6e3e3\\res\\layout\\design_layout_tab_text.xml"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_cp_view_locate_city.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\layout\\cp_view_locate_city.xml"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
@@ -348,12 +368,20 @@
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\drawable\\round_spinner_fade_04.png"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cp_overlay_bg.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\drawable\\cp_overlay_bg.xml"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_module_gray_idea.xml.flat",
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\drawable\\module_gray_idea.xml"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_button_select.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\button_select.png"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_app_loading0.png.flat",
@@ -402,6 +430,10 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_spinner_fade_00.png.flat",
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\drawable\\round_spinner_fade_00.png"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_login_down.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\login_down.png"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
@@ -596,6 +628,10 @@
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edittext_button_select.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\drawable\\edittext_button_select.xml"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -656,6 +692,10 @@
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\matisse\\build\\intermediates\\packaged_res\\debug\\layout\\activity_matisse.xml"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cp_search_box_bg.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\drawable\\cp_search_box_bg.xml"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_design_tint_password_toggle.xml.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\41891694b5ba3d8a84f51faacaf6e3e3\\res\\color-v23\\design_tint_password_toggle.xml"
     },
@@ -678,6 +718,10 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear_out_slow_in.xml.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\41891694b5ba3d8a84f51faacaf6e3e3\\res\\interpolator\\mtrl_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_cp_activity_city_list.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\layout\\cp_activity_city_list.xml"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_black.xml.flat",
@@ -762,6 +806,10 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_button_unselect.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\button_unselect.png"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_action_bar_item_background_material.xml.flat",
@@ -1000,6 +1048,10 @@
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_cp_ic_search_clear.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\cp_ic_search_clear.png"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
@@ -1082,6 +1134,10 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_pickerview_options.xml.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PickerView-4.1.9.aar\\30916d5c6a7a52f0403bca83f40b60af\\res\\layout\\pickerview_options.xml"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_search.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\search.png"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gear_spinner_08.png.flat",
@@ -1198,6 +1254,10 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_cp_view_hot_city.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\layout\\cp_view_hot_city.xml"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1570,6 +1630,10 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_photo_camera_white_24dp.png.flat",
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\matisse\\build\\intermediates\\packaged_res\\debug\\drawable-xxxhdpi-v4\\ic_photo_camera_white_24dp.png"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_cp_view_search.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\layout\\cp_view_search.xml"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
@@ -2164,6 +2228,10 @@
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_cp_item_hot_city_gridview.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\layout\\cp_item_hot_city_gridview.xml"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_close_circle.xml.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\41891694b5ba3d8a84f51faacaf6e3e3\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
     },
@@ -2222,6 +2290,14 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_refrsh_tu.png.flat",
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xhdpi\\refrsh_tu.png"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_login_location.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\login_location.png"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_arrow_left.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\arrow_left.png"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -2570,6 +2646,10 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_phone_call.png.flat",
         "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\mipmap-xhdpi\\phone_call.png"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_cp_view_no_search_result.xml.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\src\\main\\res\\layout\\cp_view_no_search_result.xml"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\cg_code_1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",

@@ -1,74 +1,127 @@
 package com.tdr.registration.bean;
 
+import java.util.List;
+
 public class LoginBean {
 
+
     /**
-     * Code : 0
-     * Msg : 登录成功
-     * Data : {"Token":"6efef556e0d44111ab2beaf69fd5a4d0","Expiry":"2019-07-24 19:21:38","UserName":"admin"}
+     * roleMenuVOList : [{"roleId":1,"roleType":1,"type":1,"menuIdList":[7]},{"roleId":3,"roleType":1,"type":2,"menuIdList":[7]}]
+     * userId : 12
+     * userType : 1
+     * utype : Police
+     * subsystemId : 18
+     * login : 13137129315
+     * token : login_token_3cceb587-f55c-422f-948a-03c6f1629644
      */
 
-    private int Code;
-    private String Msg;
-    private DataBean Data;
+    private int userId;
+    private int userType;
+    private String utype;
+    private int subsystemId;
+    private String login;
+    private String token;
+    private List<RoleMenuVOListBean> roleMenuVOList;
 
-    public int getCode() {
-        return Code;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setCode(int Code) {
-        this.Code = Code;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public String getMsg() {
-        return Msg;
+    public int getUserType() {
+        return userType;
     }
 
-    public void setMsg(String Msg) {
-        this.Msg = Msg;
+    public void setUserType(int userType) {
+        this.userType = userType;
     }
 
-    public DataBean getData() {
-        return Data;
+    public String getUtype() {
+        return utype;
     }
 
-    public void setData(DataBean Data) {
-        this.Data = Data;
+    public void setUtype(String utype) {
+        this.utype = utype;
     }
 
-    public static class DataBean {
+    public int getSubsystemId() {
+        return subsystemId;
+    }
+
+    public void setSubsystemId(int subsystemId) {
+        this.subsystemId = subsystemId;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public List<RoleMenuVOListBean> getRoleMenuVOList() {
+        return roleMenuVOList;
+    }
+
+    public void setRoleMenuVOList(List<RoleMenuVOListBean> roleMenuVOList) {
+        this.roleMenuVOList = roleMenuVOList;
+    }
+
+    public static class RoleMenuVOListBean {
         /**
-         * Token : 6efef556e0d44111ab2beaf69fd5a4d0
-         * Expiry : 2019-07-24 19:21:38
-         * UserName : admin
+         * roleId : 1
+         * roleType : 1
+         * type : 1
+         * menuIdList : [7]
          */
 
-        private String Token;
-        private String Expiry;
-        private String UserName;
+        private int roleId;
+        private int roleType;
+        private int type;
+        private List<Integer> menuIdList;
 
-        public String getToken() {
-            return Token;
+        public int getRoleId() {
+            return roleId;
         }
 
-        public void setToken(String Token) {
-            this.Token = Token;
+        public void setRoleId(int roleId) {
+            this.roleId = roleId;
         }
 
-        public String getExpiry() {
-            return Expiry;
+        public int getRoleType() {
+            return roleType;
         }
 
-        public void setExpiry(String Expiry) {
-            this.Expiry = Expiry;
+        public void setRoleType(int roleType) {
+            this.roleType = roleType;
         }
 
-        public String getUserName() {
-            return UserName;
+        public int getType() {
+            return type;
         }
 
-        public void setUserName(String UserName) {
-            this.UserName = UserName;
+        public void setType(int type) {
+            this.type = type;
+        }
+
+        public List<Integer> getMenuIdList() {
+            return menuIdList;
+        }
+
+        public void setMenuIdList(List<Integer> menuIdList) {
+            this.menuIdList = menuIdList;
         }
     }
 }

@@ -245,7 +245,7 @@ public class App extends Application  {
                 layout.setEnableLoadmoreWhenContentNotFull(true);
                 BallPulseFooter ballPulseFooter = new BallPulseFooter(context);
                 ballPulseFooter.setSpinnerStyle(SpinnerStyle.Scale);
-                ballPulseFooter.setPrimaryColors(ContextCompat.getColor(context, R.color.module_text_grey), ContextCompat.getColor(context, R.color.module_background));
+                ballPulseFooter.setPrimaryColors(ContextCompat.getColor(context, R.color.module_text_6), ContextCompat.getColor(context, R.color.module_background));
                 ballPulseFooter.setBackgroundResource(R.color.module_background);
                 return ballPulseFooter;
             }

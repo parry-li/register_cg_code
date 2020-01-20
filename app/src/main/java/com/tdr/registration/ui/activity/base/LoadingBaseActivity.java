@@ -3,7 +3,7 @@ package com.tdr.registration.ui.activity.base;
 import android.os.Bundle;
 
 import com.tdr.registration.http.Stateful;
-import com.tdr.registration.presenter.BasePresenter;
+import com.tdr.registration.service.BasePresenter;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;

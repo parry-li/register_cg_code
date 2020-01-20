@@ -10,11 +10,11 @@ import android.widget.ImageView;
 
 import com.tdr.registration.R;
 
-import static com.tdr.registration.AppConstants.STATE_EMPTY;
-import static com.tdr.registration.AppConstants.STATE_ERROR;
-import static com.tdr.registration.AppConstants.STATE_LOADING;
-import static com.tdr.registration.AppConstants.STATE_SUCCESS;
-import static com.tdr.registration.AppConstants.STATE_UNKNOWN;
+import static com.tdr.registration.constants.BaseConstants.STATE_EMPTY;
+import static com.tdr.registration.constants.BaseConstants.STATE_ERROR;
+import static com.tdr.registration.constants.BaseConstants.STATE_LOADING;
+import static com.tdr.registration.constants.BaseConstants.STATE_SUCCESS;
+import static com.tdr.registration.constants.BaseConstants.STATE_UNKNOWN;
 
 
 /**

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+
+    <EditText
+        android:id="@+id/plate_number"
+        style="@style/module_edit"
+        android:hint="请输入车牌号" />
+
+    <View style="@style/module_liner_horizontal" />
+
+    <EditText
+        android:id="@+id/car_id"
+        style="@style/module_edit"
+        android:hint="请输入证件号码" />
+
+    <View style="@style/module_liner_horizontal" />
+
+    <TextView
+        android:id="@+id/button_confirm"
+        style="@style/button_select"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_marginRight="@dimen/dp_20"
+        android:text="查询" />
+
+
+</LinearLayout>

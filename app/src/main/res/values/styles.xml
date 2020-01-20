@@ -8,11 +8,10 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/module_text</item>
+        <item name="android:textColor">@color/module_text_minor</item>
         <!--<item name="windowNoTitle">true</item>-->
         <!--<item name="android:windowFullscreen">true</item>-->
     </style>
-
 
 
     <style name="TANCStyle" parent="@android:style/Theme.Dialog">
@@ -21,6 +20,7 @@
         <!-- 屏幕背景不变暗 -->
         <item name="android:backgroundDimEnabled">true</item>
     </style>
+
     <style name="WENZTANCStyle" parent="@android:style/Theme.Dialog">
         <!-- 更换背景图片实现全透明 -->
         <item name="android:windowBackground">@color/transparent</item>
@@ -32,14 +32,24 @@
     <style name="module_liner_horizontal">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">@dimen/dp_14</item>
+        <item name="android:layout_marginRight">@dimen/dp_14</item>
         <item name="android:background">@color/module_background</item>
+
+    </style>
+    <style name="module_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_45</item>
+        <item name="android:layout_marginLeft">@dimen/dp_14</item>
+        <item name="android:layout_marginRight">@dimen/dp_14</item>
+        <item name="android:background">@null</item>
 
     </style>
 
     <style name="module_liner_vertical">
         <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">#E0E0E0</item>
+        <item name="android:background">@color/module_background</item>
 
     </style>
 
@@ -49,14 +59,14 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/module_text</item>
+        <item name="android:textColor">@color/module_text_minor</item>
     </style>
 
     <style name="showText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">15sp</item>
-        <item name="android:textColor">@color/module_text</item>
+        <item name="android:textColor">@color/module_text_minor</item>
     </style>
 
 
@@ -64,5 +74,57 @@
     <style name="DialogTheme" parent="android:Theme.Dialog">
         <item name="android:windowBackground">@drawable/dialog_background</item>
     </style>
+
+
+    <style name="CityPicker.NoActionBar" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="LetterIndexTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">@dimen/dp_13</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cp_gray</item>
+        <item name="android:background">@color/module_background</item>
+    </style>
+
+
+    <!--    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="@dimen/dp_40"
+        android:background="@mipmap/login_bt_un"
+        android:gravity="center"
+        android:text="登 录"
+        android:textColor="@color/module_white" />-->
+
+    <style name="button_unselect">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_44</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/module_button_unselect</item>
+        <item name="android:background">@mipmap/button_unselect</item>
+    </style>
+
+    <style name="button_select">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/module_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/edittext_button_select</item>
+    </style>
+
 
 </resources>

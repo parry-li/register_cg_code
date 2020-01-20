@@ -60,7 +60,7 @@ public final class R {
         public static final int Translate = 0x7f08000e;
     }
     public static final class string {
-        public static final int app_name = 0x7f0f002c;
+        public static final int app_name = 0x7f0f0028;
     }
     public static final class styleable {
         public static final int[] BallPulseFooter = { 0x7f0301d6, 0x7f0301d7, 0x7f0301fa };

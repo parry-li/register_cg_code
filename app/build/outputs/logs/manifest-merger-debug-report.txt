@@ -256,6 +256,10 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\tiandiren\android_cg_app\cg_code_1.0\app\src\main\AndroidManifest.xml:105:17-77
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\cg_code_1.0\app\src\main\AndroidManifest.xml:105:27-74
+activity#com.tdr.registration.ui.activity.CityPickerActivity
+ADDED from E:\tiandiren\android_cg_app\cg_code_1.0\app\src\main\AndroidManifest.xml:110:9-88
+	android:name
+		ADDED from E:\tiandiren\android_cg_app\cg_code_1.0\app\src\main\AndroidManifest.xml:110:19-85
 provider#android.support.v4.content.FileProvider
 ADDED from E:\tiandiren\android_cg_app\cg_code_1.0\app\src\main\AndroidManifest.xml:116:9-124:20
 	android:grantUriPermissions

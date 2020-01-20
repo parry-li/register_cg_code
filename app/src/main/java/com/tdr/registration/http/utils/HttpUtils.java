@@ -41,7 +41,7 @@ public class HttpUtils {
         if (!NetworkUtils.isConnected()) {
 
             if (target != null) {
-                target.setState(AppConstants.STATE_ERROR);
+                target.setState(BaseConstants.STATE_ERROR);
             }
             return;
         }

@@ -9,8 +9,8 @@
     android:visibility="visible">
 
     <ImageView
-        android:layout_width="@dimen/size_dp_100"
-        android:layout_height="@dimen/size_dp_100"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
         android:src="@mipmap/yl_load_error"/>
 
     <TextView
@@ -18,12 +18,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="加载失败"
-        android:textSize="@dimen/size_sp_15" />
+        android:textSize="@dimen/sp_15" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:textColor="@color/module_text_grey"
+        android:textColor="@color/module_text_6"
         android:text="请检查网络,点击空白处重试"
-        android:textSize="@dimen/size_sp_15" />
+        android:textSize="@dimen/sp_15" />
 </LinearLayout>

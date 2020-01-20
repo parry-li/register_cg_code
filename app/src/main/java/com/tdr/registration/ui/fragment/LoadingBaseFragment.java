@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import com.parry.utils.code.SPUtils;
 import com.tdr.registration.http.LifeSubscription;
 import com.tdr.registration.http.Stateful;
-import com.tdr.registration.presenter.BasePresenter;
+import com.tdr.registration.service.BasePresenter;
 import com.tdr.registration.view.LoadingPage;
 
 import butterknife.ButterKnife;

@@ -14,8 +14,8 @@
         android:visibility="visible">
 
         <ImageView
-            android:layout_width="@dimen/size_dp_100"
-            android:layout_height="@dimen/size_dp_100"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
             android:layout_gravity="center"
             android:src="@mipmap/yl_empty_data" />
 
@@ -23,7 +23,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/size_dp_10"
+            android:layout_marginTop="@dimen/dp_10"
             android:text="没有数据,点击重新加载" />
 
     </LinearLayout>

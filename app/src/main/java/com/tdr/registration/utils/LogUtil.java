@@ -4,7 +4,8 @@ import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.tdr.registration.AppConstants;
+import com.tdr.registration.constants.BaseConstants;
+import com.tdr.registration.constants.UrlConstants;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -32,12 +33,12 @@ public class LogUtil {
 
 
     // 容许打印日志的类型，默认是true，设置为false则不打印
-    public static boolean allowD = AppConstants.isAllowLog;
-    public static boolean allowE = AppConstants.isAllowLog;
-    public static boolean allowI = AppConstants.isAllowLog;
-    public static boolean allowV = AppConstants.isAllowLog;
-    public static boolean allowW = AppConstants.isAllowLog;
-    public static boolean allowWtf = AppConstants.isAllowLog;
+    public static boolean allowD = true;
+    public static boolean allowE = true;
+    public static boolean allowI = true;
+    public static boolean allowV =true;
+    public static boolean allowW = true;
+    public static boolean allowWtf = true;
 
     private static String generateTag(StackTraceElement caller) {
         String tag = "%s.%s(Line:%d)"; // 占位符
