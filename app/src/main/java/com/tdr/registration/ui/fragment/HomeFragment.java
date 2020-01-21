@@ -1,11 +1,8 @@
 package com.tdr.registration.ui.fragment;
 
-import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -14,18 +11,16 @@ import com.tdr.registration.R;
 import com.tdr.registration.adapter.HomeAdapter;
 import com.tdr.registration.bean.ItemModel;
 import com.tdr.registration.constants.BaseConstants;
-import com.tdr.registration.service.BasePresenter;
 import com.tdr.registration.ui.activity.LoginActivity;
 import com.tdr.registration.ui.activity.car.CarQueryActivity;
+import com.tdr.registration.ui.fragment.base.NoCacheBaseFragment;
 import com.tdr.registration.utils.ActivityUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
 public class HomeFragment extends NoCacheBaseFragment {
     @BindView(R.id.home_city_ll)

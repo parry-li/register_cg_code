@@ -1,4 +1,4 @@
-package com.tdr.registration.ui.fragment;
+package com.tdr.registration.ui.fragment.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,10 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.parry.utils.code.SPUtils;
+
 import com.tdr.registration.http.LifeSubscription;
-import com.tdr.registration.http.Stateful;
-import com.tdr.registration.service.BasePresenter;
 import com.tdr.registration.view.LoadingPage;
 
 import butterknife.ButterKnife;
@@ -22,9 +20,8 @@ import rx.subscriptions.CompositeSubscription;
  * Created by parry
  */
 
-public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fragment implements LifeSubscription, Stateful {
+public abstract class NoCacheBaseFragment extends Fragment implements LifeSubscription {
 
-    protected P mPresenter;
 
 
     public boolean isRefresh = true;
@@ -38,19 +35,23 @@ public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fra
     private boolean isFirst = true; //只加载一次界面
 
 
-
+    protected View contentView;
     private Unbinder bind;
-    public String userid;
+
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(getLayoutId(), container, false);
-        userid = SPUtils.getInstance("module_login_data").getString("userid");
-        bind = ButterKnife.bind(NoLoadingBaseFragment.this, view);
-        loadBaseData();
-        initView();
+        View view = inflater.inflate(NoCacheBaseFragment.this.getLayoutId(), container, false);
+
+        bind = ButterKnife.bind(NoCacheBaseFragment.this, view);
+
+        mIsVisible = true;
+        isPrepared = true;
+        onVisible();
+
+
 
 
         return view;
@@ -59,36 +60,10 @@ public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fra
     }
 
 
-    protected abstract P setPresenter();
-
-    /**
-     * 在这里实现Fragment数据的缓加载.
-     */
-    @Override
-    public void setUserVisibleHint(boolean isVisibleToUser) {
-        super.setUserVisibleHint(isVisibleToUser);
-        if (getUserVisibleHint()) {//fragment可见
-            mIsVisible = true;
-            onVisible();
-        } else {//fragment不可见
-            mIsVisible = false;
-            onInvisible();
-        }
-    }
-
-    @Override
-    public void setState(int state) {
-        mLoadingPage.state = state;
-        if (isRefresh) {
-            mLoadingPage.showPage();
-        }
-
-    }
 
 
 
-    protected void onInvisible() {
-    }
+
 
     /**
      * 显示时加载数据,需要这样的使用
@@ -97,13 +72,7 @@ public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fra
      * 在 onActivityCreated 之后第一次显示加载数据，只加载一次
      */
     protected void onVisible() {
-        if (isFirst) {
-            //            initInject();
-            mPresenter = setPresenter();
-            if (mPresenter != null) {
-                mPresenter.attachView(this);
-            }
-        }
+
         loadBaseData();//根据获取的数据来调用showView()切换界面
     }
 
@@ -112,14 +81,9 @@ public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fra
         if (!mIsVisible || !isPrepared || !isFirst) {
             return;
         }
-        loadData();
+        NoCacheBaseFragment.this.initView();
+        isFirst = false;
     }
-
-    /**
-     * 1
-     * 根据网络获取的数据返回状态，每一个子类的获取网络返回的都不一样，所以要交给子类去完成
-     */
-    protected abstract void loadData();
 
     /**
      * 2
@@ -136,7 +100,10 @@ public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fra
      */
     protected abstract void initView();
 
-
+    //    /**
+    //     * dagger2注入
+    //     */
+    //    protected abstract void initInject();
 
 
     private CompositeSubscription mCompositeSubscription;
@@ -162,9 +129,7 @@ public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fra
         if (this.mCompositeSubscription != null && mCompositeSubscription.hasSubscriptions()) {
             this.mCompositeSubscription.unsubscribe();
         }
-        if (mPresenter != null) {
-            mPresenter.detachView();
-        }
+
     }
 
 }

@@ -1,4 +1,4 @@
-package com.tdr.registration.ui.fragment;
+package com.tdr.registration.ui.fragment.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 
 import com.parry.utils.code.SPUtils;
 import com.tdr.registration.http.LifeSubscription;
@@ -23,7 +22,7 @@ import rx.subscriptions.CompositeSubscription;
  * Created by parry
  */
 
-public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragment implements LifeSubscription, Stateful {
+public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fragment implements LifeSubscription, Stateful {
 
     protected P mPresenter;
 
@@ -39,47 +38,22 @@ public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragm
     private boolean isFirst = true; //只加载一次界面
 
 
-    protected View contentView;
+
     private Unbinder bind;
     public String userid;
-    private Subscription subscription;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(getLayoutId(), container, false);
         userid = SPUtils.getInstance("module_login_data").getString("userid");
-        try {
+        bind = ButterKnife.bind(NoLoadingBaseFragment.this, view);
+        loadBaseData();
+        initView();
 
-            if (mLoadingPage == null) {
-                mLoadingPage = new LoadingPage(getContext()) {
-                    @Override
-                    protected void initView() {
-                        if (isFirst) {
-                            LoadingBaseFragment.this.contentView = this.contentView;
-                            bind = ButterKnife.bind(LoadingBaseFragment.this, contentView);
-                            LoadingBaseFragment.this.initView();
-                            isFirst = false;
-                        }
-                    }
 
-                    @Override
-                    protected void loadData() {
-                        LoadingBaseFragment.this.loadData();
-                    }
-
-                    @Override
-                    protected int getLayoutId() {
-                        return LoadingBaseFragment.this.getLayoutId();
-                    }
-                };
-            }
-            isPrepared = true;
-            loadBaseData();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return mLoadingPage;
+        return view;
 
 
     }
@@ -100,8 +74,6 @@ public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragm
             mIsVisible = false;
             onInvisible();
         }
-//        mIsVisible = true;
-//        onVisible();
     }
 
     @Override
@@ -114,11 +86,8 @@ public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragm
     }
 
 
-    protected void onInvisible() {
-//        if (this.mCompositeSubscription != null && mCompositeSubscription.hasSubscriptions()) {
-//            this.mCompositeSubscription.unsubscribe();
-//        }
 
+    protected void onInvisible() {
     }
 
     /**
@@ -128,10 +97,8 @@ public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragm
      * 在 onActivityCreated 之后第一次显示加载数据，只加载一次
      */
     protected void onVisible() {
-
-
         if (isFirst) {
-
+            //            initInject();
             mPresenter = setPresenter();
             if (mPresenter != null) {
                 mPresenter.attachView(this);
@@ -140,11 +107,6 @@ public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragm
         loadBaseData();//根据获取的数据来调用showView()切换界面
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-
-    }
 
     public void loadBaseData() {
         if (!mIsVisible || !isPrepared || !isFirst) {
@@ -174,10 +136,7 @@ public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragm
      */
     protected abstract void initView();
 
-    //    /**
-    //     * dagger2注入
-    //     */
-    //    protected abstract void initInject();
+
 
 
     private CompositeSubscription mCompositeSubscription;
@@ -185,13 +144,11 @@ public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragm
     //用于添加rx的监听的在onDestroy中记得关闭不然会内存泄漏。
     @Override
     public void bindSubscription(Subscription subscription) {
-        this.subscription = subscription;
         if (this.mCompositeSubscription == null) {
             this.mCompositeSubscription = new CompositeSubscription();
         }
         this.mCompositeSubscription.add(subscription);
     }
-
 
 
 
