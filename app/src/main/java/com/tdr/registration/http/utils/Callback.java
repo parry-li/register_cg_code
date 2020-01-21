@@ -4,6 +4,7 @@ package com.tdr.registration.http.utils;
 import com.google.gson.JsonParseException;
 import com.parry.utils.code.ToastUtils;
 import com.tdr.registration.constants.BaseConstants;
+import com.tdr.registration.http.ApiException;
 import com.tdr.registration.http.Stateful;
 import com.tdr.registration.service.BaseView;
 import com.tdr.registration.utils.LogUtil;
@@ -70,6 +71,10 @@ public class Callback<T> extends Subscriber<T> {
                         onFail(e.toString());   //均视为网络错误
                         break;
                 }
+            } else if (e instanceof ApiException) {
+                onFail(e.getMessage());
+            } else {
+                onFail("网络请求异常");
             }
             LogUtil.e("retrofit2_Callback_onError=     " + e.toString());
 
@@ -77,6 +82,8 @@ public class Callback<T> extends Subscriber<T> {
         } catch (Exception exception) {
             LogUtil.e("retrofit2_Callback_onError_exception=    " + exception);
         }
+
+
     }
 
     @Override

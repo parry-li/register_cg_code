@@ -1,12 +1,14 @@
 package com.tdr.registration.service;
 
 
+import com.parry.utils.code.SPUtils;
 import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.constants.UrlConstants;
 import com.tdr.registration.http.LifeSubscription;
 import com.tdr.registration.http.Stateful;
 import com.tdr.registration.http.utils.Callback;
 import com.tdr.registration.http.utils.HttpUtils;
+import com.tdr.registration.http.utils.JsonConverterFactory;
 import com.tdr.registration.utils.LogUtil;
 
 import java.io.IOException;
@@ -69,9 +71,10 @@ public class BasePresenter<T extends BaseView> {
         okHttpClient.addInterceptor(new Interceptor() {
             @Override
             public okhttp3.Response intercept(Chain chain) throws IOException {
+                String token = SPUtils.getInstance().getString(BaseConstants.token);
                 Request original = chain.request();
                 Request.Builder requestBuilder = original.newBuilder()
-                        .header("token", "1123333232323121232221221")
+                        .header("token", token)
                         .header("content-type", "application/json;charset:utf-8");
                 Request request = requestBuilder.build();
 
@@ -134,7 +137,7 @@ public class BasePresenter<T extends BaseView> {
 
         //创建并指定自定义的OkHttpClient
         Retrofit retrofit = new Retrofit.Builder().baseUrl(UrlConstants.main_host_service)
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(JsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(okHttpClient.build()).build();
 

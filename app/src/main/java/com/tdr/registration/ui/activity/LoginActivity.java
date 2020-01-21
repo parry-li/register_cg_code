@@ -105,14 +105,17 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
                 String lName = loginName.getText().toString().trim();
                 if (TextUtils.isEmpty(lName) && TextUtils.isEmpty(lPwd)) {
                     loginButton.setBackgroundResource(R.mipmap.button_unselect);
+                    loginButton.setTextColor(getResources().getColor(R.color.module_button_unselect));
                 } else {
                     loginButton.setBackgroundResource(R.mipmap.button_select);
+                    loginButton.setTextColor(getResources().getColor(R.color.module_white));
                 }
                 if (TextUtils.isEmpty(lName)) {
                     loginNameLine.setBackgroundResource(R.color.module_background);
                 } else {
                     loginNameLine.setBackgroundResource(R.color.module_main);
                 }
+
             }
         });
         loginPwd.addTextChangedListener(new TextWatcher() {
@@ -133,8 +136,10 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
                 String lName = loginName.getText().toString().trim();
                 if (TextUtils.isEmpty(lName) && TextUtils.isEmpty(lPwd)) {
                     loginButton.setBackgroundResource(R.mipmap.button_unselect);
+                    loginButton.setTextColor(getResources().getColor(R.color.module_button_unselect));
                 } else {
                     loginButton.setBackgroundResource(R.mipmap.button_select);
+                    loginButton.setTextColor(getResources().getColor(R.color.module_white));
                 }
                 if (TextUtils.isEmpty(lName)) {
                     loginPwdLine.setBackgroundResource(R.color.module_background);
@@ -148,6 +153,9 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     }
 
     private void sendData() {
+        loginNameLine.setBackgroundResource(R.color.module_background);
+        loginPwdLine.setBackgroundResource(R.color.module_background);
+
         String cityNameStr = cityName.getText().toString().trim();
         if (cityNameStr.equals("请选择城市") || systemId == -100) {
             ToastUtil.showWX("请选择城市");
@@ -194,13 +202,17 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     public void loadingSuccessForData(LoginBean mData) {
         zProgressHUD.setMessage("获取配置中");
         loginData = mData;
+        SPUtils.getInstance().put(BaseConstants.token, loginData.getToken());
+        Map<String,Object> map = new HashMap<>();
+        map.put("subsystemId",systemId+"");
+        mPresenter.getCityConfigureBySubsystemId(getRequestBody(map));
 
     }
 
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
-        showCustomWindowDialog("服务提示", msg);
+        showCustomWindowDialog("服务提示", msg,true);
     }
 
 
@@ -231,9 +243,9 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     }
 
     @Override
-    public void getCityConfigureSuccess(CityConfigureBean cityConfigureBean) {
+    public void getCityConfigureSuccess(List<CityConfigureBean> cityConfigureBeanList) {
         zProgressHUD.dismiss();
-        SPUtils.getInstance().put(BaseConstants.token, loginData.getLogin());
+        SPUtils.getInstance().put(BaseConstants.token, loginData.getToken());
         SPUtils.getInstance().put(BaseConstants.Login_city_name, cityName.getText().toString());
         SPUtils.getInstance().put(BaseConstants.Login_city_systemID, systemId);
         ActivityUtil.goActivityAndFinish(LoginActivity.this, HomeActivity.class);
@@ -242,7 +254,8 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     @Override
     public void getCityConfigureFail(String msg) {
         zProgressHUD.dismiss();
-        showCustomWindowDialog("服务提示", msg);
+        SPUtils.getInstance().put(BaseConstants.token, "");
+        showCustomWindowDialog("服务提示", msg,true);
 
     }
 }

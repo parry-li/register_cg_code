@@ -12,6 +12,8 @@ import com.tdr.registration.service.BaseView;
 
 import com.tdr.registration.service.presenter.LoginPresenter;
 
+import java.util.List;
+
 import okhttp3.RequestBody;
 
 
@@ -36,9 +38,9 @@ public class LoginImpl extends BasePresenter<LoginPresenter.View> implements Log
 
     @Override
     public void getCityConfigureBySubsystemId(RequestBody route) {
-        invoke(mService.getCityConfigure(UrlConstants.cityConfigure_getLoginDesign, route), new Callback<DdcResult<CityConfigureBean>>() {
+        invoke(mService.getCityConfigure(UrlConstants.cityConfigure_getCityConfigureBySubsystemId, route), new Callback<DdcResult<List<CityConfigureBean>>>() {
             @Override
-            public void onResponse(DdcResult<CityConfigureBean> data) {
+            public void onResponse(DdcResult<List<CityConfigureBean>> data) {
                 mView.getCityConfigureSuccess(data.getData());
             }
         });

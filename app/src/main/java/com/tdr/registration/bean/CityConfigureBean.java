@@ -5,17 +5,17 @@ public class CityConfigureBean {
 
     /**
      * subsystemId : 1
-     * content : null
+     * content : {"billType":1,"id":10,"isBill":true}
      * subsystemName : null
-     * name : URL
-     * configureName : 子系统URL
-     * configureAttribute : 3
+     * name : BillConfig
+     * configureName : BillConfig
+     * configureAttribute : 4
      * plateform : 5
      * isSubsystem : 1
      */
 
     private int subsystemId;
-    private Object content;
+    private String content;
     private Object subsystemName;
     private String name;
     private String configureName;
@@ -31,11 +31,11 @@ public class CityConfigureBean {
         this.subsystemId = subsystemId;
     }
 
-    public Object getContent() {
+    public String getContent() {
         return content;
     }
 
-    public void setContent(Object content) {
+    public void setContent(String content) {
         this.content = content;
     }
 

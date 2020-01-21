@@ -24,9 +24,8 @@ import rx.subscriptions.CompositeSubscription;
  * Created by parry
  */
 
-public abstract class NoCacheBaseFragment<P extends BasePresenter> extends Fragment implements LifeSubscription, Stateful {
+public abstract class NoCacheBaseFragment extends Fragment implements LifeSubscription {
 
-    protected P mPresenter;
 
 
     public boolean isRefresh = true;
@@ -42,46 +41,13 @@ public abstract class NoCacheBaseFragment<P extends BasePresenter> extends Fragm
 
     protected View contentView;
     private Unbinder bind;
-    public String userid;
+
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        userid = SPUtils.getInstance("module_login_data").getString("userid");
-
         View view = inflater.inflate(NoCacheBaseFragment.this.getLayoutId(), container, false);
-//            if (mLoadingPage == null) {
-//                mLoadingPage = new LoadingPage(getContext()) {
-//                    @Override
-//                    protected void initView() {
-//                        if (isFirst) {
-//                            NoCacheBaseFragment.this.contentView = this.contentView;
-//                            bind = ButterKnife.bind(NoCacheBaseFragment.this, contentView);
-//                            NoCacheBaseFragment.this.initView();
-//                            isFirst = false;
-//                        }
-//                    }
-//
-//                    @Override
-//                    protected void loadData() {
-//                        NoCacheBaseFragment.this.loadData();
-//                    }
-//
-//                    @Override
-//                    protected int getLayoutId() {
-//                        return NoCacheBaseFragment.this.getLayoutId();
-//                    }
-//                };
-//            }
-//            isPrepared = true;
-        //            initInject();
-//        mPresenter = setPresenter();
-//        if (mPresenter != null) {
-//            mPresenter.attachView(this);
-//        }
-
-
 
         bind = ButterKnife.bind(NoCacheBaseFragment.this, view);
 
@@ -98,39 +64,10 @@ public abstract class NoCacheBaseFragment<P extends BasePresenter> extends Fragm
     }
 
 
-    protected abstract P setPresenter();
-//
-//    /**
-//     * 在这里实现Fragment数据的缓加载.
-//     */
-//    @Override
-//    public void setUserVisibleHint(boolean isVisibleToUser) {
-//        super.setUserVisibleHint(isVisibleToUser);
-//        if (getUserVisibleHint()) {//fragment可见
-//            mIsVisible = true;
-//            onVisible();
-//        } else {//fragment不可见
-//            mIsVisible = false;
-//            onInvisible();
-//        }
-////        mIsVisible = true;
-////        onVisible();
-//    }
-
-    @Override
-    public void setState(int state) {
-//        mLoadingPage.state = state;
-//        if (isRefresh) {
-//            mLoadingPage.showPage();
-//        }
-
-    }
 
 
 
-    protected void onInvisible() {
-        LogUtil.i("fragment不可见+++++++onInvisible+++++");
-    }
+
 
     /**
      * 显示时加载数据,需要这样的使用
@@ -139,14 +76,7 @@ public abstract class NoCacheBaseFragment<P extends BasePresenter> extends Fragm
      * 在 onActivityCreated 之后第一次显示加载数据，只加载一次
      */
     protected void onVisible() {
-       // LogUtil.i("fragment可见---------------onVisible------");
-        if (isFirst) {
-            //            initInject();
-            mPresenter = setPresenter();
-            if (mPresenter != null) {
-                mPresenter.attachView(this);
-            }
-        }
+
         loadBaseData();//根据获取的数据来调用showView()切换界面
     }
 
@@ -203,9 +133,7 @@ public abstract class NoCacheBaseFragment<P extends BasePresenter> extends Fragm
         if (this.mCompositeSubscription != null && mCompositeSubscription.hasSubscriptions()) {
             this.mCompositeSubscription.unsubscribe();
         }
-        if (mPresenter != null) {
-            mPresenter.detachView();
-        }
+
     }
 
 }

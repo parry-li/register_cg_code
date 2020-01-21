@@ -14,7 +14,7 @@ public interface LoginPresenter {
 
     interface View extends BaseView<LoginBean> {
 
-        void getCityConfigureSuccess(CityConfigureBean cityConfigureBean);
+        void getCityConfigureSuccess(List<CityConfigureBean> cityConfigureBean);
 
         void getCityConfigureFail(String msg);
     }

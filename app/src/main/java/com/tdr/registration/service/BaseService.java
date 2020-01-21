@@ -25,7 +25,7 @@ public interface BaseService {
     Observable<DdcResult<LoginBean>> login(@Url String url, @Body RequestBody route);
 
     @POST()
-    Observable<DdcResult<CityConfigureBean>> getCityConfigure(@Url String url, @Body RequestBody route);
+    Observable<DdcResult<List<CityConfigureBean>>> getCityConfigure(@Url String url, @Body RequestBody route);
 
     @POST()
     Observable<DdcResult<CarCheckBean>> carCheck(@Url String url, @Body RequestBody route);

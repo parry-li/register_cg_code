@@ -1,8 +1,12 @@
 package com.tdr.registration.http.utils;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
+import com.tdr.registration.http.ApiException;
 import com.tdr.registration.utils.LogUtil;
 
 import java.io.ByteArrayInputStream;
@@ -32,13 +36,16 @@ public class JsonResponseBodyConverter<T> implements Converter<ResponseBody, T> 
         if (BuildConfig.DEBUG) {
             LogUtil.i("NetData", response);
         }
-//        DdcResult ddcResult = gson.fromJson(response, DdcResult.class);
-//        if (ddcResult != null) {
-//
-//            if(){
-//
-//            }
-//        }
+        JsonParser parser = new JsonParser();
+        JsonElement element = parser.parse(response);
+        JsonObject root = element.getAsJsonObject();
+        int resultCode = root.get("code").getAsInt();
+
+        if (resultCode != 0) {
+            String message = root.get("msg").getAsString();
+            throw new ApiException(message);
+        }
+
         try {
             InputStream inputStream = new ByteArrayInputStream(response.getBytes());
             Reader reader = new InputStreamReader(inputStream);
@@ -54,25 +61,5 @@ public class JsonResponseBodyConverter<T> implements Converter<ResponseBody, T> 
 
 
     }
-//    @Override
-//    public T convert(ResponseBody value) throws IOException {
-//        String response = value.string();
-//        if (BuildConfig.DEBUG) {
-//            LogUtil.i("NetData", response);
-//        }
-//        try {
-//            InputStream inputStream = new ByteArrayInputStream(response.getBytes());
-//            Reader reader = new InputStreamReader(inputStream);
-//            JsonReader jsonReader = gson.newJsonReader(reader);
-//            T t = adapter.read(jsonReader);
-//            return t;
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            throw new RuntimeException(JSON_ERROR_STR);
-//        } finally {
-//            value.close();
-//        }
-//
-//
-//    }
+
 }

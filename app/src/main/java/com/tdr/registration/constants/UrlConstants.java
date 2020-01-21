@@ -22,7 +22,7 @@ public class UrlConstants {
 
     public static final String cityConfigure_getCityList = main_host_service + "api/ddc-user/cityConfigure/getCityList";
     public static final String user_login = main_host_service + "api/ddc-user/user/login";
-    public static final String cityConfigure_getLoginDesign = main_host_service + "api/ddc-user/cityConfigure/getLoginDesign";
+    public static final String cityConfigure_getCityConfigureBySubsystemId = main_host_service + "api/ddc-user/cityConfigure/getCityConfigureBySubsystemId";
     public static final String electriccarsChange_check = main_host_service + "api/ddc-electriccar/electriccarsChange/check";
 
 

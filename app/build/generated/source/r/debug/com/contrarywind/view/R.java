@@ -17,15 +17,15 @@ public final class R {
         public static final int wheelview_textSize = 0x7f030273;
     }
     public static final class color {
-        public static final int pickerview_bgColor_default = 0x7f0500a3;
-        public static final int pickerview_bgColor_overlay = 0x7f0500a4;
-        public static final int pickerview_bg_topbar = 0x7f0500a5;
-        public static final int pickerview_timebtn_nor = 0x7f0500a6;
-        public static final int pickerview_timebtn_pre = 0x7f0500a7;
-        public static final int pickerview_topbar_title = 0x7f0500a8;
-        public static final int pickerview_wheelview_textcolor_center = 0x7f0500a9;
-        public static final int pickerview_wheelview_textcolor_divider = 0x7f0500aa;
-        public static final int pickerview_wheelview_textcolor_out = 0x7f0500ab;
+        public static final int pickerview_bgColor_default = 0x7f0500a4;
+        public static final int pickerview_bgColor_overlay = 0x7f0500a5;
+        public static final int pickerview_bg_topbar = 0x7f0500a6;
+        public static final int pickerview_timebtn_nor = 0x7f0500a7;
+        public static final int pickerview_timebtn_pre = 0x7f0500a8;
+        public static final int pickerview_topbar_title = 0x7f0500a9;
+        public static final int pickerview_wheelview_textcolor_center = 0x7f0500aa;
+        public static final int pickerview_wheelview_textcolor_divider = 0x7f0500ab;
+        public static final int pickerview_wheelview_textcolor_out = 0x7f0500ac;
     }
     public static final class dimen {
         public static final int pickerview_textsize = 0x7f06010e;
@@ -35,9 +35,9 @@ public final class R {
         public static final int pickerview_topbar_title_textsize = 0x7f060112;
     }
     public static final class id {
-        public static final int center = 0x7f080039;
-        public static final int left = 0x7f080093;
-        public static final int right = 0x7f0800d2;
+        public static final int center = 0x7f080040;
+        public static final int left = 0x7f0800a2;
+        public static final int right = 0x7f0800ea;
     }
     public static final class string {
         public static final int app_name = 0x7f0f0028;

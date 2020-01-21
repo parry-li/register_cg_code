@@ -108,7 +108,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
     }
 
     public void showCustomWindowDialog(String title, String content) {
-        showCustomWindowDialog("温馨提示", content, false);
+        showCustomWindowDialog(title, content, false);
     }
 
     public void showCustomWindowDialog(String title, String content, boolean isHidden) {
