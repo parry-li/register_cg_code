@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.tdr.registration.R;
 import com.tdr.registration.bean.CarCheckBean;
 import com.tdr.registration.bean.CityBean;
+import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.service.impl.car.CarQueryImpl;
 import com.tdr.registration.service.presenter.CarQueryPresenter;
 import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
@@ -95,13 +96,15 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
 
 
     @Override
-    public void loadingSuccessForData(CarCheckBean mData) {
+    public void loadingSuccessForData(final CarCheckBean mData) {
         CarQueryDialog queryDialog = new CarQueryDialog();
         queryDialog.showCarQueryDialog(CarQueryActivity.this, mData);
         queryDialog.setOnCustomDialogClickListener(new CarQueryDialog.OnItemClickListener() {
             @Override
             public void onCustomDialogClickListener() {
-                ActivityUtil.goActivity(CarQueryActivity.this, CarChangeActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(BaseConstants.data,mData);
+                ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarChangeActivity.class,bundle);
             }
         });
 

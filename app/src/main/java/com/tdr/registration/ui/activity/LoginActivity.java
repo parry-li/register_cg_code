@@ -66,8 +66,8 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     @Override
     protected void initTitle() {
         String cityNameStr = SPUtils.getInstance().getString(BaseConstants.Login_city_name, "");
-        int citySystemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID, -100);
-        if (citySystemId != -100) {
+        systemId= SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID, -100);
+        if (systemId != -100) {
             cityName.setText(cityNameStr);
         }
 
@@ -203,8 +203,8 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         zProgressHUD.setMessage("获取配置中");
         loginData = mData;
         SPUtils.getInstance().put(BaseConstants.token, loginData.getToken());
-        Map<String,Object> map = new HashMap<>();
-        map.put("subsystemId",systemId+"");
+        Map<String, Object> map = new HashMap<>();
+        map.put("subsystemId", systemId + "");
         mPresenter.getCityConfigureBySubsystemId(getRequestBody(map));
 
     }
@@ -212,7 +212,7 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
-        showCustomWindowDialog("服务提示", msg,true);
+        showCustomWindowDialog("服务提示", msg, true);
     }
 
 
@@ -248,14 +248,22 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         SPUtils.getInstance().put(BaseConstants.token, loginData.getToken());
         SPUtils.getInstance().put(BaseConstants.Login_city_name, cityName.getText().toString());
         SPUtils.getInstance().put(BaseConstants.Login_city_systemID, systemId);
+        /*保存配置*/
+        for (CityConfigureBean configureBean : cityConfigureBeanList) {
+            SPUtils.getInstance().put(configureBean.getConfigureName(), configureBean.getContent());
+        }
         ActivityUtil.goActivityAndFinish(LoginActivity.this, HomeActivity.class);
+
+
+
+
     }
 
     @Override
     public void getCityConfigureFail(String msg) {
         zProgressHUD.dismiss();
         SPUtils.getInstance().put(BaseConstants.token, "");
-        showCustomWindowDialog("服务提示", msg,true);
+        showCustomWindowDialog("服务提示", msg, true);
 
     }
 }

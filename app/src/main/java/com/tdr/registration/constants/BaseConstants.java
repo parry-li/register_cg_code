@@ -24,6 +24,15 @@ public class BaseConstants {
 
 
     public static final String token = "token";
+    public static final String data = "register_data";
+    public static final String BillConfig = "BillConfig";
+    public static final String MapConfig = "MapConfig";
+    public static final String VehicleConfig = "VehicleConfig";
+    public static final String PhotoConfig = "PhotoConfig";
+    public static final String NbLabelConfig = "NbLabelConfig";
+    public static final String RegisterConfig = "RegisterConfig";
+    public static final String ManagerConfig = "ManagerConfig";
+    public static final String AuditConfig = "AuditConfig";
 
     public static final String KEY_PICKED_CITY_NAME = "picked_city_name";
     public static final String KEY_PICKED_CITY_VALUE = "picked_city_value";

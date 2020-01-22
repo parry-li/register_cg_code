@@ -18,9 +18,9 @@ import java.lang.Override;
 public class LoginActivity_ViewBinding implements Unbinder {
   private LoginActivity target;
 
-  private View view2131230896;
+  private View view2131230909;
 
-  private View view2131230895;
+  private View view2131230908;
 
   @UiThread
   public LoginActivity_ViewBinding(LoginActivity target) {
@@ -34,7 +34,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.login_city, "field 'loginCity' and method 'onViewClicked'");
     target.loginCity = Utils.castView(view, R.id.login_city, "field 'loginCity'", LinearLayout.class);
-    view2131230896 = view;
+    view2131230909 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.loginPwdLine = Utils.findRequiredView(source, R.id.login_pwd_line, "field 'loginPwdLine'");
     view = Utils.findRequiredView(source, R.id.login_button, "field 'loginButton' and method 'onViewClicked'");
     target.loginButton = Utils.castView(view, R.id.login_button, "field 'loginButton'", Button.class);
-    view2131230895 = view;
+    view2131230908 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -72,9 +72,9 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.loginButton = null;
     target.cityName = null;
 
-    view2131230896.setOnClickListener(null);
-    view2131230896 = null;
-    view2131230895.setOnClickListener(null);
-    view2131230895 = null;
+    view2131230909.setOnClickListener(null);
+    view2131230909 = null;
+    view2131230908.setOnClickListener(null);
+    view2131230908 = null;
   }
 }

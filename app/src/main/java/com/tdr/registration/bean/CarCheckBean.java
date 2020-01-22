@@ -1,6 +1,8 @@
 package com.tdr.registration.bean;
 
-public class CarCheckBean {
+import java.io.Serializable;
+
+public class CarCheckBean  implements Serializable {
 
 
 

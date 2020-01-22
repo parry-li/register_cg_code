@@ -36,8 +36,8 @@ public final class R {
     }
     public static final class id {
         public static final int center = 0x7f080040;
-        public static final int left = 0x7f0800a2;
-        public static final int right = 0x7f0800ea;
+        public static final int left = 0x7f0800af;
+        public static final int right = 0x7f0800f7;
     }
     public static final class string {
         public static final int app_name = 0x7f0f0028;

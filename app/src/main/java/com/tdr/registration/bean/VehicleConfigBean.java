@@ -239,6 +239,26 @@ public class VehicleConfigBean {
             private boolean isValid;
             private String lableName;
             private List<String> eqType;
+            /*以下参数额外添加*/
+            private String editValue;
+            private boolean isNoScan;
+
+
+            public boolean isNoScan() {
+                return isNoScan;
+            }
+
+            public void setNoScan(boolean noScan) {
+                isNoScan = noScan;
+            }
+
+            public String getEditValue() {
+                return editValue;
+            }
+
+            public void setEditValue(String editValue) {
+                this.editValue = editValue;
+            }
 
             public int getIndex() {
                 return index;
