@@ -8,6 +8,7 @@ import com.tdr.registration.http.ApiException;
 import com.tdr.registration.http.Stateful;
 import com.tdr.registration.service.BaseView;
 import com.tdr.registration.utils.LogUtil;
+import com.tdr.registration.utils.ToastUtil;
 
 import org.json.JSONException;
 
@@ -53,26 +54,26 @@ public class Callback<T> extends Subscriber<T> {
         try {
             if (e instanceof HttpException) {             //HTTP错误
                 HttpException httpException = (HttpException) e;
+                LogUtil.i("httpException.code()      "+httpException.code());
                 switch (httpException.code()) {
                     case UNAUTHORIZED:
                     case FORBIDDEN:
-                        onFail(e.toString());       //权限错误，需要实现
+                        onFail("网络请求权限错误，请检查网络（"+httpException.code()+")");  //权限错误，需要实现
                         break;
                     case NOT_FOUND:
                     case REQUEST_TIMEOUT:
-
                     case GATEWAY_TIMEOUT:
-                        onFail("网络请求失败，请检查网络");
+                        onFail("网络请求超时，请检查网络（"+httpException.code()+")");
                         break;
                     case INTERNAL_SERVER_ERROR:
                     case BAD_GATEWAY:
                     case SERVICE_UNAVAILABLE:
                     default:
-                        onFail(e.toString());   //均视为网络错误
+                        onFail("网络请求失败，请检查网络（"+httpException.code()+")");
                         break;
                 }
             } else if (e instanceof ApiException) {
-                onFail(e.getMessage());
+                onFailFw(e.getMessage());
             } else {
                 onFail("网络请求异常");
             }
@@ -113,7 +114,15 @@ public class Callback<T> extends Subscriber<T> {
         if (target != null) {
             target.setState(BaseConstants.STATE_ERROR);
             ((BaseView) target).loadingFail(msg);
-            ToastUtils.showShort(msg);
+            ToastUtil.showWX(msg);
+        }
+
+    }
+    public void onFailFw(String msg) {
+        if (target != null) {
+            target.setState(BaseConstants.STATE_ERROR);
+            ((BaseView) target).loadingFail(msg);
+            ToastUtil.showFW(msg);
         }
 
     }

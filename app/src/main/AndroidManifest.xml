@@ -33,7 +33,7 @@
 
     <!-- 调用相机，用于实现扫描二维码，预览个性化地图编辑器生成的个性化地图样式（开发者实际开发中地图SDK不需要该权限）-->
     <uses-permission android:name="android.permission.CAMERA"/>
-
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -111,6 +111,13 @@
         <activity android:name="com.tdr.registration.ui.activity.home.HomeActivity" />
         <activity android:name="com.tdr.registration.ui.activity.car.CarQueryActivity" />
         <activity android:name="com.tdr.registration.ui.activity.car.CarChangeActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.car.RegisterMainActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.scan.QRCodeScanActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.car.CarTransferActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.CodeTableActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.car.CarScrapActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.car.CarInsuranceActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.car.ChangeRegisterActivity" />
         <!--<activity-->
             <!--android:name="com.tdr.chongwu.ui.map.TencentMapActivity"-->
             <!--android:label="@string/demo_label_basemap" />-->

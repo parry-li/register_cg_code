@@ -12,7 +12,9 @@ import com.bigkoo.pickerview.builder.OptionsPickerBuilder;
 import com.bigkoo.pickerview.listener.OnOptionsSelectListener;
 import com.bigkoo.pickerview.view.OptionsPickerView;
 import com.tdr.registration.App;
+import com.tdr.registration.bean.OptionsBean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -28,12 +30,12 @@ public class CustomOptionsDialog {
 
     private OptionsPickerView pvOptions;
 
-    public CustomOptionsDialog(Context context, List<String> list) {
+    public CustomOptionsDialog(Context context, List<OptionsBean> list) {
 
         initPickView(context,list);
     }
 
-    private void initPickView(Context context, final List<String> list) {
+    private void initPickView(Context context, final List<OptionsBean> list) {
         pvOptions = new OptionsPickerBuilder(context, new OnOptionsSelectListener() {
             @Override
             public void onOptionsSelect(int options1, int options2, int options3, View v) {
@@ -60,7 +62,11 @@ public class CustomOptionsDialog {
                 .isRestoreItem(true)//切换时是否还原，设置默认选中第一项。
                 .build();
 
-        pvOptions.setPicker(list);//添加数据源
+        List<String> strings = new ArrayList<>();
+        for(OptionsBean bean :list){
+            strings.add(bean.getName());
+        }
+        pvOptions.setPicker(strings);//添加数据源
     }
 
 
@@ -80,7 +86,7 @@ public class CustomOptionsDialog {
     }
 
     public interface OnItemClickListener {
-        void onCustomDialogClickListener(int position, String value);
+        void onCustomDialogClickListener(int position, OptionsBean optionsBean);
     }
 
 

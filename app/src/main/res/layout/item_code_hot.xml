@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hot_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/edittext_border_white_circle"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:text="熱門"
+        android:textSize="@dimen/sp_13" />
+
+</LinearLayout>

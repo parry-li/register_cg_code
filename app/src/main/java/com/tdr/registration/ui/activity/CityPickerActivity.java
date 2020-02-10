@@ -18,16 +18,18 @@ import android.widget.TextView;
 
 import com.tdr.registration.R;
 import com.tdr.registration.bean.CityBean;
+import com.tdr.registration.bean.OptionsBean;
 import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.service.impl.city.CityImpl;
 import com.tdr.registration.service.presenter.CityPresenter;
 import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
-import com.tdr.registration.utils.Util;
+import com.tdr.registration.utils.UIUtils;
 import com.tdr.registration.view.CityPicker.adapter.CityListAdapter;
 import com.tdr.registration.view.CityPicker.adapter.ResultListAdapter;
 import com.tdr.registration.view.CityPicker.model.City;
 import com.tdr.registration.view.CityPicker.view.SideLetterBar;
 import com.tdr.registration.view.CustomOptionsDialog;
+import com.tdr.registration.view.ZProgressHUD;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -52,7 +54,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
     private List<City> mAllCities;
     private List<CityBean> mResultCities;
     //    private DBManager dbManager;
-    private List<CityBean> cityList;
+    private List<CityBean> cityList =new ArrayList<>();
     private TextView noData;
 
 
@@ -64,7 +66,8 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
 
     @Override
     protected void initData(Bundle savedInstanceState) {
-
+        initData();
+        initView();
 
     }
 
@@ -86,8 +89,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
 
 
     private void initData() {
-//        dbManager = new DBManager(this);
-//        dbManager.copyDBFile();
+
 
         mCityAdapter = new CityListAdapter(this, cityList);
         mCityAdapter.setOnCityClickListener(new CityListAdapter.OnCityClickListener() {
@@ -100,8 +102,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
 
             @Override
             public void onLocateClick() {
-//                mCityAdapter.updateLocateState(LocateState.LOCATING, null);
-//                requestPermissions(CityPickerActivity.this, neededPermissions, CityPickerActivity.this);
+
             }
         });
 
@@ -113,15 +114,15 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
         if (cityBean.getSubsystemList() != null && cityBean.getSubsystemList().size() > 1) {
 
             final List<CityBean.SubsystemListBean> subsysList = cityBean.getSubsystemList();
-            List<String> strings = new ArrayList<>();
+            List<OptionsBean> strings = new ArrayList<>();
             for (CityBean.SubsystemListBean bean : cityBean.getSubsystemList()) {
-                strings.add(bean.getSubsystemName());
+                strings.add(new OptionsBean(bean.getSubsystemName(),""));
             }
             CustomOptionsDialog customOptionsDialog = new CustomOptionsDialog(CityPickerActivity.this, strings);
             customOptionsDialog.showDialog();
             customOptionsDialog.setOnCustomClickListener(new CustomOptionsDialog.OnItemClickListener() {
                 @Override
-                public void onCustomDialogClickListener(int position, String s) {
+                public void onCustomDialogClickListener(int position, OptionsBean optionsBean) {
 
                     int mID = subsysList.get(position).getId();
                     backWithData(cityBean.getUnitName(), mID);
@@ -209,7 +210,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
 
         List<CityBean> beanList = new ArrayList<>();
         /*判断是否是中文*/
-        if (Util.isContainChinese(keyword)) {
+        if (UIUtils.isContainChinese(keyword)) {
             for (CityBean cityBean : cityList) {
                 if (cityBean.getUnitName().indexOf(keyword) != -1) {
                     beanList.add(cityBean);
@@ -253,9 +254,13 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
             finish();
 
         } else if (i == R.id.empty_view) {
-            if (!noData.getText().toString().equals("暂无数据")) {
-                mPresenter.getCity();
+            if(UIUtils.isFastClick()){
+                if (!noData.getText().toString().equals("暂无数据")) {
+                    zProgressHUD.show();
+                    mPresenter.getCity();
+                }
             }
+
         }
     }
 
@@ -270,19 +275,24 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
 
     @Override
     public void loadingSuccessForData(List<CityBean> cityBeanList) {
+        zProgressHUD.dismiss();
+        searchBox.setEnabled(true);
         emptyView.setVisibility(View.GONE);
         cityList = cityBeanList;
         Collections.sort(cityList, new CityComparator());
-        initData();
-        initView();
+        mCityAdapter.setNewData(cityList);
+//        initData();
+//        initView();
     }
 
 
 
     @Override
     public void loadingFail(String msg) {
+        zProgressHUD.dismiss();
         noData.setText("加载失败，请点击重新加载");
         emptyView.setVisibility(View.VISIBLE);
+        searchBox.setEnabled(false);
     }
 
 

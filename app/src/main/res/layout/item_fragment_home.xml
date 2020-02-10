@@ -11,7 +11,7 @@
 
         android:layout_height="@dimen/dp_70"
         android:layout_gravity="center"
-        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
         android:background="@drawable/edittext_border_white_bg"
         android:gravity="center">
 

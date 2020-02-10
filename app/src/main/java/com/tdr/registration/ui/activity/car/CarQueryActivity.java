@@ -37,20 +37,22 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     ImageView comTitleSettingIv;
     @BindView(R.id.com_title_setting_tv)
     TextView comTitleSettingTv;
-    @BindView(R.id.com_title_main_relativeLayout)
-    RelativeLayout comTitleMainRelativeLayout;
     @BindView(R.id.plate_number)
     EditText plateNumber;
     @BindView(R.id.car_id)
     EditText carId;
     @BindView(R.id.button_confirm)
     TextView buttonConfirm;
+    private String rolePower = "";
+    private CarQueryDialog queryDialog;
+    private CarCheckBean carCheckBean;
 
     @Override
     protected void initTitle() {
 
         titleBackClickListener(comTitleBack);
-        textTitle.setText("车牌补办");
+
+
     }
 
     @Override
@@ -66,6 +68,44 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     @Override
     protected void initData(Bundle savedInstanceState) {
 
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+
+            rolePower = bundle.getString("rolePower");
+
+            if (rolePower.equals(BaseConstants.funJurisdiction[1])) {//补办
+                textTitle.setText("车牌补办");
+            } else if (rolePower.equals(BaseConstants.funJurisdiction[2])) {//过户
+                textTitle.setText("车辆过户");
+            } else if (rolePower.equals(BaseConstants.funJurisdiction[0])) {//报废
+                textTitle.setText("车辆报废");
+            } else if (rolePower.equals("changeRegister")) {
+                textTitle.setText("信息变更");
+            }
+        }
+
+        queryDialog = new CarQueryDialog();
+        queryDialog.setOnCustomDialogClickListener(new CarQueryDialog.OnItemClickListener() {
+            @Override
+            public void onCustomDialogClickListener() {
+                if (TextUtils.isEmpty(rolePower)) {
+                    ToastUtil.showWX("权限码有误");
+                    return;
+                }
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(BaseConstants.data, carCheckBean);
+                if (rolePower.equals(BaseConstants.funJurisdiction[1])) {//补办
+                    ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarChangeActivity.class, bundle);
+                } else if (rolePower.equals(BaseConstants.funJurisdiction[2])) {//过户
+                    ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarTransferActivity.class, bundle);
+                } else if (rolePower.equals(BaseConstants.funJurisdiction[0])) {//报废
+                    ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarScrapActivity.class, bundle);
+                }else if (rolePower.equals("changeRegister")) {//信息变更
+                    ActivityUtil.goActivityWithBundle(CarQueryActivity.this, ChangeRegisterActivity.class, bundle);
+                }
+
+            }
+        });
     }
 
     @Override
@@ -76,6 +116,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
 
     @OnClick(R.id.button_confirm)
     public void onViewClicked() {
+
         String plateNumberStr = plateNumber.getText().toString().trim();
         String carIdStr = carId.getText().toString().trim();
 
@@ -87,7 +128,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
             ToastUtil.showWX("请输入证件号");
             return;
         }
-
+        zProgressHUD.show();
         Map<String, Object> map = new HashMap<>();
         map.put("plateNumber", plateNumberStr);
         map.put("cardId", carIdStr);
@@ -97,22 +138,16 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
 
     @Override
     public void loadingSuccessForData(final CarCheckBean mData) {
-        CarQueryDialog queryDialog = new CarQueryDialog();
+        zProgressHUD.dismiss();
+
         queryDialog.showCarQueryDialog(CarQueryActivity.this, mData);
-        queryDialog.setOnCustomDialogClickListener(new CarQueryDialog.OnItemClickListener() {
-            @Override
-            public void onCustomDialogClickListener() {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(BaseConstants.data,mData);
-                ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarChangeActivity.class,bundle);
-            }
-        });
+       carCheckBean =mData;
 
 
     }
 
     @Override
     public void loadingFail(String msg) {
-
+        zProgressHUD.dismiss();
     }
 }

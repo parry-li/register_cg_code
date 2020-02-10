@@ -19,7 +19,7 @@ import java.lang.Override;
 public class CarChangeActivity_ViewBinding implements Unbinder {
   private CarChangeActivity target;
 
-  private View view2131230789;
+  private View view2131230820;
 
   @UiThread
   public CarChangeActivity_ViewBinding(CarChangeActivity target) {
@@ -35,7 +35,6 @@ public class CarChangeActivity_ViewBinding implements Unbinder {
     target.textTitle = Utils.findRequiredViewAsType(source, R.id.text_title, "field 'textTitle'", TextView.class);
     target.comTitleSettingIv = Utils.findRequiredViewAsType(source, R.id.com_title_setting_iv, "field 'comTitleSettingIv'", ImageView.class);
     target.comTitleSettingTv = Utils.findRequiredViewAsType(source, R.id.com_title_setting_tv, "field 'comTitleSettingTv'", TextView.class);
-    target.comTitleMainRelativeLayout = Utils.findRequiredViewAsType(source, R.id.com_title_main_relativeLayout, "field 'comTitleMainRelativeLayout'", RelativeLayout.class);
     target.changePlate = Utils.findRequiredViewAsType(source, R.id.change_plate, "field 'changePlate'", TextView.class);
     target.changeBrand = Utils.findRequiredViewAsType(source, R.id.change_brand, "field 'changeBrand'", TextView.class);
     target.changeColor = Utils.findRequiredViewAsType(source, R.id.change_color, "field 'changeColor'", TextView.class);
@@ -48,7 +47,7 @@ public class CarChangeActivity_ViewBinding implements Unbinder {
     target.changeReason = Utils.findRequiredViewAsType(source, R.id.change_reason, "field 'changeReason'", EditText.class);
     view = Utils.findRequiredView(source, R.id.change_button, "field 'changeButton' and method 'onViewClicked'");
     target.changeButton = Utils.castView(view, R.id.change_button, "field 'changeButton'", TextView.class);
-    view2131230789 = view;
+    view2131230820 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -68,7 +67,6 @@ public class CarChangeActivity_ViewBinding implements Unbinder {
     target.textTitle = null;
     target.comTitleSettingIv = null;
     target.comTitleSettingTv = null;
-    target.comTitleMainRelativeLayout = null;
     target.changePlate = null;
     target.changeBrand = null;
     target.changeColor = null;
@@ -81,7 +79,7 @@ public class CarChangeActivity_ViewBinding implements Unbinder {
     target.changeReason = null;
     target.changeButton = null;
 
-    view2131230789.setOnClickListener(null);
-    view2131230789 = null;
+    view2131230820.setOnClickListener(null);
+    view2131230820 = null;
   }
 }

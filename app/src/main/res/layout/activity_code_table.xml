@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_background"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/common_title" />
+
+
+    <include layout="@layout/cp_view_search" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10">
+
+
+        <ListView
+            android:id="@+id/all_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/module_white"
+            android:dividerHeight="0px"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/result_rv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/common_empty" />
+    </RelativeLayout>
+
+
+</LinearLayout>

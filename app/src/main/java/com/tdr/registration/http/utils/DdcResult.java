@@ -1,10 +1,6 @@
 package com.tdr.registration.http.utils;
 
 
-import lombok.Data;
-
-
-@Data
 public class DdcResult<T> {
 
 
@@ -21,4 +17,54 @@ public class DdcResult<T> {
 
     private DdcPageInfo page;
 
+    public DdcResult() {
+    }
+
+    public DdcResult(Boolean success, String msg, Integer code, T data, DdcPageInfo page) {
+        this.success = success;
+        this.msg = msg;
+        this.code = code;
+        this.data = data;
+        this.page = page;
+    }
+
+    public Boolean getSuccess() {
+        return success;
+    }
+
+    public void setSuccess(Boolean success) {
+        this.success = success;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public DdcPageInfo getPage() {
+        return page;
+    }
+
+    public void setPage(DdcPageInfo page) {
+        this.page = page;
+    }
 }

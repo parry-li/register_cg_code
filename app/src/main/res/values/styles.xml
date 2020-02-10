@@ -32,8 +32,14 @@
     <style name="module_liner_horizontal">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
-        <item name="android:layout_marginLeft">@dimen/dp_14</item>
-        <item name="android:layout_marginRight">@dimen/dp_14</item>
+        <item name="android:background">@color/module_background</item>
+
+    </style>
+    <style name="module_liner_horizontal_20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">@dimen/dp_20</item>
+        <item name="android:layout_marginRight">@dimen/dp_20</item>
         <item name="android:background">@color/module_background</item>
 
     </style>
@@ -95,19 +101,6 @@
     </style>
 
 
-    <!--    <Button
-        android:id="@+id/login_bt"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="@dimen/dp_40"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="@dimen/dp_40"
-        android:background="@mipmap/login_bt_un"
-        android:gravity="center"
-        android:text="登 录"
-        android:textColor="@color/module_white" />-->
-
     <style name="button_unselect">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/dp_44</item>
@@ -125,6 +118,90 @@
         <item name="android:textColor">@color/module_white</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/edittext_button_select</item>
+    </style>
+
+    <!--*的style-->
+    <style name="tv_x">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/module_x</item>
+        <item name="android:paddingLeft">@dimen/dp_20</item>
+        <item name="android:text">*</item>
+    </style>
+
+    <!--名称的style-->
+    <style name="tv_key">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_4</item>
+        <item name="android:paddingTop">@dimen/dp_15</item>
+        <item name="android:paddingBottom">@dimen/dp_15</item>
+        <item name="android:textColor">@color/module_text_3</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:text">name</item>
+
+    </style>
+    <style name="tv_key_no_x">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_4</item>
+        <item name="android:paddingTop">@dimen/dp_15</item>
+        <item name="android:paddingBottom">@dimen/dp_15</item>
+        <item name="android:paddingLeft">@dimen/dp_28</item>
+        <item name="android:textColor">@color/module_text_3</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:text">name</item>
+
+    </style>
+    <!--名称的style-->
+    <style name="tv_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_4</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingRight">@dimen/dp_40</item>
+        <item name="android:paddingTop">@dimen/dp_15</item>
+        <item name="android:paddingBottom">@dimen/dp_15</item>
+        <item name="android:hint">请输入</item>
+        <item name="android:textColor">@color/module_text_3</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+
+    </style>
+    <!--名称的style-->
+    <style name="right_allow">
+        <item name="android:layout_width">@dimen/dp_40</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_14</item>
+        <item name="android:paddingBottom">@dimen/dp_14</item>
+        <item name="android:paddingLeft">@dimen/dp_17</item>
+        <item name="android:paddingRight">@dimen/dp_17</item>
+        <item name="android:src">@mipmap/right_arrow</item>
+    </style>
+    <!--名称的style-->
+    <style name="scan">
+        <item name="android:layout_width">@dimen/dp_40</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_4</item>
+        <item name="android:paddingBottom">@dimen/dp_4</item>
+        <item name="android:paddingLeft">@dimen/dp_12</item>
+        <item name="android:paddingRight">@dimen/dp_12</item>
+        <item name="android:src">@mipmap/scan</item>
+
+    </style>
+    <!--根佈局-->
+    <style name="ll_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/module_white</item>
+
+
+
+
     </style>
 
 

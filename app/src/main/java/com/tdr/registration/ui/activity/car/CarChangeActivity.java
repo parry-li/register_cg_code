@@ -1,36 +1,52 @@
 package com.tdr.registration.ui.activity.car;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
-import com.parry.utils.code.SPUtils;
+import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.tdr.registration.R;
 import com.tdr.registration.adapter.ChangTypeAdapter;
-import com.tdr.registration.adapter.ChangeContentAdapter;
-import com.tdr.registration.adapter.ChangePhotoAdapter;
+import com.tdr.registration.adapter.LabelAdapter;
+import com.tdr.registration.adapter.PhotoAdapter;
 import com.tdr.registration.bean.CarCheckBean;
+import com.tdr.registration.bean.LableListBean;
 import com.tdr.registration.bean.PhotoConfigBean;
+import com.tdr.registration.bean.PhotoListBean;
 import com.tdr.registration.bean.VehicleConfigBean;
 import com.tdr.registration.constants.BaseConstants;
-import com.tdr.registration.ui.activity.base.NoLoadingBaseActivity;
-import com.tdr.registration.utils.ActivityUtil;
+import com.tdr.registration.http.utils.DdcResult;
+import com.tdr.registration.listener.ImageSendLister;
+import com.tdr.registration.service.impl.car.CarChangeImpl;
+import com.tdr.registration.service.presenter.CarChangePresenter;
+import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
+import com.tdr.registration.utils.ConfigUtil;
+import com.tdr.registration.utils.ImageSendUtil;
+import com.tdr.registration.utils.PhotoUtils;
+import com.tdr.registration.utils.ScanUtil;
+import com.tdr.registration.utils.ToastUtil;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class CarChangeActivity extends NoLoadingBaseActivity {
+public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implements CarChangePresenter.View {
     @BindView(R.id.com_title_back)
     RelativeLayout comTitleBack;
     @BindView(R.id.text_title)
@@ -39,8 +55,6 @@ public class CarChangeActivity extends NoLoadingBaseActivity {
     ImageView comTitleSettingIv;
     @BindView(R.id.com_title_setting_tv)
     TextView comTitleSettingTv;
-    @BindView(R.id.com_title_main_relativeLayout)
-    RelativeLayout comTitleMainRelativeLayout;
     @BindView(R.id.change_plate)
     TextView changePlate;
     @BindView(R.id.change_brand)
@@ -67,12 +81,27 @@ public class CarChangeActivity extends NoLoadingBaseActivity {
     private ChangTypeAdapter changTypeAdapter;
     private ArrayList<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> changTypeList;
     private ArrayList<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> checkLabelList;
-    private ChangeContentAdapter contentAdapter;
+    private LabelAdapter contentAdapter;
+    private int contentPosition = -1;
+    private String carRegular;
+    private List<PhotoConfigBean.PhotoTypeInfoListBean> photoList;
+    private PhotoAdapter photoAdapter;
+    private int photoPosition = -1;
 
     @Override
     protected void initTitle() {
         titleBackClickListener(comTitleBack);
         textTitle.setText("车牌补办");
+    }
+
+    @Override
+    protected void loadData() {
+
+    }
+
+    @Override
+    protected CarChangeImpl setPresenter() {
+        return new CarChangeImpl();
     }
 
     @Override
@@ -86,36 +115,34 @@ public class CarChangeActivity extends NoLoadingBaseActivity {
             initPhotoRv();
             initLabelRv();
         }
+
+
     }
-    private void Scan(int ScanType, boolean isshow, boolean isPlate, String ButtonName) {
-        Bundle bundle = new Bundle();
-        bundle.putInt("ScanType", ScanType);
-        bundle.putBoolean("isShow", isshow);
-        bundle.putBoolean("isPlateNumber", isPlate);
-        bundle.putString("ButtonName", ButtonName);
-        ActivityUtil.goActivityForResultWithBundle(this, QRCodeScanActivity.class, bundle,
-                SCANNIN_QR_CODE);
-    }
+
     private void initLabelRv() {
         changeContentRv.setLayoutManager(new LinearLayoutManager(this));
         List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> data = new ArrayList<>();
-        contentAdapter = new ChangeContentAdapter(data);
+        contentAdapter = new LabelAdapter(data,false);
         changeContentRv.setAdapter(contentAdapter);
-        contentAdapter.setOnItemClickListener(new ChangeContentAdapter.OnItemClickListener() {
+        contentAdapter.setOnItemClickListener(new LabelAdapter.OnItemClickListener() {
             @Override
-            public void onItemClickListener(int position) {
+            public void onItemClickListener(int position,String name) {
 
+                contentPosition = position;
+                ScanUtil.Scan(CarChangeActivity.this,  name);
             }
         });
     }
 
     private void initPhotoRv() {
-        String PhotoConfigJson = SPUtils.getInstance().getString(BaseConstants.PhotoConfig);
-        PhotoConfigBean configBean = new Gson().fromJson(PhotoConfigJson, PhotoConfigBean.class);
+        PhotoConfigBean configBean = ConfigUtil.getPhotoConfig();
+        if (configBean == null) {
+            return;
+        }
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         changePhotoRv.setLayoutManager(linearLayoutManager);
-        List<PhotoConfigBean.PhotoTypeInfoListBean> photoList = new ArrayList<>();
+        photoList = new ArrayList<>();
         if (configBean != null) {
             for (PhotoConfigBean.PhotoTypeInfoListBean photoBean : configBean.getPhotoTypeInfoList()) {
                 if (photoBean.isIsValid()) {
@@ -125,26 +152,34 @@ public class CarChangeActivity extends NoLoadingBaseActivity {
 
         }
 
-        ChangePhotoAdapter photoAdapter = new ChangePhotoAdapter(photoList);
+        photoAdapter = new PhotoAdapter(photoList);
         changePhotoRv.setAdapter(photoAdapter);
+        photoAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+
+                photoPosition = position;
+                PhotoUtils.getPhotoByCamera(CarChangeActivity.this);
+            }
+        });
     }
 
     private void initTypeRv() {
-        String VehicleConfigJson = SPUtils.getInstance().getString(BaseConstants.VehicleConfig);
-        VehicleConfigBean configBean = new Gson().fromJson(VehicleConfigJson, VehicleConfigBean.class);
-
+        VehicleConfigBean configBean = ConfigUtil.getVehicleConfig();
         changTypeList = new ArrayList<>();
         VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean bean =
                 new VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean();
 
         bean.setLableName("车牌号");
         bean.setIndex(0);
+        bean.setNoScan(false);// 是否扫描
         changTypeList.add(bean);
         if (configBean != null) {
             List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> configList = new ArrayList<>();
             for (VehicleConfigBean.VehicleLicenseInfoListBean infoListBean : configBean.getVehicleLicenseInfoList()) {
                 if (infoListBean.getTypeId() == checkBean.getVehicleType()) {
                     configList = infoListBean.getVehicleNbLableConfigList();
+                    carRegular = infoListBean.getVehicleNoReg();
                     break;
                 }
             }
@@ -169,17 +204,14 @@ public class CarChangeActivity extends NoLoadingBaseActivity {
 
     private void setLableAdapter() {
 
-        checkLabelList = new ArrayList<>();
+        checkLabelList = new ArrayList<>();//集合数据
         // 拿到所有数据
         Map<Integer, Boolean> isCheck = changTypeAdapter.getMap();
-        // 获取到条目数量，map.size = list.size,所以
+        // 获取到条目数量
         int count = changTypeList.size();
         List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
                 contentAdapterList = contentAdapter.getData();
-        for (int j = 0; j < changTypeList.size(); j++) {
-            changTypeList.get(j).setEditValue(null);
 
-        }
         for (VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean adapterBean : contentAdapterList) {
             for (int j = 0; j < changTypeList.size(); j++) {
                 if (changTypeList.get(j).getIndex() == adapterBean.getIndex()) {
@@ -198,8 +230,26 @@ public class CarChangeActivity extends NoLoadingBaseActivity {
 
         }
 
-        contentAdapter.setNewData(checkLabelList);
+        /*车牌 照片1必须*/
+        boolean isHavePlate = false;
+        for (int i = 0; i < checkLabelList.size(); i++) {
+            if (checkLabelList.get(i).getIndex() == 0) {
+                isHavePlate = true;
 
+            }
+        }
+        List<PhotoConfigBean.PhotoTypeInfoListBean> photoData = photoAdapter.getData();
+        for (int k = 0; k < photoData.size(); k++) {
+
+            if (photoData.get(k).getPhotoIndex() == 1) {
+                photoData.get(k).setMust(isHavePlate);
+            }
+
+        }
+        photoAdapter.setNewData(photoData);
+
+
+        contentAdapter.setNewData(checkLabelList);
 
     }
 
@@ -221,5 +271,160 @@ public class CarChangeActivity extends NoLoadingBaseActivity {
 
     @OnClick(R.id.change_button)
     public void onViewClicked() {
+        putData();
+    }
+
+    private void putData() {
+        List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
+                contentData = contentAdapter.getData();
+        if (contentData == null || contentData.size() == 0) {
+            ToastUtil.showWX("请选择补办类型");
+            return;
+        }
+        boolean isPlate = false;
+        for (int i = 0; i < contentData.size(); i++) {
+
+            if (contentData.get(i).getIndex() == 0) {
+                isPlate = true;
+            }
+            if (TextUtils.isEmpty(contentData.get(i).getEditValue())) {
+                ToastUtil.showWX("请输入" + contentData.get(i).getLableName());
+                return;
+            }
+        }
+        List<PhotoConfigBean.PhotoTypeInfoListBean> photoData = photoAdapter.getData();
+        /*车牌必须有照片*/
+        if (isPlate) {
+            for (int j = 0; j < photoData.size(); j++) {
+                if (photoData.get(j).getPhotoIndex() == 1) {
+                    if (TextUtils.isEmpty(photoData.get(j).getPhotoId())) {
+                        ToastUtil.showWX("请选择" + photoData.get(j).getPhotoName());
+//                        return;
+                    }
+                }
+            }
+        }
+
+
+        Map<String, Object> map = new HashMap<>();
+        map.put("id", checkBean.getId());
+        map.put("reason", changeReason.getText().toString().trim());
+
+
+        /*照片数据*/
+        List<PhotoListBean> photoListBeans = new ArrayList<>();
+        for (int i = 0; i < photoData.size(); i++) {
+            PhotoListBean bean = new PhotoListBean();
+            bean.setIndex(photoData.get(i).getPhotoIndex());
+            bean.setPhoto(photoData.get(i).getPhotoId());
+            bean.setPhtotoType(photoData.get(i).getPhotoType() + "");
+            photoListBeans.add(bean);
+        }
+        map.put("photoList", photoListBeans);
+        /*标签数据*/
+        List<LableListBean> lableListBeans = new ArrayList<>();
+        for (int i = 0; i < contentData.size(); i++) {
+            LableListBean bean = new LableListBean();
+            bean.setIndex(contentData.get(i).getIndex());
+            bean.setLableNumber(contentData.get(i).getEditValue());
+            if (contentData.get(i).getIndex() != 0) {
+                bean.setLableType(contentData.get(i).getEditValue().substring(0, 4));
+            }
+            lableListBeans.add(bean);
+        }
+        map.put("changeContentList", lableListBeans);
+        zProgressHUD.show();
+        mPresenter.carChange(getRequestBody(map));
+
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == RESULT_OK) {
+            switch (requestCode) {
+                case ScanUtil.SCANNIN_QR_CODE:
+                    setScanData(data);
+                    break;
+                case PhotoUtils.CAMERA_REQESTCODE:
+                    Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
+                    Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
+                    Drawable drawable = new BitmapDrawable(bitmapS);
+                    photoList.get(photoPosition).setDrawable(drawable);
+                    photoList.get(photoPosition).setPhotoId(null);
+                    photoAdapter.setNewData(photoList);
+                    ImageSendUtil.sendImage(bitmap, photoPosition, imageSendLister);
+                    break;
+            }
+        }
+    }
+
+    ImageSendLister imageSendLister = new ImageSendLister() {
+        @Override
+        public void imageSendResult(Boolean isSuccess, int position, String photoId) {
+            if (isSuccess) {
+                photoList.get(position).setPhotoId(photoId);
+            } else {
+                photoList.get(position).setDrawable(null);
+            }
+            photoAdapter.setNewData(photoList);
+        }
+    };
+
+    private void setScanData(Intent data) {
+        if (data == null) {
+            ToastUtil.showWX("没有扫描到二维码");
+            return;
+        } else {
+            Bundle bundle = data.getExtras();
+            String labelNumber = bundle.getString("result");
+            String scanNum = "";
+            List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
+                    contentAdapterList = contentAdapter.getData();
+            VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean
+                    item = contentAdapterList.get(contentPosition);
+            /*车牌*/
+            if (contentAdapter.getData().get(contentPosition).getIndex() == 0) {
+                boolean isScan = bundle.getBoolean("isScan");
+                scanNum = ScanUtil.checkPlateNumber(isScan, carRegular, labelNumber);
+
+            } else {
+                if (ScanUtil.checkTheft(item.getEqType(), item.getLableName(), labelNumber)) {
+                    scanNum = labelNumber;
+                }
+            }
+
+            if (!TextUtils.isEmpty(scanNum)) {
+                contentAdapterList.get(contentPosition).setEditValue(scanNum.toUpperCase());
+                contentAdapter.setNewData(contentAdapterList);
+            }
+        }
+    }
+
+
+    @Override
+    public void sendImgSuccess(String photoId) {
+        zProgressHUD.dismiss();
+        photoList.get(photoPosition).setPhotoId(photoId);
+        photoAdapter.setNewData(photoList);
+    }
+
+    @Override
+    public void sendImgFail(String msg) {
+        zProgressHUD.dismiss();
+        ToastUtil.showFW(msg);
+    }
+
+    @Override
+    public void loadingSuccessForData(DdcResult mData) {
+        zProgressHUD.dismiss();
+        customBaseDialog.showCustomWindowDialog("服务提示", "补办成功", true);
+    }
+
+    @Override
+    public void loadingFail(String msg) {
+        zProgressHUD.dismiss();
     }
 }

@@ -1,57 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <FrameLayout
         android:id="@+id/fl_my_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="visible"
-        ></FrameLayout>
+        android:visibility="visible"></FrameLayout>
 
     <TextView
+        android:layout_above="@id/bottom"
         android:id="@+id/TV_Prompt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
+        android:layout_marginBottom="@dimen/dp_50"
         android:gravity="center"
         android:text="放入框内，自动扫描"
         android:textColor="@android:color/white"
-        android:textSize="15sp" />
+        android:textSize="12sp" />
 
-    <TextView
-        android:id="@+id/TV_Input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/TV_Prompt"
-        android:layout_marginTop="21dp"
-        android:gravity="center"
-        android:text="输入车牌号码"
-        android:textColor="@color/module_main"
-        android:textSize="15sp"
-        android:visibility="gone"
-        />
+
     <ImageView
         android:id="@+id/IV_Back"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginLeft="15dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginTop="3dp"
-        android:background="@mipmap/scan_back"
         android:clickable="true"
-        android:scaleType="center" />
+        android:paddingLeft="20dp"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:scaleType="center"
+        android:src="@mipmap/return_white" />
 
-    <ImageView
-        android:id="@+id/IV_Light"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_alignParentRight="true"
-        android:background="@mipmap/light_off"
-        android:clickable="true"
-        android:scaleType="center" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/module_white"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_20">
+
+        <LinearLayout
+            android:id="@+id/scan_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:src="@mipmap/scan_input" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="手动输入"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/module_text_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scan_light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/scan_light_iv"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:src="@mipmap/light_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="手电筒"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/module_text_3" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/module_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="姓名" />
+
+                <EditText
+                    android:id="@+id/people_name"
+                    style="@style/tv_value"
+                    android:hint="请输入姓名" />
+
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="证件类型" />
+
+                <TextView
+                    android:id="@+id/people_card"
+                    style="@style/tv_value"
+                    android:paddingRight="0dp"
+                    android:text="身份证" />
+
+                <ImageView
+                    android:id="@+id/people_card_allow"
+                    style="@style/right_allow" />
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="证件号码" />
+
+                <EditText
+                    android:id="@+id/people_card_num"
+                    style="@style/tv_value"
+                    android:hint="请输入证件号码" />
+
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="联系手机" />
+
+                <EditText
+                    android:id="@+id/people_phone1"
+                    style="@style/tv_value"
+                    android:inputType="phone"
+                    android:hint="请输入联系手机" />
+
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView
+                    style="@style/tv_x"
+                    android:visibility="invisible" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="备用电话" />
+
+                <EditText
+                    android:id="@+id/people_phone2"
+                    style="@style/tv_value"
+                    android:inputType="phone"
+                    android:hint="请输入备用电话" />
+
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="现住址" />
+
+                <EditText
+                    android:id="@+id/people_adr"
+                    style="@style/tv_value"
+                    android:hint="请输入现住址" />
+
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView
+                    style="@style/tv_x"
+                    android:visibility="invisible" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="备注" />
+
+                <EditText
+                    android:id="@+id/people_remark"
+                    style="@style/tv_value"
+                    android:hint="请输入备注信息" />
+
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <TextView
+                android:id="@+id/button_next"
+                style="@style/button_select"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:text="下一步" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

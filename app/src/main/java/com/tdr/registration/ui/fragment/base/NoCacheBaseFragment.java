@@ -20,7 +20,7 @@ import rx.subscriptions.CompositeSubscription;
  * Created by parry
  */
 
-public abstract class NoCacheBaseFragment extends Fragment implements LifeSubscription {
+public abstract class NoCacheBaseFragment extends BaseFragment implements LifeSubscription {
 
 
 

@@ -19,8 +19,7 @@ import com.tdr.registration.utils.UIUtils;
  * @des ${TODO}
  */
 
-public class CustomWindowDialog  {
-
+public class CustomWindowDialog {
 
 
     private Activity context;
@@ -29,12 +28,14 @@ public class CustomWindowDialog  {
         this.context = context;
     }
 
-
-
     public void showCustomWindowDialog(String title, String content, boolean isHideCancel) {
+        showCustomWindowDialog(title, content, isHideCancel, false);
+    }
+
+    public void showCustomWindowDialog(String title, String content, boolean isHideCancel, Boolean isHideAffirm) {
 
 
-        final Dialog dialog = new Dialog(context,  R.style.TANCStyle);
+        final Dialog dialog = new Dialog(context, R.style.TANCStyle);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         View convertView = LayoutInflater.from(context)
@@ -45,28 +46,30 @@ public class CustomWindowDialog  {
         TextView dialogAffirm = (TextView) convertView.findViewById(R.id.dialog_me_phone_detail_affirm);
         TextView dialogCancel = (TextView) convertView.findViewById(R.id.dialog_me_phone_detail_cancel);
         TextView dialogTitle = (TextView) convertView.findViewById(R.id.dialog_me_phone_detail_title);
-        View iv= (View) convertView.findViewById(R.id.dialog_me_phone_detail_view);
+
 
 
         dialogTitle.setText(title);
         dialogContent.setText(content);
 
 
-        if (isHideCancel){
+        if (isHideCancel) {
             dialogCancel.setVisibility(View.GONE);
-            iv.setVisibility(View.GONE);
-        }else {
+        } else {
             dialogCancel.setVisibility(View.VISIBLE);
-            iv.setVisibility(View.VISIBLE);
         }
 
-
+        if (isHideAffirm) {
+            dialogAffirm.setVisibility(View.GONE);
+        } else {
+            dialogAffirm.setVisibility(View.VISIBLE);
+        }
 
         dialogAffirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
-                if(onItemClickListener!=null){
+                if (onItemClickListener != null) {
                     onItemClickListener.onCustomDialogClickListener();
                 }
             }
@@ -76,7 +79,7 @@ public class CustomWindowDialog  {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
-                if(onCancelClickListener!=null){
+                if (onCancelClickListener != null) {
                     onCancelClickListener.onCancelDialogClickListener();
                 }
             }
@@ -85,7 +88,7 @@ public class CustomWindowDialog  {
         WindowManager windowManager = context.getWindowManager();
         Display display = windowManager.getDefaultDisplay();
         WindowManager.LayoutParams lp = dialog.getWindow().getAttributes();
-        lp.width = (display.getWidth()- UIUtils.dp2px(40)); //设置宽度
+        lp.width = (display.getWidth() - UIUtils.dp2px(40)); //设置宽度
         dialog.getWindow().setAttributes(lp);
         dialog.setCancelable(false);
         dialog.show();
@@ -99,6 +102,7 @@ public class CustomWindowDialog  {
     public void setOnCustomDialogClickListener(OnItemClickListener onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
     }
+
     public void setOnCancelDialogClickListener(OnItemCancelClickListener onCancelClickListener) {
         this.onCancelClickListener = onCancelClickListener;
     }

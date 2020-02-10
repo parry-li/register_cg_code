@@ -10,12 +10,13 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/change_x"
+            style="@style/tv_x"
+            android:visibility="invisible" />
+
+        <TextView
             android:id="@+id/change_photo_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/dp_100"
-            android:paddingTop="@dimen/dp_16"
-            android:paddingBottom="@dimen/dp_14"
+            style="@style/tv_key"
             android:text="车牌号"
             android:textColor="@color/module_text_3"
             android:textSize="@dimen/sp_14" />
@@ -27,32 +28,22 @@
 
             <TextView
                 android:id="@+id/change_photo_tv"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/dp_10"
-                android:layout_weight="1"
-                android:gravity="end"
+                style="@style/tv_value"
                 android:hint="请扫码"
+                android:paddingRight="0dp"
                 android:visibility="gone" />
 
             <EditText
                 android:id="@+id/change_photo_et"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/dp_25"
-                android:layout_weight="1"
-                android:background="@null"
-                android:gravity="end"
+                style="@style/tv_value"
                 android:hint="请扫码"
                 android:visibility="visible" />
 
 
             <ImageView
                 android:id="@+id/change_photo_iv"
-                android:layout_width="@dimen/dp_15"
-                android:layout_height="@dimen/dp_15"
-                android:visibility="gone"
-                android:src="@mipmap/scan" />
+                style="@style/scan"
+                android:visibility="gone" />
 
 
         </LinearLayout>
@@ -62,8 +53,6 @@
 
 
     <View
-        style="@style/module_liner_horizontal"
-        android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20" />
+        style="@style/module_liner_horizontal_20" />
 
 </LinearLayout>

@@ -1,5 +1,8 @@
 package com.tdr.registration.bean;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+
 import java.util.List;
 
 public class PhotoConfigBean {
@@ -53,8 +56,25 @@ public class PhotoConfigBean {
         private String photoName;
         private int photoType;
         private boolean isMust;
+        private String photoId;
+        private Drawable drawable;
 
 
+        public Drawable getDrawable() {
+            return drawable;
+        }
+
+        public void setDrawable(Drawable drawable) {
+            this.drawable = drawable;
+        }
+
+        public String getPhotoId() {
+            return photoId;
+        }
+
+        public void setPhotoId(String photoId) {
+            this.photoId = photoId;
+        }
 
         public boolean isMust() {
             return isMust;

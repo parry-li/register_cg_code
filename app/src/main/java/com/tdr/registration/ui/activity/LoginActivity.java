@@ -66,10 +66,11 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     @Override
     protected void initTitle() {
         String cityNameStr = SPUtils.getInstance().getString(BaseConstants.Login_city_name, "");
-        systemId= SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID, -100);
+        systemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID, -100);
         if (systemId != -100) {
             cityName.setText(cityNameStr);
         }
+
 
     }
 
@@ -86,6 +87,28 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
 
     @Override
     protected void initData(Bundle savedInstanceState) {
+        loginName.setOnFocusChangeListener(new android.view.View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+
+                if (hasFocus) {
+                    loginNameLine.setBackgroundResource(R.color.module_main);
+                } else {
+                    loginNameLine.setBackgroundResource(R.color.module_background);
+                }
+            }
+        });
+        loginPwd.setOnFocusChangeListener(new android.view.View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+
+                if (hasFocus) {
+                    loginPwdLine.setBackgroundResource(R.color.module_main);
+                } else {
+                    loginPwdLine.setBackgroundResource(R.color.module_background);
+                }
+            }
+        });
 
         loginName.addTextChangedListener(new TextWatcher() {
             @Override
@@ -110,11 +133,7 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
                     loginButton.setBackgroundResource(R.mipmap.button_select);
                     loginButton.setTextColor(getResources().getColor(R.color.module_white));
                 }
-                if (TextUtils.isEmpty(lName)) {
-                    loginNameLine.setBackgroundResource(R.color.module_background);
-                } else {
-                    loginNameLine.setBackgroundResource(R.color.module_main);
-                }
+
 
             }
         });
@@ -140,11 +159,6 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
                 } else {
                     loginButton.setBackgroundResource(R.mipmap.button_select);
                     loginButton.setTextColor(getResources().getColor(R.color.module_white));
-                }
-                if (TextUtils.isEmpty(lName)) {
-                    loginPwdLine.setBackgroundResource(R.color.module_background);
-                } else {
-                    loginPwdLine.setBackgroundResource(R.color.module_main);
                 }
             }
         });
@@ -212,7 +226,7 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
-        showCustomWindowDialog("服务提示", msg, true);
+        showCustomWindowDialog("服务提示", msg, false, true);
     }
 
 
@@ -253,8 +267,6 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
             SPUtils.getInstance().put(configureBean.getConfigureName(), configureBean.getContent());
         }
         ActivityUtil.goActivityAndFinish(LoginActivity.this, HomeActivity.class);
-
-
 
 
     }

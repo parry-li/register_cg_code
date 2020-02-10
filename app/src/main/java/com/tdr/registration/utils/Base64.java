@@ -1,5 +1,10 @@
 package com.tdr.registration.utils;
 
+import com.parry.utils.code.LogUtils;
+
+import sun.misc.BASE64Decoder;
+import sun.misc.BASE64Encoder;
+
 public final class Base64 {
 
 	private static final int BASELENGTH = 128;
@@ -264,5 +269,45 @@ public final class Base64 {
 			}
 		}
 		return newSize;
+	}
+
+
+	/**base64解码16进制显示
+	 * @param baseContent
+	 * @return
+	 */
+	public static String base64Decode16(String baseContent) {
+		try {
+
+			//定义一个BASE64Encoder
+			BASE64Encoder encode = new BASE64Encoder();
+			//要转换的base64
+			String base64 = baseContent;
+			//新建一个BASE64Decoder
+			BASE64Decoder decode = new BASE64Decoder();
+			//将base64转换为byte[]
+			byte[] b = decode.decodeBuffer(base64);
+			//打印转换后的byte[]
+			System.out.println(new String(b));
+			String lastContent = "";
+
+
+			for (int i = 0; i < b.length; i++) {
+				String hex = Integer.toHexString(b[i] & 0xFF);
+				if (hex.length() == 1) {
+					hex = '0' + hex;
+				}
+				lastContent +=hex.toUpperCase();
+
+			}
+
+			LogUtils.i( lastContent);
+			return lastContent;
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+		return null;
 	}
 }

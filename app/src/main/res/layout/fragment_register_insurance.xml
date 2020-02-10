@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/module_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/insurance_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/insurance_kp_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_20">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="开票类型"
+                            android:textColor="@color/module_text_3"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/insurance_p_no"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:layout_weight="2"
+                            android:background="@drawable/edittext_border_gray_circle"
+                            android:gravity="center"
+                            android:text="不开票"
+                            android:textColor="@color/module_main"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:id="@+id/insurance_p_gr"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:layout_weight="2"
+                            android:background="@drawable/edittext_border_gray_circle"
+                            android:gravity="center"
+                            android:text="个人票"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:id="@+id/insurance_p_qy"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:layout_weight="2"
+                            android:background="@drawable/edittext_border_gray_circle"
+                            android:gravity="center"
+                            android:text="企业票"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </LinearLayout>
+
+                    <View style="@style/module_liner_horizontal" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/button_next"
+                    style="@style/button_select"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    android:text="确认" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/common_empty" />
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

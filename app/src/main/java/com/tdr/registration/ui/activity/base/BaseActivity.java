@@ -22,7 +22,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.google.gson.Gson;
+import com.parry.utils.code.SPUtils;
 import com.tdr.registration.R;
+import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.http.LifeSubscription;
 import com.tdr.registration.view.CustomWindowDialog;
 import com.tdr.registration.view.ZProgressHUD;
@@ -57,7 +59,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
     private boolean isClose = true;
     public String userid;
     public ZProgressHUD zProgressHUD;
-    private CustomWindowDialog customBaseWindowDialog;
+    public CustomWindowDialog customBaseDialog;
 
     @Override
     protected void onResume() {
@@ -86,7 +88,13 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
 
         zProgressHUD = new ZProgressHUD(this);
         zProgressHUD.setMessage("加载中");
-        customBaseWindowDialog = new CustomWindowDialog(this);
+        customBaseDialog = new CustomWindowDialog(this);
+        customBaseDialog.setOnCustomDialogClickListener(new CustomWindowDialog.OnItemClickListener() {
+            @Override
+            public void onCustomDialogClickListener() {
+                finish();
+            }
+        });
     }
 
     public RequestBody getRequestBody(Map<String, Object> stringMap) {
@@ -94,6 +102,23 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
         RequestBody body = RequestBody.create(MediaType.parse("application/json;charset=UTF-8"), strEntity);
         return body;
     }
+
+    /**退出登录*/
+    public void clearDataForLoginOut() {
+        SPUtils.getInstance().put(BaseConstants.BillConfig,"");
+        SPUtils.getInstance().put(BaseConstants.MapConfig,"");
+        SPUtils.getInstance().put(BaseConstants.VehicleConfig,"");
+        SPUtils.getInstance().put(BaseConstants.PhotoConfig,"");
+        SPUtils.getInstance().put(BaseConstants.NbLabelConfig,"");
+        SPUtils.getInstance().put(BaseConstants.RegisterConfig,"");
+        SPUtils.getInstance().put(BaseConstants.ManagerConfig,"");
+        SPUtils.getInstance().put(BaseConstants.AuditConfig,"");
+        SPUtils.getInstance().put(BaseConstants.token,"");
+
+    }
+
+
+
 
     public void showCustomWindowDialog() {
         showCustomWindowDialog("温馨提示", "确定退出页面？", false);
@@ -111,8 +136,12 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
         showCustomWindowDialog(title, content, false);
     }
 
-    public void showCustomWindowDialog(String title, String content, boolean isHidden) {
-        customBaseWindowDialog.showCustomWindowDialog(title, content, isHidden);
+    public void showCustomWindowDialog(String title, String content, boolean isHideCancel) {
+        showCustomWindowDialog(title, content, isHideCancel, false);
+    }
+
+    public void showCustomWindowDialog(String title, String content, boolean isHideCancel, boolean isHideAffirm) {
+        customBaseDialog.showCustomWindowDialog(title, content, isHideCancel, isHideAffirm);
     }
 
     public void goToActivity(Class Activity, Bundle bundle) {
@@ -131,7 +160,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
         tvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                showCustomWindowDialog();
             }
         });
 

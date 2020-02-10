@@ -1,6 +1,7 @@
 package com.tdr.registration.adapter;
 
 import android.content.Context;
+import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
@@ -23,11 +24,24 @@ public class HomeAdapter extends BaseQuickAdapter<ItemModel, BaseViewHolder> {
     }
 
     @Override
-    protected void convert(final BaseViewHolder helper, ItemModel item) {
+    protected void convert(final BaseViewHolder helper, final ItemModel item) {
         helper.setText(R.id.item_name, item.getItemName());
         helper.setImageResource(R.id.item_iv, item.getItemBitResc());
-
+        helper.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onItemClickListener.onItemClickListener(item.getRolePower(),helper.getAdapterPosition());
+            }
+        });
     }
 
+   OnItemClickListener onItemClickListener;
 
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
+
+    public interface OnItemClickListener {
+        void onItemClickListener(String rolePower, int position);
+    }
 }

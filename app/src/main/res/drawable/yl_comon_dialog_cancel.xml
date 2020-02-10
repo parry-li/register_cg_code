@@ -11,7 +11,7 @@
 
             <corners
                 android:bottomLeftRadius="8dp"
-                android:bottomRightRadius="0dp"
+                android:bottomRightRadius="8dp"
                 android:topLeftRadius="0dp"
                 android:topRightRadius="0dp" />
 

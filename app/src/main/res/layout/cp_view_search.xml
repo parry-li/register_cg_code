@@ -6,7 +6,7 @@
     android:layout_marginLeft="@dimen/dp_14"
     android:layout_marginTop="@dimen/dp_18"
     android:layout_marginRight="@dimen/dp_14"
-    android:background="@android:color/white"
+    android:background="@drawable/edittext_border_white_circle"
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:gravity="center_vertical">
@@ -16,7 +16,7 @@
         android:layout_height="38dp"
         android:layout_marginLeft="@dimen/dp_4"
         android:layout_weight="1"
-        android:background="@drawable/edittext_border_white_bg">
+        android:background="@drawable/edittext_border_white_circle">
 
         <ImageView
             android:layout_width="@dimen/dp_32"
@@ -43,11 +43,11 @@
 
         <ImageView
             android:id="@+id/iv_search_clear"
-            android:layout_width="@dimen/dp_30"
-            android:layout_height="@dimen/dp_30"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
             android:src="@mipmap/cp_ic_search_clear"
             android:visibility="visible"
             tools:ignore="ContentDescription" />

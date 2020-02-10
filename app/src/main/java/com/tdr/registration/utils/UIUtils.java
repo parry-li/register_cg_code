@@ -13,6 +13,9 @@ import android.view.View;
 
 import com.tdr.registration.App;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 /**
  * 专门提供为处理一些UI相关的问题而创建的工具类，
@@ -26,9 +29,57 @@ public class UIUtils {
 
 
 
-    public static void goToLogin(){
+    // 两次点击按钮之间的点击间隔不能少于1000毫秒
+    private static int MIN_CLICK_DELAY_TIME = 1000;
+    private static long lastClickTime;
 
+    public static boolean isFastClick() {
+        boolean flag = false;
+        long curClickTime = System.currentTimeMillis();
+        if ((curClickTime - lastClickTime) >= MIN_CLICK_DELAY_TIME) {
+            flag = true;
+            LogUtil.i("curClickTime===" + curClickTime + "===lastClickTime====" + lastClickTime);
+        }
+        lastClickTime = curClickTime;
+        return flag;
     }
+
+    public static boolean isFastClick(int setTime) {
+
+        boolean flag = false;
+        long curClickTime = System.currentTimeMillis();
+        if ((curClickTime - lastClickTime) >= setTime) {
+            flag = true;
+
+        }
+        lastClickTime = curClickTime;
+        return flag;
+    }
+    /**
+     * 是否包含中文
+     *
+     * @param str
+     * @return
+     */
+    public static boolean isContainChinese(String str) {
+        Pattern p = Pattern.compile("[\u4e00-\u9fa5]");
+        Matcher m = p.matcher(str);
+        if (m.find()) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * byte转String
+     *
+     * @param bt
+     * @return
+     */
+    public static String Byte2Str(byte[] bt) {
+        return Base64.encode(bt);
+    }
+
     /**
      * 若都不为空，将arrSrc2添加到arrSrc1的末尾组合成新的byte数组
      *

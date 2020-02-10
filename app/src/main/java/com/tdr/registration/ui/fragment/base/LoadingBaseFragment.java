@@ -23,7 +23,7 @@ import rx.subscriptions.CompositeSubscription;
  * Created by parry
  */
 
-public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragment implements LifeSubscription, Stateful {
+public abstract class LoadingBaseFragment<P extends BasePresenter> extends BaseFragment implements LifeSubscription, Stateful {
 
     protected P mPresenter;
 
@@ -41,14 +41,12 @@ public abstract class LoadingBaseFragment<P extends BasePresenter> extends Fragm
 
     protected View contentView;
     private Unbinder bind;
-    public String userid;
     private Subscription subscription;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        userid = SPUtils.getInstance("module_login_data").getString("userid");
         try {
 
             if (mLoadingPage == null) {

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/module_white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_18"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_18"
+                android:paddingBottom="@dimen/dp_12">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="@dimen/dp_18"
+                        android:background="@mipmap/cpbb_bg"
+                        android:gravity="center"
+                        android:text="车辆"
+                        android:textColor="@color/module_white"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:id="@+id/change_plate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="1235"
+                        android:textColor="@color/module_black"
+                        android:textSize="@dimen/sp_15" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="品牌:"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/change_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="艾玛"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/dp_13"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@color/module_clolor_e8" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:text="颜色:"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/change_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="艾玛"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/dp_13"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@color/module_clolor_e8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:text="手机:"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/change_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="艾玛"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="车主:"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/change_ower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="艾玛"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/dp_13"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@color/module_clolor_e8" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:text="证件号码:"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/change_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="艾玛"
+                        android:textColor="@color/module_text_9"
+                        android:textSize="@dimen/sp_13" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/ll_layout"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="报废人" />
+
+                <EditText
+                    android:id="@+id/scrap_name"
+                    style="@style/tv_value"
+                    android:hint="请输入报废人" />
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="报废时间" />
+
+                <TextView
+                    android:id="@+id/scrap_time"
+                    style="@style/tv_value"
+                    android:paddingRight="0dp"
+                    android:hint="请选择报废时间" />
+                <ImageView
+                   style="@style/right_allow" />
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x"
+                    android:visibility="invisible"/>
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="报废原因" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/module_white">
+
+                <EditText
+                    android:id="@+id/scrap_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:background="@drawable/module_edittext_border_gray_bg"
+                    android:gravity="top"
+                    android:hint="请准确描述报废原因..."
+                    android:minHeight="@dimen/dp_100"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_10" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/scrap_button"
+                style="@style/button_select"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_35"
+                android:text="提交" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

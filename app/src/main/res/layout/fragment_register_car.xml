@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/module_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="车辆照片" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:id="@+id/car_photo_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="车辆品牌" />
+
+                <TextView
+                    android:id="@+id/car_brand"
+                    style="@style/tv_value"
+                    android:hint="请选择车辆品牌"
+                    android:paddingRight="0dp" />
+
+                <ImageView
+                    android:id="@+id/car_brand_allow"
+                    style="@style/right_allow" />
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="车牌号" />
+
+                <EditText
+                    android:id="@+id/car_plate"
+                    style="@style/tv_value"
+                    android:hint="请输入车牌号" />
+
+
+                <TextView
+                    android:id="@+id/car_plate_tv"
+                    style="@style/tv_value"
+                    android:paddingRight="0dp"
+                    android:text="请扫描车牌"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/car_plate_scan"
+                    style="@style/scan"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/car_label_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/module_white" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView
+                    android:id="@+id/car_frame_x"
+                    style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="车架号" />
+
+                <EditText
+                    android:id="@+id/car_frame"
+                    style="@style/tv_value"
+                    android:hint="请输入车架号" />
+
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+                    android:id="@+id/car_electrical_x"
+                    style="@style/tv_key"
+                    android:text="电机号" />
+
+                <EditText
+                    android:id="@+id/car_electrical"
+                    style="@style/tv_value"
+                    android:hint="请输入电机号" />
+
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="车辆主颜色" />
+
+                <TextView
+                    android:id="@+id/car_color_main"
+                    style="@style/tv_value"
+                    android:hint="请选择车辆主颜色"
+                    android:paddingRight="0dp" />
+
+                <ImageView
+                    android:id="@+id/car_color1_allow"
+                    style="@style/right_allow" />
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView
+                    style="@style/tv_x"
+                    android:visibility="invisible" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="车辆副颜色" />
+
+                <TextView
+                    android:id="@+id/car_color_minor"
+                    style="@style/tv_value"
+                    android:hint="请选择车辆副颜色"
+                    android:paddingRight="0dp" />
+
+                <ImageView
+                    android:id="@+id/car_color2_allow"
+                    style="@style/right_allow" />
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView style="@style/tv_x" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="购买时间" />
+
+                <TextView
+                    android:id="@+id/car_color_time"
+                    style="@style/tv_value"
+                    android:hint="请选择购买时间"
+                    android:paddingRight="0dp" />
+
+                <ImageView
+                    android:id="@+id/car_time_allow"
+                    style="@style/right_allow" />
+
+            </LinearLayout>
+
+            <View style="@style/module_liner_horizontal_20" />
+
+
+
+            <LinearLayout style="@style/ll_layout">
+
+                <TextView
+                    style="@style/tv_x"
+                    android:visibility="invisible" />
+
+                <TextView
+
+                    style="@style/tv_key"
+                    android:text="购买价格" />
+
+                <EditText
+                    android:id="@+id/car_price"
+                    style="@style/tv_value"
+                    android:inputType="number|numberDecimal"
+                    android:paddingRight="0dp"
+                    android:hint="请输入购买价格" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="@dimen/dp_5"
+                    android:textSize="@dimen/sp_12"
+                    android:text="元"/>
+
+            </LinearLayout>
+            <View style="@style/module_liner_horizontal_20" />
+            <TextView
+                android:id="@+id/button_next"
+                style="@style/button_select"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:text="确认" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

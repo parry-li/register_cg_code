@@ -78,7 +78,7 @@ public class BasePresenter<T extends BaseView> {
                         .header("content-type", "application/json;charset:utf-8");
                 Request request = requestBuilder.build();
 
-
+                LogUtil.d("token:  "+token);
                 //获得请求信息，此处如有需要可以添加headers信息
 //                Request request = chain.request();
                 //打印请求信息

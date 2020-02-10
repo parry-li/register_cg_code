@@ -121,6 +121,113 @@ public class VehicleConfigBean {
     }
 
     public static class VehicleLicenseInfoListBean {
+        /*
+        *
+        * {
+  "engineNoRegular": {
+    "isRequire": true,
+    "lenMax": 8,
+    "lenMin": 6
+  },
+  "id": 12,
+  "shelvesNoRegular": {
+    "isRequire": true,
+    "lenMax": 8,
+    "lenMin": 6
+  },
+  "vehicleLicenseInfoLis": [
+    {
+      "index": 1,
+      "isValid": false,
+      "typeId": 1,
+      "vehicleNbLableConfigLis": [
+        {
+          "eqType": [
+            "8102",
+            "8103"
+          ],
+          "index": 1,
+          "isRequired": false,
+          "isValid": true,
+          "lableName": "标签1"
+        },
+        {
+          "eqType": [
+            "8102",
+            "8103"
+          ],
+          "index": 2,
+          "isRequired": true,
+          "isValid": true,
+          "lableName": "标签2"
+        }
+      ],
+      "vehicleNoLen": 7,
+      "vehicleNoLenChineseMsg": "车牌号长度提示信息",
+      "vehicleNoReg": "(车牌号长度提示信息)(温州|||)(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{7}$",
+      "vehicleNoRegularMsg": "车牌提示信息",
+      "vehicleNoRegularType": 3,
+      "vehicleTypeName": "电动车"
+    },
+    {
+      "index": 2,
+      "isValid": false,
+      "typeId": 2,
+      "vehicleNbLableConfigLis": [
+        {
+          "eqType": [
+            "8102",
+            "8103"
+          ],
+          "index": 1,
+          "isRequired": true,
+          "isValid": true,
+          "lableName": "标签1"
+        },
+        {
+          "eqType": [
+            "8102",
+            "8103"
+          ],
+          "index": 2,
+          "isRequired": true,
+          "isValid": true,
+          "lableName": "标签2"
+        }
+      ],
+      "vehicleNoLen": 7,
+      "vehicleNoLenChineseMsg": "车牌号长度提示信息",
+      "vehicleNoReg": "(车牌号长度提示信息)(温州|||)(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{7}$",
+      "vehicleNoRegularMsg": "车牌提示信息",
+      "vehicleNoRegularType": 3,
+      "vehicleTypeName": "助力车"
+    },
+    {
+      "index": 3,
+      "isValid": true,
+      "typeId": 3,
+      "vehicleNbLableConfigLis": [
+        {
+          "eqType": [
+            "8701",
+            "870F"
+          ],
+          "index": 1,
+          "isRequired": true,
+          "isValid": true,
+          "lableName": "2313123"
+        }
+      ],
+      "vehicleNoLen": 2,
+      "vehicleNoReg": "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{2}$",
+      "vehicleNoRegularMsg": "111",
+      "vehicleNoRegularType": 2,
+      "vehicleTypeName": "摩托车"
+    }
+  ]
+}
+        *
+        * */
         /**
          * index : 1
          * isValid : false
@@ -136,6 +243,7 @@ public class VehicleConfigBean {
 
         private int index;
         private boolean isValid;
+        private boolean vehicleNoScan;
         private int typeId;
         private int vehicleNoLen;
         private String vehicleNoLenChineseMsg;
@@ -144,6 +252,14 @@ public class VehicleConfigBean {
         private int vehicleNoRegularType;
         private String vehicleTypeName;
         private List<VehicleNbLableConfigListBean> vehicleNbLableConfigList;
+
+        public boolean isVehicleNoScan() {
+            return vehicleNoScan;
+        }
+
+        public void setVehicleNoScan(boolean vehicleNoScan) {
+            this.vehicleNoScan = vehicleNoScan;
+        }
 
         public int getIndex() {
             return index;

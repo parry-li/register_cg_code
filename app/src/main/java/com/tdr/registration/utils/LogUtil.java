@@ -4,6 +4,7 @@ import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.parry.utils.code.LogUtils;
 import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.constants.UrlConstants;
 
@@ -87,6 +88,7 @@ public class LogUtil {
     }
 
     public static void d(String content) {
+
         if (!allowD) {
             return;
         }

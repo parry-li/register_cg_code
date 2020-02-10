@@ -18,7 +18,7 @@ import java.lang.Override;
 public class CarQueryActivity_ViewBinding implements Unbinder {
   private CarQueryActivity target;
 
-  private View view2131230776;
+  private View view2131230784;
 
   @UiThread
   public CarQueryActivity_ViewBinding(CarQueryActivity target) {
@@ -34,12 +34,11 @@ public class CarQueryActivity_ViewBinding implements Unbinder {
     target.textTitle = Utils.findRequiredViewAsType(source, R.id.text_title, "field 'textTitle'", TextView.class);
     target.comTitleSettingIv = Utils.findRequiredViewAsType(source, R.id.com_title_setting_iv, "field 'comTitleSettingIv'", ImageView.class);
     target.comTitleSettingTv = Utils.findRequiredViewAsType(source, R.id.com_title_setting_tv, "field 'comTitleSettingTv'", TextView.class);
-    target.comTitleMainRelativeLayout = Utils.findRequiredViewAsType(source, R.id.com_title_main_relativeLayout, "field 'comTitleMainRelativeLayout'", RelativeLayout.class);
     target.plateNumber = Utils.findRequiredViewAsType(source, R.id.plate_number, "field 'plateNumber'", EditText.class);
     target.carId = Utils.findRequiredViewAsType(source, R.id.car_id, "field 'carId'", EditText.class);
     view = Utils.findRequiredView(source, R.id.button_confirm, "field 'buttonConfirm' and method 'onViewClicked'");
     target.buttonConfirm = Utils.castView(view, R.id.button_confirm, "field 'buttonConfirm'", TextView.class);
-    view2131230776 = view;
+    view2131230784 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,12 +58,11 @@ public class CarQueryActivity_ViewBinding implements Unbinder {
     target.textTitle = null;
     target.comTitleSettingIv = null;
     target.comTitleSettingTv = null;
-    target.comTitleMainRelativeLayout = null;
     target.plateNumber = null;
     target.carId = null;
     target.buttonConfirm = null;
 
-    view2131230776.setOnClickListener(null);
-    view2131230776 = null;
+    view2131230784.setOnClickListener(null);
+    view2131230784 = null;
   }
 }

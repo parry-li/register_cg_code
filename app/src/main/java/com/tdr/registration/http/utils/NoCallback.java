@@ -3,9 +3,11 @@ package com.tdr.registration.http.utils;
 
 import com.parry.utils.code.ToastUtils;
 import com.tdr.registration.constants.BaseConstants;
+import com.tdr.registration.http.ApiException;
 import com.tdr.registration.http.Stateful;
 import com.tdr.registration.service.BaseView;
 import com.tdr.registration.utils.LogUtil;
+import com.tdr.registration.utils.ToastUtil;
 
 import retrofit2.adapter.rxjava.HttpException;
 import rx.Subscriber;
@@ -15,7 +17,7 @@ import rx.Subscriber;
  *  不进行校验
  */
 
-public class NoCallback<T> extends Subscriber<T> {
+public class NoCallback<T> extends Callback<T>{
     private Stateful target;
 
     private static final int UNAUTHORIZED = 401;
@@ -44,28 +46,31 @@ public class NoCallback<T> extends Subscriber<T> {
 
     @Override
     public void onError(Throwable e) {
-
         try {
             if (e instanceof HttpException) {             //HTTP错误
                 HttpException httpException = (HttpException) e;
+                LogUtil.i("httpException.code()      "+httpException.code());
                 switch (httpException.code()) {
                     case UNAUTHORIZED:
                     case FORBIDDEN:
-                        onFail(e.toString());       //权限错误，需要实现
+                        onFail("网络请求权限错误，请检查网络（"+httpException.code()+")");  //权限错误，需要实现
                         break;
                     case NOT_FOUND:
                     case REQUEST_TIMEOUT:
-
                     case GATEWAY_TIMEOUT:
-                        onFail("网络请求失败，请检查网络");
+                        onFail("网络请求超时，请检查网络（"+httpException.code()+")");
                         break;
                     case INTERNAL_SERVER_ERROR:
                     case BAD_GATEWAY:
                     case SERVICE_UNAVAILABLE:
                     default:
-                        onFail(e.toString());   //均视为网络错误
+                        onFail("网络请求失败，请检查网络（"+httpException.code()+")");
                         break;
                 }
+            } else if (e instanceof ApiException) {
+                onFailFw(e.getMessage());
+            } else {
+                onFail("网络请求异常");
             }
             LogUtil.e("retrofit2_Callback_onError=     " + e.toString());
 
@@ -94,9 +99,18 @@ public class NoCallback<T> extends Subscriber<T> {
 
     public void onFail(String msg) {
         if (target != null) {
-            target.setState(BaseConstants.STATE_ERROR);
+            target.setState(BaseConstants.STATE_SUCCESS);
             ((BaseView) target).loadingFail(msg);
             ToastUtils.showShort(msg);
+        }
+
+    }
+
+    public void onFailFw(String msg) {
+        if (target != null) {
+            target.setState(BaseConstants.STATE_SUCCESS);
+            ((BaseView) target).loadingFail(msg);
+            ToastUtil.showFW(msg);
         }
 
     }

@@ -25,7 +25,9 @@
 
     <color name="module_button_unselect">#AEB1CA</color>
 
-
+    <color name="colorDialogBg">#F0F2F5</color>
+    <color name="colorLine">#E7E7E7</color>
+    <color name="module_x">#F86948</color>
     <!--==========================================================-->
     <color name="cp_colorAccent">#F3F3F3</color>
     <color name="cp_colorPrimary">@color/cp_colorAccent</color>

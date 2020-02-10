@@ -55,9 +55,9 @@ public final class R {
     public static final class id {
         public static final int FixedBehind = 0x7f080007;
         public static final int FixedFront = 0x7f080008;
-        public static final int MatchLayout = 0x7f08000a;
-        public static final int Scale = 0x7f08000d;
-        public static final int Translate = 0x7f08000e;
+        public static final int MatchLayout = 0x7f08000d;
+        public static final int Scale = 0x7f080010;
+        public static final int Translate = 0x7f080012;
     }
     public static final class string {
         public static final int app_name = 0x7f0f0028;

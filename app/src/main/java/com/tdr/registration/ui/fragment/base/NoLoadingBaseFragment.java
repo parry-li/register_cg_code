@@ -22,7 +22,7 @@ import rx.subscriptions.CompositeSubscription;
  * Created by parry
  */
 
-public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fragment implements LifeSubscription, Stateful {
+public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends BaseFragment implements LifeSubscription, Stateful {
 
     protected P mPresenter;
 
@@ -40,14 +40,13 @@ public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fra
 
 
     private Unbinder bind;
-    public String userid;
+
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(getLayoutId(), container, false);
-        userid = SPUtils.getInstance("module_login_data").getString("userid");
         bind = ButterKnife.bind(NoLoadingBaseFragment.this, view);
         loadBaseData();
         initView();
@@ -112,14 +111,10 @@ public abstract class NoLoadingBaseFragment<P extends BasePresenter> extends Fra
         if (!mIsVisible || !isPrepared || !isFirst) {
             return;
         }
-        loadData();
+
     }
 
-    /**
-     * 1
-     * 根据网络获取的数据返回状态，每一个子类的获取网络返回的都不一样，所以要交给子类去完成
-     */
-    protected abstract void loadData();
+
 
     /**
      * 2
