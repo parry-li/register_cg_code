@@ -1,5 +1,6 @@
 package com.tdr.registration.ui.activity;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,24 +13,19 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
 import com.parry.utils.code.SPUtils;
+import com.tbruyelle.rxpermissions2.RxPermissions;
 import com.tdr.registration.R;
 import com.tdr.registration.bean.CityConfigureBean;
-import com.tdr.registration.bean.CuBean;
 import com.tdr.registration.bean.LoginBean;
 import com.tdr.registration.constants.BaseConstants;
-import com.tdr.registration.service.impl.CircleNearbyPresenterImpl;
 import com.tdr.registration.service.impl.LoginImpl;
-import com.tdr.registration.service.presenter.CircleNearbyPresenter;
 import com.tdr.registration.service.presenter.LoginPresenter;
 import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
 import com.tdr.registration.ui.activity.home.HomeActivity;
 import com.tdr.registration.utils.ActivityUtil;
 import com.tdr.registration.utils.ToastUtil;
-import com.tdr.registration.view.CustomProgressDialog;
 
-import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.List;
@@ -37,8 +33,7 @@ import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.OnClick;
-import okhttp3.MediaType;
-import okhttp3.RequestBody;
+
 
 public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements LoginPresenter.View {
 
@@ -61,7 +56,7 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     private static final int CITY_PICK = 1000;
     private int systemId;
     private LoginBean loginData;
-
+    private RxPermissions rxPermissions;
 
     @Override
     protected void initTitle() {
@@ -70,9 +65,18 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         if (systemId != -100) {
             cityName.setText(cityNameStr);
         }
-
-
+//        rxPermissions = new RxPermissions(this);
+////        rxPermissions
+//                .request(Manifest.permission.CAMERA)
+//                .subscribe(granted -> {
+//                    if (granted) { // Always true pre-M
+//                        // I can control the camera now
+//                    } else {
+//                        // Oups permission denied
+//                    }
+//                });
     }
+
 
 
     @Override
@@ -209,6 +213,11 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
             ActivityUtil.goActivityAndFinish(LoginActivity.this, HomeActivity.class);
         }
         return R.layout.activity_login;
+    }
+
+    @Override
+    protected void submitRequestData() {
+
     }
 
 

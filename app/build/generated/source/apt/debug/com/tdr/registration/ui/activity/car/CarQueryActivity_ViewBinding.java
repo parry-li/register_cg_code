@@ -45,6 +45,7 @@ public class CarQueryActivity_ViewBinding implements Unbinder {
         target.onViewClicked();
       }
     });
+    target.lineView = Utils.findRequiredView(source, R.id.line_view, "field 'lineView'");
   }
 
   @Override
@@ -61,6 +62,7 @@ public class CarQueryActivity_ViewBinding implements Unbinder {
     target.plateNumber = null;
     target.carId = null;
     target.buttonConfirm = null;
+    target.lineView = null;
 
     view2131230784.setOnClickListener(null);
     view2131230784 = null;

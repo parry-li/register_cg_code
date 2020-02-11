@@ -4,6 +4,7 @@ import com.tdr.registration.bean.CarCheckBean;
 import com.tdr.registration.bean.CityBean;
 import com.tdr.registration.bean.CityConfigureBean;
 import com.tdr.registration.bean.CodeTableBean;
+import com.tdr.registration.bean.EditInfoBean;
 import com.tdr.registration.bean.InsuranceBean;
 import com.tdr.registration.bean.LoginBean;
 import com.tdr.registration.bean.PhotoBean;
@@ -60,6 +61,9 @@ public interface BaseService {
 
     @POST()
     Observable<DdcResult<List<InsuranceBean>>> getInsurance(@Url String url, @Body RequestBody route);
+
+    @POST()
+    Observable<DdcResult<EditInfoBean>> getEditInfo(@Url String url, @Body RequestBody route);
 }
 
 

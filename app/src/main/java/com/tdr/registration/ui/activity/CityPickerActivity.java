@@ -63,6 +63,11 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
         return R.layout.cp_activity_city_list;
     }
 
+    @Override
+    protected void submitRequestData() {
+
+    }
+
 
     @Override
     protected void initData(Bundle savedInstanceState) {

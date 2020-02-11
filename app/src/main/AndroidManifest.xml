@@ -116,7 +116,7 @@
         <activity android:name="com.tdr.registration.ui.activity.car.CarTransferActivity" />
         <activity android:name="com.tdr.registration.ui.activity.CodeTableActivity" />
         <activity android:name="com.tdr.registration.ui.activity.car.CarScrapActivity" />
-        <activity android:name="com.tdr.registration.ui.activity.car.CarInsuranceActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.insurance.InsuranceActivity" />
         <activity android:name="com.tdr.registration.ui.activity.car.ChangeRegisterActivity" />
         <!--<activity-->
             <!--android:name="com.tdr.chongwu.ui.map.TencentMapActivity"-->

@@ -28,11 +28,11 @@ public class InsuranceAdapter extends BaseQuickAdapter<InsuranceBean, BaseViewHo
 
     private Context context;
 
-    //   private RecyclerView recycleView;
-    public InsuranceAdapter(Context context, List<InsuranceBean> data) {
+       private RecyclerView recycleView;
+    public InsuranceAdapter(Context context, List<InsuranceBean> data,RecyclerView recycleView) {
         super(R.layout.item_insurance, data);
         this.context = context;
-//        this.recycleView = recycleView;
+        this.recycleView = recycleView;
 
     }
 
@@ -61,17 +61,19 @@ public class InsuranceAdapter extends BaseQuickAdapter<InsuranceBean, BaseViewHo
                     }
                 }
 
-                notifyDataSetChanged();
+                notifyChange();
 
             }
         });
         insuranceCb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                changTypeAdapter.initCheckBox();
-                int mSize = getData().get(helper.getAdapterPosition()).getPackages().size();
-                for (int i = 0; i < mSize; i++) {
-                    getData().get(helper.getAdapterPosition()).getPackages().get(i).setCheck(false);
+                if(!b){
+                    changTypeAdapter.initCheckBox();
+                    int mSize = getData().get(helper.getAdapterPosition()).getPackages().size();
+                    for (int i = 0; i < mSize; i++) {
+                        getData().get(helper.getAdapterPosition()).getPackages().get(i).setCheck(false);
+                    }
                 }
 
             }
@@ -104,6 +106,18 @@ public class InsuranceAdapter extends BaseQuickAdapter<InsuranceBean, BaseViewHo
         }
     }
 
+    private void notifyChange(){
+        if (recycleView.isComputingLayout()) {
+            recycleView.post(new Runnable() {
+                @Override
+                public void run() {
+                    notifyDataSetChanged();
+                }
+            });
+        } else {
+            notifyDataSetChanged();
+        }
+    }
 
     OnItemClickListener onItemClickListener;
 

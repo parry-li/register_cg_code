@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.tdr.registration.R;
@@ -42,10 +43,11 @@ public class CustomWindowDialog {
                 .inflate(R.layout.item_custom_window, null);
         dialog.setContentView(convertView);
 
-        TextView dialogContent = (TextView) convertView.findViewById(R.id.dialog_me_phone_detail_content);
-        TextView dialogAffirm = (TextView) convertView.findViewById(R.id.dialog_me_phone_detail_affirm);
-        TextView dialogCancel = (TextView) convertView.findViewById(R.id.dialog_me_phone_detail_cancel);
-        TextView dialogTitle = (TextView) convertView.findViewById(R.id.dialog_me_phone_detail_title);
+        TextView dialogContent = (TextView) convertView.findViewById(R.id.dialog_content);
+        TextView dialogAffirm = (TextView) convertView.findViewById(R.id.dialog_affirm);
+        TextView dialogCancel = (TextView) convertView.findViewById(R.id.dialog_cancel);
+        TextView dialogTitle = (TextView) convertView.findViewById(R.id.dialog_title);
+        View bottomV = (View) convertView.findViewById(R.id.bottom_v);
 
 
 
@@ -55,12 +57,14 @@ public class CustomWindowDialog {
 
         if (isHideCancel) {
             dialogCancel.setVisibility(View.GONE);
+            bottomV.setVisibility(View.GONE);
         } else {
             dialogCancel.setVisibility(View.VISIBLE);
         }
 
         if (isHideAffirm) {
             dialogAffirm.setVisibility(View.GONE);
+            bottomV.setVisibility(View.GONE);
         } else {
             dialogAffirm.setVisibility(View.VISIBLE);
         }

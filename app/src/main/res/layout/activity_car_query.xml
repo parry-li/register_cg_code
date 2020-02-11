@@ -12,23 +12,31 @@
         android:id="@+id/plate_number"
         style="@style/module_edit"
         android:layout_height="@dimen/dp_55"
+        android:layout_marginLeft="@dimen/dp_25"
         android:hint="请输入车牌号" />
 
-    <View style="@style/module_liner_horizontal" />
+    <View style="@style/module_liner_horizontal"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"/>
 
     <EditText
         android:id="@+id/car_id"
         style="@style/module_edit"
+        android:layout_marginLeft="@dimen/dp_25"
         android:layout_height="@dimen/dp_55"
         android:hint="请输入证件号码" />
 
-    <View style="@style/module_liner_horizontal" />
+    <View
+        android:id="@+id/line_view"
+        style="@style/module_liner_horizontal"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"/>
 
     <TextView
         android:id="@+id/button_confirm"
         style="@style/button_select"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginTop="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_32"
         android:layout_marginRight="@dimen/dp_20"
         android:text="查询" />
 

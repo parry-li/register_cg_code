@@ -107,6 +107,11 @@ public class CarScrapActivity extends LoadingBaseActivity<BaseRequestImpl> imple
         return R.layout.activity_car_scrap;
     }
 
+    @Override
+    protected void submitRequestData() {
+        mPresenter.put(UrlConstants.electriccarsScrap_add, getSubmitBoby());
+    }
+
     @OnClick({R.id.scrap_time, R.id.scrap_button})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -130,14 +135,16 @@ public class CarScrapActivity extends LoadingBaseActivity<BaseRequestImpl> imple
             ToastUtil.showWX("请选择时间");
             return;
         }
+
         String reason = scrapReason.getText().toString().trim();
-        Map<String, Object> map = new HashMap<>();
-        map.put("scrapName", name);
-        map.put("plateNumber", checkBean.getPlateNumber());
-        map.put("cardId", checkBean.getCardId());
-        map.put("scrapTime", mTime);
-        map.put("scrapReason", reason);
-        mPresenter.put(UrlConstants.electriccarsScrap_add, getRequestBody(map));
+        Map<String, Object> requestMap = new HashMap<>();
+        requestMap.put("scrapName", name);
+        requestMap.put("plateNumber", checkBean.getPlateNumber());
+        requestMap.put("cardId", checkBean.getCardId());
+        requestMap.put("scrapTime", mTime);
+        requestMap.put("scrapReason", reason);
+        showSubmitRequestDialog(requestMap);
+
     }
 
     @Override

@@ -366,6 +366,11 @@ public class WebViewActivity extends NoLoadingBaseActivity implements IWebPageVi
     }
 
     @Override
+    protected void submitRequestData() {
+
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
         webView.onResume();

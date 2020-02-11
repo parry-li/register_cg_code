@@ -6,8 +6,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.google.gson.Gson;
-import com.parry.utils.code.SPUtils;
 import com.tdr.registration.R;
 import com.tdr.registration.adapter.HomeAdapter;
 import com.tdr.registration.bean.ItemModel;
@@ -16,14 +14,12 @@ import com.tdr.registration.bean.VehicleConfigBean;
 import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.ui.activity.LoginActivity;
 import com.tdr.registration.ui.activity.base.BaseActivity;
-import com.tdr.registration.ui.activity.car.CarInsuranceActivity;
+import com.tdr.registration.ui.activity.insurance.InsuranceActivity;
 import com.tdr.registration.ui.activity.car.CarQueryActivity;
-import com.tdr.registration.ui.activity.car.CarTransferActivity;
 import com.tdr.registration.ui.activity.car.RegisterMainActivity;
 import com.tdr.registration.ui.fragment.base.NoCacheBaseFragment;
 import com.tdr.registration.utils.ActivityUtil;
 import com.tdr.registration.utils.ConfigUtil;
-import com.tdr.registration.utils.ToastUtil;
 import com.tdr.registration.view.CustomOptionsDialog;
 
 import java.util.ArrayList;
@@ -49,20 +45,13 @@ public class HomeFragment extends NoCacheBaseFragment {
 
     private int[] funImgs = {
             R.mipmap.home_clbf, R.mipmap.home_cpbb,
-            R.mipmap.home_clgh, R.mipmap.home_clbk,
-            R.mipmap.home_clfh, R.mipmap.homg_fwyq,
-            R.mipmap.home_clydj, R.mipmap.home_tj,
-            R.mipmap.home_ydkcx, R.mipmap.home_ydjtj,
-            R.mipmap.home_xdcba, R.mipmap.home_xdccx,
-            R.mipmap.home_clch};
+            R.mipmap.home_clgh,
+            R.mipmap.homg_fwyq,
+            R.mipmap.home_clydj};
     private String[] funTitles = {
             "车辆报废", "车牌补办",
-            "车辆过户", "车辆布控",
-            "车辆发还", "服务延期",
-            "车辆预登记", "备案统计",
-            "预登记查询", "预登记统计",
-            "蓄电池备案", "蓄电池查询",
-            "车辆查询"
+            "车辆过户", "服务延期",
+            "服务购买"
     };
     private CustomOptionsDialog optionsDialog;
 
@@ -101,6 +90,8 @@ public class HomeFragment extends NoCacheBaseFragment {
                 if (BaseConstants.funJurisdiction[1].equals(rolePower)/*车牌补办*/
                         || rolePower.equals(BaseConstants.funJurisdiction[2])/*车辆过户*/
                         || rolePower.equals(BaseConstants.funJurisdiction[0])/*车辆报废*/
+                        || rolePower.equals(BaseConstants.funJurisdiction[3])/*服务延期*/
+                        || rolePower.equals(BaseConstants.funJurisdiction[4])/*服务购买*/
                         ) {
                     ActivityUtil.goActivityWithBundle(HomeFragment.this.getActivity(), CarQueryActivity.class, bundle);
 
@@ -114,6 +105,7 @@ public class HomeFragment extends NoCacheBaseFragment {
 
     @OnClick({R.id.home_city_ll, R.id.home_register_ll, R.id.home_bxbg_ll, R.id.home_xxbg_ll, R.id.home_grtj_ll})
     public void onViewClicked(View view) {
+        Bundle bundle = new Bundle();
         switch (view.getId()) {
             case R.id.home_city_ll:
                 BaseActivity.activity.clearDataForLoginOut();
@@ -123,12 +115,14 @@ public class HomeFragment extends NoCacheBaseFragment {
 
                 optionsDialog.showDialog();
                 break;
-            case R.id.home_bxbg_ll:
-                ActivityUtil.goActivity(HomeFragment.this.getActivity(), CarInsuranceActivity.class);
+            case R.id.home_bxbg_ll://服务变更
+                 bundle = new Bundle();
+                bundle.putString("rolePower", "insurance_change");
+                ActivityUtil.goActivity(HomeFragment.this.getActivity(), CarQueryActivity.class, bundle);
                 break;
             case R.id.home_xxbg_ll://信息变更
-                Bundle bundle = new Bundle();
-                bundle.putString("rolePower", "changeRegister");
+
+                bundle.putString("rolePower", "change_register");
                 ActivityUtil.goActivity(HomeFragment.this.getActivity(), CarQueryActivity.class, bundle);
                 break;
             case R.id.home_grtj_ll:
@@ -171,6 +165,11 @@ public class HomeFragment extends NoCacheBaseFragment {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+    }
+
+    @Override
+    protected void submitRequestData() {
 
     }
 }

@@ -194,6 +194,12 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
         return R.layout.activity_car_transfer;
     }
 
+    @Override
+    protected void submitRequestData() {
+        zProgressHUD.show();
+        mPresenter.carCTransfer(getSubmitBoby());
+    }
+
     @OnClick({R.id.transfer_card_type, R.id.transfer_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -265,9 +271,9 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
                 photoListBean.setIndex(bean.getPhotoIndex());
                 photoListBean.setPhoto(bean.getPhotoId());
                 listBeans.add(photoListBean);
-            }else {
-                if(bean.getDrawable()!=null){
-                    ToastUtil.showWX(bean.getPhotoName()+"正在上传");
+            } else {
+                if (bean.getDrawable() != null) {
+                    ToastUtil.showWX(bean.getPhotoName() + "正在上传");
                     return;
                 }
             }
@@ -277,8 +283,8 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
             map.put("photoArray", listBeans);
         }
 
-        zProgressHUD.show();
-        mPresenter.carCTransfer(getRequestBody(map));
+        showSubmitRequestDialog(map);
+
     }
 
     @Override

@@ -24,21 +24,15 @@ public class BaseConstants {
             "1", //车辆报废0
             "2",//车牌补办1
             "3", //车辆过户2
-            "4",//车辆布控3
-            "5",//车辆发还4
-            "6",//服务延期5
-            "7",//车辆预登记6
-            "8",//备案统计7
-            "9", //预登记查询8
-            "10",//预登记统计9
-            "11",//蓄电池备案10
-            "12",//蓄电池查询11
-            "13"//车辆查询12
+            "6",//服务延期3
+            "7"//服务购买4
+
     };
 
 
     public static final String token = "token";
     public static final String data = "register_data";
+    public static final String rolePower = "role_power";
     public static final String BillConfig = "BillConfig";
     public static final String MapConfig = "MapConfig";
     public static final String VehicleConfig = "VehicleConfig";
@@ -66,7 +60,6 @@ public class BaseConstants {
     public static final String register_time = "register_time";
     public static final String register_frame = "register_frame";
     public static final String register_electrical = "register_electrical";
-
 
 
 }

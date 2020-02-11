@@ -70,9 +70,9 @@ public class NoCallback<T> extends Callback<T>{
             } else if (e instanceof ApiException) {
                 onFailFw(e.getMessage());
             } else {
-                onFail("网络请求异常");
+                onFailFw(e.getMessage());
             }
-            LogUtil.e("retrofit2_Callback_onError=     " + e.toString());
+            LogUtil.e("retrofit2_Callback_onError=     " + e.getMessage());
 
             return;
         } catch (Exception exception) {

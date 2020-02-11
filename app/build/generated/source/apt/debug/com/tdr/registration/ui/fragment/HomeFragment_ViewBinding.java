@@ -16,15 +16,15 @@ import java.lang.Override;
 public class HomeFragment_ViewBinding implements Unbinder {
   private HomeFragment target;
 
-  private View view2131230912;
-
-  private View view2131230914;
+  private View view2131230909;
 
   private View view2131230911;
 
-  private View view2131230916;
+  private View view2131230908;
 
   private View view2131230913;
+
+  private View view2131230910;
 
   @UiThread
   public HomeFragment_ViewBinding(final HomeFragment target, View source) {
@@ -33,7 +33,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.home_city_ll, "field 'homeCityLl' and method 'onViewClicked'");
     target.homeCityLl = Utils.castView(view, R.id.home_city_ll, "field 'homeCityLl'", LinearLayout.class);
-    view2131230912 = view;
+    view2131230909 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.home_register_ll, "field 'homeRegisterLl' and method 'onViewClicked'");
     target.homeRegisterLl = Utils.castView(view, R.id.home_register_ll, "field 'homeRegisterLl'", LinearLayout.class);
-    view2131230914 = view;
+    view2131230911 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,7 +51,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.home_bxbg_ll, "field 'homeBxbgLl' and method 'onViewClicked'");
     target.homeBxbgLl = Utils.castView(view, R.id.home_bxbg_ll, "field 'homeBxbgLl'", LinearLayout.class);
-    view2131230911 = view;
+    view2131230908 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -60,7 +60,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.home_xxbg_ll, "field 'homeXxbgLl' and method 'onViewClicked'");
     target.homeXxbgLl = Utils.castView(view, R.id.home_xxbg_ll, "field 'homeXxbgLl'", LinearLayout.class);
-    view2131230916 = view;
+    view2131230913 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -69,7 +69,7 @@ public class HomeFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.home_grtj_ll, "field 'homeGrtjLl' and method 'onViewClicked'");
     target.homeGrtjLl = Utils.castView(view, R.id.home_grtj_ll, "field 'homeGrtjLl'", LinearLayout.class);
-    view2131230913 = view;
+    view2131230910 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -93,15 +93,15 @@ public class HomeFragment_ViewBinding implements Unbinder {
     target.homeGrtjLl = null;
     target.homeRv = null;
 
-    view2131230912.setOnClickListener(null);
-    view2131230912 = null;
-    view2131230914.setOnClickListener(null);
-    view2131230914 = null;
+    view2131230909.setOnClickListener(null);
+    view2131230909 = null;
     view2131230911.setOnClickListener(null);
     view2131230911 = null;
-    view2131230916.setOnClickListener(null);
-    view2131230916 = null;
+    view2131230908.setOnClickListener(null);
+    view2131230908 = null;
     view2131230913.setOnClickListener(null);
     view2131230913 = null;
+    view2131230910.setOnClickListener(null);
+    view2131230910 = null;
   }
 }

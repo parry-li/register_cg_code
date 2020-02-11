@@ -248,8 +248,8 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
             ownerInfoMap.put("remark", registerBean.getPeopleRemark());
             map.put("ownerInfo", ownerInfoMap);
 
-            /*提交接口*/
-            mPresenter.change(getRequestBody(map));
+            showSubmitRequestDialog(map);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -307,5 +307,11 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
     @Override
     public void loadingFail(String msg) {
 
+    }
+
+    @Override
+    protected void submitRequestData() {
+        /*提交接口*/
+        mPresenter.change(getSubmitBoby());
     }
 }

@@ -41,10 +41,18 @@ public class UrlConstants {
     public static final String configure_getInsuranceConfigs = main_host_service + "api/ddc-insurance/insurance/configure/getInsuranceConfigs";
     /*备案登记*/
     public static final String electriccars_registration = main_host_service + "api/ddc-electriccar/electriccars/registration";
-    /*备案登记*/
+    /*查询车辆*/
     public static final String electriccars_editInfo = main_host_service + "api/ddc-electriccar/electriccars/editInfo";
     /*信息变更*/
     public static final String electriccars_edit = main_host_service + "api/ddc-electriccar/electriccars/edit";
+    /*获取保险变更*/
+    public static final String policy_edit = main_host_service + "api/ddc-electriccar/policy/edit";
+    /*获取保险新保*/
+    public static final String policy_getNewInsuranceConfigs = main_host_service + "api/ddc-electriccar/policy/getNewInsuranceConfigs";
+    /*获取保险续保*/
+    public static final String policy_getRenewInsuranceConfigs = main_host_service + "api/ddc-electriccar/policy/getRenewInsuranceConfigs";
+    /*保险变更*/
+    public static final String policy_insured = main_host_service + "api/ddc-electriccar/policy/insured";
 
 
 }

@@ -43,28 +43,8 @@ public class InsuranceTypeAdapter extends BaseQuickAdapter<InsuranceBean.Package
         final int position = helper.getLayoutPosition();
         final ImageView checkBox = helper.getView(R.id.check_label);
         helper.setText(R.id.check_tv, item.getDeadline() + "年/" + item.getPrice() + "元");
-        // 设置checkbox状态
-
-//        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, final boolean b) {
-//
-//
-//                if (recycleView.isComputingLayout()) {
-//                    recycleView.post(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            setCheckBox(position, b);
-//                        }
-//                    });
-//                } else {
-//                    setCheckBox(position, b);
-//                }
-//
-//                onItemChangeClickListener.onItemChangeClickListener(position);
-//            }
-//        });
-        if (mapList.get(position).isCheck()) {
+        mapList.get(position).setCheck(item.isCheck());
+        if (item.isCheck()) {
             checkBox.setImageResource(R.drawable.chang_select);
         } else {
             checkBox.setImageResource(R.drawable.chang_unselect);
@@ -74,14 +54,14 @@ public class InsuranceTypeAdapter extends BaseQuickAdapter<InsuranceBean.Package
             @Override
             public void onClick(View view) {
                 setCheckBox(position);
-                onItemChangeClickListener.onItemChangeClickListener(position);
+
             }
         });
         helper.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setCheckBox(position);
-                onItemChangeClickListener.onItemChangeClickListener(position);
+
             }
         });
 
@@ -100,12 +80,17 @@ public class InsuranceTypeAdapter extends BaseQuickAdapter<InsuranceBean.Package
 
         for (int i = 0; i < mSize; i++) {
             if (position == i) {
-                mapList.get(i).setCheck(true);
+                if(mapList.get(i).isCheck()){
+                    mapList.get(i).setCheck(false);
+                }else {
+                    mapList.get(i).setCheck(true);
+                }
+
             } else {
                 mapList.get(i).setCheck(false);
             }
         }
-        notifyDataSetChanged();
+        onItemChangeClickListener.onItemChangeClickListener(position);
 
     }
     public void initCheckBox() {

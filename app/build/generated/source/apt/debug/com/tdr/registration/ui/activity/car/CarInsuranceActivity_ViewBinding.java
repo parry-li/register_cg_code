@@ -10,21 +10,23 @@ import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
 import com.tdr.registration.R;
+import com.tdr.registration.ui.activity.insurance.InsuranceActivity;
+
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
 public class CarInsuranceActivity_ViewBinding implements Unbinder {
-  private CarInsuranceActivity target;
+  private InsuranceActivity target;
 
   private View view2131230779;
 
   @UiThread
-  public CarInsuranceActivity_ViewBinding(CarInsuranceActivity target) {
+  public CarInsuranceActivity_ViewBinding(InsuranceActivity target) {
     this(target, target.getWindow().getDecorView());
   }
 
   @UiThread
-  public CarInsuranceActivity_ViewBinding(final CarInsuranceActivity target, View source) {
+  public CarInsuranceActivity_ViewBinding(final InsuranceActivity target, View source) {
     this.target = target;
 
     View view;
@@ -43,7 +45,7 @@ public class CarInsuranceActivity_ViewBinding implements Unbinder {
   @Override
   @CallSuper
   public void unbind() {
-    CarInsuranceActivity target = this.target;
+    InsuranceActivity target = this.target;
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 

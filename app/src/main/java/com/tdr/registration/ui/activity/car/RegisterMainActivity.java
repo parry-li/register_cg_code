@@ -57,5 +57,10 @@ public class RegisterMainActivity extends NoLoadingBaseActivity {
         return R.layout.activity_register_main;
     }
 
+    @Override
+    protected void submitRequestData() {
+
+    }
+
 
 }

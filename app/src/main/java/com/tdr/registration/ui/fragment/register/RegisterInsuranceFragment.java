@@ -75,6 +75,7 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
 
     private InsuranceAdapter insuranceAdapter;
     private int vehicleType;
+    private List<InsuranceBean> adapterList;
 
 
     @Override
@@ -119,7 +120,7 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
     private void initRv() {
         List<InsuranceBean> insuranceBeans = new ArrayList<>();
         insuranceRv.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        insuranceAdapter = new InsuranceAdapter(RegisterInsuranceFragment.this.getContext(), insuranceBeans);
+        insuranceAdapter = new InsuranceAdapter(RegisterInsuranceFragment.this.getContext(), insuranceBeans,insuranceRv);
         insuranceRv.setAdapter(insuranceAdapter);
 
     }
@@ -155,7 +156,7 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
 
     private void putData() {
         try {
-            List<InsuranceBean> adapterList = insuranceAdapter.getData();
+          adapterList = insuranceAdapter.getData();
 
             for (InsuranceBean insuranceBean : adapterList) {
                 if (insuranceBean.getIsChoose() == 1) {
@@ -168,101 +169,13 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
                     }
                     if (!isHaveCheck) {
                         ToastUtil.showWX("请选择" + insuranceBean.getName());
+                        return;
                     }
                 }
 
             }
-            RegisterPutBean registerBean = ((RegisterMainActivity) RegisterInsuranceFragment.this.getActivity()).registerPutBean;
-            int subsystemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
-            Map<String, Object> map = new HashMap<>();
-            map.put("subsystemId", subsystemId);
-            map.put("billType", insurance_bill);
+            showSubmitRequestDialog();
 
-            /*以下为baseInfo(基本信息)*/
-
-            Map<String, Object> baseInfoMap = new HashMap<>();
-            baseInfoMap.put("vehicleType", vehicleType);
-            baseInfoMap.put("vehicleBrand", registerBean.getRegisterBrandCode());
-            baseInfoMap.put("vehicleBrandName", registerBean.getRegisterBrand());
-            baseInfoMap.put("colorId", registerBean.getRegisterColor1Id());
-            baseInfoMap.put("colorName", registerBean.getRegisterColor1Name());
-            baseInfoMap.put("colorSecondId", registerBean.getRegisterColor2Id());
-            baseInfoMap.put("colorSecondName", registerBean.getRegisterColor2Name());
-            baseInfoMap.put("plateNumber", registerBean.getRegisterPlate());
-            baseInfoMap.put("plateType", "1");
-
-            map.put("baseInfo", baseInfoMap);
-
-            /*以下为labelInfo(标签信息)*/
-            Map<String, Object> labelInfoMap = new HashMap<>();
-            List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
-                    lableList = registerBean.getLableList();
-            List<LableListBean> lableListBeanList = new ArrayList<>();
-            for (VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean bean : lableList) {
-
-                LableListBean lableBean = new LableListBean();
-                String lablenumber = bean.getEditValue();
-                lableBean.setIndex(bean.getIndex());
-                lableBean.setLableType(lablenumber.substring(0, 4));
-                lableBean.setLableNumber(lablenumber);
-                lableListBeanList.add(lableBean);
-            }
-            labelInfoMap.put("lableList", lableListBeanList);
-            labelInfoMap.put("engineNumber", registerBean.getRegisterElectrical());
-            labelInfoMap.put("shelvesNumber", registerBean.getRegisterFrame());
-
-            map.put("labelInfo", labelInfoMap);
-            /*以下为buyInfo(车辆购买信息)*/
-            Map<String, Object> buyInfoMap = new HashMap<>();
-
-            buyInfoMap.put("buyDate", registerBean.getRegisterTime());
-            buyInfoMap.put("buyPrice", registerBean.getRegisterPrice());
-
-
-            List<PhotoConfigBean.PhotoTypeInfoListBean>
-                    photoList = registerBean.getPhotoList();
-
-            List<PhotoListBean> photoListBeans = new ArrayList<>();
-            for (PhotoConfigBean.PhotoTypeInfoListBean bean : photoList) {
-                PhotoListBean photoBean = new PhotoListBean();
-                photoBean.setIndex(bean.getPhotoIndex());
-                photoBean.setPhtotoType(bean.getPhotoType() + "");
-                photoBean.setPhoto(bean.getPhotoId());
-                photoListBeans.add(photoBean);
-            }
-
-            buyInfoMap.put("photoList", photoListBeans);
-            map.put("buyInfo", buyInfoMap);
-
-            /*以下为ownerInfo(车主信息)*/
-            Map<String, Object> ownerInfoMap = new HashMap<>();
-            ownerInfoMap.put("ownerName", registerBean.getPeopleName());
-            ownerInfoMap.put("cardType", registerBean.getPeopleCardType());
-            ownerInfoMap.put("cardId", registerBean.getPeopleCardNum());
-            ownerInfoMap.put("phone1", registerBean.getPeoplePhone1());
-            ownerInfoMap.put("phone2", registerBean.getPeoplePhone2());
-            ownerInfoMap.put("residentAddress", registerBean.getPeopleAddr());
-            ownerInfoMap.put("remark", registerBean.getPeopleRemark());
-            map.put("ownerInfo", ownerInfoMap);
-
-
-            /*以下为insuranceInfo(保险信息)*/
-
-            Map<String, Object> packagesInfo = new HashMap<>();
-            List<InsuranceInfoBean> infoBeanList = new ArrayList<>();
-            for (InsuranceBean bean : adapterList) {
-                for (InsuranceBean.PackagesBean packagesBean : bean.getPackages()) {
-                    if (packagesBean.isCheck()) {
-                        infoBeanList.add(new InsuranceInfoBean(bean.getId(), packagesBean.getId()));
-
-                    }
-                }
-            }
-            packagesInfo.put("packages",infoBeanList);
-            map.put("insuranceInfo", packagesInfo);
-
-            /*提交接口*/
-            mPresenter.register(getRequestBody(map));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -304,13 +217,109 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
     @Override
     public void loadingSuccessForData(DdcResult mData) {
 
+        showCustomWindowDialog("服务提示",mData.getMsg(),true);
     }
 
     @Override
     public void loadingFail(String msg) {
+        showCustomWindowDialog("服务提示",msg,false,true);
         setState(BaseConstants.STATE_SUCCESS);
-
+        zProgressHUD.dismiss();
     }
 
 
+    @Override
+    protected void submitRequestData() {
+        RegisterPutBean registerBean = ((RegisterMainActivity) RegisterInsuranceFragment.this.getActivity()).registerPutBean;
+        int subsystemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
+        Map<String, Object> map = new HashMap<>();
+        map.put("subsystemId", subsystemId);
+        map.put("billType", insurance_bill);
+
+        /*以下为baseInfo(基本信息)*/
+
+        Map<String, Object> baseInfoMap = new HashMap<>();
+        baseInfoMap.put("vehicleType", vehicleType);
+        baseInfoMap.put("vehicleBrand", registerBean.getRegisterBrandCode());
+        baseInfoMap.put("vehicleBrandName", registerBean.getRegisterBrand());
+        baseInfoMap.put("colorId", registerBean.getRegisterColor1Id());
+        baseInfoMap.put("colorName", registerBean.getRegisterColor1Name());
+        baseInfoMap.put("colorSecondId", registerBean.getRegisterColor2Id());
+        baseInfoMap.put("colorSecondName", registerBean.getRegisterColor2Name());
+        baseInfoMap.put("plateNumber", registerBean.getRegisterPlate());
+        baseInfoMap.put("plateType", "1");
+
+        map.put("baseInfo", baseInfoMap);
+
+        /*以下为labelInfo(标签信息)*/
+        Map<String, Object> labelInfoMap = new HashMap<>();
+        List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
+                lableList = registerBean.getLableList();
+        List<LableListBean> lableListBeanList = new ArrayList<>();
+        for (VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean bean : lableList) {
+
+            LableListBean lableBean = new LableListBean();
+            String lablenumber = bean.getEditValue();
+            lableBean.setIndex(bean.getIndex());
+            lableBean.setLableType(lablenumber.substring(0, 4));
+            lableBean.setLableNumber(lablenumber);
+            lableListBeanList.add(lableBean);
+        }
+        labelInfoMap.put("lableList", lableListBeanList);
+        labelInfoMap.put("engineNumber", registerBean.getRegisterElectrical());
+        labelInfoMap.put("shelvesNumber", registerBean.getRegisterFrame());
+
+        map.put("labelInfo", labelInfoMap);
+        /*以下为buyInfo(车辆购买信息)*/
+        Map<String, Object> buyInfoMap = new HashMap<>();
+
+        buyInfoMap.put("buyDate", registerBean.getRegisterTime());
+        buyInfoMap.put("buyPrice", registerBean.getRegisterPrice());
+
+
+        List<PhotoConfigBean.PhotoTypeInfoListBean>
+                photoList = registerBean.getPhotoList();
+
+        List<PhotoListBean> photoListBeans = new ArrayList<>();
+        for (PhotoConfigBean.PhotoTypeInfoListBean bean : photoList) {
+            PhotoListBean photoBean = new PhotoListBean();
+            photoBean.setIndex(bean.getPhotoIndex());
+            photoBean.setPhtotoType(bean.getPhotoType() + "");
+            photoBean.setPhoto(bean.getPhotoId());
+            photoListBeans.add(photoBean);
+        }
+
+        buyInfoMap.put("photoList", photoListBeans);
+        map.put("buyInfo", buyInfoMap);
+
+        /*以下为ownerInfo(车主信息)*/
+        Map<String, Object> ownerInfoMap = new HashMap<>();
+        ownerInfoMap.put("ownerName", registerBean.getPeopleName());
+        ownerInfoMap.put("cardType", registerBean.getPeopleCardType());
+        ownerInfoMap.put("cardId", registerBean.getPeopleCardNum());
+        ownerInfoMap.put("phone1", registerBean.getPeoplePhone1());
+        ownerInfoMap.put("phone2", registerBean.getPeoplePhone2());
+        ownerInfoMap.put("residentAddress", registerBean.getPeopleAddr());
+        ownerInfoMap.put("remark", registerBean.getPeopleRemark());
+        map.put("ownerInfo", ownerInfoMap);
+
+
+        /*以下为insuranceInfo(保险信息)*/
+
+        Map<String, Object> packagesInfo = new HashMap<>();
+        List<InsuranceInfoBean> infoBeanList = new ArrayList<>();
+        for (InsuranceBean bean : adapterList) {
+            for (InsuranceBean.PackagesBean packagesBean : bean.getPackages()) {
+                if (packagesBean.isCheck()) {
+                    infoBeanList.add(new InsuranceInfoBean(bean.getId(), packagesBean.getId()));
+
+                }
+            }
+        }
+        packagesInfo.put("packages",infoBeanList);
+        map.put("insuranceInfo", packagesInfo);
+        zProgressHUD.show();
+        /*提交接口*/
+        mPresenter.register(getRequestBody(map));
+    }
 }

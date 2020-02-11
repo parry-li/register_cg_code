@@ -528,6 +528,16 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     }
 
     @Override
+    public void changeFail(String msg) {
+
+    }
+
+    @Override
+    public void changeSuccess(String msg) {
+
+    }
+
+    @Override
     public void loadingSuccessForData(DdcResult mData) {
 
     }
@@ -539,4 +549,8 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     }
 
 
+    @Override
+    protected void submitRequestData() {
+
+    }
 }

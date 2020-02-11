@@ -6,20 +6,20 @@ public class EditInfoBean {
 
 
     /**
-     * id : 1
+     * id : 1579395071326
      * subsystemId : null
      * billType : null
-     * baseInfo : {"vehicleType":1,"vehicleBrand":"1","vehicleBrandName":"ces ","colorId":"1","colorName":"23432","colorSecondId":"2","colorSecondName":"cees","plateNumber":"12"}
-     * labelInfo : {"lableList":[{"index":1,"lableType":"8102","lableNumber":"81021234567890"},{"index":2,"lableType":"8102","lableNumber":"81021112223336"}],"engineNumber":"123","shelvesNumber":"123"}
-     * buyInfo : {"buyDate":"2020-01-16","buyPrice":null,"photoList":[{"index":1,"photoType":1,"photo":"photo address"},{"index":2,"photoType":2,"photo":"图片地址222222"},{"index":3,"photoType":3,"photo":"图片地址3"}]}
-     * ownerInfo : {"ownerName":"新车主姓名6","cardType":1,"cardName":"身份证","cardId":"370724199406024785","phone1":"新车主联系电话6","phone2":"新车主备用电话6","residentAddress":"新车主居住地址6","remark":null}
+     * baseInfo : {"vehicleType":1,"vehicleBrand":"11123","vehicleBrandName":null,"colorId":"3","colorName":null,"colorSecondId":"3","colorSecondName":null,"plateNumber":"1234"}
+     * labelInfo : {"lableList":[{"index":1,"lableType":"8001","lableNumber":"80010000150596"},{"index":2,"lableType":"8701","lableNumber":"87010000194584"}],"engineNumber":"123","shelvesNumber":"123"}
+     * buyInfo : {"buyDate":"2020-01-01","buyPrice":123,"photoList":[{"index":1,"photoType":1,"photo":"bcf89084042f337439d39d754f146939"},{"index":2,"photoType":2,"photo":"29690c1e3ddc6569b28df2a662072f5a"}]}
+     * ownerInfo : {"ownerName":"13","cardType":4,"cardName":null,"cardId":"123","phone1":"13212312312","phone2":"13212312312","residentAddress":"123123","remark":"12313"}
      * insuranceInfo : null
-     * createTime : 2020-01-10T14:43:52
-     * alterTime : 2020-01-10T15:00:16
-     * policyList : []
+     * createTime : 2020-01-19T08:51:14
+     * alterTime : null
+     * policyList : [{"policyNumber":null,"insuranceConfigId":5,"insurancePackageId":10,"insuranceType":"意外险","price":10,"deadLine":1,"insuranceBuyDate":"2020-01-19"}]
      */
 
-    private int id;
+    private long id;
     private Object subsystemId;
     private Object billType;
     private BaseInfoBean baseInfo;
@@ -28,14 +28,14 @@ public class EditInfoBean {
     private OwnerInfoBean ownerInfo;
     private Object insuranceInfo;
     private String createTime;
-    private String alterTime;
-    private List<?> policyList;
+    private Object alterTime;
+    private List<PolicyListBean> policyList;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -103,41 +103,41 @@ public class EditInfoBean {
         this.createTime = createTime;
     }
 
-    public String getAlterTime() {
+    public Object getAlterTime() {
         return alterTime;
     }
 
-    public void setAlterTime(String alterTime) {
+    public void setAlterTime(Object alterTime) {
         this.alterTime = alterTime;
     }
 
-    public List<?> getPolicyList() {
+    public List<PolicyListBean> getPolicyList() {
         return policyList;
     }
 
-    public void setPolicyList(List<?> policyList) {
+    public void setPolicyList(List<PolicyListBean> policyList) {
         this.policyList = policyList;
     }
 
     public static class BaseInfoBean {
         /**
          * vehicleType : 1
-         * vehicleBrand : 1
-         * vehicleBrandName : ces
-         * colorId : 1
-         * colorName : 23432
-         * colorSecondId : 2
-         * colorSecondName : cees
-         * plateNumber : 12
+         * vehicleBrand : 11123
+         * vehicleBrandName : null
+         * colorId : 3
+         * colorName : null
+         * colorSecondId : 3
+         * colorSecondName : null
+         * plateNumber : 1234
          */
 
         private int vehicleType;
         private String vehicleBrand;
         private String vehicleBrandName;
         private String colorId;
-        private String colorName;
+        private Object colorName;
         private String colorSecondId;
-        private String colorSecondName;
+        private Object colorSecondName;
         private String plateNumber;
 
         public int getVehicleType() {
@@ -172,11 +172,11 @@ public class EditInfoBean {
             this.colorId = colorId;
         }
 
-        public String getColorName() {
+        public Object getColorName() {
             return colorName;
         }
 
-        public void setColorName(String colorName) {
+        public void setColorName(Object colorName) {
             this.colorName = colorName;
         }
 
@@ -188,11 +188,11 @@ public class EditInfoBean {
             this.colorSecondId = colorSecondId;
         }
 
-        public String getColorSecondName() {
+        public Object getColorSecondName() {
             return colorSecondName;
         }
 
-        public void setColorSecondName(String colorSecondName) {
+        public void setColorSecondName(Object colorSecondName) {
             this.colorSecondName = colorSecondName;
         }
 
@@ -207,7 +207,7 @@ public class EditInfoBean {
 
     public static class LabelInfoBean {
         /**
-         * lableList : [{"index":1,"lableType":"8102","lableNumber":"81021234567890"},{"index":2,"lableType":"8102","lableNumber":"81021112223336"}]
+         * lableList : [{"index":1,"lableType":"8001","lableNumber":"80010000150596"},{"index":2,"lableType":"8701","lableNumber":"87010000194584"}]
          * engineNumber : 123
          * shelvesNumber : 123
          */
@@ -243,8 +243,8 @@ public class EditInfoBean {
         public static class LableListBean {
             /**
              * index : 1
-             * lableType : 8102
-             * lableNumber : 81021234567890
+             * lableType : 8001
+             * lableNumber : 80010000150596
              */
 
             private int index;
@@ -279,13 +279,13 @@ public class EditInfoBean {
 
     public static class BuyInfoBean {
         /**
-         * buyDate : 2020-01-16
-         * buyPrice : null
-         * photoList : [{"index":1,"photoType":1,"photo":"photo address"},{"index":2,"photoType":2,"photo":"图片地址222222"},{"index":3,"photoType":3,"photo":"图片地址3"}]
+         * buyDate : 2020-01-01
+         * buyPrice : 123.0
+         * photoList : [{"index":1,"photoType":1,"photo":"bcf89084042f337439d39d754f146939"},{"index":2,"photoType":2,"photo":"29690c1e3ddc6569b28df2a662072f5a"}]
          */
 
         private String buyDate;
-        private Object buyPrice;
+        private double buyPrice;
         private List<PhotoListBean> photoList;
 
         public String getBuyDate() {
@@ -296,11 +296,11 @@ public class EditInfoBean {
             this.buyDate = buyDate;
         }
 
-        public Object getBuyPrice() {
+        public double getBuyPrice() {
             return buyPrice;
         }
 
-        public void setBuyPrice(Object buyPrice) {
+        public void setBuyPrice(double buyPrice) {
             this.buyPrice = buyPrice;
         }
 
@@ -316,7 +316,7 @@ public class EditInfoBean {
             /**
              * index : 1
              * photoType : 1
-             * photo : photo address
+             * photo : bcf89084042f337439d39d754f146939
              */
 
             private int index;
@@ -351,24 +351,24 @@ public class EditInfoBean {
 
     public static class OwnerInfoBean {
         /**
-         * ownerName : 新车主姓名6
-         * cardType : 1
-         * cardName : 身份证
-         * cardId : 370724199406024785
-         * phone1 : 新车主联系电话6
-         * phone2 : 新车主备用电话6
-         * residentAddress : 新车主居住地址6
-         * remark : null
+         * ownerName : 13
+         * cardType : 4
+         * cardName : null
+         * cardId : 123
+         * phone1 : 13212312312
+         * phone2 : 13212312312
+         * residentAddress : 123123
+         * remark : 12313
          */
 
         private String ownerName;
         private int cardType;
-        private String cardName;
+        private Object cardName;
         private String cardId;
         private String phone1;
         private String phone2;
         private String residentAddress;
-        private Object remark;
+        private String remark;
 
         public String getOwnerName() {
             return ownerName;
@@ -386,11 +386,11 @@ public class EditInfoBean {
             this.cardType = cardType;
         }
 
-        public String getCardName() {
+        public Object getCardName() {
             return cardName;
         }
 
-        public void setCardName(String cardName) {
+        public void setCardName(Object cardName) {
             this.cardName = cardName;
         }
 
@@ -426,12 +426,88 @@ public class EditInfoBean {
             this.residentAddress = residentAddress;
         }
 
-        public Object getRemark() {
+        public String getRemark() {
             return remark;
         }
 
-        public void setRemark(Object remark) {
+        public void setRemark(String remark) {
             this.remark = remark;
+        }
+    }
+
+    public static class PolicyListBean {
+        /**
+         * policyNumber : null
+         * insuranceConfigId : 5
+         * insurancePackageId : 10
+         * insuranceType : 意外险
+         * price : 10.0
+         * deadLine : 1
+         * insuranceBuyDate : 2020-01-19
+         */
+
+        private Object policyNumber;
+        private int insuranceConfigId;
+        private int insurancePackageId;
+        private String insuranceType;
+        private double price;
+        private int deadLine;
+        private String insuranceBuyDate;
+
+        public Object getPolicyNumber() {
+            return policyNumber;
+        }
+
+        public void setPolicyNumber(Object policyNumber) {
+            this.policyNumber = policyNumber;
+        }
+
+        public int getInsuranceConfigId() {
+            return insuranceConfigId;
+        }
+
+        public void setInsuranceConfigId(int insuranceConfigId) {
+            this.insuranceConfigId = insuranceConfigId;
+        }
+
+        public int getInsurancePackageId() {
+            return insurancePackageId;
+        }
+
+        public void setInsurancePackageId(int insurancePackageId) {
+            this.insurancePackageId = insurancePackageId;
+        }
+
+        public String getInsuranceType() {
+            return insuranceType;
+        }
+
+        public void setInsuranceType(String insuranceType) {
+            this.insuranceType = insuranceType;
+        }
+
+        public double getPrice() {
+            return price;
+        }
+
+        public void setPrice(double price) {
+            this.price = price;
+        }
+
+        public int getDeadLine() {
+            return deadLine;
+        }
+
+        public void setDeadLine(int deadLine) {
+            this.deadLine = deadLine;
+        }
+
+        public String getInsuranceBuyDate() {
+            return insuranceBuyDate;
+        }
+
+        public void setInsuranceBuyDate(String insuranceBuyDate) {
+            this.insuranceBuyDate = insuranceBuyDate;
         }
     }
 }

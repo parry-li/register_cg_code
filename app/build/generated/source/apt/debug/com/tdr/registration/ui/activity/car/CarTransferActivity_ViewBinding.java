@@ -19,9 +19,9 @@ import java.lang.Override;
 public class CarTransferActivity_ViewBinding implements Unbinder {
   private CarTransferActivity target;
 
-  private View view2131231126;
-
   private View view2131231124;
+
+  private View view2131231122;
 
   @UiThread
   public CarTransferActivity_ViewBinding(CarTransferActivity target) {
@@ -46,7 +46,7 @@ public class CarTransferActivity_ViewBinding implements Unbinder {
     target.transferName = Utils.findRequiredViewAsType(source, R.id.transfer_name, "field 'transferName'", EditText.class);
     view = Utils.findRequiredView(source, R.id.transfer_card_type, "field 'transferCardType' and method 'onViewClicked'");
     target.transferCardType = Utils.castView(view, R.id.transfer_card_type, "field 'transferCardType'", TextView.class);
-    view2131231126 = view;
+    view2131231124 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class CarTransferActivity_ViewBinding implements Unbinder {
     target.transferReason = Utils.findRequiredViewAsType(source, R.id.transfer_reason, "field 'transferReason'", EditText.class);
     view = Utils.findRequiredView(source, R.id.transfer_bt, "field 'transferBt' and method 'onViewClicked'");
     target.transferBt = Utils.castView(view, R.id.transfer_bt, "field 'transferBt'", TextView.class);
-    view2131231124 = view;
+    view2131231122 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -97,9 +97,9 @@ public class CarTransferActivity_ViewBinding implements Unbinder {
     target.transferReason = null;
     target.transferBt = null;
 
-    view2131231126.setOnClickListener(null);
-    view2131231126 = null;
     view2131231124.setOnClickListener(null);
     view2131231124 = null;
+    view2131231122.setOnClickListener(null);
+    view2131231122 = null;
   }
 }

@@ -64,6 +64,11 @@ public class QRCodeScanActivity extends NoLoadingBaseActivity implements View.On
     }
 
     @Override
+    protected void submitRequestData() {
+
+    }
+
+    @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 

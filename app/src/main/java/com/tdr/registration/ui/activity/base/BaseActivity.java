@@ -60,6 +60,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
     public String userid;
     public ZProgressHUD zProgressHUD;
     public CustomWindowDialog customBaseDialog;
+    private CustomWindowDialog submitRequestDialog;
 
     @Override
     protected void onResume() {
@@ -75,6 +76,8 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
 
     protected abstract int getLayoutId();
 
+    protected abstract void submitRequestData();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,6 +91,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
 
         zProgressHUD = new ZProgressHUD(this);
         zProgressHUD.setMessage("加载中");
+        /*请求结果的提示*/
         customBaseDialog = new CustomWindowDialog(this);
         customBaseDialog.setOnCustomDialogClickListener(new CustomWindowDialog.OnItemClickListener() {
             @Override
@@ -95,7 +99,24 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
                 finish();
             }
         });
+        /*提交数据的提示*/
+        submitRequestDialog = new CustomWindowDialog(this);
+        submitRequestDialog.setOnCustomDialogClickListener(new CustomWindowDialog.OnItemClickListener() {
+            @Override
+            public void onCustomDialogClickListener() {
+
+                submitRequestData();
+            }
+        });
     }
+
+
+
+    public RequestBody getSubmitBoby() {
+        return submitBody;
+    }
+
+    private RequestBody submitBody;
 
     public RequestBody getRequestBody(Map<String, Object> stringMap) {
         String strEntity = new Gson().toJson(stringMap);
@@ -103,22 +124,32 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
         return body;
     }
 
-    /**退出登录*/
+    /**
+     * 退出登录
+     */
     public void clearDataForLoginOut() {
-        SPUtils.getInstance().put(BaseConstants.BillConfig,"");
-        SPUtils.getInstance().put(BaseConstants.MapConfig,"");
-        SPUtils.getInstance().put(BaseConstants.VehicleConfig,"");
-        SPUtils.getInstance().put(BaseConstants.PhotoConfig,"");
-        SPUtils.getInstance().put(BaseConstants.NbLabelConfig,"");
-        SPUtils.getInstance().put(BaseConstants.RegisterConfig,"");
-        SPUtils.getInstance().put(BaseConstants.ManagerConfig,"");
-        SPUtils.getInstance().put(BaseConstants.AuditConfig,"");
-        SPUtils.getInstance().put(BaseConstants.token,"");
+        SPUtils.getInstance().put(BaseConstants.BillConfig, "");
+        SPUtils.getInstance().put(BaseConstants.MapConfig, "");
+        SPUtils.getInstance().put(BaseConstants.VehicleConfig, "");
+        SPUtils.getInstance().put(BaseConstants.PhotoConfig, "");
+        SPUtils.getInstance().put(BaseConstants.NbLabelConfig, "");
+        SPUtils.getInstance().put(BaseConstants.RegisterConfig, "");
+        SPUtils.getInstance().put(BaseConstants.ManagerConfig, "");
+        SPUtils.getInstance().put(BaseConstants.AuditConfig, "");
+        SPUtils.getInstance().put(BaseConstants.token, "");
 
     }
 
 
+    public void showSubmitRequestDialog(Map<String, Object> stringMap) {
+        submitBody = getRequestBody(stringMap);
+        showSubmitRequestDialog();
 
+    }
+
+    public void showSubmitRequestDialog() {
+        submitRequestDialog.showCustomWindowDialog("温馨提示", "确定提交数据", false);
+    }
 
     public void showCustomWindowDialog() {
         showCustomWindowDialog("温馨提示", "确定退出页面？", false);

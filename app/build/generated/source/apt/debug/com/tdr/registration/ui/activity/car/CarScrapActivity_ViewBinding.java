@@ -18,9 +18,9 @@ import java.lang.Override;
 public class CarScrapActivity_ViewBinding implements Unbinder {
   private CarScrapActivity target;
 
-  private View view2131231050;
+  private View view2131231048;
 
-  private View view2131231047;
+  private View view2131231045;
 
   @UiThread
   public CarScrapActivity_ViewBinding(CarScrapActivity target) {
@@ -45,7 +45,7 @@ public class CarScrapActivity_ViewBinding implements Unbinder {
     target.scrapName = Utils.findRequiredViewAsType(source, R.id.scrap_name, "field 'scrapName'", EditText.class);
     view = Utils.findRequiredView(source, R.id.scrap_time, "field 'scrapTime' and method 'onViewClicked'");
     target.scrapTime = Utils.castView(view, R.id.scrap_time, "field 'scrapTime'", TextView.class);
-    view2131231050 = view;
+    view2131231048 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +55,7 @@ public class CarScrapActivity_ViewBinding implements Unbinder {
     target.scrapReason = Utils.findRequiredViewAsType(source, R.id.scrap_reason, "field 'scrapReason'", EditText.class);
     view = Utils.findRequiredView(source, R.id.scrap_button, "field 'scrapButton' and method 'onViewClicked'");
     target.scrapButton = Utils.castView(view, R.id.scrap_button, "field 'scrapButton'", TextView.class);
-    view2131231047 = view;
+    view2131231045 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -86,9 +86,9 @@ public class CarScrapActivity_ViewBinding implements Unbinder {
     target.scrapReason = null;
     target.scrapButton = null;
 
-    view2131231050.setOnClickListener(null);
-    view2131231050 = null;
-    view2131231047.setOnClickListener(null);
-    view2131231047 = null;
+    view2131231048.setOnClickListener(null);
+    view2131231048 = null;
+    view2131231045.setOnClickListener(null);
+    view2131231045 = null;
   }
 }

@@ -2,6 +2,7 @@ package com.tdr.registration.ui.activity.car;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -9,24 +10,22 @@ import android.widget.TextView;
 
 import com.tdr.registration.R;
 import com.tdr.registration.bean.CarCheckBean;
-import com.tdr.registration.bean.CityBean;
+import com.tdr.registration.bean.EditInfoBean;
 import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.service.impl.car.CarQueryImpl;
 import com.tdr.registration.service.presenter.CarQueryPresenter;
 import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
-import com.tdr.registration.ui.activity.base.NoLoadingBaseActivity;
+import com.tdr.registration.ui.activity.insurance.InsuranceActivity;
 import com.tdr.registration.utils.ActivityUtil;
 import com.tdr.registration.utils.ToastUtil;
 import com.tdr.registration.view.CarQueryDialog;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import okhttp3.RequestBody;
 
 public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implements CarQueryPresenter.View {
     @BindView(R.id.com_title_back)
@@ -43,6 +42,8 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     EditText carId;
     @BindView(R.id.button_confirm)
     TextView buttonConfirm;
+    @BindView(R.id.line_view)
+    View lineView;
     private String rolePower = "";
     private CarQueryDialog queryDialog;
     private CarCheckBean carCheckBean;
@@ -57,7 +58,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
 
     @Override
     protected void loadData() {
-
+        carCheckBean = new CarCheckBean();
     }
 
     @Override
@@ -79,8 +80,20 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
                 textTitle.setText("车辆过户");
             } else if (rolePower.equals(BaseConstants.funJurisdiction[0])) {//报废
                 textTitle.setText("车辆报废");
-            } else if (rolePower.equals("changeRegister")) {
+            } else if (rolePower.equals("change_register")) {
                 textTitle.setText("信息变更");
+            } else if (rolePower.equals("insurance_change")) {
+                textTitle.setText("服务变更");
+                carId.setVisibility(View.GONE);
+                lineView.setVisibility(View.GONE);
+            } else if (rolePower.equals(BaseConstants.funJurisdiction[3])) {
+                textTitle.setText("服务延期");
+                carId.setVisibility(View.GONE);
+                lineView.setVisibility(View.GONE);
+            } else if (rolePower.equals(BaseConstants.funJurisdiction[4])) {
+                textTitle.setText("服务购买");
+                carId.setVisibility(View.GONE);
+                lineView.setVisibility(View.GONE);
             }
         }
 
@@ -93,6 +106,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
                     return;
                 }
                 Bundle bundle = new Bundle();
+                bundle.putString(BaseConstants.rolePower, rolePower);
                 bundle.putSerializable(BaseConstants.data, carCheckBean);
                 if (rolePower.equals(BaseConstants.funJurisdiction[1])) {//补办
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarChangeActivity.class, bundle);
@@ -100,8 +114,13 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarTransferActivity.class, bundle);
                 } else if (rolePower.equals(BaseConstants.funJurisdiction[0])) {//报废
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarScrapActivity.class, bundle);
-                }else if (rolePower.equals("changeRegister")) {//信息变更
+                } else if (rolePower.equals("change_register")) {//信息变更
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, ChangeRegisterActivity.class, bundle);
+                } else if (rolePower.equals("insurance_change")
+                        || rolePower.equals(BaseConstants.funJurisdiction[3])
+                        || rolePower.equals(BaseConstants.funJurisdiction[4])
+                        ) {//服务变更、服务购买、服务延期
+                    ActivityUtil.goActivityWithBundle(CarQueryActivity.this, InsuranceActivity.class, bundle);
                 }
 
             }
@@ -111,6 +130,11 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     @Override
     protected int getLayoutId() {
         return R.layout.activity_car_query;
+    }
+
+    @Override
+    protected void submitRequestData() {
+
     }
 
 
@@ -124,24 +148,33 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
             ToastUtil.showWX("请输入车牌号");
             return;
         }
-        if (TextUtils.isEmpty(carIdStr)) {
-            ToastUtil.showWX("请输入证件号");
-            return;
-        }
+
+
         zProgressHUD.show();
         Map<String, Object> map = new HashMap<>();
-        map.put("plateNumber", plateNumberStr);
-        map.put("cardId", carIdStr);
-        mPresenter.checkCar(getRequestBody(map));
+        if (rolePower.equals("insurance_change")
+                || rolePower.equals(BaseConstants.funJurisdiction[3])
+                || rolePower.equals(BaseConstants.funJurisdiction[4])) {
+            map.put("plateNumber", plateNumberStr);
+            mPresenter.getEditInfo(getRequestBody(map));
+        } else {
+            if (TextUtils.isEmpty(carIdStr)) {
+                ToastUtil.showWX("请输入证件号");
+                return;
+            }
+            map.put("plateNumber", plateNumberStr);
+            map.put("cardId", carIdStr);
+            mPresenter.checkCar(getRequestBody(map));
+        }
+
     }
 
 
     @Override
     public void loadingSuccessForData(final CarCheckBean mData) {
         zProgressHUD.dismiss();
-
+        carCheckBean = mData;
         queryDialog.showCarQueryDialog(CarQueryActivity.this, mData);
-       carCheckBean =mData;
 
 
     }
@@ -149,5 +182,32 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
+    }
+
+    @Override
+    public void getEditInfoSuccess(EditInfoBean infoBean) {
+        zProgressHUD.dismiss();
+        carCheckBean.setId(infoBean.getId());
+        carCheckBean.setBuyDate(infoBean.getBuyInfo().getBuyDate());
+        carCheckBean.setVehicleType(infoBean.getBaseInfo().getVehicleType());
+        carCheckBean.setPlateNumber(infoBean.getBaseInfo().getPlateNumber());
+        carCheckBean.setCardId(infoBean.getOwnerInfo().getCardId());
+        carCheckBean.setOwnerName(infoBean.getOwnerInfo().getOwnerName());
+        carCheckBean.setVehicleBrandStr(infoBean.getBaseInfo().getVehicleBrandName());
+        queryDialog.showCarQueryDialog(CarQueryActivity.this, carCheckBean);
+
+    }
+
+    @Override
+    public void getEditInfoFail(String msg) {
+        zProgressHUD.dismiss();
+        showCustomWindowDialog("服务提示", msg, false, true);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
     }
 }

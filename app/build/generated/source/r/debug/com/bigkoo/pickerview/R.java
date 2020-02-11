@@ -49,21 +49,21 @@ public final class R {
         public static final int center = 0x7f08005b;
         public static final int content_container = 0x7f080084;
         public static final int day = 0x7f080088;
-        public static final int hour = 0x7f0800c7;
-        public static final int left = 0x7f0800e7;
-        public static final int min = 0x7f080107;
-        public static final int month = 0x7f080109;
-        public static final int options1 = 0x7f080115;
-        public static final int options2 = 0x7f080116;
-        public static final int options3 = 0x7f080117;
-        public static final int optionspicker = 0x7f080118;
-        public static final int outmost_container = 0x7f08011a;
-        public static final int right = 0x7f080139;
-        public static final int rv_topbar = 0x7f080140;
-        public static final int second = 0x7f08015d;
-        public static final int timepicker = 0x7f08018a;
-        public static final int tvTitle = 0x7f0801a5;
-        public static final int year = 0x7f0801bd;
+        public static final int hour = 0x7f0800c4;
+        public static final int left = 0x7f0800e4;
+        public static final int min = 0x7f080105;
+        public static final int month = 0x7f080107;
+        public static final int options1 = 0x7f080113;
+        public static final int options2 = 0x7f080114;
+        public static final int options3 = 0x7f080115;
+        public static final int optionspicker = 0x7f080116;
+        public static final int outmost_container = 0x7f080118;
+        public static final int right = 0x7f080137;
+        public static final int rv_topbar = 0x7f08013e;
+        public static final int second = 0x7f08015b;
+        public static final int timepicker = 0x7f080188;
+        public static final int tvTitle = 0x7f0801a3;
+        public static final int year = 0x7f0801bb;
     }
     public static final class integer {
         public static final int animation_default_duration = 0x7f090002;

@@ -87,6 +87,8 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
     private List<PhotoConfigBean.PhotoTypeInfoListBean> photoList;
     private PhotoAdapter photoAdapter;
     private int photoPosition = -1;
+    private List<PhotoConfigBean.PhotoTypeInfoListBean> photoData;
+    private List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> contentData;
 
     @Override
     protected void initTitle() {
@@ -122,14 +124,14 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
     private void initLabelRv() {
         changeContentRv.setLayoutManager(new LinearLayoutManager(this));
         List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> data = new ArrayList<>();
-        contentAdapter = new LabelAdapter(data,false);
+        contentAdapter = new LabelAdapter(data, false);
         changeContentRv.setAdapter(contentAdapter);
         contentAdapter.setOnItemClickListener(new LabelAdapter.OnItemClickListener() {
             @Override
-            public void onItemClickListener(int position,String name) {
+            public void onItemClickListener(int position, String name) {
 
                 contentPosition = position;
-                ScanUtil.Scan(CarChangeActivity.this,  name);
+                ScanUtil.Scan(CarChangeActivity.this, name);
             }
         });
     }
@@ -268,43 +270,8 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
         return R.layout.activity_car_change;
     }
 
-
-    @OnClick(R.id.change_button)
-    public void onViewClicked() {
-        putData();
-    }
-
-    private void putData() {
-        List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
-                contentData = contentAdapter.getData();
-        if (contentData == null || contentData.size() == 0) {
-            ToastUtil.showWX("请选择补办类型");
-            return;
-        }
-        boolean isPlate = false;
-        for (int i = 0; i < contentData.size(); i++) {
-
-            if (contentData.get(i).getIndex() == 0) {
-                isPlate = true;
-            }
-            if (TextUtils.isEmpty(contentData.get(i).getEditValue())) {
-                ToastUtil.showWX("请输入" + contentData.get(i).getLableName());
-                return;
-            }
-        }
-        List<PhotoConfigBean.PhotoTypeInfoListBean> photoData = photoAdapter.getData();
-        /*车牌必须有照片*/
-        if (isPlate) {
-            for (int j = 0; j < photoData.size(); j++) {
-                if (photoData.get(j).getPhotoIndex() == 1) {
-                    if (TextUtils.isEmpty(photoData.get(j).getPhotoId())) {
-                        ToastUtil.showWX("请选择" + photoData.get(j).getPhotoName());
-//                        return;
-                    }
-                }
-            }
-        }
-
+    @Override
+    protected void submitRequestData() {
 
         Map<String, Object> map = new HashMap<>();
         map.put("id", checkBean.getId());
@@ -335,6 +302,46 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
         map.put("changeContentList", lableListBeans);
         zProgressHUD.show();
         mPresenter.carChange(getRequestBody(map));
+    }
+
+
+    @OnClick(R.id.change_button)
+    public void onViewClicked() {
+        putData();
+    }
+
+    private void putData() {
+
+        contentData = contentAdapter.getData();
+        if (contentData == null || contentData.size() == 0) {
+            ToastUtil.showWX("请选择补办类型");
+            return;
+        }
+        boolean isPlate = false;
+        for (int i = 0; i < contentData.size(); i++) {
+
+            if (contentData.get(i).getIndex() == 0) {
+                isPlate = true;
+            }
+            if (TextUtils.isEmpty(contentData.get(i).getEditValue())) {
+                ToastUtil.showWX("请输入" + contentData.get(i).getLableName());
+                return;
+            }
+        }
+        photoData = photoAdapter.getData();
+        /*车牌必须有照片*/
+        if (isPlate) {
+            for (int j = 0; j < photoData.size(); j++) {
+                if (photoData.get(j).getPhotoIndex() == 1) {
+                    if (TextUtils.isEmpty(photoData.get(j).getPhotoId())) {
+                        ToastUtil.showWX("请选择" + photoData.get(j).getPhotoName());
+//                        return;
+                    }
+                }
+            }
+        }
+
+        showSubmitRequestDialog();
 
     }
 

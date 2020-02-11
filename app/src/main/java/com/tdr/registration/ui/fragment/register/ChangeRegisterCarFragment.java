@@ -525,6 +525,16 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
     }
 
     @Override
+    public void changeFail(String msg) {
+
+    }
+
+    @Override
+    public void changeSuccess(String msg) {
+
+    }
+
+    @Override
     public void loadingSuccessForData(DdcResult mData) {
 
     }
@@ -536,4 +546,8 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
     }
 
 
+    @Override
+    protected void submitRequestData() {
+
+    }
 }

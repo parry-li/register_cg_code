@@ -163,4 +163,8 @@ public class RegisterPeopleFragment extends NoLoadingBaseFragment {
     }
 
 
+    @Override
+    protected void submitRequestData() {
+
+    }
 }

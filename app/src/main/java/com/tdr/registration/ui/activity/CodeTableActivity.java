@@ -219,6 +219,11 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
         return R.layout.activity_code_table;
     }
 
+    @Override
+    protected void submitRequestData() {
+
+    }
+
     private boolean isSearchByHttp = false;
 
     @Override

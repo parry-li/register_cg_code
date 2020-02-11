@@ -79,6 +79,11 @@ public class HomeActivity extends NoLoadingBaseActivity {
         return R.layout.activity_home;
     }
 
+    @Override
+    protected void submitRequestData() {
+
+    }
+
 
     @OnClick({R.id.main_bottom_home, R.id.main_bottom_me})
     public void onViewClicked(View view) {
