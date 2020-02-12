@@ -1,10 +1,12 @@
 package com.tdr.registration.ui.activity.scan;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -18,6 +20,7 @@ import com.parry.zxing.activity.CodeUtils;
 import com.tdr.registration.R;
 import com.tdr.registration.ui.activity.base.NoLoadingBaseActivity;
 import com.tdr.registration.utils.Base64;
+import com.tdr.registration.utils.LogUtil;
 import com.tdr.registration.utils.ToastUtil;
 import com.tdr.registration.utils.UIUtils;
 import com.tdr.registration.view.ScanDialog;
@@ -25,16 +28,19 @@ import com.tdr.registration.view.ScanDialog;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 import butterknife.BindView;
+import pub.devrel.easypermissions.AfterPermissionGranted;
+import pub.devrel.easypermissions.AppSettingsDialog;
+import pub.devrel.easypermissions.EasyPermissions;
 
 
 /**
  * 二维码扫描
  */
 
-public class QRCodeScanActivity extends NoLoadingBaseActivity implements View.OnClickListener {
-
+public class QRCodeScanActivity extends NoLoadingBaseActivity implements View.OnClickListener{
 
     @BindView(R.id.fl_my_container)
     FrameLayout flMyContainer;
@@ -56,7 +62,9 @@ public class QRCodeScanActivity extends NoLoadingBaseActivity implements View.On
     private boolean Light = false;
     private String ChangeDialogText;
     private ScanDialog scanDialog;
-
+    private static final int PERMISSION_CODE = 124;
+    private static final String[] PERMISSION_CONTENT =
+            {Manifest.permission.CAMERA, Manifest.permission.VIBRATE};
 
     @Override
     protected int getLayoutId() {
@@ -74,9 +82,7 @@ public class QRCodeScanActivity extends NoLoadingBaseActivity implements View.On
 
         try {
             initview();
-//            AutoLight();
             setInputDialog();
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -280,4 +286,5 @@ public class QRCodeScanActivity extends NoLoadingBaseActivity implements View.On
         }
 
     }
+
 }

@@ -44,6 +44,9 @@ public class InsuranceActivity_ViewBinding implements Unbinder {
         target.onViewClicked();
       }
     });
+    target.emptyIv = Utils.findRequiredViewAsType(source, R.id.empty_iv, "field 'emptyIv'", ImageView.class);
+    target.emptyTv = Utils.findRequiredViewAsType(source, R.id.empty_tv, "field 'emptyTv'", TextView.class);
+    target.emptyDataRl = Utils.findRequiredViewAsType(source, R.id.empty_data_rl, "field 'emptyDataRl'", RelativeLayout.class);
   }
 
   @Override
@@ -59,6 +62,9 @@ public class InsuranceActivity_ViewBinding implements Unbinder {
     target.comTitleSettingIv = null;
     target.comTitleSettingTv = null;
     target.buttonNext = null;
+    target.emptyIv = null;
+    target.emptyTv = null;
+    target.emptyDataRl = null;
 
     view2131230785.setOnClickListener(null);
     view2131230785 = null;

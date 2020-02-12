@@ -3,6 +3,7 @@ package com.tdr.registration.ui.activity;
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -14,7 +15,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.parry.utils.code.SPUtils;
-import com.tbruyelle.rxpermissions2.RxPermissions;
 import com.tdr.registration.R;
 import com.tdr.registration.bean.CityConfigureBean;
 import com.tdr.registration.bean.LoginBean;
@@ -24,6 +24,7 @@ import com.tdr.registration.service.presenter.LoginPresenter;
 import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
 import com.tdr.registration.ui.activity.home.HomeActivity;
 import com.tdr.registration.utils.ActivityUtil;
+import com.tdr.registration.utils.LogUtil;
 import com.tdr.registration.utils.ToastUtil;
 
 
@@ -33,9 +34,12 @@ import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import pub.devrel.easypermissions.AfterPermissionGranted;
+import pub.devrel.easypermissions.AppSettingsDialog;
+import pub.devrel.easypermissions.EasyPermissions;
 
 
-public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements LoginPresenter.View {
+public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements LoginPresenter.View, EasyPermissions.PermissionCallbacks {
 
 
     @BindView(R.id.login_city)
@@ -56,7 +60,10 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     private static final int CITY_PICK = 1000;
     private int systemId;
     private LoginBean loginData;
-    private RxPermissions rxPermissions;
+    //    private RxPermissions rxPermissions;
+    private static final int PERMISSION_CODE= 124;
+    private static final String[] PERMISSION_CONTENT =
+            {Manifest.permission.CAMERA, Manifest.permission.VIBRATE};
 
     @Override
     protected void initTitle() {
@@ -65,19 +72,16 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         if (systemId != -100) {
             cityName.setText(cityNameStr);
         }
-//        rxPermissions = new RxPermissions(this);
-////        rxPermissions
-//                .request(Manifest.permission.CAMERA)
-//                .subscribe(granted -> {
-//                    if (granted) { // Always true pre-M
-//                        // I can control the camera now
-//                    } else {
-//                        // Oups permission denied
-//                    }
-//                });
+        getPermission();
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
+        // Forward results to EasyPermissions
+        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+    }
 
     @Override
     protected void loadData() {
@@ -198,8 +202,6 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         stringMap.put("password", lPwd);
         stringMap.put("isSubsystem", "1");
         stringMap.put("subsystemId", systemId);
-//        String strEntity = new Gson().toJson(stringMap);
-//        RequestBody body = RequestBody.create(MediaType.parse("application/json;charset=UTF-8"), strEntity);
         mPresenter.login(getRequestBody(stringMap));
 
     }
@@ -246,6 +248,7 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
                 ActivityUtil.goActivityForResult(LoginActivity.this, CityPickerActivity.class, CITY_PICK);
                 break;
             case R.id.login_button:
+
                 sendData();
                 break;
         }
@@ -286,5 +289,38 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         SPUtils.getInstance().put(BaseConstants.token, "");
         showCustomWindowDialog("服务提示", msg, true);
 
+    }
+
+    @AfterPermissionGranted(PERMISSION_CODE)
+    public void getPermission() {
+        if (EasyPermissions.hasPermissions(this, PERMISSION_CONTENT)) {
+            LogUtil.i("hasPermissions");
+        } else {
+            EasyPermissions.requestPermissions(
+                    this,
+                    getString(R.string.rationale_location_contacts),
+                    PERMISSION_CODE,
+                    PERMISSION_CONTENT);
+        }
+    }
+
+
+    @Override
+    public void onPermissionsGranted(int requestCode, @NonNull List<String> perms) {
+        LogUtil.i("onPermissionsGranted");
+    }
+
+    @Override
+    public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
+        LogUtil.i("onPermissionsDenied");
+        if (EasyPermissions.somePermissionPermanentlyDenied(this, perms)) {
+             new AppSettingsDialog.Builder(this)
+                    .setTitle("温馨提示")
+                    .setNegativeButton("取消")
+                    .setRationale(R.string.permisson_dialog_content)
+                    .setPositiveButton("确定")
+                    .build().show();
+
+        }
     }
 }

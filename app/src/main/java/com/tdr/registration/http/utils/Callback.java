@@ -112,7 +112,7 @@ public class Callback<T> extends Subscriber<T> {
 
     public void onFail(String msg) {
         if (target != null) {
-            target.setState(BaseConstants.STATE_ERROR);
+            target.setState(BaseConstants.STATE_SUCCESS);
             ((BaseView) target).loadingFail(msg);
             ToastUtil.showWX(msg);
         }
@@ -120,7 +120,7 @@ public class Callback<T> extends Subscriber<T> {
     }
     public void onFailFw(String msg) {
         if (target != null) {
-            target.setState(BaseConstants.STATE_ERROR);
+            target.setState(BaseConstants.STATE_SUCCESS);
             ((BaseView) target).loadingFail(msg);
             ToastUtil.showFW(msg);
         }

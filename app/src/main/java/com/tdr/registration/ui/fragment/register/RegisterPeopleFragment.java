@@ -129,6 +129,7 @@ public class RegisterPeopleFragment extends NoLoadingBaseFragment {
         }
         String peoplePhone2Str = peoplePhone2.getText().toString().trim();
         String peopleRemarkStr = peopleRemark.getText().toString().trim();
+        String peopleCardStr = peopleCard.getText().toString().trim();
 
         if (!TextUtils.isEmpty(peoplePhone2Str)) {
             if (!RegularUtil.isMobileExact(peoplePhone2Str)) {
@@ -145,6 +146,7 @@ public class RegisterPeopleFragment extends NoLoadingBaseFragment {
         ((RegisterMainActivity) RegisterPeopleFragment.this.getActivity()).registerPutBean.setPeoplePhone2(peoplePhone2Str);
         ((RegisterMainActivity) RegisterPeopleFragment.this.getActivity()).registerPutBean.setPeopleAddr(peopleAdrStr);
         ((RegisterMainActivity) RegisterPeopleFragment.this.getActivity()).registerPutBean.setPeopleRemark(peopleRemarkStr);
+        ((RegisterMainActivity) RegisterPeopleFragment.this.getActivity()).registerPutBean.setCardName(peopleCardStr);
 
 
         ((RegisterMainActivity) RegisterPeopleFragment.this.getActivity()).setVpCurrentItem(2);

@@ -381,15 +381,6 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
             return;
         }
         String carPriceStr = carPrice.getText().toString().trim();
-//        SPUtils.getInstance().put(BaseConstants.register_plate, carPlateStr);
-//        SPUtils.getInstance().put(BaseConstants.register_brand, carBrandStr);
-//        SPUtils.getInstance().put(BaseConstants.register_frame, carFrameStr);
-//        SPUtils.getInstance().put(BaseConstants.register_electrical, carElectricalStr);
-//        SPUtils.getInstance().put(BaseConstants.register_color2_id, carColorMinorId);
-//        SPUtils.getInstance().put(BaseConstants.register_color1_id, carColorMainId);
-//        SPUtils.getInstance().put(BaseConstants.register_color1_name, carColorMainStr);
-//        SPUtils.getInstance().put(BaseConstants.register_color2_name, carColorMinorStr);
-//        SPUtils.getInstance().put(BaseConstants.register_time, carColorTimeStr);
 
         ((RegisterMainActivity) RegisterCarFragment.this.getActivity()).registerPutBean.setRegisterPlate(carPlateStr);
         ((RegisterMainActivity) RegisterCarFragment.this.getActivity()).registerPutBean.setRegisterBrand(carBrandStr);

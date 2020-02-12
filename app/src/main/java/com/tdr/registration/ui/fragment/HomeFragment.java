@@ -1,6 +1,8 @@
 package com.tdr.registration.ui.fragment;
 
+import android.Manifest;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -20,6 +22,7 @@ import com.tdr.registration.ui.activity.car.RegisterMainActivity;
 import com.tdr.registration.ui.fragment.base.NoCacheBaseFragment;
 import com.tdr.registration.utils.ActivityUtil;
 import com.tdr.registration.utils.ConfigUtil;
+import com.tdr.registration.utils.LogUtil;
 import com.tdr.registration.view.CustomOptionsDialog;
 
 import java.util.ArrayList;
@@ -27,8 +30,11 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import pub.devrel.easypermissions.AfterPermissionGranted;
+import pub.devrel.easypermissions.AppSettingsDialog;
+import pub.devrel.easypermissions.EasyPermissions;
 
-public class HomeFragment extends NoCacheBaseFragment {
+public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions.PermissionCallbacks  {
     @BindView(R.id.home_city_ll)
     LinearLayout homeCityLl;
     @BindView(R.id.home_register_ll)
@@ -41,7 +47,9 @@ public class HomeFragment extends NoCacheBaseFragment {
     LinearLayout homeGrtjLl;
     @BindView(R.id.home_rv)
     RecyclerView homeRv;
-
+    private static final int PERMISSION_CODE = 124;
+    private static final String[] PERMISSION_CONTENT =
+            {Manifest.permission.CAMERA, Manifest.permission.VIBRATE};
 
     private int[] funImgs = {
             R.mipmap.home_clbf, R.mipmap.home_cpbb,
@@ -65,7 +73,7 @@ public class HomeFragment extends NoCacheBaseFragment {
     protected void initView() {
         initRv();
         initRegisterDialog();
-
+        getPermission();
     }
 
     private void initRv() {
@@ -108,8 +116,7 @@ public class HomeFragment extends NoCacheBaseFragment {
         Bundle bundle = new Bundle();
         switch (view.getId()) {
             case R.id.home_city_ll:
-                BaseActivity.activity.clearDataForLoginOut();
-                ActivityUtil.goActivityAndFinish(HomeFragment.this.getActivity(), LoginActivity.class);
+
                 break;
             case R.id.home_register_ll://备案登记
 
@@ -172,4 +179,45 @@ public class HomeFragment extends NoCacheBaseFragment {
     protected void submitRequestData() {
 
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+    }
+    @AfterPermissionGranted(PERMISSION_CODE)
+    public void getPermission() {
+        if (EasyPermissions.hasPermissions(this.getContext(), PERMISSION_CONTENT)) {
+            LogUtil.i("hasPermissions");
+
+        } else {
+            EasyPermissions.requestPermissions(
+                    this,
+                    getString(R.string.rationale_location_contacts),
+                    PERMISSION_CODE,
+                    PERMISSION_CONTENT);
+        }
+    }
+
+
+    @Override
+    public void onPermissionsGranted(int requestCode, @NonNull List<String> perms) {
+        LogUtil.i("onPermissionsGranted");
+    }
+
+    @Override
+    public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
+        LogUtil.i("onPermissionsDenied");
+        if (EasyPermissions.somePermissionPermanentlyDenied(this, perms)) {
+            new AppSettingsDialog.Builder(this)
+                    .setTitle("温馨提示")
+                    .setNegativeButton("取消")
+                    .setRationale(R.string.permisson_dialog_content)
+                    .setPositiveButton("确定")
+                    .build().show();
+
+        }
+    }
+
+
 }

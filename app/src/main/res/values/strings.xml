@@ -4,7 +4,8 @@
     <string name="app_name">重构备案登记</string>
 
 
-    <string name="rationale_location_contacts">APP需要权限才可以进行</string>
+    <string name="rationale_location_contacts">APP功能需要权限</string>
+    <string name="permisson_dialog_content">APP功能需要相关权限，点击确定前往设置权限</string>
 
 
     <string name="cp_select_city">选择城市</string>

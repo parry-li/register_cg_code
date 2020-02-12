@@ -3,6 +3,7 @@ package com.tdr.registration.ui.activity.insurance;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -49,6 +50,12 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
     TextView comTitleSettingTv;
     @BindView(R.id.button_next)
     TextView buttonNext;
+    @BindView(R.id.empty_iv)
+    ImageView emptyIv;
+    @BindView(R.id.empty_tv)
+    TextView emptyTv;
+    @BindView(R.id.empty_data_rl)
+    RelativeLayout emptyDataRl;
     private InsuranceAdapter insuranceAdapter;
     private String rolePowerStr;
     private int systemId;
@@ -172,6 +179,11 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
 
     @Override
     public void loadingSuccessForData(List<InsuranceBean> mData) {
+        if (mData.size() == 0) {
+            emptyDataRl.setVisibility(View.VISIBLE);
+        } else {
+            emptyDataRl.setVisibility(View.GONE);
+        }
         zProgressHUD.dismiss();
         insuranceRv.setLayoutManager(new LinearLayoutManager(this));
         insuranceAdapter = new InsuranceAdapter(this, mData, insuranceRv);
@@ -196,5 +208,6 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
         zProgressHUD.dismiss();
         showCustomWindowDialog("服务提示", msg, false, true);
     }
+
 
 }

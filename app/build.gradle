@@ -87,5 +87,5 @@ dependencies {
         exclude group: "com.android.support"
     }
     implementation files('libs/BASE64.jar')
-    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation 'pub.devrel:easypermissions:2.0.1'
 }

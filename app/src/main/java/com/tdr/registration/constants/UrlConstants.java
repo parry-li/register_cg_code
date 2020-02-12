@@ -53,6 +53,12 @@ public class UrlConstants {
     public static final String policy_getRenewInsuranceConfigs = main_host_service + "api/ddc-electriccar/policy/getRenewInsuranceConfigs";
     /*保险变更*/
     public static final String policy_insured = main_host_service + "api/ddc-electriccar/policy/insured";
+    /*保险变更*/
+    public static final String user_updatePwd = main_host_service + "api/ddc-user/user/updatePwd";
+    /*待投保查询*/
+    public static final String policy_failurePage = main_host_service + "api/ddc-electriccar/policy/failurePage";
+    /*重新投保*/
+    public static final String policy_reinsure = main_host_service + "api/ddc-electriccar/policy/reinsure";
 
 
 }

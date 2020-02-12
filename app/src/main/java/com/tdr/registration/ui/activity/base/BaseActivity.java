@@ -148,7 +148,11 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
     }
 
     public void showSubmitRequestDialog() {
-        submitRequestDialog.showCustomWindowDialog("温馨提示", "确定提交数据", false);
+        showSubmitRequestDialog("确定提交数据");
+
+    }
+    public void showSubmitRequestDialog(String msg) {
+        submitRequestDialog.showCustomWindowDialog("温馨提示", msg, false);
     }
 
     public void showCustomWindowDialog() {

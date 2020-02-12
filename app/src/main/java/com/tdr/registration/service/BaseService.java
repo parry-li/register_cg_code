@@ -6,6 +6,7 @@ import com.tdr.registration.bean.CityConfigureBean;
 import com.tdr.registration.bean.CodeTableBean;
 import com.tdr.registration.bean.EditInfoBean;
 import com.tdr.registration.bean.InsuranceBean;
+import com.tdr.registration.bean.InsuranceWaitBean;
 import com.tdr.registration.bean.LoginBean;
 import com.tdr.registration.bean.PhotoBean;
 import com.tdr.registration.http.utils.DdcResult;
@@ -64,6 +65,9 @@ public interface BaseService {
 
     @POST()
     Observable<DdcResult<EditInfoBean>> getEditInfo(@Url String url, @Body RequestBody route);
+
+    @POST()
+    Observable<DdcResult<List<InsuranceWaitBean>>> gWaitInsurance(@Url String url, @Body RequestBody route);
 }
 
 

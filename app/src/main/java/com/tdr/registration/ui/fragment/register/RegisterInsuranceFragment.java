@@ -193,6 +193,11 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
 
     @Override
     public void getInsuranceSuccess(List<InsuranceBean> list) {
+        if(list.size()>0){
+            emptyDataRl.setVisibility(View.GONE);
+        }else {
+            emptyDataRl.setVisibility(View.VISIBLE);
+        }
         insuranceAdapter.setNewData(list);
         emptyDataRl.setVisibility(View.GONE);
     }
@@ -297,10 +302,12 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
         ownerInfoMap.put("ownerName", registerBean.getPeopleName());
         ownerInfoMap.put("cardType", registerBean.getPeopleCardType());
         ownerInfoMap.put("cardId", registerBean.getPeopleCardNum());
+        ownerInfoMap.put("cardName", registerBean.getCardName());
         ownerInfoMap.put("phone1", registerBean.getPeoplePhone1());
         ownerInfoMap.put("phone2", registerBean.getPeoplePhone2());
         ownerInfoMap.put("residentAddress", registerBean.getPeopleAddr());
         ownerInfoMap.put("remark", registerBean.getPeopleRemark());
+
         map.put("ownerInfo", ownerInfoMap);
 
 

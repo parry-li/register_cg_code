@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="38dp"
     android:layout_marginLeft="@dimen/dp_14"
-    android:layout_marginTop="@dimen/dp_18"
+    android:layout_marginTop="@dimen/dp_12"
     android:layout_marginRight="@dimen/dp_14"
     android:background="@drawable/edittext_border_white_circle"
     android:focusable="true"
@@ -35,6 +35,7 @@
             android:gravity="center_vertical"
             android:hint="搜索"
             android:inputType="text"
+            android:singleLine="true"
             android:maxLines="1"
             android:textColor="@color/cp_gray"
             android:textColorHint="@color/cp_gray"
@@ -49,7 +50,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="15dp"
             android:src="@mipmap/cp_ic_search_clear"
-            android:visibility="visible"
+            android:visibility="gone"
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
@@ -61,7 +62,7 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:text="取消"
-        android:visibility="gone"
+        android:visibility="visible"
         android:textColor="@color/cp_gray"
         android:textSize="@dimen/sp_14" />
 </LinearLayout>

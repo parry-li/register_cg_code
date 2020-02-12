@@ -148,6 +148,7 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
         if (configBean != null) {
             for (PhotoConfigBean.PhotoTypeInfoListBean photoBean : configBean.getPhotoTypeInfoList()) {
                 if (photoBean.isIsValid()) {
+                    photoBean.setIsRequire(false);
                     photoList.add(photoBean);
                 }
             }
@@ -244,7 +245,9 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
         for (int k = 0; k < photoData.size(); k++) {
 
             if (photoData.get(k).getPhotoIndex() == 1) {
-                photoData.get(k).setMust(isHavePlate);
+                photoData.get(k).setIsRequire(isHavePlate);
+            }else {
+                photoData.get(k).setIsRequire(false);
             }
 
         }

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/insurance_iv"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/insurance_icn" />
+
+    <LinearLayout
+
+        android:id="@+id/rv_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_toRightOf="@id/insurance_iv"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left">
+
+            <TextView
+                android:id="@+id/insurance_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="盗抢险"
+                android:textColor="@color/module_text_3"
+                android:textSize="@dimen/sp_13" />
+
+            <ImageView
+                android:id="@+id/insurance_msg"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:src="@mipmap/wait_error" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/insurance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="盗抢险"
+            android:textColor="@color/module_text_6"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/insurance_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="时间"
+            android:textColor="@color/module_text_6"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center|right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wait_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥40"
+            android:textColor="@color/module_text_3"
+            android:textSize="@dimen/sp_17" />
+
+        <TextView
+            android:id="@+id/wait_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="1年"
+            android:textColor="@color/module_text_3"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+</RelativeLayout>

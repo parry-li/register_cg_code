@@ -5,6 +5,7 @@
     android:background="@color/module_background"
     android:orientation="vertical">
 
+
     <com.tdr.registration.view.NoScrollViewPager
         android:id="@+id/register_vp"
         android:layout_width="match_parent"

@@ -15,20 +15,20 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!--腾讯地图 sdk 要求的权限(结束)-->
 
-    <!-- 腾讯定位 sdk 要求的其他权限  (开始) -->
-    <!-- 通过GPS得到精确位置 -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--&lt;!&ndash; 通过GPS得到精确位置 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
     <!-- 通过网络得到粗略位置 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
     <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <!-- 腾讯定位 sdk 要求的权限 (结束) -->
 
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!--<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />-->
     <!-- 获取CUID，用于鉴权，请求签名等 -->
-    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <!--<uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />-->
 
 
     <!-- 调用相机，用于实现扫描二维码，预览个性化地图编辑器生成的个性化地图样式（开发者实际开发中地图SDK不需要该权限）-->
@@ -36,25 +36,24 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.READ_CALL_LOG" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" /><!-- 低版本使用该权限 -->
-    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
-    <uses-permission android:name="android.permission.WRITE_CONTACTS" /><!-- 为了兼容低版本 -->
+    <!--<uses-permission android:name="android.permission.CALL_PHONE" />-->
+    <!--<uses-permission android:name="android.permission.READ_CALL_LOG" />-->
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />&lt;!&ndash; 低版本使用该权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.WRITE_CALL_LOG" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_CONTACTS" />&lt;!&ndash; 为了兼容低版本 &ndash;&gt;-->
 
 
 
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <!-- GPS定位权限 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--&lt;!&ndash; GPS定位权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -118,6 +117,9 @@
         <activity android:name="com.tdr.registration.ui.activity.car.CarScrapActivity" />
         <activity android:name="com.tdr.registration.ui.activity.insurance.InsuranceActivity" />
         <activity android:name="com.tdr.registration.ui.activity.car.ChangeRegisterActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.me.PasswordActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.me.InsuranceWaitActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.me.InsuranceWaitChangeActivity" />
         <!--<activity-->
             <!--android:name="com.tdr.chongwu.ui.map.TencentMapActivity"-->
             <!--android:label="@string/demo_label_basemap" />-->

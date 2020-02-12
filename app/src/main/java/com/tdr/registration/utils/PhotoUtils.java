@@ -650,7 +650,7 @@ public class PhotoUtils {
 
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
-        image.compress(Bitmap.CompressFormat.JPEG, 1, baos);//质量压缩方法，把压缩后的数据存放到baos中
+        image.compress(Bitmap.CompressFormat.JPEG, 20, baos);//质量压缩方法，把压缩后的数据存放到baos中
         int be = 15;
         if (baos.toByteArray().length / 1024 < 250) {
             be = 10;

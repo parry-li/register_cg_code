@@ -29,22 +29,22 @@ public class PhotoAdapter extends BaseQuickAdapter<PhotoConfigBean.PhotoTypeInfo
     @Override
     protected void convert(final BaseViewHolder helper, PhotoConfigBean.PhotoTypeInfoListBean item) {
         TextView tvMust = helper.getView(R.id.chang_photo_tv_must);
-         imgIv  =    helper.getView(R.id.chang_photo_img);
-        ImageView imgYes  =    helper.getView(R.id.chang_photo_yes);
+        imgIv = helper.getView(R.id.chang_photo_img);
+        ImageView imgYes = helper.getView(R.id.chang_photo_yes);
         helper.setText(R.id.chang_photo_tv, item.getPhotoName());
-        if(item.isMust()){
+        if (item.isIsRequire()) {
             tvMust.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             tvMust.setVisibility(View.GONE);
         }
 
-        if(TextUtils.isEmpty(item.getPhotoId())){
+        if (TextUtils.isEmpty(item.getPhotoId())) {
             imgYes.setVisibility(View.GONE);
-        }else {
+        } else {
             imgYes.setVisibility(View.VISIBLE);
         }
 
-        if(item.getDrawable()!=null){
+        if (item.getDrawable() != null) {
             imgIv.setBackgroundDrawable(item.getDrawable());
         }
 

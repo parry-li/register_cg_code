@@ -23,8 +23,17 @@ public class RegisterPutBean {
     private String peoplePhone2;
     private String peopleAddr;
     private String peopleRemark;
+    private String cardName;
     private List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> lableList;
     private List<PhotoConfigBean.PhotoTypeInfoListBean> photoList;
+
+    public String getCardName() {
+        return cardName;
+    }
+
+    public void setCardName(String cardName) {
+        this.cardName = cardName;
+    }
 
     public int getVehicleType() {
         return vehicleType;

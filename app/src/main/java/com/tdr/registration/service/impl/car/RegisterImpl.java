@@ -43,7 +43,7 @@ public class RegisterImpl extends BasePresenter<RegisterPresenter.View> implemen
 
     @Override
     public void getInsurance(RequestBody route) {
-        invoke(mService.getInsurance(UrlConstants.configure_getInsuranceConfigs, route), new NoCallback<DdcResult<List<InsuranceBean>>>() {
+        invoke(mService.getInsurance(UrlConstants.configure_getInsuranceConfigs, route), new Callback<DdcResult<List<InsuranceBean>>>() {
             @Override
             public void onResponse(DdcResult<List<InsuranceBean>> data) {
 
