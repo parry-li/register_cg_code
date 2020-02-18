@@ -35,9 +35,9 @@ public final class R {
         public static final int pickerview_topbar_title_textsize = 0x7f060114;
     }
     public static final class id {
-        public static final int center = 0x7f08005b;
-        public static final int left = 0x7f0800e6;
-        public static final int right = 0x7f080147;
+        public static final int center = 0x7f080061;
+        public static final int left = 0x7f0800f3;
+        public static final int right = 0x7f080158;
     }
     public static final class string {
         public static final int app_name = 0x7f0f0028;

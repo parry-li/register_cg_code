@@ -19,7 +19,7 @@ import java.lang.Override;
 public class CarChangeActivity_ViewBinding implements Unbinder {
   private CarChangeActivity target;
 
-  private View view2131230820;
+  private View view2131230826;
 
   @UiThread
   public CarChangeActivity_ViewBinding(CarChangeActivity target) {
@@ -47,7 +47,7 @@ public class CarChangeActivity_ViewBinding implements Unbinder {
     target.changeReason = Utils.findRequiredViewAsType(source, R.id.change_reason, "field 'changeReason'", EditText.class);
     view = Utils.findRequiredView(source, R.id.change_button, "field 'changeButton' and method 'onViewClicked'");
     target.changeButton = Utils.castView(view, R.id.change_button, "field 'changeButton'", TextView.class);
-    view2131230820 = view;
+    view2131230826 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -79,7 +79,7 @@ public class CarChangeActivity_ViewBinding implements Unbinder {
     target.changeReason = null;
     target.changeButton = null;
 
-    view2131230820.setOnClickListener(null);
-    view2131230820 = null;
+    view2131230826.setOnClickListener(null);
+    view2131230826 = null;
   }
 }

@@ -18,23 +18,23 @@ import java.lang.Override;
 public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
   private InsuranceWaitChangeActivity target;
 
-  private View view2131231176;
+  private View view2131231197;
 
-  private View view2131231177;
+  private View view2131231198;
 
-  private View view2131231182;
+  private View view2131231203;
 
-  private View view2131231183;
+  private View view2131231204;
 
-  private View view2131231184;
+  private View view2131231205;
 
-  private View view2131231185;
+  private View view2131231206;
 
-  private View view2131231178;
+  private View view2131231199;
 
-  private View view2131231179;
+  private View view2131231200;
 
-  private View view2131230785;
+  private View view2131230791;
 
   @UiThread
   public InsuranceWaitChangeActivity_ViewBinding(InsuranceWaitChangeActivity target) {
@@ -53,7 +53,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     target.comTitleSettingTv = Utils.findRequiredViewAsType(source, R.id.com_title_setting_tv, "field 'comTitleSettingTv'", TextView.class);
     view = Utils.findRequiredView(source, R.id.wait_brand, "field 'waitBrand' and method 'onViewClicked'");
     target.waitBrand = Utils.castView(view, R.id.wait_brand, "field 'waitBrand'", TextView.class);
-    view2131231176 = view;
+    view2131231197 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_brand_arrow, "field 'waitBrandArrow' and method 'onViewClicked'");
     target.waitBrandArrow = Utils.castView(view, R.id.wait_brand_arrow, "field 'waitBrandArrow'", ImageView.class);
-    view2131231177 = view;
+    view2131231198 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -74,7 +74,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     target.waitEngine = Utils.findRequiredViewAsType(source, R.id.wait_engine, "field 'waitEngine'", EditText.class);
     view = Utils.findRequiredView(source, R.id.wait_color1, "field 'waitColor1' and method 'onViewClicked'");
     target.waitColor1 = Utils.castView(view, R.id.wait_color1, "field 'waitColor1'", TextView.class);
-    view2131231182 = view;
+    view2131231203 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -83,7 +83,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_color1_arrow, "field 'waitColor1Arrow' and method 'onViewClicked'");
     target.waitColor1Arrow = Utils.castView(view, R.id.wait_color1_arrow, "field 'waitColor1Arrow'", ImageView.class);
-    view2131231183 = view;
+    view2131231204 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -92,7 +92,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_color2, "field 'waitColor2' and method 'onViewClicked'");
     target.waitColor2 = Utils.castView(view, R.id.wait_color2, "field 'waitColor2'", TextView.class);
-    view2131231184 = view;
+    view2131231205 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -101,7 +101,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_color2_arrow, "field 'waitColor2Arrow' and method 'onViewClicked'");
     target.waitColor2Arrow = Utils.castView(view, R.id.wait_color2_arrow, "field 'waitColor2Arrow'", ImageView.class);
-    view2131231185 = view;
+    view2131231206 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -111,7 +111,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     target.waitOwername = Utils.findRequiredViewAsType(source, R.id.wait_owername, "field 'waitOwername'", EditText.class);
     view = Utils.findRequiredView(source, R.id.wait_cardType, "field 'waitCardType' and method 'onViewClicked'");
     target.waitCardType = Utils.castView(view, R.id.wait_cardType, "field 'waitCardType'", TextView.class);
-    view2131231178 = view;
+    view2131231199 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -120,7 +120,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_cardType_arrow, "field 'waitCardTypeArrow' and method 'onViewClicked'");
     target.waitCardTypeArrow = Utils.castView(view, R.id.wait_cardType_arrow, "field 'waitCardTypeArrow'", ImageView.class);
-    view2131231179 = view;
+    view2131231200 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -132,7 +132,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     target.waitAdr = Utils.findRequiredViewAsType(source, R.id.wait_adr, "field 'waitAdr'", EditText.class);
     view = Utils.findRequiredView(source, R.id.button_next, "field 'buttonNext' and method 'onViewClicked'");
     target.buttonNext = Utils.castView(view, R.id.button_next, "field 'buttonNext'", TextView.class);
-    view2131230785 = view;
+    view2131230791 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -169,23 +169,23 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     target.waitAdr = null;
     target.buttonNext = null;
 
-    view2131231176.setOnClickListener(null);
-    view2131231176 = null;
-    view2131231177.setOnClickListener(null);
-    view2131231177 = null;
-    view2131231182.setOnClickListener(null);
-    view2131231182 = null;
-    view2131231183.setOnClickListener(null);
-    view2131231183 = null;
-    view2131231184.setOnClickListener(null);
-    view2131231184 = null;
-    view2131231185.setOnClickListener(null);
-    view2131231185 = null;
-    view2131231178.setOnClickListener(null);
-    view2131231178 = null;
-    view2131231179.setOnClickListener(null);
-    view2131231179 = null;
-    view2131230785.setOnClickListener(null);
-    view2131230785 = null;
+    view2131231197.setOnClickListener(null);
+    view2131231197 = null;
+    view2131231198.setOnClickListener(null);
+    view2131231198 = null;
+    view2131231203.setOnClickListener(null);
+    view2131231203 = null;
+    view2131231204.setOnClickListener(null);
+    view2131231204 = null;
+    view2131231205.setOnClickListener(null);
+    view2131231205 = null;
+    view2131231206.setOnClickListener(null);
+    view2131231206 = null;
+    view2131231199.setOnClickListener(null);
+    view2131231199 = null;
+    view2131231200.setOnClickListener(null);
+    view2131231200 = null;
+    view2131230791.setOnClickListener(null);
+    view2131230791 = null;
   }
 }

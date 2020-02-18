@@ -90,13 +90,16 @@ public class Callback<T> extends Subscriber<T> {
     @Override
     public void onNext(T data) {
 
+
         DdcResult result = (DdcResult) data;
         if (result.getCode() == 0) {
             if (target != null) {
                 target.setState(BaseConstants.STATE_SUCCESS);
             }
             onResponse(data);
-        } else {
+        } else if(result.getCode() == 1007) {
+            onFail("登录失效，请重新登录");
+        }else {
             onFail(result.getMsg());
         }
 

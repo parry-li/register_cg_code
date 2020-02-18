@@ -10,6 +10,7 @@ import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.EditText;
 
 import com.tdr.registration.App;
 
@@ -27,7 +28,15 @@ public class UIUtils {
         return App.context;
     }
 
+    /**
+     * 设置输入框大写
+     *
+     * @param editText
+     */
+    public static void setEditTextUpperCase(EditText editText) {
 
+        editText.setTransformationMethod(new AllCapTransformationMethod(true));
+    }
 
     // 两次点击按钮之间的点击间隔不能少于1000毫秒
     private static int MIN_CLICK_DELAY_TIME = 1000;
@@ -55,6 +64,7 @@ public class UIUtils {
         lastClickTime = curClickTime;
         return flag;
     }
+
     /**
      * 是否包含中文
      *
@@ -105,6 +115,7 @@ public class UIUtils {
 
         return arrDes;
     }
+
     public static byte[] intToByte(int number) {
         int temp = number;
         byte[] b = new byte[4];
@@ -178,6 +189,7 @@ public class UIUtils {
         }
         return stringBuilder.toString();
     }
+
     /**
      * 数组截取：从arrData的offset开始获取len个长度的byte生成的len的byte[]
      *

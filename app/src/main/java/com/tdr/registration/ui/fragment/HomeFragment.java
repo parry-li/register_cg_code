@@ -16,6 +16,7 @@ import com.tdr.registration.bean.VehicleConfigBean;
 import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.ui.activity.LoginActivity;
 import com.tdr.registration.ui.activity.base.BaseActivity;
+import com.tdr.registration.ui.activity.home.PersonageStatisticsActivity;
 import com.tdr.registration.ui.activity.insurance.InsuranceActivity;
 import com.tdr.registration.ui.activity.car.CarQueryActivity;
 import com.tdr.registration.ui.activity.car.RegisterMainActivity;
@@ -133,6 +134,7 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
                 ActivityUtil.goActivity(HomeFragment.this.getActivity(), CarQueryActivity.class, bundle);
                 break;
             case R.id.home_grtj_ll:
+                ActivityUtil.goActivity(HomeFragment.this.getActivity(),PersonageStatisticsActivity.class);
                 break;
         }
     }

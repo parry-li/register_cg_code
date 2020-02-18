@@ -138,6 +138,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
         SPUtils.getInstance().put(BaseConstants.AuditConfig, "");
         SPUtils.getInstance().put(BaseConstants.token, "");
 
+
     }
 
 

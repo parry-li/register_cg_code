@@ -18,7 +18,7 @@ import java.lang.Override;
 public class CarQueryActivity_ViewBinding implements Unbinder {
   private CarQueryActivity target;
 
-  private View view2131230784;
+  private View view2131230790;
 
   @UiThread
   public CarQueryActivity_ViewBinding(CarQueryActivity target) {
@@ -38,7 +38,7 @@ public class CarQueryActivity_ViewBinding implements Unbinder {
     target.carId = Utils.findRequiredViewAsType(source, R.id.car_id, "field 'carId'", EditText.class);
     view = Utils.findRequiredView(source, R.id.button_confirm, "field 'buttonConfirm' and method 'onViewClicked'");
     target.buttonConfirm = Utils.castView(view, R.id.button_confirm, "field 'buttonConfirm'", TextView.class);
-    view2131230784 = view;
+    view2131230790 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -64,7 +64,7 @@ public class CarQueryActivity_ViewBinding implements Unbinder {
     target.buttonConfirm = null;
     target.lineView = null;
 
-    view2131230784.setOnClickListener(null);
-    view2131230784 = null;
+    view2131230790.setOnClickListener(null);
+    view2131230790 = null;
   }
 }

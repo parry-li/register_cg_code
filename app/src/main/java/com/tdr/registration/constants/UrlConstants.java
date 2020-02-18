@@ -59,6 +59,8 @@ public class UrlConstants {
     public static final String policy_failurePage = main_host_service + "api/ddc-electriccar/policy/failurePage";
     /*重新投保*/
     public static final String policy_reinsure = main_host_service + "api/ddc-electriccar/policy/reinsure";
+    /*个人统计*/
+    public static final String installSituation_query2User = main_host_service + "api/ddc-statistical-report/installSituation/query2User";
 
 
 }

@@ -130,12 +130,12 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
                 public void onCustomDialogClickListener(int position, OptionsBean optionsBean) {
 
                     int mID = subsysList.get(position).getId();
-                    backWithData(cityBean.getUnitName(), mID);
+                    backWithData(cityBean.getUnitName(), mID,cityBean.getCityCode());
                 }
             });
 
         } else {
-            backWithData(cityBean.getUnitName(), cityBean.getSubsystemList().get(0).getId());
+            backWithData(cityBean.getUnitName(), cityBean.getSubsystemList().get(0).getId(),cityBean.getCityCode());
         }
     }
 
@@ -236,10 +236,11 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
         return beanList;
     }
 
-    private void backWithData(String city, int value) {
+    private void backWithData(String city, int value,String cityCode) {
         Intent data = new Intent();
         data.putExtra(BaseConstants.KEY_PICKED_CITY_NAME, city);
         data.putExtra(BaseConstants.KEY_PICKED_CITY_VALUE, value);
+        data.putExtra(BaseConstants.Login_city_cityCode, cityCode);
         setResult(RESULT_OK, data);
         finish();
 //        RxBus.getDefault().post(BaseConstants.WECHA_SEARCH, city);

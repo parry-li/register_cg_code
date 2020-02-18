@@ -83,10 +83,16 @@ public class NoCallback<T> extends Callback<T>{
     @Override
     public void onNext(T data) {
 
-        if (target != null) {
-            target.setState(BaseConstants.STATE_SUCCESS);
+
+        DdcResult result = (DdcResult) data;
+        if (result.getCode() == 1007) {
+            onFail("登录失效，请重新登录");
+        } else {
+            if (target != null) {
+                target.setState(BaseConstants.STATE_SUCCESS);
+            }
+            onResponse(data);
         }
-        onResponse(data);
 
     }
 

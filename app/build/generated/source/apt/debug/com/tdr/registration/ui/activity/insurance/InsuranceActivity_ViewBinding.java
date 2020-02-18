@@ -18,7 +18,7 @@ import java.lang.Override;
 public class InsuranceActivity_ViewBinding implements Unbinder {
   private InsuranceActivity target;
 
-  private View view2131230785;
+  private View view2131230791;
 
   @UiThread
   public InsuranceActivity_ViewBinding(InsuranceActivity target) {
@@ -37,7 +37,7 @@ public class InsuranceActivity_ViewBinding implements Unbinder {
     target.comTitleSettingTv = Utils.findRequiredViewAsType(source, R.id.com_title_setting_tv, "field 'comTitleSettingTv'", TextView.class);
     view = Utils.findRequiredView(source, R.id.button_next, "field 'buttonNext' and method 'onViewClicked'");
     target.buttonNext = Utils.castView(view, R.id.button_next, "field 'buttonNext'", TextView.class);
-    view2131230785 = view;
+    view2131230791 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -66,7 +66,7 @@ public class InsuranceActivity_ViewBinding implements Unbinder {
     target.emptyTv = null;
     target.emptyDataRl = null;
 
-    view2131230785.setOnClickListener(null);
-    view2131230785 = null;
+    view2131230791.setOnClickListener(null);
+    view2131230791 = null;
   }
 }

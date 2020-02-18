@@ -29,26 +29,28 @@ public class BaseConstants {
 
     };
 
+private static String APP_NAME = "com.tdr.register.";
+    public static final String token = APP_NAME+"token";
+    public static final String data = APP_NAME+"register_data";
+    public static final String rolePower =  APP_NAME+"role_power";
+    public static final String BillConfig = APP_NAME+"BillConfig";
+    public static final String MapConfig =  APP_NAME+"MapConfig";
+    public static final String VehicleConfig = APP_NAME+ "VehicleConfig";
+    public static final String PhotoConfig =  APP_NAME+"PhotoConfig";
+    public static final String NbLabelConfig =  APP_NAME+"NbLabelConfig";
+    public static final String RegisterConfig =  APP_NAME+"RegisterConfig";
+    public static final String ManagerConfig = APP_NAME+ "ManagerConfig";
+    public static final String AuditConfig =  APP_NAME+"AuditConfig";
 
-    public static final String token = "token";
-    public static final String data = "register_data";
-    public static final String rolePower = "role_power";
-    public static final String BillConfig = "BillConfig";
-    public static final String MapConfig = "MapConfig";
-    public static final String VehicleConfig = "VehicleConfig";
-    public static final String PhotoConfig = "PhotoConfig";
-    public static final String NbLabelConfig = "NbLabelConfig";
-    public static final String RegisterConfig = "RegisterConfig";
-    public static final String ManagerConfig = "ManagerConfig";
-    public static final String AuditConfig = "AuditConfig";
+    public static final String KEY_PICKED_CITY_NAME = APP_NAME+ "picked_city_name";
+    public static final String KEY_PICKED_CITY_VALUE = APP_NAME+ "picked_city_value";
 
-    public static final String KEY_PICKED_CITY_NAME = "picked_city_name";
-    public static final String KEY_PICKED_CITY_VALUE = "picked_city_value";
-
-    public static final String Login_city_name = "Login_city_name";
-    public static final String Login_city_systemID = "Login_city_systemID";
-    public static final String Login_name = "Login_name";
-    public static final String code_table = "code_table";
+    public static final String Login_city_name = APP_NAME+ "Login_city_name";
+    public static final String Login_city_systemID = APP_NAME+ "Login_city_systemID";
+    public static final String Login_city_unitName = APP_NAME+ "Login_city_unitName";
+    public static final String Login_city_cityCode = APP_NAME+ "Login_city_cityCode";
+    public static final String Login_name = APP_NAME+ "Login_name";
+    public static final String code_table = APP_NAME+ "code_table";
 
 
     public static final String register_plate = "register_plate";

@@ -19,9 +19,9 @@ import java.lang.Override;
 public class CarTransferActivity_ViewBinding implements Unbinder {
   private CarTransferActivity target;
 
-  private View view2131231140;
+  private View view2131231161;
 
-  private View view2131231138;
+  private View view2131231159;
 
   @UiThread
   public CarTransferActivity_ViewBinding(CarTransferActivity target) {
@@ -46,7 +46,7 @@ public class CarTransferActivity_ViewBinding implements Unbinder {
     target.transferName = Utils.findRequiredViewAsType(source, R.id.transfer_name, "field 'transferName'", EditText.class);
     view = Utils.findRequiredView(source, R.id.transfer_card_type, "field 'transferCardType' and method 'onViewClicked'");
     target.transferCardType = Utils.castView(view, R.id.transfer_card_type, "field 'transferCardType'", TextView.class);
-    view2131231140 = view;
+    view2131231161 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class CarTransferActivity_ViewBinding implements Unbinder {
     target.transferReason = Utils.findRequiredViewAsType(source, R.id.transfer_reason, "field 'transferReason'", EditText.class);
     view = Utils.findRequiredView(source, R.id.transfer_bt, "field 'transferBt' and method 'onViewClicked'");
     target.transferBt = Utils.castView(view, R.id.transfer_bt, "field 'transferBt'", TextView.class);
-    view2131231138 = view;
+    view2131231159 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -97,9 +97,9 @@ public class CarTransferActivity_ViewBinding implements Unbinder {
     target.transferReason = null;
     target.transferBt = null;
 
-    view2131231140.setOnClickListener(null);
-    view2131231140 = null;
-    view2131231138.setOnClickListener(null);
-    view2131231138 = null;
+    view2131231161.setOnClickListener(null);
+    view2131231161 = null;
+    view2131231159.setOnClickListener(null);
+    view2131231159 = null;
   }
 }

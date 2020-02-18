@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.parry.utils.code.SPUtils;
 import com.tdr.registration.R;
 import com.tdr.registration.bean.CarCheckBean;
 import com.tdr.registration.bean.EditInfoBean;
@@ -18,6 +19,7 @@ import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
 import com.tdr.registration.ui.activity.insurance.InsuranceActivity;
 import com.tdr.registration.utils.ActivityUtil;
 import com.tdr.registration.utils.ToastUtil;
+import com.tdr.registration.utils.UIUtils;
 import com.tdr.registration.view.CarQueryDialog;
 
 import java.util.HashMap;
@@ -47,6 +49,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     private String rolePower = "";
     private CarQueryDialog queryDialog;
     private CarCheckBean carCheckBean;
+    private int systemId;
 
     @Override
     protected void initTitle() {
@@ -69,6 +72,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     @Override
     protected void initData(Bundle savedInstanceState) {
 
+      systemId =   SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
 
@@ -97,6 +101,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
             }
         }
 
+        UIUtils.setEditTextUpperCase(plateNumber);
         queryDialog = new CarQueryDialog();
         queryDialog.setOnCustomDialogClickListener(new CarQueryDialog.OnItemClickListener() {
             @Override
@@ -141,21 +146,20 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     @OnClick(R.id.button_confirm)
     public void onViewClicked() {
 
-        String plateNumberStr = plateNumber.getText().toString().trim();
+        String plateNumberStr = plateNumber.getText().toString().trim().toUpperCase();
         String carIdStr = carId.getText().toString().trim();
 
         if (TextUtils.isEmpty(plateNumberStr)) {
             ToastUtil.showWX("请输入车牌号");
             return;
         }
-
-
         zProgressHUD.show();
         Map<String, Object> map = new HashMap<>();
         if (rolePower.equals("insurance_change")
                 || rolePower.equals(BaseConstants.funJurisdiction[3])
                 || rolePower.equals(BaseConstants.funJurisdiction[4])) {
             map.put("plateNumber", plateNumberStr);
+            map.put("subsystemId", systemId);
             mPresenter.getEditInfo(getRequestBody(map));
         } else {
             if (TextUtils.isEmpty(carIdStr)) {
@@ -175,8 +179,6 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
         zProgressHUD.dismiss();
         carCheckBean = mData;
         queryDialog.showCarQueryDialog(CarQueryActivity.this, mData);
-
-
     }
 
     @Override
@@ -204,10 +206,5 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
         showCustomWindowDialog("服务提示", msg, false, true);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.bind(this);
-    }
+
 }
