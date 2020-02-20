@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-141:12
-INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-141:12
-INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-141:12
-INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-141:12
+ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-142:12
+INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-142:12
+INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-142:12
+INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-142:12
 MERGED from [:matisse] F:\register\register_cg_code\matisse\build\intermediates\manifests\full\debug\AndroidManifest.xml:17:1-33:12
 MERGED from [com.github.parry-li:AndroidToolsUtils:1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\AndroidToolsUtils-1.0.aar\40f7898f4879792e2d3ff9015f533dd2\AndroidManifest.xml:2:1-16:12
 MERGED from [pub.devrel:easypermissions:2.0.1] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\easypermissions-2.0.1.aar\a567c4f711b825582a7d0663a91035ba\AndroidManifest.xml:2:1-19:12
@@ -17,9 +17,9 @@ MERGED from [com.tencent.bugly:crashreport:3.1.7] C:\Users\parry\.gradle\caches\
 MERGED from [com.tencent.bugly:nativecrashreport:3.7.1] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.7.1.aar\2ad337c8405a5c15492f9db659ea75b4\AndroidManifest.xml:2:1-9:12
 MERGED from [:FastBleLib] F:\register\register_cg_code\FastBleLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-16:12
 MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.30.aar\121b93d09b8d5d113610a2ac4a8bce92\AndroidManifest.xml:2:1-11:12
-MERGED from [com.contrarywind:Android-PickerView:4.1.9] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\Android-PickerView-4.1.9.aar\00f9cbb3e218691b079d9ebc5e5acb0a\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.parry-li:android_zxing_qrcode:1.1] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\android_zxing_qrcode-1.1.aar\746464eea6eb0038df85ea588e8d8bba\AndroidManifest.xml:2:1-20:12
-MERGED from [com.contrarywind:wheelview:4.1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\wheelview-4.1.0.aar\6b0685668e75de176e9b0708e3d05b7e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.parry-li.PickViewForAndroid:pickerview:1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\pickerview-1.0.aar\f23c7377d48c5784dde1064c8c5e0fff\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.parry-li.PickViewForAndroid:wheelview:1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\wheelview-1.0.aar\fce3fe0b3a5b4eebf33d86584fadcec9\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:27.1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\f2bb2143a94cf8889bdaeccd729015e8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\a1608f12fb736b5bbdbf2e08108a3054\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\9dc735ac4760e779d64c338f7da3d98d\AndroidManifest.xml:17:1-22:12
@@ -53,20 +53,20 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\parry\.gradle\cac
 MERGED from [it.sephiroth.android.library.imagezoom:library:1.0.4] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\library-1.0.4.aar\05f3689a5f1a392767fc2ca4389e0b2a\AndroidManifest.xml:1:106-7:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\5b9c07e195806f2e4d7ecbcadf10039b\AndroidManifest.xml:2:1-11:12
 MERGED from [it.sephiroth.android.library.easing:library:1.0.2] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\library-1.0.2.aar\6c838b0c1feb5692d22a3f851d353e2a\AndroidManifest.xml:1:116-8:12
-INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-141:12
-INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-141:12
-INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-141:12
+INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-142:12
+INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-142:12
+INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-142:12
 	package
 		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml
 		INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml
-		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-141:12
+		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-142:12
 		INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml
-		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-141:12
+		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:1-142:12
 		INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:2:11-69
@@ -147,7 +147,7 @@ ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:63:5-78
 	android:name
 		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:63:22-75
 application
-ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:72:5-139:19
+ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:72:5-140:19
 MERGED from [:matisse] F:\register\register_cg_code\matisse\build\intermediates\manifests\full\debug\AndroidManifest.xml:27:5-31:19
 MERGED from [:matisse] F:\register\register_cg_code\matisse\build\intermediates\manifests\full\debug\AndroidManifest.xml:27:5-31:19
 MERGED from [pub.devrel:easypermissions:2.0.1] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\easypermissions-2.0.1.aar\a567c4f711b825582a7d0663a91035ba\AndroidManifest.xml:11:5-17:19
@@ -280,22 +280,26 @@ activity#com.tdr.registration.ui.activity.home.PersonageStatisticsActivity
 ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:123:9-102
 	android:name
 		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:123:19-99
+activity#com.tdr.registration.ui.activity.home.StatisticsUnitActivity
+ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:124:9-97
+	android:name
+		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:124:19-94
 provider#android.support.v4.content.FileProvider
-ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:129:9-137:20
+ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:130:9-138:20
 	android:grantUriPermissions
-		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:133:13-47
+		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:134:13-47
 	android:authorities
-		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:131:13-55
+		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:132:13-55
 	android:exported
-		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:132:13-37
+		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:133:13-37
 	android:name
-		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:130:13-67
+		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:131:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:134:13-136:64
+ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:135:13-137:64
 	android:resource
-		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:136:17-51
+		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:137:17-51
 	android:name
-		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:135:17-67
+		ADDED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml:136:17-67
 uses-sdk
 INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\register\register_cg_code\app\src\main\AndroidManifest.xml
@@ -326,12 +330,12 @@ MERGED from [:FastBleLib] F:\register\register_cg_code\FastBleLib\build\intermed
 MERGED from [:FastBleLib] F:\register\register_cg_code\FastBleLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.30.aar\121b93d09b8d5d113610a2ac4a8bce92\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.30.aar\121b93d09b8d5d113610a2ac4a8bce92\AndroidManifest.xml:7:5-9:41
-MERGED from [com.contrarywind:Android-PickerView:4.1.9] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\Android-PickerView-4.1.9.aar\00f9cbb3e218691b079d9ebc5e5acb0a\AndroidManifest.xml:7:5-9:41
-MERGED from [com.contrarywind:Android-PickerView:4.1.9] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\Android-PickerView-4.1.9.aar\00f9cbb3e218691b079d9ebc5e5acb0a\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.parry-li:android_zxing_qrcode:1.1] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\android_zxing_qrcode-1.1.aar\746464eea6eb0038df85ea588e8d8bba\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.parry-li:android_zxing_qrcode:1.1] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\android_zxing_qrcode-1.1.aar\746464eea6eb0038df85ea588e8d8bba\AndroidManifest.xml:7:5-9:41
-MERGED from [com.contrarywind:wheelview:4.1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\wheelview-4.1.0.aar\6b0685668e75de176e9b0708e3d05b7e\AndroidManifest.xml:7:5-9:41
-MERGED from [com.contrarywind:wheelview:4.1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\wheelview-4.1.0.aar\6b0685668e75de176e9b0708e3d05b7e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.parry-li.PickViewForAndroid:pickerview:1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\pickerview-1.0.aar\f23c7377d48c5784dde1064c8c5e0fff\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.parry-li.PickViewForAndroid:pickerview:1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\pickerview-1.0.aar\f23c7377d48c5784dde1064c8c5e0fff\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.parry-li.PickViewForAndroid:wheelview:1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\wheelview-1.0.aar\fce3fe0b3a5b4eebf33d86584fadcec9\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.parry-li.PickViewForAndroid:wheelview:1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\wheelview-1.0.aar\fce3fe0b3a5b4eebf33d86584fadcec9\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:27.1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\f2bb2143a94cf8889bdaeccd729015e8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\f2bb2143a94cf8889bdaeccd729015e8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\parry\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\a1608f12fb736b5bbdbf2e08108a3054\AndroidManifest.xml:20:5-44

@@ -1,12 +1,8 @@
 package com.tdr.registration.ui.activity.me;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -22,11 +18,7 @@ import com.tdr.registration.service.impl.insurance.InsuranceWaitImpl;
 import com.tdr.registration.service.presenter.InsuranceWaitPresenter;
 import com.tdr.registration.ui.activity.CodeTableActivity;
 import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
-import com.tdr.registration.ui.fragment.register.RegisterCarFragment;
 import com.tdr.registration.utils.ActivityUtil;
-import com.tdr.registration.utils.ImageSendUtil;
-import com.tdr.registration.utils.PhotoUtils;
-import com.tdr.registration.utils.ScanUtil;
 import com.tdr.registration.utils.ToastUtil;
 
 import java.util.HashMap;
@@ -34,7 +26,6 @@ import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class InsuranceWaitChangeActivity extends LoadingBaseActivity<InsuranceWaitImpl> implements InsuranceWaitPresenter.View {
@@ -251,8 +242,8 @@ public class InsuranceWaitChangeActivity extends LoadingBaseActivity<InsuranceWa
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
-            String name = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_NAME);
-            String cardCode = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_VALUE);
+            String name = data.getStringExtra(BaseConstants.KEY_NAME);
+            String cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
             switch (requestCode) {
 
                 case CODE_TABLE_BRAND:

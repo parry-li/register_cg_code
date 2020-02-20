@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/module_background"
     android:orientation="vertical">
 
@@ -10,7 +11,11 @@
     <include layout="@layout/common_title" />
 
 
-    <include layout="@layout/cp_view_search" />
+    <!--<include layout="@layout/cp_view_search" />-->
+    <com.tdr.registration.view.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
