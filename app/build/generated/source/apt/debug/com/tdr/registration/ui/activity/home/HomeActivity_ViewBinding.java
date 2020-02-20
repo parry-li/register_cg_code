@@ -18,9 +18,9 @@ import java.lang.Override;
 public class HomeActivity_ViewBinding implements Unbinder {
   private HomeActivity target;
 
-  private View view2131230984;
+  private View view2131230986;
 
-  private View view2131230987;
+  private View view2131230989;
 
   @UiThread
   public HomeActivity_ViewBinding(HomeActivity target) {
@@ -36,7 +36,7 @@ public class HomeActivity_ViewBinding implements Unbinder {
     target.mainBottomHomeTv = Utils.findRequiredViewAsType(source, R.id.main_bottom_home_tv, "field 'mainBottomHomeTv'", TextView.class);
     view = Utils.findRequiredView(source, R.id.main_bottom_home, "field 'mainBottomHome' and method 'onViewClicked'");
     target.mainBottomHome = Utils.castView(view, R.id.main_bottom_home, "field 'mainBottomHome'", LinearLayout.class);
-    view2131230984 = view;
+    view2131230986 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -46,7 +46,7 @@ public class HomeActivity_ViewBinding implements Unbinder {
     target.mainBottomMeTv = Utils.findRequiredViewAsType(source, R.id.main_bottom_me_tv, "field 'mainBottomMeTv'", TextView.class);
     view = Utils.findRequiredView(source, R.id.main_bottom_me, "field 'mainBottomMe' and method 'onViewClicked'");
     target.mainBottomMe = Utils.castView(view, R.id.main_bottom_me, "field 'mainBottomMe'", LinearLayout.class);
-    view2131230987 = view;
+    view2131230989 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -74,9 +74,9 @@ public class HomeActivity_ViewBinding implements Unbinder {
     target.mainBottomHomeIv = null;
     target.mainBottomMeIv = null;
 
-    view2131230984.setOnClickListener(null);
-    view2131230984 = null;
-    view2131230987.setOnClickListener(null);
-    view2131230987 = null;
+    view2131230986.setOnClickListener(null);
+    view2131230986 = null;
+    view2131230989.setOnClickListener(null);
+    view2131230989 = null;
   }
 }

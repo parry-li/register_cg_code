@@ -3,7 +3,6 @@ package com.tdr.registration.ui.fragment.register;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
@@ -14,7 +13,6 @@ import android.widget.TextView;
 import com.parry.utils.code.SPUtils;
 import com.tdr.registration.R;
 import com.tdr.registration.bean.InsuranceBean;
-import com.tdr.registration.bean.InsuranceInfoBean;
 import com.tdr.registration.bean.LableListBean;
 import com.tdr.registration.bean.PhotoConfigBean;
 import com.tdr.registration.bean.PhotoListBean;
@@ -22,14 +20,12 @@ import com.tdr.registration.bean.RegisterPutBean;
 import com.tdr.registration.bean.VehicleConfigBean;
 import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.http.utils.DdcResult;
-import com.tdr.registration.service.BasePresenter;
 import com.tdr.registration.service.impl.car.RegisterImpl;
 import com.tdr.registration.service.presenter.RegisterPresenter;
 import com.tdr.registration.ui.activity.CodeTableActivity;
 import com.tdr.registration.ui.activity.car.ChangeRegisterActivity;
 
 import com.tdr.registration.ui.fragment.base.LoadingBaseFragment;
-import com.tdr.registration.ui.fragment.base.NoLoadingBaseFragment;
 import com.tdr.registration.utils.ActivityUtil;
 import com.tdr.registration.utils.RegularUtil;
 import com.tdr.registration.utils.ToastUtil;
@@ -260,8 +256,8 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == CODE_TABLE_CARD &&
                 resultCode == ((ChangeRegisterActivity) mActivity).RESULT_OK) {
-            String name = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_NAME);
-            cardCode = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_VALUE);
+            String name = data.getStringExtra(BaseConstants.KEY_NAME);
+            cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
             peopleCard.setText(name);
 
         }

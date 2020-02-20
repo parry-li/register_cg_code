@@ -14,10 +14,7 @@ import com.tdr.registration.bean.ItemModel;
 import com.tdr.registration.bean.OptionsBean;
 import com.tdr.registration.bean.VehicleConfigBean;
 import com.tdr.registration.constants.BaseConstants;
-import com.tdr.registration.ui.activity.LoginActivity;
-import com.tdr.registration.ui.activity.base.BaseActivity;
 import com.tdr.registration.ui.activity.home.PersonageStatisticsActivity;
-import com.tdr.registration.ui.activity.insurance.InsuranceActivity;
 import com.tdr.registration.ui.activity.car.CarQueryActivity;
 import com.tdr.registration.ui.activity.car.RegisterMainActivity;
 import com.tdr.registration.ui.fragment.base.NoCacheBaseFragment;
@@ -35,7 +32,7 @@ import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
 
-public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions.PermissionCallbacks  {
+public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions.PermissionCallbacks {
     @BindView(R.id.home_city_ll)
     LinearLayout homeCityLl;
     @BindView(R.id.home_register_ll)
@@ -56,11 +53,11 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
             R.mipmap.home_clbf, R.mipmap.home_cpbb,
             R.mipmap.home_clgh,
             R.mipmap.homg_fwyq,
-            R.mipmap.home_clydj};
+            R.mipmap.home_clydj, R.mipmap.home_tj};
     private String[] funTitles = {
             "车辆报废", "车牌补办",
             "车辆过户", "服务延期",
-            "服务购买"
+            "服务购买", "备案统计"
     };
     private CustomOptionsDialog optionsDialog;
 
@@ -104,6 +101,9 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
                         ) {
                     ActivityUtil.goActivityWithBundle(HomeFragment.this.getActivity(), CarQueryActivity.class, bundle);
 
+                } else if (BaseConstants.funJurisdiction[5].equals(rolePower)) {
+                    bundle.putString(BaseConstants.data, "");
+                    ActivityUtil.goActivity(HomeFragment.this.getActivity(), PersonageStatisticsActivity.class, bundle);
                 }
 
             }
@@ -121,20 +121,25 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
                 break;
             case R.id.home_register_ll://备案登记
 
-                optionsDialog.showDialog();
+                if (optionsDialog != null) {
+                    optionsDialog.showDialog();
+                } else {
+                    goRegisterActivity(1);
+                }
+
                 break;
             case R.id.home_bxbg_ll://服务变更
-                 bundle = new Bundle();
+                bundle = new Bundle();
                 bundle.putString("rolePower", "insurance_change");
                 ActivityUtil.goActivity(HomeFragment.this.getActivity(), CarQueryActivity.class, bundle);
                 break;
             case R.id.home_xxbg_ll://信息变更
-
                 bundle.putString("rolePower", "change_register");
                 ActivityUtil.goActivity(HomeFragment.this.getActivity(), CarQueryActivity.class, bundle);
                 break;
             case R.id.home_grtj_ll:
-                ActivityUtil.goActivity(HomeFragment.this.getActivity(),PersonageStatisticsActivity.class);
+                bundle.putString(BaseConstants.data, "Personage");
+                ActivityUtil.goActivity(HomeFragment.this.getActivity(), PersonageStatisticsActivity.class, bundle);
                 break;
         }
     }
@@ -143,39 +148,51 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
 
         try {
             VehicleConfigBean configBean = ConfigUtil.getVehicleConfig();
-            List<OptionsBean> strings = new ArrayList<>();
+            final List<OptionsBean> strings = new ArrayList<>();
 
-            for (VehicleConfigBean.VehicleLicenseInfoListBean bean :
-                    configBean.getVehicleLicenseInfoList()) {
-                /* 当前调试后期加上*/
-                /* 当前调试后期加上*/
-                /* 当前调试后期加上*/
-                /* 当前调试后期加上*/
-                /* 当前调试后期加上*/
-                /* 当前调试后期加上*/
-                /* 当前调试后期加上*/
-                /* 当前调试后期加上*/
+            if (configBean.getVehicleLicenseInfoList() != null && configBean.getVehicleLicenseInfoList().size() > 0) {
+                for (VehicleConfigBean.VehicleLicenseInfoListBean bean :
+                        configBean.getVehicleLicenseInfoList()) {
+                    /* 当前调试后期加上*/
+                    /* 当前调试后期加上*/
+                    /* 当前调试后期加上*/
+                    /* 当前调试后期加上*/
+                    /* 当前调试后期加上*/
+                    /* 当前调试后期加上*/
+                    /* 当前调试后期加上*/
+                    /* 当前调试后期加上*/
 
 //                if (bean.isIsValid()) {
-                strings.add(new OptionsBean(bean.getVehicleTypeName(), bean.getTypeId()));
+                    strings.add(new OptionsBean(bean.getVehicleTypeName(), bean.getTypeId()));
 //                }
 
-            }
-            optionsDialog = new CustomOptionsDialog(HomeFragment.this.getContext(), strings);
-            optionsDialog.setOnCustomClickListener(new CustomOptionsDialog.OnItemClickListener() {
-                @Override
-                public void onCustomDialogClickListener(int position, OptionsBean optionsBean) {
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("car_type", (int) optionsBean.getValue());
-                    ActivityUtil.goActivity(HomeFragment.this.getActivity(), RegisterMainActivity.class, bundle);
                 }
-            });
+                optionsDialog = new CustomOptionsDialog(HomeFragment.this.getContext(), "请选择车辆类型");
+                optionsDialog.setPickerData(strings);
+                optionsDialog.setOnCustomClickListener(new CustomOptionsDialog.OnItemClickListener() {
+                    @Override
+                    public void onCustomDialogClickListener(int options1, int options2, int options3) {
+
+
+                        goRegisterActivity((int) strings.get(options1).getValue());
+                    }
+
+                });
+            }
+
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
+
+    private void goRegisterActivity(int type) {
+        Bundle bundle = new Bundle();
+        bundle.putInt("car_type", type);
+        ActivityUtil.goActivity(HomeFragment.this.getActivity(), RegisterMainActivity.class, bundle);
+    }
+
 
     @Override
     protected void submitRequestData() {
@@ -187,6 +204,7 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
     }
+
     @AfterPermissionGranted(PERMISSION_CODE)
     public void getPermission() {
         if (EasyPermissions.hasPermissions(this.getContext(), PERMISSION_CONTENT)) {

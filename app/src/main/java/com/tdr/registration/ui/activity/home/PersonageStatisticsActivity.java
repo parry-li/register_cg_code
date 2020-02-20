@@ -1,6 +1,8 @@
 package com.tdr.registration.ui.activity.home;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -17,6 +19,7 @@ import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.service.impl.Statisticsmpl;
 import com.tdr.registration.service.presenter.StatisticsPresenter;
 import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
+import com.tdr.registration.utils.ActivityUtil;
 import com.tdr.registration.utils.TimeUtil;
 import com.tdr.registration.utils.ToastUtil;
 import com.tdr.registration.view.CustomTimeDialog;
@@ -68,6 +71,13 @@ public class PersonageStatisticsActivity extends LoadingBaseActivity<Statisticsm
     RecyclerView statisticsRv;
     @BindView(R.id.empty_data_rl)
     RelativeLayout emptyDataRl;
+    @BindView(R.id.base_unit_arrow)
+    ImageView baseUnitArrow;
+    @BindView(R.id.new_sales)
+    TextView newSales;
+    @BindView(R.id.new_Road)
+    TextView newRoad;
+
     private StatisticsAdapter statisticsAdapter;
     private String unitName;
     private String cityCode;
@@ -75,17 +85,41 @@ public class PersonageStatisticsActivity extends LoadingBaseActivity<Statisticsm
     private String lastStartTime;
     private String lastEndTime;
     private CustomTimeDialog timeDialog;
+    private String unitNo;
+    private String unitType;
 
     @Override
     protected void initData(Bundle savedInstanceState) {
-        unitName = SPUtils.getInstance().getString(BaseConstants.Login_city_unitName);
-        cityCode = SPUtils.getInstance().getString(BaseConstants.Login_city_cityCode);
-        cityName = SPUtils.getInstance().getString(BaseConstants.Login_city_name);
-        baseName.setText(cityName);
-        baseNo.setText(cityCode);
-        baseUnit.setText(unitName);
+
+        initBundle();
+
         initRv();
         initDialog();
+    }
+
+    boolean isPersonage = true;//false 为备案统计 true为个人统计
+
+    private void initBundle() {
+        String type = getIntent().getExtras().getString(BaseConstants.data);
+        unitName = SPUtils.getInstance().getString(BaseConstants.Login_city_unitName);
+        cityCode = SPUtils.getInstance().getString(BaseConstants.Login_city_cityCode);
+        cityName = SPUtils.getInstance().getString(BaseConstants.Login_city_unitName);
+        unitNo = SPUtils.getInstance().getString(BaseConstants.Login_city_unitNo);
+        unitType = SPUtils.getInstance().getInt(BaseConstants.Login_city_unitType) + "";
+        if ("Personage".equals(type)) {
+            isPersonage = true;
+            baseUnitArrow.setVisibility(View.GONE);
+            textTitle.setText("个人统计");
+        } else {
+            textTitle.setText("备案统计");
+            isPersonage = false;
+            baseUnitArrow.setVisibility(View.VISIBLE);
+        }
+        baseNo.setText(unitNo);
+        baseName.setText(cityName);
+        baseUnit.setText(unitName);
+
+
     }
 
     private void initDialog() {
@@ -146,6 +180,10 @@ public class PersonageStatisticsActivity extends LoadingBaseActivity<Statisticsm
         Map<String, Object> map = new HashMap<>();
         map.put("startTime", lastStartTime);
         map.put("endTime", lastEndTime);
+        if (!isPersonage) {
+            map.put("unitNo", unitNo);
+            map.put("unitType", unitType);
+        }
         zProgressHUD.show();
         mPresenter.getStatistics(getRequestBody(map));
     }
@@ -167,8 +205,9 @@ public class PersonageStatisticsActivity extends LoadingBaseActivity<Statisticsm
 
 
     private boolean isStartTime = false;
+    private final int SELECT_UNIT = 1009;
 
-    @OnClick({R.id.start_time, R.id.end_time, R.id.query})
+    @OnClick({R.id.start_time, R.id.end_time, R.id.query, R.id.base_unit, R.id.base_unit_arrow})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.start_time:
@@ -182,6 +221,28 @@ public class PersonageStatisticsActivity extends LoadingBaseActivity<Statisticsm
             case R.id.query:
                 getServiceData();
                 break;
+            case R.id.base_unit:
+            case R.id.base_unit_arrow:
+                if (!isPersonage) {
+
+                    ActivityUtil.goActivityForResult(PersonageStatisticsActivity.this, StatisticsUnitActivity.class, SELECT_UNIT);
+                }
+                break;
+        }
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == SELECT_UNIT && resultCode == RESULT_OK) {
+            Bundle bundle = data.getExtras();
+            if (bundle != null) {
+                baseUnit.setText(bundle.getString(BaseConstants.KEY_NAME));
+                baseNo.setText(bundle.getString(BaseConstants.KEY_VALUE));
+                unitNo = bundle.getString(BaseConstants.KEY_VALUE);
+                unitType = bundle.getString(BaseConstants.KEY_VALUE2);
+            }
         }
     }
 
@@ -200,7 +261,8 @@ public class PersonageStatisticsActivity extends LoadingBaseActivity<Statisticsm
         pfNum.setText(mData.getHasPolicyNumber() + "");
         allMoney.setText(mData.getTotalAmount() + "");
         statisticsAdapter.setNewData(mData.getPolicyList());
-
+        newSales.setText(mData.getNewVehicleNumber() + "");
+        newRoad.setText(mData.getOldVehicleNumber() + "");
         if (mData.getPolicyList() == null || mData.getPolicyList().size() == 0) {
             emptyDataRl.setVisibility(View.VISIBLE);
         } else {

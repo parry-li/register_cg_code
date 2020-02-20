@@ -3,9 +3,7 @@ package com.tdr.registration.ui.fragment.register;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -22,9 +20,7 @@ import com.tdr.registration.utils.RegularUtil;
 import com.tdr.registration.utils.ToastUtil;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
 public class RegisterPeopleFragment extends NoLoadingBaseFragment {
     private static final int CODE_TABLE_CARD = 2001;
@@ -157,8 +153,8 @@ public class RegisterPeopleFragment extends NoLoadingBaseFragment {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == CODE_TABLE_CARD &&
                 resultCode == ((RegisterMainActivity) RegisterPeopleFragment.this.getActivity()).RESULT_OK) {
-            String name = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_NAME);
-            cardCode = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_VALUE);
+            String name = data.getStringExtra(BaseConstants.KEY_NAME);
+            cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
             peopleCard.setText(name);
 
         }

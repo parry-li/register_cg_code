@@ -29,7 +29,7 @@ import com.tdr.registration.view.CityPicker.adapter.ResultListAdapter;
 import com.tdr.registration.view.CityPicker.model.City;
 import com.tdr.registration.view.CityPicker.view.SideLetterBar;
 import com.tdr.registration.view.CustomOptionsDialog;
-import com.tdr.registration.view.ZProgressHUD;
+import com.tdr.registration.view.SearchView;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -44,9 +44,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
     private ListView mListView;
     private ListView mResultListView;
     private SideLetterBar mLetterBar;
-    private EditText searchBox;
-    private ImageView clearBtn;
-    private TextView cancelBtn;
+
     private ViewGroup emptyView;
 
     private CityListAdapter mCityAdapter;
@@ -54,8 +52,9 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
     private List<City> mAllCities;
     private List<CityBean> mResultCities;
     //    private DBManager dbManager;
-    private List<CityBean> cityList =new ArrayList<>();
+    private List<CityBean> cityList = new ArrayList<>();
     private TextView noData;
+    private SearchView searchView;
 
 
     @Override
@@ -121,21 +120,22 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
             final List<CityBean.SubsystemListBean> subsysList = cityBean.getSubsystemList();
             List<OptionsBean> strings = new ArrayList<>();
             for (CityBean.SubsystemListBean bean : cityBean.getSubsystemList()) {
-                strings.add(new OptionsBean(bean.getSubsystemName(),""));
+                strings.add(new OptionsBean(bean.getSubsystemName(), ""));
             }
-            CustomOptionsDialog customOptionsDialog = new CustomOptionsDialog(CityPickerActivity.this, strings);
+            CustomOptionsDialog customOptionsDialog = new CustomOptionsDialog(CityPickerActivity.this, "请选择字系统");
+            customOptionsDialog.setPickerData(strings);
             customOptionsDialog.showDialog();
             customOptionsDialog.setOnCustomClickListener(new CustomOptionsDialog.OnItemClickListener() {
                 @Override
-                public void onCustomDialogClickListener(int position, OptionsBean optionsBean) {
-
-                    int mID = subsysList.get(position).getId();
-                    backWithData(cityBean.getUnitName(), mID,cityBean.getCityCode());
+                public void onCustomDialogClickListener(int options1, int options2, int options3) {
+                    int mID = subsysList.get(options1).getId();
+                    backWithData(cityBean.getUnitName(), mID, cityBean.getCityCode());
                 }
+
             });
 
         } else {
-            backWithData(cityBean.getUnitName(), cityBean.getSubsystemList().get(0).getId(),cityBean.getCityCode());
+            backWithData(cityBean.getUnitName(), cityBean.getSubsystemList().get(0).getId(), cityBean.getCityCode());
         }
     }
 
@@ -156,26 +156,24 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
             }
         });
 
-        searchBox = (EditText) findViewById(R.id.et_search);
-        searchBox.addTextChangedListener(new TextWatcher() {
+//        searchBox = (EditText) findViewById(R.id.et_search);
+        searchView = (SearchView) findViewById(R.id.search_view);
+        searchView.setSearchViewListener(new SearchView.SearchViewListener() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            public void onRefreshAutoComplete(String text) {
+
             }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                String keyword = s.toString();
+            public void onSearch(String text) {
+                String keyword = text;
                 if (TextUtils.isEmpty(keyword)) {
-                    clearBtn.setVisibility(View.GONE);
+
                     emptyView.setVisibility(View.GONE);
                     mResultListView.setVisibility(View.GONE);
                 } else {
                     noData.setText("暂无数据");
-                    clearBtn.setVisibility(View.VISIBLE);
+
                     mResultListView.setVisibility(View.VISIBLE);
                     mResultCities = getResultCities(keyword);
                     if (mResultCities == null || mResultCities.size() == 0) {
@@ -186,7 +184,16 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
                     }
                 }
             }
+
+            @Override
+            public void onCancel() {
+                if(cityList!=null&&cityList.size()>0){
+                    mCityAdapter.setNewData(cityList);
+                    emptyView.setVisibility(View.GONE);
+                }
+            }
         });
+
 
 
         mResultListView = (ListView) findViewById(R.id.listview_search_result);
@@ -198,15 +205,15 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
             }
         });
 
-        clearBtn = (ImageView) findViewById(R.id.iv_search_clear);
-        cancelBtn = (TextView) findViewById(R.id.tv_search_cancel);
+
+
         TextView textTitle = (TextView) findViewById(R.id.text_title);
         textTitle.setText("切换城市");
         RelativeLayout com_title_back = (RelativeLayout) findViewById(R.id.com_title_back);
         titleBackClickListener(com_title_back);
 
-        clearBtn.setOnClickListener(this);
-        cancelBtn.setOnClickListener(this);
+
+
         emptyView.setOnClickListener(this);
 
     }
@@ -236,10 +243,10 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
         return beanList;
     }
 
-    private void backWithData(String city, int value,String cityCode) {
+    private void backWithData(String city, int value, String cityCode) {
         Intent data = new Intent();
-        data.putExtra(BaseConstants.KEY_PICKED_CITY_NAME, city);
-        data.putExtra(BaseConstants.KEY_PICKED_CITY_VALUE, value);
+        data.putExtra(BaseConstants.KEY_NAME, city);
+        data.putExtra(BaseConstants.KEY_VALUE, value);
         data.putExtra(BaseConstants.Login_city_cityCode, cityCode);
         setResult(RESULT_OK, data);
         finish();
@@ -250,17 +257,8 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
     @Override
     public void onClick(View v) {
         int i = v.getId();
-        if (i == R.id.iv_search_clear) {
-            searchBox.setText("");
-            clearBtn.setVisibility(View.GONE);
-            emptyView.setVisibility(View.GONE);
-            mResultListView.setVisibility(View.GONE);
-            mResultCities = null;
-        } else if (i == R.id.tv_search_cancel) {
-            finish();
-
-        } else if (i == R.id.empty_view) {
-            if(UIUtils.isFastClick()){
+        if (i == R.id.empty_view) {
+            if (UIUtils.isFastClick()) {
                 if (!noData.getText().toString().equals("暂无数据")) {
                     zProgressHUD.show();
                     mPresenter.getCity();
@@ -282,7 +280,6 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
     @Override
     public void loadingSuccessForData(List<CityBean> cityBeanList) {
         zProgressHUD.dismiss();
-        searchBox.setEnabled(true);
         emptyView.setVisibility(View.GONE);
         cityList = cityBeanList;
         Collections.sort(cityList, new CityComparator());
@@ -292,13 +289,11 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
     }
 
 
-
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
         noData.setText("加载失败，请点击重新加载");
         emptyView.setVisibility(View.VISIBLE);
-        searchBox.setEnabled(false);
     }
 
 

@@ -31,7 +31,6 @@ import com.tdr.registration.service.presenter.RegisterPresenter;
 import com.tdr.registration.ui.activity.CodeTableActivity;
 import com.tdr.registration.ui.activity.base.BaseActivity;
 import com.tdr.registration.ui.activity.car.ChangeRegisterActivity;
-import com.tdr.registration.ui.activity.car.RegisterMainActivity;
 import com.tdr.registration.ui.fragment.base.LoadingBaseFragment;
 import com.tdr.registration.utils.AllCapTransformationMethod;
 import com.tdr.registration.utils.ConfigUtil;
@@ -48,7 +47,6 @@ import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
 public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl> implements RegisterPresenter.View {
 
@@ -418,14 +416,14 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
             switch (requestCode) {
 
                 case CODE_TABLE_BRAND:
-                    String name = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_NAME);
-                    String cardCode = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_VALUE);
+                    String name = data.getStringExtra(BaseConstants.KEY_NAME);
+                    String cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
                     carBrand.setText(name);
                     cardBrandType = cardCode;
                     break;
                 case CODE_TABLE_COLOR:
-                    String name1 = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_NAME);
-                    String cardCode1 = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_VALUE);
+                    String name1 = data.getStringExtra(BaseConstants.KEY_NAME);
+                    String cardCode1 = data.getStringExtra(BaseConstants.KEY_VALUE);
                     if (isMainClolor) {
                         carColorMain.setText(name1);
                         carColorMainId = cardCode1;

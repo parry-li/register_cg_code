@@ -16,5 +16,6 @@ public interface StatisticsPresenter {
     interface Presenter {
         void getStatistics(RequestBody route);
 
+
     }
 }

@@ -10,6 +10,7 @@ import com.tdr.registration.bean.InsuranceWaitBean;
 import com.tdr.registration.bean.LoginBean;
 import com.tdr.registration.bean.PhotoBean;
 import com.tdr.registration.bean.StatisticsBean;
+import com.tdr.registration.bean.UnitBean;
 import com.tdr.registration.http.utils.DdcResult;
 
 
@@ -72,6 +73,9 @@ public interface BaseService {
 
     @POST()
     Observable<DdcResult<StatisticsBean>> getStatistics(@Url String url, @Body RequestBody route);
+
+    @POST()
+    Observable<DdcResult<UnitBean>> getUnit(@Url String url, @Body RequestBody route);
 }
 
 

@@ -1,6 +1,8 @@
 package com.tdr.registration.bean;
 
-public class OptionsBean {
+import com.contrarywind.interfaces.IPickerViewData;
+
+public class OptionsBean implements IPickerViewData {
     private String name;
     private Object value;
 
@@ -27,5 +29,10 @@ public class OptionsBean {
 
     public void setValue(Object value) {
         this.value = value;
+    }
+
+    @Override
+    public String getPickerViewText() {
+        return name;
     }
 }

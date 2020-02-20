@@ -25,7 +25,8 @@ public class BaseConstants {
             "2",//车牌补办1
             "3", //车辆过户2
             "6",//服务延期3
-            "7"//服务购买4
+            "7",//服务购买4
+            "8"//备案统计5
 
     };
 
@@ -42,13 +43,16 @@ private static String APP_NAME = "com.tdr.register.";
     public static final String ManagerConfig = APP_NAME+ "ManagerConfig";
     public static final String AuditConfig =  APP_NAME+"AuditConfig";
 
-    public static final String KEY_PICKED_CITY_NAME = APP_NAME+ "picked_city_name";
-    public static final String KEY_PICKED_CITY_VALUE = APP_NAME+ "picked_city_value";
+    public static final String KEY_NAME = APP_NAME+ "picked_name";
+    public static final String KEY_VALUE = APP_NAME+ "picked_value";
+    public static final String KEY_VALUE2 = APP_NAME+ "picked_value2";
 
     public static final String Login_city_name = APP_NAME+ "Login_city_name";
-    public static final String Login_city_systemID = APP_NAME+ "Login_city_systemID";
+    public static final String Login_city_systemID = APP_NAME+ "Login_city_systemID";// int类型
     public static final String Login_city_unitName = APP_NAME+ "Login_city_unitName";
     public static final String Login_city_cityCode = APP_NAME+ "Login_city_cityCode";
+    public static final String Login_city_unitNo = APP_NAME+ "Login_city_unitNo";
+    public static final String Login_city_unitType = APP_NAME+ "Login_city_unitType";// int类型
     public static final String Login_name = APP_NAME+ "Login_name";
     public static final String code_table = APP_NAME+ "code_table";
 

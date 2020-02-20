@@ -18,7 +18,7 @@ import java.lang.Override;
 public class PasswordActivity_ViewBinding implements Unbinder {
   private PasswordActivity target;
 
-  private View view2131230791;
+  private View view2131230793;
 
   @UiThread
   public PasswordActivity_ViewBinding(PasswordActivity target) {
@@ -42,7 +42,7 @@ public class PasswordActivity_ViewBinding implements Unbinder {
     target.passwordConfirmV = Utils.findRequiredView(source, R.id.password_confirm_v, "field 'passwordConfirmV'");
     view = Utils.findRequiredView(source, R.id.button_next, "field 'buttonNext' and method 'onViewClicked'");
     target.buttonNext = Utils.castView(view, R.id.button_next, "field 'buttonNext'", TextView.class);
-    view2131230791 = view;
+    view2131230793 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,7 +70,7 @@ public class PasswordActivity_ViewBinding implements Unbinder {
     target.passwordConfirmV = null;
     target.buttonNext = null;
 
-    view2131230791.setOnClickListener(null);
-    view2131230791 = null;
+    view2131230793.setOnClickListener(null);
+    view2131230793 = null;
   }
 }

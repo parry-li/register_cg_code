@@ -9,9 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -47,7 +45,6 @@ import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 
@@ -412,14 +409,14 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
             switch (requestCode) {
 
                 case CODE_TABLE_BRAND:
-                    String name = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_NAME);
-                    String cardCode = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_VALUE);
+                    String name = data.getStringExtra(BaseConstants.KEY_NAME);
+                    String cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
                     carBrand.setText(name);
                     cardBrandType = cardCode;
                     break;
                 case CODE_TABLE_COLOR:
-                    String name1 = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_NAME);
-                    String cardCode1 = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_VALUE);
+                    String name1 = data.getStringExtra(BaseConstants.KEY_NAME);
+                    String cardCode1 = data.getStringExtra(BaseConstants.KEY_VALUE);
                     if (isMainClolor) {
                         carColorMain.setText(name1);
                         carColorMainId = cardCode1;

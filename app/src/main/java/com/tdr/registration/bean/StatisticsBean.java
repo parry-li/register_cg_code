@@ -6,7 +6,7 @@ public class StatisticsBean  {
 
 
     /**
-     * totalNumber : 10
+     * totalNumber : 11
      * hasRfidNumber : 9
      * noRfidNumber : 0
      * newVehicleNumber : 9
@@ -14,8 +14,8 @@ public class StatisticsBean  {
      * plateChangeNumber : 0
      * allChangeNumber : 0
      * hasPolicyNumber : 6
-     * totalAmount : 462
-     * policyList : [{"name":"意外险","quantity":14,"amount":190,"details":[{"name":"套餐1","quantity":5,"amount":100,"details":[]},{"name":"套餐2","quantity":9,"amount":90,"details":[]}]},{"name":"yjs保险","quantity":10,"amount":136,"details":[{"name":"啥都保","quantity":3,"amount":36,"details":[]},{"name":"啥都保","quantity":3,"amount":60,"details":[]},{"name":"啥都保(续)","quantity":4,"amount":40,"details":[]}]},{"name":"有保险","quantity":8,"amount":136,"details":[{"name":"啊手动阀","quantity":3,"amount":36,"details":[]},{"name":"阿斯蒂","quantity":5,"amount":100,"details":[]}]}]
+     * totalAmount : 452.0
+     * policyList : [{"name":"意外险","quantity":13,"amount":180,"details":[{"name":"套餐1","quantity":5,"amount":100,"details":[]},{"name":"套餐2","quantity":8,"amount":80,"details":[]}]},{"name":"yjs保险","quantity":10,"amount":136,"details":[{"name":"啥都保","quantity":3,"amount":36,"details":[]},{"name":"啥都保","quantity":3,"amount":60,"details":[]},{"name":"啥都保(续)","quantity":4,"amount":40,"details":[]}]},{"name":"有保险","quantity":8,"amount":136,"details":[{"name":"啊手动阀","quantity":3,"amount":36,"details":[]},{"name":"阿斯蒂","quantity":5,"amount":100,"details":[]}]}]
      */
 
     private int totalNumber;
@@ -26,7 +26,7 @@ public class StatisticsBean  {
     private int plateChangeNumber;
     private int allChangeNumber;
     private int hasPolicyNumber;
-    private int totalAmount;
+    private double totalAmount;
     private List<PolicyListBean> policyList;
 
     public int getTotalNumber() {
@@ -93,11 +93,11 @@ public class StatisticsBean  {
         this.hasPolicyNumber = hasPolicyNumber;
     }
 
-    public int getTotalAmount() {
+    public double getTotalAmount() {
         return totalAmount;
     }
 
-    public void setTotalAmount(int totalAmount) {
+    public void setTotalAmount(double totalAmount) {
         this.totalAmount = totalAmount;
     }
 
@@ -112,14 +112,14 @@ public class StatisticsBean  {
     public static class PolicyListBean {
         /**
          * name : 意外险
-         * quantity : 14
-         * amount : 190
-         * details : [{"name":"套餐1","quantity":5,"amount":100,"details":[]},{"name":"套餐2","quantity":9,"amount":90,"details":[]}]
+         * quantity : 13
+         * amount : 180.0
+         * details : [{"name":"套餐1","quantity":5,"amount":100,"details":[]},{"name":"套餐2","quantity":8,"amount":80,"details":[]}]
          */
 
         private String name;
         private int quantity;
-        private int amount;
+        private double amount;
         private List<DetailsBean> details;
 
         public String getName() {
@@ -138,11 +138,11 @@ public class StatisticsBean  {
             this.quantity = quantity;
         }
 
-        public int getAmount() {
+        public double getAmount() {
             return amount;
         }
 
-        public void setAmount(int amount) {
+        public void setAmount(double amount) {
             this.amount = amount;
         }
 
@@ -158,13 +158,13 @@ public class StatisticsBean  {
             /**
              * name : 套餐1
              * quantity : 5
-             * amount : 100
+             * amount : 100.0
              * details : []
              */
 
             private String name;
             private int quantity;
-            private int amount;
+            private double amount;
             private List<?> details;
 
             public String getName() {
@@ -183,11 +183,11 @@ public class StatisticsBean  {
                 this.quantity = quantity;
             }
 
-            public int getAmount() {
+            public double getAmount() {
                 return amount;
             }
 
-            public void setAmount(int amount) {
+            public void setAmount(double amount) {
                 this.amount = amount;
             }
 

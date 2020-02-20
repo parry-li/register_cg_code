@@ -9,8 +9,6 @@ import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -31,6 +29,7 @@ import com.tdr.registration.service.presenter.InsuranceWaitPresenter;
 import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
 import com.tdr.registration.utils.ActivityUtil;
 import com.tdr.registration.utils.ToastUtil;
+import com.tdr.registration.view.SearchView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -51,22 +50,18 @@ public class InsuranceWaitActivity extends LoadingBaseActivity<InsuranceWaitImpl
     ImageView comTitleSettingIv;
     @BindView(R.id.com_title_setting_tv)
     TextView comTitleSettingTv;
-    @BindView(R.id.et_search)
-    EditText etSearch;
-    @BindView(R.id.iv_search_clear)
-    ImageView ivSearchClear;
-    @BindView(R.id.tv_search_cancel)
-    TextView tvSearchCancel;
+    @BindView(R.id.search_view)
+    SearchView searchView;
     @BindView(R.id.insurance_rv)
     RecyclerView insuranceRv;
+    @BindView(R.id.refresh)
+    SmartRefreshLayout refresh;
     @BindView(R.id.empty_iv)
     ImageView emptyIv;
     @BindView(R.id.empty_tv)
     TextView emptyTv;
     @BindView(R.id.empty_data_rl)
     RelativeLayout emptyDataRl;
-    @BindView(R.id.refresh)
-    SmartRefreshLayout refresh;
     private InsuranceWaitBean insuranceWaitBean;
     private InsuranceWaitAdapter waitAdapter;
 
@@ -79,72 +74,58 @@ public class InsuranceWaitActivity extends LoadingBaseActivity<InsuranceWaitImpl
         initEditView();
     }
 
-    private boolean isRefresh =true;
-    private boolean isSearch =false;
+    private boolean isRefresh = true;
+    private boolean isSearch = false;
+
     private void initEditView() {
-        tvSearchCancel.setText("搜索");
-        tvSearchCancel.setVisibility(View.GONE);
-        etSearch.addTextChangedListener(new TextWatcher() {
+        searchView.setSearchViewListener(new SearchView.SearchViewListener() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public void onRefreshAutoComplete(String text) {
 
             }
 
             @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                keyName = editable.toString().trim();
-                if (!TextUtils.isEmpty(editable)) {
-                    tvSearchCancel.setVisibility(View.VISIBLE);
-                } else {
-                    tvSearchCancel.setVisibility(View.GONE);
-                }
-            }
-        });
-
-        ivSearchClear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                etSearch.setText("");
-            }
-        });
-        tvSearchCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+            public void onSearch(String text) {
+                //搜索
+                isSearch = true;
                 pager = 1;
                 zProgressHUD.show();
-                isSearch=true;
-                getInsuranceData(keyName);
+                getInsuranceData(text);
             }
-        });
-
-        etSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 
             @Override
-            public boolean onEditorAction(TextView v, int actionId,
-                                          KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                    // 先隐藏键盘
-                    KeyboardUtils.hideSoftInput(InsuranceWaitActivity.this);
-                    keyName = etSearch.getText().toString().trim();
-                    if (TextUtils.isEmpty(keyName)) {
-                        ToastUtil.showWX("搜索栏不能为空！");
-                    } else {
-                        //搜索
-                        isSearch=true;
-                        pager = 1;
-                        zProgressHUD.show();
-                        getInsuranceData(keyName);
-                    }
-                    return true;
-                }
-                return false;
+            public void onCancel() {
+                pager = 1;
+                zProgressHUD.show();
+                isSearch = true;
+                getInsuranceData("");
             }
         });
+//        tvSearchCancel.setText("搜索");
+//        tvSearchCancel.setVisibility(View.GONE);
+//        etSearch.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable editable) {
+////                keyName = editable.toString().trim();
+////                if (!TextUtils.isEmpty(editable)) {
+////                    tvSearchCancel.setVisibility(View.VISIBLE);
+////                } else {
+////                    tvSearchCancel.setVisibility(View.GONE);
+////                }
+//            }
+//        });
+
+
     }
 
     private String keyName;
@@ -153,16 +134,16 @@ public class InsuranceWaitActivity extends LoadingBaseActivity<InsuranceWaitImpl
         refresh.setOnRefreshLoadmoreListener(new OnRefreshLoadmoreListener() {
             @Override
             public void onLoadmore(RefreshLayout refreshlayout) {
-                isRefresh =false;
-                isSearch =false;
+                isRefresh = false;
+                isSearch = false;
                 getInsuranceData("");
             }
 
             @Override
             public void onRefresh(RefreshLayout refreshlayout) {
                 pager = 1;
-                isRefresh =true;
-                isSearch =false;
+                isRefresh = true;
+                isSearch = false;
                 getInsuranceData("");
             }
         });
@@ -185,7 +166,7 @@ public class InsuranceWaitActivity extends LoadingBaseActivity<InsuranceWaitImpl
             public void onChangeItemClickListener(InsuranceWaitBean insuranceWaitBean) {
 
                 String beanJson = new Gson().toJson(insuranceWaitBean);
-                SPUtils.getInstance().put(BaseConstants.data,beanJson);
+                SPUtils.getInstance().put(BaseConstants.data, beanJson);
                 ActivityUtil.goActivity(InsuranceWaitActivity.this, InsuranceWaitChangeActivity.class);
             }
         });
@@ -269,16 +250,16 @@ public class InsuranceWaitActivity extends LoadingBaseActivity<InsuranceWaitImpl
 
     @Override
     public void loadingSuccessForData(DdcResult<List<InsuranceWaitBean>> mData) {
-        if(mData.getData().size()>0){
+        if (mData.getData().size() > 0) {
             emptyDataRl.setVisibility(View.GONE);
-            if(pager==1){
+            if (pager == 1) {
                 waitAdapter.setNewData(mData.getData());
-            }else {
+            } else {
                 waitAdapter.addData(mData.getData());
             }
             pager++;
-        }else {
-            if(pager==1){
+        } else {
+            if (pager == 1) {
                 emptyDataRl.setVisibility(View.VISIBLE);
             }
 //            if( !isSearch){
@@ -286,11 +267,11 @@ public class InsuranceWaitActivity extends LoadingBaseActivity<InsuranceWaitImpl
 //            }
 
         }
-        tvSearchCancel.setVisibility(View.GONE);
+
         zProgressHUD.dismiss();
-        if(isRefresh){
+        if (isRefresh) {
             refresh.finishRefresh();
-        }else {
+        } else {
             refresh.finishLoadmore();
         }
     }
@@ -298,15 +279,14 @@ public class InsuranceWaitActivity extends LoadingBaseActivity<InsuranceWaitImpl
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
-        if(pager==1) {
+        if (pager == 1) {
             emptyDataRl.setVisibility(View.VISIBLE);
         }
-        if(isRefresh){
+        if (isRefresh) {
             refresh.finishRefresh();
-        }else {
+        } else {
             refresh.finishLoadmore();
         }
     }
-
 
 }

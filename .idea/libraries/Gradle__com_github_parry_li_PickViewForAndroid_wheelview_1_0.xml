@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.parry-li.PickViewForAndroid:wheelview-1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/wheelview-1.0.aar/fce3fe0b3a5b4eebf33d86584fadcec9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/wheelview-1.0.aar/fce3fe0b3a5b4eebf33d86584fadcec9/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.parry-li.PickViewForAndroid/wheelview/1.0/672a91ce3180ea4a6898b6b86cf6c83a4cf9fb1e/wheelview-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

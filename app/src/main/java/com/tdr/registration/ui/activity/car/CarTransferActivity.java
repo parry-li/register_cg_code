@@ -171,8 +171,8 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
             photoAdapter.setNewData(photoList);
             ImageSendUtil.sendImage(bitmap, photoPosition, imageSendLister);
         } else if (resultCode == RESULT_OK && requestCode == CODE_TABLE_PICK) {
-            String name = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_NAME);
-            cardCode = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_VALUE);
+            String name = data.getStringExtra(BaseConstants.KEY_NAME);
+            cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
             transferCardType.setText(name);
         }
     }

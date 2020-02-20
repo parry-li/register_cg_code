@@ -2,14 +2,12 @@ package com.tdr.registration.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -18,13 +16,13 @@ import android.widget.TextView;
 import com.tdr.registration.R;
 import com.tdr.registration.adapter.BrandListAdapter;
 import com.tdr.registration.adapter.CodeTableAllAdapter;
-import com.tdr.registration.adapter.CodeTableHotAdapter;
 import com.tdr.registration.bean.CodeTableBean;
 import com.tdr.registration.constants.BaseConstants;
 import com.tdr.registration.http.utils.DdcResult;
 import com.tdr.registration.service.impl.CodeTableImpl;
 import com.tdr.registration.service.presenter.CodeTablePresenter;
 import com.tdr.registration.ui.activity.base.LoadingBaseActivity;
+import com.tdr.registration.view.SearchView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -45,12 +43,8 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
     ImageView comTitleSettingIv;
     @BindView(R.id.com_title_setting_tv)
     TextView comTitleSettingTv;
-    @BindView(R.id.et_search)
-    EditText etSearch;
-    @BindView(R.id.iv_search_clear)
-    ImageView ivSearchClear;
-    @BindView(R.id.tv_search_cancel)
-    TextView tvSearchCancel;
+    @BindView(R.id.search_view)
+    SearchView searchView;
     @BindView(R.id.all_rv)
     ListView allRv;
     @BindView(R.id.result_rv)
@@ -90,7 +84,7 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
         } else if (codeType == 17) {
             textTitle.setText("蓄电池型号");
         }
-        ivSearchClear.setVisibility(View.GONE);
+
         emptyDataRl.setVisibility(View.GONE);
         titleBackClickListener(comTitleBack);
 //        refreshLayout.setEnableRefresh(false);
@@ -132,35 +126,30 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
 
         initHotRv();
 //        initAllRv();
-        etSearch.addTextChangedListener(new TextWatcher() {
+
+        searchView.setSearchViewListener(new SearchView.SearchViewListener() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public void onRefreshAutoComplete(String text) {
 
             }
 
             @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public void onSearch(String text) {
 
-            }
+                if (TextUtils.isEmpty(text)) {
 
-            @Override
-            public void afterTextChanged(Editable editable) {
-                String editStr = editable.toString().trim().toLowerCase();
-
-                if (TextUtils.isEmpty(editStr)) {
-                    ivSearchClear.setVisibility(View.GONE);
                     allRv.setVisibility(View.VISIBLE);
                     emptyDataRl.setVisibility(View.GONE);
                     resultRv.setVisibility(View.GONE);
                     return;
                 }
-                ivSearchClear.setVisibility(View.VISIBLE);
+
                 allRv.setVisibility(View.GONE);
                 resultRv.setVisibility(View.VISIBLE);
                 List<CodeTableBean> list = new ArrayList<>();
 
                 for (CodeTableBean bean : codeTableList) {
-                    if (bean.getName().toLowerCase().contains(editStr)) {
+                    if (bean.getName().toLowerCase().contains(text)) {
                         list.add(bean);
                     }
                 }
@@ -171,14 +160,59 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
                     emptyDataRl.setVisibility(View.VISIBLE);
                 }
             }
-        });
 
-        ivSearchClear.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                etSearch.setText("");
+            public void onCancel() {
+
             }
         });
+//        etSearch.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable editable) {
+//                String editStr = editable.toString().trim().toLowerCase();
+//
+//                if (TextUtils.isEmpty(editStr)) {
+//                    ivSearchClear.setVisibility(View.GONE);
+//                    allRv.setVisibility(View.VISIBLE);
+//                    emptyDataRl.setVisibility(View.GONE);
+//                    resultRv.setVisibility(View.GONE);
+//                    return;
+//                }
+//                ivSearchClear.setVisibility(View.VISIBLE);
+//                allRv.setVisibility(View.GONE);
+//                resultRv.setVisibility(View.VISIBLE);
+//                List<CodeTableBean> list = new ArrayList<>();
+//
+//                for (CodeTableBean bean : codeTableList) {
+//                    if (bean.getName().toLowerCase().contains(editStr)) {
+//                        list.add(bean);
+//                    }
+//                }
+//
+//                if (list.size() > 0) {
+//                    resultAdapter.setNewData(list);
+//                } else {
+//                    emptyDataRl.setVisibility(View.VISIBLE);
+//                }
+//            }
+//        });
+//
+//        ivSearchClear.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                etSearch.setText("");
+//            }
+//        });
     }
 
     private void initAllRv() {
@@ -208,8 +242,8 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
 
     private void backWithData(CodeTableBean tableBean) {
         Intent data = new Intent();
-        data.putExtra(BaseConstants.KEY_PICKED_CITY_NAME, tableBean.getName());
-        data.putExtra(BaseConstants.KEY_PICKED_CITY_VALUE, tableBean.getCode());
+        data.putExtra(BaseConstants.KEY_NAME, tableBean.getName());
+        data.putExtra(BaseConstants.KEY_VALUE, tableBean.getCode());
         setResult(RESULT_OK, data);
         finish();
     }
@@ -254,10 +288,5 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
     }
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.bind(this);
-    }
+
 }
