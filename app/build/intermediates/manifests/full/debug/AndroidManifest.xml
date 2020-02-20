@@ -113,6 +113,7 @@
         <activity android:name="com.tdr.registration.ui.activity.me.InsuranceWaitActivity" />
         <activity android:name="com.tdr.registration.ui.activity.me.InsuranceWaitChangeActivity" />
         <activity android:name="com.tdr.registration.ui.activity.home.PersonageStatisticsActivity" />
+        <activity android:name="com.tdr.registration.ui.activity.home.StatisticsUnitActivity" />
         <!-- <activity -->
         <!-- android:name="com.tdr.chongwu.ui.map.TencentMapActivity" -->
         <!-- android:label="@string/demo_label_basemap" /> -->

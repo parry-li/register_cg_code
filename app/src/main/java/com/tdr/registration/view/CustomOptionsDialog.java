@@ -1,20 +1,19 @@
 package com.tdr.registration.view;
 
-import android.app.Activity;
-
 import android.content.Context;
-import android.graphics.Color;
-
+import android.text.TextUtils;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
-import com.bigkoo.pickerview.builder.OptionsPickerBuilder;
-import com.bigkoo.pickerview.listener.OnOptionsSelectListener;
-import com.bigkoo.pickerview.view.OptionsPickerView;
-import com.tdr.registration.App;
-import com.tdr.registration.bean.OptionsBean;
+import com.parry.pickerview.builder.OptionsPickerBuilder;
+import com.parry.pickerview.listener.CustomListener;
+import com.parry.pickerview.listener.OnOptionsSelectListener;
+import com.parry.pickerview.view.OptionsPickerView;
+import com.tdr.registration.R;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 
@@ -24,51 +23,107 @@ import java.util.List;
  * @des ${TODO}
  */
 
-public class CustomOptionsDialog {
-
+public class CustomOptionsDialog<T> {
 
 
     private OptionsPickerView pvOptions;
+    private TextView tvTitle;
 
-    public CustomOptionsDialog(Context context, List<OptionsBean> list) {
+    public CustomOptionsDialog(Context context) {
 
-        initPickView(context,list);
+        initPickView(context, null);
     }
 
-    private void initPickView(Context context, final List<OptionsBean> list) {
+    public CustomOptionsDialog(Context context, String title) {
+
+        initPickView(context, title);
+    }
+
+    private void initPickView(Context context, final String title) {
         pvOptions = new OptionsPickerBuilder(context, new OnOptionsSelectListener() {
             @Override
-            public void onOptionsSelect(int options1, int options2, int options3, View v) {
-                onItemClickListener.onCustomDialogClickListener(options1, list.get(options1));
+            public void onOptionsSelect(int options1, int option2, int options3, View v) {
+                onItemClickListener.onCustomDialogClickListener(options1, option2, options3);
             }
         })
-                .setSubmitText("确定")//确定按钮文字
-                .setCancelText("取消")//取消按钮文字
-                .setTitleText("")//标题
-                .setSubCalSize(18)//确定和取消文字大小
-                .setTitleSize(20)//标题文字大小
-                .setTitleColor(Color.BLACK)//标题文字颜色
-                .setSubmitColor(Color.BLACK)//确定按钮文字颜色
-                .setCancelColor(Color.BLACK)//取消按钮文字颜色
-                .setTitleBgColor(Color.LTGRAY)//标题背景颜色 Night mode
-                .setBgColor(0xFFF1F1F5)//滚轮背景颜色 Night mode
-                .setContentTextSize(18)//滚轮文字大小
-                .setLabels("", "", "")//设置选择的三级单位
-                .isCenterLabel(false) //是否只显示中间选中项的label文字，false则每项item全部都带有label。
-                .setCyclic(false, false, false)//循环与否
-                .setSelectOptions(0, 0, 0)  //设置默认选中项
-                .setOutSideCancelable(true)//点击外部dismiss default true
-                .isDialog(false)//是否显示为对话框样式
-                .isRestoreItem(true)//切换时是否还原，设置默认选中第一项。
+                .setLayoutRes(R.layout.pickerview_custom_options, new CustomListener() {
+                    @Override
+                    public void customLayout(View v) {
+                        //自定义布局中的控件初始化及事件处理
+                     tvTitle = (TextView) v.findViewById(R.id.tv_title);
+                        final TextView tvConfirm = (TextView) v.findViewById(R.id.tv_confirm);
+                        ImageView ivCancel = (ImageView) v.findViewById(R.id.iv_cancel);
+                        if (!TextUtils.isEmpty(title)) {
+                            tvTitle.setText(title);
+                        }
+                        tvConfirm.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                pvOptions.returnData();
+                                pvOptions.dismiss();
+                            }
+                        });
+                        ivCancel.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                pvOptions.dismiss();
+                            }
+                        });
+
+                    }
+                })
                 .build();
 
-        List<String> strings = new ArrayList<>();
-        for(OptionsBean bean :list){
-            strings.add(bean.getName());
-        }
-        pvOptions.setPicker(strings);//添加数据源
+    }
+    public void setTitle(String title){
+        tvTitle.setText("请选择"+title);
+    }
+    public void setSelectOptions(int option1) {
+        pvOptions.setSelectOptions(option1);
     }
 
+
+    public void setSelectOptions(int option1, int option2) {
+        pvOptions.setSelectOptions(option1, option2);
+    }
+
+    public void setSelectOptions(int option1, int option2, int option3) {
+        pvOptions.setSelectOptions(option1, option2, option3);
+    }
+
+    public void setPickerData(List<T> options1Items) {
+        if (pvOptions != null) {
+
+            pvOptions.setPicker(options1Items);
+        }
+
+    }
+
+    public void setPickerData(List<T> options1Items, List<List<T>> options2Items) {
+        if (pvOptions != null) {
+            pvOptions.setPicker(options1Items, options2Items);
+        }
+
+    }
+
+    public void setPickerData(List<T> options1Items, List<List<T>> options2Items,
+                              List<List<List<T>>> options3Items) {
+        if (pvOptions != null) {
+
+            pvOptions.setPicker(options1Items, options2Items, options3Items);
+        }
+
+    }
+
+
+    public void setNpPickerData(List<T> options1Items, List<T> options2Items,
+                                List<T> options3Items) {
+        if (pvOptions != null) {
+
+            pvOptions.setNPicker(options1Items, options2Items, options3Items);
+        }
+
+    }
 
     public void showDialog() {
         if (pvOptions != null && !pvOptions.isShowing()) {
@@ -86,7 +141,7 @@ public class CustomOptionsDialog {
     }
 
     public interface OnItemClickListener {
-        void onCustomDialogClickListener(int position, OptionsBean optionsBean);
+        void onCustomDialogClickListener(int options1, int options2, int options3);
     }
 
 

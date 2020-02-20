@@ -2,18 +2,26 @@ package com.tdr.registration.view;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import com.bigkoo.pickerview.builder.TimePickerBuilder;
-import com.bigkoo.pickerview.listener.OnTimeSelectListener;
-import com.bigkoo.pickerview.view.OptionsPickerView;
-import com.bigkoo.pickerview.view.TimePickerView;
+import com.parry.pickerview.builder.TimePickerBuilder;
+import com.parry.pickerview.listener.CustomListener;
+import com.parry.pickerview.listener.OnTimeSelectListener;
+import com.parry.pickerview.view.TimePickerView;
+import com.tdr.registration.R;
 import com.tdr.registration.utils.TimeUtil;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 
 
 /**
@@ -25,23 +33,42 @@ import java.util.List;
 public class CustomTimeDialog {
 
     private TimePickerView pvTime;
+    private TextView tvTitle;
 
 
     public CustomTimeDialog(Context context) {
 
-        initPickView(context,true);
+        initPickView(context, true, "请选择时间");
     }
 
     /**
      * @param context
      * @param isShowHour 是否显示时分秒
      */
-    public CustomTimeDialog(Context context,boolean isShowHour) {
+    public CustomTimeDialog(Context context, boolean isShowHour) {
 
-        initPickView(context,isShowHour);
+        initPickView(context, isShowHour, "请选择时间");
     }
 
-    private void initPickView(Context context, final boolean isShowHour) {
+    /**
+     * @param context
+     * @param isShowHour 是否显示时分秒
+     */
+    public CustomTimeDialog(Context context, boolean isShowHour, String title) {
+
+        initPickView(context, isShowHour, title);
+    }
+
+    /**
+     * @param context
+     *
+     */
+    public CustomTimeDialog(Context context, String title) {
+
+        initPickView(context, true, title);
+    }
+
+    private void initPickView(Context context, final boolean isShowHour, final String title) {
         Calendar selectedDate = Calendar.getInstance();
         Calendar startDate = Calendar.getInstance();
         //startDate.set(2013,1,1);
@@ -49,7 +76,7 @@ public class CustomTimeDialog {
         //endDate.set(2020,1,1);
 
         int year = TimeUtil.getYear();
-        int month = TimeUtil.getMonth()-1;
+        int month = TimeUtil.getMonth() - 1;
         int day = TimeUtil.getDay();
         int hour = TimeUtil.getHour();
         int minute = TimeUtil.getMinute();
@@ -57,40 +84,58 @@ public class CustomTimeDialog {
         //正确设置方式 原因：注意事项有说明
         startDate.set(2000, 0, 1);
 //        endDate.set(year, month, day,hour,minute,second);
-
         pvTime = new TimePickerBuilder(context, new OnTimeSelectListener() {
             @Override
             public void onTimeSelect(Date date, View v) {//选中事件回调
-                onItemClickListener.onCustomDialogClickListener(dateToString(date,isShowHour));
+                onItemClickListener.onCustomDialogClickListener(dateToString(date, isShowHour));
             }
-        })
-                .setType(new boolean[]{true, true, true, isShowHour, isShowHour, isShowHour})// 默认全部显示
-                .setCancelText("取消")//取消按钮文字
-                .setSubmitText("确定")//确认按钮文字
-                .setTitleSize(20)//标题文字大小
-                .setTitleText("")//标题文字
-                .setOutSideCancelable(false)//点击屏幕，点在控件外部范围时，是否取消显示
-                .isCyclic(false)//是否循环滚动
-                .setTitleColor(Color.LTGRAY)//标题文字颜色
-                .setSubmitColor(Color.BLACK)//确定按钮文字颜色
-                .setCancelColor(Color.BLACK)//取消按钮文字颜色
-                .setTitleBgColor(Color.LTGRAY)//标题背景颜色 Night mode
-                .setBgColor(0xFFF1F1F5)//滚轮背景颜色 Night mode
-                .setDate(selectedDate)// 如果不设置的话，默认是系统时间*/
-                .setRangDate(startDate, endDate)//起始终止年月日设定
+        }).setDate(selectedDate)
+                .setRangDate(startDate, endDate)
+                .setLayoutRes(R.layout.pickerview_custom_time, new CustomListener() {
+
+                    @Override
+                    public void customLayout(final View v) {
+
+                        //自定义布局中的控件初始化及事件处理
+                       tvTitle = (TextView) v.findViewById(R.id.tv_title);
+                        final TextView tvConfirm = (TextView) v.findViewById(R.id.tv_confirm);
+                        ImageView ivCancel = (ImageView) v.findViewById(R.id.iv_cancel);
+                        if (!TextUtils.isEmpty(title)) {
+                            tvTitle.setText(title);
+                        }
+                        tvConfirm.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                pvTime.returnData();
+                                pvTime.dismiss();
+                            }
+                        });
+                        ivCancel.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                pvTime.dismiss();
+                            }
+                        });
+
+
+                    }
+
+
+                })
                 .setLabel("-", "-", "", ":", ":", "")//默认设置为年月日时分秒
+                .setType(new boolean[]{true, true, true, isShowHour, isShowHour, isShowHour})
                 .isCenterLabel(true) //是否只显示中间选中项的label文字，false则每项item全部都带有label。
-                .isDialog(false)//是否显示为对话框样式
+                .setDividerColor(context.getResources().getColor(R.color.module_main))
                 .build();
     }
 
     // formatType格式为yyyy-MM-dd HH:mm:ss//yyyy年MM月dd日 HH时mm分ss秒
     // data Date类型的时间
-    public static String dateToString(Date data,boolean isShowHour) {
+    public static String dateToString(Date data, boolean isShowHour) {
         String formatType;
-        if(isShowHour){
+        if (isShowHour) {
             formatType = "yyyy-MM-dd HH:mm:ss";
-        }else {
+        } else {
             formatType = "yyyy-MM-dd";
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(formatType);
@@ -104,6 +149,9 @@ public class CustomTimeDialog {
 
     }
 
+    public void setTitle(String title){
+        tvTitle.setText("请选择"+title);
+    }
 
     OnItemClickListener onItemClickListener;
 

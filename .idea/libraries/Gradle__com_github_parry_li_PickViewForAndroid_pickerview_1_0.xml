@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.parry-li.PickViewForAndroid:pickerview-1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pickerview-1.0.aar/f23c7377d48c5784dde1064c8c5e0fff/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pickerview-1.0.aar/f23c7377d48c5784dde1064c8c5e0fff/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.parry-li.PickViewForAndroid/pickerview/1.0/e0f8db51d9b7398e8faeb5b1e526391ef2dbc245/pickerview-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -260,9 +260,9 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
             if (requestCode == CITY_PICK) {
-                String name = data.getStringExtra(BaseConstants.KEY_PICKED_CITY_NAME);
+                String name = data.getStringExtra(BaseConstants.KEY_NAME);
                  cityCode = data.getStringExtra(BaseConstants.Login_city_cityCode);
-                systemId = data.getIntExtra(BaseConstants.KEY_PICKED_CITY_VALUE, -100);
+                systemId = data.getIntExtra(BaseConstants.KEY_VALUE, -100);
                 cityName.setText(name);
 
             }
@@ -278,6 +278,8 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         SPUtils.getInstance().put(BaseConstants.Login_city_systemID, systemId);
         SPUtils.getInstance().put(BaseConstants.Login_city_unitName, loginData.getUnitName());
         SPUtils.getInstance().put(BaseConstants.Login_city_cityCode, cityCode);
+        SPUtils.getInstance().put(BaseConstants.Login_city_unitNo, loginData.getUnitNo());
+        SPUtils.getInstance().put(BaseConstants.Login_city_unitType, loginData.getUnitType());
         /*保存配置*/
         for (CityConfigureBean configureBean : cityConfigureBeanList) {
             SPUtils.getInstance().put(configureBean.getConfigureName(), configureBean.getContent());

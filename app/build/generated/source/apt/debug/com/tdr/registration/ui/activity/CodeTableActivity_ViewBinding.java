@@ -5,7 +5,6 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -13,6 +12,7 @@ import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import com.tdr.registration.R;
+import com.tdr.registration.view.SearchView;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
@@ -32,9 +32,7 @@ public class CodeTableActivity_ViewBinding implements Unbinder {
     target.textTitle = Utils.findRequiredViewAsType(source, R.id.text_title, "field 'textTitle'", TextView.class);
     target.comTitleSettingIv = Utils.findRequiredViewAsType(source, R.id.com_title_setting_iv, "field 'comTitleSettingIv'", ImageView.class);
     target.comTitleSettingTv = Utils.findRequiredViewAsType(source, R.id.com_title_setting_tv, "field 'comTitleSettingTv'", TextView.class);
-    target.etSearch = Utils.findRequiredViewAsType(source, R.id.et_search, "field 'etSearch'", EditText.class);
-    target.ivSearchClear = Utils.findRequiredViewAsType(source, R.id.iv_search_clear, "field 'ivSearchClear'", ImageView.class);
-    target.tvSearchCancel = Utils.findRequiredViewAsType(source, R.id.tv_search_cancel, "field 'tvSearchCancel'", TextView.class);
+    target.searchView = Utils.findRequiredViewAsType(source, R.id.search_view, "field 'searchView'", SearchView.class);
     target.allRv = Utils.findRequiredViewAsType(source, R.id.all_rv, "field 'allRv'", ListView.class);
     target.resultRv = Utils.findRequiredViewAsType(source, R.id.result_rv, "field 'resultRv'", RecyclerView.class);
     target.emptyIv = Utils.findRequiredViewAsType(source, R.id.empty_iv, "field 'emptyIv'", ImageView.class);
@@ -53,9 +51,7 @@ public class CodeTableActivity_ViewBinding implements Unbinder {
     target.textTitle = null;
     target.comTitleSettingIv = null;
     target.comTitleSettingTv = null;
-    target.etSearch = null;
-    target.ivSearchClear = null;
-    target.tvSearchCancel = null;
+    target.searchView = null;
     target.allRv = null;
     target.resultRv = null;
     target.emptyIv = null;

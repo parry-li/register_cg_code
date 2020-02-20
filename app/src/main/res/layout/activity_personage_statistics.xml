@@ -148,11 +148,11 @@
                 android:id="@+id/base_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
                 android:layout_marginTop="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_15"
                 android:background="@drawable/edittext_border_white_bg"
                 android:orientation="vertical"
-                android:layout_marginLeft="@dimen/dp_15"
-                android:layout_marginRight="@dimen/dp_15"
                 android:paddingLeft="@dimen/dp_20"
                 android:paddingRight="@dimen/dp_20">
 
@@ -196,8 +196,8 @@
                         android:textColor="@color/module_text_3"
                         android:textSize="@dimen/sp_13" />
                 </LinearLayout>
-                <View style="@style/module_liner_horizontal" />
 
+                <View style="@style/module_liner_horizontal" />
 
 
                 <LinearLayout
@@ -229,6 +229,7 @@
                         android:textColor="@color/module_text_3"
                         android:textSize="@dimen/sp_13" />
                 </LinearLayout>
+
                 <View style="@style/module_liner_horizontal" />
 
 
@@ -257,12 +258,18 @@
                         android:id="@+id/base_unit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:textColor="@color/module_text_3"
                         android:textSize="@dimen/sp_13" />
-                </LinearLayout>
-                <View style="@style/module_liner_horizontal" />
 
+                    <ImageView
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:id="@+id/base_unit_arrow"
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/right_arrow" />
+                </LinearLayout>
+
+                <View style="@style/module_liner_horizontal" />
 
 
                 <LinearLayout
@@ -294,8 +301,8 @@
                         android:textColor="@color/module_text_3"
                         android:textSize="@dimen/sp_13" />
                 </LinearLayout>
-                <View style="@style/module_liner_horizontal" />
 
+                <View style="@style/module_liner_horizontal" />
 
 
                 <LinearLayout
@@ -327,8 +334,8 @@
                         android:textColor="@color/module_text_3"
                         android:textSize="@dimen/sp_13" />
                 </LinearLayout>
-                <View style="@style/module_liner_horizontal" />
 
+                <View style="@style/module_liner_horizontal" />
 
 
                 <LinearLayout
@@ -360,9 +367,76 @@
                         android:textColor="@color/module_text_3"
                         android:textSize="@dimen/sp_13" />
                 </LinearLayout>
+
                 <View style="@style/module_liner_horizontal" />
 
 
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="9dp"
+                            android:layout_height="9dp"
+                            android:layout_marginRight="@dimen/dp_5"
+                            android:src="@mipmap/statistics_circle_7" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="新销售"
+                            android:textColor="@color/module_text_3"
+                            android:textSize="@dimen/sp_13" />
+
+                        <TextView
+                            android:id="@+id/new_sales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@color/module_text_3"
+                            android:textSize="@dimen/sp_13" />
+                    </LinearLayout>
+
+                    <View style="@style/module_liner_horizontal" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="9dp"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:src="@mipmap/statistics_circle_7" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="已上路"
+                        android:textColor="@color/module_text_3"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/new_Road"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/module_text_3"
+                        android:textSize="@dimen/sp_13" />
+                </LinearLayout>
+
+                <View style="@style/module_liner_horizontal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -393,8 +467,8 @@
                         android:textColor="@color/module_text_3"
                         android:textSize="@dimen/sp_13" />
                 </LinearLayout>
-                <View style="@style/module_liner_horizontal" />
 
+                <View style="@style/module_liner_horizontal" />
 
 
                 <LinearLayout
@@ -426,6 +500,7 @@
                         android:textColor="@color/module_text_3"
                         android:textSize="@dimen/sp_13" />
                 </LinearLayout>
+
                 <View style="@style/module_liner_horizontal" />
 
 
@@ -460,22 +535,19 @@
                 </LinearLayout>
 
 
-
-
             </LinearLayout>
 
 
-
             <LinearLayout
-                android:layout_below="@id/base_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_15"
-                android:background="@drawable/edittext_border_white_bg"
-                android:orientation="vertical"
+                android:layout_below="@id/base_ll"
                 android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
                 android:layout_marginRight="@dimen/dp_15"
                 android:layout_marginBottom="@dimen/dp_30"
+                android:background="@drawable/edittext_border_white_bg"
+                android:orientation="vertical"
                 android:paddingLeft="@dimen/dp_20"
                 android:paddingRight="@dimen/dp_20">
 
@@ -495,13 +567,14 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/statistics_rv"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content" />
 
 
-                    <include layout="@layout/common_empty"/>
+                    <include layout="@layout/common_empty" />
                 </RelativeLayout>
 
             </LinearLayout>
