@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\register\\register_cg_code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr-rTR\\values-tr-rTR.xml",
+            "outputFile": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr-rTR\\values-tr-rTR.xml",
             "map": [
                 {
-                    "source": "F:\\register\\register_cg_code\\matisse\\build\\intermediates\\packaged_res\\debug\\values-tr-rTR\\values-tr-rTR.xml",
+                    "source": "E:\\tiandiren\\android_cg_app\\register_cg_code\\matisse\\build\\intermediates\\packaged_res\\debug\\values-tr-rTR\\values-tr-rTR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\register\\register_cg_code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+            "outputFile": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\parry\\.gradle\\caches\\transforms-1\\files-1.1\\pickerview-1.0.aar\\f23c7377d48c5784dde1064c8c5e0fff\\res\\values-en\\values-en.xml",
+                    "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\BaseRecyclerViewAdapterHelper-2.9.30.aar\\8b9f3e5f2646e3fac5d5d3e78ba7613f\\res\\values-en\\values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,105,162",
+                        "endColumns": "49,56,46",
+                        "endOffsets": "100,157,204"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\pickerview-1.0.aar\\65b6e3206c3a8bd80b81e179b6ecb789\\res\\values-en\\values-en.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -18,16 +28,6 @@
                         "startOffsets": "209,262,307,354,403,450,499,553",
                         "endColumns": "52,44,46,48,46,48,53,45",
                         "endOffsets": "257,302,349,398,445,494,548,594"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\parry\\.gradle\\caches\\transforms-1\\files-1.1\\BaseRecyclerViewAdapterHelper-2.9.30.aar\\121b93d09b8d5d113610a2ac4a8bce92\\res\\values-en\\values-en.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,105,162",
-                        "endColumns": "49,56,46",
-                        "endOffsets": "100,157,204"
                     }
                 }
             ]

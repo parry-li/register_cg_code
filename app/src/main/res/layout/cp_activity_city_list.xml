@@ -12,7 +12,7 @@
 
 
     <!--<include layout="@layout/cp_view_search" />-->
-    <com.tdr.registration.view.SearchView
+    <com.tdr.registrationV3.view.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -44,7 +44,7 @@
             android:textStyle="bold"
             android:visibility="gone" />
 
-        <com.tdr.registration.view.CityPicker.view.SideLetterBar
+        <com.tdr.registrationV3.view.CityPicker.view.SideLetterBar
             android:id="@+id/side_letter_bar"
             android:layout_width="@dimen/dp_36"
             android:layout_height="match_parent"

@@ -28,7 +28,7 @@ android {
         }
     }
     defaultConfig {
-        applicationId "com.tdr.registration"
+        applicationId "com.tdr.registrationV3"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 3

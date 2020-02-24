@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.parry-li:android_zxing_qrcode-1.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android_zxing_qrcode-1.1.aar/746464eea6eb0038df85ea588e8d8bba/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android_zxing_qrcode-1.1.aar/746464eea6eb0038df85ea588e8d8bba/jars/libs/core_3.0.1.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android_zxing_qrcode-1.1.aar/746464eea6eb0038df85ea588e8d8bba/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android_zxing_qrcode-1.1.aar/68a22f25025df58156611ccd0915215e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android_zxing_qrcode-1.1.aar/68a22f25025df58156611ccd0915215e/jars/libs/core_3.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android_zxing_qrcode-1.1.aar/68a22f25025df58156611ccd0915215e/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

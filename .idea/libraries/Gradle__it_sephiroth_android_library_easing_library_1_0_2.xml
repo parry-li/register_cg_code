@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: it.sephiroth.android.library.easing:library-1.0.2">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/6c838b0c1feb5692d22a3f851d353e2a/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/6c838b0c1feb5692d22a3f851d353e2a/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/3f7da43992f836736ed758004713885a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.2.aar/3f7da43992f836736ed758004713885a/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

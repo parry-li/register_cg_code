@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\register\register_cg_code\FastBleLib\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="F:\register\register_cg_code\FastBleLib\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\tiandiren\android_cg_app\register_cg_code\FastBleLib\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="E:\tiandiren\android_cg_app\register_cg_code\FastBleLib\src\debug\jniLibs"/></dataSet></merger>

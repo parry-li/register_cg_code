@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
 
-    <com.tdr.registration.view.NoScrollViewPager
+    <com.tdr.registrationV3.view.NoScrollViewPager
         android:id="@+id/register_vp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -10,7 +10,7 @@
         style="@style/LetterIndexTextViewStyle"
         android:text="热门城市"/>
 
-    <com.tdr.registration.view.CityPicker.view.WrapHeightGridView
+    <com.tdr.registrationV3.view.CityPicker.view.WrapHeightGridView
         android:id="@+id/gridview_hot_city"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

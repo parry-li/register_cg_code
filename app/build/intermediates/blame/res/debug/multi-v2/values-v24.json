@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\register\\register_cg_code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\parry\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.0.aar\\a1608f12fb736b5bbdbf2e08108a3054\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.0.aar\\e87885c07c58fab5c69c79ae80e464be\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\parry\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\7e1de54f9a6075f8745f334951d48ce0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
