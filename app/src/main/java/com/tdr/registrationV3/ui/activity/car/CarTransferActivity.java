@@ -146,7 +146,7 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
 
         }
 
-        photoAdapter = new PhotoAdapter(photoList);
+        photoAdapter = new PhotoAdapter(CarTransferActivity.this,photoList);
         transferRv.setAdapter(photoAdapter);
         photoAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override

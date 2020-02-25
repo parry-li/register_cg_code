@@ -12,6 +12,7 @@
         android:id="@+id/plate_number"
         style="@style/module_edit"
         android:layout_height="@dimen/dp_55"
+        android:lines="1"
         android:layout_marginLeft="@dimen/dp_25"
         android:hint="请输入车牌号" />
 
@@ -20,6 +21,7 @@
         android:layout_marginRight="@dimen/dp_20"/>
 
     <EditText
+        android:lines="1"
         android:id="@+id/car_id"
         style="@style/module_edit"
         android:layout_marginLeft="@dimen/dp_25"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">重构备案登记</string>
+    <string name="app_name">防盗登记APP</string>
 
 
     <string name="rationale_location_contacts">APP功能需要权限</string>

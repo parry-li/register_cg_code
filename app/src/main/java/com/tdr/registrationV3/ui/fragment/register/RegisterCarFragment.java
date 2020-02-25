@@ -80,7 +80,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     TextView carColorMinor;
     @BindView(R.id.car_color2_allow)
     ImageView carColor2Allow;
-    @BindView(R.id.car_color_time)
+    @BindView(R.id.car_time)
     TextView carColorTime;
     @BindView(R.id.car_time_allow)
     ImageView carTimeAllow;
@@ -223,7 +223,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
 
         }
 
-        photoAdapter = new PhotoAdapter(photoList);
+        photoAdapter = new PhotoAdapter(mActivity,photoList);
         carPhotoRv.setAdapter(photoAdapter);
         photoAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
@@ -250,7 +250,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
 
     @OnClick({R.id.car_brand, R.id.car_brand_allow, R.id.car_color_main,
             R.id.car_color1_allow, R.id.car_color_minor,
-            R.id.car_color2_allow, R.id.car_color_time,
+            R.id.car_color2_allow, R.id.car_time,
             R.id.car_time_allow, R.id.button_next, R.id.car_plate_tv, R.id.car_plate_scan})
     public void onViewClicked(View view) {
         Bundle bundle = new Bundle();
@@ -277,7 +277,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
                 intent.putExtras(bundle);
                 startActivityForResult(intent, CODE_TABLE_COLOR);
                 break;
-            case R.id.car_color_time:
+            case R.id.car_time:
             case R.id.car_time_allow:
                 timeDialog.showDialog();
                 break;

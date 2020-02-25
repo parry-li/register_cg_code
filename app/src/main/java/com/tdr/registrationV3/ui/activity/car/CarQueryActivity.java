@@ -8,10 +8,12 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.parry.utils.code.SPUtils;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.bean.CarCheckBean;
 import com.tdr.registrationV3.bean.EditInfoBean;
+import com.tdr.registrationV3.bean.InfoBean;
 import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.service.impl.car.CarQueryImpl;
 import com.tdr.registrationV3.service.presenter.CarQueryPresenter;
@@ -49,6 +51,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     private CarQueryDialog queryDialog;
     private CarCheckBean carCheckBean;
     private int systemId;
+    private InfoBean carInfoBean;
 
     @Override
     protected void initTitle() {
@@ -71,7 +74,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     @Override
     protected void initData(Bundle savedInstanceState) {
 
-      systemId =   SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
+        systemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
 
@@ -111,19 +114,31 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
                 }
                 Bundle bundle = new Bundle();
                 bundle.putString(BaseConstants.rolePower, rolePower);
-                bundle.putSerializable(BaseConstants.data, carCheckBean);
+
                 if (rolePower.equals(BaseConstants.funJurisdiction[1])) {//补办
+                    bundle.putSerializable(BaseConstants.data, carCheckBean);
+
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarChangeActivity.class, bundle);
+
                 } else if (rolePower.equals(BaseConstants.funJurisdiction[2])) {//过户
+
+                    bundle.putSerializable(BaseConstants.data, carCheckBean);
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarTransferActivity.class, bundle);
+
                 } else if (rolePower.equals(BaseConstants.funJurisdiction[0])) {//报废
+
+                    bundle.putSerializable(BaseConstants.data, carCheckBean);
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, CarScrapActivity.class, bundle);
+
                 } else if (rolePower.equals("change_register")) {//信息变更
+                    String dataJson = new Gson().toJson(carInfoBean);
+                    bundle.putString(BaseConstants.data,dataJson);
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, ChangeRegisterActivity.class, bundle);
                 } else if (rolePower.equals("insurance_change")
                         || rolePower.equals(BaseConstants.funJurisdiction[3])
                         || rolePower.equals(BaseConstants.funJurisdiction[4])
                         ) {//服务变更、服务购买、服务延期
+                    bundle.putSerializable(BaseConstants.data, carCheckBean);
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, InsuranceActivity.class, bundle);
                 }
 
@@ -154,11 +169,12 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
         }
         zProgressHUD.show();
         Map<String, Object> map = new HashMap<>();
+        map.put("subsystemId", systemId);
         if (rolePower.equals("insurance_change")
                 || rolePower.equals(BaseConstants.funJurisdiction[3])
                 || rolePower.equals(BaseConstants.funJurisdiction[4])) {
             map.put("plateNumber", plateNumberStr);
-            map.put("subsystemId", systemId);
+
             mPresenter.getEditInfo(getRequestBody(map));
         } else {
             if (TextUtils.isEmpty(carIdStr)) {
@@ -167,7 +183,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
             }
             map.put("plateNumber", plateNumberStr);
             map.put("cardId", carIdStr);
-            mPresenter.checkCar(getRequestBody(map));
+            mPresenter.queryCarInfo(getRequestBody(map));
         }
 
     }
@@ -201,6 +217,26 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
 
     @Override
     public void getEditInfoFail(String msg) {
+        zProgressHUD.dismiss();
+        showCustomWindowDialog("服务提示", msg, false, true);
+    }
+
+    @Override
+    public void queryCarInfoSuccess(InfoBean infoBean) {
+        zProgressHUD.dismiss();
+        carInfoBean = infoBean;
+        carCheckBean.setId(infoBean.getElectriccars().getId());
+        carCheckBean.setBuyDate(infoBean.getElectriccars().getBuyDate());
+        carCheckBean.setVehicleType(infoBean.getElectriccars().getVehicleType());
+        carCheckBean.setPlateNumber(infoBean.getElectriccars().getPlateNumber());
+        carCheckBean.setCardId(infoBean.getElectriccars().getCardId());
+        carCheckBean.setOwnerName(infoBean.getElectriccars().getOwnerName());
+        carCheckBean.setVehicleBrandStr(infoBean.getElectriccars().getVehicleBrandName());
+        queryDialog.showCarQueryDialog(CarQueryActivity.this, carCheckBean);
+    }
+
+    @Override
+    public void queryCarInfoFail(String msg) {
         zProgressHUD.dismiss();
         showCustomWindowDialog("服务提示", msg, false, true);
     }

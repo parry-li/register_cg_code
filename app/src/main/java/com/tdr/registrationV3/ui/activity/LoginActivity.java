@@ -282,7 +282,7 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         SPUtils.getInstance().put(BaseConstants.Login_city_unitType, loginData.getUnitType());
         /*保存配置*/
         for (CityConfigureBean configureBean : cityConfigureBeanList) {
-            SPUtils.getInstance().put(configureBean.getConfigureName(), configureBean.getContent());
+            SPUtils.getInstance().put(BaseConstants.APP_NAME+configureBean.getConfigureName(), configureBean.getContent());
         }
         ActivityUtil.goActivityAndFinish(LoginActivity.this, HomeActivity.class);
 

@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.parry.utils.code.SPUtils;
 import com.tdr.registrationV3.R;
+import com.tdr.registrationV3.bean.InfoBean;
 import com.tdr.registrationV3.bean.InsuranceBean;
 import com.tdr.registrationV3.bean.LableListBean;
 import com.tdr.registrationV3.bean.PhotoConfigBean;
@@ -89,7 +90,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
 
     @Override
     protected void initView() {
-        textTitle.setText("备案登记");
+        textTitle.setText("信息变更");
         comTitleBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,6 +98,20 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
             }
         });
         mActivity = ChangeRegisterPeopleFragment.this.getActivity();
+        initContentData();
+    }
+
+    private void initContentData() {
+        InfoBean infoBean = ((ChangeRegisterActivity) mActivity).infoBean;
+        peopleName.setText(infoBean.getElectriccars().getOwnerName());
+        peopleCard.setText(infoBean.getElectriccars().getCardName());
+        peopleCardNum.setText(infoBean.getElectriccars().getCardId());
+        peoplePhone1.setText(infoBean.getElectriccars().getPhone1());
+        peoplePhone2.setText(infoBean.getElectriccars().getPhone2());
+        peopleAdr.setText(infoBean.getElectriccars().getResidentAddress());
+        peopleRemark.setText(infoBean.getElectriccars().getRemark());
+
+        cardCode = infoBean.getElectriccars().getCardType() + "";
     }
 
     @OnClick({R.id.people_card, R.id.people_card_allow, R.id.button_next})
@@ -148,6 +163,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
         }
         String peoplePhone2Str = peoplePhone2.getText().toString().trim();
         String peopleRemarkStr = peopleRemark.getText().toString().trim();
+        String peopleCardStr = peopleCard.getText().toString().trim();
 
         if (!TextUtils.isEmpty(peoplePhone2Str)) {
             if (!RegularUtil.isMobileExact(peoplePhone2Str)) {
@@ -159,6 +175,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
         ((ChangeRegisterActivity) mActivity).registerPutBean.setPeopleName(peopleNameStr);
         ((ChangeRegisterActivity) mActivity).registerPutBean.setPeopleCardNum(peopleCardNumStr);
         ((ChangeRegisterActivity) mActivity).registerPutBean.setPeopleCardType(cardCode);
+        ((ChangeRegisterActivity) mActivity).registerPutBean.setCardName(peopleCardStr);
         ((ChangeRegisterActivity) mActivity).registerPutBean.setPeoplePhone1(peoplePhone1Str);
         ((ChangeRegisterActivity) mActivity).registerPutBean.setPeoplePhone2(peoplePhone2Str);
         ((ChangeRegisterActivity) mActivity).registerPutBean.setPeopleAddr(peopleAdrStr);

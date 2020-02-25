@@ -63,6 +63,7 @@ public class UrlConstants {
     public static final String installSituation_query2User = main_host_service + "api/ddc-statistical-report/installSituation/query2User";
     /*XI辖区列表*/
     public static final String unit_unitTreeByUnitNo = main_host_service + "api/ddc-service/unit/unitTreeByUnitNo";
-
+    /*车辆信息*/
+    public static final String electriccars_info = main_host_service + "api/ddc-electriccar/electriccars/info";
 
 }

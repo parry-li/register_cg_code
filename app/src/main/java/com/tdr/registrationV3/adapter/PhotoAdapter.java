@@ -1,5 +1,6 @@
 package com.tdr.registrationV3.adapter;
 
+import android.content.Context;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,6 +10,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.bean.PhotoConfigBean;
+import com.tdr.registrationV3.utils.GlideUtil;
 
 import java.util.List;
 
@@ -20,8 +22,11 @@ public class PhotoAdapter extends BaseQuickAdapter<PhotoConfigBean.PhotoTypeInfo
 
     public ImageView imgIv;
 
-    public PhotoAdapter(List<PhotoConfigBean.PhotoTypeInfoListBean> data) {
+    private Context context;
+
+    public PhotoAdapter(Context context, List<PhotoConfigBean.PhotoTypeInfoListBean> data) {
         super(R.layout.item_change_photo, data);
+        this.context = context;
 
     }
 
@@ -45,7 +50,13 @@ public class PhotoAdapter extends BaseQuickAdapter<PhotoConfigBean.PhotoTypeInfo
 
         if (item.getDrawable() != null) {
             imgIv.setBackgroundDrawable(item.getDrawable());
+        }else {
+            if (!TextUtils.isEmpty(item.getChagePhotoId())) {
+                GlideUtil.setImg(context, item.getChagePhotoId(), imgIv);
+            }
         }
+
+
 
     }
 

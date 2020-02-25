@@ -3,9 +3,11 @@ package com.tdr.registrationV3.ui.activity.car;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
+import com.google.gson.Gson;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.adapter.FragmentPageAdapter;
 import com.tdr.registrationV3.bean.CarCheckBean;
+import com.tdr.registrationV3.bean.InfoBean;
 import com.tdr.registrationV3.bean.RegisterPutBean;
 import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.ui.activity.base.NoLoadingBaseActivity;
@@ -23,20 +25,21 @@ public class ChangeRegisterActivity extends NoLoadingBaseActivity {
     NoScrollViewPager registerVp;
     public int vehicleType = 1;
     public RegisterPutBean registerPutBean;
-    public CarCheckBean checkBean;
+    public InfoBean infoBean;
 
     @Override
     protected void initTitle() {
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
-            checkBean = (CarCheckBean) bundle.getSerializable(BaseConstants.data);
-            registerPutBean.setVehicleType(checkBean.getVehicleType());
+            registerPutBean = new RegisterPutBean();
+            String dataJson = bundle.getString(BaseConstants.data);
+            infoBean = new Gson().fromJson(dataJson, InfoBean.class);
+            registerPutBean.setVehicleType(infoBean.getElectriccars().getVehicleType());
         }
     }
 
     @Override
     protected void initData(Bundle savedInstanceState) {
-        registerPutBean = new RegisterPutBean();
         vehicleType = getIntent().getExtras().getInt("car_type");
         List<Fragment> mFragmentList = new ArrayList<>();
         mFragmentList.add(new ChangeRegisterCarFragment());

@@ -19,7 +19,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.adapter.LabelAdapter;
 import com.tdr.registrationV3.adapter.PhotoAdapter;
-import com.tdr.registrationV3.bean.CarCheckBean;
+import com.tdr.registrationV3.bean.InfoBean;
 import com.tdr.registrationV3.bean.InsuranceBean;
 import com.tdr.registrationV3.bean.PhotoConfigBean;
 import com.tdr.registrationV3.bean.VehicleConfigBean;
@@ -80,8 +80,8 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
     TextView carColorMinor;
     @BindView(R.id.car_color2_allow)
     ImageView carColor2Allow;
-    @BindView(R.id.car_color_time)
-    TextView carColorTime;
+    @BindView(R.id.car_time)
+    TextView carTime;
     @BindView(R.id.car_time_allow)
     ImageView carTimeAllow;
     private final int CODE_TABLE_BRAND = 2001;
@@ -136,29 +136,40 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
     @Override
     protected void initView() {
         mActivity = ChangeRegisterCarFragment.this.getActivity();
-        CarCheckBean checkBean = ((ChangeRegisterActivity) mActivity).checkBean;
+        InfoBean infoBean = ((ChangeRegisterActivity) mActivity).infoBean;
 
         initTitle();
-        initContentView();
-        initPhotoRv();
-        initLabelRv();
 
-        intContentData(checkBean);
-
-    }
-
-    private void intContentData(CarCheckBean checkBean) {
-        carPlate.setText(checkBean.getPlateNumber());
-        carPlateTv.setText(checkBean.getPlateNumber());
-        carFrame.setText(checkBean.getShelvesNumber());
-        carElectrical.setText(checkBean.getEngineNumber());
-    }
-
-    private void initContentView() {
         VehicleConfigBean vehicleBean = ConfigUtil.getVehicleConfig();
         if (vehicleBean == null) {
             return;
         }
+        initContentView(vehicleBean);
+        initPhotoRv(infoBean);
+        initLabelRv(infoBean);
+
+        intContentData(infoBean);
+
+    }
+
+    private void intContentData(InfoBean infoBean) {
+        carBrand.setText(infoBean.getElectriccars().getVehicleBrandName());
+        carPlate.setText(infoBean.getElectriccars().getPlateNumber());
+        carPlateTv.setText(infoBean.getElectriccars().getPlateNumber());
+        carFrame.setText(infoBean.getElectriccars().getShelvesNumber());
+        carElectrical.setText(infoBean.getElectriccars().getEngineNumber());
+        carColorMain.setText(infoBean.getElectriccars().getColorName());
+        carColorMinor.setText(infoBean.getElectriccars().getColorSecondName());
+        carTime.setText(infoBean.getElectriccars().getBuyDate());
+        carPrice.setText(infoBean.getElectriccars().getBuyPrice() + "");
+
+        carColorMainId = infoBean.getElectriccars().getColorId();
+        carColorMinorId = infoBean.getElectriccars().getColorSecondId();
+        cardBrandType = infoBean.getElectriccars().getVehicleBrand();
+    }
+
+    private void initContentView(VehicleConfigBean vehicleBean) {
+
         engIneBean = vehicleBean.getEngineNoRegular();
         if (!engIneBean.isIsRequire()) {
             carElectricalX.setVisibility(View.GONE);
@@ -194,14 +205,28 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
         timeDialog.setOnCustomClickListener(new CustomTimeDialog.OnItemClickListener() {
             @Override
             public void onCustomDialogClickListener(String value) {
-                carColorTime.setText(value);
+                carTime.setText(value);
             }
         });
     }
 
-    private void initLabelRv() {
+    private void initLabelRv(InfoBean infoBean) {
+        List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> infoLabelList
+                = vehicleInfoBean.getVehicleNbLableConfigList();
+        if (infoBean.getElectriccarsMapList() != null && infoBean.getElectriccarsMapList().size() > 0) {
+            for (int i = 0; i < infoLabelList.size(); i++) {
+
+                for (InfoBean.ElectriccarsMapListBean mapBean : infoBean.getElectriccarsMapList()) {
+
+                    if (infoLabelList.get(i).getIndex() == mapBean.getLableOrdinal()) {
+                        infoLabelList.get(i).setEditValue(mapBean.getLableNumber());
+                    }
+                }
+            }
+        }
+
         carLabelRv.setLayoutManager(new LinearLayoutManager(mActivity));
-        contentAdapter = new LabelAdapter(vehicleInfoBean.getVehicleNbLableConfigList());
+        contentAdapter = new LabelAdapter(infoLabelList);
         carLabelRv.setAdapter(contentAdapter);
         contentAdapter.setOnItemClickListener(new LabelAdapter.OnItemClickListener() {
             @Override
@@ -213,7 +238,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
         });
     }
 
-    private void initPhotoRv() {
+    private void initPhotoRv(InfoBean infoBean) {
         PhotoConfigBean configBean = ConfigUtil.getPhotoConfig();
         if (configBean == null) {
             return;
@@ -221,17 +246,33 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this.getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         carPhotoRv.setLayoutManager(linearLayoutManager);
+
+
         photoList = new ArrayList<>();
         if (configBean != null) {
             for (PhotoConfigBean.PhotoTypeInfoListBean photoBean : configBean.getPhotoTypeInfoList()) {
                 if (photoBean.isIsValid()) {
+                    if (infoBean.getPhotoList() != null && infoBean.getPhotoList().size() > 0) {
+
+                        for (InfoBean.PhotoListBean infoListBean : infoBean.getPhotoList()) {
+
+                            if (infoListBean.getIndex() == photoBean.getPhotoIndex()) {
+                                if (!TextUtils.isEmpty(infoListBean.getPhoto())) {
+                                    photoBean.setHaveDrawable(true);
+                                }
+                                photoBean.setChagePhotoId(infoListBean.getPhoto());
+                            }
+                        }
+
+
+                    }
                     photoList.add(photoBean);
                 }
             }
 
         }
 
-        photoAdapter = new PhotoAdapter(photoList);
+        photoAdapter = new PhotoAdapter(mActivity, photoList);
         carPhotoRv.setAdapter(photoAdapter);
         photoAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
@@ -246,7 +287,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
 
     private void initTitle() {
         BaseActivity.activity.titleBackClickListener(comTitleBack);
-        textTitle.setText("备案登记");
+        textTitle.setText("信息变更");
 
     }
 
@@ -258,7 +299,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
 
     @OnClick({R.id.car_brand, R.id.car_brand_allow, R.id.car_color_main,
             R.id.car_color1_allow, R.id.car_color_minor,
-            R.id.car_color2_allow, R.id.car_color_time,
+            R.id.car_color2_allow, R.id.car_time,
             R.id.car_time_allow, R.id.button_next, R.id.car_plate_tv, R.id.car_plate_scan})
     public void onViewClicked(View view) {
         Bundle bundle = new Bundle();
@@ -285,7 +326,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
                 intent.putExtras(bundle);
                 startActivityForResult(intent, CODE_TABLE_COLOR);
                 break;
-            case R.id.car_color_time:
+            case R.id.car_time:
             case R.id.car_time_allow:
                 timeDialog.showDialog();
                 break;
@@ -303,7 +344,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
     private void putData() {
         for (PhotoConfigBean.PhotoTypeInfoListBean bean : photoList) {
             if (bean.isIsValid()) {
-                if (bean.getDrawable() == null) {
+                if (!bean.isHaveDrawable()) {
                     ToastUtil.showWX("请添加" + bean.getPhotoName());
                     return;
                 }
@@ -380,7 +421,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
             ToastUtil.showWX("请选择主颜色");
             return;
         }
-        String carColorTimeStr = carColorTime.getText().toString().trim();
+        String carColorTimeStr = carTime.getText().toString().trim();
         if (TextUtils.isEmpty(carColorTimeStr)) {
             ToastUtil.showWX("请选择时间");
             return;
@@ -438,6 +479,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
                     Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
                     Drawable drawable = new BitmapDrawable(bitmapS);
                     photoList.get(photoPosition).setDrawable(drawable);
+                    photoList.get(photoPosition).setHaveDrawable(true);
                     photoList.get(photoPosition).setPhotoId(null);
                     photoAdapter.setNewData(photoList);
                     ImageSendUtil.sendImage(bitmap, photoPosition, imageSendLister);
@@ -459,6 +501,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
                 photoList.get(position).setPhotoId(photoId);
             } else {
                 photoList.get(position).setDrawable(null);
+                photoList.get(position).setHaveDrawable(false);
             }
             photoAdapter.setNewData(photoList);
         }

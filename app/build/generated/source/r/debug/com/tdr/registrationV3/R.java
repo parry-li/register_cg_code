@@ -2975,7 +2975,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -3017,10 +3017,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>FixedFront</td><td>3</td><td>固定在背后</td></tr>
-     * <tr><td>MatchLayout</td><td>4</td><td>固定在前面</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>FixedFront</td><td>3</td><td></td></tr>
+     * <tr><td>MatchLayout</td><td>4</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      */
@@ -3733,8 +3733,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      */
@@ -5770,20 +5770,20 @@ public final class R {
     public static final int car_color2_allow=0x7f080051;
     public static final int car_color_main=0x7f080052;
     public static final int car_color_minor=0x7f080053;
-    public static final int car_color_time=0x7f080054;
-    public static final int car_electrical=0x7f080055;
-    public static final int car_electrical_x=0x7f080056;
-    public static final int car_frame=0x7f080057;
-    public static final int car_frame_x=0x7f080058;
-    public static final int car_id=0x7f080059;
-    public static final int car_label_rv=0x7f08005a;
-    public static final int car_ower_name=0x7f08005b;
-    public static final int car_photo_rv=0x7f08005c;
-    public static final int car_plate=0x7f08005d;
-    public static final int car_plate_number=0x7f08005e;
-    public static final int car_plate_scan=0x7f08005f;
-    public static final int car_plate_tv=0x7f080060;
-    public static final int car_price=0x7f080061;
+    public static final int car_electrical=0x7f080054;
+    public static final int car_electrical_x=0x7f080055;
+    public static final int car_frame=0x7f080056;
+    public static final int car_frame_x=0x7f080057;
+    public static final int car_id=0x7f080058;
+    public static final int car_label_rv=0x7f080059;
+    public static final int car_ower_name=0x7f08005a;
+    public static final int car_photo_rv=0x7f08005b;
+    public static final int car_plate=0x7f08005c;
+    public static final int car_plate_number=0x7f08005d;
+    public static final int car_plate_scan=0x7f08005e;
+    public static final int car_plate_tv=0x7f08005f;
+    public static final int car_price=0x7f080060;
+    public static final int car_time=0x7f080061;
     public static final int car_time_allow=0x7f080062;
     public static final int center=0x7f080063;
     public static final int center_horizontal=0x7f080064;
@@ -6414,79 +6414,80 @@ public final class R {
     public static final int homg_fwyq=0x7f0c0030;
     public static final int ic_ble=0x7f0c0031;
     public static final int ic_launcher=0x7f0c0032;
-    public static final int image_bg=0x7f0c0033;
-    public static final int insurance_chang=0x7f0c0034;
-    public static final int insurance_icn=0x7f0c0035;
-    public static final int light_close=0x7f0c0036;
-    public static final int light_off=0x7f0c0037;
-    public static final int light_on=0x7f0c0038;
-    public static final int light_open=0x7f0c0039;
-    public static final int loc=0x7f0c003a;
-    public static final int login_bg=0x7f0c003b;
-    public static final int login_bt=0x7f0c003c;
-    public static final int login_bt_un=0x7f0c003d;
-    public static final int login_down=0x7f0c003e;
-    public static final int login_location=0x7f0c003f;
-    public static final int main_home_bg=0x7f0c0040;
-    public static final int main_home_nearby=0x7f0c0041;
-    public static final int main_home_people=0x7f0c0042;
-    public static final int main_home_query=0x7f0c0043;
-    public static final int me_head=0x7f0c0044;
-    public static final int me_insurance=0x7f0c0045;
-    public static final int me_pro=0x7f0c0046;
-    public static final int me_pwd=0x7f0c0047;
-    public static final int me_setting=0x7f0c0048;
-    public static final int me_update=0x7f0c0049;
-    public static final int me_version=0x7f0c004a;
-    public static final int myinput_close=0x7f0c004b;
-    public static final int navigation=0x7f0c004c;
-    public static final int no_zj=0x7f0c004d;
-    public static final int people_hand=0x7f0c004e;
-    public static final int people_pwd=0x7f0c004f;
-    public static final int people_pwd_bg=0x7f0c0050;
-    public static final int people_pwd_et=0x7f0c0051;
-    public static final int people_title_bg=0x7f0c0052;
-    public static final int people_title_blue=0x7f0c0053;
-    public static final int phone_call=0x7f0c0054;
-    public static final int record_title=0x7f0c0055;
-    public static final int red_location=0x7f0c0056;
-    public static final int refrsh_text=0x7f0c0057;
-    public static final int refrsh_tu=0x7f0c0058;
-    public static final int return_white=0x7f0c0059;
-    public static final int right_arrow=0x7f0c005a;
-    public static final int route_start=0x7f0c005b;
-    public static final int scan=0x7f0c005c;
-    public static final int scan_back=0x7f0c005d;
-    public static final int scan_close=0x7f0c005e;
-    public static final int scan_image=0x7f0c005f;
-    public static final int scan_input=0x7f0c0060;
-    public static final int search=0x7f0c0061;
-    public static final int select_bg=0x7f0c0062;
-    public static final int select_empty=0x7f0c0063;
-    public static final int select_foot=0x7f0c0064;
-    public static final int statistics_circle_1=0x7f0c0065;
-    public static final int statistics_circle_2=0x7f0c0066;
-    public static final int statistics_circle_3=0x7f0c0067;
-    public static final int statistics_circle_4=0x7f0c0068;
-    public static final int statistics_circle_5=0x7f0c0069;
-    public static final int statistics_circle_6=0x7f0c006a;
-    public static final int statistics_circle_7=0x7f0c006b;
-    public static final int un_select_bg=0x7f0c006c;
-    public static final int un_select_button=0x7f0c006d;
-    public static final int un_select_foot=0x7f0c006e;
-    public static final int wait_error=0x7f0c006f;
-    public static final int wf_add=0x7f0c0070;
-    public static final int wf_bg=0x7f0c0071;
-    public static final int wf_dq=0x7f0c0072;
-    public static final int wf_location=0x7f0c0073;
-    public static final int wf_ss=0x7f0c0074;
-    public static final int wf_wz=0x7f0c0075;
-    public static final int wf_wz_yy=0x7f0c0076;
-    public static final int withe_arrow=0x7f0c0077;
-    public static final int yl_common_white_black=0x7f0c0078;
-    public static final int yl_empty_data=0x7f0c0079;
-    public static final int yl_home_white_bg=0x7f0c007a;
-    public static final int yl_load_error=0x7f0c007b;
+    public static final int ico_register_launcher=0x7f0c0033;
+    public static final int image_bg=0x7f0c0034;
+    public static final int insurance_chang=0x7f0c0035;
+    public static final int insurance_icn=0x7f0c0036;
+    public static final int light_close=0x7f0c0037;
+    public static final int light_off=0x7f0c0038;
+    public static final int light_on=0x7f0c0039;
+    public static final int light_open=0x7f0c003a;
+    public static final int loc=0x7f0c003b;
+    public static final int login_bg=0x7f0c003c;
+    public static final int login_bt=0x7f0c003d;
+    public static final int login_bt_un=0x7f0c003e;
+    public static final int login_down=0x7f0c003f;
+    public static final int login_location=0x7f0c0040;
+    public static final int main_home_bg=0x7f0c0041;
+    public static final int main_home_nearby=0x7f0c0042;
+    public static final int main_home_people=0x7f0c0043;
+    public static final int main_home_query=0x7f0c0044;
+    public static final int me_head=0x7f0c0045;
+    public static final int me_insurance=0x7f0c0046;
+    public static final int me_pro=0x7f0c0047;
+    public static final int me_pwd=0x7f0c0048;
+    public static final int me_setting=0x7f0c0049;
+    public static final int me_update=0x7f0c004a;
+    public static final int me_version=0x7f0c004b;
+    public static final int myinput_close=0x7f0c004c;
+    public static final int navigation=0x7f0c004d;
+    public static final int no_zj=0x7f0c004e;
+    public static final int people_hand=0x7f0c004f;
+    public static final int people_pwd=0x7f0c0050;
+    public static final int people_pwd_bg=0x7f0c0051;
+    public static final int people_pwd_et=0x7f0c0052;
+    public static final int people_title_bg=0x7f0c0053;
+    public static final int people_title_blue=0x7f0c0054;
+    public static final int phone_call=0x7f0c0055;
+    public static final int record_title=0x7f0c0056;
+    public static final int red_location=0x7f0c0057;
+    public static final int refrsh_text=0x7f0c0058;
+    public static final int refrsh_tu=0x7f0c0059;
+    public static final int return_white=0x7f0c005a;
+    public static final int right_arrow=0x7f0c005b;
+    public static final int route_start=0x7f0c005c;
+    public static final int scan=0x7f0c005d;
+    public static final int scan_back=0x7f0c005e;
+    public static final int scan_close=0x7f0c005f;
+    public static final int scan_image=0x7f0c0060;
+    public static final int scan_input=0x7f0c0061;
+    public static final int search=0x7f0c0062;
+    public static final int select_bg=0x7f0c0063;
+    public static final int select_empty=0x7f0c0064;
+    public static final int select_foot=0x7f0c0065;
+    public static final int statistics_circle_1=0x7f0c0066;
+    public static final int statistics_circle_2=0x7f0c0067;
+    public static final int statistics_circle_3=0x7f0c0068;
+    public static final int statistics_circle_4=0x7f0c0069;
+    public static final int statistics_circle_5=0x7f0c006a;
+    public static final int statistics_circle_6=0x7f0c006b;
+    public static final int statistics_circle_7=0x7f0c006c;
+    public static final int un_select_bg=0x7f0c006d;
+    public static final int un_select_button=0x7f0c006e;
+    public static final int un_select_foot=0x7f0c006f;
+    public static final int wait_error=0x7f0c0070;
+    public static final int wf_add=0x7f0c0071;
+    public static final int wf_bg=0x7f0c0072;
+    public static final int wf_dq=0x7f0c0073;
+    public static final int wf_location=0x7f0c0074;
+    public static final int wf_ss=0x7f0c0075;
+    public static final int wf_wz=0x7f0c0076;
+    public static final int wf_wz_yy=0x7f0c0077;
+    public static final int withe_arrow=0x7f0c0078;
+    public static final int yl_common_white_black=0x7f0c0079;
+    public static final int yl_empty_data=0x7f0c007a;
+    public static final int yl_home_white_bg=0x7f0c007b;
+    public static final int yl_load_error=0x7f0c007c;
   }
 
   public static final class raw {
@@ -10586,8 +10587,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
@@ -11863,8 +11864,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
@@ -12044,8 +12045,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
@@ -13620,7 +13621,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -19438,10 +19439,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>FixedFront</td><td>3</td><td>固定在背后</td></tr>
-     * <tr><td>MatchLayout</td><td>4</td><td>固定在前面</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>FixedFront</td><td>3</td><td></td></tr>
+     * <tr><td>MatchLayout</td><td>4</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *

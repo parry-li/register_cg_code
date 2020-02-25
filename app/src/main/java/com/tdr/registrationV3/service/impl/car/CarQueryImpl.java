@@ -3,6 +3,7 @@ package com.tdr.registrationV3.service.impl.car;
 
 import com.tdr.registrationV3.bean.CarCheckBean;
 import com.tdr.registrationV3.bean.EditInfoBean;
+import com.tdr.registrationV3.bean.InfoBean;
 import com.tdr.registrationV3.constants.UrlConstants;
 import com.tdr.registrationV3.http.utils.DdcResult;
 import com.tdr.registrationV3.http.utils.NoCallback;
@@ -46,6 +47,21 @@ public class CarQueryImpl extends BasePresenter<CarQueryPresenter.View> implemen
                     mView.getEditInfoSuccess(data.getData());
                 } else {
                     mView.getEditInfoFail(data.getMsg());
+                }
+
+            }
+        });
+    }
+
+    @Override
+    public void queryCarInfo(RequestBody route) {
+        invoke(mService.queryCarInfo(UrlConstants.electriccars_info, route), new NoCallback<DdcResult<InfoBean>>() {
+            @Override
+            public void onResponse(DdcResult<InfoBean> data) {
+                if (data.getCode() == 0) {
+                    mView.queryCarInfoSuccess(data.getData());
+                } else {
+                    mView.queryCarInfoFail(data.getMsg());
                 }
 
             }

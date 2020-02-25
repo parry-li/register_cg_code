@@ -57,7 +57,25 @@ public class PhotoConfigBean {
         private boolean isMust;
         private String photoId;
         private Drawable drawable;
+        private String chagePhotoId;//需要通过gilde加载的id（如信息变更查询后加载照片）
 
+        private boolean isHaveDrawable;
+
+        public boolean isHaveDrawable() {
+            return isHaveDrawable;
+        }
+
+        public void setHaveDrawable(boolean haveDrawable) {
+            isHaveDrawable = haveDrawable;
+        }
+
+        public String getChagePhotoId() {
+            return chagePhotoId;
+        }
+
+        public void setChagePhotoId(String chagePhotoId) {
+            this.chagePhotoId = chagePhotoId;
+        }
 
         public Drawable getDrawable() {
             return drawable;
