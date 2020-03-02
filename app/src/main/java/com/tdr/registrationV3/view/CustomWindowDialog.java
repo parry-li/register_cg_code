@@ -23,6 +23,8 @@ public class CustomWindowDialog {
 
 
     private Activity context;
+    private TextView dialogAffirm;
+    private TextView dialogCancel;
 
     public CustomWindowDialog(Activity context) {
         this.context = context;
@@ -43,11 +45,10 @@ public class CustomWindowDialog {
         dialog.setContentView(convertView);
 
         TextView dialogContent = (TextView) convertView.findViewById(R.id.dialog_content);
-        TextView dialogAffirm = (TextView) convertView.findViewById(R.id.dialog_affirm);
-        TextView dialogCancel = (TextView) convertView.findViewById(R.id.dialog_cancel);
+        dialogAffirm = (TextView) convertView.findViewById(R.id.dialog_affirm);
+        dialogCancel = (TextView) convertView.findViewById(R.id.dialog_cancel);
         TextView dialogTitle = (TextView) convertView.findViewById(R.id.dialog_title);
         View bottomV = (View) convertView.findViewById(R.id.bottom_v);
-
 
 
         dialogTitle.setText(title);
@@ -98,6 +99,16 @@ public class CustomWindowDialog {
 
     }
 
+    public void setAffirmText(String text) {
+        if(dialogAffirm!=null){
+            dialogAffirm.setText(text);
+        }
+    }
+    public void setCancelText(String text) {
+        if(dialogCancel!=null){
+            dialogCancel.setText(text);
+        }
+    }
 
     OnItemClickListener onItemClickListener;
     OnItemCancelClickListener onCancelClickListener;

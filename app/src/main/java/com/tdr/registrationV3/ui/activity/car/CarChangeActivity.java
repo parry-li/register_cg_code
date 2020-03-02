@@ -28,7 +28,7 @@ import com.tdr.registrationV3.bean.PhotoListBean;
 import com.tdr.registrationV3.bean.VehicleConfigBean;
 import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.http.utils.DdcResult;
-import com.tdr.registrationV3.listener.ImageSendLister;
+import com.tdr.registrationV3.listener.CustomSendLister;
 import com.tdr.registrationV3.service.impl.car.CarChangeImpl;
 import com.tdr.registrationV3.service.presenter.CarChangePresenter;
 import com.tdr.registrationV3.ui.activity.base.LoadingBaseActivity;
@@ -122,8 +122,11 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
     }
 
     private void initLabelRv() {
+
+        List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
+                data = new ArrayList<>();
+
         changeContentRv.setLayoutManager(new LinearLayoutManager(this));
-        List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> data = new ArrayList<>();
         contentAdapter = new LabelAdapter(data, false);
         changeContentRv.setAdapter(contentAdapter);
         contentAdapter.setOnItemClickListener(new LabelAdapter.OnItemClickListener() {
@@ -155,7 +158,7 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
 
         }
 
-        photoAdapter = new PhotoAdapter(CarChangeActivity.this,photoList);
+        photoAdapter = new PhotoAdapter(CarChangeActivity.this, photoList);
         changePhotoRv.setAdapter(photoAdapter);
         photoAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
@@ -169,24 +172,30 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
 
     private void initTypeRv() {
         VehicleConfigBean configBean = ConfigUtil.getVehicleConfig();
-        changTypeList = new ArrayList<>();
-        VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean bean =
-                new VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean();
+        if (configBean == null) {
 
-        bean.setLableName("车牌号");
-        bean.setIndex(0);
-        bean.setNoScan(false);// 是否扫描
-        changTypeList.add(bean);
+            return;
+        }
+        changTypeList = new ArrayList<>();
+
         if (configBean != null) {
+            boolean isScanCar = false;
             List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> configList = new ArrayList<>();
             for (VehicleConfigBean.VehicleLicenseInfoListBean infoListBean : configBean.getVehicleLicenseInfoList()) {
                 if (infoListBean.getTypeId() == checkBean.getVehicleType()) {
                     configList = infoListBean.getVehicleNbLableConfigList();
                     carRegular = infoListBean.getVehicleNoReg();
+                    isScanCar = infoListBean.isVehicleNoScan();
                     break;
                 }
             }
+            VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean bean =
+                    new VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean();
 
+            bean.setLableName("车牌号");
+            bean.setIndex(0);
+            bean.setScan(isScanCar);// 是否扫描
+            changTypeList.add(bean);
             for (VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean configListBean : configList) {
                 if (configListBean.isIsValid()) {
                     changTypeList.add(configListBean);
@@ -246,7 +255,7 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
 
             if (photoData.get(k).getPhotoIndex() == 1) {
                 photoData.get(k).setIsRequire(isHavePlate);
-            }else {
+            } else {
                 photoData.get(k).setIsRequire(false);
             }
 
@@ -287,7 +296,8 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
             PhotoListBean bean = new PhotoListBean();
             bean.setIndex(photoData.get(i).getPhotoIndex());
             bean.setPhoto(photoData.get(i).getPhotoId());
-            bean.setPhtotoType(photoData.get(i).getPhotoType() + "");
+            bean.setPhotoType(photoData.get(i).getPhotoType());
+            bean.setPhotoName(photoData.get(i).getPhotoName());
             photoListBeans.add(bean);
         }
         map.put("photoList", photoListBeans);
@@ -297,6 +307,7 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
             LableListBean bean = new LableListBean();
             bean.setIndex(contentData.get(i).getIndex());
             bean.setLableNumber(contentData.get(i).getEditValue());
+            bean.setLabelName(contentData.get(i).getEditValue());
             if (contentData.get(i).getIndex() != 0) {
                 bean.setLableType(contentData.get(i).getEditValue().substring(0, 4));
             }
@@ -314,7 +325,6 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
     }
 
     private void putData() {
-
         contentData = contentAdapter.getData();
         if (contentData == null || contentData.size() == 0) {
             ToastUtil.showWX("请选择补办类型");
@@ -330,6 +340,13 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
                 ToastUtil.showWX("请输入" + contentData.get(i).getLableName());
                 return;
             }
+            if (isPlate) {
+                String plateNum = ScanUtil.checkPlateNumber(true, carRegular, contentData.get(i).getEditValue());
+                if (TextUtils.isEmpty(plateNum)) {
+                    return;
+                }
+            }
+
         }
         photoData = photoAdapter.getData();
         /*车牌必须有照片*/
@@ -337,8 +354,13 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
             for (int j = 0; j < photoData.size(); j++) {
                 if (photoData.get(j).getPhotoIndex() == 1) {
                     if (TextUtils.isEmpty(photoData.get(j).getPhotoId())) {
-                        ToastUtil.showWX("请选择" + photoData.get(j).getPhotoName());
-//                        return;
+                        if (photoData.get(j).getDrawable() != null) {
+                            ToastUtil.showWX("正在上传" + photoData.get(j).getPhotoName());
+                        } else {
+                            ToastUtil.showWX("请选择" + photoData.get(j).getPhotoName());
+                        }
+
+                        return;
                     }
                 }
             }
@@ -365,15 +387,15 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
                     photoList.get(photoPosition).setDrawable(drawable);
                     photoList.get(photoPosition).setPhotoId(null);
                     photoAdapter.setNewData(photoList);
-                    ImageSendUtil.sendImage(bitmap, photoPosition, imageSendLister);
+                    ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
                     break;
             }
         }
     }
 
-    ImageSendLister imageSendLister = new ImageSendLister() {
+    CustomSendLister customSendLister = new CustomSendLister() {
         @Override
-        public void imageSendResult(Boolean isSuccess, int position, String photoId) {
+        public void sendResult(Boolean isSuccess, int position, String photoId) {
             if (isSuccess) {
                 photoList.get(position).setPhotoId(photoId);
             } else {
@@ -415,19 +437,6 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
 
 
     @Override
-    public void sendImgSuccess(String photoId) {
-        zProgressHUD.dismiss();
-        photoList.get(photoPosition).setPhotoId(photoId);
-        photoAdapter.setNewData(photoList);
-    }
-
-    @Override
-    public void sendImgFail(String msg) {
-        zProgressHUD.dismiss();
-        ToastUtil.showFW(msg);
-    }
-
-    @Override
     public void loadingSuccessForData(DdcResult mData) {
         zProgressHUD.dismiss();
         customBaseDialog.showCustomWindowDialog("服务提示", "补办成功", true);
@@ -436,5 +445,6 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
+        customBaseDialog.showCustomWindowDialog("服务提示", msg, false, true);
     }
 }

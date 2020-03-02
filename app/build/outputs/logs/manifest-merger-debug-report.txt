@@ -1,19 +1,20 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-128:12
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-129:12
+INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-129:12
+INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-129:12
+INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-129:12
 MERGED from [:matisse] E:\tiandiren\android_cg_app\register_cg_code\matisse\build\intermediates\manifests\full\debug\AndroidManifest.xml:17:1-33:12
 MERGED from [com.github.parry-li:AndroidToolsUtils:1.0] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\AndroidToolsUtils-1.0.aar\5c9dd1483bf32542992c314f9cd37f8f\AndroidManifest.xml:2:1-16:12
 MERGED from [pub.devrel:easypermissions:2.0.1] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\easypermissions-2.0.1.aar\21c0053bb4fceaa31613734ec2511894\AndroidManifest.xml:2:1-19:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\41891694b5ba3d8a84f51faacaf6e3e3\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\44ea7bcf07ece97fe42f0219084b16d3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:multidex:1.0.3] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\multidex-1.0.3.aar\5d10927e99e46adfdcc91bebb7fa8162\AndroidManifest.xml:17:1-22:12
 MERGED from [io.reactivex:rxandroid:1.1.0] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\rxandroid-1.1.0.aar\fe5d013372e622f8a1fb5609b981b9c5\AndroidManifest.xml:15:1-21:12
 MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\9d83d8c333a421f036f08fa9457f1e76\AndroidManifest.xml:2:1-7:12
 MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\SmartRefreshLayout-1.0.4-7.aar\7c6edb00b01ff5a1d450d2af86a616c7\AndroidManifest.xml:2:1-17:12
 MERGED from [com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-7] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\SmartRefreshHeader-1.0.4-7.aar\e5eab41ee3013a9855f8d3a3f61ebb5c\AndroidManifest.xml:2:1-17:12
-MERGED from [com.tencent.bugly:crashreport:3.1.7] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\crashreport-3.1.7.aar\8b565508bc2a9b6cfb56c5ef78b4025d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.tencent.bugly:crashreport:3.1.8] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\crashreport-3.1.8.aar\750a562c9d114028d77484a7d98c8876\AndroidManifest.xml:2:1-9:12
 MERGED from [com.tencent.bugly:nativecrashreport:3.7.1] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.7.1.aar\3d46ac1d95b470ceafb834e50bb6977a\AndroidManifest.xml:2:1-9:12
 MERGED from [:FastBleLib] E:\tiandiren\android_cg_app\register_cg_code\FastBleLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-16:12
 MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.30.aar\8b9f3e5f2646e3fac5d5d3e78ba7613f\AndroidManifest.xml:2:1-11:12
@@ -53,20 +54,20 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\kwz\.gradle\cache
 MERGED from [it.sephiroth.android.library.imagezoom:library:1.0.4] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\library-1.0.4.aar\1d35013b519e93f821ce2e0ee2d14575\AndroidManifest.xml:1:106-7:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\48a053c4d766d8bc3bb005b02d3b9850\AndroidManifest.xml:2:1-11:12
 MERGED from [it.sephiroth.android.library.easing:library:1.0.2] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\library-1.0.2.aar\3f7da43992f836736ed758004713885a\AndroidManifest.xml:1:116-8:12
-INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-129:12
+INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-129:12
+INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-129:12
 	package
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml
 		INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-128:12
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-129:12
 		INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-128:12
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:1-129:12
 		INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:2:11-69
@@ -147,7 +148,7 @@ ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidMani
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:63:22-75
 application
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:72:5-126:19
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:72:5-127:19
 MERGED from [:matisse] E:\tiandiren\android_cg_app\register_cg_code\matisse\build\intermediates\manifests\full\debug\AndroidManifest.xml:27:5-31:19
 MERGED from [:matisse] E:\tiandiren\android_cg_app\register_cg_code\matisse\build\intermediates\manifests\full\debug\AndroidManifest.xml:27:5-31:19
 MERGED from [pub.devrel:easypermissions:2.0.1] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\easypermissions-2.0.1.aar\21c0053bb4fceaa31613734ec2511894\AndroidManifest.xml:11:5-17:19
@@ -250,14 +251,14 @@ activity#com.tdr.registrationV3.ui.activity.me.PasswordActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:106:9-91
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:106:19-88
-activity#com.tdr.registrationV3.ui.activity.me.InsuranceWaitActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:9-96
+activity#com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:9-103
 	android:name
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:19-93
-activity#com.tdr.registrationV3.ui.activity.me.InsuranceWaitChangeActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:9-102
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:19-100
+activity#com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitChangeActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:9-109
 	android:name
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:19-99
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:19-106
 activity#com.tdr.registrationV3.ui.activity.home.PersonageStatisticsActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:109:9-104
 	android:name
@@ -266,22 +267,26 @@ activity#com.tdr.registrationV3.ui.activity.home.StatisticsUnitActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:110:9-99
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:110:19-96
+activity#com.tdr.registrationV3.ui.activity.image.ImageActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:111:9-91
+	android:name
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:111:19-88
 provider#android.support.v4.content.FileProvider
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:116:9-124:20
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:117:9-125:20
 	android:grantUriPermissions
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:120:13-47
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:121:13-47
 	android:authorities
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:118:13-57
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:119:13-57
 	android:exported
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:119:13-37
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:120:13-37
 	android:name
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:117:13-67
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:118:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:121:13-123:64
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:122:13-124:64
 	android:resource
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:123:17-51
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:124:17-51
 	android:name
-		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:122:17-67
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:123:17-67
 uses-sdk
 INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml
@@ -296,6 +301,8 @@ MERGED from [com.android.support:design:28.0.0] C:\Users\kwz\.gradle\caches\tran
 MERGED from [com.android.support:design:28.0.0] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\41891694b5ba3d8a84f51faacaf6e3e3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\44ea7bcf07ece97fe42f0219084b16d3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\44ea7bcf07ece97fe42f0219084b16d3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:multidex:1.0.3] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\multidex-1.0.3.aar\5d10927e99e46adfdcc91bebb7fa8162\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\multidex-1.0.3.aar\5d10927e99e46adfdcc91bebb7fa8162\AndroidManifest.xml:20:5-43
 MERGED from [io.reactivex:rxandroid:1.1.0] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\rxandroid-1.1.0.aar\fe5d013372e622f8a1fb5609b981b9c5\AndroidManifest.xml:19:5-43
 MERGED from [io.reactivex:rxandroid:1.1.0] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\rxandroid-1.1.0.aar\fe5d013372e622f8a1fb5609b981b9c5\AndroidManifest.xml:19:5-43
 MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\9d83d8c333a421f036f08fa9457f1e76\AndroidManifest.xml:5:5-43
@@ -304,8 +311,8 @@ MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7] C:\Users\kwz\.g
 MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\SmartRefreshLayout-1.0.4-7.aar\7c6edb00b01ff5a1d450d2af86a616c7\AndroidManifest.xml:7:5-9:41
 MERGED from [com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-7] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\SmartRefreshHeader-1.0.4-7.aar\e5eab41ee3013a9855f8d3a3f61ebb5c\AndroidManifest.xml:7:5-9:41
 MERGED from [com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-7] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\SmartRefreshHeader-1.0.4-7.aar\e5eab41ee3013a9855f8d3a3f61ebb5c\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.bugly:crashreport:3.1.7] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\crashreport-3.1.7.aar\8b565508bc2a9b6cfb56c5ef78b4025d\AndroidManifest.xml:5:5-7:41
-MERGED from [com.tencent.bugly:crashreport:3.1.7] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\crashreport-3.1.7.aar\8b565508bc2a9b6cfb56c5ef78b4025d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent.bugly:crashreport:3.1.8] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\crashreport-3.1.8.aar\750a562c9d114028d77484a7d98c8876\AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent.bugly:crashreport:3.1.8] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\crashreport-3.1.8.aar\750a562c9d114028d77484a7d98c8876\AndroidManifest.xml:5:5-7:41
 MERGED from [com.tencent.bugly:nativecrashreport:3.7.1] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.7.1.aar\3d46ac1d95b470ceafb834e50bb6977a\AndroidManifest.xml:5:5-7:41
 MERGED from [com.tencent.bugly:nativecrashreport:3.7.1] C:\Users\kwz\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.7.1.aar\3d46ac1d95b470ceafb834e50bb6977a\AndroidManifest.xml:5:5-7:41
 MERGED from [:FastBleLib] E:\tiandiren\android_cg_app\register_cg_code\FastBleLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41

@@ -12,6 +12,7 @@ import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.tdr.registrationV3.R;
+import com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitActivity;
 import com.tdr.registrationV3.view.SearchView;
 import java.lang.IllegalStateException;
 import java.lang.Override;

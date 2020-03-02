@@ -8,7 +8,7 @@ import com.parry.utils.code.AppUtils;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.ui.activity.LoginActivity;
 import com.tdr.registrationV3.ui.activity.base.BaseActivity;
-import com.tdr.registrationV3.ui.activity.me.InsuranceWaitActivity;
+import com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitActivity;
 import com.tdr.registrationV3.ui.activity.me.PasswordActivity;
 import com.tdr.registrationV3.ui.fragment.base.NoCacheBaseFragment;
 import com.tdr.registrationV3.utils.ActivityUtil;

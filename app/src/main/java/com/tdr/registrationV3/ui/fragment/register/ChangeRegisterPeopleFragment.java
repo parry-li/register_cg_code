@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.parry.utils.code.SPUtils;
 import com.tdr.registrationV3.R;
+import com.tdr.registrationV3.bean.BlcakCarBean;
 import com.tdr.registrationV3.bean.InfoBean;
 import com.tdr.registrationV3.bean.InsuranceBean;
 import com.tdr.registrationV3.bean.LableListBean;
@@ -27,6 +28,7 @@ import com.tdr.registrationV3.ui.activity.CodeTableActivity;
 import com.tdr.registrationV3.ui.activity.car.ChangeRegisterActivity;
 
 import com.tdr.registrationV3.ui.fragment.base.LoadingBaseFragment;
+import com.tdr.registrationV3.ui.fragment.base.NoLoadingBaseFragment;
 import com.tdr.registrationV3.utils.ActivityUtil;
 import com.tdr.registrationV3.utils.RegularUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
@@ -79,7 +81,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
 
     @Override
     protected void loadData() {
-
+        setState(BaseConstants.STATE_SUCCESS);
     }
 
 
@@ -112,6 +114,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
         peopleRemark.setText(infoBean.getElectriccars().getRemark());
 
         cardCode = infoBean.getElectriccars().getCardType() + "";
+
     }
 
     @OnClick({R.id.people_card, R.id.people_card_allow, R.id.button_next})
@@ -192,6 +195,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
             int subsystemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
             Map<String, Object> map = new HashMap<>();
             map.put("subsystemId", subsystemId);
+            map.put("id", registerBean.getId());
 
 
             /*以下为baseInfo(基本信息)*/
@@ -221,6 +225,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
                 lableBean.setIndex(bean.getIndex());
                 lableBean.setLableType(lablenumber.substring(0, 4));
                 lableBean.setLableNumber(lablenumber);
+                lableBean.setLabelName(bean.getLableName());
                 lableListBeanList.add(lableBean);
             }
             labelInfoMap.put("lableList", lableListBeanList);
@@ -242,8 +247,9 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
             for (PhotoConfigBean.PhotoTypeInfoListBean bean : photoList) {
                 PhotoListBean photoBean = new PhotoListBean();
                 photoBean.setIndex(bean.getPhotoIndex());
-                photoBean.setPhtotoType(bean.getPhotoType() + "");
+                photoBean.setPhotoType(bean.getPhotoType());
                 photoBean.setPhoto(bean.getPhotoId());
+                photoBean.setPhotoName(bean.getPhotoName());
                 photoListBeans.add(photoBean);
             }
 
@@ -259,6 +265,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
             ownerInfoMap.put("phone2", registerBean.getPeoplePhone2());
             ownerInfoMap.put("residentAddress", registerBean.getPeopleAddr());
             ownerInfoMap.put("remark", registerBean.getPeopleRemark());
+            ownerInfoMap.put("cardName", registerBean.getCardName());
             map.put("ownerInfo", ownerInfoMap);
 
             showSubmitRequestDialog(map);
@@ -303,28 +310,43 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
 
     @Override
     public void changeFail(String msg) {
-        showCustomWindowDialog("服务提示", msg, true);
+        zProgressHUD.dismiss();
+        showCustomWindowDialog("服务提示", msg, false,true);
 
     }
 
     @Override
     public void changeSuccess(String msg) {
-        showCustomWindowDialog("服务提示", msg, false, true);
+        zProgressHUD.dismiss();
+        showCustomWindowDialog("服务提示", msg, true);
+    }
+
+    @Override
+    public void checkShelvesNumberFail(String msg) {
+
+    }
+
+    @Override
+    public void checkShelvesNumberSuccess(List<BlcakCarBean> msg) {
+
     }
 
     @Override
     public void loadingSuccessForData(DdcResult mData) {
-
+        zProgressHUD.dismiss();
     }
 
     @Override
     public void loadingFail(String msg) {
-
+        zProgressHUD.dismiss();
+        showCustomWindowDialog("服务提示", msg, false,true);
     }
+
 
     @Override
     protected void submitRequestData() {
         /*提交接口*/
+        zProgressHUD.show();
         mPresenter.change(getSubmitBoby());
     }
 }

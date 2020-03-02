@@ -3,6 +3,7 @@ package com.tdr.registrationV3.adapter;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
@@ -23,7 +24,7 @@ public class ChangTypeAdapter extends BaseQuickAdapter<VehicleConfigBean.Vehicle
     public Map<Integer, Boolean> isCheck = new HashMap<Integer, Boolean>();
 
     public ChangTypeAdapter(List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> data) {
-        super(R.layout.item_change_type, data);
+        super(R.layout.item_change_type_box, data);
 
     }
 

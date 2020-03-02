@@ -4,6 +4,7 @@ import java.util.List;
 
 public class RegisterPutBean {
 
+    private Long id;
     private int vehicleType;
     private String registerPlate;
     private String registerBrand;
@@ -26,6 +27,14 @@ public class RegisterPutBean {
     private String cardName;
     private List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean> lableList;
     private List<PhotoConfigBean.PhotoTypeInfoListBean> photoList;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getCardName() {
         return cardName;

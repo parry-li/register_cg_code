@@ -19,25 +19,32 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.adapter.LabelAdapter;
 import com.tdr.registrationV3.adapter.PhotoAdapter;
+import com.tdr.registrationV3.bean.BlcakCarBean;
 import com.tdr.registrationV3.bean.InfoBean;
 import com.tdr.registrationV3.bean.InsuranceBean;
 import com.tdr.registrationV3.bean.PhotoConfigBean;
+import com.tdr.registrationV3.bean.RegisterConfigBean;
 import com.tdr.registrationV3.bean.VehicleConfigBean;
 import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.http.utils.DdcResult;
-import com.tdr.registrationV3.listener.ImageSendLister;
+import com.tdr.registrationV3.listener.CustomSendLister;
 import com.tdr.registrationV3.service.impl.car.RegisterImpl;
 import com.tdr.registrationV3.service.presenter.RegisterPresenter;
 import com.tdr.registrationV3.ui.activity.CodeTableActivity;
 import com.tdr.registrationV3.ui.activity.base.BaseActivity;
 import com.tdr.registrationV3.ui.activity.car.ChangeRegisterActivity;
+import com.tdr.registrationV3.ui.activity.car.RegisterMainActivity;
+import com.tdr.registrationV3.ui.fragment.base.BaseFragment;
 import com.tdr.registrationV3.ui.fragment.base.LoadingBaseFragment;
+import com.tdr.registrationV3.ui.fragment.base.NoLoadingBaseFragment;
 import com.tdr.registrationV3.utils.AllCapTransformationMethod;
 import com.tdr.registrationV3.utils.ConfigUtil;
 import com.tdr.registrationV3.utils.ImageSendUtil;
+import com.tdr.registrationV3.utils.LabelSendUtil;
 import com.tdr.registrationV3.utils.PhotoUtils;
 import com.tdr.registrationV3.utils.ScanUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
+import com.tdr.registrationV3.view.ChackBlackCarDialog;
 import com.tdr.registrationV3.view.CustomTimeDialog;
 
 import java.util.ArrayList;
@@ -114,7 +121,9 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
     private VehicleConfigBean.ShelvesNoRegularBean shelvesBean;
     private VehicleConfigBean.VehicleLicenseInfoListBean vehicleInfoBean;
     private String carRegular;
-
+    private int vehicleType;
+    private boolean isCheckBlackCar = false;//是否校验黑车默认不校验
+    private InfoBean infoBean;
 
     @Override
     protected RegisterImpl setPresenter() {
@@ -124,9 +133,8 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
     @Override
     protected void loadData() {
         setState(BaseConstants.STATE_SUCCESS);
-
-
     }
+
 
     @Override
     protected int getLayoutId() {
@@ -136,7 +144,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
     @Override
     protected void initView() {
         mActivity = ChangeRegisterCarFragment.this.getActivity();
-        InfoBean infoBean = ((ChangeRegisterActivity) mActivity).infoBean;
+        infoBean = ((ChangeRegisterActivity) mActivity).infoBean;
 
         initTitle();
 
@@ -144,6 +152,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
         if (vehicleBean == null) {
             return;
         }
+        vehicleType = infoBean.getElectriccars().getVehicleType();
         initContentView(vehicleBean);
         initPhotoRv(infoBean);
         initLabelRv(infoBean);
@@ -170,6 +179,14 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
 
     private void initContentView(VehicleConfigBean vehicleBean) {
 
+        RegisterConfigBean registerConfigBean = ConfigUtil.getRegisterConfig();
+        if (registerConfigBean != null) {
+            /*默认 1不进行校验 2表示校验*/
+            if (registerConfigBean.getBlackCheck() == 2) {
+                isCheckBlackCar = true;
+            }
+        }
+
         engIneBean = vehicleBean.getEngineNoRegular();
         if (!engIneBean.isIsRequire()) {
             carElectricalX.setVisibility(View.GONE);
@@ -180,25 +197,28 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
         if (!shelvesBean.isIsRequire()) {
             carFrameX.setVisibility(View.GONE);
         }
-        int vehicleType = ((ChangeRegisterActivity) mActivity).vehicleType;
+
         for (VehicleConfigBean.VehicleLicenseInfoListBean infoBean : vehicleBean.getVehicleLicenseInfoList()) {
             if (infoBean.getTypeId() == vehicleType) {
                 vehicleInfoBean = infoBean;
             }
         }
 
-        carRegular = vehicleInfoBean.getVehicleNoReg();
+        if (vehicleInfoBean != null) {
+            carRegular = vehicleInfoBean.getVehicleNoReg();
 
-        /*车牌扫码*/
-        if (vehicleInfoBean.isVehicleNoScan()) {
-            carPlateTv.setVisibility(View.VISIBLE);
-            carPlateScan.setVisibility(View.VISIBLE);
-            carPlate.setVisibility(View.GONE);
-        } else {
-            carPlateTv.setVisibility(View.GONE);
-            carPlateScan.setVisibility(View.GONE);
-            carPlate.setVisibility(View.VISIBLE);
+            /*车牌扫码*/
+            if (vehicleInfoBean.isVehicleNoScan()) {
+                carPlateTv.setVisibility(View.VISIBLE);
+                carPlateScan.setVisibility(View.VISIBLE);
+                carPlate.setVisibility(View.GONE);
+            } else {
+                carPlateTv.setVisibility(View.GONE);
+                carPlateScan.setVisibility(View.GONE);
+                carPlate.setVisibility(View.VISIBLE);
+            }
         }
+
 
         carPlate.setTransformationMethod(new AllCapTransformationMethod(true));
         timeDialog = new CustomTimeDialog(mActivity, false);
@@ -219,7 +239,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
                 for (InfoBean.ElectriccarsMapListBean mapBean : infoBean.getElectriccarsMapList()) {
 
                     if (infoLabelList.get(i).getIndex() == mapBean.getLableOrdinal()) {
-                        infoLabelList.get(i).setEditValue(mapBean.getLableNumber());
+                        infoLabelList.get(i).setEditValue(mapBean.getOriginalLableNumber());
                     }
                 }
             }
@@ -261,6 +281,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
                                     photoBean.setHaveDrawable(true);
                                 }
                                 photoBean.setChagePhotoId(infoListBean.getPhoto());
+                                photoBean.setPhotoId(infoListBean.getPhoto());
                             }
                         }
 
@@ -279,6 +300,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
 
                 photoPosition = position;
+                photoList.get(position).setChagePhotoId(null);
                 Intent intent = PhotoUtils.getPhotoByCameraForFragment(mActivity);
                 startActivityForResult(intent, PhotoUtils.CAMERA_REQESTCODE);
             }
@@ -384,6 +406,11 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
                     return;
                 }
             }
+            /*验证标签是否唯一*/
+            if (bean.isExit()) {
+                ToastUtil.showWX(bean.getLableName() + "录入数据已存在，请更换");
+                return;
+            }
         }
         String carFrameStr = carFrame.getText().toString().trim();
         if (TextUtils.isEmpty(carFrameStr)) {
@@ -441,10 +468,26 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
         ((ChangeRegisterActivity) mActivity).registerPutBean.setPhotoList(photoAdapter.getData());
         ((ChangeRegisterActivity) mActivity).registerPutBean.setRegisterPrice(carPriceStr);
         ((ChangeRegisterActivity) mActivity).registerPutBean.setRegisterBrandCode(cardBrandType);
+        ((ChangeRegisterActivity) mActivity).registerPutBean.setId(infoBean.getElectriccars().getId());
 
-        Map<String, Object> map = new HashMap<>();
-        map.put("plateNumber", carPlateStr);
-        mPresenter.checkPlateNumber(((BaseActivity) mActivity).getRequestBody(map));
+        /*车牌是否改变*/
+        if (carPlateStr.equals(infoBean.getElectriccars().getPlateNumber())) {
+
+            /*车架是否改变*/
+            if (carFrameStr.equals(infoBean.getElectriccars().getShelvesNumber())) {
+                ((ChangeRegisterActivity) mActivity).setVpCurrentItem(1);
+            } else {
+                checkShelves(carFrameStr);
+            }
+        } else {
+            /*车牌改变，判断车牌*/
+            zProgressHUD.show();
+            Map<String, Object> map = new HashMap<>();
+            map.put("plateNumber", carPlateStr);
+            map.put("subsystemId", systemBaseID);
+            mPresenter.checkPlateNumber(((BaseActivity) mActivity).getRequestBody(map));
+        }
+
 
     }
 
@@ -481,8 +524,9 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
                     photoList.get(photoPosition).setDrawable(drawable);
                     photoList.get(photoPosition).setHaveDrawable(true);
                     photoList.get(photoPosition).setPhotoId(null);
+                    photoList.get(photoPosition).setChagePhotoId(null);
                     photoAdapter.setNewData(photoList);
-                    ImageSendUtil.sendImage(bitmap, photoPosition, imageSendLister);
+                    ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
                     break;
 
                 case ScanUtil.SCANNIN_QR_CODE:
@@ -494,14 +538,15 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
         }
     }
 
-    ImageSendLister imageSendLister = new ImageSendLister() {
+    CustomSendLister customSendLister = new CustomSendLister() {
         @Override
-        public void imageSendResult(Boolean isSuccess, int position, String photoId) {
+        public void sendResult(Boolean isSuccess, int position, String photoId) {
             if (isSuccess) {
                 photoList.get(position).setPhotoId(photoId);
             } else {
                 photoList.get(position).setDrawable(null);
                 photoList.get(position).setHaveDrawable(false);
+                photoList.get(position).setChagePhotoId(null);
             }
             photoAdapter.setNewData(photoList);
         }
@@ -536,6 +581,7 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
                 if (!TextUtils.isEmpty(scanNum)) {
                     contentAdapterList.get(contentPosition).setEditValue(scanNum);
                     contentAdapter.setNewData(contentAdapterList);
+                    LabelSendUtil.checkLabel(contentPosition, scanNum, labelLister);
                 }
             }
 
@@ -543,11 +589,50 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
         }
     }
 
+    private CustomSendLister labelLister = new CustomSendLister() {
+        @Override
+        public void sendResult(Boolean isSuccess, int position, String value) {
+            /*标签不唯一*/
+            List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
+                    contentAdapterList = contentAdapter.getData();
+            if (!isSuccess) {
+                contentAdapterList.get(position).setExit(true);
+            } else {
+                contentAdapterList.get(position).setExit(false);
+            }
+            contentAdapter.setNewData(contentAdapterList);
+        }
+    };
+
+
     @Override
     public void checkPlateNumberSuccess() {
         setState(BaseConstants.STATE_SUCCESS);
-        ((ChangeRegisterActivity) mActivity).setVpCurrentItem(1);
+        String frame = ((ChangeRegisterActivity) ChangeRegisterCarFragment.this.getActivity()).registerPutBean.getRegisterFrame();
+
+        /*黑车配置2和不是*进行校验*/
+        if (isCheckBlackCar
+                && !"*".equals(frame)
+                &&!frame.equals(infoBean.getElectriccars().getShelvesNumber())) {
+            checkShelves(frame);
+        } else {
+            zProgressHUD.dismiss();
+            ((ChangeRegisterActivity) mActivity).setVpCurrentItem(1);
+        }
+
     }
+
+    /**
+     * 校验车架号
+     * @param frame
+     */
+    private void checkShelves(String frame) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("shelvesNumber", frame);
+        map.put("subsystemId", systemBaseID);
+        mPresenter.checkShelvesNumber(getRequestBody(map));
+    }
+
 
     @Override
     public void checkPlateNumberFail(String msg) {
@@ -576,14 +661,37 @@ public class ChangeRegisterCarFragment extends LoadingBaseFragment<RegisterImpl>
     }
 
     @Override
-    public void loadingSuccessForData(DdcResult mData) {
+    public void checkShelvesNumberFail(String msg) {
+        setState(BaseConstants.STATE_SUCCESS);
+        zProgressHUD.dismiss();
+        ((ChangeRegisterActivity) mActivity).setVpCurrentItem(1);
+    }
 
+    @Override
+    public void checkShelvesNumberSuccess(List<BlcakCarBean> data) {
+        zProgressHUD.dismiss();
+        ChackBlackCarDialog blackCarDialog = new ChackBlackCarDialog(mActivity);
+        blackCarDialog.showCustomWindowDialog(data);
+        blackCarDialog.setOnCustomDialogClickListener(new ChackBlackCarDialog.OnItemClickListener() {
+            @Override
+            public void onCustomDialogClickListener() {
+
+                ((ChangeRegisterActivity) mActivity).setVpCurrentItem(1);
+            }
+        });
+
+    }
+
+    @Override
+    public void loadingSuccessForData(DdcResult mData) {
+        setState(BaseConstants.STATE_SUCCESS);
     }
 
     @Override
     public void loadingFail(String msg) {
         setState(BaseConstants.STATE_SUCCESS);
-
+        zProgressHUD.dismiss();
+        showCustomWindowDialog("服务提示", msg, false, true);
     }
 
 

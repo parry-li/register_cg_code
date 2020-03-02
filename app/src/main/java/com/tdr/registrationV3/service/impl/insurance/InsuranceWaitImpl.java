@@ -42,7 +42,7 @@ public class InsuranceWaitImpl extends BasePresenter<InsuranceWaitPresenter.View
 
     @Override
     public void pushAgain(RequestBody route) {
-        invoke(mService.baseRequest(UrlConstants.policy_failurePage, route), new NoCallback<DdcResult>() {
+        invoke(mService.baseRequest(UrlConstants.policy_reinsure, route), new NoCallback<DdcResult>() {
             @Override
             public void onResponse(DdcResult data) {
 

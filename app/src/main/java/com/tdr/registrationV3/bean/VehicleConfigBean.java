@@ -357,15 +357,24 @@ public class VehicleConfigBean {
             private List<String> eqType;
             /*以下参数额外添加*/
             private String editValue;
-            private boolean isNoScan;
+            private boolean isScan;
+            /*是否唯一  true已存在*/
+            private boolean isExit;
 
-
-            public boolean isNoScan() {
-                return isNoScan;
+            public boolean isExit() {
+                return isExit;
             }
 
-            public void setNoScan(boolean noScan) {
-                isNoScan = noScan;
+            public void setExit(boolean exit) {
+                isExit = exit;
+            }
+
+            public boolean isScan() {
+                return isScan;
+            }
+
+            public void setScan(boolean scan) {
+                isScan = scan;
             }
 
             public String getEditValue() {

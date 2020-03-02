@@ -44,6 +44,7 @@ public class HomeActivity extends NoLoadingBaseActivity {
     @Override
     protected void initTitle() {
 
+        isShowBackDialog =false;
     }
 
     @Override

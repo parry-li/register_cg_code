@@ -25,7 +25,7 @@ import com.tdr.registrationV3.bean.PhotoConfigBean;
 import com.tdr.registrationV3.bean.PhotoListBean;
 import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.http.utils.DdcResult;
-import com.tdr.registrationV3.listener.ImageSendLister;
+import com.tdr.registrationV3.listener.CustomSendLister;
 import com.tdr.registrationV3.service.impl.car.CarTransferImpl;
 import com.tdr.registrationV3.service.presenter.CarTransferPresenter;
 import com.tdr.registrationV3.ui.activity.CodeTableActivity;
@@ -140,6 +140,11 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
         if (configBean != null) {
             for (PhotoConfigBean.PhotoTypeInfoListBean photoBean : configBean.getPhotoTypeInfoList()) {
                 if (photoBean.isIsValid()) {
+                    if(photoBean.getPhotoIndex() == 2){
+                        photoBean.setIsRequire(true);
+                    }else {
+                        photoBean.setIsRequire(false);
+                    }
                     photoList.add(photoBean);
                 }
             }
@@ -169,7 +174,7 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
             photoList.get(photoPosition).setDrawable(drawable);
             photoList.get(photoPosition).setPhotoId(null);
             photoAdapter.setNewData(photoList);
-            ImageSendUtil.sendImage(bitmap, photoPosition, imageSendLister);
+            ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
         } else if (resultCode == RESULT_OK && requestCode == CODE_TABLE_PICK) {
             String name = data.getStringExtra(BaseConstants.KEY_NAME);
             cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
@@ -177,9 +182,9 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
         }
     }
 
-    ImageSendLister imageSendLister = new ImageSendLister() {
+    CustomSendLister customSendLister = new CustomSendLister() {
         @Override
-        public void imageSendResult(Boolean isSuccess, int position, String photoId) {
+        public void sendResult(Boolean isSuccess, int position, String photoId) {
             if (isSuccess) {
                 photoList.get(position).setPhotoId(photoId);
             } else {
@@ -267,7 +272,7 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
         for (PhotoConfigBean.PhotoTypeInfoListBean bean : adapterData) {
             if (!TextUtils.isEmpty(bean.getPhotoId())) {
                 PhotoListBean photoListBean = new PhotoListBean();
-                photoListBean.setPhtotoType(bean.getPhotoType() + "");
+                photoListBean.setPhotoType(bean.getPhotoType());
                 photoListBean.setIndex(bean.getPhotoIndex());
                 photoListBean.setPhoto(bean.getPhotoId());
                 listBeans.add(photoListBean);
@@ -275,6 +280,12 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
                 if (bean.getDrawable() != null) {
                     ToastUtil.showWX(bean.getPhotoName() + "正在上传");
                     return;
+                }else {
+                    if(bean.isIsRequire()){
+                        ToastUtil.showWX(bean.getPhotoName() + "未添加");
+                        return;
+                    }
+
                 }
             }
 

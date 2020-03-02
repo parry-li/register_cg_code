@@ -5,29 +5,38 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.parry.utils.code.SPUtils;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.adapter.HomeAdapter;
 import com.tdr.registrationV3.bean.ItemModel;
 import com.tdr.registrationV3.bean.OptionsBean;
 import com.tdr.registrationV3.bean.VehicleConfigBean;
 import com.tdr.registrationV3.constants.BaseConstants;
-import com.tdr.registrationV3.ui.activity.home.PersonageStatisticsActivity;
+import com.tdr.registrationV3.ui.activity.LoginActivity;
+import com.tdr.registrationV3.ui.activity.base.BaseActivity;
 import com.tdr.registrationV3.ui.activity.car.CarQueryActivity;
 import com.tdr.registrationV3.ui.activity.car.RegisterMainActivity;
+import com.tdr.registrationV3.ui.activity.home.PersonageStatisticsActivity;
 import com.tdr.registrationV3.ui.fragment.base.NoCacheBaseFragment;
 import com.tdr.registrationV3.utils.ActivityUtil;
 import com.tdr.registrationV3.utils.ConfigUtil;
 import com.tdr.registrationV3.utils.LogUtil;
 import com.tdr.registrationV3.view.CustomOptionsDialog;
+import com.tdr.registrationV3.view.CustomWindowDialog;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.Unbinder;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
@@ -45,9 +54,13 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
     LinearLayout homeGrtjLl;
     @BindView(R.id.home_rv)
     RecyclerView homeRv;
+    @BindView(R.id.home_city_name)
+    TextView homeCityName;
+
     private static final int PERMISSION_CODE = 124;
     private static final String[] PERMISSION_CONTENT =
             {Manifest.permission.CAMERA, Manifest.permission.VIBRATE};
+
 
     private int[] funImgs = {
             R.mipmap.home_clbf, R.mipmap.home_cpbb,
@@ -60,6 +73,7 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
             "服务购买", "备案统计"
     };
     private CustomOptionsDialog optionsDialog;
+    private String cityName;
 
 
     @Override
@@ -69,6 +83,8 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
 
     @Override
     protected void initView() {
+        cityName = SPUtils.getInstance().getString(BaseConstants.Login_city_name);
+        homeCityName.setText(cityName);
         initRv();
         initRegisterDialog();
         getPermission();
@@ -91,6 +107,9 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
         homeAdapter.setOnItemClickListener(new HomeAdapter.OnItemClickListener() {
             @Override
             public void onItemClickListener(String rolePower, int position) {
+                if(!getPermission()){
+                    return;
+                }
                 Bundle bundle = new Bundle();
                 bundle.putString("rolePower", rolePower);
                 if (BaseConstants.funJurisdiction[1].equals(rolePower)/*车牌补办*/
@@ -114,10 +133,24 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
 
     @OnClick({R.id.home_city_ll, R.id.home_register_ll, R.id.home_bxbg_ll, R.id.home_xxbg_ll, R.id.home_grtj_ll})
     public void onViewClicked(View view) {
+        if(!getPermission()){
+          return;
+        }
         Bundle bundle = new Bundle();
         switch (view.getId()) {
             case R.id.home_city_ll:
 
+                CustomWindowDialog customWindowDialog = new CustomWindowDialog(HomeFragment.this.getActivity());
+                customWindowDialog.showCustomWindowDialog("温馨提示",
+                        "您选择的城市是：" + cityName + ",如需切换，请先退出当前账号的登录", false);
+                customWindowDialog.setAffirmText("退出登录");
+                customWindowDialog.setOnCustomDialogClickListener(new CustomWindowDialog.OnItemClickListener() {
+                    @Override
+                    public void onCustomDialogClickListener() {
+                        BaseActivity.activity.clearDataForLoginOut();
+                        ActivityUtil.goActivityAndFinish(HomeFragment.this.getActivity(), LoginActivity.class);
+                    }
+                });
                 break;
             case R.id.home_register_ll://备案登记
 
@@ -153,27 +186,17 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
             if (configBean.getVehicleLicenseInfoList() != null && configBean.getVehicleLicenseInfoList().size() > 0) {
                 for (VehicleConfigBean.VehicleLicenseInfoListBean bean :
                         configBean.getVehicleLicenseInfoList()) {
-                    /* 当前调试后期加上*/
-                    /* 当前调试后期加上*/
-                    /* 当前调试后期加上*/
-                    /* 当前调试后期加上*/
-                    /* 当前调试后期加上*/
-                    /* 当前调试后期加上*/
-                    /* 当前调试后期加上*/
-                    /* 当前调试后期加上*/
-
-//                if (bean.isIsValid()) {
-                    strings.add(new OptionsBean(bean.getVehicleTypeName(), bean.getTypeId()));
-//                }
+                    if (bean.isIsValid()) {
+                        strings.add(new OptionsBean(bean.getVehicleTypeName(), bean.getTypeId()));
+                    }
 
                 }
+
                 optionsDialog = new CustomOptionsDialog(HomeFragment.this.getContext(), "请选择车辆类型");
                 optionsDialog.setPickerData(strings);
                 optionsDialog.setOnCustomClickListener(new CustomOptionsDialog.OnItemClickListener() {
                     @Override
                     public void onCustomDialogClickListener(int options1, int options2, int options3) {
-
-
                         goRegisterActivity((int) strings.get(options1).getValue());
                     }
 
@@ -205,17 +228,23 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
         EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
     }
 
+
+    /**获取权限
+     * @return
+     */
     @AfterPermissionGranted(PERMISSION_CODE)
-    public void getPermission() {
+    public boolean getPermission() {
         if (EasyPermissions.hasPermissions(this.getContext(), PERMISSION_CONTENT)) {
             LogUtil.i("hasPermissions");
 
+            return true;
         } else {
             EasyPermissions.requestPermissions(
                     this,
                     getString(R.string.rationale_location_contacts),
                     PERMISSION_CODE,
                     PERMISSION_CONTENT);
+            return false;
         }
     }
 

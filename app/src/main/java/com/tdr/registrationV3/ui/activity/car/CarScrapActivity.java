@@ -16,6 +16,7 @@ import com.tdr.registrationV3.http.utils.DdcResult;
 import com.tdr.registrationV3.service.impl.BaseRequestImpl;
 import com.tdr.registrationV3.service.presenter.BaseRequestPresenter;
 import com.tdr.registrationV3.ui.activity.base.LoadingBaseActivity;
+import com.tdr.registrationV3.utils.TimeUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
 import com.tdr.registrationV3.view.CustomTimeDialog;
 
@@ -70,7 +71,10 @@ public class CarScrapActivity extends LoadingBaseActivity<BaseRequestImpl> imple
         timeDialog.setOnCustomClickListener(new CustomTimeDialog.OnItemClickListener() {
             @Override
             public void onCustomDialogClickListener(String value) {
-                scrapTime.setText(value);
+               if(TimeUtil.timeCompare(value)){
+                   scrapTime.setText(value);
+               }
+
             }
         });
     }

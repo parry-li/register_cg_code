@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class StatisticsUnitActivity extends LoadingBaseActivity<UnitImpl> implements UnitPresenter.View {
     @BindView(R.id.com_title_back)
@@ -43,6 +44,10 @@ public class StatisticsUnitActivity extends LoadingBaseActivity<UnitImpl> implem
     SearchView searchView;
     @BindView(R.id.all_tv)
     TextView allTv;
+    @BindView(R.id.empty_iv)
+    ImageView emptyIv;
+    @BindView(R.id.empty_tv)
+    TextView emptyTv;
 
     private UnitAdapter unitAdapter;
 
@@ -50,23 +55,23 @@ public class StatisticsUnitActivity extends LoadingBaseActivity<UnitImpl> implem
 
     @Override
     public void loadingSuccessForData(UnitBean mData) {
-
+        zProgressHUD.dismiss();
         if (mData != null) {
-
+            searchView.setVisibility(View.VISIBLE);
             emptyDataRl.setVisibility(View.GONE);
             UnitBean.ChildrenListBeanX firstChild = new UnitBean.ChildrenListBeanX();
             firstChild.setUnitName(mData.getUnitName());
             firstChild.setUnitNo(mData.getUnitNo());
             firstChild.setUnitType(mData.getUnitType());
             unitDta.add(firstChild);
-            if(mData.getChildrenList()!=null&&mData.getChildrenList().size()>0){
+            if (mData.getChildrenList() != null && mData.getChildrenList().size() > 0) {
                 for (UnitBean.ChildrenListBeanX secondBean : mData.getChildrenList()) {
                     UnitBean.ChildrenListBeanX secondChild = new UnitBean.ChildrenListBeanX();
                     secondChild.setUnitName(secondBean.getUnitName());
                     secondChild.setUnitNo(secondBean.getUnitNo());
                     secondChild.setUnitType(secondBean.getUnitType());
                     unitDta.add(secondChild);
-                    if(secondBean.getChildrenList()!=null&&secondBean.getChildrenList().size()>0) {
+                    if (secondBean.getChildrenList() != null && secondBean.getChildrenList().size() > 0) {
                         for (UnitBean.ChildrenListBeanX.ChildrenListBean thirdBean : secondBean.getChildrenList()) {
                             UnitBean.ChildrenListBeanX thirdChild = new UnitBean.ChildrenListBeanX();
                             thirdChild.setUnitName(thirdBean.getUnitName());
@@ -80,12 +85,16 @@ public class StatisticsUnitActivity extends LoadingBaseActivity<UnitImpl> implem
 
             unitAdapter.setNewData(unitDta);
         } else {
+            searchView.setVisibility(View.GONE);
             emptyDataRl.setVisibility(View.VISIBLE);
         }
     }
 
     @Override
     public void loadingFail(String msg) {
+        emptyTv.setText("暂无数据，点击重新加载");
+        zProgressHUD.dismiss();
+        searchView.setVisibility(View.GONE);
         emptyDataRl.setVisibility(View.VISIBLE);
     }
 
@@ -107,6 +116,16 @@ public class StatisticsUnitActivity extends LoadingBaseActivity<UnitImpl> implem
             }
         });
 
+
+        emptyIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!emptyTv.getText().toString().equals("暂无数据")){
+                    getUnitData();
+                }
+
+            }
+        });
         searchView.setSearchViewListener(new SearchView.SearchViewListener() {
             @Override
             public void onRefreshAutoComplete(String text) {
@@ -115,7 +134,7 @@ public class StatisticsUnitActivity extends LoadingBaseActivity<UnitImpl> implem
 
             @Override
             public void onSearch(String text) {
-
+                emptyTv.setText("暂无数据");
                 doSearch(text);
             }
 
@@ -153,6 +172,12 @@ public class StatisticsUnitActivity extends LoadingBaseActivity<UnitImpl> implem
 
     @Override
     protected void loadData() {
+        getUnitData();
+
+    }
+
+    private void getUnitData() {
+        zProgressHUD.show();
         String cityCode = SPUtils.getInstance().getString(BaseConstants.Login_city_cityCode);
         Map<String, Object> map = new HashMap<>();
         map.put("unitNo", cityCode);

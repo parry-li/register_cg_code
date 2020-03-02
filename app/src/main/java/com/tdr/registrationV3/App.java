@@ -8,6 +8,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.support.multidex.MultiDexApplication;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
@@ -43,7 +44,7 @@ import javax.net.ssl.X509TrustManager;
 
 
 
-public class App extends Application  {
+public class App extends MultiDexApplication {
 
     private static App INSTANCE;
     public static Context context;

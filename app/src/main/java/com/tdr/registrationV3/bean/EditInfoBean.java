@@ -135,7 +135,7 @@ public class EditInfoBean {
         private String vehicleBrand;
         private String vehicleBrandName;
         private String colorId;
-        private Object colorName;
+        private String colorName;
         private String colorSecondId;
         private Object colorSecondName;
         private String plateNumber;
@@ -172,11 +172,11 @@ public class EditInfoBean {
             this.colorId = colorId;
         }
 
-        public Object getColorName() {
+        public String getColorName() {
             return colorName;
         }
 
-        public void setColorName(Object colorName) {
+        public void setColorName(String colorName) {
             this.colorName = colorName;
         }
 

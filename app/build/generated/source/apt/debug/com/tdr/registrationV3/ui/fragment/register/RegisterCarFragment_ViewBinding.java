@@ -19,27 +19,27 @@ import java.lang.Override;
 public class RegisterCarFragment_ViewBinding implements Unbinder {
   private RegisterCarFragment target;
 
-  private View view2131230796;
-
-  private View view2131230797;
+  private View view2131230801;
 
   private View view2131230802;
 
-  private View view2131230800;
+  private View view2131230807;
 
-  private View view2131230803;
+  private View view2131230805;
 
-  private View view2131230801;
+  private View view2131230808;
 
-  private View view2131230817;
+  private View view2131230806;
 
-  private View view2131230818;
+  private View view2131230828;
 
-  private View view2131230793;
+  private View view2131230829;
 
-  private View view2131230815;
+  private View view2131230798;
 
-  private View view2131230814;
+  private View view2131230826;
+
+  private View view2131230825;
 
   @UiThread
   public RegisterCarFragment_ViewBinding(final RegisterCarFragment target, View source) {
@@ -53,7 +53,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     target.carPhotoRv = Utils.findRequiredViewAsType(source, R.id.car_photo_rv, "field 'carPhotoRv'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.car_brand, "field 'carBrand' and method 'onViewClicked'");
     target.carBrand = Utils.castView(view, R.id.car_brand, "field 'carBrand'", TextView.class);
-    view2131230796 = view;
+    view2131230801 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.car_brand_allow, "field 'carBrandAllow' and method 'onViewClicked'");
     target.carBrandAllow = Utils.castView(view, R.id.car_brand_allow, "field 'carBrandAllow'", ImageView.class);
-    view2131230797 = view;
+    view2131230802 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -75,7 +75,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     target.carElectrical = Utils.findRequiredViewAsType(source, R.id.car_electrical, "field 'carElectrical'", EditText.class);
     view = Utils.findRequiredView(source, R.id.car_color_main, "field 'carColorMain' and method 'onViewClicked'");
     target.carColorMain = Utils.castView(view, R.id.car_color_main, "field 'carColorMain'", TextView.class);
-    view2131230802 = view;
+    view2131230807 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -84,7 +84,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.car_color1_allow, "field 'carColor1Allow' and method 'onViewClicked'");
     target.carColor1Allow = Utils.castView(view, R.id.car_color1_allow, "field 'carColor1Allow'", ImageView.class);
-    view2131230800 = view;
+    view2131230805 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -93,7 +93,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.car_color_minor, "field 'carColorMinor' and method 'onViewClicked'");
     target.carColorMinor = Utils.castView(view, R.id.car_color_minor, "field 'carColorMinor'", TextView.class);
-    view2131230803 = view;
+    view2131230808 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -102,7 +102,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.car_color2_allow, "field 'carColor2Allow' and method 'onViewClicked'");
     target.carColor2Allow = Utils.castView(view, R.id.car_color2_allow, "field 'carColor2Allow'", ImageView.class);
-    view2131230801 = view;
+    view2131230806 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -111,7 +111,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.car_time, "field 'carColorTime' and method 'onViewClicked'");
     target.carColorTime = Utils.castView(view, R.id.car_time, "field 'carColorTime'", TextView.class);
-    view2131230817 = view;
+    view2131230828 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -120,7 +120,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.car_time_allow, "field 'carTimeAllow' and method 'onViewClicked'");
     target.carTimeAllow = Utils.castView(view, R.id.car_time_allow, "field 'carTimeAllow'", ImageView.class);
-    view2131230818 = view;
+    view2131230829 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -131,7 +131,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     target.carElectricalX = Utils.findRequiredViewAsType(source, R.id.car_electrical_x, "field 'carElectricalX'", TextView.class);
     view = Utils.findRequiredView(source, R.id.button_next, "field 'buttonNext' and method 'onViewClicked'");
     target.buttonNext = Utils.castView(view, R.id.button_next, "field 'buttonNext'", TextView.class);
-    view2131230793 = view;
+    view2131230798 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -140,7 +140,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.car_plate_tv, "field 'carPlateTv' and method 'onViewClicked'");
     target.carPlateTv = Utils.castView(view, R.id.car_plate_tv, "field 'carPlateTv'", TextView.class);
-    view2131230815 = view;
+    view2131230826 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -149,7 +149,7 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.car_plate_scan, "field 'carPlateScan' and method 'onViewClicked'");
     target.carPlateScan = Utils.castView(view, R.id.car_plate_scan, "field 'carPlateScan'", ImageView.class);
-    view2131230814 = view;
+    view2131230825 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -190,27 +190,27 @@ public class RegisterCarFragment_ViewBinding implements Unbinder {
     target.carPlateScan = null;
     target.carPrice = null;
 
-    view2131230796.setOnClickListener(null);
-    view2131230796 = null;
-    view2131230797.setOnClickListener(null);
-    view2131230797 = null;
-    view2131230802.setOnClickListener(null);
-    view2131230802 = null;
-    view2131230800.setOnClickListener(null);
-    view2131230800 = null;
-    view2131230803.setOnClickListener(null);
-    view2131230803 = null;
     view2131230801.setOnClickListener(null);
     view2131230801 = null;
-    view2131230817.setOnClickListener(null);
-    view2131230817 = null;
-    view2131230818.setOnClickListener(null);
-    view2131230818 = null;
-    view2131230793.setOnClickListener(null);
-    view2131230793 = null;
-    view2131230815.setOnClickListener(null);
-    view2131230815 = null;
-    view2131230814.setOnClickListener(null);
-    view2131230814 = null;
+    view2131230802.setOnClickListener(null);
+    view2131230802 = null;
+    view2131230807.setOnClickListener(null);
+    view2131230807 = null;
+    view2131230805.setOnClickListener(null);
+    view2131230805 = null;
+    view2131230808.setOnClickListener(null);
+    view2131230808 = null;
+    view2131230806.setOnClickListener(null);
+    view2131230806 = null;
+    view2131230828.setOnClickListener(null);
+    view2131230828 = null;
+    view2131230829.setOnClickListener(null);
+    view2131230829 = null;
+    view2131230798.setOnClickListener(null);
+    view2131230798 = null;
+    view2131230826.setOnClickListener(null);
+    view2131230826 = null;
+    view2131230825.setOnClickListener(null);
+    view2131230825 = null;
   }
 }

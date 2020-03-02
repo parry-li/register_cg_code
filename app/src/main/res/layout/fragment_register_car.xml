@@ -34,6 +34,9 @@
                 android:id="@+id/car_photo_rv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="@dimen/dp_10"
+                style="@style/module_liner_horizontal_20" />
 
             <LinearLayout style="@style/ll_layout">
 

@@ -21,38 +21,54 @@
             android:textColor="@color/module_text_3"
             android:textSize="@dimen/sp_14" />
 
-        <LinearLayout
-            android:id="@+id/change_photo_ll"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/change_photo_tv"
-                style="@style/tv_value"
-                android:hint="请扫码"
-                android:paddingRight="0dp"
+                android:id="@+id/error_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:text="(数据已存在，请更换)"
+                android:textColor="@color/module_red"
+                android:textSize="@dimen/sp_12"
                 android:visibility="gone" />
 
-            <EditText
-                android:id="@+id/change_photo_et"
-                style="@style/tv_value"
-                android:hint="请扫码"
-                android:visibility="visible" />
+            <LinearLayout
+                android:id="@+id/change_photo_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/change_photo_tv"
+                    style="@style/tv_value"
+                    android:hint="请扫码"
+                    android:paddingRight="0dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/change_photo_et"
+                    style="@style/tv_value"
+                    android:hint="请输入"
+                    android:visibility="visible" />
 
 
-            <ImageView
-                android:id="@+id/change_photo_iv"
-                style="@style/scan"
-                android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/change_photo_iv"
+                    style="@style/scan"
+                    android:visibility="gone" />
 
 
-        </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
 
 
     </LinearLayout>
 
 
-    <View
-        style="@style/module_liner_horizontal_20" />
+    <View style="@style/module_liner_horizontal_20" />
 
 </LinearLayout>

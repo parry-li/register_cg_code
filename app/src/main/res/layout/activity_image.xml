@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/module_black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/com_title_back"
+        android:layout_width="60dp"
+
+        android:layout_height="@dimen/dp_50">
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="@dimen/dp_16"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/withe_arrow" />
+    </RelativeLayout>
+
+
+    <com.tdr.registrationV3.photoview.PhotoView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+</RelativeLayout>

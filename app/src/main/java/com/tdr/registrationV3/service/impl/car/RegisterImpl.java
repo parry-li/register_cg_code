@@ -1,6 +1,7 @@
 package com.tdr.registrationV3.service.impl.car;
 
 
+import com.tdr.registrationV3.bean.BlcakCarBean;
 import com.tdr.registrationV3.bean.InsuranceBean;
 import com.tdr.registrationV3.constants.UrlConstants;
 import com.tdr.registrationV3.http.utils.Callback;
@@ -81,6 +82,27 @@ public class RegisterImpl extends BasePresenter<RegisterPresenter.View> implemen
                     mView.changeSuccess(data.getMsg());
                 } else {
                     mView.changeFail(data.getMsg());
+                }
+
+            }
+        });
+    }
+
+    @Override
+    public void checkShelvesNumber(RequestBody route) {
+        invoke(mService.checkShelvesNumber(UrlConstants.electriccars_checkBlackCar, route), new NoCallback<DdcResult<List<BlcakCarBean>>>() {
+            @Override
+            public void onResponse(DdcResult<List<BlcakCarBean>> data) {
+
+                if (data.getCode() == 0) {
+                    if(data.getData()!=null&&data.getData().size()>0){
+                        mView.checkShelvesNumberSuccess(data.getData());
+                    }else {
+                        mView.checkShelvesNumberFail(data.getMsg());
+                    }
+
+                } else {
+                    mView.loadingFail(data.getMsg());
                 }
 
             }

@@ -62,7 +62,7 @@
             android:listSelector="@android:color/transparent"
             android:visibility="gone" />
 
-        <include layout="@layout/cp_view_no_search_result" />
+        <include layout="@layout/common_empty" />
     </RelativeLayout>
 
 

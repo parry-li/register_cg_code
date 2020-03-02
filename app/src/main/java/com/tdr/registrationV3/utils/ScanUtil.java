@@ -104,6 +104,7 @@ public class ScanUtil {
         }
     }
 
+
     /**
      * 带字母的二维码
      *
@@ -138,5 +139,4 @@ public class ScanUtil {
         }
 
     }
-
 }

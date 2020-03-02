@@ -51,6 +51,7 @@ public class PasswordActivity extends LoadingBaseActivity<BaseRequestImpl> imple
     View passwordConfirmV;
     @BindView(R.id.button_next)
     TextView buttonNext;
+    private CustomWindowDialog loginOutDialog;
 
     @Override
     protected void initTitle() {
@@ -155,7 +156,8 @@ public class PasswordActivity extends LoadingBaseActivity<BaseRequestImpl> imple
             }
         });
 
-        customBaseDialog.setOnCustomDialogClickListener(new CustomWindowDialog.OnItemClickListener() {
+        loginOutDialog = new CustomWindowDialog(PasswordActivity.this);
+        loginOutDialog.setOnCustomDialogClickListener(new CustomWindowDialog.OnItemClickListener() {
             @Override
             public void onCustomDialogClickListener() {
                 BaseActivity.activity.clearDataForLoginOut();
@@ -163,6 +165,7 @@ public class PasswordActivity extends LoadingBaseActivity<BaseRequestImpl> imple
                 ActivityUtil.goActivityAndFinish(PasswordActivity.this, LoginActivity.class);
             }
         });
+
     }
 
     private void setButtonColor() {
@@ -224,12 +227,12 @@ public class PasswordActivity extends LoadingBaseActivity<BaseRequestImpl> imple
     @Override
     public void loadingSuccessForData(DdcResult mData) {
         zProgressHUD.dismiss();
-        showCustomWindowDialog("服务提示", mData.getMsg(), true);
+        loginOutDialog.showCustomWindowDialog("服务提示", mData.getMsg(), true);
     }
 
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
-        showCustomWindowDialog("服务提示", msg, false, true);
+        loginOutDialog.showCustomWindowDialog("服务提示", msg, false, true);
     }
 }

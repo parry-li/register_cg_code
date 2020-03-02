@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.parry.utils.code.SPUtils;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.adapter.InsuranceAdapter;
+import com.tdr.registrationV3.bean.BlcakCarBean;
 import com.tdr.registrationV3.bean.InsuranceBean;
 import com.tdr.registrationV3.bean.InsuranceInfoBean;
 import com.tdr.registrationV3.bean.LableListBean;
@@ -27,6 +28,7 @@ import com.tdr.registrationV3.ui.activity.car.RegisterMainActivity;
 import com.tdr.registrationV3.ui.fragment.base.LoadingBaseFragment;
 import com.tdr.registrationV3.utils.ToastUtil;
 import com.tdr.registrationV3.utils.UIUtils;
+import com.tdr.registrationV3.view.CustomWindowDialog;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -77,7 +79,15 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
 
     @Override
     protected void loadData() {
+
+        setState(BaseConstants.STATE_SUCCESS);
+
+        getInsuranceData();
+    }
+
+    private void getInsuranceData() {
         try {
+            zProgressHUD.show();
             int systemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID, -100);
             vehicleType = ((RegisterMainActivity) RegisterInsuranceFragment.this.getActivity()).vehicleType;
             String buyDate = ((RegisterMainActivity) RegisterInsuranceFragment.this.getActivity()).registerPutBean.getRegisterTime();
@@ -87,10 +97,14 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
             map.put("insuranceMode", 0);
             map.put("buyDate", buyDate);
             mPresenter.getInsurance(getRequestBody(map));
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+
+
 
     @Override
     protected int getLayoutId() {
@@ -107,12 +121,19 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
             }
         });
         initRv();
+        emptyTv.setText("暂无数据，点击重新加载");
+        emptyIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getInsuranceData();
+            }
+        });
     }
 
     private void initRv() {
         List<InsuranceBean> insuranceBeans = new ArrayList<>();
         insuranceRv.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        insuranceAdapter = new InsuranceAdapter(RegisterInsuranceFragment.this.getContext(), insuranceBeans,insuranceRv);
+        insuranceAdapter = new InsuranceAdapter(RegisterInsuranceFragment.this.getContext(), insuranceBeans, insuranceRv);
         insuranceRv.setAdapter(insuranceAdapter);
 
     }
@@ -148,7 +169,7 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
 
     private void putData() {
         try {
-          adapterList = insuranceAdapter.getData();
+            adapterList = insuranceAdapter.getData();
 
             for (InsuranceBean insuranceBean : adapterList) {
                 if (insuranceBean.getIsChoose() == 1) {
@@ -180,23 +201,25 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
 
     @Override
     public void checkPlateNumberFail(String msg) {
-
+        setState(BaseConstants.STATE_SUCCESS);
     }
 
     @Override
     public void getInsuranceSuccess(List<InsuranceBean> list) {
-        if(list.size()>0){
+        zProgressHUD.dismiss();
+        if (list!=null&&list.size() > 0) {
             emptyDataRl.setVisibility(View.GONE);
-        }else {
+        } else {
             emptyDataRl.setVisibility(View.VISIBLE);
         }
         insuranceAdapter.setNewData(list);
-        emptyDataRl.setVisibility(View.GONE);
+
     }
 
     @Override
     public void getInsuranceFail(String msg) {
-
+        zProgressHUD.dismiss();
+        setState(BaseConstants.STATE_SUCCESS);
         showCustomWindowDialog("服务提示", msg, true);
         emptyDataRl.setVisibility(View.VISIBLE);
     }
@@ -212,14 +235,25 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
     }
 
     @Override
-    public void loadingSuccessForData(DdcResult mData) {
+    public void checkShelvesNumberFail(String msg) {
 
-        showCustomWindowDialog("服务提示",mData.getMsg(),true);
+    }
+
+    @Override
+    public void checkShelvesNumberSuccess(List<BlcakCarBean> msg) {
+
+    }
+
+    @Override
+    public void loadingSuccessForData(DdcResult mData) {
+        setState(BaseConstants.STATE_SUCCESS);
+        showCustomWindowDialog("服务提示", mData.getMsg(), true);
     }
 
     @Override
     public void loadingFail(String msg) {
-        showCustomWindowDialog("服务提示",msg,false,true);
+
+        showCustomWindowDialog("服务提示", msg, false, true);
         setState(BaseConstants.STATE_SUCCESS);
         zProgressHUD.dismiss();
     }
@@ -260,6 +294,7 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
             lableBean.setIndex(bean.getIndex());
             lableBean.setLableType(lablenumber.substring(0, 4));
             lableBean.setLableNumber(lablenumber);
+            lableBean.setLabelName(bean.getLableName());
             lableListBeanList.add(lableBean);
         }
         labelInfoMap.put("lableList", lableListBeanList);
@@ -281,8 +316,9 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
         for (PhotoConfigBean.PhotoTypeInfoListBean bean : photoList) {
             PhotoListBean photoBean = new PhotoListBean();
             photoBean.setIndex(bean.getPhotoIndex());
-            photoBean.setPhtotoType(bean.getPhotoType() + "");
+            photoBean.setPhotoType(bean.getPhotoType());
             photoBean.setPhoto(bean.getPhotoId());
+            photoBean.setPhotoName(bean.getPhotoName());
             photoListBeans.add(photoBean);
         }
 
@@ -315,7 +351,7 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
                 }
             }
         }
-        packagesInfo.put("packages",infoBeanList);
+        packagesInfo.put("packages", infoBeanList);
         map.put("insuranceInfo", packagesInfo);
         zProgressHUD.show();
         /*提交接口*/

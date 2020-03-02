@@ -275,6 +275,7 @@
                     android:text="联系手机" />
 
                 <EditText
+                    android:inputType="phone"
                     android:id="@+id/transfer_new_phone"
                     style="@style/tv_value"
                     android:hint="请输入联系手机" />
@@ -295,6 +296,7 @@
                     android:text="备用电话" />
 
                 <EditText
+                    android:inputType="phone"
                     android:id="@+id/transfer_new_phone2"
                     style="@style/tv_value"
                     android:hint="请输入备用电话" />

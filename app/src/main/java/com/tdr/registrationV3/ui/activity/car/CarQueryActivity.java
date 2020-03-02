@@ -211,6 +211,8 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
         carCheckBean.setCardId(infoBean.getOwnerInfo().getCardId());
         carCheckBean.setOwnerName(infoBean.getOwnerInfo().getOwnerName());
         carCheckBean.setVehicleBrandStr(infoBean.getBaseInfo().getVehicleBrandName());
+        carCheckBean.setPhone1(infoBean.getOwnerInfo().getPhone1());
+        carCheckBean.setColorIdStr(infoBean.getBaseInfo().getColorName());
         queryDialog.showCarQueryDialog(CarQueryActivity.this, carCheckBean);
 
     }
@@ -232,6 +234,8 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
         carCheckBean.setCardId(infoBean.getElectriccars().getCardId());
         carCheckBean.setOwnerName(infoBean.getElectriccars().getOwnerName());
         carCheckBean.setVehicleBrandStr(infoBean.getElectriccars().getVehicleBrandName());
+        carCheckBean.setPhone1(infoBean.getElectriccars().getPhone1());
+        carCheckBean.setColorIdStr(infoBean.getElectriccars().getColorName());
         queryDialog.showCarQueryDialog(CarQueryActivity.this, carCheckBean);
     }
 

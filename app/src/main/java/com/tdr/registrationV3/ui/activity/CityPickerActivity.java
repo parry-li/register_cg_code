@@ -41,7 +41,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
     private ListView mResultListView;
     private SideLetterBar mLetterBar;
 
-    private ViewGroup emptyView;
+    private RelativeLayout emptyView;
 
     private CityListAdapter mCityAdapter;
     private ResultListAdapter mResultAdapter;
@@ -49,8 +49,9 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
     private List<CityBean> mResultCities;
     //    private DBManager dbManager;
     private List<CityBean> cityList = new ArrayList<>();
-    private TextView noData;
+
     private SearchView searchView;
+    private TextView noData;
 
 
     @Override
@@ -73,8 +74,8 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
 
     @Override
     protected void initTitle() {
-        noData = (TextView) findViewById(R.id.no_data);
-        emptyView = (ViewGroup) findViewById(R.id.empty_view);
+        noData = (TextView) findViewById(R.id.empty_tv);
+        emptyView = (RelativeLayout) findViewById(R.id.empty_data_rl);
     }
 
     @Override
@@ -96,8 +97,6 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
             @Override
             public void onCityClick(CityBean cityBean) {
                 judgeCity(cityBean);
-
-
             }
 
             @Override
@@ -152,7 +151,6 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
             }
         });
 
-//        searchBox = (EditText) findViewById(R.id.et_search);
         searchView = (SearchView) findViewById(R.id.search_view);
         searchView.setSearchViewListener(new SearchView.SearchViewListener() {
             @Override
@@ -169,7 +167,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
                     mResultListView.setVisibility(View.GONE);
                 } else {
                     noData.setText("暂无数据");
-
+                    mListView.setVisibility(View.GONE);
                     mResultListView.setVisibility(View.VISIBLE);
                     mResultCities = getResultCities(keyword);
                     if (mResultCities == null || mResultCities.size() == 0) {
@@ -184,12 +182,12 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
             @Override
             public void onCancel() {
                 if(cityList!=null&&cityList.size()>0){
-                    mCityAdapter.setNewData(cityList);
                     emptyView.setVisibility(View.GONE);
+                    mResultListView.setVisibility(View.GONE);
+                    mListView.setVisibility(View.VISIBLE);
                 }
             }
         });
-
 
 
         mResultListView = (ListView) findViewById(R.id.listview_search_result);
@@ -202,13 +200,10 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
         });
 
 
-
         TextView textTitle = (TextView) findViewById(R.id.text_title);
         textTitle.setText("切换城市");
         RelativeLayout com_title_back = (RelativeLayout) findViewById(R.id.com_title_back);
         titleBackClickListener(com_title_back);
-
-
 
         emptyView.setOnClickListener(this);
 
@@ -246,8 +241,6 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
         data.putExtra(BaseConstants.Login_city_cityCode, cityCode);
         setResult(RESULT_OK, data);
         finish();
-//        RxBus.getDefault().post(BaseConstants.WECHA_SEARCH, city);
-
     }
 
     @Override
@@ -267,9 +260,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
     @Override
     protected void onDestroy() {
         super.onDestroy();
-       /* if (mLocationClient != null && mLocationClient.isStarted()) {
-            mLocationClient.stop();
-        }*/
+
     }
 
 
@@ -280,8 +271,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
         cityList = cityBeanList;
         Collections.sort(cityList, new CityComparator());
         mCityAdapter.setNewData(cityList);
-//        initData();
-//        initView();
+
     }
 
 

@@ -31,6 +31,7 @@ public class BaseConstants {
     };
 
     public static String APP_NAME = "com.tdr.register.";
+    public static final String ERROR_MSG =APP_NAME+ "Exception";
     public static final String token = APP_NAME + "token";
     public static final String data = APP_NAME + "register_data";
     public static final String rolePower = APP_NAME + "role_power";
@@ -39,7 +40,7 @@ public class BaseConstants {
     public static final String VehicleConfig = APP_NAME + "VehicleConfig";
     public static final String PhotoConfig = APP_NAME + "PhotoConfig";
     public static final String NbLabelConfig = APP_NAME + "NbLabelConfig";
-    public static final String RegisterConfig = APP_NAME + "RegisterConfig";
+    public static final String RegisterConfig = APP_NAME + "RegisterConfigBean";
     public static final String ManagerConfig = APP_NAME + "ManagerConfig";
     public static final String AuditConfig = APP_NAME + "AuditConfig";
 

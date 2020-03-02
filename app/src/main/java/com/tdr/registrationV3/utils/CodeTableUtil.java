@@ -9,8 +9,8 @@
 //import com.tdr.registration.constants.BaseConstants;
 //import com.tdr.registration.constants.UrlConstants;
 //import com.tdr.registration.http.utils.DdcResult;
-//import com.tdr.registration.listener.ImageSendLister;
-//import com.tdr.registration.listener.ImageSendOperater;
+//import com.tdr.registration.listener.CustomSendLister;
+//import com.tdr.registration.listener.CustomSendOperater;
 //import com.tdr.registration.service.BaseService;
 //
 //import java.util.HashMap;
@@ -32,18 +32,18 @@
 //     * 19 NB标签报警类型 20 电动车注销原因 21 所属部门
 //     */
 //    public static void getCodeTable(final int type) {
-//        ImageSendLister imageSendLister = new ImageSendLister() {
+//        CustomSendLister imageSendLister = new CustomSendLister() {
 //            @Override
-//            public void imageSendResult(Boolean isSuccess, int position, String photoId) {
+//            public void sendResult(Boolean isSuccess, int position, String photoId) {
 //
 //            }
 //        };
 //        getCodeTable(type, imageSendLister);
 //    }
 //
-//    public static void getCodeTable(final int type, final ImageSendLister imageSendLister) {
+//    public static void getCodeTable(final int type, final CustomSendLister imageSendLister) {
 //
-//        final ImageSendOperater operater = new ImageSendOperater();
+//        final CustomSendOperater operater = new CustomSendOperater();
 //        operater.setListener(imageSendLister);
 //
 //

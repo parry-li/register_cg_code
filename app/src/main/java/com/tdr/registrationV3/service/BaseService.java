@@ -1,5 +1,6 @@
 package com.tdr.registrationV3.service;
 
+import com.tdr.registrationV3.bean.BlcakCarBean;
 import com.tdr.registrationV3.bean.CarCheckBean;
 import com.tdr.registrationV3.bean.CityBean;
 import com.tdr.registrationV3.bean.CityConfigureBean;
@@ -79,6 +80,15 @@ public interface BaseService {
 
     @POST()
     Observable<DdcResult<InfoBean>> queryCarInfo(@Url String url, @Body RequestBody route);
+
+    @POST()
+    Observable<DdcResult<List<BlcakCarBean>>> checkShelvesNumber(@Url String url, @Body RequestBody route);
+
+    @POST()
+    Observable<DdcResult<List<BlcakCarBean>>> checkShelvesLabel(@Url String url, @Body RequestBody route);
+
+    @POST()
+    Call<DdcResult> checkLabel(@Url String url, @Body RequestBody route);
 }
 
 

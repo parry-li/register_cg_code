@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 import com.google.gson.Gson;
+import com.parry.utils.code.SPUtils;
+import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.ui.activity.base.BaseActivity;
 import com.tdr.registrationV3.view.CustomWindowDialog;
 import com.tdr.registrationV3.view.ZProgressHUD;
@@ -18,10 +20,11 @@ public abstract class BaseFragment extends Fragment {
     public ZProgressHUD zProgressHUD;
     private CustomWindowDialog customBaseDialog;
     private CustomWindowDialog submitRequestDialog;
-
+    public int systemBaseID;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        systemBaseID =  SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
         zProgressHUD = new ZProgressHUD(this.getActivity());
         zProgressHUD.setMessage("加载中");
         customBaseDialog = new CustomWindowDialog(this.getActivity());

@@ -35,6 +35,8 @@ public class StatisticsUnitActivity_ViewBinding implements Unbinder {
     target.emptyDataRl = Utils.findRequiredViewAsType(source, R.id.empty_data_rl, "field 'emptyDataRl'", RelativeLayout.class);
     target.searchView = Utils.findRequiredViewAsType(source, R.id.search_view, "field 'searchView'", SearchView.class);
     target.allTv = Utils.findRequiredViewAsType(source, R.id.all_tv, "field 'allTv'", TextView.class);
+    target.emptyIv = Utils.findRequiredViewAsType(source, R.id.empty_iv, "field 'emptyIv'", ImageView.class);
+    target.emptyTv = Utils.findRequiredViewAsType(source, R.id.empty_tv, "field 'emptyTv'", TextView.class);
   }
 
   @Override
@@ -52,5 +54,7 @@ public class StatisticsUnitActivity_ViewBinding implements Unbinder {
     target.emptyDataRl = null;
     target.searchView = null;
     target.allTv = null;
+    target.emptyIv = null;
+    target.emptyTv = null;
   }
 }

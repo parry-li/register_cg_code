@@ -97,6 +97,7 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
                 mPresenter.getNewAndRenewInsurance(UrlConstants.policy_getRenewInsuranceConfigs, getRequestBody(map));
             }
 
+            zProgressHUD.show();
 
         }
 

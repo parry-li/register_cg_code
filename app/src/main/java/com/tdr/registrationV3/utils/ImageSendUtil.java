@@ -5,8 +5,8 @@ import android.graphics.Bitmap;
 import com.tdr.registrationV3.bean.PhotoBean;
 import com.tdr.registrationV3.constants.UrlConstants;
 import com.tdr.registrationV3.http.utils.DdcResult;
-import com.tdr.registrationV3.listener.ImageSendLister;
-import com.tdr.registrationV3.listener.ImageSendOperater;
+import com.tdr.registrationV3.listener.CustomSendLister;
+import com.tdr.registrationV3.listener.CustomSendOperater;
 import com.tdr.registrationV3.service.BaseService;
 
 import retrofit2.Call;
@@ -20,7 +20,7 @@ public class ImageSendUtil {
     /**
      * 得到标签
      */
-    public static void sendImage(final Bitmap bitmap, final int photoPosition, final ImageSendLister imageSendLister) {
+    public static void sendImage(final Bitmap bitmap, final int photoPosition, final CustomSendLister customSendLister) {
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -32,8 +32,8 @@ public class ImageSendUtil {
 
                 BaseService service = retrofit.create(BaseService.class);
 
-                final ImageSendOperater operater = new ImageSendOperater();
-                operater.setListener(imageSendLister);
+                final CustomSendOperater operater = new CustomSendOperater();
+                operater.setListener(customSendLister);
                 Call<DdcResult<PhotoBean>> call = service.sendImage(UrlConstants.zimgCommon_uploadMultFile, PhotoUtils.getRequestFile(mbitmap));
                 call.enqueue(new Callback<DdcResult<PhotoBean>>() {
                     @Override

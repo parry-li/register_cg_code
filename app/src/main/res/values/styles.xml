@@ -16,7 +16,7 @@
 
     <style name="TANCStyle" parent="@android:style/Theme.Dialog">
         <!-- 更换背景图片实现全透明 -->
-        <item name="android:windowBackground">@drawable/edittext_border_white_bg</item>
+        <item name="android:windowBackground">@color/transparent</item>
         <!-- 屏幕背景不变暗 -->
         <item name="android:backgroundDimEnabled">true</item>
     </style>

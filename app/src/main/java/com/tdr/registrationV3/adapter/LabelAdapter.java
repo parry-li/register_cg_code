@@ -46,21 +46,27 @@ public class LabelAdapter extends BaseQuickAdapter<VehicleConfigBean.VehicleLice
         EditText photoEt = helper.getView(R.id.change_photo_et);
         ImageView photoIv = helper.getView(R.id.change_photo_iv);
         TextView change_x = helper.getView(R.id.change_x);
+        TextView errorTv = helper.getView(R.id.error_tv);
         if (isSHowX) {
-            if(item.isIsRequired()){
+            if (item.isIsRequired()) {
                 change_x.setVisibility(View.VISIBLE);
-            }else {
+            } else {
                 change_x.setVisibility(View.INVISIBLE);
             }
         } else {
             change_x.setVisibility(View.INVISIBLE);
         }
 
+        if (item.isExit()) {
+            errorTv.setVisibility(View.VISIBLE);
+        } else {
+            errorTv.setVisibility(View.GONE);
+        }
         photoEt.setVisibility(View.GONE);
         photoTv.setVisibility(View.VISIBLE);
         photoIv.setVisibility(View.VISIBLE);
         if (item.getIndex() == 0) {
-            if (item.isNoScan()) {
+            if (!item.isScan()) {
                 photoEt.setVisibility(View.VISIBLE);
                 photoTv.setVisibility(View.GONE);
                 photoIv.setVisibility(View.GONE);
@@ -75,7 +81,7 @@ public class LabelAdapter extends BaseQuickAdapter<VehicleConfigBean.VehicleLice
         });
         if (item.getIndex() == 0) {
             if (TextUtils.isEmpty(item.getEditValue())) {
-                if (item.isNoScan()) {
+                if (!item.isScan()) {
                     photoEt.setHint("请输入" + item.getLableName());
                     photoEt.setText("");
                 } else {
@@ -84,7 +90,7 @@ public class LabelAdapter extends BaseQuickAdapter<VehicleConfigBean.VehicleLice
 
                 }
             } else {
-                if (item.isNoScan()) {
+                if (!item.isScan()) {
                     photoEt.setText(item.getEditValue());
                 } else {
                     photoTv.setText(item.getEditValue());

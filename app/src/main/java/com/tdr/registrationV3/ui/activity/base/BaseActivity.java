@@ -20,6 +20,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.view.KeyEvent;
 
 import com.google.gson.Gson;
 import com.parry.utils.code.SPUtils;
@@ -61,6 +62,8 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
     public ZProgressHUD zProgressHUD;
     public CustomWindowDialog customBaseDialog;
     private CustomWindowDialog submitRequestDialog;
+    public boolean isShowBackDialog = true;
+    public int systemBaseID;
 
     @Override
     protected void onResume() {
@@ -89,6 +92,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
             mActivities.add(this);
         }
 
+        systemBaseID = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
         zProgressHUD = new ZProgressHUD(this);
         zProgressHUD.setMessage("加载中");
         /*请求结果的提示*/
@@ -109,7 +113,6 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
             }
         });
     }
-
 
 
     public RequestBody getSubmitBoby() {
@@ -141,6 +144,21 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
 
     }
 
+    /*按返回退出*/
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+            if (isShowBackDialog) {
+                showCustomWindowDialog();
+            }else {
+                showCustomWindowDialog("确定退出当前APP");
+            }
+
+            return false;
+        } else {
+            return super.onKeyDown(keyCode, event);
+        }
+    }
 
     public void showSubmitRequestDialog(Map<String, Object> stringMap) {
         submitBody = getRequestBody(stringMap);
@@ -152,6 +170,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
         showSubmitRequestDialog("确定提交数据");
 
     }
+
     public void showSubmitRequestDialog(String msg) {
         submitRequestDialog.showCustomWindowDialog("温馨提示", msg, false);
     }

@@ -19,12 +19,14 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.adapter.LabelAdapter;
 import com.tdr.registrationV3.adapter.PhotoAdapter;
+import com.tdr.registrationV3.bean.BlcakCarBean;
 import com.tdr.registrationV3.bean.InsuranceBean;
 import com.tdr.registrationV3.bean.PhotoConfigBean;
+import com.tdr.registrationV3.bean.RegisterConfigBean;
 import com.tdr.registrationV3.bean.VehicleConfigBean;
 import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.http.utils.DdcResult;
-import com.tdr.registrationV3.listener.ImageSendLister;
+import com.tdr.registrationV3.listener.CustomSendLister;
 import com.tdr.registrationV3.service.impl.car.RegisterImpl;
 import com.tdr.registrationV3.service.presenter.RegisterPresenter;
 import com.tdr.registrationV3.ui.activity.CodeTableActivity;
@@ -34,9 +36,11 @@ import com.tdr.registrationV3.ui.fragment.base.LoadingBaseFragment;
 import com.tdr.registrationV3.utils.AllCapTransformationMethod;
 import com.tdr.registrationV3.utils.ConfigUtil;
 import com.tdr.registrationV3.utils.ImageSendUtil;
+import com.tdr.registrationV3.utils.LabelSendUtil;
 import com.tdr.registrationV3.utils.PhotoUtils;
 import com.tdr.registrationV3.utils.ScanUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
+import com.tdr.registrationV3.view.ChackBlackCarDialog;
 import com.tdr.registrationV3.view.CustomTimeDialog;
 
 import java.util.ArrayList;
@@ -116,6 +120,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     private VehicleConfigBean.VehicleLicenseInfoListBean vehicleInfoBean;
     private String carRegular;
 
+    private boolean isCheckBlackCar = false;//是否校验黑车默认不校验
 
     @Override
     protected RegisterImpl setPresenter() {
@@ -150,6 +155,13 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
         VehicleConfigBean vehicleBean = ConfigUtil.getVehicleConfig();
         if (vehicleBean == null) {
             return;
+        }
+        RegisterConfigBean registerConfigBean = ConfigUtil.getRegisterConfig();
+        if (registerConfigBean != null) {
+            /*默认 1不进行校验 2表示校验*/
+            if (registerConfigBean.getBlackCheck() == 2) {
+                isCheckBlackCar = true;
+            }
         }
         engIneBean = vehicleBean.getEngineNoRegular();
         if (!engIneBean.isIsRequire()) {
@@ -223,7 +235,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
 
         }
 
-        photoAdapter = new PhotoAdapter(mActivity,photoList);
+        photoAdapter = new PhotoAdapter(mActivity, photoList);
         carPhotoRv.setAdapter(photoAdapter);
         photoAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
@@ -301,7 +313,6 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
                 }
             }
         }
-
         String carPlateStr;
         if (vehicleInfoBean.isVehicleNoScan()) {
             /*扫码*/
@@ -324,6 +335,8 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
             ToastUtil.showWX("请输入车辆品牌");
             return;
         }
+
+        /*验证标签*/
         List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
                 contentAdapterList = contentAdapter.getData();
         for (VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean bean : contentAdapterList) {
@@ -335,7 +348,14 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
                     return;
                 }
             }
+            /*验证标签是否唯一*/
+            if (bean.isExit()) {
+                ToastUtil.showWX(bean.getLableName() + "录入数据已存在，请更换");
+                return;
+            }
         }
+
+
         String carFrameStr = carFrame.getText().toString().trim();
         if (TextUtils.isEmpty(carFrameStr)) {
             ToastUtil.showWX("请输入车架号");
@@ -396,6 +416,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
 
         Map<String, Object> map = new HashMap<>();
         map.put("plateNumber", carPlateStr);
+        map.put("subsystemId", ((BaseActivity) RegisterCarFragment.this.getActivity()).systemBaseID);
         mPresenter.checkPlateNumber(((BaseActivity) mActivity).getRequestBody(map));
 
     }
@@ -433,7 +454,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
                     photoList.get(photoPosition).setDrawable(drawable);
                     photoList.get(photoPosition).setPhotoId(null);
                     photoAdapter.setNewData(photoList);
-                    ImageSendUtil.sendImage(bitmap, photoPosition, imageSendLister);
+                    ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
                     break;
 
                 case ScanUtil.SCANNIN_QR_CODE:
@@ -445,9 +466,9 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
         }
     }
 
-    ImageSendLister imageSendLister = new ImageSendLister() {
+    CustomSendLister customSendLister = new CustomSendLister() {
         @Override
-        public void imageSendResult(Boolean isSuccess, int position, String photoId) {
+        public void sendResult(Boolean isSuccess, int position, String photoId) {
             if (isSuccess) {
                 photoList.get(position).setPhotoId(photoId);
             } else {
@@ -486,6 +507,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
                 if (!TextUtils.isEmpty(scanNum)) {
                     contentAdapterList.get(contentPosition).setEditValue(scanNum);
                     contentAdapter.setNewData(contentAdapterList);
+                    LabelSendUtil.checkLabel(contentPosition, scanNum, labelLister);
                 }
             }
 
@@ -493,16 +515,45 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
         }
     }
 
+
+    private CustomSendLister labelLister = new CustomSendLister() {
+        @Override
+        public void sendResult(Boolean isSuccess, int position, String value) {
+            /*标签不唯一*/
+            List<VehicleConfigBean.VehicleLicenseInfoListBean.VehicleNbLableConfigListBean>
+                    contentAdapterList = contentAdapter.getData();
+            if (!isSuccess) {
+                contentAdapterList.get(position).setExit(true);
+            } else {
+                contentAdapterList.get(position).setExit(false);
+            }
+            contentAdapter.setNewData(contentAdapterList);
+        }
+    };
+
     @Override
     public void checkPlateNumberSuccess() {
         setState(BaseConstants.STATE_SUCCESS);
-        ((RegisterMainActivity) mActivity).setVpCurrentItem(1);
+        String frame = ((RegisterMainActivity) RegisterCarFragment.this.getActivity()).registerPutBean.getRegisterFrame();
+        /*黑车配置2和不是*进行校验*/
+        if (isCheckBlackCar && !"*".equals(frame)) {
+            Map<String, Object> map = new HashMap<>();
+            map.put("shelvesNumber", frame);
+            mPresenter.checkShelvesNumber(getRequestBody(map));
+
+        } else {
+            zProgressHUD.dismiss();
+            ((RegisterMainActivity) mActivity).setVpCurrentItem(1);
+        }
+
+
     }
 
     @Override
     public void checkPlateNumberFail(String msg) {
         setState(BaseConstants.STATE_SUCCESS);
-        showCustomWindowDialog("服务提示", msg, true);
+        zProgressHUD.dismiss();
+        showCustomWindowDialog("服务提示", msg, false,true);
     }
 
     @Override
@@ -526,6 +577,26 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     }
 
     @Override
+    public void checkShelvesNumberFail(String msg) {
+        zProgressHUD.dismiss();
+        ((RegisterMainActivity) mActivity).setVpCurrentItem(1);
+    }
+
+    @Override
+    public void checkShelvesNumberSuccess(List<BlcakCarBean> data) {
+
+        ChackBlackCarDialog blackCarDialog = new ChackBlackCarDialog(mActivity);
+        blackCarDialog.showCustomWindowDialog(data);
+        blackCarDialog.setOnCustomDialogClickListener(new ChackBlackCarDialog.OnItemClickListener() {
+            @Override
+            public void onCustomDialogClickListener() {
+                zProgressHUD.dismiss();
+                ((RegisterMainActivity) mActivity).setVpCurrentItem(1);
+            }
+        });
+    }
+
+    @Override
     public void loadingSuccessForData(DdcResult mData) {
 
     }
@@ -533,6 +604,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     @Override
     public void loadingFail(String msg) {
         setState(BaseConstants.STATE_SUCCESS);
+        showCustomWindowDialog("服务提示", msg, false,true);
 
     }
 

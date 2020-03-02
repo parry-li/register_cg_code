@@ -84,13 +84,6 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
 
         emptyDataRl.setVisibility(View.GONE);
         titleBackClickListener(comTitleBack);
-//        refreshLayout.setEnableRefresh(false);
-//        refreshLayout.setOnLoadmoreListener(new OnLoadmoreListener() {
-//            @Override
-//            public void onLoadmore(RefreshLayout refreshlayout) {
-//                getCode();
-//            }
-//        });
     }
 
     @Override
@@ -119,10 +112,8 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
 
     @Override
     protected void initData(Bundle savedInstanceState) {
-
-
         initHotRv();
-//        initAllRv();
+
 
         searchView.setSearchViewListener(new SearchView.SearchViewListener() {
             @Override
@@ -160,56 +151,12 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
 
             @Override
             public void onCancel() {
-
+                allRv.setVisibility(View.VISIBLE);
+                resultRv.setVisibility(View.GONE);
+                emptyDataRl.setVisibility(View.GONE);
             }
         });
-//        etSearch.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable editable) {
-//                String editStr = editable.toString().trim().toLowerCase();
-//
-//                if (TextUtils.isEmpty(editStr)) {
-//                    ivSearchClear.setVisibility(View.GONE);
-//                    allRv.setVisibility(View.VISIBLE);
-//                    emptyDataRl.setVisibility(View.GONE);
-//                    resultRv.setVisibility(View.GONE);
-//                    return;
-//                }
-//                ivSearchClear.setVisibility(View.VISIBLE);
-//                allRv.setVisibility(View.GONE);
-//                resultRv.setVisibility(View.VISIBLE);
-//                List<CodeTableBean> list = new ArrayList<>();
-//
-//                for (CodeTableBean bean : codeTableList) {
-//                    if (bean.getName().toLowerCase().contains(editStr)) {
-//                        list.add(bean);
-//                    }
-//                }
-//
-//                if (list.size() > 0) {
-//                    resultAdapter.setNewData(list);
-//                } else {
-//                    emptyDataRl.setVisibility(View.VISIBLE);
-//                }
-//            }
-//        });
-//
-//        ivSearchClear.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                etSearch.setText("");
-//            }
-//        });
+
     }
 
     private void initAllRv() {
@@ -255,33 +202,23 @@ public class CodeTableActivity extends LoadingBaseActivity<CodeTableImpl> implem
 
     }
 
-    private boolean isSearchByHttp = false;
-
     @Override
     public void loadingSuccessForData(final DdcResult<List<CodeTableBean>> data) {
-//        refreshLayout.finishLoadmore();
-//        pagerSize++;
-//
-//        if (data.getPage().getTotal() > pagerSize) {
-//            isSearchByHttp = true;
-//        } else {
-//            isSearchByHttp = false;
-//        }
 
         List<CodeTableBean> mData = data.getData();
         codeTableList = mData;
 
-
-//        hotAdapter.setNewData(tableBeans);
-//        allAdapter.setNewData(mData);
         initAllRv();
         zProgressHUD.dismiss();
-
+        emptyDataRl.setVisibility(View.GONE);
+        searchView.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
+        emptyDataRl.setVisibility(View.VISIBLE);
+        searchView.setVisibility(View.GONE);
     }
 
 

@@ -73,7 +73,10 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         if (systemId != -100) {
             cityName.setText(cityNameStr);
         }
+
+        cityCode =   SPUtils.getInstance().getString(BaseConstants.Login_city_cityCode);
         getPermission();
+        isShowBackDialog=false;
     }
 
     @Override

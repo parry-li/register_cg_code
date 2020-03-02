@@ -55,7 +55,7 @@ public class InsuranceWaitAdapter extends BaseQuickAdapter<InsuranceWaitBean, Ba
         push.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onItemPushClickListener.onItemPushClickListener(item);
+                onItemPushClickListener.onItemPushClickListener(helper.getAdapterPosition(),item);
             }
         });
 
@@ -84,7 +84,7 @@ public class InsuranceWaitAdapter extends BaseQuickAdapter<InsuranceWaitBean, Ba
 
 
     public interface OnItemPushClickListener {
-        void onItemPushClickListener(InsuranceWaitBean insuranceWaitBean);
+        void onItemPushClickListener(int position,InsuranceWaitBean insuranceWaitBean);
     }
 
     OnItemPushClickListener onItemPushClickListener;
