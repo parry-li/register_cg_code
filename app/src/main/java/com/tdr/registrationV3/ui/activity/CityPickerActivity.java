@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -238,7 +237,7 @@ public class CityPickerActivity extends LoadingBaseActivity<CityImpl> implements
         Intent data = new Intent();
         data.putExtra(BaseConstants.KEY_NAME, city);
         data.putExtra(BaseConstants.KEY_VALUE, value);
-        data.putExtra(BaseConstants.Login_city_cityCode, cityCode);
+        data.putExtra(BaseConstants.City_cityCode, cityCode);
         setResult(RESULT_OK, data);
         finish();
     }

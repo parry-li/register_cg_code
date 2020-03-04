@@ -28,6 +28,7 @@
                 <EditText
                     android:id="@+id/people_name"
                     style="@style/tv_value"
+                    android:singleLine="true"
                     android:hint="请输入姓名" />
 
 
@@ -70,6 +71,7 @@
                 <EditText
                     android:id="@+id/people_card_num"
                     style="@style/tv_value"
+                    android:singleLine="true"
                     android:hint="请输入证件号码" />
 
 
@@ -90,6 +92,7 @@
                     android:id="@+id/people_phone1"
                     style="@style/tv_value"
                     android:inputType="phone"
+                    android:singleLine="true"
                     android:hint="请输入联系手机" />
 
 
@@ -112,6 +115,7 @@
                     android:id="@+id/people_phone2"
                     style="@style/tv_value"
                     android:inputType="phone"
+                    android:singleLine="true"
                     android:hint="请输入备用电话" />
 
 
@@ -131,6 +135,7 @@
                 <EditText
                     android:id="@+id/people_adr"
                     style="@style/tv_value"
+                    android:singleLine="true"
                     android:hint="请输入现住址" />
 
 

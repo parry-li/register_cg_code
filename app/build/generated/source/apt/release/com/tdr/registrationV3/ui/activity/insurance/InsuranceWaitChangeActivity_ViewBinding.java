@@ -18,21 +18,21 @@ import java.lang.Override;
 public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
   private InsuranceWaitChangeActivity target;
 
-  private View view2131231220;
+  private View view2131231223;
 
-  private View view2131231221;
-
-  private View view2131231226;
-
-  private View view2131231227;
-
-  private View view2131231228;
+  private View view2131231224;
 
   private View view2131231229;
 
-  private View view2131231222;
+  private View view2131231230;
 
-  private View view2131231223;
+  private View view2131231231;
+
+  private View view2131231232;
+
+  private View view2131231225;
+
+  private View view2131231226;
 
   private View view2131230798;
 
@@ -53,7 +53,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     target.comTitleSettingTv = Utils.findRequiredViewAsType(source, R.id.com_title_setting_tv, "field 'comTitleSettingTv'", TextView.class);
     view = Utils.findRequiredView(source, R.id.wait_brand, "field 'waitBrand' and method 'onViewClicked'");
     target.waitBrand = Utils.castView(view, R.id.wait_brand, "field 'waitBrand'", TextView.class);
-    view2131231220 = view;
+    view2131231223 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_brand_arrow, "field 'waitBrandArrow' and method 'onViewClicked'");
     target.waitBrandArrow = Utils.castView(view, R.id.wait_brand_arrow, "field 'waitBrandArrow'", ImageView.class);
-    view2131231221 = view;
+    view2131231224 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -74,7 +74,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     target.waitEngine = Utils.findRequiredViewAsType(source, R.id.wait_engine, "field 'waitEngine'", EditText.class);
     view = Utils.findRequiredView(source, R.id.wait_color1, "field 'waitColor1' and method 'onViewClicked'");
     target.waitColor1 = Utils.castView(view, R.id.wait_color1, "field 'waitColor1'", TextView.class);
-    view2131231226 = view;
+    view2131231229 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -83,7 +83,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_color1_arrow, "field 'waitColor1Arrow' and method 'onViewClicked'");
     target.waitColor1Arrow = Utils.castView(view, R.id.wait_color1_arrow, "field 'waitColor1Arrow'", ImageView.class);
-    view2131231227 = view;
+    view2131231230 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -92,7 +92,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_color2, "field 'waitColor2' and method 'onViewClicked'");
     target.waitColor2 = Utils.castView(view, R.id.wait_color2, "field 'waitColor2'", TextView.class);
-    view2131231228 = view;
+    view2131231231 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -101,7 +101,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_color2_arrow, "field 'waitColor2Arrow' and method 'onViewClicked'");
     target.waitColor2Arrow = Utils.castView(view, R.id.wait_color2_arrow, "field 'waitColor2Arrow'", ImageView.class);
-    view2131231229 = view;
+    view2131231232 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -111,7 +111,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     target.waitOwername = Utils.findRequiredViewAsType(source, R.id.wait_owername, "field 'waitOwername'", EditText.class);
     view = Utils.findRequiredView(source, R.id.wait_cardType, "field 'waitCardType' and method 'onViewClicked'");
     target.waitCardType = Utils.castView(view, R.id.wait_cardType, "field 'waitCardType'", TextView.class);
-    view2131231222 = view;
+    view2131231225 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -120,7 +120,7 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.wait_cardType_arrow, "field 'waitCardTypeArrow' and method 'onViewClicked'");
     target.waitCardTypeArrow = Utils.castView(view, R.id.wait_cardType_arrow, "field 'waitCardTypeArrow'", ImageView.class);
-    view2131231223 = view;
+    view2131231226 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -169,22 +169,22 @@ public class InsuranceWaitChangeActivity_ViewBinding implements Unbinder {
     target.waitAdr = null;
     target.buttonNext = null;
 
-    view2131231220.setOnClickListener(null);
-    view2131231220 = null;
-    view2131231221.setOnClickListener(null);
-    view2131231221 = null;
-    view2131231226.setOnClickListener(null);
-    view2131231226 = null;
-    view2131231227.setOnClickListener(null);
-    view2131231227 = null;
-    view2131231228.setOnClickListener(null);
-    view2131231228 = null;
-    view2131231229.setOnClickListener(null);
-    view2131231229 = null;
-    view2131231222.setOnClickListener(null);
-    view2131231222 = null;
     view2131231223.setOnClickListener(null);
     view2131231223 = null;
+    view2131231224.setOnClickListener(null);
+    view2131231224 = null;
+    view2131231229.setOnClickListener(null);
+    view2131231229 = null;
+    view2131231230.setOnClickListener(null);
+    view2131231230 = null;
+    view2131231231.setOnClickListener(null);
+    view2131231231 = null;
+    view2131231232.setOnClickListener(null);
+    view2131231232 = null;
+    view2131231225.setOnClickListener(null);
+    view2131231225 = null;
+    view2131231226.setOnClickListener(null);
+    view2131231226 = null;
     view2131230798.setOnClickListener(null);
     view2131230798 = null;
   }

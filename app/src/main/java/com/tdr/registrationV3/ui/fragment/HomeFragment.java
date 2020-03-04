@@ -5,9 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -34,9 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
@@ -83,7 +79,7 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
 
     @Override
     protected void initView() {
-        cityName = SPUtils.getInstance().getString(BaseConstants.Login_city_name);
+        cityName = SPUtils.getInstance().getString(BaseConstants.City_name);
         homeCityName.setText(cityName);
         initRv();
         initRegisterDialog();

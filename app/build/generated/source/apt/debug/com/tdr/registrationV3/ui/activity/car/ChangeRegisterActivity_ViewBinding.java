@@ -12,15 +12,15 @@ import java.lang.IllegalStateException;
 import java.lang.Override;
 
 public class ChangeRegisterActivity_ViewBinding implements Unbinder {
-  private ChangeRegisterActivity target;
+  private ChangeRegisterMainActivity target;
 
   @UiThread
-  public ChangeRegisterActivity_ViewBinding(ChangeRegisterActivity target) {
+  public ChangeRegisterActivity_ViewBinding(ChangeRegisterMainActivity target) {
     this(target, target.getWindow().getDecorView());
   }
 
   @UiThread
-  public ChangeRegisterActivity_ViewBinding(ChangeRegisterActivity target, View source) {
+  public ChangeRegisterActivity_ViewBinding(ChangeRegisterMainActivity target, View source) {
     this.target = target;
 
     target.registerVp = Utils.findRequiredViewAsType(source, R.id.register_vp, "field 'registerVp'", NoScrollViewPager.class);
@@ -29,7 +29,7 @@ public class ChangeRegisterActivity_ViewBinding implements Unbinder {
   @Override
   @CallSuper
   public void unbind() {
-    ChangeRegisterActivity target = this.target;
+    ChangeRegisterMainActivity target = this.target;
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 

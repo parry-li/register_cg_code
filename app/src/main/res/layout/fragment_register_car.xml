@@ -73,6 +73,7 @@
                 <EditText
                     android:id="@+id/car_plate"
                     style="@style/tv_value"
+                    android:singleLine="true"
                     android:hint="请输入车牌号" />
 
 
@@ -111,6 +112,7 @@
                 <EditText
                     android:id="@+id/car_frame"
                     style="@style/tv_value"
+                    android:singleLine="true"
                     android:hint="请输入车架号" />
 
 
@@ -130,6 +132,7 @@
                 <EditText
                     android:id="@+id/car_electrical"
                     style="@style/tv_value"
+                    android:singleLine="true"
                     android:hint="请输入电机号" />
 
 
@@ -226,6 +229,7 @@
                     style="@style/tv_value"
                     android:inputType="number|numberDecimal"
                     android:paddingRight="0dp"
+                    android:singleLine="true"
                     android:hint="请输入购买价格" />
 
                 <TextView

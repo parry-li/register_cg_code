@@ -15,9 +15,8 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.bean.BlcakCarBean;
 import com.tdr.registrationV3.bean.PhotoConfigBean;
-import com.tdr.registrationV3.constants.BaseConstants;
-import com.tdr.registrationV3.ui.activity.image.ImageActivity;
-import com.tdr.registrationV3.utils.ActivityUtil;
+
+import com.tdr.registrationV3.view.CustomImageDialog;
 
 
 import java.util.ArrayList;
@@ -59,9 +58,10 @@ public class BlackCarAdapter extends BaseQuickAdapter<BlcakCarBean, BaseViewHold
         photoAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                Bundle bundle = new Bundle();
-                bundle.putString(BaseConstants.data, phtotList.get(position).getChagePhotoId());
-                ActivityUtil.goActivity(activity, ImageActivity.class, bundle);
+                CustomImageDialog.showCustomWindowDialog(activity,phtotList.get(position).getChagePhotoId());
+//                Bundle bundle = new Bundle();
+//                bundle.putString(BaseConstants.data, phtotList.get(position).getChagePhotoId());
+//                ActivityUtil.goActivity(activity, ImageActivity.class, bundle);
             }
         });
 

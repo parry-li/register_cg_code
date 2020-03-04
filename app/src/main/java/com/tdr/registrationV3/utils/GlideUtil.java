@@ -8,7 +8,9 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.constants.UrlConstants;
+import com.tdr.registrationV3.view.ZProgressHUD;
 
 
 public class GlideUtil {
@@ -35,15 +37,25 @@ public class GlideUtil {
     /**
      * 原图
      *
+     * @param
      * @param context
      * @param photoId
      * @param imageView
      */
-    public static void setImgOriginal(Context context, String photoId, ImageView imageView) {
+    public static void setImgOriginal(Context context, String photoId, final ImageView imageView) {
         String url = UrlConstants.main_host_service + "api/ddc-service/zimgCommon/getImg?photoId=" + photoId;
-        Glide.with(context)
-                .load(url)
-                .into(imageView);
+
+        Glide.with(context).load(url).asBitmap()
+                .placeholder(R.mipmap.image_load)//图片加载出来前，显示的图片
+                .fallback(R.mipmap.yl_load_error) //url为空的时候,显示的图片
+                .error(R.mipmap.yl_load_error)
+                .into(new SimpleTarget<Bitmap>() {
+                    @Override
+                    public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+
+                        imageView.setImageBitmap(resource);
+                    }
+                });
 
     }
 }

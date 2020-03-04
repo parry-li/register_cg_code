@@ -25,13 +25,13 @@ import com.tdr.registrationV3.http.utils.DdcResult;
 import com.tdr.registrationV3.service.impl.car.RegisterImpl;
 import com.tdr.registrationV3.service.presenter.RegisterPresenter;
 import com.tdr.registrationV3.ui.activity.CodeTableActivity;
-import com.tdr.registrationV3.ui.activity.car.ChangeRegisterActivity;
+import com.tdr.registrationV3.ui.activity.car.ChangeRegisterMainActivity;
 
 import com.tdr.registrationV3.ui.fragment.base.LoadingBaseFragment;
-import com.tdr.registrationV3.ui.fragment.base.NoLoadingBaseFragment;
 import com.tdr.registrationV3.utils.ActivityUtil;
 import com.tdr.registrationV3.utils.RegularUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
+import com.tdr.registrationV3.utils.UIUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -96,15 +96,16 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
         comTitleBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((ChangeRegisterActivity) mActivity).setVpCurrentItem(0);
+                ((ChangeRegisterMainActivity) mActivity).setVpCurrentItem(0);
             }
         });
         mActivity = ChangeRegisterPeopleFragment.this.getActivity();
         initContentData();
+        UIUtils.setEditTextUpperCase(peopleCardNum);
     }
 
     private void initContentData() {
-        InfoBean infoBean = ((ChangeRegisterActivity) mActivity).infoBean;
+        InfoBean infoBean = ((ChangeRegisterMainActivity) mActivity).infoBean;
         peopleName.setText(infoBean.getElectriccars().getOwnerName());
         peopleCard.setText(infoBean.getElectriccars().getCardName());
         peopleCardNum.setText(infoBean.getElectriccars().getCardId());
@@ -139,7 +140,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
             ToastUtil.showWX("请输入姓名");
             return;
         }
-        String peopleCardNumStr = peopleCardNum.getText().toString().trim();
+        String peopleCardNumStr = peopleCardNum.getText().toString().trim().toUpperCase();
         if (TextUtils.isEmpty(peopleCardNumStr)) {
             ToastUtil.showWX("请输入证件号");
             return;
@@ -175,14 +176,14 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
             }
         }
 
-        ((ChangeRegisterActivity) mActivity).registerPutBean.setPeopleName(peopleNameStr);
-        ((ChangeRegisterActivity) mActivity).registerPutBean.setPeopleCardNum(peopleCardNumStr);
-        ((ChangeRegisterActivity) mActivity).registerPutBean.setPeopleCardType(cardCode);
-        ((ChangeRegisterActivity) mActivity).registerPutBean.setCardName(peopleCardStr);
-        ((ChangeRegisterActivity) mActivity).registerPutBean.setPeoplePhone1(peoplePhone1Str);
-        ((ChangeRegisterActivity) mActivity).registerPutBean.setPeoplePhone2(peoplePhone2Str);
-        ((ChangeRegisterActivity) mActivity).registerPutBean.setPeopleAddr(peopleAdrStr);
-        ((ChangeRegisterActivity) mActivity).registerPutBean.setPeopleRemark(peopleRemarkStr);
+        ((ChangeRegisterMainActivity) mActivity).registerPutBean.setPeopleName(peopleNameStr);
+        ((ChangeRegisterMainActivity) mActivity).registerPutBean.setPeopleCardNum(peopleCardNumStr);
+        ((ChangeRegisterMainActivity) mActivity).registerPutBean.setPeopleCardType(cardCode);
+        ((ChangeRegisterMainActivity) mActivity).registerPutBean.setCardName(peopleCardStr);
+        ((ChangeRegisterMainActivity) mActivity).registerPutBean.setPeoplePhone1(peoplePhone1Str);
+        ((ChangeRegisterMainActivity) mActivity).registerPutBean.setPeoplePhone2(peoplePhone2Str);
+        ((ChangeRegisterMainActivity) mActivity).registerPutBean.setPeopleAddr(peopleAdrStr);
+        ((ChangeRegisterMainActivity) mActivity).registerPutBean.setPeopleRemark(peopleRemarkStr);
 
         sendData();
 
@@ -191,8 +192,8 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
     private void sendData() {
         try {
 
-            RegisterPutBean registerBean = ((ChangeRegisterActivity) mActivity).registerPutBean;
-            int subsystemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
+            RegisterPutBean registerBean = ((ChangeRegisterMainActivity) mActivity).registerPutBean;
+            int subsystemId = SPUtils.getInstance().getInt(BaseConstants.City_systemID);
             Map<String, Object> map = new HashMap<>();
             map.put("subsystemId", subsystemId);
             map.put("id", registerBean.getId());
@@ -279,7 +280,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == CODE_TABLE_CARD &&
-                resultCode == ((ChangeRegisterActivity) mActivity).RESULT_OK) {
+                resultCode == ((ChangeRegisterMainActivity) mActivity).RESULT_OK) {
             String name = data.getStringExtra(BaseConstants.KEY_NAME);
             cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
             peopleCard.setText(name);
@@ -311,7 +312,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
     @Override
     public void changeFail(String msg) {
         zProgressHUD.dismiss();
-        showCustomWindowDialog("服务提示", msg, false,true);
+        showCustomWindowDialog("服务提示", msg, false, true);
 
     }
 
@@ -339,7 +340,7 @@ public class ChangeRegisterPeopleFragment extends LoadingBaseFragment<RegisterIm
     @Override
     public void loadingFail(String msg) {
         zProgressHUD.dismiss();
-        showCustomWindowDialog("服务提示", msg, false,true);
+        showCustomWindowDialog("服务提示", msg, false, true);
     }
 
 

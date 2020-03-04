@@ -18,9 +18,9 @@ import java.lang.Override;
 public class ChangeRegisterPeopleFragment_ViewBinding implements Unbinder {
   private ChangeRegisterPeopleFragment target;
 
-  private View view2131231056;
-
   private View view2131231057;
+
+  private View view2131231058;
 
   private View view2131230798;
 
@@ -37,7 +37,7 @@ public class ChangeRegisterPeopleFragment_ViewBinding implements Unbinder {
     target.peopleName = Utils.findRequiredViewAsType(source, R.id.people_name, "field 'peopleName'", EditText.class);
     view = Utils.findRequiredView(source, R.id.people_card, "field 'peopleCard' and method 'onViewClicked'");
     target.peopleCard = Utils.castView(view, R.id.people_card, "field 'peopleCard'", TextView.class);
-    view2131231056 = view;
+    view2131231057 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -46,7 +46,7 @@ public class ChangeRegisterPeopleFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.people_card_allow, "field 'peopleCardAllow' and method 'onViewClicked'");
     target.peopleCardAllow = Utils.castView(view, R.id.people_card_allow, "field 'peopleCardAllow'", ImageView.class);
-    view2131231057 = view;
+    view2131231058 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -90,10 +90,10 @@ public class ChangeRegisterPeopleFragment_ViewBinding implements Unbinder {
     target.peopleRemark = null;
     target.buttonNext = null;
 
-    view2131231056.setOnClickListener(null);
-    view2131231056 = null;
     view2131231057.setOnClickListener(null);
     view2131231057 = null;
+    view2131231058.setOnClickListener(null);
+    view2131231058 = null;
     view2131230798.setOnClickListener(null);
     view2131230798 = null;
   }

@@ -1,10 +1,7 @@
 package com.tdr.registrationV3.utils;
 
-import android.graphics.Bitmap;
-
 import com.google.gson.Gson;
 import com.parry.utils.code.SPUtils;
-import com.tdr.registrationV3.bean.PhotoBean;
 import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.constants.UrlConstants;
 import com.tdr.registrationV3.http.utils.DdcResult;
@@ -43,7 +40,7 @@ public class LabelSendUtil {
                 final CustomSendOperater operater = new CustomSendOperater();
                 operater.setListener(customSendLister);
 
-                int subsystemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
+                int subsystemId = SPUtils.getInstance().getInt(BaseConstants.City_systemID);
                 Map<String, Object> map = new HashMap<>();
                 map.put("lableNumber", lableNumber);
                 map.put("subsystemId", subsystemId);
@@ -61,7 +58,7 @@ public class LabelSendUtil {
 
                     @Override
                     public void onFailure(Call<DdcResult> call, Throwable t) {
-                        operater.sendResult(false, photoPosition, lableNumber);
+                        operater.sendResult(true, photoPosition, lableNumber);
 
                     }
                 });

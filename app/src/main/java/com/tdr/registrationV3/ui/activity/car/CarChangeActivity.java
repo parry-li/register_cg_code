@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
@@ -37,6 +38,7 @@ import com.tdr.registrationV3.utils.ImageSendUtil;
 import com.tdr.registrationV3.utils.PhotoUtils;
 import com.tdr.registrationV3.utils.ScanUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
+import com.zhihu.matisse.Matisse;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -138,11 +140,19 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
             }
         });
     }
-
+    private boolean isSelectAlbum = false;//是否从相册选取
     private void initPhotoRv() {
         PhotoConfigBean configBean = ConfigUtil.getPhotoConfig();
         if (configBean == null) {
             return;
+        }
+
+        /*默认1不开启，2开启*/
+        int albumInt = configBean.getIsEnableAlbum();
+        if(albumInt == 2){
+            isSelectAlbum =true;
+        }else {
+            isSelectAlbum =false;
         }
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
@@ -165,7 +175,13 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
 
                 photoPosition = position;
-                PhotoUtils.getPhotoByCamera(CarChangeActivity.this);
+                if(isSelectAlbum){
+                    /*相册*/
+                    PhotoUtils.getPhotoByAlbum(CarChangeActivity.this);
+                }else {
+                    PhotoUtils.getPhotoByCamera(CarChangeActivity.this);
+                }
+
             }
         });
     }
@@ -306,8 +322,8 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
         for (int i = 0; i < contentData.size(); i++) {
             LableListBean bean = new LableListBean();
             bean.setIndex(contentData.get(i).getIndex());
-            bean.setLableNumber(contentData.get(i).getEditValue());
-            bean.setLabelName(contentData.get(i).getEditValue());
+            bean.setLableNumber(contentData.get(i).getEditValue().toUpperCase());
+            bean.setLabelName(contentData.get(i).getLableName());
             if (contentData.get(i).getIndex() != 0) {
                 bean.setLableType(contentData.get(i).getEditValue().substring(0, 4));
             }
@@ -332,15 +348,13 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
         }
         boolean isPlate = false;
         for (int i = 0; i < contentData.size(); i++) {
-
-            if (contentData.get(i).getIndex() == 0) {
-                isPlate = true;
-            }
             if (TextUtils.isEmpty(contentData.get(i).getEditValue())) {
                 ToastUtil.showWX("请输入" + contentData.get(i).getLableName());
                 return;
             }
-            if (isPlate) {
+
+            if (contentData.get(i).getIndex() == 0) {
+                isPlate = true;
                 String plateNum = ScanUtil.checkPlateNumber(true, carRegular, contentData.get(i).getEditValue());
                 if (TextUtils.isEmpty(plateNum)) {
                     return;
@@ -380,19 +394,49 @@ public class CarChangeActivity extends LoadingBaseActivity<CarChangeImpl> implem
                 case ScanUtil.SCANNIN_QR_CODE:
                     setScanData(data);
                     break;
+//                case PhotoUtils.CAMERA_REQESTCODE:
+//                    Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
+//                    Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
+//                    Drawable drawable = new BitmapDrawable(bitmapS);
+//                    photoList.get(photoPosition).setDrawable(drawable);
+//                    photoList.get(photoPosition).setPhotoId(null);
+//                    photoAdapter.setNewData(photoList);
+//                    ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
+//                    break;
+
                 case PhotoUtils.CAMERA_REQESTCODE:
-                    Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
-                    Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
-                    Drawable drawable = new BitmapDrawable(bitmapS);
-                    photoList.get(photoPosition).setDrawable(drawable);
-                    photoList.get(photoPosition).setPhotoId(null);
-                    photoAdapter.setNewData(photoList);
-                    ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
+                    setImageForResult();
                     break;
+                case PhotoUtils.ALBUM_REQESTCODE://相册
+
+                    /*拍照*/
+                    String capture_type = "";
+                    try {
+                        capture_type = (String) data.getExtras().get("capture_type");
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    if ("camera".equals(capture_type)) {
+                        PhotoUtils.getPhotoByCamera(CarChangeActivity.this);
+                        return;
+                    }
+                    Uri s1 = Matisse.obtainResult(data).get(0);
+                    PhotoUtils.setImageUri(s1);
+                    setImageForResult();
+                    break;
+
             }
         }
     }
-
+    private void setImageForResult() {
+        Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
+        Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
+        Drawable drawable = new BitmapDrawable(bitmapS);
+        photoList.get(photoPosition).setDrawable(drawable);
+        photoList.get(photoPosition).setPhotoId(null);
+        photoAdapter.setNewData(photoList);
+        ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
+    }
     CustomSendLister customSendLister = new CustomSendLister() {
         @Override
         public void sendResult(Boolean isSuccess, int position, String photoId) {

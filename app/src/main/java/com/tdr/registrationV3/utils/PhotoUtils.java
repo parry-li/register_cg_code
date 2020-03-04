@@ -60,6 +60,16 @@ public class PhotoUtils {
     private static Activity mActivity;
 
 
+    /**设置路径
+     * @param uri
+     */
+    public static void setImageUri(Uri uri) {
+        mImageUri = uri;
+    }
+
+    /**相机选取
+     * @param activity
+     */
     public static void getPhotoByCamera(Activity activity) {
         mActivity = activity;
         Intent takePhotoIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);//打开相机的Intent
@@ -77,6 +87,25 @@ public class PhotoUtils {
                 mActivity.startActivityForResult(takePhotoIntent, CAMERA_REQESTCODE);//打开相机
             }
         }
+    }
+
+    /**相册选择
+     * @param activity
+     */
+    public static void getPhotoByAlbum(Activity activity) {
+        mActivity = activity;
+        Matisse.from(mActivity)
+                .choose(MimeType.ofImage(), false)
+                .theme(R.style.Matisse_Zhihu)
+                .countable(true)
+                .capture(true)
+                .captureStrategy(new CaptureStrategy(true, "com.tdr.registrationV3"))
+                .maxSelectable(3)
+                .gridExpectedSize(UIUtils.dp2px(120))
+                .restrictOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+                .thumbnailScale(0.85f)
+                .imageEngine(new GlideEngine())
+                .forResult(ALBUM_REQESTCODE);
     }
     public static Intent getPhotoByCameraForFragment(Activity activity) {
         mActivity = activity;
@@ -105,7 +134,7 @@ public class PhotoUtils {
 //            Bitmap bitmapResult = BitmapFactory.decodeStream(mActivity.getContentResolver().openInputStream(PhotoUtils.mImageUri));
             Bitmap bitmap = null;
             try {
-                bitmap =getFitSampleBitmap(bitmapIs);
+                bitmap = getFitSampleBitmap(bitmapIs);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -116,20 +145,45 @@ public class PhotoUtils {
         return null;
     }
 
-    public  static  Bitmap  getFitSampleBitmap(InputStream  inputStream) throws Exception{
+    public static Bitmap getFitSampleBitmap(InputStream inputStream) throws Exception {
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
         byte[] bytes = readStream(inputStream);
         BitmapFactory.decodeByteArray(bytes, 0, bytes.length, options);
-        options.inSampleSize = 2;
+        options.inPurgeable = true;// 允许可清除
+        options.inSampleSize = 2;//设置缩放比例
+        options.inInputShareable = true;// 以上options的两个属性必须联合使用才会有效果
         options.inJustDecodeBounds = false;
         return BitmapFactory.decodeByteArray(bytes, 0, bytes.length, options);
     }
 
+
+    /**
+     * 通过uri获取图片并进行压缩
+     *
+     * @param uri
+     */
+    public static Bitmap getBitmapFormUri(Activity ac, Uri uri) throws IOException {
+        InputStream input = ac.getContentResolver().openInputStream(uri);
+
+        BitmapFactory.Options onlyBoundsOptions = new BitmapFactory.Options();
+        onlyBoundsOptions.inJustDecodeBounds = false;
+        onlyBoundsOptions.inDither = true;//optional
+        onlyBoundsOptions.inPreferredConfig = Bitmap.Config.ARGB_8888;//optional
+        onlyBoundsOptions.inPurgeable = true;// 允许可清除
+        onlyBoundsOptions.inSampleSize = 2;//设置缩放比例
+        onlyBoundsOptions.inInputShareable = true;// 以上options的两个属性必须联合使用才会有效果
+
+        Bitmap bitmap = BitmapFactory.decodeStream(input, null, onlyBoundsOptions);
+        input.close();
+        return bitmap;
+    }
+
+
     /**
      * 从inputStream中获取字节流 数组大小
      **/
-    public static byte[] readStream(InputStream inStream) throws Exception{
+    public static byte[] readStream(InputStream inStream) throws Exception {
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         byte[] buffer = new byte[1024];
         int len = 0;
@@ -199,21 +253,6 @@ public class PhotoUtils {
 
 
 
-    public static void getPhotoByAlbum(Activity mActivity) {
-        Matisse.from(mActivity)
-                .choose(MimeType.ofImage(), false)
-                .theme(R.style.Matisse_Zhihu)
-                .countable(true)
-                .capture(true)
-                .captureStrategy(new CaptureStrategy(true, "com.tdr.registration"))
-                .maxSelectable(3)
-                //                .addFilter(new GifSizeFilter(320, 320, 5 * Filter.K * Filter.K))
-                .gridExpectedSize(UIUtils.dp2px(120))
-                .restrictOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
-                .thumbnailScale(0.85f)
-                .imageEngine(new GlideEngine())
-                .forResult(ALBUM_REQESTCODE);
-    }
 
     public static void sevephoto(final Bitmap bitmap) {
         new Thread(new Runnable() {
@@ -411,12 +450,13 @@ public class PhotoUtils {
         return inSampleSize;
     }
 
+
     /**
      * 通过uri获取图片并进行压缩
      *
      * @param uri
      */
-    public static Bitmap getBitmapFormUri(Activity ac, Uri uri) throws FileNotFoundException, IOException {
+    /*public static Bitmap getBitmapFormUri(Activity ac, Uri uri) throws FileNotFoundException, IOException {
         InputStream input = ac.getContentResolver().openInputStream(uri);
 
         BitmapFactory.Options onlyBoundsOptions = new BitmapFactory.Options();
@@ -461,9 +501,8 @@ public class PhotoUtils {
         }
 
         return compressImage(bitmap);
-
-
     }
+*/
 
     /**
      * 通过uri获取图片并进行压缩
@@ -587,8 +626,6 @@ public class PhotoUtils {
         bitmapOptions.inJustDecodeBounds = false;//optional
         bitmapOptions.inPreferredConfig = Bitmap.Config.ARGB_8888;//optional
         input.close();
-
-
         baos = new ByteArrayOutputStream();
         fromBitmap.compress(Bitmap.CompressFormat.JPEG, 40, baos);
         input = new ByteArrayInputStream(baos.toByteArray());
@@ -617,7 +654,7 @@ public class PhotoUtils {
     public static Bitmap compressImage(Bitmap image) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         image.compress(Bitmap.CompressFormat.JPEG, 100, baos);//质量压缩方法，把压缩后的数据存放到baos中
-        int options = 60;
+        int options = 55;
         int bosLen = baos.toByteArray().length;
         while (options > 45 && baos.toByteArray().length / 1024 > 250) {  //循环判断如果压缩后图片是否大于200kb,大于继续压缩
             baos.reset();

@@ -308,8 +308,7 @@
             <LinearLayout style="@style/ll_layout">
 
                 <TextView
-                    style="@style/tv_x"
-                    android:visibility="invisible" />
+                    style="@style/tv_x" />
 
                 <TextView
 

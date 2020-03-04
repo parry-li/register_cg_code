@@ -5,7 +5,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.parry.utils.code.AppUtils;
+import com.parry.utils.code.SPUtils;
 import com.tdr.registrationV3.R;
+import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.ui.activity.LoginActivity;
 import com.tdr.registrationV3.ui.activity.base.BaseActivity;
 import com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitActivity;
@@ -14,7 +16,6 @@ import com.tdr.registrationV3.ui.fragment.base.NoCacheBaseFragment;
 import com.tdr.registrationV3.utils.ActivityUtil;
 
 import butterknife.BindView;
-
 import butterknife.OnClick;
 
 
@@ -33,6 +34,10 @@ public class MeFragment extends NoCacheBaseFragment {
     LinearLayout meOut;
     @BindView(R.id.me_version_num)
     TextView meVersionNum;
+    @BindView(R.id.user_name)
+    TextView userName;
+    @BindView(R.id.user_city)
+    TextView userCity;
 
 
 
@@ -43,7 +48,11 @@ public class MeFragment extends NoCacheBaseFragment {
 
     @Override
     protected void initView() {
-        meVersionNum.setText( AppUtils.getAppVersionName());
+        meVersionNum.setText(AppUtils.getAppVersionName());
+        String loginName = SPUtils.getInstance().getString(BaseConstants.Login_name);
+        String unitName = SPUtils.getInstance().getString(BaseConstants.Login_unitName);
+        userName.setText(loginName);
+        userCity.setText(unitName);
     }
 
     @Override
@@ -56,7 +65,7 @@ public class MeFragment extends NoCacheBaseFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.me_pwd:
-                ActivityUtil.goActivity(MeFragment.this.getActivity(),PasswordActivity.class);
+                ActivityUtil.goActivity(MeFragment.this.getActivity(), PasswordActivity.class);
                 break;
             case R.id.me_update:
                 break;
@@ -65,7 +74,7 @@ public class MeFragment extends NoCacheBaseFragment {
             case R.id.me_problem:
                 break;
             case R.id.me_insurance:
-                ActivityUtil.goActivity(MeFragment.this.getActivity(),InsuranceWaitActivity.class);
+                ActivityUtil.goActivity(MeFragment.this.getActivity(), InsuranceWaitActivity.class);
                 break;
             case R.id.me_out:
                 BaseActivity.activity.clearDataForLoginOut();
@@ -73,6 +82,7 @@ public class MeFragment extends NoCacheBaseFragment {
                 break;
         }
     }
+
 
 
 }

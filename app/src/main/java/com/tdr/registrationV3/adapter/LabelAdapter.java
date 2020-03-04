@@ -13,6 +13,8 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.bean.VehicleConfigBean;
+import com.tdr.registrationV3.utils.AllCapTransformationMethod;
+import com.tdr.registrationV3.utils.UIUtils;
 
 import java.util.List;
 
@@ -67,16 +69,20 @@ public class LabelAdapter extends BaseQuickAdapter<VehicleConfigBean.VehicleLice
         photoIv.setVisibility(View.VISIBLE);
         if (item.getIndex() == 0) {
             if (!item.isScan()) {
+                UIUtils.setEditTextUpperCase(photoEt);
                 photoEt.setVisibility(View.VISIBLE);
                 photoTv.setVisibility(View.GONE);
                 photoIv.setVisibility(View.GONE);
             }
         }
-//        photoEt.setTransformationMethod(new AllCapTransformationMethod(true));
+
         photoll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onItemClickListener.onItemClickListener(position, item.getLableName());
+                if(onItemClickListener!=null){
+                    onItemClickListener.onItemClickListener(position, item.getLableName());
+                }
+
             }
         });
         if (item.getIndex() == 0) {

@@ -19,11 +19,11 @@ import java.lang.Override;
 public class PersonageStatisticsActivity_ViewBinding implements Unbinder {
   private PersonageStatisticsActivity target;
 
-  private View view2131231143;
+  private View view2131231144;
 
-  private View view2131230909;
+  private View view2131230910;
 
-  private View view2131231072;
+  private View view2131231073;
 
   private View view2131230778;
 
@@ -44,7 +44,7 @@ public class PersonageStatisticsActivity_ViewBinding implements Unbinder {
     target.textTitle = Utils.findRequiredViewAsType(source, R.id.text_title, "field 'textTitle'", TextView.class);
     view = Utils.findRequiredView(source, R.id.start_time, "field 'startTimeTV' and method 'onViewClicked'");
     target.startTimeTV = Utils.castView(view, R.id.start_time, "field 'startTimeTV'", TextView.class);
-    view2131231143 = view;
+    view2131231144 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class PersonageStatisticsActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.end_time, "field 'endTimeTV' and method 'onViewClicked'");
     target.endTimeTV = Utils.castView(view, R.id.end_time, "field 'endTimeTV'", TextView.class);
-    view2131230909 = view;
+    view2131230910 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class PersonageStatisticsActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.query, "field 'query' and method 'onViewClicked'");
     target.query = Utils.castView(view, R.id.query, "field 'query'", TextView.class);
-    view2131231072 = view;
+    view2131231073 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -100,6 +100,7 @@ public class PersonageStatisticsActivity_ViewBinding implements Unbinder {
     });
     target.newSales = Utils.findRequiredViewAsType(source, R.id.new_sales, "field 'newSales'", TextView.class);
     target.newRoad = Utils.findRequiredViewAsType(source, R.id.new_Road, "field 'newRoad'", TextView.class);
+    target.changeNum = Utils.findRequiredViewAsType(source, R.id.change_num, "field 'changeNum'", TextView.class);
   }
 
   @Override
@@ -129,13 +130,14 @@ public class PersonageStatisticsActivity_ViewBinding implements Unbinder {
     target.baseUnitArrow = null;
     target.newSales = null;
     target.newRoad = null;
+    target.changeNum = null;
 
-    view2131231143.setOnClickListener(null);
-    view2131231143 = null;
-    view2131230909.setOnClickListener(null);
-    view2131230909 = null;
-    view2131231072.setOnClickListener(null);
-    view2131231072 = null;
+    view2131231144.setOnClickListener(null);
+    view2131231144 = null;
+    view2131230910.setOnClickListener(null);
+    view2131230910 = null;
+    view2131231073.setOnClickListener(null);
+    view2131231073 = null;
     view2131230778.setOnClickListener(null);
     view2131230778 = null;
     view2131230779.setOnClickListener(null);

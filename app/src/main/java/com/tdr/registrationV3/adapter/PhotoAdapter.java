@@ -50,12 +50,13 @@ public class PhotoAdapter extends BaseQuickAdapter<PhotoConfigBean.PhotoTypeInfo
 
         if (item.getDrawable() != null) {
             imgIv.setBackgroundDrawable(item.getDrawable());
-        }else {
+        } else {
             if (!TextUtils.isEmpty(item.getChagePhotoId())) {
                 GlideUtil.setImg(context, item.getChagePhotoId(), imgIv);
+            } else {
+                imgIv.setBackgroundResource(R.mipmap.change_photo);
             }
         }
-
 
 
     }

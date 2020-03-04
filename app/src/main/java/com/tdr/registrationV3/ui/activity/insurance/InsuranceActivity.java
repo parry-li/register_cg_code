@@ -3,15 +3,18 @@ package com.tdr.registrationV3.ui.activity.insurance;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.parry.utils.code.SPUtils;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.adapter.InsuranceAdapter;
 import com.tdr.registrationV3.bean.CarCheckBean;
+import com.tdr.registrationV3.bean.EditInfoBean;
 import com.tdr.registrationV3.bean.InsuranceBean;
 import com.tdr.registrationV3.bean.InsuranceInfoBean;
 import com.tdr.registrationV3.constants.BaseConstants;
@@ -60,6 +63,7 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
     private int systemId;
     private CarCheckBean checkBean;
     private List<InsuranceBean> adapterList;
+    private EditInfoBean infoBean;
 
     @Override
     protected void initTitle() {
@@ -76,7 +80,7 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
                         || rolePower.equals(BaseConstants.funJurisdiction[4])*/
             checkBean = (CarCheckBean) bundle.getSerializable(BaseConstants.data);
             rolePowerStr = bundle.getString(rolePower);
-            systemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
+            systemId = SPUtils.getInstance().getInt(BaseConstants.City_systemID);
             Map<String, Object> map = new HashMap<>();
             if ("insurance_change".equals(rolePowerStr)) {
                 textTitle.setText("服务变更");
@@ -85,6 +89,7 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
                 map.put("insuranceMode", 0);
                 map.put("buyDate", checkBean.getBuyDate());
                 mPresenter.getNewAndRenewInsurance(UrlConstants.configure_getInsuranceConfigs, getRequestBody(map));
+                getInsuranceForPlate(bundle);
             } else if (BaseConstants.funJurisdiction[4].equals(rolePowerStr)) {
                 //新保
                 textTitle.setText("服务购买");
@@ -101,6 +106,14 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
 
         }
 
+    }
+
+    private void getInsuranceForPlate(Bundle bundle) {
+
+        String dataJson = bundle.getString(BaseConstants.data2);
+        if (!TextUtils.isEmpty(dataJson)) {
+            infoBean = new Gson().fromJson(dataJson, EditInfoBean.class);
+        }
     }
 
     @Override
@@ -153,10 +166,11 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
     @OnClick(R.id.button_next)
     public void onViewClicked() {
         adapterList = insuranceAdapter.getData();
-
+        boolean isFatherChecked = false;
         for (InsuranceBean insuranceBean : adapterList) {
-            if (insuranceBean.getIsChoose() == 1) {
+            if (insuranceBean.getIsChoose() == 1 || insuranceBean.isChecked()) {
                 boolean isHaveCheck = false;
+                isFatherChecked = true;
                 for (InsuranceBean.PackagesBean packagesBean : insuranceBean.getPackages()) {
 
                     if (packagesBean.isCheck()) {
@@ -171,6 +185,11 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
 
         }
 
+        if (!isFatherChecked) {
+            ToastUtil.showWX("请选择保险");
+            return;
+        }
+
         showSubmitRequestDialog();
 
 
@@ -183,11 +202,47 @@ public class InsuranceActivity extends LoadingBaseActivity<InsuranceImpl> implem
             emptyDataRl.setVisibility(View.VISIBLE);
         } else {
             emptyDataRl.setVisibility(View.GONE);
+
+            if ("insurance_change".equals(rolePowerStr)) {
+                if (infoBean != null) {
+
+                    mData =  getSelectData(mData);
+                }
+            }
         }
+
+
         zProgressHUD.dismiss();
         insuranceRv.setLayoutManager(new LinearLayoutManager(this));
         insuranceAdapter = new InsuranceAdapter(this, mData, insuranceRv);
         insuranceRv.setAdapter(insuranceAdapter);
+    }
+
+    private List<InsuranceBean> getSelectData(List<InsuranceBean> mData) {
+        List<EditInfoBean.PolicyListBean>
+                selectPolicyList = infoBean.getPolicyList();//选择的数据
+        int mSize = mData.size();
+        for (int i = 0; i < mSize; i++) {
+            InsuranceBean fatherData = mData.get(i);
+            for (EditInfoBean.PolicyListBean selectBean : selectPolicyList) {
+                if (selectBean.getInsuranceConfigId() == fatherData.getId()) {
+                    /*保险数据*/
+                    List<InsuranceBean.PackagesBean>
+                            packages = fatherData.getPackages();
+                    int packagesSize = packages.size();
+                    for (int j = 0; j < packagesSize; j++) {
+
+                        if (packages.get(j).getId() == selectBean.getInsurancePackageId()) {
+                            mData.get(i).getPackages().get(j).setCheck(true);
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+        return mData;
     }
 
     @Override

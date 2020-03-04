@@ -25,7 +25,6 @@ import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class StatisticsUnitActivity extends LoadingBaseActivity<UnitImpl> implements UnitPresenter.View {
     @BindView(R.id.com_title_back)
@@ -178,7 +177,7 @@ public class StatisticsUnitActivity extends LoadingBaseActivity<UnitImpl> implem
 
     private void getUnitData() {
         zProgressHUD.show();
-        String cityCode = SPUtils.getInstance().getString(BaseConstants.Login_city_cityCode);
+        String cityCode = SPUtils.getInstance().getString(BaseConstants.Login_unitNo);
         Map<String, Object> map = new HashMap<>();
         map.put("unitNo", cityCode);
         mPresenter.getUnit(getRequestBody(map));

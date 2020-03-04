@@ -19,11 +19,11 @@ import java.lang.Override;
 public class RegisterInsuranceFragment_ViewBinding implements Unbinder {
   private RegisterInsuranceFragment target;
 
+  private View view2131230964;
+
   private View view2131230963;
 
-  private View view2131230962;
-
-  private View view2131230964;
+  private View view2131230965;
 
   private View view2131230798;
 
@@ -40,7 +40,7 @@ public class RegisterInsuranceFragment_ViewBinding implements Unbinder {
     target.insuranceRv = Utils.findRequiredViewAsType(source, R.id.insurance_rv, "field 'insuranceRv'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.insurance_p_no, "field 'insurancePNo' and method 'onViewClicked'");
     target.insurancePNo = Utils.castView(view, R.id.insurance_p_no, "field 'insurancePNo'", TextView.class);
-    view2131230963 = view;
+    view2131230964 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -49,7 +49,7 @@ public class RegisterInsuranceFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.insurance_p_gr, "field 'insurancePGr' and method 'onViewClicked'");
     target.insurancePGr = Utils.castView(view, R.id.insurance_p_gr, "field 'insurancePGr'", TextView.class);
-    view2131230962 = view;
+    view2131230963 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -58,7 +58,7 @@ public class RegisterInsuranceFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.insurance_p_qy, "field 'insurancePQy' and method 'onViewClicked'");
     target.insurancePQy = Utils.castView(view, R.id.insurance_p_qy, "field 'insurancePQy'", TextView.class);
-    view2131230964 = view;
+    view2131230965 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -101,12 +101,12 @@ public class RegisterInsuranceFragment_ViewBinding implements Unbinder {
     target.emptyTv = null;
     target.emptyDataRl = null;
 
-    view2131230963.setOnClickListener(null);
-    view2131230963 = null;
-    view2131230962.setOnClickListener(null);
-    view2131230962 = null;
     view2131230964.setOnClickListener(null);
     view2131230964 = null;
+    view2131230963.setOnClickListener(null);
+    view2131230963 = null;
+    view2131230965.setOnClickListener(null);
+    view2131230965 = null;
     view2131230798.setOnClickListener(null);
     view2131230798 = null;
   }

@@ -13,6 +13,7 @@ public interface StatisticsPresenter {
 
     interface Presenter {
         void getStatistics(RequestBody route);
+        void query2Unit(RequestBody route);
 
 
     }

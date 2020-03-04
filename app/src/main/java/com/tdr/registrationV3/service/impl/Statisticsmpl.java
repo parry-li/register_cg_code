@@ -25,9 +25,22 @@ public class Statisticsmpl extends BasePresenter<StatisticsPresenter.View> imple
         invoke(mService.getStatistics(UrlConstants.installSituation_query2User, route), new Callback<DdcResult<StatisticsBean>>() {
             @Override
             public void onResponse(DdcResult<StatisticsBean> data) {
-
                 if (data.getCode() == 0) {
+                    mView.loadingSuccessForData(data.getData());
+                } else {
+                    mView.loadingFail(data.getMsg());
+                }
 
+            }
+        });
+    }
+
+    @Override
+    public void query2Unit(RequestBody route) {
+        invoke(mService.getStatistics(UrlConstants.installSituation_query2Unit, route), new Callback<DdcResult<StatisticsBean>>() {
+            @Override
+            public void onResponse(DdcResult<StatisticsBean> data) {
+                if (data.getCode() == 0) {
                     mView.loadingSuccessForData(data.getData());
                 } else {
                     mView.loadingFail(data.getMsg());

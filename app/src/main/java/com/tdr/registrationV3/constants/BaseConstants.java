@@ -13,8 +13,8 @@ public class BaseConstants {
     public static final int STATE_ERROR = 2;
     public static final int STATE_EMPTY = 3;
     public static final int STATE_SUCCESS = 4;
-    //    public static final int STATE_SUCCESS = 4;
 
+    public static final int BUX_SEND_CODE= 2001;
     public static final int STATE_SUCCESS12 = 4;
     /*蓝牙id  目前在用*/
     public final static String ServiceUUID = "0000ffe0-0000-1000-8000-00805f9b34fb";
@@ -34,6 +34,7 @@ public class BaseConstants {
     public static final String ERROR_MSG =APP_NAME+ "Exception";
     public static final String token = APP_NAME + "token";
     public static final String data = APP_NAME + "register_data";
+    public static final String data2 = APP_NAME + "register_data2";
     public static final String rolePower = APP_NAME + "role_power";
     public static final String BillConfig = APP_NAME + "BillConfig";
     public static final String MapConfig = APP_NAME + "MapConfig";
@@ -48,12 +49,12 @@ public class BaseConstants {
     public static final String KEY_VALUE = APP_NAME + "picked_value";
     public static final String KEY_VALUE2 = APP_NAME + "picked_value2";
 
-    public static final String Login_city_name = APP_NAME + "Login_city_name";
-    public static final String Login_city_systemID = APP_NAME + "Login_city_systemID";// int类型
-    public static final String Login_city_unitName = APP_NAME + "Login_city_unitName";
-    public static final String Login_city_cityCode = APP_NAME + "Login_city_cityCode";
-    public static final String Login_city_unitNo = APP_NAME + "Login_city_unitNo";
-    public static final String Login_city_unitType = APP_NAME + "Login_city_unitType";// int类型
+    public static final String City_name = APP_NAME + "City_name";
+    public static final String City_systemID = APP_NAME + "City_systemID";// int类型
+    public static final String Login_unitName = APP_NAME + "Login_unitName";
+    public static final String City_cityCode = APP_NAME + "City_cityCode";
+    public static final String Login_unitNo = APP_NAME + "Login_unitNo";
+    public static final String Login_unitType = APP_NAME + "Login_unitType";// int类型
     public static final String Login_name = APP_NAME + "Login_name";
     public static final String code_table = APP_NAME + "code_table";
 

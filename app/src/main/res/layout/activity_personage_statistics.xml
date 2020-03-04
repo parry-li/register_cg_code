@@ -192,7 +192,6 @@
                         android:id="@+id/base_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:textColor="@color/module_text_3"
                         android:textSize="@dimen/sp_13" />
                 </LinearLayout>
@@ -236,8 +235,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_10"
-                    android:layout_marginBottom="@dimen/dp_10"
+
                     android:gravity="center">
 
                     <ImageView
@@ -247,6 +245,8 @@
                         android:src="@mipmap/statistics_circle_3" />
 
                     <TextView
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="所属辖区"
@@ -256,10 +256,11 @@
                     <TextView
                         android:id="@+id/base_unit"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="end"
+                        android:gravity="end|center"
                         android:textColor="@color/module_text_3"
+                        android:text="111"
                         android:textSize="@dimen/sp_13" />
 
                     <ImageView
@@ -462,6 +463,38 @@
 
                     <TextView
                         android:id="@+id/plate_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/module_text_3"
+                        android:textSize="@dimen/sp_13" />
+                </LinearLayout>
+                <View style="@style/module_liner_horizontal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="9dp"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:src="@mipmap/statistics_circle_7" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="防盗装置变更"
+                        android:textColor="@color/module_text_3"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/change_num"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 

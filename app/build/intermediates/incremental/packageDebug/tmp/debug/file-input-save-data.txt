@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Mar 02 15:29:49 CST 2020
+#Mon Mar 02 16:34:52 CST 2020
 4.path=lib/armeabi-v7a/libBugly.so
 8.set=NATIVE_RESOURCE
 6.path=texture_arrow.png

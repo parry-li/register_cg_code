@@ -62,7 +62,9 @@ public class InsuranceAdapter extends BaseQuickAdapter<InsuranceBean, BaseViewHo
         insuranceCb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                getData().get(helper.getAdapterPosition()).setChecked(b);//设置父选项是否选中
                 if(!b){
+                    /*设置子选项是否选中*/
                     changTypeAdapter.initCheckBox();
                     int mSize = getData().get(helper.getAdapterPosition()).getPackages().size();
                     for (int i = 0; i < mSize; i++) {
@@ -81,8 +83,6 @@ public class InsuranceAdapter extends BaseQuickAdapter<InsuranceBean, BaseViewHo
                 break;
             }
         }
-
-
 
         /*必选*/
         if (item.getIsChoose() == 1) {

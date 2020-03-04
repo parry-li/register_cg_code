@@ -18,6 +18,7 @@ import com.tdr.registrationV3.ui.fragment.base.NoLoadingBaseFragment;
 import com.tdr.registrationV3.utils.ActivityUtil;
 import com.tdr.registrationV3.utils.RegularUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
+import com.tdr.registrationV3.utils.UIUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -74,6 +75,8 @@ public class RegisterPeopleFragment extends NoLoadingBaseFragment {
                 ((RegisterMainActivity) RegisterPeopleFragment.this.getActivity()).setVpCurrentItem(0);
             }
         });
+
+        UIUtils.setEditTextUpperCase(peopleCardNum);
     }
 
     @OnClick({R.id.people_card, R.id.people_card_allow, R.id.button_next})
@@ -98,7 +101,7 @@ public class RegisterPeopleFragment extends NoLoadingBaseFragment {
             ToastUtil.showWX("请输入姓名");
             return;
         }
-        String peopleCardNumStr = peopleCardNum.getText().toString().trim();
+        String peopleCardNumStr = peopleCardNum.getText().toString().trim().toUpperCase();
         if (TextUtils.isEmpty(peopleCardNumStr)) {
             ToastUtil.showWX("请输入证件号");
             return;

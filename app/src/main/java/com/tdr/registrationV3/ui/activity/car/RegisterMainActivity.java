@@ -1,15 +1,24 @@
 package com.tdr.registrationV3.ui.activity.car;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.adapter.FragmentPageAdapter;
 import com.tdr.registrationV3.bean.RegisterPutBean;
+import com.tdr.registrationV3.constants.BaseConstants;
+import com.tdr.registrationV3.rx.RxBus;
 import com.tdr.registrationV3.ui.activity.base.NoLoadingBaseActivity;
 import com.tdr.registrationV3.ui.fragment.register.RegisterCarFragment;
 import com.tdr.registrationV3.ui.fragment.register.RegisterInsuranceFragment;
 import com.tdr.registrationV3.ui.fragment.register.RegisterPeopleFragment;
+import com.tdr.registrationV3.utils.ImageSendUtil;
+import com.tdr.registrationV3.utils.PhotoUtils;
 import com.tdr.registrationV3.view.NoScrollViewPager;
 
 import java.util.ArrayList;
@@ -58,5 +67,22 @@ public class RegisterMainActivity extends NoLoadingBaseActivity {
 
     }
 
+    public Intent resultData;
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == RESULT_OK) {
+            resultData= data;
+            switch (requestCode) {
+                case PhotoUtils.CAMERA_REQESTCODE:
+                    RxBus.getDefault().post(BaseConstants.BUX_SEND_CODE, PhotoUtils.CAMERA_REQESTCODE);
+                    break;
+                case PhotoUtils.ALBUM_REQESTCODE:
+                    RxBus.getDefault().post(BaseConstants.BUX_SEND_CODE,PhotoUtils.ALBUM_REQESTCODE);
+                    break;
+            }
+        }
+    }
 }

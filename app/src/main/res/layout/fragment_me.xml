@@ -22,6 +22,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/user_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="王"
@@ -29,6 +30,7 @@
                     android:textSize="@dimen/sp_27" />
 
                 <TextView
+                    android:id="@+id/user_city"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dp_5"

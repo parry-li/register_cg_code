@@ -19,7 +19,9 @@ import com.tdr.registrationV3.service.presenter.InsuranceWaitPresenter;
 import com.tdr.registrationV3.ui.activity.CodeTableActivity;
 import com.tdr.registrationV3.ui.activity.base.LoadingBaseActivity;
 import com.tdr.registrationV3.utils.ActivityUtil;
+import com.tdr.registrationV3.utils.RegularUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
+import com.tdr.registrationV3.utils.UIUtils;
 import com.tdr.registrationV3.view.CustomWindowDialog;
 
 import java.util.HashMap;
@@ -79,6 +81,7 @@ public class InsuranceWaitChangeActivity extends LoadingBaseActivity<InsuranceWa
     private String color2;
     private String cardTypeCode;
 
+
     @Override
     protected void initData(Bundle savedInstanceState) {
         String json = SPUtils.getInstance().getString(BaseConstants.data);
@@ -87,6 +90,8 @@ public class InsuranceWaitChangeActivity extends LoadingBaseActivity<InsuranceWa
             SPUtils.getInstance().remove(BaseConstants.data);
             initContentData();
         }
+        UIUtils.setEditTextUpperCase(waitPlate);
+        UIUtils.setEditTextUpperCase(waitCardnum);
     }
 
     private void initContentData() {
@@ -106,6 +111,7 @@ public class InsuranceWaitChangeActivity extends LoadingBaseActivity<InsuranceWa
         color1 = waitBean.getColorId();
         color2 = waitBean.getColorSecondId();
         cardTypeCode = waitBean.getCardType() + "";
+
     }
 
     @Override
@@ -174,7 +180,7 @@ public class InsuranceWaitChangeActivity extends LoadingBaseActivity<InsuranceWa
     }
 
     private void pushData() {
-        String plateStr = waitPlate.getText().toString().trim();
+        String plateStr = waitPlate.getText().toString().trim().toUpperCase();
         if (TextUtils.isEmpty(plateStr)) {
             ToastUtil.showWX("请输入车牌号");
             return;
@@ -194,14 +200,25 @@ public class InsuranceWaitChangeActivity extends LoadingBaseActivity<InsuranceWa
             ToastUtil.showWX("请输入姓名");
             return;
         }
-        String cardNumStr = waitCardnum.getText().toString().trim();
+        String cardNumStr = waitCardnum.getText().toString().trim().toUpperCase();
         if (TextUtils.isEmpty(cardNumStr)) {
             ToastUtil.showWX("请输入证件号");
             return;
         }
+
+        if (cardTypeCode.equals("1")) {
+            if (!RegularUtil.isIDCard18(cardNumStr)) {
+                ToastUtil.showWX("输入的证件号码有误");
+                return;
+            }
+        }
         String phoneStr = waitPhone.getText().toString().trim();
         if (TextUtils.isEmpty(phoneStr)) {
             ToastUtil.showWX("请输入联系手机");
+            return;
+        }
+        if(!RegularUtil.isMobileExact(phoneStr)){
+            ToastUtil.showWX("联系手机号码有误");
             return;
         }
         String adrStr = waitAdr.getText().toString().trim();

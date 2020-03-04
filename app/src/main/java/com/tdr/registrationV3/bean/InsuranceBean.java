@@ -25,9 +25,23 @@ public class InsuranceBean {
     private int vehicleType;
     private int isChoose;
     private int sort;
+
     private Object invoiceToken;
     private Object baseAmount;
+
     private List<PackagesBean> packages;
+
+    /*额外添加，判断是否有选择*/
+    private boolean isChecked;
+
+
+    public boolean isChecked() {
+        return isChecked;
+    }
+
+    public void setChecked(boolean checked) {
+        isChecked = checked;
+    }
 
     public int getId() {
         return id;
@@ -133,6 +147,7 @@ public class InsuranceBean {
         private int price;
         private String displayList;
         private Object invoiceAmount;
+        /*额外添加   是否选择*/
         private boolean isCheck;
 
         public boolean isCheck() {

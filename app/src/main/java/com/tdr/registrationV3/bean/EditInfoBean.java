@@ -454,6 +454,8 @@ public class EditInfoBean {
         private int deadLine;
         private String insuranceBuyDate;
 
+
+
         public Object getPolicyNumber() {
             return policyNumber;
         }

@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.parry.utils.code.SPUtils;
 import com.tdr.registrationV3.R;
 import com.tdr.registrationV3.adapter.InsuranceAdapter;
+import com.tdr.registrationV3.bean.BillBean;
 import com.tdr.registrationV3.bean.BlcakCarBean;
 import com.tdr.registrationV3.bean.InsuranceBean;
 import com.tdr.registrationV3.bean.InsuranceInfoBean;
@@ -26,9 +27,9 @@ import com.tdr.registrationV3.service.impl.car.RegisterImpl;
 import com.tdr.registrationV3.service.presenter.RegisterPresenter;
 import com.tdr.registrationV3.ui.activity.car.RegisterMainActivity;
 import com.tdr.registrationV3.ui.fragment.base.LoadingBaseFragment;
+import com.tdr.registrationV3.utils.ConfigUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
 import com.tdr.registrationV3.utils.UIUtils;
-import com.tdr.registrationV3.view.CustomWindowDialog;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -88,7 +89,7 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
     private void getInsuranceData() {
         try {
             zProgressHUD.show();
-            int systemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID, -100);
+            int systemId = SPUtils.getInstance().getInt(BaseConstants.City_systemID, -100);
             vehicleType = ((RegisterMainActivity) RegisterInsuranceFragment.this.getActivity()).vehicleType;
             String buyDate = ((RegisterMainActivity) RegisterInsuranceFragment.this.getActivity()).registerPutBean.getRegisterTime();
             Map<String, Object> map = new HashMap<>();
@@ -102,8 +103,6 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
             e.printStackTrace();
         }
     }
-
-
 
 
     @Override
@@ -128,6 +127,21 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
                 getInsuranceData();
             }
         });
+        initBill();
+    }
+
+    private int insurance_bill = 1;//默认不开票
+
+    private void initBill() {
+        insuranceKpLl.setVisibility(View.GONE);
+        BillBean billBean = ConfigUtil.getBill();
+        if (billBean == null) {
+            return;
+        }
+        if (billBean.isIsBill()) {
+            insuranceKpLl.setVisibility(View.VISIBLE);
+            setBillType(billBean.getBillType());
+        }
     }
 
     private void initRv() {
@@ -138,34 +152,53 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
 
     }
 
-    private int insurance_bill = 1;
 
     @OnClick({R.id.insurance_p_no, R.id.insurance_p_gr, R.id.insurance_p_qy, R.id.button_next})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.insurance_p_no:
-                insurancePNo.setTextColor(UIUtils.getColor(R.color.module_main));
-                insurancePGr.setTextColor(UIUtils.getColor(R.color.module_text_3));
-                insurancePQy.setTextColor(UIUtils.getColor(R.color.module_text_3));
-                insurance_bill = 1;
+                setBillType(1);
                 break;
             case R.id.insurance_p_gr:
-                insurancePNo.setTextColor(UIUtils.getColor(R.color.module_text_3));
-                insurancePGr.setTextColor(UIUtils.getColor(R.color.module_main));
-                insurancePQy.setTextColor(UIUtils.getColor(R.color.module_text_3));
-                insurance_bill = 2;
+
+                setBillType(2);
                 break;
             case R.id.insurance_p_qy:
-                insurancePNo.setTextColor(UIUtils.getColor(R.color.module_text_3));
-                insurancePGr.setTextColor(UIUtils.getColor(R.color.module_text_3));
-                insurancePQy.setTextColor(UIUtils.getColor(R.color.module_main));
-                insurance_bill = 3;
+
+                setBillType(3);
                 break;
             case R.id.button_next:
                 putData();
                 break;
         }
+
+
     }
+
+    private void setBillType(int type) {
+
+        switch (type) {
+            case 1:
+                insurancePNo.setTextColor(UIUtils.getColor(R.color.module_main));
+                insurancePGr.setTextColor(UIUtils.getColor(R.color.module_text_3));
+                insurancePQy.setTextColor(UIUtils.getColor(R.color.module_text_3));
+                insurance_bill = 1;
+                break;
+            case 2:
+                insurancePNo.setTextColor(UIUtils.getColor(R.color.module_text_3));
+                insurancePGr.setTextColor(UIUtils.getColor(R.color.module_main));
+                insurancePQy.setTextColor(UIUtils.getColor(R.color.module_text_3));
+                insurance_bill = 2;
+                break;
+            case 3:
+                insurancePNo.setTextColor(UIUtils.getColor(R.color.module_text_3));
+                insurancePGr.setTextColor(UIUtils.getColor(R.color.module_text_3));
+                insurancePQy.setTextColor(UIUtils.getColor(R.color.module_main));
+                insurance_bill = 3;
+                break;
+        }
+    }
+
 
     private void putData() {
         try {
@@ -207,7 +240,7 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
     @Override
     public void getInsuranceSuccess(List<InsuranceBean> list) {
         zProgressHUD.dismiss();
-        if (list!=null&&list.size() > 0) {
+        if (list != null && list.size() > 0) {
             emptyDataRl.setVisibility(View.GONE);
         } else {
             emptyDataRl.setVisibility(View.VISIBLE);
@@ -262,7 +295,7 @@ public class RegisterInsuranceFragment extends LoadingBaseFragment<RegisterImpl>
     @Override
     protected void submitRequestData() {
         RegisterPutBean registerBean = ((RegisterMainActivity) RegisterInsuranceFragment.this.getActivity()).registerPutBean;
-        int subsystemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
+        int subsystemId = SPUtils.getInstance().getInt(BaseConstants.City_systemID);
         Map<String, Object> map = new HashMap<>();
         map.put("subsystemId", subsystemId);
         map.put("billType", insurance_bill);

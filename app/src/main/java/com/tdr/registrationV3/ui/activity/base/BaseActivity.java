@@ -92,7 +92,7 @@ public abstract class BaseActivity extends AppCompatActivity implements LifeSubs
             mActivities.add(this);
         }
 
-        systemBaseID = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
+        systemBaseID = SPUtils.getInstance().getInt(BaseConstants.City_systemID);
         zProgressHUD = new ZProgressHUD(this);
         zProgressHUD.setMessage("加载中");
         /*请求结果的提示*/

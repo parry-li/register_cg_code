@@ -92,13 +92,13 @@
         <activity android:name="com.tdr.registrationV3.ui.activity.CodeTableActivity" />
         <activity android:name="com.tdr.registrationV3.ui.activity.car.CarScrapActivity" />
         <activity android:name="com.tdr.registrationV3.ui.activity.insurance.InsuranceActivity" />
-        <activity android:name="com.tdr.registrationV3.ui.activity.car.ChangeRegisterActivity" />
+        <activity android:name="com.tdr.registrationV3.ui.activity.car.ChangeRegisterMainActivity" />
         <activity android:name="com.tdr.registrationV3.ui.activity.me.PasswordActivity" />
         <activity android:name="com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitActivity" />
         <activity android:name="com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitChangeActivity" />
         <activity android:name="com.tdr.registrationV3.ui.activity.home.PersonageStatisticsActivity" />
         <activity android:name="com.tdr.registrationV3.ui.activity.home.StatisticsUnitActivity" />
-        <activity android:name="com.tdr.registrationV3.ui.activity.image.ImageActivity" />
+
         <!-- <activity -->
         <!-- android:name="com.tdr.chongwu.ui.map.TencentMapActivity" -->
         <!-- android:label="@string/demo_label_basemap" /> -->

@@ -86,6 +86,8 @@ public interface BaseService {
 
     @POST()
     Observable<DdcResult<List<BlcakCarBean>>> checkShelvesLabel(@Url String url, @Body RequestBody route);
+    @POST()
+    Observable<DdcResult<StatisticsBean>> query2Unit(@Url String url, @Body RequestBody route);
 
     @POST()
     Call<DdcResult> checkLabel(@Url String url, @Body RequestBody route);

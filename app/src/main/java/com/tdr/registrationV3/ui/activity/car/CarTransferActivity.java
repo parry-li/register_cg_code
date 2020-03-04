@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -31,10 +32,13 @@ import com.tdr.registrationV3.service.presenter.CarTransferPresenter;
 import com.tdr.registrationV3.ui.activity.CodeTableActivity;
 import com.tdr.registrationV3.ui.activity.base.LoadingBaseActivity;
 import com.tdr.registrationV3.utils.ActivityUtil;
+import com.tdr.registrationV3.utils.ConfigUtil;
 import com.tdr.registrationV3.utils.ImageSendUtil;
 import com.tdr.registrationV3.utils.PhotoUtils;
 import com.tdr.registrationV3.utils.RegularUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
+import com.tdr.registrationV3.utils.UIUtils;
+import com.zhihu.matisse.Matisse;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -111,6 +115,7 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
 
     @Override
     protected void initData(Bundle savedInstanceState) {
+        UIUtils.setEditTextUpperCase(transferNewCardnum);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             checkBean = (CarCheckBean) bundle.getSerializable(BaseConstants.data);
@@ -129,10 +134,21 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
         transferCard.setText(checkBean.getCardId());
     }
 
-
+    private boolean isSelectAlbum = false;//是否从相册选取
     private void initPhotoRv() {
-        String PhotoConfigJson = SPUtils.getInstance().getString(BaseConstants.PhotoConfig);
-        PhotoConfigBean configBean = new Gson().fromJson(PhotoConfigJson, PhotoConfigBean.class);
+        PhotoConfigBean configBean = ConfigUtil.getPhotoConfig();
+        if (configBean == null) {
+            return;
+        }
+
+        /*默认1不开启，2开启*/
+        int albumInt = configBean.getIsEnableAlbum();
+        if(albumInt == 2){
+            isSelectAlbum =true;
+        }else {
+            isSelectAlbum =false;
+        }
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         transferRv.setLayoutManager(linearLayoutManager);
@@ -140,9 +156,9 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
         if (configBean != null) {
             for (PhotoConfigBean.PhotoTypeInfoListBean photoBean : configBean.getPhotoTypeInfoList()) {
                 if (photoBean.isIsValid()) {
-                    if(photoBean.getPhotoIndex() == 2){
+                    if (photoBean.getPhotoIndex() == 2) {
                         photoBean.setIsRequire(true);
-                    }else {
+                    } else {
                         photoBean.setIsRequire(false);
                     }
                     photoList.add(photoBean);
@@ -151,13 +167,19 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
 
         }
 
-        photoAdapter = new PhotoAdapter(CarTransferActivity.this,photoList);
+        photoAdapter = new PhotoAdapter(CarTransferActivity.this, photoList);
         transferRv.setAdapter(photoAdapter);
         photoAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 photoPosition = position;
-                PhotoUtils.getPhotoByCamera(CarTransferActivity.this);
+//                PhotoUtils.getPhotoByCamera(CarTransferActivity.this);
+                if(isSelectAlbum){
+                    /*相册*/
+                    PhotoUtils.getPhotoByAlbum(CarTransferActivity.this);
+                }else {
+                    PhotoUtils.getPhotoByCamera(CarTransferActivity.this);
+                }
             }
         });
     }
@@ -166,20 +188,63 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK && requestCode == PhotoUtils.CAMERA_REQESTCODE) {
+//        if (resultCode == RESULT_OK && requestCode == PhotoUtils.CAMERA_REQESTCODE) {
+//
+//            final Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
+//            Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
+//            Drawable drawable = new BitmapDrawable(bitmapS);
+//            photoList.get(photoPosition).setDrawable(drawable);
+//            photoList.get(photoPosition).setPhotoId(null);
+//            photoAdapter.setNewData(photoList);
+//            ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
+//        } else if (resultCode == RESULT_OK && requestCode == CODE_TABLE_PICK) {
+//            String name = data.getStringExtra(BaseConstants.KEY_NAME);
+//            cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
+//            transferCardType.setText(name);
+//        }
 
-            final Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
-            Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
-            Drawable drawable = new BitmapDrawable(bitmapS);
-            photoList.get(photoPosition).setDrawable(drawable);
-            photoList.get(photoPosition).setPhotoId(null);
-            photoAdapter.setNewData(photoList);
-            ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
-        } else if (resultCode == RESULT_OK && requestCode == CODE_TABLE_PICK) {
-            String name = data.getStringExtra(BaseConstants.KEY_NAME);
-            cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
-            transferCardType.setText(name);
+
+        if (resultCode == RESULT_OK) {
+            switch (requestCode) {
+                case CODE_TABLE_PICK:
+                    String name = data.getStringExtra(BaseConstants.KEY_NAME);
+                    cardCode = data.getStringExtra(BaseConstants.KEY_VALUE);
+                    transferCardType.setText(name);
+                    break;
+                case PhotoUtils.CAMERA_REQESTCODE:
+                    setImageForResult();
+                    break;
+                case PhotoUtils.ALBUM_REQESTCODE://相册
+
+                    /*拍照*/
+                    String capture_type = "";
+                    try {
+                        capture_type = (String) data.getExtras().get("capture_type");
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    if ("camera".equals(capture_type)) {
+                        PhotoUtils.getPhotoByCamera(CarTransferActivity.this);
+                        return;
+                    }
+                    Uri s1 = Matisse.obtainResult(data).get(0);
+                    PhotoUtils.setImageUri(s1);
+                    setImageForResult();
+                    break;
+            }
         }
+
+
+    }
+
+    private void setImageForResult() {
+        final Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
+        Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
+        Drawable drawable = new BitmapDrawable(bitmapS);
+        photoList.get(photoPosition).setDrawable(drawable);
+        photoList.get(photoPosition).setPhotoId(null);
+        photoAdapter.setNewData(photoList);
+        ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
     }
 
     CustomSendLister customSendLister = new CustomSendLister() {
@@ -226,7 +291,7 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
             ToastUtil.showWX("请输入姓名");
             return;
         }
-        String cardNum = transferNewCardnum.getText().toString().trim();
+        String cardNum = transferNewCardnum.getText().toString().trim().toUpperCase();
         if (TextUtils.isEmpty(cardNum)) {
             ToastUtil.showWX("请输入证件号码");
             return;
@@ -253,9 +318,14 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
                 return;
             }
         }
-
         String addr = transferAddr.getText().toString().trim();
+        if (TextUtils.isEmpty(addr)) {
+            ToastUtil.showWX("请输入现住址");
+            return;
+        }
+
         String reason = transferReason.getText().toString().trim();
+        String transferCardTypeStr = transferCardType.getText().toString().trim();
         Map<String, Object> map = new HashMap<>();
         map.put("electriccarsId", checkBean.getId());
         map.put("plateNumber", checkBean.getPlateNumber());
@@ -263,6 +333,7 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
         map.put("cardType", cardCode);
         map.put("cardId", cardNum);
         map.put("residentAddress", addr);
+        map.put("cardName", transferCardTypeStr);
         map.put("phone1", phone);
         map.put("phone2", phone2);
         map.put("reason", reason);
@@ -280,8 +351,8 @@ public class CarTransferActivity extends LoadingBaseActivity<CarTransferImpl> im
                 if (bean.getDrawable() != null) {
                     ToastUtil.showWX(bean.getPhotoName() + "正在上传");
                     return;
-                }else {
-                    if(bean.isIsRequire()){
+                } else {
+                    if (bean.isIsRequire()) {
                         ToastUtil.showWX(bean.getPhotoName() + "未添加");
                         return;
                     }

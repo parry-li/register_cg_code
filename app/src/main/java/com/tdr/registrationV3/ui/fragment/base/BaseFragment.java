@@ -24,7 +24,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        systemBaseID =  SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
+        systemBaseID =  SPUtils.getInstance().getInt(BaseConstants.City_systemID);
         zProgressHUD = new ZProgressHUD(this.getActivity());
         zProgressHUD.setMessage("加载中");
         customBaseDialog = new CustomWindowDialog(this.getActivity());

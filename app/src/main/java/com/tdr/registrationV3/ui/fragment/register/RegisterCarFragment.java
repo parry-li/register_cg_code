@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -27,6 +28,7 @@ import com.tdr.registrationV3.bean.VehicleConfigBean;
 import com.tdr.registrationV3.constants.BaseConstants;
 import com.tdr.registrationV3.http.utils.DdcResult;
 import com.tdr.registrationV3.listener.CustomSendLister;
+import com.tdr.registrationV3.rx.RxBus;
 import com.tdr.registrationV3.service.impl.car.RegisterImpl;
 import com.tdr.registrationV3.service.presenter.RegisterPresenter;
 import com.tdr.registrationV3.ui.activity.CodeTableActivity;
@@ -40,8 +42,10 @@ import com.tdr.registrationV3.utils.LabelSendUtil;
 import com.tdr.registrationV3.utils.PhotoUtils;
 import com.tdr.registrationV3.utils.ScanUtil;
 import com.tdr.registrationV3.utils.ToastUtil;
+import com.tdr.registrationV3.utils.UIUtils;
 import com.tdr.registrationV3.view.ChackBlackCarDialog;
 import com.tdr.registrationV3.view.CustomTimeDialog;
+import com.zhihu.matisse.Matisse;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -51,6 +55,9 @@ import java.util.Map;
 import butterknife.BindView;
 import butterknife.OnClick;
 import butterknife.Unbinder;
+import rx.Subscription;
+import rx.functions.Action1;
+import rx.subscriptions.CompositeSubscription;
 
 public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> implements RegisterPresenter.View {
 
@@ -121,6 +128,9 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     private String carRegular;
 
     private boolean isCheckBlackCar = false;//是否校验黑车默认不校验
+    private BitmapDrawable albumDrawable;
+    private CompositeSubscription buxSubscription;
+
 
     @Override
     protected RegisterImpl setPresenter() {
@@ -142,12 +152,14 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     @Override
     protected void initView() {
         mActivity = RegisterCarFragment.this.getActivity();
+        UIUtils.setEditTextUpperCase(carFrame);
+        UIUtils.setEditTextUpperCase(carElectrical);
 
         initTitle();
         initContentView();
         initPhotoRv();
         initLabelRv();
-
+        registerBux();
 
     }
 
@@ -217,10 +229,20 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
         });
     }
 
+    private boolean isSelectAlbum = false;//是否从相册选取
+
     private void initPhotoRv() {
         PhotoConfigBean configBean = ConfigUtil.getPhotoConfig();
         if (configBean == null) {
             return;
+        }
+
+        /*默认1不开启，2开启*/
+        int albumInt = configBean.getIsEnableAlbum();
+        if(albumInt == 2){
+            isSelectAlbum =true;
+        }else {
+            isSelectAlbum =false;
         }
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this.getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
@@ -242,10 +264,20 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
 
                 photoPosition = position;
-                Intent intent = PhotoUtils.getPhotoByCameraForFragment(mActivity);
-                startActivityForResult(intent, PhotoUtils.CAMERA_REQESTCODE);
+//                Intent intent = PhotoUtils.getPhotoByCameraForFragment(mActivity);
+//                startActivityForResult(intent, PhotoUtils.CAMERA_REQESTCODE);
+                if(isSelectAlbum){
+                    /*相册*/
+                    PhotoUtils.getPhotoByAlbum(mActivity);
+                }else {
+                    PhotoUtils.getPhotoByCamera(mActivity);
+                }
+
+
             }
         });
+
+
     }
 
     private void initTitle() {
@@ -316,7 +348,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
         String carPlateStr;
         if (vehicleInfoBean.isVehicleNoScan()) {
             /*扫码*/
-            carPlateStr = carPlateTv.getText().toString().trim();
+            carPlateStr = carPlateTv.getText().toString().trim().toUpperCase();
         } else {
             carPlateStr = carPlate.getText().toString().trim().toUpperCase();
         }
@@ -356,7 +388,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
         }
 
 
-        String carFrameStr = carFrame.getText().toString().trim();
+        String carFrameStr = carFrame.getText().toString().trim().toUpperCase();
         if (TextUtils.isEmpty(carFrameStr)) {
             ToastUtil.showWX("请输入车架号");
             return;
@@ -371,7 +403,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
                 }
             }
         }
-        String carElectricalStr = carElectrical.getText().toString().trim();
+        String carElectricalStr = carElectrical.getText().toString().trim().toUpperCase();
         if (TextUtils.isEmpty(carElectricalStr)) {
             ToastUtil.showWX("请输入电机号");
             return;
@@ -423,7 +455,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
 
 
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(int requestCode, int resultCode, final Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == mActivity.RESULT_OK) {
 
@@ -446,17 +478,67 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
                         carColorMinorId = cardCode1;
                     }
                     break;
-                case PhotoUtils.CAMERA_REQESTCODE:
-
-                    final Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
-                    Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
-                    Drawable drawable = new BitmapDrawable(bitmapS);
-                    photoList.get(photoPosition).setDrawable(drawable);
-                    photoList.get(photoPosition).setPhotoId(null);
-                    photoAdapter.setNewData(photoList);
-                    ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
-                    break;
-
+//                case PhotoUtils.CAMERA_REQESTCODE:
+//                    final Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
+//                    Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
+//                    Drawable drawable = new BitmapDrawable(bitmapS);
+//                    photoList.get(photoPosition).setDrawable(drawable);
+//                    photoList.get(photoPosition).setPhotoId(null);
+//                    photoAdapter.setNewData(photoList);
+//                    ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
+//                    break;
+//                case PhotoUtils.ALBUM_REQESTCODE:
+//                    String capture_type = "";
+//                    try {
+//                        capture_type = (String) data.getExtras().get("capture_type");
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    }
+//                    if ("camera".equals(capture_type)) {
+//                        Intent intent = PhotoUtils.getPhotoByCameraForFragment(mActivity);
+//                        startActivityForResult(intent, PhotoUtils.CAMERA_REQESTCODE);
+//                        return;
+//                    }
+//                    zProgressHUD.show();
+//                    new Thread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            Uri s1 = null;
+//                            s1 = Matisse.obtainResult(data).get(0);
+//                            try {
+//                                Bitmap albumBitmap = PhotoUtils.getBitmapFormUri(mActivity, s1);
+//                                ImageSendUtil.sendImage(albumBitmap, photoPosition, customSendLister);
+//                                Bitmap bitmapS = PhotoUtils.compressImageBySmile(albumBitmap);
+//                                 albumDrawable = new BitmapDrawable(bitmapS);
+//
+//                            } catch (Exception e) {
+//                                e.printStackTrace();
+//                                ToastUtil.showWX("图片异常，请重新选择");
+//                                zProgressHUD.dismiss();
+//                            }
+//                            mActivity.runOnUiThread(new Runnable() {
+//                                @Override
+//                                public void run() {
+//                                    if (albumDrawable != null) {
+//                                        try {
+//                                            photoList.get(photoPosition).setDrawable(albumDrawable);
+//                                            photoList.get(photoPosition).setPhotoId(null);
+//                                            photoAdapter.setNewData(photoList);
+//                                            zProgressHUD.dismiss();
+//                                        } catch (Exception e) {
+//                                            e.printStackTrace();
+//                                        }
+//
+//                                    }
+//                                }
+//
+//
+//                            });
+//
+//                        }
+//                    }).start();
+//
+//                    break;
                 case ScanUtil.SCANNIN_QR_CODE:
                     setScanData(data);
                     break;
@@ -464,6 +546,56 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
 
 
         }
+    }
+
+
+    /**
+     * 注册bux
+     */
+    private void registerBux() {
+
+        if (this.buxSubscription == null) {
+            Subscription mSubscription = RxBus.getDefault().toObservable(BaseConstants.BUX_SEND_CODE, Integer.class)
+                    .subscribe(new Action1<Integer>() {
+                        @Override
+                        public void call(Integer integer) {
+                            if (integer == PhotoUtils.CAMERA_REQESTCODE) {//拍照
+                                setImageForResult();
+                            } else if (integer == PhotoUtils.ALBUM_REQESTCODE) {//相册
+                                Intent data = ((RegisterMainActivity) mActivity).resultData;
+                                /*拍照*/
+                                String capture_type = "";
+                                try {
+                                    capture_type = (String) data.getExtras().get("capture_type");
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                                if ("camera".equals(capture_type)) {
+                                   PhotoUtils.getPhotoByCamera(mActivity);
+                                    return;
+                                }
+                                Uri s1 = Matisse.obtainResult(data).get(0);
+                                PhotoUtils.setImageUri(s1);
+                                setImageForResult();
+                            }
+
+                        }
+                    });
+            if (this.buxSubscription == null) {
+                buxSubscription = new CompositeSubscription();
+            }
+            buxSubscription.add(mSubscription);
+        }
+    }
+
+    private void setImageForResult() {
+        final Bitmap bitmap = PhotoUtils.getResultCameraPhoto();
+        Bitmap bitmapS = PhotoUtils.compressImageBySmile(bitmap);
+        Drawable drawable = new BitmapDrawable(bitmapS);
+        photoList.get(photoPosition).setDrawable(drawable);
+        photoList.get(photoPosition).setPhotoId(null);
+        photoAdapter.setNewData(photoList);
+        ImageSendUtil.sendImage(bitmap, photoPosition, customSendLister);
     }
 
     CustomSendLister customSendLister = new CustomSendLister() {
@@ -553,7 +685,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     public void checkPlateNumberFail(String msg) {
         setState(BaseConstants.STATE_SUCCESS);
         zProgressHUD.dismiss();
-        showCustomWindowDialog("服务提示", msg, false,true);
+        showCustomWindowDialog("服务提示", msg, false, true);
     }
 
     @Override
@@ -604,7 +736,7 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     @Override
     public void loadingFail(String msg) {
         setState(BaseConstants.STATE_SUCCESS);
-        showCustomWindowDialog("服务提示", msg, false,true);
+        showCustomWindowDialog("服务提示", msg, false, true);
 
     }
 
@@ -612,5 +744,13 @@ public class RegisterCarFragment extends LoadingBaseFragment<RegisterImpl> imple
     @Override
     protected void submitRequestData() {
 
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (this.buxSubscription != null && buxSubscription.hasSubscriptions()) {
+            this.buxSubscription.unsubscribe();
+        }
     }
 }

@@ -220,6 +220,10 @@
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable\\abc_list_divider_material.xml"
     },
     {
+        "merged": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_image_load.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\src\\main\\res\\mipmap-xxxhdpi\\image_load.png"
+    },
+    {
         "merged": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\build\\intermediates\\res\\merged\\release\\layout-v21_notification_action.xml.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\0109d18acab97c5fc61e7e2c97225c40\\res\\layout-v21\\notification_action.xml"
     },
@@ -1454,6 +1458,10 @@
     {
         "merged": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kwz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\44ea7bcf07ece97fe42f0219084b16d3\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_image_error.png.flat",
+        "source": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\src\\main\\res\\mipmap-xxxhdpi\\image_error.png"
     },
     {
         "merged": "E:\\tiandiren\\android_cg_app\\register_cg_code\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_instrance.xml.flat",

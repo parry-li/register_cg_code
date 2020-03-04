@@ -2,6 +2,7 @@ package com.tdr.registrationV3.utils;
 
 import com.google.gson.Gson;
 import com.parry.utils.code.SPUtils;
+import com.tdr.registrationV3.bean.BillBean;
 import com.tdr.registrationV3.bean.PhotoConfigBean;
 import com.tdr.registrationV3.bean.RegisterConfigBean;
 import com.tdr.registrationV3.bean.VehicleConfigBean;
@@ -119,6 +120,16 @@ public class ConfigUtil {
             String RegisterConfigJson = SPUtils.getInstance().getString(BaseConstants.RegisterConfig);
             RegisterConfigBean configBean = new Gson().fromJson(RegisterConfigJson, RegisterConfigBean.class);
             return configBean;
+        } catch (Exception e) {
+            ToastUtil.showWX(e.getMessage());
+        }
+        return null;
+    }
+    public static BillBean getBill() {
+        try {
+            String billJson = SPUtils.getInstance().getString(BaseConstants.BillConfig);
+            BillBean billBean = new Gson().fromJson(billJson, BillBean.class);
+            return billBean;
         } catch (Exception e) {
             ToastUtil.showWX(e.getMessage());
         }

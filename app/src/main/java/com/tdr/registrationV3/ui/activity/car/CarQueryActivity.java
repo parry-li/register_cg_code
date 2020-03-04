@@ -52,11 +52,13 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     private CarCheckBean carCheckBean;
     private int systemId;
     private InfoBean carInfoBean;
+    private EditInfoBean editInfoBean;
 
     @Override
     protected void initTitle() {
 
         titleBackClickListener(comTitleBack);
+
 
 
     }
@@ -74,7 +76,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     @Override
     protected void initData(Bundle savedInstanceState) {
 
-        systemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID);
+        systemId = SPUtils.getInstance().getInt(BaseConstants.City_systemID);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
 
@@ -104,6 +106,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
         }
 
         UIUtils.setEditTextUpperCase(plateNumber);
+        UIUtils.setEditTextUpperCase(carId);
         queryDialog = new CarQueryDialog();
         queryDialog.setOnCustomDialogClickListener(new CarQueryDialog.OnItemClickListener() {
             @Override
@@ -133,12 +136,23 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
                 } else if (rolePower.equals("change_register")) {//信息变更
                     String dataJson = new Gson().toJson(carInfoBean);
                     bundle.putString(BaseConstants.data,dataJson);
-                    ActivityUtil.goActivityWithBundle(CarQueryActivity.this, ChangeRegisterActivity.class, bundle);
+                    ActivityUtil.goActivityWithBundle(CarQueryActivity.this, ChangeRegisterMainActivity.class, bundle);
                 } else if (rolePower.equals("insurance_change")
                         || rolePower.equals(BaseConstants.funJurisdiction[3])
                         || rolePower.equals(BaseConstants.funJurisdiction[4])
                         ) {//服务变更、服务购买、服务延期
+
+
+                    if(rolePower.equals("insurance_change")){
+                        /*保险变更没有数据时 不进入保险*/
+                        if(editInfoBean.getPolicyList()==null||editInfoBean.getPolicyList().size()==0){
+                            showCustomWindowDialog("温馨提示","车辆未购买保险或保险已续保不允许变更",false,true);
+                            return;
+                        }
+                    }
                     bundle.putSerializable(BaseConstants.data, carCheckBean);
+                    String dataJson = new Gson().toJson(editInfoBean);
+                    bundle.putSerializable(BaseConstants.data2, dataJson);
                     ActivityUtil.goActivityWithBundle(CarQueryActivity.this, InsuranceActivity.class, bundle);
                 }
 
@@ -161,7 +175,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     public void onViewClicked() {
 
         String plateNumberStr = plateNumber.getText().toString().trim().toUpperCase();
-        String carIdStr = carId.getText().toString().trim();
+        String carIdStr = carId.getText().toString().trim().toUpperCase();
 
         if (TextUtils.isEmpty(plateNumberStr)) {
             ToastUtil.showWX("请输入车牌号");
@@ -174,6 +188,10 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
                 || rolePower.equals(BaseConstants.funJurisdiction[3])
                 || rolePower.equals(BaseConstants.funJurisdiction[4])) {
             map.put("plateNumber", plateNumberStr);
+            /*服务变更添加参数 筛选已续保的保险*/
+            if(rolePower.equals("insurance_change")){
+                map.put("serviceChange", "1");
+            }
 
             mPresenter.getEditInfo(getRequestBody(map));
         } else {
@@ -204,6 +222,7 @@ public class CarQueryActivity extends LoadingBaseActivity<CarQueryImpl> implemen
     @Override
     public void getEditInfoSuccess(EditInfoBean infoBean) {
         zProgressHUD.dismiss();
+        editInfoBean = infoBean;
         carCheckBean.setId(infoBean.getId());
         carCheckBean.setBuyDate(infoBean.getBuyInfo().getBuyDate());
         carCheckBean.setVehicleType(infoBean.getBaseInfo().getVehicleType());

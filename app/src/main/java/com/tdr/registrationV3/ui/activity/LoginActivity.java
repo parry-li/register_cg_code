@@ -63,18 +63,19 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     //    private RxPermissions rxPermissions;
     private static final int PERMISSION_CODE= 124;
     private static final String[] PERMISSION_CONTENT =
-            {Manifest.permission.CAMERA, Manifest.permission.VIBRATE};
+            {Manifest.permission.CAMERA, Manifest.permission.VIBRATE,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_EXTERNAL_STORAGE};
     private String cityCode;
 
     @Override
     protected void initTitle() {
-        String cityNameStr = SPUtils.getInstance().getString(BaseConstants.Login_city_name, "");
-        systemId = SPUtils.getInstance().getInt(BaseConstants.Login_city_systemID, -100);
+        String cityNameStr = SPUtils.getInstance().getString(BaseConstants.City_name, "");
+        systemId = SPUtils.getInstance().getInt(BaseConstants.City_systemID, -100);
         if (systemId != -100) {
             cityName.setText(cityNameStr);
         }
 
-        cityCode =   SPUtils.getInstance().getString(BaseConstants.Login_city_cityCode);
+        cityCode =   SPUtils.getInstance().getString(BaseConstants.City_cityCode);
         getPermission();
         isShowBackDialog=false;
     }
@@ -264,7 +265,7 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
         if (resultCode == RESULT_OK) {
             if (requestCode == CITY_PICK) {
                 String name = data.getStringExtra(BaseConstants.KEY_NAME);
-                 cityCode = data.getStringExtra(BaseConstants.Login_city_cityCode);
+                 cityCode = data.getStringExtra(BaseConstants.City_cityCode);
                 systemId = data.getIntExtra(BaseConstants.KEY_VALUE, -100);
                 cityName.setText(name);
 
@@ -277,12 +278,13 @@ public class LoginActivity extends LoadingBaseActivity<LoginImpl> implements Log
     public void getCityConfigureSuccess(List<CityConfigureBean> cityConfigureBeanList) {
         zProgressHUD.dismiss();
         SPUtils.getInstance().put(BaseConstants.token, loginData.getToken());
-        SPUtils.getInstance().put(BaseConstants.Login_city_name, cityName.getText().toString());
-        SPUtils.getInstance().put(BaseConstants.Login_city_systemID, systemId);
-        SPUtils.getInstance().put(BaseConstants.Login_city_unitName, loginData.getUnitName());
-        SPUtils.getInstance().put(BaseConstants.Login_city_cityCode, cityCode);
-        SPUtils.getInstance().put(BaseConstants.Login_city_unitNo, loginData.getUnitNo());
-        SPUtils.getInstance().put(BaseConstants.Login_city_unitType, loginData.getUnitType());
+        SPUtils.getInstance().put(BaseConstants.City_name, cityName.getText().toString());
+        SPUtils.getInstance().put(BaseConstants.City_systemID, systemId);
+        SPUtils.getInstance().put(BaseConstants.Login_unitName, loginData.getUnitName());
+        SPUtils.getInstance().put(BaseConstants.City_cityCode, cityCode);
+        SPUtils.getInstance().put(BaseConstants.Login_unitNo, loginData.getUnitNo());
+        SPUtils.getInstance().put(BaseConstants.Login_unitType, loginData.getUnitType());
+        SPUtils.getInstance().put(BaseConstants.Login_name, loginData.getLogin());
         /*保存配置*/
         for (CityConfigureBean configureBean : cityConfigureBeanList) {
             SPUtils.getInstance().put(BaseConstants.APP_NAME+configureBean.getConfigureName(), configureBean.getContent());
