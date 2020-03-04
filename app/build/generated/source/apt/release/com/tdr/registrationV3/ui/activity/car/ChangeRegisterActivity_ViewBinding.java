@@ -1,13 +1,13 @@
 // Generated code from Butter Knife. Do not modify!
-package com.tdr.registrationV3.ui.activity.car;
+package com.tdr.registrationv3.ui.activity.car;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
-import com.tdr.registrationV3.R;
-import com.tdr.registrationV3.view.NoScrollViewPager;
+import com.tdr.registrationv3.R;
+import com.tdr.registrationv3.view.NoScrollViewPager;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 

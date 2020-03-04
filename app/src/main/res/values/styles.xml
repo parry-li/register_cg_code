@@ -162,6 +162,7 @@
         <item name="android:layout_weight">1</item>
         <item name="android:background">@null</item>
         <item name="android:gravity">end</item>
+        <item name="android:singleLine">true</item>
         <item name="android:paddingRight">@dimen/dp_40</item>
         <item name="android:paddingTop">@dimen/dp_15</item>
         <item name="android:paddingBottom">@dimen/dp_15</item>

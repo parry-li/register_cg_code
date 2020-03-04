@@ -187,7 +187,7 @@ MERGED from [it.sephiroth.android.library.easing:library:1.0.2] C:\Users\kwz\.gr
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:76:9-44
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:73:9-50
-activity#com.tdr.registrationV3.ui.activity.LoginActivity
+activity#com.tdr.registrationv3.ui.activity.LoginActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:84:9-92:20
 	android:label
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:86:13-45
@@ -203,67 +203,67 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:90:17-77
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:90:27-74
-activity#com.tdr.registrationV3.ui.activity.CityPickerActivity
+activity#com.tdr.registrationv3.ui.activity.CityPickerActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:95:9-90
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:95:19-87
-activity#com.tdr.registrationV3.ui.activity.home.HomeActivity
+activity#com.tdr.registrationv3.ui.activity.home.HomeActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:96:9-89
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:96:19-86
-activity#com.tdr.registrationV3.ui.activity.car.CarQueryActivity
+activity#com.tdr.registrationv3.ui.activity.car.CarQueryActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:97:9-92
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:97:19-89
-activity#com.tdr.registrationV3.ui.activity.car.CarChangeActivity
+activity#com.tdr.registrationv3.ui.activity.car.CarChangeActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:98:9-93
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:98:19-90
-activity#com.tdr.registrationV3.ui.activity.car.RegisterMainActivity
+activity#com.tdr.registrationv3.ui.activity.car.RegisterMainActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:99:9-96
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:99:19-93
-activity#com.tdr.registrationV3.ui.activity.scan.QRCodeScanActivity
+activity#com.tdr.registrationv3.ui.activity.scan.QRCodeScanActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:100:9-95
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:100:19-92
-activity#com.tdr.registrationV3.ui.activity.car.CarTransferActivity
+activity#com.tdr.registrationv3.ui.activity.car.CarTransferActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:101:9-95
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:101:19-92
-activity#com.tdr.registrationV3.ui.activity.CodeTableActivity
+activity#com.tdr.registrationv3.ui.activity.CodeTableActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:102:9-89
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:102:19-86
-activity#com.tdr.registrationV3.ui.activity.car.CarScrapActivity
+activity#com.tdr.registrationv3.ui.activity.car.CarScrapActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:103:9-92
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:103:19-89
-activity#com.tdr.registrationV3.ui.activity.insurance.InsuranceActivity
+activity#com.tdr.registrationv3.ui.activity.insurance.InsuranceActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:104:9-99
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:104:19-96
-activity#com.tdr.registrationV3.ui.activity.car.ChangeRegisterMainActivity
+activity#com.tdr.registrationv3.ui.activity.car.ChangeRegisterMainActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:105:9-102
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:105:19-99
-activity#com.tdr.registrationV3.ui.activity.me.PasswordActivity
+activity#com.tdr.registrationv3.ui.activity.me.PasswordActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:106:9-91
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:106:19-88
-activity#com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitActivity
+activity#com.tdr.registrationv3.ui.activity.insurance.InsuranceWaitActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:9-103
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:19-100
-activity#com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitChangeActivity
+activity#com.tdr.registrationv3.ui.activity.insurance.InsuranceWaitChangeActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:9-109
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:19-106
-activity#com.tdr.registrationV3.ui.activity.home.PersonageStatisticsActivity
+activity#com.tdr.registrationv3.ui.activity.home.PersonageStatisticsActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:109:9-104
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:109:19-101
-activity#com.tdr.registrationV3.ui.activity.home.StatisticsUnitActivity
+activity#com.tdr.registrationv3.ui.activity.home.StatisticsUnitActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:110:9-99
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:110:19-96

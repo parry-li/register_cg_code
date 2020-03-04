@@ -13,7 +13,7 @@
 
     <!--<include layout="@layout/cp_view_search" />-->
 
-    <com.tdr.registrationV3.view.SearchView
+    <com.tdr.registrationv3.view.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

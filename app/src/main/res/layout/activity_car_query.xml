@@ -13,6 +13,7 @@
         style="@style/module_edit"
         android:layout_height="@dimen/dp_55"
         android:lines="1"
+        android:singleLine="true"
         android:layout_marginLeft="@dimen/dp_25"
         android:hint="请输入车牌号" />
 
@@ -26,6 +27,7 @@
         style="@style/module_edit"
         android:layout_marginLeft="@dimen/dp_25"
         android:layout_height="@dimen/dp_55"
+        android:singleLine="true"
         android:hint="请输入证件号码" />
 
     <View

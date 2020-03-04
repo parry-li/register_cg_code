@@ -34,7 +34,7 @@
             android:src="@mipmap/scan_close" />
     </RelativeLayout>
 
-    <com.tdr.registrationV3.view.NullMenuEditText
+    <com.tdr.registrationv3.view.NullMenuEditText
         android:id="@+id/edit_content"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -75,7 +75,7 @@
     <!---->
 
     <!--</LinearLayout>-->
-    <com.tdr.registrationV3.view.NullMenuEditText
+    <com.tdr.registrationv3.view.NullMenuEditText
         android:id="@+id/edit_contentConfirm"
         android:layout_width="match_parent"
         android:layout_height="40dp"

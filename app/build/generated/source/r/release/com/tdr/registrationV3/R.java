@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.tdr.registrationV3;
+package com.tdr.registrationv3;
 
 public final class R {
   public static final class anim {
@@ -7232,7 +7232,7 @@ public final class R {
       0x7f03025e
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7244,7 +7244,7 @@ public final class R {
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7259,7 +7259,7 @@ public final class R {
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7274,7 +7274,7 @@ public final class R {
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7287,7 +7287,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7300,7 +7300,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7313,7 +7313,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7326,7 +7326,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7339,7 +7339,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7352,7 +7352,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7364,7 +7364,7 @@ public final class R {
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7386,7 +7386,7 @@ public final class R {
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7398,7 +7398,7 @@ public final class R {
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7411,7 +7411,7 @@ public final class R {
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7424,7 +7424,7 @@ public final class R {
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -7434,7 +7434,7 @@ public final class R {
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7446,7 +7446,7 @@ public final class R {
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7458,7 +7458,7 @@ public final class R {
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7470,7 +7470,7 @@ public final class R {
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7482,7 +7482,7 @@ public final class R {
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7495,7 +7495,7 @@ public final class R {
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7507,7 +7507,7 @@ public final class R {
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7525,7 +7525,7 @@ public final class R {
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7537,7 +7537,7 @@ public final class R {
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7550,7 +7550,7 @@ public final class R {
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7562,7 +7562,7 @@ public final class R {
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -7572,7 +7572,7 @@ public final class R {
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7584,7 +7584,7 @@ public final class R {
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -7594,7 +7594,7 @@ public final class R {
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7703,7 +7703,7 @@ public final class R {
       0x7f03020e, 0x7f03025e
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7715,7 +7715,7 @@ public final class R {
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7730,7 +7730,7 @@ public final class R {
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7742,7 +7742,7 @@ public final class R {
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7755,7 +7755,7 @@ public final class R {
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7767,7 +7767,7 @@ public final class R {
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7795,7 +7795,7 @@ public final class R {
       0x7f0300ce, 0x7f030118
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7807,7 +7807,7 @@ public final class R {
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -7858,7 +7858,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7871,7 +7871,7 @@ public final class R {
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7883,7 +7883,7 @@ public final class R {
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7895,7 +7895,7 @@ public final class R {
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7907,7 +7907,7 @@ public final class R {
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7919,7 +7919,7 @@ public final class R {
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -7929,7 +7929,7 @@ public final class R {
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8190,7 +8190,7 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#elevation}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8203,7 +8203,7 @@ public final class R {
      */
     public static final int AppBarLayout_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#expanded}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#expanded}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -8213,7 +8213,7 @@ public final class R {
      */
     public static final int AppBarLayout_expanded=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#liftOnScroll}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#liftOnScroll}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -8243,7 +8243,7 @@ public final class R {
       0x7f030201, 0x7f030202, 0x7f030203, 0x7f030204
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#state_collapsed}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#state_collapsed}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -8253,7 +8253,7 @@ public final class R {
      */
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#state_collapsible}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#state_collapsible}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -8263,7 +8263,7 @@ public final class R {
      */
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#state_liftable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#state_liftable}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -8273,7 +8273,7 @@ public final class R {
      */
     public static final int AppBarLayoutStates_state_liftable=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#state_lifted}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#state_lifted}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -8299,7 +8299,7 @@ public final class R {
       0x7f030172, 0x7f030173
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_scrollFlags}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -8320,7 +8320,7 @@ public final class R {
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_scrollInterpolator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_scrollInterpolator}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8367,7 +8367,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8379,7 +8379,7 @@ public final class R {
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -8390,7 +8390,7 @@ public final class R {
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8443,7 +8443,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8455,7 +8455,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -8466,7 +8466,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8664,7 +8664,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8677,7 +8677,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8690,7 +8690,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8702,7 +8702,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8715,7 +8715,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8732,7 +8732,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#firstBaselineToTopHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#firstBaselineToTopHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8745,7 +8745,7 @@ public final class R {
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -8755,7 +8755,7 @@ public final class R {
      */
     public static final int AppCompatTextView_fontFamily=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#lastBaselineToBottomHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#lastBaselineToBottomHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8768,7 +8768,7 @@ public final class R {
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#lineHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#lineHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8781,7 +8781,7 @@ public final class R {
      */
     public static final int AppCompatTextView_lineHeight=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9101,7 +9101,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9113,7 +9113,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9125,7 +9125,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9137,7 +9137,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9158,7 +9158,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9170,7 +9170,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9182,7 +9182,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9194,7 +9194,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9206,7 +9206,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9218,7 +9218,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9230,7 +9230,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9242,7 +9242,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9254,7 +9254,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9266,7 +9266,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9278,7 +9278,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9293,7 +9293,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9305,7 +9305,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9317,7 +9317,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9329,7 +9329,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9341,7 +9341,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9353,7 +9353,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9365,7 +9365,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9377,7 +9377,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9389,7 +9389,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9401,7 +9401,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9413,7 +9413,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9425,7 +9425,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9437,7 +9437,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9449,7 +9449,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9461,7 +9461,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9473,7 +9473,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9485,7 +9485,7 @@ public final class R {
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9497,7 +9497,7 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -9507,7 +9507,7 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9519,7 +9519,7 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9531,7 +9531,7 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9543,7 +9543,7 @@ public final class R {
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9555,7 +9555,7 @@ public final class R {
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9567,7 +9567,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9579,7 +9579,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9591,7 +9591,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9603,7 +9603,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9615,7 +9615,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9627,7 +9627,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9639,7 +9639,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9651,7 +9651,7 @@ public final class R {
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9663,7 +9663,7 @@ public final class R {
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9674,7 +9674,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9685,7 +9685,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9696,7 +9696,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9707,7 +9707,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9718,7 +9718,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9729,7 +9729,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9744,7 +9744,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9755,7 +9755,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9766,7 +9766,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9777,7 +9777,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9789,7 +9789,7 @@ public final class R {
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dialogCornerRadius}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dialogCornerRadius}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9802,7 +9802,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9815,7 +9815,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9827,7 +9827,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9839,7 +9839,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9851,7 +9851,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9863,7 +9863,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9876,7 +9876,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9888,7 +9888,7 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9903,7 +9903,7 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9915,7 +9915,7 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9927,7 +9927,7 @@ public final class R {
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9939,7 +9939,7 @@ public final class R {
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9951,7 +9951,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9963,7 +9963,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listDividerAlertDialog=72;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9975,7 +9975,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listMenuViewStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9987,7 +9987,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPopupWindowStyle=74;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10000,7 +10000,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeight=75;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10013,7 +10013,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10026,7 +10026,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10039,7 +10039,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10052,7 +10052,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10064,7 +10064,7 @@ public final class R {
      */
     public static final int AppCompatTheme_panelBackground=80;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10076,7 +10076,7 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListTheme=81;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10089,7 +10089,7 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListWidth=82;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10101,7 +10101,7 @@ public final class R {
      */
     public static final int AppCompatTheme_popupMenuStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10113,7 +10113,7 @@ public final class R {
      */
     public static final int AppCompatTheme_popupWindowStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10125,7 +10125,7 @@ public final class R {
      */
     public static final int AppCompatTheme_radioButtonStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10137,7 +10137,7 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyle=86;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10149,7 +10149,7 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=87;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10161,7 +10161,7 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=88;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10173,7 +10173,7 @@ public final class R {
      */
     public static final int AppCompatTheme_searchViewStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10185,7 +10185,7 @@ public final class R {
      */
     public static final int AppCompatTheme_seekBarStyle=90;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10197,7 +10197,7 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackground=91;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10209,7 +10209,7 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10221,7 +10221,7 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10233,7 +10233,7 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10245,7 +10245,7 @@ public final class R {
      */
     public static final int AppCompatTheme_switchStyle=95;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10257,7 +10257,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10269,7 +10269,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItem=97;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10281,7 +10281,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10293,7 +10293,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=99;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10305,7 +10305,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10317,7 +10317,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10329,7 +10329,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10341,7 +10341,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10356,7 +10356,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=104;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10371,7 +10371,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorSearchUrl=105;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10383,7 +10383,7 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10395,7 +10395,7 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarStyle=107;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10410,7 +10410,7 @@ public final class R {
      */
     public static final int AppCompatTheme_tooltipForegroundColor=108;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10422,7 +10422,7 @@ public final class R {
      */
     public static final int AppCompatTheme_tooltipFrameBackground=109;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -10432,7 +10432,7 @@ public final class R {
      */
     public static final int AppCompatTheme_viewInflaterClass=110;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -10442,7 +10442,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBar=111;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -10452,7 +10452,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBarOverlay=112;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -10462,7 +10462,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionModeOverlay=113;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10479,7 +10479,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10496,7 +10496,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10513,7 +10513,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10530,7 +10530,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10547,7 +10547,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMajor=118;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10564,7 +10564,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMinor=119;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -10592,7 +10592,7 @@ public final class R {
       0x7f0301d6, 0x7f0301d7, 0x7f0301fa
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlAccentColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlAccentColor}
      * attribute's value can be found in the {@link #BallPulseFooter} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -10603,7 +10603,7 @@ public final class R {
      */
     public static final int BallPulseFooter_srlAccentColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlClassicsSpinnerStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlClassicsSpinnerStyle}
      * attribute's value can be found in the {@link #BallPulseFooter} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10621,7 +10621,7 @@ public final class R {
      */
     public static final int BallPulseFooter_srlClassicsSpinnerStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlPrimaryColor}
      * attribute's value can be found in the {@link #BallPulseFooter} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -10650,7 +10650,7 @@ public final class R {
       0x7f0301d6, 0x7f0301e5, 0x7f0301fa
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlAccentColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlAccentColor}
      * attribute's value can be found in the {@link #BezierRadarHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -10661,7 +10661,7 @@ public final class R {
      */
     public static final int BezierRadarHeader_srlAccentColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableHorizontalDrag}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableHorizontalDrag}
      * attribute's value can be found in the {@link #BezierRadarHeader} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -10671,7 +10671,7 @@ public final class R {
      */
     public static final int BezierRadarHeader_srlEnableHorizontalDrag=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlPrimaryColor}
      * attribute's value can be found in the {@link #BezierRadarHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -10707,7 +10707,7 @@ public final class R {
       0x7f0300da, 0x7f030106
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -10718,7 +10718,7 @@ public final class R {
      */
     public static final int BottomAppBar_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fabAlignmentMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fabAlignmentMode}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10735,7 +10735,7 @@ public final class R {
      */
     public static final int BottomAppBar_fabAlignmentMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fabCradleMargin}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fabCradleMargin}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10748,7 +10748,7 @@ public final class R {
      */
     public static final int BottomAppBar_fabCradleMargin=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fabCradleRoundedCornerRadius}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fabCradleRoundedCornerRadius}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10761,7 +10761,7 @@ public final class R {
      */
     public static final int BottomAppBar_fabCradleRoundedCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fabCradleVerticalOffset}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fabCradleVerticalOffset}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10774,7 +10774,7 @@ public final class R {
      */
     public static final int BottomAppBar_fabCradleVerticalOffset=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#hideOnScroll}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#hideOnScroll}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -10818,7 +10818,7 @@ public final class R {
       0x7f030134, 0x7f03018c
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#elevation}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10831,7 +10831,7 @@ public final class R {
      */
     public static final int BottomNavigationView_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemBackground}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10843,7 +10843,7 @@ public final class R {
      */
     public static final int BottomNavigationView_itemBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemHorizontalTranslationEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemHorizontalTranslationEnabled}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -10853,7 +10853,7 @@ public final class R {
      */
     public static final int BottomNavigationView_itemHorizontalTranslationEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemIconSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemIconSize}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10866,7 +10866,7 @@ public final class R {
      */
     public static final int BottomNavigationView_itemIconSize=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -10877,7 +10877,7 @@ public final class R {
      */
     public static final int BottomNavigationView_itemIconTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemTextAppearanceActive}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemTextAppearanceActive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10889,7 +10889,7 @@ public final class R {
      */
     public static final int BottomNavigationView_itemTextAppearanceActive=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemTextAppearanceInactive}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemTextAppearanceInactive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10901,7 +10901,7 @@ public final class R {
      */
     public static final int BottomNavigationView_itemTextAppearanceInactive=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -10912,7 +10912,7 @@ public final class R {
      */
     public static final int BottomNavigationView_itemTextColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#labelVisibilityMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#labelVisibilityMode}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10931,7 +10931,7 @@ public final class R {
      */
     public static final int BottomNavigationView_labelVisibilityMode=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#menu}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10963,7 +10963,7 @@ public final class R {
       0x7f030040, 0x7f030041, 0x7f030043, 0x7f030044
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#behavior_fitToContents}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#behavior_fitToContents}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -10973,7 +10973,7 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_behavior_fitToContents=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#behavior_hideable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#behavior_hideable}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -10983,7 +10983,7 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#behavior_peekHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#behavior_peekHeight}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11004,7 +11004,7 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#behavior_skipCollapsed}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#behavior_skipCollapsed}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11028,7 +11028,7 @@ public final class R {
       0x7f03002c
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11105,7 +11105,7 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#cardBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#cardBackgroundColor}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -11116,7 +11116,7 @@ public final class R {
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#cardCornerRadius}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#cardCornerRadius}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11129,7 +11129,7 @@ public final class R {
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#cardElevation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#cardElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11142,7 +11142,7 @@ public final class R {
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#cardMaxElevation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#cardMaxElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11155,7 +11155,7 @@ public final class R {
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#cardPreventCornerOverlap}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#cardPreventCornerOverlap}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11165,7 +11165,7 @@ public final class R {
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#cardUseCompatPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#cardUseCompatPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11175,7 +11175,7 @@ public final class R {
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11188,7 +11188,7 @@ public final class R {
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentPaddingBottom}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11201,7 +11201,7 @@ public final class R {
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentPaddingLeft}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11214,7 +11214,7 @@ public final class R {
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentPaddingRight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentPaddingRight}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11227,7 +11227,7 @@ public final class R {
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentPaddingTop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentPaddingTop}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11393,7 +11393,7 @@ public final class R {
      */
     public static final int Chip_android_checkable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#checkedIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#checkedIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11405,7 +11405,7 @@ public final class R {
      */
     public static final int Chip_checkedIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#checkedIconEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#checkedIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11415,7 +11415,7 @@ public final class R {
      */
     public static final int Chip_checkedIconEnabled=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#checkedIconVisible}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#checkedIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11425,7 +11425,7 @@ public final class R {
      */
     public static final int Chip_checkedIconVisible=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipBackgroundColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -11436,7 +11436,7 @@ public final class R {
      */
     public static final int Chip_chipBackgroundColor=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipCornerRadius}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipCornerRadius}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11449,7 +11449,7 @@ public final class R {
      */
     public static final int Chip_chipCornerRadius=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipEndPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11462,7 +11462,7 @@ public final class R {
      */
     public static final int Chip_chipEndPadding=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11474,7 +11474,7 @@ public final class R {
      */
     public static final int Chip_chipIcon=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipIconEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11484,7 +11484,7 @@ public final class R {
      */
     public static final int Chip_chipIconEnabled=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipIconSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11497,7 +11497,7 @@ public final class R {
      */
     public static final int Chip_chipIconSize=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipIconTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -11508,7 +11508,7 @@ public final class R {
      */
     public static final int Chip_chipIconTint=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipIconVisible}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11518,7 +11518,7 @@ public final class R {
      */
     public static final int Chip_chipIconVisible=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipMinHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipMinHeight}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11531,7 +11531,7 @@ public final class R {
      */
     public static final int Chip_chipMinHeight=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipStartPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11544,7 +11544,7 @@ public final class R {
      */
     public static final int Chip_chipStartPadding=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipStrokeColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipStrokeColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -11555,7 +11555,7 @@ public final class R {
      */
     public static final int Chip_chipStrokeColor=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipStrokeWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipStrokeWidth}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11568,7 +11568,7 @@ public final class R {
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#closeIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11580,7 +11580,7 @@ public final class R {
      */
     public static final int Chip_closeIcon=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#closeIconEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#closeIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11590,7 +11590,7 @@ public final class R {
      */
     public static final int Chip_closeIconEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#closeIconEndPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#closeIconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11603,7 +11603,7 @@ public final class R {
      */
     public static final int Chip_closeIconEndPadding=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#closeIconSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#closeIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11616,7 +11616,7 @@ public final class R {
      */
     public static final int Chip_closeIconSize=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#closeIconStartPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#closeIconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11629,7 +11629,7 @@ public final class R {
      */
     public static final int Chip_closeIconStartPadding=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#closeIconTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#closeIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -11640,7 +11640,7 @@ public final class R {
      */
     public static final int Chip_closeIconTint=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#closeIconVisible}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#closeIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11650,7 +11650,7 @@ public final class R {
      */
     public static final int Chip_closeIconVisible=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11662,7 +11662,7 @@ public final class R {
      */
     public static final int Chip_hideMotionSpec=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconEndPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11675,7 +11675,7 @@ public final class R {
      */
     public static final int Chip_iconEndPadding=28;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconStartPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11688,7 +11688,7 @@ public final class R {
      */
     public static final int Chip_iconStartPadding=29;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#rippleColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -11699,7 +11699,7 @@ public final class R {
      */
     public static final int Chip_rippleColor=30;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11711,7 +11711,7 @@ public final class R {
      */
     public static final int Chip_showMotionSpec=31;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textEndPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11724,7 +11724,7 @@ public final class R {
      */
     public static final int Chip_textEndPadding=32;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textStartPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11762,7 +11762,7 @@ public final class R {
       0x7f0301cc, 0x7f0301cd
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#checkedChip}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#checkedChip}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11774,7 +11774,7 @@ public final class R {
      */
     public static final int ChipGroup_checkedChip=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipSpacing}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipSpacing}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11787,7 +11787,7 @@ public final class R {
      */
     public static final int ChipGroup_chipSpacing=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipSpacingHorizontal}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipSpacingHorizontal}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11800,7 +11800,7 @@ public final class R {
      */
     public static final int ChipGroup_chipSpacingHorizontal=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipSpacingVertical}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipSpacingVertical}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11813,7 +11813,7 @@ public final class R {
      */
     public static final int ChipGroup_chipSpacingVertical=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#singleLine}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#singleLine}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11823,7 +11823,7 @@ public final class R {
      */
     public static final int ChipGroup_singleLine=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#singleSelection}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#singleSelection}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -11869,7 +11869,7 @@ public final class R {
       0x7f0301f1, 0x7f0301fa, 0x7f0301fd
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlAccentColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlAccentColor}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -11880,7 +11880,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlAccentColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlClassicsSpinnerStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlClassicsSpinnerStyle}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11898,7 +11898,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlClassicsSpinnerStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableArrow}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableArrow}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11910,7 +11910,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlDrawableArrow=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableArrowSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableArrowSize}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11923,7 +11923,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlDrawableArrowSize=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableMarginRight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableMarginRight}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11936,7 +11936,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlDrawableMarginRight=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableProgress}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableProgress}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11948,7 +11948,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlDrawableProgress=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableProgressSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableProgressSize}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11961,7 +11961,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlDrawableProgressSize=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableSize}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11974,7 +11974,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlDrawableSize=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlFinishDuration}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlFinishDuration}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -11983,7 +11983,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlFinishDuration=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlPrimaryColor}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -11994,7 +11994,7 @@ public final class R {
      */
     public static final int ClassicsFooter_srlPrimaryColor=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlTextSizeTitle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlTextSizeTitle}
      * attribute's value can be found in the {@link #ClassicsFooter} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12050,7 +12050,7 @@ public final class R {
       0x7f0301fd, 0x7f0301fe
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlAccentColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlAccentColor}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -12061,7 +12061,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlAccentColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlClassicsSpinnerStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlClassicsSpinnerStyle}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12079,7 +12079,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlClassicsSpinnerStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableArrow}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableArrow}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12091,7 +12091,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlDrawableArrow=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableArrowSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableArrowSize}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12104,7 +12104,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlDrawableArrowSize=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableMarginRight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableMarginRight}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12117,7 +12117,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlDrawableMarginRight=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableProgress}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableProgress}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12129,7 +12129,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlDrawableProgress=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableProgressSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableProgressSize}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12142,7 +12142,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlDrawableProgressSize=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDrawableSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDrawableSize}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12155,7 +12155,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlDrawableSize=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableLastTime}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableLastTime}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -12165,7 +12165,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlEnableLastTime=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlFinishDuration}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlFinishDuration}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -12174,7 +12174,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlFinishDuration=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlPrimaryColor}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -12185,7 +12185,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlPrimaryColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlTextSizeTime}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlTextSizeTime}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12198,7 +12198,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlTextSizeTime=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlTextSizeTitle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlTextSizeTitle}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12211,7 +12211,7 @@ public final class R {
      */
     public static final int ClassicsHeader_srlTextSizeTitle=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlTextTimeMarginTop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlTextTimeMarginTop}
      * attribute's value can be found in the {@link #ClassicsHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12271,7 +12271,7 @@ public final class R {
       0x7f030206, 0x7f030254, 0x7f030255, 0x7f030260
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#collapsedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#collapsedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -12296,7 +12296,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#collapsedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#collapsedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12308,7 +12308,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentScrim}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -12319,7 +12319,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#expandedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#expandedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -12344,7 +12344,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#expandedTitleMargin}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#expandedTitleMargin}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12357,7 +12357,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#expandedTitleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#expandedTitleMarginBottom}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12370,7 +12370,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#expandedTitleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#expandedTitleMarginEnd}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12383,7 +12383,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#expandedTitleMarginStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#expandedTitleMarginStart}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12396,7 +12396,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#expandedTitleMarginTop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#expandedTitleMarginTop}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12409,7 +12409,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#expandedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#expandedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12421,7 +12421,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#scrimAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#scrimAnimationDuration}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -12430,7 +12430,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#scrimVisibleHeightTrigger}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#scrimVisibleHeightTrigger}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12443,7 +12443,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#statusBarScrim}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#statusBarScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -12454,7 +12454,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#title}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -12464,7 +12464,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleEnabled}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -12474,7 +12474,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#toolbarId}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#toolbarId}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12502,7 +12502,7 @@ public final class R {
       0x7f03013b, 0x7f03013c
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_collapseMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12520,7 +12520,7 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_collapseParallaxMultiplier}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_collapseParallaxMultiplier}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -12567,7 +12567,7 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -12606,7 +12606,7 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -12617,7 +12617,7 @@ public final class R {
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12853,7 +12853,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_minHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -12863,7 +12863,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12884,7 +12884,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_barrierDirection=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -12894,7 +12894,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_chainUseRtl=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12906,7 +12906,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_constraintSet=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -12916,7 +12916,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -12926,7 +12926,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -12936,7 +12936,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -12945,7 +12945,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12965,7 +12965,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -12974,7 +12974,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12994,7 +12994,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13014,7 +13014,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13026,7 +13026,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -13035,7 +13035,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13048,7 +13048,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -13058,7 +13058,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13078,7 +13078,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13098,7 +13098,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13111,7 +13111,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13124,7 +13124,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -13133,7 +13133,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13151,7 +13151,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13172,7 +13172,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13193,7 +13193,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -13202,7 +13202,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -13211,7 +13211,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13229,7 +13229,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -13238,7 +13238,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -13247,7 +13247,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13267,7 +13267,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13287,7 +13287,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -13296,7 +13296,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13316,7 +13316,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13336,7 +13336,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13356,7 +13356,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13376,7 +13376,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -13385,7 +13385,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13405,7 +13405,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13425,7 +13425,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -13434,7 +13434,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13452,7 +13452,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -13461,7 +13461,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13479,7 +13479,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13500,7 +13500,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13521,7 +13521,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -13530,7 +13530,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13543,7 +13543,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13556,7 +13556,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13569,7 +13569,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13582,7 +13582,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13595,7 +13595,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13608,7 +13608,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13621,7 +13621,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13634,7 +13634,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13671,7 +13671,7 @@ public final class R {
       0x7f03009f, 0x7f0300c9
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#content}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#content}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13683,7 +13683,7 @@ public final class R {
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#emptyVisibility}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#emptyVisibility}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14176,7 +14176,7 @@ public final class R {
      */
     public static final int ConstraintSet_android_elevation=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -14186,7 +14186,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constrainedHeight=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -14196,7 +14196,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constrainedWidth=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -14205,7 +14205,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14225,7 +14225,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -14234,7 +14234,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14254,7 +14254,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=28;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14274,7 +14274,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=29;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14286,7 +14286,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintCircle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -14295,7 +14295,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintCircleAngle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14308,7 +14308,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintCircleRadius=32;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -14318,7 +14318,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=33;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14338,7 +14338,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14358,7 +14358,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=35;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14371,7 +14371,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=36;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14384,7 +14384,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintGuide_end=37;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -14393,7 +14393,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=38;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14411,7 +14411,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintHeight_default=39;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14432,7 +14432,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintHeight_max=40;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14453,7 +14453,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintHeight_min=41;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -14462,7 +14462,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintHeight_percent=42;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -14471,7 +14471,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=43;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14489,7 +14489,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -14498,7 +14498,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=45;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -14507,7 +14507,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=46;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14527,7 +14527,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=47;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14547,7 +14547,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=48;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -14556,7 +14556,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintRight_creator=49;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14576,7 +14576,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=50;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14596,7 +14596,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=51;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14616,7 +14616,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=52;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14636,7 +14636,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=53;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -14645,7 +14645,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintTop_creator=54;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14665,7 +14665,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=55;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14685,7 +14685,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=56;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -14694,7 +14694,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=57;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14712,7 +14712,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=58;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -14721,7 +14721,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=59;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14739,7 +14739,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintWidth_default=60;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14760,7 +14760,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintWidth_max=61;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14781,7 +14781,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintWidth_min=62;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -14790,7 +14790,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_constraintWidth_percent=63;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14803,7 +14803,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_editor_absoluteX=64;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14816,7 +14816,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_editor_absoluteY=65;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14829,7 +14829,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_goneMarginBottom=66;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14842,7 +14842,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_goneMarginEnd=67;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14855,7 +14855,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_goneMarginLeft=68;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14868,7 +14868,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_goneMarginRight=69;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14881,7 +14881,7 @@ public final class R {
      */
     public static final int ConstraintSet_layout_goneMarginStart=70;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14910,7 +14910,7 @@ public final class R {
       0x7f030133, 0x7f030205
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#keylines}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#keylines}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14922,7 +14922,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#statusBarBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#statusBarBackground}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14993,7 +14993,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_anchor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_anchor}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15005,7 +15005,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_anchorGravity}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_anchorGravity}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15034,7 +15034,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_behavior}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_behavior}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -15044,7 +15044,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_dodgeInsetEdges}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_dodgeInsetEdges}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15067,7 +15067,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_insetEdge}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_insetEdge}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15089,7 +15089,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_keyline}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_keyline}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -15114,7 +15114,7 @@ public final class R {
       0x7f030049, 0x7f03004a
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15126,7 +15126,7 @@ public final class R {
      */
     public static final int DesignTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15167,7 +15167,7 @@ public final class R {
       0x7f0300c1, 0x7f0300fd, 0x7f0301d1, 0x7f03024b
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15180,7 +15180,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15193,7 +15193,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15206,7 +15206,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#color}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -15217,7 +15217,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15230,7 +15230,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15243,7 +15243,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -15253,7 +15253,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15284,7 +15284,7 @@ public final class R {
       0x7f0300b6, 0x7f0300b7, 0x7f0300b8
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dhDrawable1}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dhDrawable1}
      * attribute's value can be found in the {@link #DropboxHeader} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15296,7 +15296,7 @@ public final class R {
      */
     public static final int DropboxHeader_dhDrawable1=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dhDrawable2}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dhDrawable2}
      * attribute's value can be found in the {@link #DropboxHeader} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15308,7 +15308,7 @@ public final class R {
      */
     public static final int DropboxHeader_dhDrawable2=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dhDrawable3}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dhDrawable3}
      * attribute's value can be found in the {@link #DropboxHeader} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15361,7 +15361,7 @@ public final class R {
       0x7f03026a
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -15372,7 +15372,7 @@ public final class R {
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15393,7 +15393,7 @@ public final class R {
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#borderWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#borderWidth}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15406,7 +15406,7 @@ public final class R {
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#elevation}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15419,7 +15419,7 @@ public final class R {
      */
     public static final int FloatingActionButton_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fabCustomSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fabCustomSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15432,7 +15432,7 @@ public final class R {
      */
     public static final int FloatingActionButton_fabCustomSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fabSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fabSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15450,7 +15450,7 @@ public final class R {
      */
     public static final int FloatingActionButton_fabSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15462,7 +15462,7 @@ public final class R {
      */
     public static final int FloatingActionButton_hideMotionSpec=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#hoveredFocusedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#hoveredFocusedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15475,7 +15475,7 @@ public final class R {
      */
     public static final int FloatingActionButton_hoveredFocusedTranslationZ=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#maxImageSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#maxImageSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15488,7 +15488,7 @@ public final class R {
      */
     public static final int FloatingActionButton_maxImageSize=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#pressedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#pressedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15501,7 +15501,7 @@ public final class R {
      */
     public static final int FloatingActionButton_pressedTranslationZ=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#rippleColor}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -15512,7 +15512,7 @@ public final class R {
      */
     public static final int FloatingActionButton_rippleColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15524,7 +15524,7 @@ public final class R {
      */
     public static final int FloatingActionButton_showMotionSpec=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#useCompatPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#useCompatPadding}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -15548,7 +15548,7 @@ public final class R {
       0x7f03003f
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#behavior_autoHide}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#behavior_autoHide}
      * attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -15574,7 +15574,7 @@ public final class R {
       0x7f03012e, 0x7f030178
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemSpacing}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15587,7 +15587,7 @@ public final class R {
      */
     public static final int FlowLayout_itemSpacing=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#lineSpacing}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#lineSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15625,7 +15625,7 @@ public final class R {
       0x7f0300f7, 0x7f0300f8
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -15635,7 +15635,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15647,7 +15647,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15664,7 +15664,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -15681,7 +15681,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -15691,7 +15691,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -15792,7 +15792,7 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#font}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15804,7 +15804,7 @@ public final class R {
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15821,7 +15821,7 @@ public final class R {
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontVariationSettings}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontVariationSettings}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -15831,7 +15831,7 @@ public final class R {
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -15840,7 +15840,7 @@ public final class R {
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#ttcIndex}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#ttcIndex}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -15909,7 +15909,7 @@ public final class R {
      */
     public static final int ForegroundLinearLayout_android_foregroundGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#foregroundInsidePadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#foregroundInsidePadding}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -15939,7 +15939,7 @@ public final class R {
       0x7f0300e5, 0x7f0300e7, 0x7f0300e8, 0x7f0300ee
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvBottomTextSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvBottomTextSize}
      * attribute's value can be found in the {@link #FunGameHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15952,7 +15952,7 @@ public final class R {
      */
     public static final int FunGameHeader_fgvBottomTextSize=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvMaskBottomText}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvMaskBottomText}
      * attribute's value can be found in the {@link #FunGameHeader} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -15962,7 +15962,7 @@ public final class R {
      */
     public static final int FunGameHeader_fgvMaskBottomText=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvMaskTopText}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvMaskTopText}
      * attribute's value can be found in the {@link #FunGameHeader} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -15972,7 +15972,7 @@ public final class R {
      */
     public static final int FunGameHeader_fgvMaskTopText=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvTopTextSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvTopTextSize}
      * attribute's value can be found in the {@link #FunGameHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16001,7 +16001,7 @@ public final class R {
       0x7f0300e3, 0x7f0300e4
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvBallSpeed}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvBallSpeed}
      * attribute's value can be found in the {@link #FunGameHitBlockHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16014,7 +16014,7 @@ public final class R {
      */
     public static final int FunGameHitBlockHeader_fgvBallSpeed=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvBlockHorizontalNum}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvBlockHorizontalNum}
      * attribute's value can be found in the {@link #FunGameHitBlockHeader} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -16050,7 +16050,7 @@ public final class R {
       0x7f0300eb, 0x7f0300ec, 0x7f0300ed
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvBackColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvBackColor}
      * attribute's value can be found in the {@link #FunGameView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -16061,7 +16061,7 @@ public final class R {
      */
     public static final int FunGameView_fgvBackColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvLeftColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvLeftColor}
      * attribute's value can be found in the {@link #FunGameView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -16072,7 +16072,7 @@ public final class R {
      */
     public static final int FunGameView_fgvLeftColor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvMiddleColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvMiddleColor}
      * attribute's value can be found in the {@link #FunGameView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -16083,7 +16083,7 @@ public final class R {
      */
     public static final int FunGameView_fgvMiddleColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvRightColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvRightColor}
      * attribute's value can be found in the {@link #FunGameView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -16094,7 +16094,7 @@ public final class R {
      */
     public static final int FunGameView_fgvRightColor=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvTextGameOver}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvTextGameOver}
      * attribute's value can be found in the {@link #FunGameView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -16104,7 +16104,7 @@ public final class R {
      */
     public static final int FunGameView_fgvTextGameOver=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvTextLoading}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvTextLoading}
      * attribute's value can be found in the {@link #FunGameView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -16114,7 +16114,7 @@ public final class R {
      */
     public static final int FunGameView_fgvTextLoading=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fgvTextLoadingFinished}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fgvTextLoadingFinished}
      * attribute's value can be found in the {@link #FunGameView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -16485,7 +16485,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16497,7 +16497,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16510,7 +16510,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -16520,7 +16520,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -16800,7 +16800,7 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -16811,7 +16811,7 @@ public final class R {
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16832,7 +16832,7 @@ public final class R {
      */
     public static final int MaterialButton_backgroundTintMode=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#cornerRadius}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#cornerRadius}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16845,7 +16845,7 @@ public final class R {
      */
     public static final int MaterialButton_cornerRadius=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#icon}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16857,7 +16857,7 @@ public final class R {
      */
     public static final int MaterialButton_icon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconGravity}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconGravity}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -16874,7 +16874,7 @@ public final class R {
      */
     public static final int MaterialButton_iconGravity=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconPadding}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16887,7 +16887,7 @@ public final class R {
      */
     public static final int MaterialButton_iconPadding=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconSize}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16900,7 +16900,7 @@ public final class R {
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -16911,7 +16911,7 @@ public final class R {
      */
     public static final int MaterialButton_iconTint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16932,7 +16932,7 @@ public final class R {
      */
     public static final int MaterialButton_iconTintMode=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#rippleColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -16943,7 +16943,7 @@ public final class R {
      */
     public static final int MaterialButton_rippleColor=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -16954,7 +16954,7 @@ public final class R {
      */
     public static final int MaterialButton_strokeColor=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16983,7 +16983,7 @@ public final class R {
       0x7f030207, 0x7f030208
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -16994,7 +16994,7 @@ public final class R {
      */
     public static final int MaterialCardView_strokeColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17090,7 +17090,7 @@ public final class R {
       0x7f03023d, 0x7f030242, 0x7f030243, 0x7f030247
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17102,7 +17102,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17114,7 +17114,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_bottomSheetStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipGroupStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipGroupStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17126,7 +17126,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_chipGroupStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipStandaloneStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipStandaloneStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17138,7 +17138,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_chipStandaloneStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#chipStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#chipStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17150,7 +17150,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorAccent}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -17161,7 +17161,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -17172,7 +17172,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -17183,7 +17183,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -17194,7 +17194,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorPrimaryDark=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#colorSecondary}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#colorSecondary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -17205,7 +17205,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17217,7 +17217,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_editTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#floatingActionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#floatingActionButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17247,7 +17247,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_floatingActionButtonStyle=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#materialButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#materialButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17259,7 +17259,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_materialButtonStyle=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#materialCardViewStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#materialCardViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17271,7 +17271,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_materialCardViewStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#navigationViewStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#navigationViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17283,7 +17283,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_navigationViewStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#scrimBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#scrimBackground}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17298,7 +17298,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_scrimBackground=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17310,7 +17310,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_snackbarButtonStyle=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17322,7 +17322,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_tabStyle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceBody1}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceBody1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17334,7 +17334,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceBody1=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceBody2}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceBody2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17346,7 +17346,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceBody2=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceButton}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceButton}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17358,7 +17358,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceButton=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceCaption}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceCaption}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17370,7 +17370,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceCaption=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceHeadline1}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceHeadline1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17382,7 +17382,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline1=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceHeadline2}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceHeadline2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17394,7 +17394,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline2=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceHeadline3}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceHeadline3}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17406,7 +17406,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline3=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceHeadline4}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceHeadline4}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17418,7 +17418,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline4=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceHeadline5}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceHeadline5}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17430,7 +17430,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline5=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceHeadline6}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceHeadline6}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17442,7 +17442,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline6=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceOverline}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceOverline}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17454,7 +17454,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceOverline=28;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceSubtitle1}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceSubtitle1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17466,7 +17466,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle1=29;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAppearanceSubtitle2}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAppearanceSubtitle2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17478,7 +17478,7 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle2=30;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textInputStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textInputStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17510,7 +17510,7 @@ public final class R {
       0x7f03018d, 0x7f03018e, 0x7f03018f, 0x7f030190
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#mhPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#mhPrimaryColor}
      * attribute's value can be found in the {@link #MaterialHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -17521,7 +17521,7 @@ public final class R {
      */
     public static final int MaterialHeader_mhPrimaryColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#mhShadowColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#mhShadowColor}
      * attribute's value can be found in the {@link #MaterialHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -17532,7 +17532,7 @@ public final class R {
      */
     public static final int MaterialHeader_mhShadowColor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#mhShadowRadius}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#mhShadowRadius}
      * attribute's value can be found in the {@link #MaterialHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17545,7 +17545,7 @@ public final class R {
      */
     public static final int MaterialHeader_mhShadowRadius=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#mhShowBezierWave}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#mhShowBezierWave}
      * attribute's value can be found in the {@link #MaterialHeader} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -17863,7 +17863,7 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17875,7 +17875,7 @@ public final class R {
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -17885,7 +17885,7 @@ public final class R {
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -17895,7 +17895,7 @@ public final class R {
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -17916,7 +17916,7 @@ public final class R {
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -17926,7 +17926,7 @@ public final class R {
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -17937,7 +17937,7 @@ public final class R {
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17958,7 +17958,7 @@ public final class R {
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -17979,7 +17979,7 @@ public final class R {
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -17999,7 +17999,7 @@ public final class R {
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -18128,7 +18128,7 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -18138,7 +18138,7 @@ public final class R {
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18166,7 +18166,7 @@ public final class R {
       0x7f030191, 0x7f030192
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#msvPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#msvPrimaryColor}
      * attribute's value can be found in the {@link #MountanScenceView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -18177,7 +18177,7 @@ public final class R {
      */
     public static final int MountanScenceView_msvPrimaryColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#msvViewportHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#msvViewportHeight}
      * attribute's value can be found in the {@link #MountanScenceView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18266,7 +18266,7 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#elevation}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18279,7 +18279,7 @@ public final class R {
      */
     public static final int NavigationView_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#headerLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#headerLayout}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18291,7 +18291,7 @@ public final class R {
      */
     public static final int NavigationView_headerLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemBackground}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18303,7 +18303,7 @@ public final class R {
      */
     public static final int NavigationView_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemHorizontalPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemHorizontalPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18316,7 +18316,7 @@ public final class R {
      */
     public static final int NavigationView_itemHorizontalPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemIconPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemIconPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18329,7 +18329,7 @@ public final class R {
      */
     public static final int NavigationView_itemIconPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -18340,7 +18340,7 @@ public final class R {
      */
     public static final int NavigationView_itemIconTint=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemTextAppearance}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18352,7 +18352,7 @@ public final class R {
      */
     public static final int NavigationView_itemTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -18363,7 +18363,7 @@ public final class R {
      */
     public static final int NavigationView_itemTextColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#menu}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18391,7 +18391,7 @@ public final class R {
       0x7f0301a7, 0x7f0301a8
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#phAccentColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#phAccentColor}
      * attribute's value can be found in the {@link #PhoenixHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -18402,7 +18402,7 @@ public final class R {
      */
     public static final int PhoenixHeader_phAccentColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#phPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#phPrimaryColor}
      * attribute's value can be found in the {@link #PhoenixHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -18458,7 +18458,7 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -18482,7 +18482,7 @@ public final class R {
       0x7f030200
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -18508,7 +18508,7 @@ public final class R {
       0x7f03019a, 0x7f03019d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18521,7 +18521,7 @@ public final class R {
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18605,7 +18605,7 @@ public final class R {
      */
     public static final int RecyclerView_android_descendantFocusability=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fastScrollEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fastScrollEnabled}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -18615,7 +18615,7 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fastScrollHorizontalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fastScrollHorizontalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18627,7 +18627,7 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollHorizontalThumbDrawable=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fastScrollHorizontalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fastScrollHorizontalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18639,7 +18639,7 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollHorizontalTrackDrawable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fastScrollVerticalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fastScrollVerticalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18651,7 +18651,7 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollVerticalThumbDrawable=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fastScrollVerticalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fastScrollVerticalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18663,7 +18663,7 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layoutManager}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layoutManager}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -18673,7 +18673,7 @@ public final class R {
      */
     public static final int RecyclerView_layoutManager=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#reverseLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#reverseLayout}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -18683,7 +18683,7 @@ public final class R {
      */
     public static final int RecyclerView_reverseLayout=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#spanCount}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#spanCount}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -18692,7 +18692,7 @@ public final class R {
      */
     public static final int RecyclerView_spanCount=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#stackFromEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#stackFromEnd}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -18716,7 +18716,7 @@ public final class R {
       0x7f030122
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#insetForeground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18745,7 +18745,7 @@ public final class R {
       0x7f030042
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#behavior_overlapTop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#behavior_overlapTop}
      * attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18918,7 +18918,7 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18930,7 +18930,7 @@ public final class R {
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18942,7 +18942,7 @@ public final class R {
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -18952,7 +18952,7 @@ public final class R {
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18964,7 +18964,7 @@ public final class R {
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -18974,7 +18974,7 @@ public final class R {
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18986,7 +18986,7 @@ public final class R {
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18998,7 +18998,7 @@ public final class R {
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -19008,7 +19008,7 @@ public final class R {
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19020,7 +19020,7 @@ public final class R {
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19032,7 +19032,7 @@ public final class R {
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19044,7 +19044,7 @@ public final class R {
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19056,7 +19056,7 @@ public final class R {
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19142,7 +19142,7 @@ public final class R {
       0x7f0301f8, 0x7f0301f9, 0x7f0301fa, 0x7f0301fb
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlAccentColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlAccentColor}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -19153,7 +19153,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlAccentColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDisableContentWhenLoading}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDisableContentWhenLoading}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19163,7 +19163,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlDisableContentWhenLoading=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDisableContentWhenRefresh}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDisableContentWhenRefresh}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19173,7 +19173,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlDisableContentWhenRefresh=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlDragRate}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlDragRate}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -19182,7 +19182,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlDragRate=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableAutoLoadmore}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableAutoLoadmore}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19192,7 +19192,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableAutoLoadmore=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableFooterFollowWhenLoadFinished}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableFooterFollowWhenLoadFinished}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19202,7 +19202,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableFooterFollowWhenLoadFinished=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableFooterTranslationContent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableFooterTranslationContent}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19212,7 +19212,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableFooterTranslationContent=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableHeaderTranslationContent}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableHeaderTranslationContent}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19222,7 +19222,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableHeaderTranslationContent=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableLoadmore}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableLoadmore}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19232,7 +19232,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableLoadmore=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableLoadmoreWhenContentNotFull}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableLoadmoreWhenContentNotFull}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19242,7 +19242,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableLoadmoreWhenContentNotFull=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableNestedScrolling}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableNestedScrolling}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19252,7 +19252,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableNestedScrolling=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableOverScrollBounce}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableOverScrollBounce}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19262,7 +19262,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableOverScrollBounce=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableOverScrollDrag}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableOverScrollDrag}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19272,7 +19272,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableOverScrollDrag=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnablePreviewInEditMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnablePreviewInEditMode}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19282,7 +19282,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnablePreviewInEditMode=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnablePureScrollMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnablePureScrollMode}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19292,7 +19292,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnablePureScrollMode=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableRefresh}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableRefresh}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19302,7 +19302,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableRefresh=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableScrollContentWhenLoaded}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableScrollContentWhenLoaded}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19312,7 +19312,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableScrollContentWhenLoaded=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlEnableScrollContentWhenRefreshed}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlEnableScrollContentWhenRefreshed}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19322,7 +19322,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlEnableScrollContentWhenRefreshed=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlFixedFooterViewId}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlFixedFooterViewId}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19334,7 +19334,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlFixedFooterViewId=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlFixedHeaderViewId}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlFixedHeaderViewId}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19346,7 +19346,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlFixedHeaderViewId=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlFooterHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlFooterHeight}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19359,7 +19359,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlFooterHeight=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlFooterMaxDragRate}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlFooterMaxDragRate}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -19368,7 +19368,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlFooterMaxDragRate=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlFooterTriggerRate}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlFooterTriggerRate}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -19377,7 +19377,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlFooterTriggerRate=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlHeaderHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlHeaderHeight}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19390,7 +19390,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlHeaderHeight=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlHeaderMaxDragRate}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlHeaderMaxDragRate}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -19399,7 +19399,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlHeaderMaxDragRate=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlHeaderTriggerRate}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlHeaderTriggerRate}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -19408,7 +19408,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlHeaderTriggerRate=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlPrimaryColor}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -19419,7 +19419,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_srlPrimaryColor=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#srlReboundDuration}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#srlReboundDuration}
      * attribute's value can be found in the {@link #SmartRefreshLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -19444,7 +19444,7 @@ public final class R {
       0x7f030174, 0x7f030175
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_srlBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_srlBackgroundColor}
      * attribute's value can be found in the {@link #SmartRefreshLayout_Layout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -19455,7 +19455,7 @@ public final class R {
      */
     public static final int SmartRefreshLayout_Layout_layout_srlBackgroundColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#layout_srlSpinnerStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#layout_srlSpinnerStyle}
      * attribute's value can be found in the {@link #SmartRefreshLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -19491,7 +19491,7 @@ public final class R {
       0x7f0301ce, 0x7f0301cf
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19503,7 +19503,7 @@ public final class R {
      */
     public static final int Snackbar_snackbarButtonStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#snackbarStyle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#snackbarStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19546,7 +19546,7 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#elevation}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19559,7 +19559,7 @@ public final class R {
      */
     public static final int SnackbarLayout_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#maxActionInlineWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#maxActionInlineWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19657,7 +19657,7 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19796,7 +19796,7 @@ public final class R {
       0x7f0301c3, 0x7f0301c4, 0x7f0301c5
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#shhDropHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#shhDropHeight}
      * attribute's value can be found in the {@link #StoreHouseHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19809,7 +19809,7 @@ public final class R {
      */
     public static final int StoreHouseHeader_shhDropHeight=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#shhLineWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#shhLineWidth}
      * attribute's value can be found in the {@link #StoreHouseHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19822,7 +19822,7 @@ public final class R {
      */
     public static final int StoreHouseHeader_shhLineWidth=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#shhText}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#shhText}
      * attribute's value can be found in the {@link #StoreHouseHeader} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -19907,7 +19907,7 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#showText}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19917,7 +19917,7 @@ public final class R {
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -19927,7 +19927,7 @@ public final class R {
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19940,7 +19940,7 @@ public final class R {
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19953,7 +19953,7 @@ public final class R {
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19965,7 +19965,7 @@ public final class R {
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19978,7 +19978,7 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -19989,7 +19989,7 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20010,7 +20010,7 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#track}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20022,7 +20022,7 @@ public final class R {
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -20033,7 +20033,7 @@ public final class R {
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20174,7 +20174,7 @@ public final class R {
       0x7f03022d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabBackground}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabBackground}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20186,7 +20186,7 @@ public final class R {
      */
     public static final int TabLayout_tabBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabContentStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabContentStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20199,7 +20199,7 @@ public final class R {
      */
     public static final int TabLayout_tabContentStart=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabGravity}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20216,7 +20216,7 @@ public final class R {
      */
     public static final int TabLayout_tabGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabIconTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabIconTint}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -20227,7 +20227,7 @@ public final class R {
      */
     public static final int TabLayout_tabIconTint=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabIconTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabIconTintMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20248,7 +20248,7 @@ public final class R {
      */
     public static final int TabLayout_tabIconTintMode=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabIndicator}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabIndicator}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20260,7 +20260,7 @@ public final class R {
      */
     public static final int TabLayout_tabIndicator=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabIndicatorAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabIndicatorAnimationDuration}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -20269,7 +20269,7 @@ public final class R {
      */
     public static final int TabLayout_tabIndicatorAnimationDuration=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabIndicatorColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabIndicatorColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -20280,7 +20280,7 @@ public final class R {
      */
     public static final int TabLayout_tabIndicatorColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabIndicatorFullWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabIndicatorFullWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -20290,7 +20290,7 @@ public final class R {
      */
     public static final int TabLayout_tabIndicatorFullWidth=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabIndicatorGravity}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabIndicatorGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20309,7 +20309,7 @@ public final class R {
      */
     public static final int TabLayout_tabIndicatorGravity=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabIndicatorHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabIndicatorHeight}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20322,7 +20322,7 @@ public final class R {
      */
     public static final int TabLayout_tabIndicatorHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabInlineLabel}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabInlineLabel}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -20332,7 +20332,7 @@ public final class R {
      */
     public static final int TabLayout_tabInlineLabel=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabMaxWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabMaxWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20345,7 +20345,7 @@ public final class R {
      */
     public static final int TabLayout_tabMaxWidth=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabMinWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabMinWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20358,7 +20358,7 @@ public final class R {
      */
     public static final int TabLayout_tabMinWidth=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20375,7 +20375,7 @@ public final class R {
      */
     public static final int TabLayout_tabMode=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabPadding}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabPadding}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20388,7 +20388,7 @@ public final class R {
      */
     public static final int TabLayout_tabPadding=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabPaddingBottom}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20401,7 +20401,7 @@ public final class R {
      */
     public static final int TabLayout_tabPaddingBottom=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabPaddingEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabPaddingEnd}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20414,7 +20414,7 @@ public final class R {
      */
     public static final int TabLayout_tabPaddingEnd=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabPaddingStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabPaddingStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20427,7 +20427,7 @@ public final class R {
      */
     public static final int TabLayout_tabPaddingStart=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabPaddingTop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabPaddingTop}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20440,7 +20440,7 @@ public final class R {
      */
     public static final int TabLayout_tabPaddingTop=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabRippleColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabRippleColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -20451,7 +20451,7 @@ public final class R {
      */
     public static final int TabLayout_tabRippleColor=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabSelectedTextColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabSelectedTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -20462,7 +20462,7 @@ public final class R {
      */
     public static final int TabLayout_tabSelectedTextColor=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabTextAppearance}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20474,7 +20474,7 @@ public final class R {
      */
     public static final int TabLayout_tabTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabTextColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -20485,7 +20485,7 @@ public final class R {
      */
     public static final int TabLayout_tabTextColor=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#tabUnboundedRipple}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#tabUnboundedRipple}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -20509,7 +20509,7 @@ public final class R {
       0x7f030249
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#thPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#thPrimaryColor}
      * attribute's value can be found in the {@link #TaurusHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -20704,7 +20704,7 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -20714,7 +20714,7 @@ public final class R {
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20827,7 +20827,7 @@ public final class R {
      */
     public static final int TextInputLayout_android_hint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#boxBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#boxBackgroundColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -20838,7 +20838,7 @@ public final class R {
      */
     public static final int TextInputLayout_boxBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#boxBackgroundMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#boxBackgroundMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20856,7 +20856,7 @@ public final class R {
      */
     public static final int TextInputLayout_boxBackgroundMode=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#boxCollapsedPaddingTop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#boxCollapsedPaddingTop}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20869,7 +20869,7 @@ public final class R {
      */
     public static final int TextInputLayout_boxCollapsedPaddingTop=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#boxCornerRadiusBottomEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#boxCornerRadiusBottomEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20882,7 +20882,7 @@ public final class R {
      */
     public static final int TextInputLayout_boxCornerRadiusBottomEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#boxCornerRadiusBottomStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#boxCornerRadiusBottomStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20895,7 +20895,7 @@ public final class R {
      */
     public static final int TextInputLayout_boxCornerRadiusBottomStart=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#boxCornerRadiusTopEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#boxCornerRadiusTopEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20908,7 +20908,7 @@ public final class R {
      */
     public static final int TextInputLayout_boxCornerRadiusTopEnd=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#boxCornerRadiusTopStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#boxCornerRadiusTopStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20921,7 +20921,7 @@ public final class R {
      */
     public static final int TextInputLayout_boxCornerRadiusTopStart=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#boxStrokeColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#boxStrokeColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -20932,7 +20932,7 @@ public final class R {
      */
     public static final int TextInputLayout_boxStrokeColor=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#boxStrokeWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#boxStrokeWidth}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20945,7 +20945,7 @@ public final class R {
      */
     public static final int TextInputLayout_boxStrokeWidth=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#counterEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#counterEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -20955,7 +20955,7 @@ public final class R {
      */
     public static final int TextInputLayout_counterEnabled=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#counterMaxLength}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#counterMaxLength}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -20964,7 +20964,7 @@ public final class R {
      */
     public static final int TextInputLayout_counterMaxLength=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#counterOverflowTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#counterOverflowTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20976,7 +20976,7 @@ public final class R {
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#counterTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#counterTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20988,7 +20988,7 @@ public final class R {
      */
     public static final int TextInputLayout_counterTextAppearance=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#errorEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#errorEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -20998,7 +20998,7 @@ public final class R {
      */
     public static final int TextInputLayout_errorEnabled=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#errorTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#errorTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21010,7 +21010,7 @@ public final class R {
      */
     public static final int TextInputLayout_errorTextAppearance=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#helperText}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#helperText}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -21020,7 +21020,7 @@ public final class R {
      */
     public static final int TextInputLayout_helperText=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#helperTextEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#helperTextEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -21030,7 +21030,7 @@ public final class R {
      */
     public static final int TextInputLayout_helperTextEnabled=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#helperTextTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#helperTextTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21042,7 +21042,7 @@ public final class R {
      */
     public static final int TextInputLayout_helperTextTextAppearance=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#hintAnimationEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#hintAnimationEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -21052,7 +21052,7 @@ public final class R {
      */
     public static final int TextInputLayout_hintAnimationEnabled=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#hintEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#hintEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -21062,7 +21062,7 @@ public final class R {
      */
     public static final int TextInputLayout_hintEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#hintTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#hintTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21074,7 +21074,7 @@ public final class R {
      */
     public static final int TextInputLayout_hintTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#passwordToggleContentDescription}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#passwordToggleContentDescription}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -21084,7 +21084,7 @@ public final class R {
      */
     public static final int TextInputLayout_passwordToggleContentDescription=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#passwordToggleDrawable}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#passwordToggleDrawable}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21096,7 +21096,7 @@ public final class R {
      */
     public static final int TextInputLayout_passwordToggleDrawable=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#passwordToggleEnabled}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#passwordToggleEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -21106,7 +21106,7 @@ public final class R {
      */
     public static final int TextInputLayout_passwordToggleEnabled=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#passwordToggleTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#passwordToggleTint}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -21117,7 +21117,7 @@ public final class R {
      */
     public static final int TextInputLayout_passwordToggleTint=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#passwordToggleTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#passwordToggleTintMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -21167,7 +21167,7 @@ public final class R {
      */
     public static final int ThemeEnforcement_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#enforceMaterialTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#enforceMaterialTheme}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -21177,7 +21177,7 @@ public final class R {
      */
     public static final int ThemeEnforcement_enforceMaterialTheme=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#enforceTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#enforceTextAppearance}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -21306,7 +21306,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -21323,7 +21323,7 @@ public final class R {
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -21333,7 +21333,7 @@ public final class R {
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21345,7 +21345,7 @@ public final class R {
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21358,7 +21358,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21371,7 +21371,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21384,7 +21384,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21397,7 +21397,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21410,7 +21410,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21423,7 +21423,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21435,7 +21435,7 @@ public final class R {
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -21445,7 +21445,7 @@ public final class R {
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21458,7 +21458,7 @@ public final class R {
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -21468,7 +21468,7 @@ public final class R {
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21480,7 +21480,7 @@ public final class R {
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21492,7 +21492,7 @@ public final class R {
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -21502,7 +21502,7 @@ public final class R {
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21514,7 +21514,7 @@ public final class R {
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -21525,7 +21525,7 @@ public final class R {
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -21535,7 +21535,7 @@ public final class R {
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21548,7 +21548,7 @@ public final class R {
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21561,7 +21561,7 @@ public final class R {
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21574,7 +21574,7 @@ public final class R {
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21587,7 +21587,7 @@ public final class R {
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21600,7 +21600,7 @@ public final class R {
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21613,7 +21613,7 @@ public final class R {
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21625,7 +21625,7 @@ public final class R {
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -21689,7 +21689,7 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21702,7 +21702,7 @@ public final class R {
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21715,7 +21715,7 @@ public final class R {
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#theme}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21760,7 +21760,7 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -21771,7 +21771,7 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -21878,7 +21878,7 @@ public final class R {
       0x7f030121
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#inner_corner_color}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#inner_corner_color}
      * attribute's value can be found in the {@link #ViewfinderView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -21889,7 +21889,7 @@ public final class R {
      */
     public static final int ViewfinderView_inner_corner_color=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#inner_corner_length}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#inner_corner_length}
      * attribute's value can be found in the {@link #ViewfinderView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21902,7 +21902,7 @@ public final class R {
      */
     public static final int ViewfinderView_inner_corner_length=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#inner_corner_width}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#inner_corner_width}
      * attribute's value can be found in the {@link #ViewfinderView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21915,7 +21915,7 @@ public final class R {
      */
     public static final int ViewfinderView_inner_corner_width=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#inner_height}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#inner_height}
      * attribute's value can be found in the {@link #ViewfinderView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21928,7 +21928,7 @@ public final class R {
      */
     public static final int ViewfinderView_inner_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#inner_margintop}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#inner_margintop}
      * attribute's value can be found in the {@link #ViewfinderView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21941,7 +21941,7 @@ public final class R {
      */
     public static final int ViewfinderView_inner_margintop=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#inner_scan_bitmap}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#inner_scan_bitmap}
      * attribute's value can be found in the {@link #ViewfinderView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21953,7 +21953,7 @@ public final class R {
      */
     public static final int ViewfinderView_inner_scan_bitmap=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#inner_scan_iscircle}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#inner_scan_iscircle}
      * attribute's value can be found in the {@link #ViewfinderView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -21963,7 +21963,7 @@ public final class R {
      */
     public static final int ViewfinderView_inner_scan_iscircle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#inner_scan_speed}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#inner_scan_speed}
      * attribute's value can be found in the {@link #ViewfinderView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -21972,7 +21972,7 @@ public final class R {
      */
     public static final int ViewfinderView_inner_scan_speed=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#inner_width}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#inner_width}
      * attribute's value can be found in the {@link #ViewfinderView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -22005,7 +22005,7 @@ public final class R {
       0x7f03027e, 0x7f03027f, 0x7f030280, 0x7f030281
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wshAccentColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wshAccentColor}
      * attribute's value can be found in the {@link #WaveSwipeHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -22016,7 +22016,7 @@ public final class R {
      */
     public static final int WaveSwipeHeader_wshAccentColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wshPrimaryColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wshPrimaryColor}
      * attribute's value can be found in the {@link #WaveSwipeHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -22027,7 +22027,7 @@ public final class R {
      */
     public static final int WaveSwipeHeader_wshPrimaryColor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wshShadowColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wshShadowColor}
      * attribute's value can be found in the {@link #WaveSwipeHeader} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -22038,7 +22038,7 @@ public final class R {
      */
     public static final int WaveSwipeHeader_wshShadowColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wshShadowRadius}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wshShadowRadius}
      * attribute's value can be found in the {@link #WaveSwipeHeader} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -22078,7 +22078,7 @@ public final class R {
       0x7f030271, 0x7f030272, 0x7f030273
     };
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wheelview_dividerColor}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wheelview_dividerColor}
      * attribute's value can be found in the {@link #pickerview} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -22089,7 +22089,7 @@ public final class R {
      */
     public static final int pickerview_wheelview_dividerColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wheelview_dividerWidth}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wheelview_dividerWidth}
      * attribute's value can be found in the {@link #pickerview} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -22102,7 +22102,7 @@ public final class R {
      */
     public static final int pickerview_wheelview_dividerWidth=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wheelview_gravity}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wheelview_gravity}
      * attribute's value can be found in the {@link #pickerview} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -22120,7 +22120,7 @@ public final class R {
      */
     public static final int pickerview_wheelview_gravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wheelview_lineSpacingMultiplier}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wheelview_lineSpacingMultiplier}
      * attribute's value can be found in the {@link #pickerview} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -22129,7 +22129,7 @@ public final class R {
      */
     public static final int pickerview_wheelview_lineSpacingMultiplier=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wheelview_textColorCenter}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wheelview_textColorCenter}
      * attribute's value can be found in the {@link #pickerview} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -22140,7 +22140,7 @@ public final class R {
      */
     public static final int pickerview_wheelview_textColorCenter=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wheelview_textColorOut}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wheelview_textColorOut}
      * attribute's value can be found in the {@link #pickerview} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -22151,7 +22151,7 @@ public final class R {
      */
     public static final int pickerview_wheelview_textColorOut=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tdr.registrationV3.R.attr#wheelview_textSize}
+     * <p>This symbol is the offset where the {@link com.tdr.registrationv3.R.attr#wheelview_textSize}
      * attribute's value can be found in the {@link #pickerview} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a

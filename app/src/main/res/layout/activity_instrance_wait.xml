@@ -77,7 +77,7 @@
             <!--android:textSize="@dimen/sp_14" />-->
     <!--</LinearLayout>-->
 
-    <com.tdr.registrationV3.view.SearchView
+    <com.tdr.registrationv3.view.SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

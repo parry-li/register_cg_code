@@ -196,6 +196,7 @@
                 <EditText
                     android:id="@+id/transfer_name"
                     style="@style/tv_value"
+                    android:singleLine="true"
                     android:hint="请输入姓名" />
 
             </LinearLayout>
@@ -235,6 +236,7 @@
                 <EditText
                     android:id="@+id/transfer_new_cardnum"
                     style="@style/tv_value"
+                    android:singleLine="true"
                     android:hint="请输入证件号码" />
 
             </LinearLayout>
@@ -278,6 +280,7 @@
                     android:inputType="phone"
                     android:id="@+id/transfer_new_phone"
                     style="@style/tv_value"
+
                     android:hint="请输入联系手机" />
 
             </LinearLayout>

@@ -28,11 +28,11 @@ android {
         }
     }
     defaultConfig {
-        applicationId "com.tdr.registrationV3"
+        applicationId "com.tdr.registrationv3"
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 3
-        versionName "1.3"
+        versionCode 1
+        versionName "1.0"
 
         //添加如下配置 开启annotation processor
         javaCompileOptions {
