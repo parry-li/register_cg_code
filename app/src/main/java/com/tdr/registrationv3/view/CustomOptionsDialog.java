@@ -73,7 +73,7 @@ public class CustomOptionsDialog<T> {
                         tvConfirm.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                if(UIUtils.isFastClick()){
+                                if (UIUtils.isFastClick()) {
                                     pvOptions.returnData();
                                     pvOptions.dismiss();
                                 }
