@@ -2975,7 +2975,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -3017,10 +3017,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>FixedFront</td><td>3</td><td>固定在背后</td></tr>
-     * <tr><td>MatchLayout</td><td>4</td><td>固定在前面</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>FixedFront</td><td>3</td><td></td></tr>
+     * <tr><td>MatchLayout</td><td>4</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      */
@@ -3733,8 +3733,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      */
@@ -7161,35 +7161,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.tdr.registrationV3:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.tdr.registrationV3:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.tdr.registrationV3:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.tdr.registrationV3:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.tdr.registrationV3:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.tdr.registrationV3:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.tdr.registrationV3:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.tdr.registrationV3:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.tdr.registrationV3:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.tdr.registrationV3:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.tdr.registrationV3:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.tdr.registrationV3:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.tdr.registrationV3:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.tdr.registrationV3:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.tdr.registrationV3:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.tdr.registrationV3:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.tdr.registrationV3:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.tdr.registrationV3:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.tdr.registrationV3:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.tdr.registrationV3:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.tdr.registrationV3:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.tdr.registrationV3:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.tdr.registrationV3:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.tdr.registrationV3:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.tdr.registrationV3:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.tdr.registrationV3:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.tdr.registrationV3:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.tdr.registrationV3:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.tdr.registrationV3:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.tdr.registrationv3:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.tdr.registrationv3:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.tdr.registrationv3:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.tdr.registrationv3:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.tdr.registrationv3:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.tdr.registrationv3:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.tdr.registrationv3:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.tdr.registrationv3:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.tdr.registrationv3:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.tdr.registrationv3:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.tdr.registrationv3:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.tdr.registrationv3:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.tdr.registrationv3:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.tdr.registrationv3:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.tdr.registrationv3:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.tdr.registrationv3:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.tdr.registrationv3:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.tdr.registrationv3:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.tdr.registrationv3:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.tdr.registrationv3:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.tdr.registrationv3:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.tdr.registrationv3:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.tdr.registrationv3:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.tdr.registrationv3:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.tdr.registrationv3:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.tdr.registrationv3:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.tdr.registrationv3:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.tdr.registrationv3:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.tdr.registrationv3:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -7240,7 +7240,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:background
+     * @attr name com.tdr.registrationv3:background
      */
     public static final int ActionBar_background=0;
     /**
@@ -7255,7 +7255,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:backgroundSplit
+     * @attr name com.tdr.registrationv3:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
@@ -7270,7 +7270,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:backgroundStacked
+     * @attr name com.tdr.registrationv3:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
@@ -7283,7 +7283,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetEnd
+     * @attr name com.tdr.registrationv3:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
@@ -7296,7 +7296,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetEndWithActions
+     * @attr name com.tdr.registrationv3:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
@@ -7309,7 +7309,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetLeft
+     * @attr name com.tdr.registrationv3:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
@@ -7322,7 +7322,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetRight
+     * @attr name com.tdr.registrationv3:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
@@ -7335,7 +7335,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetStart
+     * @attr name com.tdr.registrationv3:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
@@ -7348,7 +7348,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetStartWithNavigation
+     * @attr name com.tdr.registrationv3:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
@@ -7360,7 +7360,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:customNavigationLayout
+     * @attr name com.tdr.registrationv3:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
@@ -7382,7 +7382,7 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:displayOptions
+     * @attr name com.tdr.registrationv3:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
@@ -7394,7 +7394,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:divider
+     * @attr name com.tdr.registrationv3:divider
      */
     public static final int ActionBar_divider=11;
     /**
@@ -7407,7 +7407,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:elevation
+     * @attr name com.tdr.registrationv3:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
@@ -7420,7 +7420,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:height
+     * @attr name com.tdr.registrationv3:height
      */
     public static final int ActionBar_height=13;
     /**
@@ -7430,7 +7430,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:hideOnContentScroll
+     * @attr name com.tdr.registrationv3:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
@@ -7442,7 +7442,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:homeAsUpIndicator
+     * @attr name com.tdr.registrationv3:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
@@ -7454,7 +7454,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:homeLayout
+     * @attr name com.tdr.registrationv3:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
@@ -7466,7 +7466,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:icon
+     * @attr name com.tdr.registrationv3:icon
      */
     public static final int ActionBar_icon=17;
     /**
@@ -7478,7 +7478,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:indeterminateProgressStyle
+     * @attr name com.tdr.registrationv3:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
@@ -7491,7 +7491,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:itemPadding
+     * @attr name com.tdr.registrationv3:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
@@ -7503,7 +7503,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:logo
+     * @attr name com.tdr.registrationv3:logo
      */
     public static final int ActionBar_logo=20;
     /**
@@ -7521,7 +7521,7 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:navigationMode
+     * @attr name com.tdr.registrationv3:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
@@ -7533,7 +7533,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:popupTheme
+     * @attr name com.tdr.registrationv3:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
@@ -7546,7 +7546,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:progressBarPadding
+     * @attr name com.tdr.registrationv3:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
@@ -7558,7 +7558,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:progressBarStyle
+     * @attr name com.tdr.registrationv3:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
@@ -7568,7 +7568,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:subtitle
+     * @attr name com.tdr.registrationv3:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
@@ -7580,7 +7580,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:subtitleTextStyle
+     * @attr name com.tdr.registrationv3:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
@@ -7590,7 +7590,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:title
+     * @attr name com.tdr.registrationv3:title
      */
     public static final int ActionBar_title=27;
     /**
@@ -7602,7 +7602,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:titleTextStyle
+     * @attr name com.tdr.registrationv3:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -7684,12 +7684,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.tdr.registrationV3:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.tdr.registrationV3:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.tdr.registrationV3:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.tdr.registrationV3:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.tdr.registrationV3:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.tdr.registrationV3:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.tdr.registrationv3:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.tdr.registrationv3:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.tdr.registrationv3:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.tdr.registrationv3:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.tdr.registrationv3:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.tdr.registrationv3:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -7711,7 +7711,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:background
+     * @attr name com.tdr.registrationv3:background
      */
     public static final int ActionMode_background=0;
     /**
@@ -7726,7 +7726,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:backgroundSplit
+     * @attr name com.tdr.registrationv3:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
@@ -7738,7 +7738,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:closeItemLayout
+     * @attr name com.tdr.registrationv3:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
@@ -7751,7 +7751,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:height
+     * @attr name com.tdr.registrationv3:height
      */
     public static final int ActionMode_height=3;
     /**
@@ -7763,7 +7763,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:subtitleTextStyle
+     * @attr name com.tdr.registrationv3:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
@@ -7775,7 +7775,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:titleTextStyle
+     * @attr name com.tdr.registrationv3:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -7785,8 +7785,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.tdr.registrationV3:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.tdr.registrationV3:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.tdr.registrationv3:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.tdr.registrationv3:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -7803,7 +7803,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:expandActivityOverflowButtonDrawable
+     * @attr name com.tdr.registrationv3:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
@@ -7813,7 +7813,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:initialActivityCount
+     * @attr name com.tdr.registrationv3:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -7824,13 +7824,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.tdr.registrationV3:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.tdr.registrationV3:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.tdr.registrationV3:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.tdr.registrationV3:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.tdr.registrationV3:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.tdr.registrationV3:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.tdr.registrationV3:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.tdr.registrationv3:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.tdr.registrationv3:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.tdr.registrationv3:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.tdr.registrationv3:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.tdr.registrationv3:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.tdr.registrationv3:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.tdr.registrationv3:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -7867,7 +7867,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:buttonIconDimen
+     * @attr name com.tdr.registrationv3:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
@@ -7879,7 +7879,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:buttonPanelSideLayout
+     * @attr name com.tdr.registrationv3:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
@@ -7891,7 +7891,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:listItemLayout
+     * @attr name com.tdr.registrationv3:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
@@ -7903,7 +7903,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:listLayout
+     * @attr name com.tdr.registrationv3:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
@@ -7915,7 +7915,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:multiChoiceItemLayout
+     * @attr name com.tdr.registrationv3:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
@@ -7925,7 +7925,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:showTitle
+     * @attr name com.tdr.registrationv3:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
@@ -7937,7 +7937,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:singleChoiceItemLayout
+     * @attr name com.tdr.registrationv3:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -8139,9 +8139,9 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.tdr.registrationV3:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded com.tdr.registrationV3:expanded}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.tdr.registrationV3:liftOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.tdr.registrationv3:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded com.tdr.registrationv3:expanded}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.tdr.registrationv3:liftOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_android_touchscreenBlocksFocus
@@ -8199,7 +8199,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:elevation
+     * @attr name com.tdr.registrationv3:elevation
      */
     public static final int AppBarLayout_elevation=3;
     /**
@@ -8209,7 +8209,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:expanded
+     * @attr name com.tdr.registrationv3:expanded
      */
     public static final int AppBarLayout_expanded=4;
     /**
@@ -8219,7 +8219,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:liftOnScroll
+     * @attr name com.tdr.registrationv3:liftOnScroll
      */
     public static final int AppBarLayout_liftOnScroll=5;
     /**
@@ -8229,10 +8229,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.tdr.registrationV3:state_collapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.tdr.registrationV3:state_collapsible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.tdr.registrationV3:state_liftable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.tdr.registrationV3:state_lifted}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.tdr.registrationv3:state_collapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.tdr.registrationv3:state_collapsible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.tdr.registrationv3:state_liftable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.tdr.registrationv3:state_lifted}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
      * @see #AppBarLayoutStates_state_collapsible
@@ -8249,7 +8249,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:state_collapsed
+     * @attr name com.tdr.registrationv3:state_collapsed
      */
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
@@ -8259,7 +8259,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:state_collapsible
+     * @attr name com.tdr.registrationv3:state_collapsible
      */
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
@@ -8269,7 +8269,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:state_liftable
+     * @attr name com.tdr.registrationv3:state_liftable
      */
     public static final int AppBarLayoutStates_state_liftable=2;
     /**
@@ -8279,7 +8279,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:state_lifted
+     * @attr name com.tdr.registrationv3:state_lifted
      */
     public static final int AppBarLayoutStates_state_lifted=3;
     /**
@@ -8289,8 +8289,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.tdr.registrationV3:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.tdr.registrationV3:layout_scrollInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.tdr.registrationv3:layout_scrollFlags}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.tdr.registrationv3:layout_scrollInterpolator}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -8316,7 +8316,7 @@ public final class R {
      * <tr><td>snapMargins</td><td>20</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_scrollFlags
+     * @attr name com.tdr.registrationv3:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
@@ -8328,7 +8328,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:layout_scrollInterpolator
+     * @attr name com.tdr.registrationv3:layout_scrollInterpolator
      */
     public static final int AppBarLayout_Layout_layout_scrollInterpolator=1;
     /**
@@ -8339,9 +8339,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.tdr.registrationV3:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.tdr.registrationV3:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.tdr.registrationV3:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.tdr.registrationv3:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.tdr.registrationv3:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.tdr.registrationv3:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -8375,7 +8375,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srcCompat
+     * @attr name com.tdr.registrationv3:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
@@ -8386,7 +8386,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tint
+     * @attr name com.tdr.registrationv3:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
@@ -8407,7 +8407,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:tintMode
+     * @attr name com.tdr.registrationv3:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -8418,9 +8418,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.tdr.registrationV3:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.tdr.registrationV3:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.tdr.registrationV3:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.tdr.registrationv3:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.tdr.registrationv3:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.tdr.registrationv3:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -8451,7 +8451,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tickMark
+     * @attr name com.tdr.registrationv3:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
@@ -8462,7 +8462,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tickMarkTint
+     * @attr name com.tdr.registrationv3:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
@@ -8483,7 +8483,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:tickMarkTintMode
+     * @attr name com.tdr.registrationv3:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -8623,16 +8623,16 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.tdr.registrationV3:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.tdr.registrationV3:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.tdr.registrationV3:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.tdr.registrationV3:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.tdr.registrationV3:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.tdr.registrationV3:firstBaselineToTopHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.tdr.registrationV3:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.tdr.registrationV3:lastBaselineToBottomHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.tdr.registrationV3:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.tdr.registrationV3:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.tdr.registrationv3:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.tdr.registrationv3:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.tdr.registrationv3:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.tdr.registrationv3:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.tdr.registrationv3:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.tdr.registrationv3:firstBaselineToTopHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.tdr.registrationv3:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.tdr.registrationv3:lastBaselineToBottomHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.tdr.registrationv3:lineHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.tdr.registrationv3:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -8673,7 +8673,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:autoSizeMaxTextSize
+     * @attr name com.tdr.registrationv3:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
@@ -8686,7 +8686,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:autoSizeMinTextSize
+     * @attr name com.tdr.registrationv3:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
@@ -8698,7 +8698,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:autoSizePresetSizes
+     * @attr name com.tdr.registrationv3:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
@@ -8711,7 +8711,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:autoSizeStepGranularity
+     * @attr name com.tdr.registrationv3:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
@@ -8728,7 +8728,7 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:autoSizeTextType
+     * @attr name com.tdr.registrationv3:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
@@ -8741,7 +8741,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:firstBaselineToTopHeight
+     * @attr name com.tdr.registrationv3:firstBaselineToTopHeight
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=6;
     /**
@@ -8751,7 +8751,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fontFamily
+     * @attr name com.tdr.registrationv3:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=7;
     /**
@@ -8764,7 +8764,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:lastBaselineToBottomHeight
+     * @attr name com.tdr.registrationv3:lastBaselineToBottomHeight
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
     /**
@@ -8777,7 +8777,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:lineHeight
+     * @attr name com.tdr.registrationv3:lineHeight
      */
     public static final int AppCompatTextView_lineHeight=9;
     /**
@@ -8791,7 +8791,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:textAllCaps
+     * @attr name com.tdr.registrationv3:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=10;
     /**
@@ -8803,125 +8803,125 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.tdr.registrationV3:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.tdr.registrationV3:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.tdr.registrationV3:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.tdr.registrationV3:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.tdr.registrationV3:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.tdr.registrationV3:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.tdr.registrationV3:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.tdr.registrationV3:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.tdr.registrationV3:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.tdr.registrationV3:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.tdr.registrationV3:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.tdr.registrationV3:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.tdr.registrationV3:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.tdr.registrationV3:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.tdr.registrationV3:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.tdr.registrationV3:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.tdr.registrationV3:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.tdr.registrationV3:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.tdr.registrationV3:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.tdr.registrationV3:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.tdr.registrationV3:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.tdr.registrationV3:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.tdr.registrationV3:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.tdr.registrationV3:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.tdr.registrationV3:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.tdr.registrationV3:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.tdr.registrationV3:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.tdr.registrationV3:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.tdr.registrationV3:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.tdr.registrationV3:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.tdr.registrationV3:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.tdr.registrationV3:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.tdr.registrationV3:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.tdr.registrationV3:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.tdr.registrationV3:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.tdr.registrationV3:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.tdr.registrationV3:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.tdr.registrationV3:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.tdr.registrationV3:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.tdr.registrationV3:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.tdr.registrationV3:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.tdr.registrationV3:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.tdr.registrationV3:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.tdr.registrationV3:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.tdr.registrationV3:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.tdr.registrationV3:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.tdr.registrationV3:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.tdr.registrationV3:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.tdr.registrationV3:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.tdr.registrationV3:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.tdr.registrationV3:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.tdr.registrationV3:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.tdr.registrationV3:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.tdr.registrationV3:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.tdr.registrationV3:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.tdr.registrationV3:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.tdr.registrationV3:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.tdr.registrationV3:dialogCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.tdr.registrationV3:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.tdr.registrationV3:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.tdr.registrationV3:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.tdr.registrationV3:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.tdr.registrationV3:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.tdr.registrationV3:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.tdr.registrationV3:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.tdr.registrationV3:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.tdr.registrationV3:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.tdr.registrationV3:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.tdr.registrationV3:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.tdr.registrationV3:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.tdr.registrationV3:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.tdr.registrationV3:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.tdr.registrationV3:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.tdr.registrationV3:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.tdr.registrationV3:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.tdr.registrationV3:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.tdr.registrationV3:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.tdr.registrationV3:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.tdr.registrationV3:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.tdr.registrationV3:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.tdr.registrationV3:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.tdr.registrationV3:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.tdr.registrationV3:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.tdr.registrationV3:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.tdr.registrationV3:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.tdr.registrationV3:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.tdr.registrationV3:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.tdr.registrationV3:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.tdr.registrationV3:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.tdr.registrationV3:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.tdr.registrationV3:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.tdr.registrationV3:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.tdr.registrationV3:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.tdr.registrationV3:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.tdr.registrationV3:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.tdr.registrationV3:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.tdr.registrationV3:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.tdr.registrationV3:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.tdr.registrationV3:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.tdr.registrationV3:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.tdr.registrationV3:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.tdr.registrationV3:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.tdr.registrationV3:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.tdr.registrationV3:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.tdr.registrationV3:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.tdr.registrationV3:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.tdr.registrationV3:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.tdr.registrationV3:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.tdr.registrationV3:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.tdr.registrationV3:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.tdr.registrationV3:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.tdr.registrationV3:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.tdr.registrationV3:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.tdr.registrationV3:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.tdr.registrationV3:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.tdr.registrationV3:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.tdr.registrationV3:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.tdr.registrationV3:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.tdr.registrationV3:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.tdr.registrationv3:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.tdr.registrationv3:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.tdr.registrationv3:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.tdr.registrationv3:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.tdr.registrationv3:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.tdr.registrationv3:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.tdr.registrationv3:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.tdr.registrationv3:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.tdr.registrationv3:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.tdr.registrationv3:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.tdr.registrationv3:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.tdr.registrationv3:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.tdr.registrationv3:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.tdr.registrationv3:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.tdr.registrationv3:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.tdr.registrationv3:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.tdr.registrationv3:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.tdr.registrationv3:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.tdr.registrationv3:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.tdr.registrationv3:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.tdr.registrationv3:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.tdr.registrationv3:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.tdr.registrationv3:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.tdr.registrationv3:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.tdr.registrationv3:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.tdr.registrationv3:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.tdr.registrationv3:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.tdr.registrationv3:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.tdr.registrationv3:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.tdr.registrationv3:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.tdr.registrationv3:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.tdr.registrationv3:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.tdr.registrationv3:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.tdr.registrationv3:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.tdr.registrationv3:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.tdr.registrationv3:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.tdr.registrationv3:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.tdr.registrationv3:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.tdr.registrationv3:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.tdr.registrationv3:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.tdr.registrationv3:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.tdr.registrationv3:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.tdr.registrationv3:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.tdr.registrationv3:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.tdr.registrationv3:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.tdr.registrationv3:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.tdr.registrationv3:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.tdr.registrationv3:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.tdr.registrationv3:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.tdr.registrationv3:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.tdr.registrationv3:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.tdr.registrationv3:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.tdr.registrationv3:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.tdr.registrationv3:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.tdr.registrationv3:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.tdr.registrationv3:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.tdr.registrationv3:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.tdr.registrationv3:dialogCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.tdr.registrationv3:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.tdr.registrationv3:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.tdr.registrationv3:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.tdr.registrationv3:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.tdr.registrationv3:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.tdr.registrationv3:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.tdr.registrationv3:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.tdr.registrationv3:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.tdr.registrationv3:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.tdr.registrationv3:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.tdr.registrationv3:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.tdr.registrationv3:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.tdr.registrationv3:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.tdr.registrationv3:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.tdr.registrationv3:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.tdr.registrationv3:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.tdr.registrationv3:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.tdr.registrationv3:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.tdr.registrationv3:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.tdr.registrationv3:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.tdr.registrationv3:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.tdr.registrationv3:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.tdr.registrationv3:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.tdr.registrationv3:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.tdr.registrationv3:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.tdr.registrationv3:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.tdr.registrationv3:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.tdr.registrationv3:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.tdr.registrationv3:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.tdr.registrationv3:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.tdr.registrationv3:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.tdr.registrationv3:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.tdr.registrationv3:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.tdr.registrationv3:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.tdr.registrationv3:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.tdr.registrationv3:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.tdr.registrationv3:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.tdr.registrationv3:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.tdr.registrationv3:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.tdr.registrationv3:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.tdr.registrationv3:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.tdr.registrationv3:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.tdr.registrationv3:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.tdr.registrationv3:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.tdr.registrationv3:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.tdr.registrationv3:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.tdr.registrationv3:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.tdr.registrationv3:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.tdr.registrationv3:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.tdr.registrationv3:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.tdr.registrationv3:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.tdr.registrationv3:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.tdr.registrationv3:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.tdr.registrationv3:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.tdr.registrationv3:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.tdr.registrationv3:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.tdr.registrationv3:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.tdr.registrationv3:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.tdr.registrationv3:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.tdr.registrationv3:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.tdr.registrationv3:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -9109,7 +9109,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarDivider
+     * @attr name com.tdr.registrationv3:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
@@ -9121,7 +9121,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarItemBackground
+     * @attr name com.tdr.registrationv3:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
@@ -9133,7 +9133,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarPopupTheme
+     * @attr name com.tdr.registrationv3:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
@@ -9154,7 +9154,7 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:actionBarSize
+     * @attr name com.tdr.registrationv3:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
@@ -9166,7 +9166,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarSplitStyle
+     * @attr name com.tdr.registrationv3:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
@@ -9178,7 +9178,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarStyle
+     * @attr name com.tdr.registrationv3:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
@@ -9190,7 +9190,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarTabBarStyle
+     * @attr name com.tdr.registrationv3:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
@@ -9202,7 +9202,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarTabStyle
+     * @attr name com.tdr.registrationv3:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
@@ -9214,7 +9214,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarTabTextStyle
+     * @attr name com.tdr.registrationv3:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
@@ -9226,7 +9226,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarTheme
+     * @attr name com.tdr.registrationv3:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
@@ -9238,7 +9238,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionBarWidgetTheme
+     * @attr name com.tdr.registrationv3:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
@@ -9250,7 +9250,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionButtonStyle
+     * @attr name com.tdr.registrationv3:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
@@ -9262,7 +9262,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionDropDownStyle
+     * @attr name com.tdr.registrationv3:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
@@ -9274,7 +9274,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionMenuTextAppearance
+     * @attr name com.tdr.registrationv3:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
@@ -9289,7 +9289,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionMenuTextColor
+     * @attr name com.tdr.registrationv3:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
@@ -9301,7 +9301,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeBackground
+     * @attr name com.tdr.registrationv3:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
@@ -9313,7 +9313,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeCloseButtonStyle
+     * @attr name com.tdr.registrationv3:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
@@ -9325,7 +9325,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeCloseDrawable
+     * @attr name com.tdr.registrationv3:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
@@ -9337,7 +9337,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeCopyDrawable
+     * @attr name com.tdr.registrationv3:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
@@ -9349,7 +9349,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeCutDrawable
+     * @attr name com.tdr.registrationv3:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
@@ -9361,7 +9361,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeFindDrawable
+     * @attr name com.tdr.registrationv3:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
@@ -9373,7 +9373,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModePasteDrawable
+     * @attr name com.tdr.registrationv3:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
@@ -9385,7 +9385,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModePopupWindowStyle
+     * @attr name com.tdr.registrationv3:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
@@ -9397,7 +9397,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeSelectAllDrawable
+     * @attr name com.tdr.registrationv3:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
@@ -9409,7 +9409,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeShareDrawable
+     * @attr name com.tdr.registrationv3:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
@@ -9421,7 +9421,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeSplitBackground
+     * @attr name com.tdr.registrationv3:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
@@ -9433,7 +9433,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeStyle
+     * @attr name com.tdr.registrationv3:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
@@ -9445,7 +9445,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionModeWebSearchDrawable
+     * @attr name com.tdr.registrationv3:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
@@ -9457,7 +9457,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionOverflowButtonStyle
+     * @attr name com.tdr.registrationv3:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
@@ -9469,7 +9469,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionOverflowMenuStyle
+     * @attr name com.tdr.registrationv3:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
@@ -9481,7 +9481,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:activityChooserViewStyle
+     * @attr name com.tdr.registrationv3:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
@@ -9493,7 +9493,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:alertDialogButtonGroupStyle
+     * @attr name com.tdr.registrationv3:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
@@ -9503,7 +9503,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:alertDialogCenterButtons
+     * @attr name com.tdr.registrationv3:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
@@ -9515,7 +9515,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:alertDialogStyle
+     * @attr name com.tdr.registrationv3:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
@@ -9527,7 +9527,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:alertDialogTheme
+     * @attr name com.tdr.registrationv3:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
@@ -9539,7 +9539,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:autoCompleteTextViewStyle
+     * @attr name com.tdr.registrationv3:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
@@ -9551,7 +9551,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:borderlessButtonStyle
+     * @attr name com.tdr.registrationv3:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
@@ -9563,7 +9563,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:buttonBarButtonStyle
+     * @attr name com.tdr.registrationv3:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
@@ -9575,7 +9575,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:buttonBarNegativeButtonStyle
+     * @attr name com.tdr.registrationv3:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
@@ -9587,7 +9587,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:buttonBarNeutralButtonStyle
+     * @attr name com.tdr.registrationv3:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
@@ -9599,7 +9599,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:buttonBarPositiveButtonStyle
+     * @attr name com.tdr.registrationv3:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
@@ -9611,7 +9611,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:buttonBarStyle
+     * @attr name com.tdr.registrationv3:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
@@ -9623,7 +9623,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:buttonStyle
+     * @attr name com.tdr.registrationv3:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
@@ -9635,7 +9635,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:buttonStyleSmall
+     * @attr name com.tdr.registrationv3:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
@@ -9647,7 +9647,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:checkboxStyle
+     * @attr name com.tdr.registrationv3:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
@@ -9659,7 +9659,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:checkedTextViewStyle
+     * @attr name com.tdr.registrationv3:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
@@ -9670,7 +9670,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorAccent
+     * @attr name com.tdr.registrationv3:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
@@ -9681,7 +9681,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorBackgroundFloating
+     * @attr name com.tdr.registrationv3:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
@@ -9692,7 +9692,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorButtonNormal
+     * @attr name com.tdr.registrationv3:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
@@ -9703,7 +9703,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorControlActivated
+     * @attr name com.tdr.registrationv3:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
@@ -9714,7 +9714,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorControlHighlight
+     * @attr name com.tdr.registrationv3:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
@@ -9725,7 +9725,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorControlNormal
+     * @attr name com.tdr.registrationv3:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
@@ -9740,7 +9740,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorError
+     * @attr name com.tdr.registrationv3:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
@@ -9751,7 +9751,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorPrimary
+     * @attr name com.tdr.registrationv3:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
@@ -9762,7 +9762,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorPrimaryDark
+     * @attr name com.tdr.registrationv3:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
@@ -9773,7 +9773,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorSwitchThumbNormal
+     * @attr name com.tdr.registrationv3:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
@@ -9785,7 +9785,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:controlBackground
+     * @attr name com.tdr.registrationv3:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
@@ -9798,7 +9798,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:dialogCornerRadius
+     * @attr name com.tdr.registrationv3:dialogCornerRadius
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
@@ -9811,7 +9811,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:dialogPreferredPadding
+     * @attr name com.tdr.registrationv3:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
@@ -9823,7 +9823,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:dialogTheme
+     * @attr name com.tdr.registrationv3:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
@@ -9835,7 +9835,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:dividerHorizontal
+     * @attr name com.tdr.registrationv3:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
@@ -9847,7 +9847,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:dividerVertical
+     * @attr name com.tdr.registrationv3:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
@@ -9859,7 +9859,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:dropDownListViewStyle
+     * @attr name com.tdr.registrationv3:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
@@ -9872,7 +9872,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:dropdownListPreferredItemHeight
+     * @attr name com.tdr.registrationv3:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
@@ -9884,7 +9884,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:editTextBackground
+     * @attr name com.tdr.registrationv3:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
@@ -9899,7 +9899,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:editTextColor
+     * @attr name com.tdr.registrationv3:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
@@ -9911,7 +9911,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:editTextStyle
+     * @attr name com.tdr.registrationv3:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
@@ -9923,7 +9923,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:homeAsUpIndicator
+     * @attr name com.tdr.registrationv3:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
@@ -9935,7 +9935,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:imageButtonStyle
+     * @attr name com.tdr.registrationv3:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
@@ -9947,7 +9947,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:listChoiceBackgroundIndicator
+     * @attr name com.tdr.registrationv3:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
@@ -9959,7 +9959,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:listDividerAlertDialog
+     * @attr name com.tdr.registrationv3:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=72;
     /**
@@ -9971,7 +9971,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:listMenuViewStyle
+     * @attr name com.tdr.registrationv3:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=73;
     /**
@@ -9983,7 +9983,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:listPopupWindowStyle
+     * @attr name com.tdr.registrationv3:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=74;
     /**
@@ -9996,7 +9996,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:listPreferredItemHeight
+     * @attr name com.tdr.registrationv3:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=75;
     /**
@@ -10009,7 +10009,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:listPreferredItemHeightLarge
+     * @attr name com.tdr.registrationv3:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
     /**
@@ -10022,7 +10022,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:listPreferredItemHeightSmall
+     * @attr name com.tdr.registrationv3:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
     /**
@@ -10035,7 +10035,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:listPreferredItemPaddingLeft
+     * @attr name com.tdr.registrationv3:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
     /**
@@ -10048,7 +10048,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:listPreferredItemPaddingRight
+     * @attr name com.tdr.registrationv3:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
     /**
@@ -10060,7 +10060,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:panelBackground
+     * @attr name com.tdr.registrationv3:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=80;
     /**
@@ -10072,7 +10072,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:panelMenuListTheme
+     * @attr name com.tdr.registrationv3:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=81;
     /**
@@ -10085,7 +10085,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:panelMenuListWidth
+     * @attr name com.tdr.registrationv3:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=82;
     /**
@@ -10097,7 +10097,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:popupMenuStyle
+     * @attr name com.tdr.registrationv3:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=83;
     /**
@@ -10109,7 +10109,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:popupWindowStyle
+     * @attr name com.tdr.registrationv3:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=84;
     /**
@@ -10121,7 +10121,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:radioButtonStyle
+     * @attr name com.tdr.registrationv3:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=85;
     /**
@@ -10133,7 +10133,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:ratingBarStyle
+     * @attr name com.tdr.registrationv3:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=86;
     /**
@@ -10145,7 +10145,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:ratingBarStyleIndicator
+     * @attr name com.tdr.registrationv3:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=87;
     /**
@@ -10157,7 +10157,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:ratingBarStyleSmall
+     * @attr name com.tdr.registrationv3:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=88;
     /**
@@ -10169,7 +10169,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:searchViewStyle
+     * @attr name com.tdr.registrationv3:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=89;
     /**
@@ -10181,7 +10181,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:seekBarStyle
+     * @attr name com.tdr.registrationv3:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=90;
     /**
@@ -10193,7 +10193,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:selectableItemBackground
+     * @attr name com.tdr.registrationv3:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=91;
     /**
@@ -10205,7 +10205,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:selectableItemBackgroundBorderless
+     * @attr name com.tdr.registrationv3:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
     /**
@@ -10217,7 +10217,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:spinnerDropDownItemStyle
+     * @attr name com.tdr.registrationv3:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
     /**
@@ -10229,7 +10229,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:spinnerStyle
+     * @attr name com.tdr.registrationv3:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=94;
     /**
@@ -10241,7 +10241,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:switchStyle
+     * @attr name com.tdr.registrationv3:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=95;
     /**
@@ -10253,7 +10253,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceLargePopupMenu
+     * @attr name com.tdr.registrationv3:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
     /**
@@ -10265,7 +10265,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceListItem
+     * @attr name com.tdr.registrationv3:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=97;
     /**
@@ -10277,7 +10277,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceListItemSecondary
+     * @attr name com.tdr.registrationv3:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
     /**
@@ -10289,7 +10289,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceListItemSmall
+     * @attr name com.tdr.registrationv3:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=99;
     /**
@@ -10301,7 +10301,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearancePopupMenuHeader
+     * @attr name com.tdr.registrationv3:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
     /**
@@ -10313,7 +10313,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceSearchResultSubtitle
+     * @attr name com.tdr.registrationv3:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
     /**
@@ -10325,7 +10325,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceSearchResultTitle
+     * @attr name com.tdr.registrationv3:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
     /**
@@ -10337,7 +10337,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceSmallPopupMenu
+     * @attr name com.tdr.registrationv3:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
     /**
@@ -10352,7 +10352,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textColorAlertDialogListItem
+     * @attr name com.tdr.registrationv3:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=104;
     /**
@@ -10367,7 +10367,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textColorSearchUrl
+     * @attr name com.tdr.registrationv3:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=105;
     /**
@@ -10379,7 +10379,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:toolbarNavigationButtonStyle
+     * @attr name com.tdr.registrationv3:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
     /**
@@ -10391,7 +10391,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:toolbarStyle
+     * @attr name com.tdr.registrationv3:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=107;
     /**
@@ -10406,7 +10406,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tooltipForegroundColor
+     * @attr name com.tdr.registrationv3:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=108;
     /**
@@ -10418,7 +10418,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tooltipFrameBackground
+     * @attr name com.tdr.registrationv3:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=109;
     /**
@@ -10428,7 +10428,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:viewInflaterClass
+     * @attr name com.tdr.registrationv3:viewInflaterClass
      */
     public static final int AppCompatTheme_viewInflaterClass=110;
     /**
@@ -10438,7 +10438,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:windowActionBar
+     * @attr name com.tdr.registrationv3:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=111;
     /**
@@ -10448,7 +10448,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:windowActionBarOverlay
+     * @attr name com.tdr.registrationv3:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=112;
     /**
@@ -10458,7 +10458,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:windowActionModeOverlay
+     * @attr name com.tdr.registrationv3:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=113;
     /**
@@ -10475,7 +10475,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tdr.registrationV3:windowFixedHeightMajor
+     * @attr name com.tdr.registrationv3:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=114;
     /**
@@ -10492,7 +10492,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tdr.registrationV3:windowFixedHeightMinor
+     * @attr name com.tdr.registrationv3:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=115;
     /**
@@ -10509,7 +10509,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tdr.registrationV3:windowFixedWidthMajor
+     * @attr name com.tdr.registrationv3:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=116;
     /**
@@ -10526,7 +10526,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tdr.registrationV3:windowFixedWidthMinor
+     * @attr name com.tdr.registrationv3:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=117;
     /**
@@ -10543,7 +10543,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tdr.registrationV3:windowMinWidthMajor
+     * @attr name com.tdr.registrationv3:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=118;
     /**
@@ -10560,7 +10560,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tdr.registrationV3:windowMinWidthMinor
+     * @attr name com.tdr.registrationv3:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=119;
     /**
@@ -10570,7 +10570,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:windowNoTitle
+     * @attr name com.tdr.registrationv3:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=120;
     /**
@@ -10580,9 +10580,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BallPulseFooter_srlAccentColor com.tdr.registrationV3:srlAccentColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BallPulseFooter_srlClassicsSpinnerStyle com.tdr.registrationV3:srlClassicsSpinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BallPulseFooter_srlPrimaryColor com.tdr.registrationV3:srlPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BallPulseFooter_srlAccentColor com.tdr.registrationv3:srlAccentColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BallPulseFooter_srlClassicsSpinnerStyle com.tdr.registrationv3:srlClassicsSpinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BallPulseFooter_srlPrimaryColor com.tdr.registrationv3:srlPrimaryColor}</code></td><td></td></tr>
      * </table>
      * @see #BallPulseFooter_srlAccentColor
      * @see #BallPulseFooter_srlClassicsSpinnerStyle
@@ -10599,7 +10599,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlAccentColor
+     * @attr name com.tdr.registrationv3:srlAccentColor
      */
     public static final int BallPulseFooter_srlAccentColor=0;
     /**
@@ -10612,12 +10612,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:srlClassicsSpinnerStyle
+     * @attr name com.tdr.registrationv3:srlClassicsSpinnerStyle
      */
     public static final int BallPulseFooter_srlClassicsSpinnerStyle=1;
     /**
@@ -10628,7 +10628,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlPrimaryColor
+     * @attr name com.tdr.registrationv3:srlPrimaryColor
      */
     public static final int BallPulseFooter_srlPrimaryColor=2;
     /**
@@ -10638,9 +10638,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BezierRadarHeader_srlAccentColor com.tdr.registrationV3:srlAccentColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BezierRadarHeader_srlEnableHorizontalDrag com.tdr.registrationV3:srlEnableHorizontalDrag}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BezierRadarHeader_srlPrimaryColor com.tdr.registrationV3:srlPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BezierRadarHeader_srlAccentColor com.tdr.registrationv3:srlAccentColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BezierRadarHeader_srlEnableHorizontalDrag com.tdr.registrationv3:srlEnableHorizontalDrag}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BezierRadarHeader_srlPrimaryColor com.tdr.registrationv3:srlPrimaryColor}</code></td><td></td></tr>
      * </table>
      * @see #BezierRadarHeader_srlAccentColor
      * @see #BezierRadarHeader_srlEnableHorizontalDrag
@@ -10657,7 +10657,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlAccentColor
+     * @attr name com.tdr.registrationv3:srlAccentColor
      */
     public static final int BezierRadarHeader_srlAccentColor=0;
     /**
@@ -10667,7 +10667,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableHorizontalDrag
+     * @attr name com.tdr.registrationv3:srlEnableHorizontalDrag
      */
     public static final int BezierRadarHeader_srlEnableHorizontalDrag=1;
     /**
@@ -10678,7 +10678,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlPrimaryColor
+     * @attr name com.tdr.registrationv3:srlPrimaryColor
      */
     public static final int BezierRadarHeader_srlPrimaryColor=2;
     /**
@@ -10688,12 +10688,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.tdr.registrationV3:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.tdr.registrationV3:fabAlignmentMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.tdr.registrationV3:fabCradleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.tdr.registrationV3:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.tdr.registrationV3:fabCradleVerticalOffset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.tdr.registrationV3:hideOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.tdr.registrationv3:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.tdr.registrationv3:fabAlignmentMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.tdr.registrationv3:fabCradleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.tdr.registrationv3:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.tdr.registrationv3:fabCradleVerticalOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.tdr.registrationv3:hideOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #BottomAppBar_backgroundTint
      * @see #BottomAppBar_fabAlignmentMode
@@ -10714,7 +10714,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:backgroundTint
+     * @attr name com.tdr.registrationv3:backgroundTint
      */
     public static final int BottomAppBar_backgroundTint=0;
     /**
@@ -10731,7 +10731,7 @@ public final class R {
      * <tr><td>end</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:fabAlignmentMode
+     * @attr name com.tdr.registrationv3:fabAlignmentMode
      */
     public static final int BottomAppBar_fabAlignmentMode=1;
     /**
@@ -10744,7 +10744,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:fabCradleMargin
+     * @attr name com.tdr.registrationv3:fabCradleMargin
      */
     public static final int BottomAppBar_fabCradleMargin=2;
     /**
@@ -10757,7 +10757,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:fabCradleRoundedCornerRadius
+     * @attr name com.tdr.registrationv3:fabCradleRoundedCornerRadius
      */
     public static final int BottomAppBar_fabCradleRoundedCornerRadius=3;
     /**
@@ -10770,7 +10770,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:fabCradleVerticalOffset
+     * @attr name com.tdr.registrationv3:fabCradleVerticalOffset
      */
     public static final int BottomAppBar_fabCradleVerticalOffset=4;
     /**
@@ -10780,7 +10780,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:hideOnScroll
+     * @attr name com.tdr.registrationv3:hideOnScroll
      */
     public static final int BottomAppBar_hideOnScroll=5;
     /**
@@ -10790,16 +10790,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.tdr.registrationV3:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.tdr.registrationV3:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.tdr.registrationV3:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.tdr.registrationV3:itemIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.tdr.registrationV3:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.tdr.registrationV3:itemTextAppearanceActive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.tdr.registrationV3:itemTextAppearanceInactive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.tdr.registrationV3:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.tdr.registrationV3:labelVisibilityMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu com.tdr.registrationV3:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.tdr.registrationv3:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.tdr.registrationv3:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.tdr.registrationv3:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.tdr.registrationv3:itemIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.tdr.registrationv3:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.tdr.registrationv3:itemTextAppearanceActive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.tdr.registrationv3:itemTextAppearanceInactive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.tdr.registrationv3:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.tdr.registrationv3:labelVisibilityMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu com.tdr.registrationv3:menu}</code></td><td></td></tr>
      * </table>
      * @see #BottomNavigationView_elevation
      * @see #BottomNavigationView_itemBackground
@@ -10827,7 +10827,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:elevation
+     * @attr name com.tdr.registrationv3:elevation
      */
     public static final int BottomNavigationView_elevation=0;
     /**
@@ -10839,7 +10839,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:itemBackground
+     * @attr name com.tdr.registrationv3:itemBackground
      */
     public static final int BottomNavigationView_itemBackground=1;
     /**
@@ -10849,7 +10849,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:itemHorizontalTranslationEnabled
+     * @attr name com.tdr.registrationv3:itemHorizontalTranslationEnabled
      */
     public static final int BottomNavigationView_itemHorizontalTranslationEnabled=2;
     /**
@@ -10862,7 +10862,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:itemIconSize
+     * @attr name com.tdr.registrationv3:itemIconSize
      */
     public static final int BottomNavigationView_itemIconSize=3;
     /**
@@ -10873,7 +10873,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:itemIconTint
+     * @attr name com.tdr.registrationv3:itemIconTint
      */
     public static final int BottomNavigationView_itemIconTint=4;
     /**
@@ -10885,7 +10885,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:itemTextAppearanceActive
+     * @attr name com.tdr.registrationv3:itemTextAppearanceActive
      */
     public static final int BottomNavigationView_itemTextAppearanceActive=5;
     /**
@@ -10897,7 +10897,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:itemTextAppearanceInactive
+     * @attr name com.tdr.registrationv3:itemTextAppearanceInactive
      */
     public static final int BottomNavigationView_itemTextAppearanceInactive=6;
     /**
@@ -10908,7 +10908,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:itemTextColor
+     * @attr name com.tdr.registrationv3:itemTextColor
      */
     public static final int BottomNavigationView_itemTextColor=7;
     /**
@@ -10927,7 +10927,7 @@ public final class R {
      * <tr><td>unlabeled</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:labelVisibilityMode
+     * @attr name com.tdr.registrationv3:labelVisibilityMode
      */
     public static final int BottomNavigationView_labelVisibilityMode=8;
     /**
@@ -10939,7 +10939,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:menu
+     * @attr name com.tdr.registrationv3:menu
      */
     public static final int BottomNavigationView_menu=9;
     /**
@@ -10949,10 +10949,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.tdr.registrationV3:behavior_fitToContents}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.tdr.registrationV3:behavior_hideable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.tdr.registrationV3:behavior_peekHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.tdr.registrationV3:behavior_skipCollapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.tdr.registrationv3:behavior_fitToContents}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.tdr.registrationv3:behavior_hideable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.tdr.registrationv3:behavior_peekHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.tdr.registrationv3:behavior_skipCollapsed}</code></td><td></td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_behavior_fitToContents
      * @see #BottomSheetBehavior_Layout_behavior_hideable
@@ -10969,7 +10969,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:behavior_fitToContents
+     * @attr name com.tdr.registrationv3:behavior_fitToContents
      */
     public static final int BottomSheetBehavior_Layout_behavior_fitToContents=0;
     /**
@@ -10979,7 +10979,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:behavior_hideable
+     * @attr name com.tdr.registrationv3:behavior_hideable
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=1;
     /**
@@ -11000,7 +11000,7 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:behavior_peekHeight
+     * @attr name com.tdr.registrationv3:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=2;
     /**
@@ -11010,7 +11010,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:behavior_skipCollapsed
+     * @attr name com.tdr.registrationv3:behavior_skipCollapsed
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=3;
     /**
@@ -11020,7 +11020,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.tdr.registrationV3:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.tdr.registrationv3:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -11034,7 +11034,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:allowStacking
+     * @attr name com.tdr.registrationv3:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -11046,17 +11046,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.tdr.registrationV3:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.tdr.registrationV3:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.tdr.registrationV3:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.tdr.registrationV3:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.tdr.registrationV3:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.tdr.registrationV3:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.tdr.registrationV3:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.tdr.registrationV3:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.tdr.registrationV3:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.tdr.registrationV3:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.tdr.registrationV3:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.tdr.registrationv3:cardBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.tdr.registrationv3:cardCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.tdr.registrationv3:cardElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.tdr.registrationv3:cardMaxElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.tdr.registrationv3:cardPreventCornerOverlap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.tdr.registrationv3:cardUseCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.tdr.registrationv3:contentPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.tdr.registrationv3:contentPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.tdr.registrationv3:contentPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.tdr.registrationv3:contentPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.tdr.registrationv3:contentPaddingTop}</code></td><td></td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -11112,7 +11112,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:cardBackgroundColor
+     * @attr name com.tdr.registrationv3:cardBackgroundColor
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
@@ -11125,7 +11125,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:cardCornerRadius
+     * @attr name com.tdr.registrationv3:cardCornerRadius
      */
     public static final int CardView_cardCornerRadius=3;
     /**
@@ -11138,7 +11138,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:cardElevation
+     * @attr name com.tdr.registrationv3:cardElevation
      */
     public static final int CardView_cardElevation=4;
     /**
@@ -11151,7 +11151,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:cardMaxElevation
+     * @attr name com.tdr.registrationv3:cardMaxElevation
      */
     public static final int CardView_cardMaxElevation=5;
     /**
@@ -11161,7 +11161,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:cardPreventCornerOverlap
+     * @attr name com.tdr.registrationv3:cardPreventCornerOverlap
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
@@ -11171,7 +11171,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:cardUseCompatPadding
+     * @attr name com.tdr.registrationv3:cardUseCompatPadding
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
@@ -11184,7 +11184,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentPadding
+     * @attr name com.tdr.registrationv3:contentPadding
      */
     public static final int CardView_contentPadding=8;
     /**
@@ -11197,7 +11197,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentPaddingBottom
+     * @attr name com.tdr.registrationv3:contentPaddingBottom
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
@@ -11210,7 +11210,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentPaddingLeft
+     * @attr name com.tdr.registrationv3:contentPaddingLeft
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
@@ -11223,7 +11223,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentPaddingRight
+     * @attr name com.tdr.registrationv3:contentPaddingRight
      */
     public static final int CardView_contentPaddingRight=11;
     /**
@@ -11236,7 +11236,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentPaddingTop
+     * @attr name com.tdr.registrationv3:contentPaddingTop
      */
     public static final int CardView_contentPaddingTop=12;
     /**
@@ -11251,35 +11251,35 @@ public final class R {
      * <tr><td><code>{@link #Chip_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_text android:text}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIcon com.tdr.registrationV3:checkedIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconEnabled com.tdr.registrationV3:checkedIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconVisible com.tdr.registrationV3:checkedIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipBackgroundColor com.tdr.registrationV3:chipBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipCornerRadius com.tdr.registrationV3:chipCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipEndPadding com.tdr.registrationV3:chipEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIcon com.tdr.registrationV3:chipIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconEnabled com.tdr.registrationV3:chipIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconSize com.tdr.registrationV3:chipIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconTint com.tdr.registrationV3:chipIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconVisible com.tdr.registrationV3:chipIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipMinHeight com.tdr.registrationV3:chipMinHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStartPadding com.tdr.registrationV3:chipStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeColor com.tdr.registrationV3:chipStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeWidth com.tdr.registrationV3:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.tdr.registrationV3:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEnabled com.tdr.registrationV3:closeIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEndPadding com.tdr.registrationV3:closeIconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconSize com.tdr.registrationV3:closeIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconStartPadding com.tdr.registrationV3:closeIconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconTint com.tdr.registrationV3:closeIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconVisible com.tdr.registrationV3:closeIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_hideMotionSpec com.tdr.registrationV3:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconEndPadding com.tdr.registrationV3:iconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconStartPadding com.tdr.registrationV3:iconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_rippleColor com.tdr.registrationV3:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_showMotionSpec com.tdr.registrationV3:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textEndPadding com.tdr.registrationV3:textEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textStartPadding com.tdr.registrationV3:textStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIcon com.tdr.registrationv3:checkedIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconEnabled com.tdr.registrationv3:checkedIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconVisible com.tdr.registrationv3:checkedIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipBackgroundColor com.tdr.registrationv3:chipBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipCornerRadius com.tdr.registrationv3:chipCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipEndPadding com.tdr.registrationv3:chipEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIcon com.tdr.registrationv3:chipIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconEnabled com.tdr.registrationv3:chipIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconSize com.tdr.registrationv3:chipIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconTint com.tdr.registrationv3:chipIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconVisible com.tdr.registrationv3:chipIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipMinHeight com.tdr.registrationv3:chipMinHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStartPadding com.tdr.registrationv3:chipStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeColor com.tdr.registrationv3:chipStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeWidth com.tdr.registrationv3:chipStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.tdr.registrationv3:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEnabled com.tdr.registrationv3:closeIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEndPadding com.tdr.registrationv3:closeIconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconSize com.tdr.registrationv3:closeIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconStartPadding com.tdr.registrationv3:closeIconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconTint com.tdr.registrationv3:closeIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconVisible com.tdr.registrationv3:closeIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_hideMotionSpec com.tdr.registrationv3:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconEndPadding com.tdr.registrationv3:iconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconStartPadding com.tdr.registrationv3:iconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_rippleColor com.tdr.registrationv3:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_showMotionSpec com.tdr.registrationv3:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textEndPadding com.tdr.registrationv3:textEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textStartPadding com.tdr.registrationv3:textStartPadding}</code></td><td></td></tr>
      * </table>
      * @see #Chip_android_textAppearance
      * @see #Chip_android_ellipsize
@@ -11401,7 +11401,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:checkedIcon
+     * @attr name com.tdr.registrationv3:checkedIcon
      */
     public static final int Chip_checkedIcon=5;
     /**
@@ -11411,7 +11411,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:checkedIconEnabled
+     * @attr name com.tdr.registrationv3:checkedIconEnabled
      */
     public static final int Chip_checkedIconEnabled=6;
     /**
@@ -11421,7 +11421,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:checkedIconVisible
+     * @attr name com.tdr.registrationv3:checkedIconVisible
      */
     public static final int Chip_checkedIconVisible=7;
     /**
@@ -11432,7 +11432,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:chipBackgroundColor
+     * @attr name com.tdr.registrationv3:chipBackgroundColor
      */
     public static final int Chip_chipBackgroundColor=8;
     /**
@@ -11445,7 +11445,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:chipCornerRadius
+     * @attr name com.tdr.registrationv3:chipCornerRadius
      */
     public static final int Chip_chipCornerRadius=9;
     /**
@@ -11458,7 +11458,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:chipEndPadding
+     * @attr name com.tdr.registrationv3:chipEndPadding
      */
     public static final int Chip_chipEndPadding=10;
     /**
@@ -11470,7 +11470,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:chipIcon
+     * @attr name com.tdr.registrationv3:chipIcon
      */
     public static final int Chip_chipIcon=11;
     /**
@@ -11480,7 +11480,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:chipIconEnabled
+     * @attr name com.tdr.registrationv3:chipIconEnabled
      */
     public static final int Chip_chipIconEnabled=12;
     /**
@@ -11493,7 +11493,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:chipIconSize
+     * @attr name com.tdr.registrationv3:chipIconSize
      */
     public static final int Chip_chipIconSize=13;
     /**
@@ -11504,7 +11504,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:chipIconTint
+     * @attr name com.tdr.registrationv3:chipIconTint
      */
     public static final int Chip_chipIconTint=14;
     /**
@@ -11514,7 +11514,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:chipIconVisible
+     * @attr name com.tdr.registrationv3:chipIconVisible
      */
     public static final int Chip_chipIconVisible=15;
     /**
@@ -11527,7 +11527,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:chipMinHeight
+     * @attr name com.tdr.registrationv3:chipMinHeight
      */
     public static final int Chip_chipMinHeight=16;
     /**
@@ -11540,7 +11540,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:chipStartPadding
+     * @attr name com.tdr.registrationv3:chipStartPadding
      */
     public static final int Chip_chipStartPadding=17;
     /**
@@ -11551,7 +11551,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:chipStrokeColor
+     * @attr name com.tdr.registrationv3:chipStrokeColor
      */
     public static final int Chip_chipStrokeColor=18;
     /**
@@ -11564,7 +11564,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:chipStrokeWidth
+     * @attr name com.tdr.registrationv3:chipStrokeWidth
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
@@ -11576,7 +11576,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:closeIcon
+     * @attr name com.tdr.registrationv3:closeIcon
      */
     public static final int Chip_closeIcon=20;
     /**
@@ -11586,7 +11586,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:closeIconEnabled
+     * @attr name com.tdr.registrationv3:closeIconEnabled
      */
     public static final int Chip_closeIconEnabled=21;
     /**
@@ -11599,7 +11599,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:closeIconEndPadding
+     * @attr name com.tdr.registrationv3:closeIconEndPadding
      */
     public static final int Chip_closeIconEndPadding=22;
     /**
@@ -11612,7 +11612,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:closeIconSize
+     * @attr name com.tdr.registrationv3:closeIconSize
      */
     public static final int Chip_closeIconSize=23;
     /**
@@ -11625,7 +11625,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:closeIconStartPadding
+     * @attr name com.tdr.registrationv3:closeIconStartPadding
      */
     public static final int Chip_closeIconStartPadding=24;
     /**
@@ -11636,7 +11636,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:closeIconTint
+     * @attr name com.tdr.registrationv3:closeIconTint
      */
     public static final int Chip_closeIconTint=25;
     /**
@@ -11646,7 +11646,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:closeIconVisible
+     * @attr name com.tdr.registrationv3:closeIconVisible
      */
     public static final int Chip_closeIconVisible=26;
     /**
@@ -11658,7 +11658,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:hideMotionSpec
+     * @attr name com.tdr.registrationv3:hideMotionSpec
      */
     public static final int Chip_hideMotionSpec=27;
     /**
@@ -11671,7 +11671,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:iconEndPadding
+     * @attr name com.tdr.registrationv3:iconEndPadding
      */
     public static final int Chip_iconEndPadding=28;
     /**
@@ -11684,7 +11684,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:iconStartPadding
+     * @attr name com.tdr.registrationv3:iconStartPadding
      */
     public static final int Chip_iconStartPadding=29;
     /**
@@ -11695,7 +11695,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:rippleColor
+     * @attr name com.tdr.registrationv3:rippleColor
      */
     public static final int Chip_rippleColor=30;
     /**
@@ -11707,7 +11707,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:showMotionSpec
+     * @attr name com.tdr.registrationv3:showMotionSpec
      */
     public static final int Chip_showMotionSpec=31;
     /**
@@ -11720,7 +11720,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:textEndPadding
+     * @attr name com.tdr.registrationv3:textEndPadding
      */
     public static final int Chip_textEndPadding=32;
     /**
@@ -11733,7 +11733,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:textStartPadding
+     * @attr name com.tdr.registrationv3:textStartPadding
      */
     public static final int Chip_textStartPadding=33;
     /**
@@ -11743,12 +11743,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ChipGroup_checkedChip com.tdr.registrationV3:checkedChip}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacing com.tdr.registrationV3:chipSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.tdr.registrationV3:chipSpacingHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.tdr.registrationV3:chipSpacingVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleLine com.tdr.registrationV3:singleLine}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleSelection com.tdr.registrationV3:singleSelection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_checkedChip com.tdr.registrationv3:checkedChip}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacing com.tdr.registrationv3:chipSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.tdr.registrationv3:chipSpacingHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.tdr.registrationv3:chipSpacingVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleLine com.tdr.registrationv3:singleLine}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleSelection com.tdr.registrationv3:singleSelection}</code></td><td></td></tr>
      * </table>
      * @see #ChipGroup_checkedChip
      * @see #ChipGroup_chipSpacing
@@ -11770,7 +11770,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:checkedChip
+     * @attr name com.tdr.registrationv3:checkedChip
      */
     public static final int ChipGroup_checkedChip=0;
     /**
@@ -11783,7 +11783,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:chipSpacing
+     * @attr name com.tdr.registrationv3:chipSpacing
      */
     public static final int ChipGroup_chipSpacing=1;
     /**
@@ -11796,7 +11796,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:chipSpacingHorizontal
+     * @attr name com.tdr.registrationv3:chipSpacingHorizontal
      */
     public static final int ChipGroup_chipSpacingHorizontal=2;
     /**
@@ -11809,7 +11809,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:chipSpacingVertical
+     * @attr name com.tdr.registrationv3:chipSpacingVertical
      */
     public static final int ChipGroup_chipSpacingVertical=3;
     /**
@@ -11819,7 +11819,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:singleLine
+     * @attr name com.tdr.registrationv3:singleLine
      */
     public static final int ChipGroup_singleLine=4;
     /**
@@ -11829,7 +11829,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:singleSelection
+     * @attr name com.tdr.registrationv3:singleSelection
      */
     public static final int ChipGroup_singleSelection=5;
     /**
@@ -11839,17 +11839,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlAccentColor com.tdr.registrationV3:srlAccentColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlClassicsSpinnerStyle com.tdr.registrationV3:srlClassicsSpinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlDrawableArrow com.tdr.registrationV3:srlDrawableArrow}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlDrawableArrowSize com.tdr.registrationV3:srlDrawableArrowSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlDrawableMarginRight com.tdr.registrationV3:srlDrawableMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlDrawableProgress com.tdr.registrationV3:srlDrawableProgress}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlDrawableProgressSize com.tdr.registrationV3:srlDrawableProgressSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlDrawableSize com.tdr.registrationV3:srlDrawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlFinishDuration com.tdr.registrationV3:srlFinishDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlPrimaryColor com.tdr.registrationV3:srlPrimaryColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsFooter_srlTextSizeTitle com.tdr.registrationV3:srlTextSizeTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlAccentColor com.tdr.registrationv3:srlAccentColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlClassicsSpinnerStyle com.tdr.registrationv3:srlClassicsSpinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlDrawableArrow com.tdr.registrationv3:srlDrawableArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlDrawableArrowSize com.tdr.registrationv3:srlDrawableArrowSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlDrawableMarginRight com.tdr.registrationv3:srlDrawableMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlDrawableProgress com.tdr.registrationv3:srlDrawableProgress}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlDrawableProgressSize com.tdr.registrationv3:srlDrawableProgressSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlDrawableSize com.tdr.registrationv3:srlDrawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlFinishDuration com.tdr.registrationv3:srlFinishDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlPrimaryColor com.tdr.registrationv3:srlPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsFooter_srlTextSizeTitle com.tdr.registrationv3:srlTextSizeTitle}</code></td><td></td></tr>
      * </table>
      * @see #ClassicsFooter_srlAccentColor
      * @see #ClassicsFooter_srlClassicsSpinnerStyle
@@ -11876,7 +11876,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlAccentColor
+     * @attr name com.tdr.registrationv3:srlAccentColor
      */
     public static final int ClassicsFooter_srlAccentColor=0;
     /**
@@ -11889,12 +11889,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:srlClassicsSpinnerStyle
+     * @attr name com.tdr.registrationv3:srlClassicsSpinnerStyle
      */
     public static final int ClassicsFooter_srlClassicsSpinnerStyle=1;
     /**
@@ -11906,7 +11906,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlDrawableArrow
+     * @attr name com.tdr.registrationv3:srlDrawableArrow
      */
     public static final int ClassicsFooter_srlDrawableArrow=2;
     /**
@@ -11919,7 +11919,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlDrawableArrowSize
+     * @attr name com.tdr.registrationv3:srlDrawableArrowSize
      */
     public static final int ClassicsFooter_srlDrawableArrowSize=3;
     /**
@@ -11932,7 +11932,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlDrawableMarginRight
+     * @attr name com.tdr.registrationv3:srlDrawableMarginRight
      */
     public static final int ClassicsFooter_srlDrawableMarginRight=4;
     /**
@@ -11944,7 +11944,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlDrawableProgress
+     * @attr name com.tdr.registrationv3:srlDrawableProgress
      */
     public static final int ClassicsFooter_srlDrawableProgress=5;
     /**
@@ -11957,7 +11957,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlDrawableProgressSize
+     * @attr name com.tdr.registrationv3:srlDrawableProgressSize
      */
     public static final int ClassicsFooter_srlDrawableProgressSize=6;
     /**
@@ -11970,7 +11970,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlDrawableSize
+     * @attr name com.tdr.registrationv3:srlDrawableSize
      */
     public static final int ClassicsFooter_srlDrawableSize=7;
     /**
@@ -11979,7 +11979,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:srlFinishDuration
+     * @attr name com.tdr.registrationv3:srlFinishDuration
      */
     public static final int ClassicsFooter_srlFinishDuration=8;
     /**
@@ -11990,7 +11990,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlPrimaryColor
+     * @attr name com.tdr.registrationv3:srlPrimaryColor
      */
     public static final int ClassicsFooter_srlPrimaryColor=9;
     /**
@@ -12003,7 +12003,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlTextSizeTitle
+     * @attr name com.tdr.registrationv3:srlTextSizeTitle
      */
     public static final int ClassicsFooter_srlTextSizeTitle=10;
     /**
@@ -12013,20 +12013,20 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlAccentColor com.tdr.registrationV3:srlAccentColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlClassicsSpinnerStyle com.tdr.registrationV3:srlClassicsSpinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlDrawableArrow com.tdr.registrationV3:srlDrawableArrow}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlDrawableArrowSize com.tdr.registrationV3:srlDrawableArrowSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlDrawableMarginRight com.tdr.registrationV3:srlDrawableMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlDrawableProgress com.tdr.registrationV3:srlDrawableProgress}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlDrawableProgressSize com.tdr.registrationV3:srlDrawableProgressSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlDrawableSize com.tdr.registrationV3:srlDrawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlEnableLastTime com.tdr.registrationV3:srlEnableLastTime}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlFinishDuration com.tdr.registrationV3:srlFinishDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlPrimaryColor com.tdr.registrationV3:srlPrimaryColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlTextSizeTime com.tdr.registrationV3:srlTextSizeTime}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlTextSizeTitle com.tdr.registrationV3:srlTextSizeTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ClassicsHeader_srlTextTimeMarginTop com.tdr.registrationV3:srlTextTimeMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlAccentColor com.tdr.registrationv3:srlAccentColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlClassicsSpinnerStyle com.tdr.registrationv3:srlClassicsSpinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlDrawableArrow com.tdr.registrationv3:srlDrawableArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlDrawableArrowSize com.tdr.registrationv3:srlDrawableArrowSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlDrawableMarginRight com.tdr.registrationv3:srlDrawableMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlDrawableProgress com.tdr.registrationv3:srlDrawableProgress}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlDrawableProgressSize com.tdr.registrationv3:srlDrawableProgressSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlDrawableSize com.tdr.registrationv3:srlDrawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlEnableLastTime com.tdr.registrationv3:srlEnableLastTime}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlFinishDuration com.tdr.registrationv3:srlFinishDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlPrimaryColor com.tdr.registrationv3:srlPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlTextSizeTime com.tdr.registrationv3:srlTextSizeTime}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlTextSizeTitle com.tdr.registrationv3:srlTextSizeTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ClassicsHeader_srlTextTimeMarginTop com.tdr.registrationv3:srlTextTimeMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ClassicsHeader_srlAccentColor
      * @see #ClassicsHeader_srlClassicsSpinnerStyle
@@ -12057,7 +12057,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlAccentColor
+     * @attr name com.tdr.registrationv3:srlAccentColor
      */
     public static final int ClassicsHeader_srlAccentColor=0;
     /**
@@ -12070,12 +12070,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:srlClassicsSpinnerStyle
+     * @attr name com.tdr.registrationv3:srlClassicsSpinnerStyle
      */
     public static final int ClassicsHeader_srlClassicsSpinnerStyle=1;
     /**
@@ -12087,7 +12087,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlDrawableArrow
+     * @attr name com.tdr.registrationv3:srlDrawableArrow
      */
     public static final int ClassicsHeader_srlDrawableArrow=2;
     /**
@@ -12100,7 +12100,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlDrawableArrowSize
+     * @attr name com.tdr.registrationv3:srlDrawableArrowSize
      */
     public static final int ClassicsHeader_srlDrawableArrowSize=3;
     /**
@@ -12113,7 +12113,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlDrawableMarginRight
+     * @attr name com.tdr.registrationv3:srlDrawableMarginRight
      */
     public static final int ClassicsHeader_srlDrawableMarginRight=4;
     /**
@@ -12125,7 +12125,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlDrawableProgress
+     * @attr name com.tdr.registrationv3:srlDrawableProgress
      */
     public static final int ClassicsHeader_srlDrawableProgress=5;
     /**
@@ -12138,7 +12138,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlDrawableProgressSize
+     * @attr name com.tdr.registrationv3:srlDrawableProgressSize
      */
     public static final int ClassicsHeader_srlDrawableProgressSize=6;
     /**
@@ -12151,7 +12151,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlDrawableSize
+     * @attr name com.tdr.registrationv3:srlDrawableSize
      */
     public static final int ClassicsHeader_srlDrawableSize=7;
     /**
@@ -12161,7 +12161,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableLastTime
+     * @attr name com.tdr.registrationv3:srlEnableLastTime
      */
     public static final int ClassicsHeader_srlEnableLastTime=8;
     /**
@@ -12170,7 +12170,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:srlFinishDuration
+     * @attr name com.tdr.registrationv3:srlFinishDuration
      */
     public static final int ClassicsHeader_srlFinishDuration=9;
     /**
@@ -12181,7 +12181,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlPrimaryColor
+     * @attr name com.tdr.registrationv3:srlPrimaryColor
      */
     public static final int ClassicsHeader_srlPrimaryColor=10;
     /**
@@ -12194,7 +12194,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlTextSizeTime
+     * @attr name com.tdr.registrationv3:srlTextSizeTime
      */
     public static final int ClassicsHeader_srlTextSizeTime=11;
     /**
@@ -12207,7 +12207,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlTextSizeTitle
+     * @attr name com.tdr.registrationv3:srlTextSizeTitle
      */
     public static final int ClassicsHeader_srlTextSizeTitle=12;
     /**
@@ -12220,7 +12220,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlTextTimeMarginTop
+     * @attr name com.tdr.registrationv3:srlTextTimeMarginTop
      */
     public static final int ClassicsHeader_srlTextTimeMarginTop=13;
     /**
@@ -12230,22 +12230,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.tdr.registrationV3:collapsedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.tdr.registrationV3:collapsedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.tdr.registrationV3:contentScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.tdr.registrationV3:expandedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.tdr.registrationV3:expandedTitleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.tdr.registrationV3:expandedTitleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.tdr.registrationV3:expandedTitleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.tdr.registrationV3:expandedTitleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.tdr.registrationV3:expandedTitleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.tdr.registrationV3:expandedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.tdr.registrationV3:scrimAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.tdr.registrationV3:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.tdr.registrationV3:statusBarScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.tdr.registrationV3:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.tdr.registrationV3:titleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.tdr.registrationV3:toolbarId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.tdr.registrationv3:collapsedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.tdr.registrationv3:collapsedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.tdr.registrationv3:contentScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.tdr.registrationv3:expandedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.tdr.registrationv3:expandedTitleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.tdr.registrationv3:expandedTitleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.tdr.registrationv3:expandedTitleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.tdr.registrationv3:expandedTitleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.tdr.registrationv3:expandedTitleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.tdr.registrationv3:expandedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.tdr.registrationv3:scrimAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.tdr.registrationv3:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.tdr.registrationv3:statusBarScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.tdr.registrationv3:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.tdr.registrationv3:titleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.tdr.registrationv3:toolbarId}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -12292,7 +12292,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:collapsedTitleGravity
+     * @attr name com.tdr.registrationv3:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
@@ -12304,7 +12304,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:collapsedTitleTextAppearance
+     * @attr name com.tdr.registrationv3:collapsedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
@@ -12315,7 +12315,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:contentScrim
+     * @attr name com.tdr.registrationv3:contentScrim
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
@@ -12340,7 +12340,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:expandedTitleGravity
+     * @attr name com.tdr.registrationv3:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
@@ -12353,7 +12353,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:expandedTitleMargin
+     * @attr name com.tdr.registrationv3:expandedTitleMargin
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
@@ -12366,7 +12366,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:expandedTitleMarginBottom
+     * @attr name com.tdr.registrationv3:expandedTitleMarginBottom
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
@@ -12379,7 +12379,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:expandedTitleMarginEnd
+     * @attr name com.tdr.registrationv3:expandedTitleMarginEnd
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
@@ -12392,7 +12392,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:expandedTitleMarginStart
+     * @attr name com.tdr.registrationv3:expandedTitleMarginStart
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
@@ -12405,7 +12405,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:expandedTitleMarginTop
+     * @attr name com.tdr.registrationv3:expandedTitleMarginTop
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
@@ -12417,7 +12417,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:expandedTitleTextAppearance
+     * @attr name com.tdr.registrationv3:expandedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
@@ -12426,7 +12426,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:scrimAnimationDuration
+     * @attr name com.tdr.registrationv3:scrimAnimationDuration
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
@@ -12439,7 +12439,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:scrimVisibleHeightTrigger
+     * @attr name com.tdr.registrationv3:scrimVisibleHeightTrigger
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
@@ -12450,7 +12450,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:statusBarScrim
+     * @attr name com.tdr.registrationv3:statusBarScrim
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
@@ -12460,7 +12460,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:title
+     * @attr name com.tdr.registrationv3:title
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
@@ -12470,7 +12470,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:titleEnabled
+     * @attr name com.tdr.registrationv3:titleEnabled
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
@@ -12482,7 +12482,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:toolbarId
+     * @attr name com.tdr.registrationv3:toolbarId
      */
     public static final int CollapsingToolbarLayout_toolbarId=15;
     /**
@@ -12492,8 +12492,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.tdr.registrationV3:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.tdr.registrationV3:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.tdr.registrationv3:layout_collapseMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.tdr.registrationv3:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -12516,7 +12516,7 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_collapseMode
+     * @attr name com.tdr.registrationv3:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
@@ -12525,7 +12525,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_collapseParallaxMultiplier
+     * @attr name com.tdr.registrationv3:layout_collapseParallaxMultiplier
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1;
     /**
@@ -12537,7 +12537,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.tdr.registrationV3:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.tdr.registrationv3:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -12572,7 +12572,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:alpha
+     * @attr name com.tdr.registrationv3:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -12583,8 +12583,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.tdr.registrationV3:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.tdr.registrationV3:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.tdr.registrationv3:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.tdr.registrationv3:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -12613,7 +12613,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:buttonTint
+     * @attr name com.tdr.registrationv3:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
@@ -12634,7 +12634,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:buttonTintMode
+     * @attr name com.tdr.registrationv3:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -12649,61 +12649,61 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.tdr.registrationV3:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.tdr.registrationV3:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.tdr.registrationV3:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.tdr.registrationV3:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.tdr.registrationV3:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.tdr.registrationV3:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.tdr.registrationV3:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.tdr.registrationV3:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.tdr.registrationV3:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.tdr.registrationV3:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.tdr.registrationV3:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.tdr.registrationV3:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.tdr.registrationV3:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.tdr.registrationV3:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.tdr.registrationV3:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.tdr.registrationV3:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.tdr.registrationV3:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.tdr.registrationV3:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.tdr.registrationV3:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.tdr.registrationV3:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.tdr.registrationV3:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.tdr.registrationV3:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.tdr.registrationV3:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.tdr.registrationV3:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.tdr.registrationV3:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.tdr.registrationV3:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.tdr.registrationV3:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.tdr.registrationV3:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.tdr.registrationV3:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.tdr.registrationV3:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.tdr.registrationV3:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.tdr.registrationV3:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.tdr.registrationV3:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.tdr.registrationV3:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.tdr.registrationV3:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.tdr.registrationV3:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.tdr.registrationV3:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.tdr.registrationV3:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.tdr.registrationV3:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.tdr.registrationV3:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.tdr.registrationV3:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.tdr.registrationV3:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.tdr.registrationV3:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.tdr.registrationV3:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.tdr.registrationV3:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.tdr.registrationV3:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.tdr.registrationV3:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.tdr.registrationV3:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.tdr.registrationV3:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.tdr.registrationV3:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.tdr.registrationV3:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.tdr.registrationV3:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.tdr.registrationV3:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.tdr.registrationV3:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.tdr.registrationV3:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.tdr.registrationv3:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.tdr.registrationv3:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.tdr.registrationv3:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.tdr.registrationv3:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.tdr.registrationv3:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.tdr.registrationv3:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.tdr.registrationv3:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.tdr.registrationv3:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.tdr.registrationv3:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.tdr.registrationv3:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.tdr.registrationv3:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.tdr.registrationv3:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.tdr.registrationv3:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.tdr.registrationv3:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.tdr.registrationv3:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.tdr.registrationv3:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.tdr.registrationv3:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.tdr.registrationv3:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.tdr.registrationv3:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.tdr.registrationv3:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.tdr.registrationv3:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.tdr.registrationv3:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.tdr.registrationv3:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.tdr.registrationv3:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.tdr.registrationv3:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.tdr.registrationv3:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.tdr.registrationv3:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.tdr.registrationv3:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.tdr.registrationv3:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.tdr.registrationv3:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.tdr.registrationv3:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.tdr.registrationv3:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.tdr.registrationv3:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.tdr.registrationv3:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.tdr.registrationv3:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.tdr.registrationv3:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.tdr.registrationv3:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.tdr.registrationv3:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.tdr.registrationv3:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.tdr.registrationv3:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.tdr.registrationv3:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.tdr.registrationv3:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.tdr.registrationv3:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.tdr.registrationv3:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.tdr.registrationv3:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.tdr.registrationv3:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.tdr.registrationv3:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.tdr.registrationv3:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.tdr.registrationv3:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.tdr.registrationv3:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.tdr.registrationv3:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.tdr.registrationv3:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.tdr.registrationv3:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.tdr.registrationv3:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.tdr.registrationv3:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -12859,7 +12859,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:barrierAllowsGoneWidgets
+     * @attr name com.tdr.registrationv3:barrierAllowsGoneWidgets
      */
     public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
     /**
@@ -12880,7 +12880,7 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:barrierDirection
+     * @attr name com.tdr.registrationv3:barrierDirection
      */
     public static final int ConstraintLayout_Layout_barrierDirection=6;
     /**
@@ -12890,7 +12890,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:chainUseRtl
+     * @attr name com.tdr.registrationv3:chainUseRtl
      */
     public static final int ConstraintLayout_Layout_chainUseRtl=7;
     /**
@@ -12902,7 +12902,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:constraintSet
+     * @attr name com.tdr.registrationv3:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=8;
     /**
@@ -12912,7 +12912,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:constraint_referenced_ids
+     * @attr name com.tdr.registrationv3:constraint_referenced_ids
      */
     public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
     /**
@@ -12922,7 +12922,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constrainedHeight
+     * @attr name com.tdr.registrationv3:layout_constrainedHeight
      */
     public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
     /**
@@ -12932,7 +12932,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constrainedWidth
+     * @attr name com.tdr.registrationv3:layout_constrainedWidth
      */
     public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
     /**
@@ -12941,7 +12941,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBaseline_creator
+     * @attr name com.tdr.registrationv3:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
     /**
@@ -12961,7 +12961,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBaseline_toBaselineOf
+     * @attr name com.tdr.registrationv3:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
     /**
@@ -12970,7 +12970,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBottom_creator
+     * @attr name com.tdr.registrationv3:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
     /**
@@ -12990,7 +12990,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBottom_toBottomOf
+     * @attr name com.tdr.registrationv3:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
     /**
@@ -13010,7 +13010,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBottom_toTopOf
+     * @attr name com.tdr.registrationv3:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
     /**
@@ -13022,7 +13022,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintCircle
+     * @attr name com.tdr.registrationv3:layout_constraintCircle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
     /**
@@ -13031,7 +13031,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintCircleAngle
+     * @attr name com.tdr.registrationv3:layout_constraintCircleAngle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
     /**
@@ -13044,7 +13044,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_constraintCircleRadius
+     * @attr name com.tdr.registrationv3:layout_constraintCircleRadius
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
     /**
@@ -13054,7 +13054,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:layout_constraintDimensionRatio
+     * @attr name com.tdr.registrationv3:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
     /**
@@ -13074,7 +13074,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintEnd_toEndOf
+     * @attr name com.tdr.registrationv3:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
     /**
@@ -13094,7 +13094,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintEnd_toStartOf
+     * @attr name com.tdr.registrationv3:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
     /**
@@ -13107,7 +13107,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_constraintGuide_begin
+     * @attr name com.tdr.registrationv3:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
     /**
@@ -13120,7 +13120,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_constraintGuide_end
+     * @attr name com.tdr.registrationv3:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
     /**
@@ -13129,7 +13129,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintGuide_percent
+     * @attr name com.tdr.registrationv3:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
     /**
@@ -13147,7 +13147,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHeight_default
+     * @attr name com.tdr.registrationv3:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
     /**
@@ -13168,7 +13168,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHeight_max
+     * @attr name com.tdr.registrationv3:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
     /**
@@ -13189,7 +13189,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHeight_min
+     * @attr name com.tdr.registrationv3:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
     /**
@@ -13198,7 +13198,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHeight_percent
+     * @attr name com.tdr.registrationv3:layout_constraintHeight_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
     /**
@@ -13207,7 +13207,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHorizontal_bias
+     * @attr name com.tdr.registrationv3:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
     /**
@@ -13225,7 +13225,7 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHorizontal_chainStyle
+     * @attr name com.tdr.registrationv3:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
     /**
@@ -13234,7 +13234,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHorizontal_weight
+     * @attr name com.tdr.registrationv3:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
     /**
@@ -13243,7 +13243,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintLeft_creator
+     * @attr name com.tdr.registrationv3:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
     /**
@@ -13263,7 +13263,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintLeft_toLeftOf
+     * @attr name com.tdr.registrationv3:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
     /**
@@ -13283,7 +13283,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintLeft_toRightOf
+     * @attr name com.tdr.registrationv3:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
     /**
@@ -13292,7 +13292,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintRight_creator
+     * @attr name com.tdr.registrationv3:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
     /**
@@ -13312,7 +13312,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintRight_toLeftOf
+     * @attr name com.tdr.registrationv3:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
     /**
@@ -13332,7 +13332,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintRight_toRightOf
+     * @attr name com.tdr.registrationv3:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
     /**
@@ -13352,7 +13352,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintStart_toEndOf
+     * @attr name com.tdr.registrationv3:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
     /**
@@ -13372,7 +13372,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintStart_toStartOf
+     * @attr name com.tdr.registrationv3:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
     /**
@@ -13381,7 +13381,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintTop_creator
+     * @attr name com.tdr.registrationv3:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
     /**
@@ -13401,7 +13401,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintTop_toBottomOf
+     * @attr name com.tdr.registrationv3:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
     /**
@@ -13421,7 +13421,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintTop_toTopOf
+     * @attr name com.tdr.registrationv3:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
     /**
@@ -13430,7 +13430,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintVertical_bias
+     * @attr name com.tdr.registrationv3:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
     /**
@@ -13448,7 +13448,7 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintVertical_chainStyle
+     * @attr name com.tdr.registrationv3:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
     /**
@@ -13457,7 +13457,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintVertical_weight
+     * @attr name com.tdr.registrationv3:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
     /**
@@ -13475,7 +13475,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintWidth_default
+     * @attr name com.tdr.registrationv3:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
     /**
@@ -13496,7 +13496,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintWidth_max
+     * @attr name com.tdr.registrationv3:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
     /**
@@ -13517,7 +13517,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintWidth_min
+     * @attr name com.tdr.registrationv3:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
     /**
@@ -13526,7 +13526,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintWidth_percent
+     * @attr name com.tdr.registrationv3:layout_constraintWidth_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
     /**
@@ -13539,7 +13539,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_editor_absoluteX
+     * @attr name com.tdr.registrationv3:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
     /**
@@ -13552,7 +13552,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_editor_absoluteY
+     * @attr name com.tdr.registrationv3:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
     /**
@@ -13565,7 +13565,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginBottom
+     * @attr name com.tdr.registrationv3:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
     /**
@@ -13578,7 +13578,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginEnd
+     * @attr name com.tdr.registrationv3:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
     /**
@@ -13591,7 +13591,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginLeft
+     * @attr name com.tdr.registrationv3:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
     /**
@@ -13604,7 +13604,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginRight
+     * @attr name com.tdr.registrationv3:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
     /**
@@ -13617,7 +13617,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginStart
+     * @attr name com.tdr.registrationv3:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
     /**
@@ -13630,7 +13630,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginTop
+     * @attr name com.tdr.registrationv3:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
     /**
@@ -13646,12 +13646,12 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_optimizationLevel
+     * @attr name com.tdr.registrationv3:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
     /**
@@ -13661,8 +13661,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.tdr.registrationV3:content}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.tdr.registrationV3:emptyVisibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.tdr.registrationv3:content}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.tdr.registrationv3:emptyVisibility}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_placeholder_content
      * @see #ConstraintLayout_placeholder_emptyVisibility
@@ -13679,7 +13679,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:content
+     * @attr name com.tdr.registrationv3:content
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
@@ -13696,7 +13696,7 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:emptyVisibility
+     * @attr name com.tdr.registrationv3:emptyVisibility
      */
     public static final int ConstraintLayout_placeholder_emptyVisibility=1;
     /**
@@ -13729,55 +13729,55 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.tdr.registrationV3:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.tdr.registrationV3:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.tdr.registrationV3:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.tdr.registrationV3:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.tdr.registrationV3:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.tdr.registrationV3:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.tdr.registrationV3:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.tdr.registrationV3:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.tdr.registrationV3:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.tdr.registrationV3:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.tdr.registrationV3:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.tdr.registrationV3:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.tdr.registrationV3:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.tdr.registrationV3:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.tdr.registrationV3:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.tdr.registrationV3:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.tdr.registrationV3:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.tdr.registrationV3:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.tdr.registrationV3:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.tdr.registrationV3:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.tdr.registrationV3:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.tdr.registrationV3:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.tdr.registrationV3:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.tdr.registrationV3:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.tdr.registrationV3:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.tdr.registrationV3:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.tdr.registrationV3:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.tdr.registrationV3:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.tdr.registrationV3:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.tdr.registrationV3:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.tdr.registrationV3:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.tdr.registrationV3:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.tdr.registrationV3:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.tdr.registrationV3:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.tdr.registrationV3:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.tdr.registrationV3:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.tdr.registrationV3:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.tdr.registrationV3:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.tdr.registrationV3:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.tdr.registrationV3:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.tdr.registrationV3:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.tdr.registrationV3:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.tdr.registrationV3:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.tdr.registrationV3:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.tdr.registrationV3:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.tdr.registrationV3:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.tdr.registrationV3:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.tdr.registrationV3:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.tdr.registrationV3:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.tdr.registrationv3:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.tdr.registrationv3:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.tdr.registrationv3:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.tdr.registrationv3:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.tdr.registrationv3:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.tdr.registrationv3:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.tdr.registrationv3:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.tdr.registrationv3:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.tdr.registrationv3:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.tdr.registrationv3:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.tdr.registrationv3:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.tdr.registrationv3:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.tdr.registrationv3:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.tdr.registrationv3:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.tdr.registrationv3:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.tdr.registrationv3:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.tdr.registrationv3:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.tdr.registrationv3:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.tdr.registrationv3:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.tdr.registrationv3:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.tdr.registrationv3:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.tdr.registrationv3:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.tdr.registrationv3:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.tdr.registrationv3:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.tdr.registrationv3:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.tdr.registrationv3:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.tdr.registrationv3:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.tdr.registrationv3:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.tdr.registrationv3:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.tdr.registrationv3:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.tdr.registrationv3:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.tdr.registrationv3:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.tdr.registrationv3:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.tdr.registrationv3:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.tdr.registrationv3:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.tdr.registrationv3:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.tdr.registrationv3:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.tdr.registrationv3:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.tdr.registrationv3:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.tdr.registrationv3:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.tdr.registrationv3:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.tdr.registrationv3:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.tdr.registrationv3:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.tdr.registrationv3:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.tdr.registrationv3:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.tdr.registrationv3:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.tdr.registrationv3:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.tdr.registrationv3:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.tdr.registrationv3:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -14182,7 +14182,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constrainedHeight
+     * @attr name com.tdr.registrationv3:layout_constrainedHeight
      */
     public static final int ConstraintSet_layout_constrainedHeight=23;
     /**
@@ -14192,7 +14192,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constrainedWidth
+     * @attr name com.tdr.registrationv3:layout_constrainedWidth
      */
     public static final int ConstraintSet_layout_constrainedWidth=24;
     /**
@@ -14201,7 +14201,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBaseline_creator
+     * @attr name com.tdr.registrationv3:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=25;
     /**
@@ -14221,7 +14221,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBaseline_toBaselineOf
+     * @attr name com.tdr.registrationv3:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=26;
     /**
@@ -14230,7 +14230,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBottom_creator
+     * @attr name com.tdr.registrationv3:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=27;
     /**
@@ -14250,7 +14250,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBottom_toBottomOf
+     * @attr name com.tdr.registrationv3:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=28;
     /**
@@ -14270,7 +14270,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintBottom_toTopOf
+     * @attr name com.tdr.registrationv3:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=29;
     /**
@@ -14282,7 +14282,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintCircle
+     * @attr name com.tdr.registrationv3:layout_constraintCircle
      */
     public static final int ConstraintSet_layout_constraintCircle=30;
     /**
@@ -14291,7 +14291,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintCircleAngle
+     * @attr name com.tdr.registrationv3:layout_constraintCircleAngle
      */
     public static final int ConstraintSet_layout_constraintCircleAngle=31;
     /**
@@ -14304,7 +14304,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_constraintCircleRadius
+     * @attr name com.tdr.registrationv3:layout_constraintCircleRadius
      */
     public static final int ConstraintSet_layout_constraintCircleRadius=32;
     /**
@@ -14314,7 +14314,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:layout_constraintDimensionRatio
+     * @attr name com.tdr.registrationv3:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=33;
     /**
@@ -14334,7 +14334,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintEnd_toEndOf
+     * @attr name com.tdr.registrationv3:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=34;
     /**
@@ -14354,7 +14354,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintEnd_toStartOf
+     * @attr name com.tdr.registrationv3:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=35;
     /**
@@ -14367,7 +14367,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_constraintGuide_begin
+     * @attr name com.tdr.registrationv3:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=36;
     /**
@@ -14380,7 +14380,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_constraintGuide_end
+     * @attr name com.tdr.registrationv3:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=37;
     /**
@@ -14389,7 +14389,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintGuide_percent
+     * @attr name com.tdr.registrationv3:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=38;
     /**
@@ -14407,7 +14407,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHeight_default
+     * @attr name com.tdr.registrationv3:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=39;
     /**
@@ -14428,7 +14428,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHeight_max
+     * @attr name com.tdr.registrationv3:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=40;
     /**
@@ -14449,7 +14449,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHeight_min
+     * @attr name com.tdr.registrationv3:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=41;
     /**
@@ -14458,7 +14458,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHeight_percent
+     * @attr name com.tdr.registrationv3:layout_constraintHeight_percent
      */
     public static final int ConstraintSet_layout_constraintHeight_percent=42;
     /**
@@ -14467,7 +14467,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHorizontal_bias
+     * @attr name com.tdr.registrationv3:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=43;
     /**
@@ -14485,7 +14485,7 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHorizontal_chainStyle
+     * @attr name com.tdr.registrationv3:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=44;
     /**
@@ -14494,7 +14494,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintHorizontal_weight
+     * @attr name com.tdr.registrationv3:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=45;
     /**
@@ -14503,7 +14503,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintLeft_creator
+     * @attr name com.tdr.registrationv3:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=46;
     /**
@@ -14523,7 +14523,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintLeft_toLeftOf
+     * @attr name com.tdr.registrationv3:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=47;
     /**
@@ -14543,7 +14543,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintLeft_toRightOf
+     * @attr name com.tdr.registrationv3:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=48;
     /**
@@ -14552,7 +14552,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintRight_creator
+     * @attr name com.tdr.registrationv3:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=49;
     /**
@@ -14572,7 +14572,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintRight_toLeftOf
+     * @attr name com.tdr.registrationv3:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=50;
     /**
@@ -14592,7 +14592,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintRight_toRightOf
+     * @attr name com.tdr.registrationv3:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=51;
     /**
@@ -14612,7 +14612,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintStart_toEndOf
+     * @attr name com.tdr.registrationv3:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=52;
     /**
@@ -14632,7 +14632,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintStart_toStartOf
+     * @attr name com.tdr.registrationv3:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=53;
     /**
@@ -14641,7 +14641,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintTop_creator
+     * @attr name com.tdr.registrationv3:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=54;
     /**
@@ -14661,7 +14661,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintTop_toBottomOf
+     * @attr name com.tdr.registrationv3:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=55;
     /**
@@ -14681,7 +14681,7 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintTop_toTopOf
+     * @attr name com.tdr.registrationv3:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=56;
     /**
@@ -14690,7 +14690,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintVertical_bias
+     * @attr name com.tdr.registrationv3:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=57;
     /**
@@ -14708,7 +14708,7 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintVertical_chainStyle
+     * @attr name com.tdr.registrationv3:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=58;
     /**
@@ -14717,7 +14717,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintVertical_weight
+     * @attr name com.tdr.registrationv3:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=59;
     /**
@@ -14735,7 +14735,7 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintWidth_default
+     * @attr name com.tdr.registrationv3:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=60;
     /**
@@ -14756,7 +14756,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintWidth_max
+     * @attr name com.tdr.registrationv3:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=61;
     /**
@@ -14777,7 +14777,7 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_constraintWidth_min
+     * @attr name com.tdr.registrationv3:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=62;
     /**
@@ -14786,7 +14786,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_constraintWidth_percent
+     * @attr name com.tdr.registrationv3:layout_constraintWidth_percent
      */
     public static final int ConstraintSet_layout_constraintWidth_percent=63;
     /**
@@ -14799,7 +14799,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_editor_absoluteX
+     * @attr name com.tdr.registrationv3:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=64;
     /**
@@ -14812,7 +14812,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_editor_absoluteY
+     * @attr name com.tdr.registrationv3:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=65;
     /**
@@ -14825,7 +14825,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginBottom
+     * @attr name com.tdr.registrationv3:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=66;
     /**
@@ -14838,7 +14838,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginEnd
+     * @attr name com.tdr.registrationv3:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=67;
     /**
@@ -14851,7 +14851,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginLeft
+     * @attr name com.tdr.registrationv3:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=68;
     /**
@@ -14864,7 +14864,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginRight
+     * @attr name com.tdr.registrationv3:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=69;
     /**
@@ -14877,7 +14877,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginStart
+     * @attr name com.tdr.registrationv3:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=70;
     /**
@@ -14890,7 +14890,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:layout_goneMarginTop
+     * @attr name com.tdr.registrationv3:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=71;
     /**
@@ -14900,8 +14900,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.tdr.registrationV3:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.tdr.registrationV3:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.tdr.registrationv3:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.tdr.registrationv3:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -14918,7 +14918,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:keylines
+     * @attr name com.tdr.registrationv3:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
@@ -14933,7 +14933,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:statusBarBackground
+     * @attr name com.tdr.registrationv3:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -14944,12 +14944,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.tdr.registrationV3:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.tdr.registrationV3:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.tdr.registrationV3:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.tdr.registrationV3:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.tdr.registrationV3:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.tdr.registrationV3:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.tdr.registrationv3:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.tdr.registrationv3:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.tdr.registrationv3:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.tdr.registrationv3:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.tdr.registrationv3:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.tdr.registrationv3:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -15001,7 +15001,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:layout_anchor
+     * @attr name com.tdr.registrationv3:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
@@ -15030,7 +15030,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_anchorGravity
+     * @attr name com.tdr.registrationv3:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
@@ -15040,7 +15040,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:layout_behavior
+     * @attr name com.tdr.registrationv3:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
@@ -15063,7 +15063,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_dodgeInsetEdges
+     * @attr name com.tdr.registrationv3:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
@@ -15085,7 +15085,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_insetEdge
+     * @attr name com.tdr.registrationv3:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
@@ -15094,7 +15094,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:layout_keyline
+     * @attr name com.tdr.registrationv3:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -15104,8 +15104,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.tdr.registrationV3:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.tdr.registrationV3:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.tdr.registrationv3:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.tdr.registrationv3:bottomSheetStyle}</code></td><td></td></tr>
      * </table>
      * @see #DesignTheme_bottomSheetDialogTheme
      * @see #DesignTheme_bottomSheetStyle
@@ -15122,7 +15122,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:bottomSheetDialogTheme
+     * @attr name com.tdr.registrationv3:bottomSheetDialogTheme
      */
     public static final int DesignTheme_bottomSheetDialogTheme=0;
     /**
@@ -15134,7 +15134,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:bottomSheetStyle
+     * @attr name com.tdr.registrationv3:bottomSheetStyle
      */
     public static final int DesignTheme_bottomSheetStyle=1;
     /**
@@ -15144,14 +15144,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.tdr.registrationV3:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.tdr.registrationV3:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.tdr.registrationV3:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.tdr.registrationV3:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.tdr.registrationV3:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.tdr.registrationV3:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.tdr.registrationV3:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.tdr.registrationV3:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.tdr.registrationv3:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.tdr.registrationv3:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.tdr.registrationv3:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.tdr.registrationv3:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.tdr.registrationv3:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.tdr.registrationv3:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.tdr.registrationv3:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.tdr.registrationv3:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -15176,7 +15176,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:arrowHeadLength
+     * @attr name com.tdr.registrationv3:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
@@ -15189,7 +15189,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:arrowShaftLength
+     * @attr name com.tdr.registrationv3:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
@@ -15202,7 +15202,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:barLength
+     * @attr name com.tdr.registrationv3:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
@@ -15213,7 +15213,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:color
+     * @attr name com.tdr.registrationv3:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
@@ -15226,7 +15226,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:drawableSize
+     * @attr name com.tdr.registrationv3:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
@@ -15239,7 +15239,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:gapBetweenBars
+     * @attr name com.tdr.registrationv3:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
@@ -15249,7 +15249,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:spinBars
+     * @attr name com.tdr.registrationv3:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
@@ -15262,7 +15262,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:thickness
+     * @attr name com.tdr.registrationv3:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -15272,9 +15272,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DropboxHeader_dhDrawable1 com.tdr.registrationV3:dhDrawable1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DropboxHeader_dhDrawable2 com.tdr.registrationV3:dhDrawable2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DropboxHeader_dhDrawable3 com.tdr.registrationV3:dhDrawable3}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DropboxHeader_dhDrawable1 com.tdr.registrationv3:dhDrawable1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DropboxHeader_dhDrawable2 com.tdr.registrationv3:dhDrawable2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DropboxHeader_dhDrawable3 com.tdr.registrationv3:dhDrawable3}</code></td><td></td></tr>
      * </table>
      * @see #DropboxHeader_dhDrawable1
      * @see #DropboxHeader_dhDrawable2
@@ -15292,7 +15292,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:dhDrawable1
+     * @attr name com.tdr.registrationv3:dhDrawable1
      */
     public static final int DropboxHeader_dhDrawable1=0;
     /**
@@ -15304,7 +15304,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:dhDrawable2
+     * @attr name com.tdr.registrationv3:dhDrawable2
      */
     public static final int DropboxHeader_dhDrawable2=1;
     /**
@@ -15316,7 +15316,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:dhDrawable3
+     * @attr name com.tdr.registrationv3:dhDrawable3
      */
     public static final int DropboxHeader_dhDrawable3=2;
     /**
@@ -15326,19 +15326,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.tdr.registrationV3:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.tdr.registrationV3:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.tdr.registrationV3:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.tdr.registrationV3:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.tdr.registrationV3:fabCustomSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize com.tdr.registrationV3:fabSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.tdr.registrationV3:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.tdr.registrationV3:hoveredFocusedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.tdr.registrationV3:maxImageSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.tdr.registrationV3:pressedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.tdr.registrationV3:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.tdr.registrationV3:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.tdr.registrationV3:useCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.tdr.registrationv3:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.tdr.registrationv3:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.tdr.registrationv3:borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.tdr.registrationv3:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.tdr.registrationv3:fabCustomSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize com.tdr.registrationv3:fabSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.tdr.registrationv3:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.tdr.registrationv3:hoveredFocusedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.tdr.registrationv3:maxImageSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.tdr.registrationv3:pressedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.tdr.registrationv3:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.tdr.registrationv3:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.tdr.registrationv3:useCompatPadding}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -15368,7 +15368,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:backgroundTint
+     * @attr name com.tdr.registrationv3:backgroundTint
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
@@ -15389,7 +15389,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:backgroundTintMode
+     * @attr name com.tdr.registrationv3:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
@@ -15402,7 +15402,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:borderWidth
+     * @attr name com.tdr.registrationv3:borderWidth
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
@@ -15415,7 +15415,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:elevation
+     * @attr name com.tdr.registrationv3:elevation
      */
     public static final int FloatingActionButton_elevation=3;
     /**
@@ -15428,7 +15428,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:fabCustomSize
+     * @attr name com.tdr.registrationv3:fabCustomSize
      */
     public static final int FloatingActionButton_fabCustomSize=4;
     /**
@@ -15446,7 +15446,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:fabSize
+     * @attr name com.tdr.registrationv3:fabSize
      */
     public static final int FloatingActionButton_fabSize=5;
     /**
@@ -15458,7 +15458,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:hideMotionSpec
+     * @attr name com.tdr.registrationv3:hideMotionSpec
      */
     public static final int FloatingActionButton_hideMotionSpec=6;
     /**
@@ -15471,7 +15471,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:hoveredFocusedTranslationZ
+     * @attr name com.tdr.registrationv3:hoveredFocusedTranslationZ
      */
     public static final int FloatingActionButton_hoveredFocusedTranslationZ=7;
     /**
@@ -15484,7 +15484,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:maxImageSize
+     * @attr name com.tdr.registrationv3:maxImageSize
      */
     public static final int FloatingActionButton_maxImageSize=8;
     /**
@@ -15497,7 +15497,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:pressedTranslationZ
+     * @attr name com.tdr.registrationv3:pressedTranslationZ
      */
     public static final int FloatingActionButton_pressedTranslationZ=9;
     /**
@@ -15508,7 +15508,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:rippleColor
+     * @attr name com.tdr.registrationv3:rippleColor
      */
     public static final int FloatingActionButton_rippleColor=10;
     /**
@@ -15520,7 +15520,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:showMotionSpec
+     * @attr name com.tdr.registrationv3:showMotionSpec
      */
     public static final int FloatingActionButton_showMotionSpec=11;
     /**
@@ -15530,7 +15530,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:useCompatPadding
+     * @attr name com.tdr.registrationv3:useCompatPadding
      */
     public static final int FloatingActionButton_useCompatPadding=12;
     /**
@@ -15540,7 +15540,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.tdr.registrationV3:behavior_autoHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.tdr.registrationv3:behavior_autoHide}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
@@ -15554,7 +15554,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:behavior_autoHide
+     * @attr name com.tdr.registrationv3:behavior_autoHide
      */
     public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
@@ -15564,8 +15564,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FlowLayout_itemSpacing com.tdr.registrationV3:itemSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FlowLayout_lineSpacing com.tdr.registrationV3:lineSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_itemSpacing com.tdr.registrationv3:itemSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_lineSpacing com.tdr.registrationv3:lineSpacing}</code></td><td></td></tr>
      * </table>
      * @see #FlowLayout_itemSpacing
      * @see #FlowLayout_lineSpacing
@@ -15583,7 +15583,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:itemSpacing
+     * @attr name com.tdr.registrationv3:itemSpacing
      */
     public static final int FlowLayout_itemSpacing=0;
     /**
@@ -15596,7 +15596,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:lineSpacing
+     * @attr name com.tdr.registrationv3:lineSpacing
      */
     public static final int FlowLayout_lineSpacing=1;
     /**
@@ -15606,12 +15606,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.tdr.registrationV3:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.tdr.registrationV3:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.tdr.registrationV3:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.tdr.registrationV3:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.tdr.registrationV3:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.tdr.registrationV3:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.tdr.registrationv3:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.tdr.registrationv3:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.tdr.registrationv3:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.tdr.registrationv3:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.tdr.registrationv3:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.tdr.registrationv3:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -15631,7 +15631,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fontProviderAuthority
+     * @attr name com.tdr.registrationv3:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
@@ -15643,7 +15643,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:fontProviderCerts
+     * @attr name com.tdr.registrationv3:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
@@ -15660,7 +15660,7 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:fontProviderFetchStrategy
+     * @attr name com.tdr.registrationv3:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
@@ -15677,7 +15677,7 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:fontProviderFetchTimeout
+     * @attr name com.tdr.registrationv3:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
@@ -15687,7 +15687,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fontProviderPackage
+     * @attr name com.tdr.registrationv3:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
@@ -15697,7 +15697,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fontProviderQuery
+     * @attr name com.tdr.registrationv3:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -15712,11 +15712,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.tdr.registrationV3:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.tdr.registrationV3:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.tdr.registrationV3:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.tdr.registrationV3:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.tdr.registrationV3:ttcIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.tdr.registrationv3:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.tdr.registrationv3:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.tdr.registrationv3:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.tdr.registrationv3:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.tdr.registrationv3:ttcIndex}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -15800,7 +15800,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:font
+     * @attr name com.tdr.registrationv3:font
      */
     public static final int FontFamilyFont_font=5;
     /**
@@ -15817,7 +15817,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:fontStyle
+     * @attr name com.tdr.registrationv3:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
@@ -15827,7 +15827,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fontVariationSettings
+     * @attr name com.tdr.registrationv3:fontVariationSettings
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
@@ -15836,7 +15836,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:fontWeight
+     * @attr name com.tdr.registrationv3:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
@@ -15845,7 +15845,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:ttcIndex
+     * @attr name com.tdr.registrationv3:ttcIndex
      */
     public static final int FontFamilyFont_ttcIndex=9;
     /**
@@ -15857,7 +15857,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.tdr.registrationV3:foregroundInsidePadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.tdr.registrationv3:foregroundInsidePadding}</code></td><td></td></tr>
      * </table>
      * @see #ForegroundLinearLayout_android_foreground
      * @see #ForegroundLinearLayout_android_foregroundGravity
@@ -15915,7 +15915,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:foregroundInsidePadding
+     * @attr name com.tdr.registrationv3:foregroundInsidePadding
      */
     public static final int ForegroundLinearLayout_foregroundInsidePadding=2;
     /**
@@ -15925,10 +15925,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FunGameHeader_fgvBottomTextSize com.tdr.registrationV3:fgvBottomTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameHeader_fgvMaskBottomText com.tdr.registrationV3:fgvMaskBottomText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameHeader_fgvMaskTopText com.tdr.registrationV3:fgvMaskTopText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameHeader_fgvTopTextSize com.tdr.registrationV3:fgvTopTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameHeader_fgvBottomTextSize com.tdr.registrationv3:fgvBottomTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameHeader_fgvMaskBottomText com.tdr.registrationv3:fgvMaskBottomText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameHeader_fgvMaskTopText com.tdr.registrationv3:fgvMaskTopText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameHeader_fgvTopTextSize com.tdr.registrationv3:fgvTopTextSize}</code></td><td></td></tr>
      * </table>
      * @see #FunGameHeader_fgvBottomTextSize
      * @see #FunGameHeader_fgvMaskBottomText
@@ -15948,7 +15948,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:fgvBottomTextSize
+     * @attr name com.tdr.registrationv3:fgvBottomTextSize
      */
     public static final int FunGameHeader_fgvBottomTextSize=0;
     /**
@@ -15958,7 +15958,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fgvMaskBottomText
+     * @attr name com.tdr.registrationv3:fgvMaskBottomText
      */
     public static final int FunGameHeader_fgvMaskBottomText=1;
     /**
@@ -15968,7 +15968,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fgvMaskTopText
+     * @attr name com.tdr.registrationv3:fgvMaskTopText
      */
     public static final int FunGameHeader_fgvMaskTopText=2;
     /**
@@ -15981,7 +15981,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:fgvTopTextSize
+     * @attr name com.tdr.registrationv3:fgvTopTextSize
      */
     public static final int FunGameHeader_fgvTopTextSize=3;
     /**
@@ -15991,8 +15991,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FunGameHitBlockHeader_fgvBallSpeed com.tdr.registrationV3:fgvBallSpeed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameHitBlockHeader_fgvBlockHorizontalNum com.tdr.registrationV3:fgvBlockHorizontalNum}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameHitBlockHeader_fgvBallSpeed com.tdr.registrationv3:fgvBallSpeed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameHitBlockHeader_fgvBlockHorizontalNum com.tdr.registrationv3:fgvBlockHorizontalNum}</code></td><td></td></tr>
      * </table>
      * @see #FunGameHitBlockHeader_fgvBallSpeed
      * @see #FunGameHitBlockHeader_fgvBlockHorizontalNum
@@ -16010,7 +16010,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:fgvBallSpeed
+     * @attr name com.tdr.registrationv3:fgvBallSpeed
      */
     public static final int FunGameHitBlockHeader_fgvBallSpeed=0;
     /**
@@ -16019,7 +16019,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:fgvBlockHorizontalNum
+     * @attr name com.tdr.registrationv3:fgvBlockHorizontalNum
      */
     public static final int FunGameHitBlockHeader_fgvBlockHorizontalNum=1;
     /**
@@ -16029,13 +16029,13 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FunGameView_fgvBackColor com.tdr.registrationV3:fgvBackColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameView_fgvLeftColor com.tdr.registrationV3:fgvLeftColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameView_fgvMiddleColor com.tdr.registrationV3:fgvMiddleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameView_fgvRightColor com.tdr.registrationV3:fgvRightColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameView_fgvTextGameOver com.tdr.registrationV3:fgvTextGameOver}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameView_fgvTextLoading com.tdr.registrationV3:fgvTextLoading}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FunGameView_fgvTextLoadingFinished com.tdr.registrationV3:fgvTextLoadingFinished}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameView_fgvBackColor com.tdr.registrationv3:fgvBackColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameView_fgvLeftColor com.tdr.registrationv3:fgvLeftColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameView_fgvMiddleColor com.tdr.registrationv3:fgvMiddleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameView_fgvRightColor com.tdr.registrationv3:fgvRightColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameView_fgvTextGameOver com.tdr.registrationv3:fgvTextGameOver}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameView_fgvTextLoading com.tdr.registrationv3:fgvTextLoading}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FunGameView_fgvTextLoadingFinished com.tdr.registrationv3:fgvTextLoadingFinished}</code></td><td></td></tr>
      * </table>
      * @see #FunGameView_fgvBackColor
      * @see #FunGameView_fgvLeftColor
@@ -16057,7 +16057,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:fgvBackColor
+     * @attr name com.tdr.registrationv3:fgvBackColor
      */
     public static final int FunGameView_fgvBackColor=0;
     /**
@@ -16068,7 +16068,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:fgvLeftColor
+     * @attr name com.tdr.registrationv3:fgvLeftColor
      */
     public static final int FunGameView_fgvLeftColor=1;
     /**
@@ -16079,7 +16079,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:fgvMiddleColor
+     * @attr name com.tdr.registrationv3:fgvMiddleColor
      */
     public static final int FunGameView_fgvMiddleColor=2;
     /**
@@ -16090,7 +16090,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:fgvRightColor
+     * @attr name com.tdr.registrationv3:fgvRightColor
      */
     public static final int FunGameView_fgvRightColor=3;
     /**
@@ -16100,7 +16100,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fgvTextGameOver
+     * @attr name com.tdr.registrationv3:fgvTextGameOver
      */
     public static final int FunGameView_fgvTextGameOver=4;
     /**
@@ -16110,7 +16110,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fgvTextLoading
+     * @attr name com.tdr.registrationv3:fgvTextLoading
      */
     public static final int FunGameView_fgvTextLoading=5;
     /**
@@ -16120,7 +16120,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fgvTextLoadingFinished
+     * @attr name com.tdr.registrationv3:fgvTextLoadingFinished
      */
     public static final int FunGameView_fgvTextLoadingFinished=6;
     /**
@@ -16390,10 +16390,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.tdr.registrationV3:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.tdr.registrationV3:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.tdr.registrationV3:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.tdr.registrationV3:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.tdr.registrationv3:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.tdr.registrationv3:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.tdr.registrationv3:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.tdr.registrationv3:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -16493,7 +16493,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:divider
+     * @attr name com.tdr.registrationv3:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
@@ -16506,7 +16506,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:dividerPadding
+     * @attr name com.tdr.registrationv3:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
@@ -16516,7 +16516,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:measureWithLargestChild
+     * @attr name com.tdr.registrationv3:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
@@ -16535,7 +16535,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:showDividers
+     * @attr name com.tdr.registrationv3:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -16695,18 +16695,18 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint com.tdr.registrationV3:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.tdr.registrationV3:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_cornerRadius com.tdr.registrationV3:cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon com.tdr.registrationV3:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconGravity com.tdr.registrationV3:iconGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconPadding com.tdr.registrationV3:iconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconSize com.tdr.registrationV3:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.tdr.registrationV3:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode com.tdr.registrationV3:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_rippleColor com.tdr.registrationV3:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeColor com.tdr.registrationV3:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeWidth com.tdr.registrationV3:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint com.tdr.registrationv3:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.tdr.registrationv3:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_cornerRadius com.tdr.registrationv3:cornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon com.tdr.registrationv3:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconGravity com.tdr.registrationv3:iconGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconPadding com.tdr.registrationv3:iconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconSize com.tdr.registrationv3:iconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.tdr.registrationv3:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode com.tdr.registrationv3:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_rippleColor com.tdr.registrationv3:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeColor com.tdr.registrationv3:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeWidth com.tdr.registrationv3:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialButton_android_insetLeft
      * @see #MaterialButton_android_insetRight
@@ -16807,7 +16807,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:backgroundTint
+     * @attr name com.tdr.registrationv3:backgroundTint
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
@@ -16828,7 +16828,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:backgroundTintMode
+     * @attr name com.tdr.registrationv3:backgroundTintMode
      */
     public static final int MaterialButton_backgroundTintMode=5;
     /**
@@ -16841,7 +16841,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:cornerRadius
+     * @attr name com.tdr.registrationv3:cornerRadius
      */
     public static final int MaterialButton_cornerRadius=6;
     /**
@@ -16853,7 +16853,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:icon
+     * @attr name com.tdr.registrationv3:icon
      */
     public static final int MaterialButton_icon=7;
     /**
@@ -16870,7 +16870,7 @@ public final class R {
      * <tr><td>textStart</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:iconGravity
+     * @attr name com.tdr.registrationv3:iconGravity
      */
     public static final int MaterialButton_iconGravity=8;
     /**
@@ -16883,7 +16883,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:iconPadding
+     * @attr name com.tdr.registrationv3:iconPadding
      */
     public static final int MaterialButton_iconPadding=9;
     /**
@@ -16896,7 +16896,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:iconSize
+     * @attr name com.tdr.registrationv3:iconSize
      */
     public static final int MaterialButton_iconSize=10;
     /**
@@ -16907,7 +16907,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:iconTint
+     * @attr name com.tdr.registrationv3:iconTint
      */
     public static final int MaterialButton_iconTint=11;
     /**
@@ -16928,7 +16928,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:iconTintMode
+     * @attr name com.tdr.registrationv3:iconTintMode
      */
     public static final int MaterialButton_iconTintMode=12;
     /**
@@ -16939,7 +16939,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:rippleColor
+     * @attr name com.tdr.registrationv3:rippleColor
      */
     public static final int MaterialButton_rippleColor=13;
     /**
@@ -16950,7 +16950,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:strokeColor
+     * @attr name com.tdr.registrationv3:strokeColor
      */
     public static final int MaterialButton_strokeColor=14;
     /**
@@ -16963,7 +16963,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:strokeWidth
+     * @attr name com.tdr.registrationv3:strokeWidth
      */
     public static final int MaterialButton_strokeWidth=15;
     /**
@@ -16973,8 +16973,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeColor com.tdr.registrationV3:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.tdr.registrationV3:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeColor com.tdr.registrationv3:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.tdr.registrationv3:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCardView_strokeColor
      * @see #MaterialCardView_strokeWidth
@@ -16990,7 +16990,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:strokeColor
+     * @attr name com.tdr.registrationv3:strokeColor
      */
     public static final int MaterialCardView_strokeColor=0;
     /**
@@ -17003,7 +17003,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:strokeWidth
+     * @attr name com.tdr.registrationv3:strokeWidth
      */
     public static final int MaterialCardView_strokeWidth=1;
     /**
@@ -17013,38 +17013,38 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme com.tdr.registrationV3:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle com.tdr.registrationV3:bottomSheetStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.tdr.registrationV3:chipGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.tdr.registrationV3:chipStandaloneStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.tdr.registrationV3:chipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.tdr.registrationV3:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.tdr.registrationV3:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.tdr.registrationV3:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.tdr.registrationV3:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.tdr.registrationV3:colorSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.tdr.registrationV3:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.tdr.registrationV3:floatingActionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.tdr.registrationV3:materialButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.tdr.registrationV3:materialCardViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle com.tdr.registrationV3:navigationViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground com.tdr.registrationV3:scrimBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle com.tdr.registrationV3:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle com.tdr.registrationV3:tabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 com.tdr.registrationV3:textAppearanceBody1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 com.tdr.registrationV3:textAppearanceBody2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton com.tdr.registrationV3:textAppearanceButton}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption com.tdr.registrationV3:textAppearanceCaption}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 com.tdr.registrationV3:textAppearanceHeadline1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 com.tdr.registrationV3:textAppearanceHeadline2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 com.tdr.registrationV3:textAppearanceHeadline3}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 com.tdr.registrationV3:textAppearanceHeadline4}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 com.tdr.registrationV3:textAppearanceHeadline5}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 com.tdr.registrationV3:textAppearanceHeadline6}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline com.tdr.registrationV3:textAppearanceOverline}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 com.tdr.registrationV3:textAppearanceSubtitle1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 com.tdr.registrationV3:textAppearanceSubtitle2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle com.tdr.registrationV3:textInputStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme com.tdr.registrationv3:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle com.tdr.registrationv3:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.tdr.registrationv3:chipGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.tdr.registrationv3:chipStandaloneStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.tdr.registrationv3:chipStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.tdr.registrationv3:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.tdr.registrationv3:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.tdr.registrationv3:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.tdr.registrationv3:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.tdr.registrationv3:colorSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.tdr.registrationv3:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.tdr.registrationv3:floatingActionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.tdr.registrationv3:materialButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.tdr.registrationv3:materialCardViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle com.tdr.registrationv3:navigationViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground com.tdr.registrationv3:scrimBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle com.tdr.registrationv3:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle com.tdr.registrationv3:tabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 com.tdr.registrationv3:textAppearanceBody1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 com.tdr.registrationv3:textAppearanceBody2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton com.tdr.registrationv3:textAppearanceButton}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption com.tdr.registrationv3:textAppearanceCaption}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 com.tdr.registrationv3:textAppearanceHeadline1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 com.tdr.registrationv3:textAppearanceHeadline2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 com.tdr.registrationv3:textAppearanceHeadline3}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 com.tdr.registrationv3:textAppearanceHeadline4}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 com.tdr.registrationv3:textAppearanceHeadline5}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 com.tdr.registrationv3:textAppearanceHeadline6}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline com.tdr.registrationv3:textAppearanceOverline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 com.tdr.registrationv3:textAppearanceSubtitle1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 com.tdr.registrationv3:textAppearanceSubtitle2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle com.tdr.registrationv3:textInputStyle}</code></td><td></td></tr>
      * </table>
      * @see #MaterialComponentsTheme_bottomSheetDialogTheme
      * @see #MaterialComponentsTheme_bottomSheetStyle
@@ -17098,7 +17098,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:bottomSheetDialogTheme
+     * @attr name com.tdr.registrationv3:bottomSheetDialogTheme
      */
     public static final int MaterialComponentsTheme_bottomSheetDialogTheme=0;
     /**
@@ -17110,7 +17110,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:bottomSheetStyle
+     * @attr name com.tdr.registrationv3:bottomSheetStyle
      */
     public static final int MaterialComponentsTheme_bottomSheetStyle=1;
     /**
@@ -17122,7 +17122,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:chipGroupStyle
+     * @attr name com.tdr.registrationv3:chipGroupStyle
      */
     public static final int MaterialComponentsTheme_chipGroupStyle=2;
     /**
@@ -17134,7 +17134,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:chipStandaloneStyle
+     * @attr name com.tdr.registrationv3:chipStandaloneStyle
      */
     public static final int MaterialComponentsTheme_chipStandaloneStyle=3;
     /**
@@ -17146,7 +17146,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:chipStyle
+     * @attr name com.tdr.registrationv3:chipStyle
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
@@ -17157,7 +17157,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorAccent
+     * @attr name com.tdr.registrationv3:colorAccent
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
@@ -17168,7 +17168,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorBackgroundFloating
+     * @attr name com.tdr.registrationv3:colorBackgroundFloating
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
@@ -17179,7 +17179,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorPrimary
+     * @attr name com.tdr.registrationv3:colorPrimary
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
@@ -17190,7 +17190,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorPrimaryDark
+     * @attr name com.tdr.registrationv3:colorPrimaryDark
      */
     public static final int MaterialComponentsTheme_colorPrimaryDark=8;
     /**
@@ -17201,7 +17201,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:colorSecondary
+     * @attr name com.tdr.registrationv3:colorSecondary
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
@@ -17213,7 +17213,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:editTextStyle
+     * @attr name com.tdr.registrationv3:editTextStyle
      */
     public static final int MaterialComponentsTheme_editTextStyle=10;
     /**
@@ -17243,7 +17243,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tdr.registrationV3:floatingActionButtonStyle
+     * @attr name com.tdr.registrationv3:floatingActionButtonStyle
      */
     public static final int MaterialComponentsTheme_floatingActionButtonStyle=11;
     /**
@@ -17255,7 +17255,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:materialButtonStyle
+     * @attr name com.tdr.registrationv3:materialButtonStyle
      */
     public static final int MaterialComponentsTheme_materialButtonStyle=12;
     /**
@@ -17267,7 +17267,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:materialCardViewStyle
+     * @attr name com.tdr.registrationv3:materialCardViewStyle
      */
     public static final int MaterialComponentsTheme_materialCardViewStyle=13;
     /**
@@ -17279,7 +17279,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:navigationViewStyle
+     * @attr name com.tdr.registrationv3:navigationViewStyle
      */
     public static final int MaterialComponentsTheme_navigationViewStyle=14;
     /**
@@ -17294,7 +17294,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:scrimBackground
+     * @attr name com.tdr.registrationv3:scrimBackground
      */
     public static final int MaterialComponentsTheme_scrimBackground=15;
     /**
@@ -17306,7 +17306,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:snackbarButtonStyle
+     * @attr name com.tdr.registrationv3:snackbarButtonStyle
      */
     public static final int MaterialComponentsTheme_snackbarButtonStyle=16;
     /**
@@ -17318,7 +17318,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tabStyle
+     * @attr name com.tdr.registrationv3:tabStyle
      */
     public static final int MaterialComponentsTheme_tabStyle=17;
     /**
@@ -17330,7 +17330,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceBody1
+     * @attr name com.tdr.registrationv3:textAppearanceBody1
      */
     public static final int MaterialComponentsTheme_textAppearanceBody1=18;
     /**
@@ -17342,7 +17342,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceBody2
+     * @attr name com.tdr.registrationv3:textAppearanceBody2
      */
     public static final int MaterialComponentsTheme_textAppearanceBody2=19;
     /**
@@ -17354,7 +17354,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceButton
+     * @attr name com.tdr.registrationv3:textAppearanceButton
      */
     public static final int MaterialComponentsTheme_textAppearanceButton=20;
     /**
@@ -17366,7 +17366,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceCaption
+     * @attr name com.tdr.registrationv3:textAppearanceCaption
      */
     public static final int MaterialComponentsTheme_textAppearanceCaption=21;
     /**
@@ -17378,7 +17378,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceHeadline1
+     * @attr name com.tdr.registrationv3:textAppearanceHeadline1
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline1=22;
     /**
@@ -17390,7 +17390,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceHeadline2
+     * @attr name com.tdr.registrationv3:textAppearanceHeadline2
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline2=23;
     /**
@@ -17402,7 +17402,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceHeadline3
+     * @attr name com.tdr.registrationv3:textAppearanceHeadline3
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline3=24;
     /**
@@ -17414,7 +17414,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceHeadline4
+     * @attr name com.tdr.registrationv3:textAppearanceHeadline4
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline4=25;
     /**
@@ -17426,7 +17426,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceHeadline5
+     * @attr name com.tdr.registrationv3:textAppearanceHeadline5
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline5=26;
     /**
@@ -17438,7 +17438,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceHeadline6
+     * @attr name com.tdr.registrationv3:textAppearanceHeadline6
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline6=27;
     /**
@@ -17450,7 +17450,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceOverline
+     * @attr name com.tdr.registrationv3:textAppearanceOverline
      */
     public static final int MaterialComponentsTheme_textAppearanceOverline=28;
     /**
@@ -17462,7 +17462,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceSubtitle1
+     * @attr name com.tdr.registrationv3:textAppearanceSubtitle1
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle1=29;
     /**
@@ -17474,7 +17474,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textAppearanceSubtitle2
+     * @attr name com.tdr.registrationv3:textAppearanceSubtitle2
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle2=30;
     /**
@@ -17486,7 +17486,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:textInputStyle
+     * @attr name com.tdr.registrationv3:textInputStyle
      */
     public static final int MaterialComponentsTheme_textInputStyle=31;
     /**
@@ -17496,10 +17496,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialHeader_mhPrimaryColor com.tdr.registrationV3:mhPrimaryColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialHeader_mhShadowColor com.tdr.registrationV3:mhShadowColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialHeader_mhShadowRadius com.tdr.registrationV3:mhShadowRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialHeader_mhShowBezierWave com.tdr.registrationV3:mhShowBezierWave}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialHeader_mhPrimaryColor com.tdr.registrationv3:mhPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialHeader_mhShadowColor com.tdr.registrationv3:mhShadowColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialHeader_mhShadowRadius com.tdr.registrationv3:mhShadowRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialHeader_mhShowBezierWave com.tdr.registrationv3:mhShowBezierWave}</code></td><td></td></tr>
      * </table>
      * @see #MaterialHeader_mhPrimaryColor
      * @see #MaterialHeader_mhShadowColor
@@ -17517,7 +17517,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:mhPrimaryColor
+     * @attr name com.tdr.registrationv3:mhPrimaryColor
      */
     public static final int MaterialHeader_mhPrimaryColor=0;
     /**
@@ -17528,7 +17528,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:mhShadowColor
+     * @attr name com.tdr.registrationv3:mhShadowColor
      */
     public static final int MaterialHeader_mhShadowColor=1;
     /**
@@ -17541,7 +17541,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:mhShadowRadius
+     * @attr name com.tdr.registrationv3:mhShadowRadius
      */
     public static final int MaterialHeader_mhShadowRadius=2;
     /**
@@ -17551,7 +17551,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:mhShowBezierWave
+     * @attr name com.tdr.registrationv3:mhShowBezierWave
      */
     public static final int MaterialHeader_mhShowBezierWave=3;
     /**
@@ -17677,16 +17677,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.tdr.registrationV3:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.tdr.registrationV3:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.tdr.registrationV3:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.tdr.registrationV3:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.tdr.registrationV3:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.tdr.registrationV3:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.tdr.registrationV3:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.tdr.registrationV3:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.tdr.registrationV3:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.tdr.registrationV3:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.tdr.registrationv3:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.tdr.registrationv3:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.tdr.registrationv3:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.tdr.registrationv3:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.tdr.registrationv3:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.tdr.registrationv3:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.tdr.registrationv3:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.tdr.registrationv3:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.tdr.registrationv3:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.tdr.registrationv3:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -17871,7 +17871,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:actionLayout
+     * @attr name com.tdr.registrationv3:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
@@ -17881,7 +17881,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:actionProviderClass
+     * @attr name com.tdr.registrationv3:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
@@ -17891,7 +17891,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:actionViewClass
+     * @attr name com.tdr.registrationv3:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
@@ -17912,7 +17912,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:alphabeticModifiers
+     * @attr name com.tdr.registrationv3:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
@@ -17922,7 +17922,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:contentDescription
+     * @attr name com.tdr.registrationv3:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
@@ -17933,7 +17933,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:iconTint
+     * @attr name com.tdr.registrationv3:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
@@ -17954,7 +17954,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:iconTintMode
+     * @attr name com.tdr.registrationv3:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
@@ -17975,7 +17975,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:numericModifiers
+     * @attr name com.tdr.registrationv3:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
@@ -17995,7 +17995,7 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:showAsAction
+     * @attr name com.tdr.registrationv3:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
@@ -18005,7 +18005,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:tooltipText
+     * @attr name com.tdr.registrationv3:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -18022,8 +18022,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.tdr.registrationV3:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.tdr.registrationV3:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.tdr.registrationv3:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.tdr.registrationv3:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -18134,7 +18134,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:preserveIconSpacing
+     * @attr name com.tdr.registrationv3:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
@@ -18146,7 +18146,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:subMenuArrow
+     * @attr name com.tdr.registrationv3:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -18156,8 +18156,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MountanScenceView_msvPrimaryColor com.tdr.registrationV3:msvPrimaryColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MountanScenceView_msvViewportHeight com.tdr.registrationV3:msvViewportHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MountanScenceView_msvPrimaryColor com.tdr.registrationv3:msvPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MountanScenceView_msvViewportHeight com.tdr.registrationv3:msvViewportHeight}</code></td><td></td></tr>
      * </table>
      * @see #MountanScenceView_msvPrimaryColor
      * @see #MountanScenceView_msvViewportHeight
@@ -18173,7 +18173,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:msvPrimaryColor
+     * @attr name com.tdr.registrationv3:msvPrimaryColor
      */
     public static final int MountanScenceView_msvPrimaryColor=0;
     /**
@@ -18186,7 +18186,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:msvViewportHeight
+     * @attr name com.tdr.registrationv3:msvViewportHeight
      */
     public static final int MountanScenceView_msvViewportHeight=1;
     /**
@@ -18199,15 +18199,15 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.tdr.registrationV3:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout com.tdr.registrationV3:headerLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground com.tdr.registrationV3:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.tdr.registrationV3:itemHorizontalPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconPadding com.tdr.registrationV3:itemIconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconTint com.tdr.registrationV3:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.tdr.registrationV3:itemTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextColor com.tdr.registrationV3:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu com.tdr.registrationV3:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.tdr.registrationv3:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout com.tdr.registrationv3:headerLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground com.tdr.registrationv3:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.tdr.registrationv3:itemHorizontalPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconPadding com.tdr.registrationv3:itemIconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconTint com.tdr.registrationv3:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.tdr.registrationv3:itemTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextColor com.tdr.registrationv3:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu com.tdr.registrationv3:menu}</code></td><td></td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -18275,7 +18275,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:elevation
+     * @attr name com.tdr.registrationv3:elevation
      */
     public static final int NavigationView_elevation=3;
     /**
@@ -18287,7 +18287,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:headerLayout
+     * @attr name com.tdr.registrationv3:headerLayout
      */
     public static final int NavigationView_headerLayout=4;
     /**
@@ -18299,7 +18299,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:itemBackground
+     * @attr name com.tdr.registrationv3:itemBackground
      */
     public static final int NavigationView_itemBackground=5;
     /**
@@ -18312,7 +18312,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:itemHorizontalPadding
+     * @attr name com.tdr.registrationv3:itemHorizontalPadding
      */
     public static final int NavigationView_itemHorizontalPadding=6;
     /**
@@ -18325,7 +18325,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:itemIconPadding
+     * @attr name com.tdr.registrationv3:itemIconPadding
      */
     public static final int NavigationView_itemIconPadding=7;
     /**
@@ -18336,7 +18336,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:itemIconTint
+     * @attr name com.tdr.registrationv3:itemIconTint
      */
     public static final int NavigationView_itemIconTint=8;
     /**
@@ -18348,7 +18348,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:itemTextAppearance
+     * @attr name com.tdr.registrationv3:itemTextAppearance
      */
     public static final int NavigationView_itemTextAppearance=9;
     /**
@@ -18359,7 +18359,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:itemTextColor
+     * @attr name com.tdr.registrationv3:itemTextColor
      */
     public static final int NavigationView_itemTextColor=10;
     /**
@@ -18371,7 +18371,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:menu
+     * @attr name com.tdr.registrationv3:menu
      */
     public static final int NavigationView_menu=11;
     /**
@@ -18381,8 +18381,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PhoenixHeader_phAccentColor com.tdr.registrationV3:phAccentColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PhoenixHeader_phPrimaryColor com.tdr.registrationV3:phPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PhoenixHeader_phAccentColor com.tdr.registrationv3:phAccentColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PhoenixHeader_phPrimaryColor com.tdr.registrationv3:phPrimaryColor}</code></td><td></td></tr>
      * </table>
      * @see #PhoenixHeader_phAccentColor
      * @see #PhoenixHeader_phPrimaryColor
@@ -18398,7 +18398,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:phAccentColor
+     * @attr name com.tdr.registrationv3:phAccentColor
      */
     public static final int PhoenixHeader_phAccentColor=0;
     /**
@@ -18409,7 +18409,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:phPrimaryColor
+     * @attr name com.tdr.registrationv3:phPrimaryColor
      */
     public static final int PhoenixHeader_phPrimaryColor=1;
     /**
@@ -18421,7 +18421,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.tdr.registrationV3:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.tdr.registrationv3:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -18464,7 +18464,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:overlapAnchor
+     * @attr name com.tdr.registrationv3:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -18474,7 +18474,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.tdr.registrationV3:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.tdr.registrationv3:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -18488,7 +18488,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:state_above_anchor
+     * @attr name com.tdr.registrationv3:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -18498,8 +18498,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.tdr.registrationV3:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.tdr.registrationV3:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.tdr.registrationv3:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.tdr.registrationv3:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -18517,7 +18517,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:paddingBottomNoButtons
+     * @attr name com.tdr.registrationv3:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
@@ -18530,7 +18530,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:paddingTopNoTitle
+     * @attr name com.tdr.registrationv3:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -18542,15 +18542,15 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.tdr.registrationV3:fastScrollEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.tdr.registrationV3:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.tdr.registrationV3:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.tdr.registrationV3:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.tdr.registrationV3:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.tdr.registrationV3:layoutManager}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_reverseLayout com.tdr.registrationV3:reverseLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_spanCount com.tdr.registrationV3:spanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.tdr.registrationV3:stackFromEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.tdr.registrationv3:fastScrollEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.tdr.registrationv3:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.tdr.registrationv3:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.tdr.registrationv3:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.tdr.registrationv3:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.tdr.registrationv3:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_reverseLayout com.tdr.registrationv3:reverseLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_spanCount com.tdr.registrationv3:spanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.tdr.registrationv3:stackFromEnd}</code></td><td></td></tr>
      * </table>
      * @see #RecyclerView_android_orientation
      * @see #RecyclerView_android_descendantFocusability
@@ -18611,7 +18611,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:fastScrollEnabled
+     * @attr name com.tdr.registrationv3:fastScrollEnabled
      */
     public static final int RecyclerView_fastScrollEnabled=2;
     /**
@@ -18623,7 +18623,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:fastScrollHorizontalThumbDrawable
+     * @attr name com.tdr.registrationv3:fastScrollHorizontalThumbDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalThumbDrawable=3;
     /**
@@ -18635,7 +18635,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:fastScrollHorizontalTrackDrawable
+     * @attr name com.tdr.registrationv3:fastScrollHorizontalTrackDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalTrackDrawable=4;
     /**
@@ -18647,7 +18647,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:fastScrollVerticalThumbDrawable
+     * @attr name com.tdr.registrationv3:fastScrollVerticalThumbDrawable
      */
     public static final int RecyclerView_fastScrollVerticalThumbDrawable=5;
     /**
@@ -18659,7 +18659,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:fastScrollVerticalTrackDrawable
+     * @attr name com.tdr.registrationv3:fastScrollVerticalTrackDrawable
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
@@ -18669,7 +18669,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:layoutManager
+     * @attr name com.tdr.registrationv3:layoutManager
      */
     public static final int RecyclerView_layoutManager=7;
     /**
@@ -18679,7 +18679,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:reverseLayout
+     * @attr name com.tdr.registrationv3:reverseLayout
      */
     public static final int RecyclerView_reverseLayout=8;
     /**
@@ -18688,7 +18688,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:spanCount
+     * @attr name com.tdr.registrationv3:spanCount
      */
     public static final int RecyclerView_spanCount=9;
     /**
@@ -18698,7 +18698,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:stackFromEnd
+     * @attr name com.tdr.registrationv3:stackFromEnd
      */
     public static final int RecyclerView_stackFromEnd=10;
     /**
@@ -18708,7 +18708,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.tdr.registrationV3:insetForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.tdr.registrationv3:insetForeground}</code></td><td></td></tr>
      * </table>
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
@@ -18727,7 +18727,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:insetForeground
+     * @attr name com.tdr.registrationv3:insetForeground
      */
     public static final int ScrimInsetsFrameLayout_insetForeground=0;
     /**
@@ -18737,7 +18737,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.tdr.registrationV3:behavior_overlapTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.tdr.registrationv3:behavior_overlapTop}</code></td><td></td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
@@ -18754,7 +18754,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:behavior_overlapTop
+     * @attr name com.tdr.registrationv3:behavior_overlapTop
      */
     public static final int ScrollingViewBehavior_Layout_behavior_overlapTop=0;
     /**
@@ -18768,19 +18768,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.tdr.registrationV3:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.tdr.registrationV3:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.tdr.registrationV3:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.tdr.registrationV3:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.tdr.registrationV3:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.tdr.registrationV3:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.tdr.registrationV3:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.tdr.registrationV3:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.tdr.registrationV3:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.tdr.registrationV3:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.tdr.registrationV3:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.tdr.registrationV3:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.tdr.registrationV3:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.tdr.registrationv3:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.tdr.registrationv3:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.tdr.registrationv3:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.tdr.registrationv3:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.tdr.registrationv3:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.tdr.registrationv3:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.tdr.registrationv3:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.tdr.registrationv3:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.tdr.registrationv3:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.tdr.registrationv3:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.tdr.registrationv3:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.tdr.registrationv3:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.tdr.registrationv3:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -18926,7 +18926,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:closeIcon
+     * @attr name com.tdr.registrationv3:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
@@ -18938,7 +18938,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:commitIcon
+     * @attr name com.tdr.registrationv3:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
@@ -18948,7 +18948,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:defaultQueryHint
+     * @attr name com.tdr.registrationv3:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
@@ -18960,7 +18960,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:goIcon
+     * @attr name com.tdr.registrationv3:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
@@ -18970,7 +18970,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:iconifiedByDefault
+     * @attr name com.tdr.registrationv3:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
@@ -18982,7 +18982,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:layout
+     * @attr name com.tdr.registrationv3:layout
      */
     public static final int SearchView_layout=9;
     /**
@@ -18994,7 +18994,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:queryBackground
+     * @attr name com.tdr.registrationv3:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
@@ -19004,7 +19004,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:queryHint
+     * @attr name com.tdr.registrationv3:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
@@ -19016,7 +19016,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:searchHintIcon
+     * @attr name com.tdr.registrationv3:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
@@ -19028,7 +19028,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:searchIcon
+     * @attr name com.tdr.registrationv3:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
@@ -19040,7 +19040,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:submitBackground
+     * @attr name com.tdr.registrationv3:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
@@ -19052,7 +19052,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:suggestionRowLayout
+     * @attr name com.tdr.registrationv3:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
@@ -19064,7 +19064,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:voiceIcon
+     * @attr name com.tdr.registrationv3:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -19074,34 +19074,34 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlAccentColor com.tdr.registrationV3:srlAccentColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlDisableContentWhenLoading com.tdr.registrationV3:srlDisableContentWhenLoading}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlDisableContentWhenRefresh com.tdr.registrationV3:srlDisableContentWhenRefresh}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlDragRate com.tdr.registrationV3:srlDragRate}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableAutoLoadmore com.tdr.registrationV3:srlEnableAutoLoadmore}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableFooterFollowWhenLoadFinished com.tdr.registrationV3:srlEnableFooterFollowWhenLoadFinished}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableFooterTranslationContent com.tdr.registrationV3:srlEnableFooterTranslationContent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableHeaderTranslationContent com.tdr.registrationV3:srlEnableHeaderTranslationContent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableLoadmore com.tdr.registrationV3:srlEnableLoadmore}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableLoadmoreWhenContentNotFull com.tdr.registrationV3:srlEnableLoadmoreWhenContentNotFull}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableNestedScrolling com.tdr.registrationV3:srlEnableNestedScrolling}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableOverScrollBounce com.tdr.registrationV3:srlEnableOverScrollBounce}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableOverScrollDrag com.tdr.registrationV3:srlEnableOverScrollDrag}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnablePreviewInEditMode com.tdr.registrationV3:srlEnablePreviewInEditMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnablePureScrollMode com.tdr.registrationV3:srlEnablePureScrollMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableRefresh com.tdr.registrationV3:srlEnableRefresh}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableScrollContentWhenLoaded com.tdr.registrationV3:srlEnableScrollContentWhenLoaded}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableScrollContentWhenRefreshed com.tdr.registrationV3:srlEnableScrollContentWhenRefreshed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlFixedFooterViewId com.tdr.registrationV3:srlFixedFooterViewId}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlFixedHeaderViewId com.tdr.registrationV3:srlFixedHeaderViewId}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlFooterHeight com.tdr.registrationV3:srlFooterHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlFooterMaxDragRate com.tdr.registrationV3:srlFooterMaxDragRate}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlFooterTriggerRate com.tdr.registrationV3:srlFooterTriggerRate}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlHeaderHeight com.tdr.registrationV3:srlHeaderHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlHeaderMaxDragRate com.tdr.registrationV3:srlHeaderMaxDragRate}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlHeaderTriggerRate com.tdr.registrationV3:srlHeaderTriggerRate}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlPrimaryColor com.tdr.registrationV3:srlPrimaryColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_srlReboundDuration com.tdr.registrationV3:srlReboundDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlAccentColor com.tdr.registrationv3:srlAccentColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlDisableContentWhenLoading com.tdr.registrationv3:srlDisableContentWhenLoading}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlDisableContentWhenRefresh com.tdr.registrationv3:srlDisableContentWhenRefresh}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlDragRate com.tdr.registrationv3:srlDragRate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableAutoLoadmore com.tdr.registrationv3:srlEnableAutoLoadmore}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableFooterFollowWhenLoadFinished com.tdr.registrationv3:srlEnableFooterFollowWhenLoadFinished}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableFooterTranslationContent com.tdr.registrationv3:srlEnableFooterTranslationContent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableHeaderTranslationContent com.tdr.registrationv3:srlEnableHeaderTranslationContent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableLoadmore com.tdr.registrationv3:srlEnableLoadmore}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableLoadmoreWhenContentNotFull com.tdr.registrationv3:srlEnableLoadmoreWhenContentNotFull}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableNestedScrolling com.tdr.registrationv3:srlEnableNestedScrolling}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableOverScrollBounce com.tdr.registrationv3:srlEnableOverScrollBounce}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableOverScrollDrag com.tdr.registrationv3:srlEnableOverScrollDrag}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnablePreviewInEditMode com.tdr.registrationv3:srlEnablePreviewInEditMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnablePureScrollMode com.tdr.registrationv3:srlEnablePureScrollMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableRefresh com.tdr.registrationv3:srlEnableRefresh}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableScrollContentWhenLoaded com.tdr.registrationv3:srlEnableScrollContentWhenLoaded}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlEnableScrollContentWhenRefreshed com.tdr.registrationv3:srlEnableScrollContentWhenRefreshed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlFixedFooterViewId com.tdr.registrationv3:srlFixedFooterViewId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlFixedHeaderViewId com.tdr.registrationv3:srlFixedHeaderViewId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlFooterHeight com.tdr.registrationv3:srlFooterHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlFooterMaxDragRate com.tdr.registrationv3:srlFooterMaxDragRate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlFooterTriggerRate com.tdr.registrationv3:srlFooterTriggerRate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlHeaderHeight com.tdr.registrationv3:srlHeaderHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlHeaderMaxDragRate com.tdr.registrationv3:srlHeaderMaxDragRate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlHeaderTriggerRate com.tdr.registrationv3:srlHeaderTriggerRate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlPrimaryColor com.tdr.registrationv3:srlPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_srlReboundDuration com.tdr.registrationv3:srlReboundDuration}</code></td><td></td></tr>
      * </table>
      * @see #SmartRefreshLayout_srlAccentColor
      * @see #SmartRefreshLayout_srlDisableContentWhenLoading
@@ -19149,7 +19149,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlAccentColor
+     * @attr name com.tdr.registrationv3:srlAccentColor
      */
     public static final int SmartRefreshLayout_srlAccentColor=0;
     /**
@@ -19159,7 +19159,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlDisableContentWhenLoading
+     * @attr name com.tdr.registrationv3:srlDisableContentWhenLoading
      */
     public static final int SmartRefreshLayout_srlDisableContentWhenLoading=1;
     /**
@@ -19169,7 +19169,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlDisableContentWhenRefresh
+     * @attr name com.tdr.registrationv3:srlDisableContentWhenRefresh
      */
     public static final int SmartRefreshLayout_srlDisableContentWhenRefresh=2;
     /**
@@ -19178,7 +19178,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:srlDragRate
+     * @attr name com.tdr.registrationv3:srlDragRate
      */
     public static final int SmartRefreshLayout_srlDragRate=3;
     /**
@@ -19188,7 +19188,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableAutoLoadmore
+     * @attr name com.tdr.registrationv3:srlEnableAutoLoadmore
      */
     public static final int SmartRefreshLayout_srlEnableAutoLoadmore=4;
     /**
@@ -19198,7 +19198,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableFooterFollowWhenLoadFinished
+     * @attr name com.tdr.registrationv3:srlEnableFooterFollowWhenLoadFinished
      */
     public static final int SmartRefreshLayout_srlEnableFooterFollowWhenLoadFinished=5;
     /**
@@ -19208,7 +19208,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableFooterTranslationContent
+     * @attr name com.tdr.registrationv3:srlEnableFooterTranslationContent
      */
     public static final int SmartRefreshLayout_srlEnableFooterTranslationContent=6;
     /**
@@ -19218,7 +19218,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableHeaderTranslationContent
+     * @attr name com.tdr.registrationv3:srlEnableHeaderTranslationContent
      */
     public static final int SmartRefreshLayout_srlEnableHeaderTranslationContent=7;
     /**
@@ -19228,7 +19228,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableLoadmore
+     * @attr name com.tdr.registrationv3:srlEnableLoadmore
      */
     public static final int SmartRefreshLayout_srlEnableLoadmore=8;
     /**
@@ -19238,7 +19238,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableLoadmoreWhenContentNotFull
+     * @attr name com.tdr.registrationv3:srlEnableLoadmoreWhenContentNotFull
      */
     public static final int SmartRefreshLayout_srlEnableLoadmoreWhenContentNotFull=9;
     /**
@@ -19248,7 +19248,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableNestedScrolling
+     * @attr name com.tdr.registrationv3:srlEnableNestedScrolling
      */
     public static final int SmartRefreshLayout_srlEnableNestedScrolling=10;
     /**
@@ -19258,7 +19258,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableOverScrollBounce
+     * @attr name com.tdr.registrationv3:srlEnableOverScrollBounce
      */
     public static final int SmartRefreshLayout_srlEnableOverScrollBounce=11;
     /**
@@ -19268,7 +19268,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableOverScrollDrag
+     * @attr name com.tdr.registrationv3:srlEnableOverScrollDrag
      */
     public static final int SmartRefreshLayout_srlEnableOverScrollDrag=12;
     /**
@@ -19278,7 +19278,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnablePreviewInEditMode
+     * @attr name com.tdr.registrationv3:srlEnablePreviewInEditMode
      */
     public static final int SmartRefreshLayout_srlEnablePreviewInEditMode=13;
     /**
@@ -19288,7 +19288,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnablePureScrollMode
+     * @attr name com.tdr.registrationv3:srlEnablePureScrollMode
      */
     public static final int SmartRefreshLayout_srlEnablePureScrollMode=14;
     /**
@@ -19298,7 +19298,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableRefresh
+     * @attr name com.tdr.registrationv3:srlEnableRefresh
      */
     public static final int SmartRefreshLayout_srlEnableRefresh=15;
     /**
@@ -19308,7 +19308,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableScrollContentWhenLoaded
+     * @attr name com.tdr.registrationv3:srlEnableScrollContentWhenLoaded
      */
     public static final int SmartRefreshLayout_srlEnableScrollContentWhenLoaded=16;
     /**
@@ -19318,7 +19318,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:srlEnableScrollContentWhenRefreshed
+     * @attr name com.tdr.registrationv3:srlEnableScrollContentWhenRefreshed
      */
     public static final int SmartRefreshLayout_srlEnableScrollContentWhenRefreshed=17;
     /**
@@ -19330,7 +19330,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlFixedFooterViewId
+     * @attr name com.tdr.registrationv3:srlFixedFooterViewId
      */
     public static final int SmartRefreshLayout_srlFixedFooterViewId=18;
     /**
@@ -19342,7 +19342,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlFixedHeaderViewId
+     * @attr name com.tdr.registrationv3:srlFixedHeaderViewId
      */
     public static final int SmartRefreshLayout_srlFixedHeaderViewId=19;
     /**
@@ -19355,7 +19355,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlFooterHeight
+     * @attr name com.tdr.registrationv3:srlFooterHeight
      */
     public static final int SmartRefreshLayout_srlFooterHeight=20;
     /**
@@ -19364,7 +19364,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:srlFooterMaxDragRate
+     * @attr name com.tdr.registrationv3:srlFooterMaxDragRate
      */
     public static final int SmartRefreshLayout_srlFooterMaxDragRate=21;
     /**
@@ -19373,7 +19373,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:srlFooterTriggerRate
+     * @attr name com.tdr.registrationv3:srlFooterTriggerRate
      */
     public static final int SmartRefreshLayout_srlFooterTriggerRate=22;
     /**
@@ -19386,7 +19386,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:srlHeaderHeight
+     * @attr name com.tdr.registrationv3:srlHeaderHeight
      */
     public static final int SmartRefreshLayout_srlHeaderHeight=23;
     /**
@@ -19395,7 +19395,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:srlHeaderMaxDragRate
+     * @attr name com.tdr.registrationv3:srlHeaderMaxDragRate
      */
     public static final int SmartRefreshLayout_srlHeaderMaxDragRate=24;
     /**
@@ -19404,7 +19404,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:srlHeaderTriggerRate
+     * @attr name com.tdr.registrationv3:srlHeaderTriggerRate
      */
     public static final int SmartRefreshLayout_srlHeaderTriggerRate=25;
     /**
@@ -19415,7 +19415,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:srlPrimaryColor
+     * @attr name com.tdr.registrationv3:srlPrimaryColor
      */
     public static final int SmartRefreshLayout_srlPrimaryColor=26;
     /**
@@ -19424,7 +19424,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:srlReboundDuration
+     * @attr name com.tdr.registrationv3:srlReboundDuration
      */
     public static final int SmartRefreshLayout_srlReboundDuration=27;
     /**
@@ -19434,8 +19434,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_Layout_layout_srlBackgroundColor com.tdr.registrationV3:layout_srlBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SmartRefreshLayout_Layout_layout_srlSpinnerStyle com.tdr.registrationV3:layout_srlSpinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_Layout_layout_srlBackgroundColor com.tdr.registrationv3:layout_srlBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SmartRefreshLayout_Layout_layout_srlSpinnerStyle com.tdr.registrationv3:layout_srlSpinnerStyle}</code></td><td></td></tr>
      * </table>
      * @see #SmartRefreshLayout_Layout_layout_srlBackgroundColor
      * @see #SmartRefreshLayout_Layout_layout_srlSpinnerStyle
@@ -19451,7 +19451,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:layout_srlBackgroundColor
+     * @attr name com.tdr.registrationv3:layout_srlBackgroundColor
      */
     public static final int SmartRefreshLayout_Layout_layout_srlBackgroundColor=0;
     /**
@@ -19464,14 +19464,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>FixedBehind</td><td>2</td><td>拉伸形变</td></tr>
-     * <tr><td>FixedFront</td><td>3</td><td>固定在背后</td></tr>
-     * <tr><td>MatchLayout</td><td>4</td><td>固定在前面</td></tr>
-     * <tr><td>Scale</td><td>1</td><td>平行移动</td></tr>
+     * <tr><td>FixedBehind</td><td>2</td><td></td></tr>
+     * <tr><td>FixedFront</td><td>3</td><td></td></tr>
+     * <tr><td>MatchLayout</td><td>4</td><td></td></tr>
+     * <tr><td>Scale</td><td>1</td><td></td></tr>
      * <tr><td>Translate</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:layout_srlSpinnerStyle
+     * @attr name com.tdr.registrationv3:layout_srlSpinnerStyle
      */
     public static final int SmartRefreshLayout_Layout_layout_srlSpinnerStyle=1;
     /**
@@ -19481,8 +19481,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.tdr.registrationV3:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarStyle com.tdr.registrationV3:snackbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.tdr.registrationv3:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarStyle com.tdr.registrationv3:snackbarStyle}</code></td><td></td></tr>
      * </table>
      * @see #Snackbar_snackbarButtonStyle
      * @see #Snackbar_snackbarStyle
@@ -19499,7 +19499,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:snackbarButtonStyle
+     * @attr name com.tdr.registrationv3:snackbarButtonStyle
      */
     public static final int Snackbar_snackbarButtonStyle=0;
     /**
@@ -19511,7 +19511,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:snackbarStyle
+     * @attr name com.tdr.registrationv3:snackbarStyle
      */
     public static final int Snackbar_snackbarStyle=1;
     /**
@@ -19522,8 +19522,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.tdr.registrationV3:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.tdr.registrationV3:maxActionInlineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.tdr.registrationv3:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.tdr.registrationv3:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
      * @see #SnackbarLayout_elevation
@@ -19555,7 +19555,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:elevation
+     * @attr name com.tdr.registrationv3:elevation
      */
     public static final int SnackbarLayout_elevation=1;
     /**
@@ -19568,7 +19568,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:maxActionInlineWidth
+     * @attr name com.tdr.registrationv3:maxActionInlineWidth
      */
     public static final int SnackbarLayout_maxActionInlineWidth=2;
     /**
@@ -19582,7 +19582,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.tdr.registrationV3:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.tdr.registrationv3:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -19665,7 +19665,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:popupTheme
+     * @attr name com.tdr.registrationv3:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -19784,9 +19784,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #StoreHouseHeader_shhDropHeight com.tdr.registrationV3:shhDropHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #StoreHouseHeader_shhLineWidth com.tdr.registrationV3:shhLineWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #StoreHouseHeader_shhText com.tdr.registrationV3:shhText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #StoreHouseHeader_shhDropHeight com.tdr.registrationv3:shhDropHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #StoreHouseHeader_shhLineWidth com.tdr.registrationv3:shhLineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #StoreHouseHeader_shhText com.tdr.registrationv3:shhText}</code></td><td></td></tr>
      * </table>
      * @see #StoreHouseHeader_shhDropHeight
      * @see #StoreHouseHeader_shhLineWidth
@@ -19805,7 +19805,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:shhDropHeight
+     * @attr name com.tdr.registrationv3:shhDropHeight
      */
     public static final int StoreHouseHeader_shhDropHeight=0;
     /**
@@ -19818,7 +19818,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:shhLineWidth
+     * @attr name com.tdr.registrationv3:shhLineWidth
      */
     public static final int StoreHouseHeader_shhLineWidth=1;
     /**
@@ -19828,7 +19828,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:shhText
+     * @attr name com.tdr.registrationv3:shhText
      */
     public static final int StoreHouseHeader_shhText=2;
     /**
@@ -19841,17 +19841,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.tdr.registrationV3:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.tdr.registrationV3:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.tdr.registrationV3:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.tdr.registrationV3:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.tdr.registrationV3:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.tdr.registrationV3:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.tdr.registrationV3:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.tdr.registrationV3:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.tdr.registrationV3:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.tdr.registrationV3:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.tdr.registrationV3:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.tdr.registrationv3:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.tdr.registrationv3:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.tdr.registrationv3:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.tdr.registrationv3:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.tdr.registrationv3:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.tdr.registrationv3:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.tdr.registrationv3:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.tdr.registrationv3:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.tdr.registrationv3:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.tdr.registrationv3:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.tdr.registrationv3:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -19913,7 +19913,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:showText
+     * @attr name com.tdr.registrationv3:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
@@ -19923,7 +19923,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:splitTrack
+     * @attr name com.tdr.registrationv3:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
@@ -19936,7 +19936,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:switchMinWidth
+     * @attr name com.tdr.registrationv3:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
@@ -19949,7 +19949,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:switchPadding
+     * @attr name com.tdr.registrationv3:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
@@ -19961,7 +19961,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:switchTextAppearance
+     * @attr name com.tdr.registrationv3:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
@@ -19974,7 +19974,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:thumbTextPadding
+     * @attr name com.tdr.registrationv3:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
@@ -19985,7 +19985,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:thumbTint
+     * @attr name com.tdr.registrationv3:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
@@ -20006,7 +20006,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:thumbTintMode
+     * @attr name com.tdr.registrationv3:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
@@ -20018,7 +20018,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:track
+     * @attr name com.tdr.registrationv3:track
      */
     public static final int SwitchCompat_track=11;
     /**
@@ -20029,7 +20029,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:trackTint
+     * @attr name com.tdr.registrationv3:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
@@ -20050,7 +20050,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:trackTintMode
+     * @attr name com.tdr.registrationv3:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -20112,31 +20112,31 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground com.tdr.registrationV3:tabBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart com.tdr.registrationV3:tabContentStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity com.tdr.registrationV3:tabGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTint com.tdr.registrationV3:tabIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.tdr.registrationV3:tabIconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicator com.tdr.registrationV3:tabIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.tdr.registrationV3:tabIndicatorAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.tdr.registrationV3:tabIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.tdr.registrationV3:tabIndicatorFullWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.tdr.registrationV3:tabIndicatorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.tdr.registrationV3:tabIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.tdr.registrationV3:tabInlineLabel}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.tdr.registrationV3:tabMaxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth com.tdr.registrationV3:tabMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode com.tdr.registrationV3:tabMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding com.tdr.registrationV3:tabPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.tdr.registrationV3:tabPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.tdr.registrationV3:tabPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.tdr.registrationV3:tabPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.tdr.registrationV3:tabPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabRippleColor com.tdr.registrationV3:tabRippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.tdr.registrationV3:tabSelectedTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.tdr.registrationV3:tabTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor com.tdr.registrationV3:tabTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.tdr.registrationV3:tabUnboundedRipple}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabBackground com.tdr.registrationv3:tabBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart com.tdr.registrationv3:tabContentStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity com.tdr.registrationv3:tabGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTint com.tdr.registrationv3:tabIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.tdr.registrationv3:tabIconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicator com.tdr.registrationv3:tabIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.tdr.registrationv3:tabIndicatorAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.tdr.registrationv3:tabIndicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.tdr.registrationv3:tabIndicatorFullWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.tdr.registrationv3:tabIndicatorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.tdr.registrationv3:tabIndicatorHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.tdr.registrationv3:tabInlineLabel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.tdr.registrationv3:tabMaxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth com.tdr.registrationv3:tabMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode com.tdr.registrationv3:tabMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding com.tdr.registrationv3:tabPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.tdr.registrationv3:tabPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.tdr.registrationv3:tabPaddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.tdr.registrationv3:tabPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.tdr.registrationv3:tabPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabRippleColor com.tdr.registrationv3:tabRippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.tdr.registrationv3:tabSelectedTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.tdr.registrationv3:tabTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor com.tdr.registrationv3:tabTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.tdr.registrationv3:tabUnboundedRipple}</code></td><td></td></tr>
      * </table>
      * @see #TabLayout_tabBackground
      * @see #TabLayout_tabContentStart
@@ -20182,7 +20182,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tabBackground
+     * @attr name com.tdr.registrationv3:tabBackground
      */
     public static final int TabLayout_tabBackground=0;
     /**
@@ -20195,7 +20195,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:tabContentStart
+     * @attr name com.tdr.registrationv3:tabContentStart
      */
     public static final int TabLayout_tabContentStart=1;
     /**
@@ -20212,7 +20212,7 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:tabGravity
+     * @attr name com.tdr.registrationv3:tabGravity
      */
     public static final int TabLayout_tabGravity=2;
     /**
@@ -20223,7 +20223,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tabIconTint
+     * @attr name com.tdr.registrationv3:tabIconTint
      */
     public static final int TabLayout_tabIconTint=3;
     /**
@@ -20244,7 +20244,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:tabIconTintMode
+     * @attr name com.tdr.registrationv3:tabIconTintMode
      */
     public static final int TabLayout_tabIconTintMode=4;
     /**
@@ -20256,7 +20256,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tabIndicator
+     * @attr name com.tdr.registrationv3:tabIndicator
      */
     public static final int TabLayout_tabIndicator=5;
     /**
@@ -20265,7 +20265,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:tabIndicatorAnimationDuration
+     * @attr name com.tdr.registrationv3:tabIndicatorAnimationDuration
      */
     public static final int TabLayout_tabIndicatorAnimationDuration=6;
     /**
@@ -20276,7 +20276,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tabIndicatorColor
+     * @attr name com.tdr.registrationv3:tabIndicatorColor
      */
     public static final int TabLayout_tabIndicatorColor=7;
     /**
@@ -20286,7 +20286,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:tabIndicatorFullWidth
+     * @attr name com.tdr.registrationv3:tabIndicatorFullWidth
      */
     public static final int TabLayout_tabIndicatorFullWidth=8;
     /**
@@ -20305,7 +20305,7 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:tabIndicatorGravity
+     * @attr name com.tdr.registrationv3:tabIndicatorGravity
      */
     public static final int TabLayout_tabIndicatorGravity=9;
     /**
@@ -20318,7 +20318,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:tabIndicatorHeight
+     * @attr name com.tdr.registrationv3:tabIndicatorHeight
      */
     public static final int TabLayout_tabIndicatorHeight=10;
     /**
@@ -20328,7 +20328,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:tabInlineLabel
+     * @attr name com.tdr.registrationv3:tabInlineLabel
      */
     public static final int TabLayout_tabInlineLabel=11;
     /**
@@ -20341,7 +20341,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:tabMaxWidth
+     * @attr name com.tdr.registrationv3:tabMaxWidth
      */
     public static final int TabLayout_tabMaxWidth=12;
     /**
@@ -20354,7 +20354,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:tabMinWidth
+     * @attr name com.tdr.registrationv3:tabMinWidth
      */
     public static final int TabLayout_tabMinWidth=13;
     /**
@@ -20371,7 +20371,7 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:tabMode
+     * @attr name com.tdr.registrationv3:tabMode
      */
     public static final int TabLayout_tabMode=14;
     /**
@@ -20384,7 +20384,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:tabPadding
+     * @attr name com.tdr.registrationv3:tabPadding
      */
     public static final int TabLayout_tabPadding=15;
     /**
@@ -20397,7 +20397,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:tabPaddingBottom
+     * @attr name com.tdr.registrationv3:tabPaddingBottom
      */
     public static final int TabLayout_tabPaddingBottom=16;
     /**
@@ -20410,7 +20410,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:tabPaddingEnd
+     * @attr name com.tdr.registrationv3:tabPaddingEnd
      */
     public static final int TabLayout_tabPaddingEnd=17;
     /**
@@ -20423,7 +20423,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:tabPaddingStart
+     * @attr name com.tdr.registrationv3:tabPaddingStart
      */
     public static final int TabLayout_tabPaddingStart=18;
     /**
@@ -20436,7 +20436,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:tabPaddingTop
+     * @attr name com.tdr.registrationv3:tabPaddingTop
      */
     public static final int TabLayout_tabPaddingTop=19;
     /**
@@ -20447,7 +20447,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tabRippleColor
+     * @attr name com.tdr.registrationv3:tabRippleColor
      */
     public static final int TabLayout_tabRippleColor=20;
     /**
@@ -20458,7 +20458,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tabSelectedTextColor
+     * @attr name com.tdr.registrationv3:tabSelectedTextColor
      */
     public static final int TabLayout_tabSelectedTextColor=21;
     /**
@@ -20470,7 +20470,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tabTextAppearance
+     * @attr name com.tdr.registrationv3:tabTextAppearance
      */
     public static final int TabLayout_tabTextAppearance=22;
     /**
@@ -20481,7 +20481,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:tabTextColor
+     * @attr name com.tdr.registrationv3:tabTextColor
      */
     public static final int TabLayout_tabTextColor=23;
     /**
@@ -20491,7 +20491,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:tabUnboundedRipple
+     * @attr name com.tdr.registrationv3:tabUnboundedRipple
      */
     public static final int TabLayout_tabUnboundedRipple=24;
     /**
@@ -20501,7 +20501,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TaurusHeader_thPrimaryColor com.tdr.registrationV3:thPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TaurusHeader_thPrimaryColor com.tdr.registrationv3:thPrimaryColor}</code></td><td></td></tr>
      * </table>
      * @see #TaurusHeader_thPrimaryColor
      */
@@ -20516,7 +20516,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:thPrimaryColor
+     * @attr name com.tdr.registrationv3:thPrimaryColor
      */
     public static final int TaurusHeader_thPrimaryColor=0;
     /**
@@ -20537,8 +20537,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.tdr.registrationV3:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.tdr.registrationV3:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.tdr.registrationv3:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.tdr.registrationv3:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -20710,7 +20710,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:fontFamily
+     * @attr name com.tdr.registrationv3:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
@@ -20724,7 +20724,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:textAllCaps
+     * @attr name com.tdr.registrationv3:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -20736,32 +20736,32 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.tdr.registrationV3:boxBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.tdr.registrationV3:boxBackgroundMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.tdr.registrationV3:boxCollapsedPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.tdr.registrationV3:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.tdr.registrationV3:boxCornerRadiusBottomStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.tdr.registrationV3:boxCornerRadiusTopEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.tdr.registrationV3:boxCornerRadiusTopStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.tdr.registrationV3:boxStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.tdr.registrationV3:boxStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.tdr.registrationV3:counterEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.tdr.registrationV3:counterMaxLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.tdr.registrationV3:counterOverflowTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.tdr.registrationV3:counterTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.tdr.registrationV3:errorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.tdr.registrationV3:errorTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperText com.tdr.registrationV3:helperText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.tdr.registrationV3:helperTextEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.tdr.registrationV3:helperTextTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.tdr.registrationV3:hintAnimationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.tdr.registrationV3:hintEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.tdr.registrationV3:hintTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.tdr.registrationV3:passwordToggleContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.tdr.registrationV3:passwordToggleDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.tdr.registrationV3:passwordToggleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.tdr.registrationV3:passwordToggleTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.tdr.registrationV3:passwordToggleTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.tdr.registrationv3:boxBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.tdr.registrationv3:boxBackgroundMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.tdr.registrationv3:boxCollapsedPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.tdr.registrationv3:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.tdr.registrationv3:boxCornerRadiusBottomStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.tdr.registrationv3:boxCornerRadiusTopEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.tdr.registrationv3:boxCornerRadiusTopStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.tdr.registrationv3:boxStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.tdr.registrationv3:boxStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.tdr.registrationv3:counterEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.tdr.registrationv3:counterMaxLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.tdr.registrationv3:counterOverflowTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.tdr.registrationv3:counterTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.tdr.registrationv3:errorEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.tdr.registrationv3:errorTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperText com.tdr.registrationv3:helperText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.tdr.registrationv3:helperTextEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.tdr.registrationv3:helperTextTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.tdr.registrationv3:hintAnimationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.tdr.registrationv3:hintEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.tdr.registrationv3:hintTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.tdr.registrationv3:passwordToggleContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.tdr.registrationv3:passwordToggleDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.tdr.registrationv3:passwordToggleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.tdr.registrationv3:passwordToggleTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.tdr.registrationv3:passwordToggleTintMode}</code></td><td></td></tr>
      * </table>
      * @see #TextInputLayout_android_textColorHint
      * @see #TextInputLayout_android_hint
@@ -20834,7 +20834,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:boxBackgroundColor
+     * @attr name com.tdr.registrationv3:boxBackgroundColor
      */
     public static final int TextInputLayout_boxBackgroundColor=2;
     /**
@@ -20852,7 +20852,7 @@ public final class R {
      * <tr><td>outline</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:boxBackgroundMode
+     * @attr name com.tdr.registrationv3:boxBackgroundMode
      */
     public static final int TextInputLayout_boxBackgroundMode=3;
     /**
@@ -20865,7 +20865,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:boxCollapsedPaddingTop
+     * @attr name com.tdr.registrationv3:boxCollapsedPaddingTop
      */
     public static final int TextInputLayout_boxCollapsedPaddingTop=4;
     /**
@@ -20878,7 +20878,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:boxCornerRadiusBottomEnd
+     * @attr name com.tdr.registrationv3:boxCornerRadiusBottomEnd
      */
     public static final int TextInputLayout_boxCornerRadiusBottomEnd=5;
     /**
@@ -20891,7 +20891,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:boxCornerRadiusBottomStart
+     * @attr name com.tdr.registrationv3:boxCornerRadiusBottomStart
      */
     public static final int TextInputLayout_boxCornerRadiusBottomStart=6;
     /**
@@ -20904,7 +20904,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:boxCornerRadiusTopEnd
+     * @attr name com.tdr.registrationv3:boxCornerRadiusTopEnd
      */
     public static final int TextInputLayout_boxCornerRadiusTopEnd=7;
     /**
@@ -20917,7 +20917,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:boxCornerRadiusTopStart
+     * @attr name com.tdr.registrationv3:boxCornerRadiusTopStart
      */
     public static final int TextInputLayout_boxCornerRadiusTopStart=8;
     /**
@@ -20928,7 +20928,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:boxStrokeColor
+     * @attr name com.tdr.registrationv3:boxStrokeColor
      */
     public static final int TextInputLayout_boxStrokeColor=9;
     /**
@@ -20941,7 +20941,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:boxStrokeWidth
+     * @attr name com.tdr.registrationv3:boxStrokeWidth
      */
     public static final int TextInputLayout_boxStrokeWidth=10;
     /**
@@ -20951,7 +20951,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:counterEnabled
+     * @attr name com.tdr.registrationv3:counterEnabled
      */
     public static final int TextInputLayout_counterEnabled=11;
     /**
@@ -20960,7 +20960,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:counterMaxLength
+     * @attr name com.tdr.registrationv3:counterMaxLength
      */
     public static final int TextInputLayout_counterMaxLength=12;
     /**
@@ -20972,7 +20972,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:counterOverflowTextAppearance
+     * @attr name com.tdr.registrationv3:counterOverflowTextAppearance
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=13;
     /**
@@ -20984,7 +20984,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:counterTextAppearance
+     * @attr name com.tdr.registrationv3:counterTextAppearance
      */
     public static final int TextInputLayout_counterTextAppearance=14;
     /**
@@ -20994,7 +20994,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:errorEnabled
+     * @attr name com.tdr.registrationv3:errorEnabled
      */
     public static final int TextInputLayout_errorEnabled=15;
     /**
@@ -21006,7 +21006,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:errorTextAppearance
+     * @attr name com.tdr.registrationv3:errorTextAppearance
      */
     public static final int TextInputLayout_errorTextAppearance=16;
     /**
@@ -21016,7 +21016,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:helperText
+     * @attr name com.tdr.registrationv3:helperText
      */
     public static final int TextInputLayout_helperText=17;
     /**
@@ -21026,7 +21026,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:helperTextEnabled
+     * @attr name com.tdr.registrationv3:helperTextEnabled
      */
     public static final int TextInputLayout_helperTextEnabled=18;
     /**
@@ -21038,7 +21038,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:helperTextTextAppearance
+     * @attr name com.tdr.registrationv3:helperTextTextAppearance
      */
     public static final int TextInputLayout_helperTextTextAppearance=19;
     /**
@@ -21048,7 +21048,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:hintAnimationEnabled
+     * @attr name com.tdr.registrationv3:hintAnimationEnabled
      */
     public static final int TextInputLayout_hintAnimationEnabled=20;
     /**
@@ -21058,7 +21058,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:hintEnabled
+     * @attr name com.tdr.registrationv3:hintEnabled
      */
     public static final int TextInputLayout_hintEnabled=21;
     /**
@@ -21070,7 +21070,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:hintTextAppearance
+     * @attr name com.tdr.registrationv3:hintTextAppearance
      */
     public static final int TextInputLayout_hintTextAppearance=22;
     /**
@@ -21080,7 +21080,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:passwordToggleContentDescription
+     * @attr name com.tdr.registrationv3:passwordToggleContentDescription
      */
     public static final int TextInputLayout_passwordToggleContentDescription=23;
     /**
@@ -21092,7 +21092,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:passwordToggleDrawable
+     * @attr name com.tdr.registrationv3:passwordToggleDrawable
      */
     public static final int TextInputLayout_passwordToggleDrawable=24;
     /**
@@ -21102,7 +21102,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:passwordToggleEnabled
+     * @attr name com.tdr.registrationv3:passwordToggleEnabled
      */
     public static final int TextInputLayout_passwordToggleEnabled=25;
     /**
@@ -21113,7 +21113,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:passwordToggleTint
+     * @attr name com.tdr.registrationv3:passwordToggleTint
      */
     public static final int TextInputLayout_passwordToggleTint=26;
     /**
@@ -21133,7 +21133,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:passwordToggleTintMode
+     * @attr name com.tdr.registrationv3:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=27;
     /**
@@ -21144,8 +21144,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ThemeEnforcement_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.tdr.registrationV3:enforceMaterialTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.tdr.registrationV3:enforceTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.tdr.registrationv3:enforceMaterialTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.tdr.registrationv3:enforceTextAppearance}</code></td><td></td></tr>
      * </table>
      * @see #ThemeEnforcement_android_textAppearance
      * @see #ThemeEnforcement_enforceMaterialTheme
@@ -21173,7 +21173,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:enforceMaterialTheme
+     * @attr name com.tdr.registrationv3:enforceMaterialTheme
      */
     public static final int ThemeEnforcement_enforceMaterialTheme=1;
     /**
@@ -21183,7 +21183,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:enforceTextAppearance
+     * @attr name com.tdr.registrationv3:enforceTextAppearance
      */
     public static final int ThemeEnforcement_enforceTextAppearance=2;
     /**
@@ -21195,33 +21195,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.tdr.registrationV3:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.tdr.registrationV3:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.tdr.registrationV3:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.tdr.registrationV3:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.tdr.registrationV3:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.tdr.registrationV3:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.tdr.registrationV3:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.tdr.registrationV3:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.tdr.registrationV3:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.tdr.registrationV3:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.tdr.registrationV3:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.tdr.registrationV3:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.tdr.registrationV3:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.tdr.registrationV3:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.tdr.registrationV3:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.tdr.registrationV3:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.tdr.registrationV3:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.tdr.registrationV3:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.tdr.registrationV3:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.tdr.registrationV3:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.tdr.registrationV3:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.tdr.registrationV3:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.tdr.registrationV3:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.tdr.registrationV3:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.tdr.registrationV3:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.tdr.registrationV3:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.tdr.registrationV3:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.tdr.registrationv3:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.tdr.registrationv3:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.tdr.registrationv3:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.tdr.registrationv3:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.tdr.registrationv3:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.tdr.registrationv3:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.tdr.registrationv3:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.tdr.registrationv3:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.tdr.registrationv3:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.tdr.registrationv3:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.tdr.registrationv3:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.tdr.registrationv3:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.tdr.registrationv3:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.tdr.registrationv3:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.tdr.registrationv3:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.tdr.registrationv3:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.tdr.registrationv3:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.tdr.registrationv3:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.tdr.registrationv3:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.tdr.registrationv3:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.tdr.registrationv3:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.tdr.registrationv3:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.tdr.registrationv3:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.tdr.registrationv3:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.tdr.registrationv3:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.tdr.registrationv3:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.tdr.registrationv3:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -21319,7 +21319,7 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:buttonGravity
+     * @attr name com.tdr.registrationv3:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
@@ -21329,7 +21329,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:collapseContentDescription
+     * @attr name com.tdr.registrationv3:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
@@ -21341,7 +21341,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:collapseIcon
+     * @attr name com.tdr.registrationv3:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
@@ -21354,7 +21354,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetEnd
+     * @attr name com.tdr.registrationv3:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
@@ -21367,7 +21367,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetEndWithActions
+     * @attr name com.tdr.registrationv3:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
@@ -21380,7 +21380,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetLeft
+     * @attr name com.tdr.registrationv3:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
@@ -21393,7 +21393,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetRight
+     * @attr name com.tdr.registrationv3:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
@@ -21406,7 +21406,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetStart
+     * @attr name com.tdr.registrationv3:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
@@ -21419,7 +21419,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:contentInsetStartWithNavigation
+     * @attr name com.tdr.registrationv3:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
@@ -21431,7 +21431,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:logo
+     * @attr name com.tdr.registrationv3:logo
      */
     public static final int Toolbar_logo=11;
     /**
@@ -21441,7 +21441,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:logoDescription
+     * @attr name com.tdr.registrationv3:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
@@ -21454,7 +21454,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:maxButtonHeight
+     * @attr name com.tdr.registrationv3:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
@@ -21464,7 +21464,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:navigationContentDescription
+     * @attr name com.tdr.registrationv3:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
@@ -21476,7 +21476,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:navigationIcon
+     * @attr name com.tdr.registrationv3:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
@@ -21488,7 +21488,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:popupTheme
+     * @attr name com.tdr.registrationv3:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
@@ -21498,7 +21498,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:subtitle
+     * @attr name com.tdr.registrationv3:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
@@ -21510,7 +21510,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:subtitleTextAppearance
+     * @attr name com.tdr.registrationv3:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
@@ -21521,7 +21521,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:subtitleTextColor
+     * @attr name com.tdr.registrationv3:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
@@ -21531,7 +21531,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tdr.registrationV3:title
+     * @attr name com.tdr.registrationv3:title
      */
     public static final int Toolbar_title=20;
     /**
@@ -21544,7 +21544,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:titleMargin
+     * @attr name com.tdr.registrationv3:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
@@ -21557,7 +21557,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:titleMarginBottom
+     * @attr name com.tdr.registrationv3:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
@@ -21570,7 +21570,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:titleMarginEnd
+     * @attr name com.tdr.registrationv3:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
@@ -21583,7 +21583,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:titleMarginStart
+     * @attr name com.tdr.registrationv3:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
@@ -21596,7 +21596,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:titleMarginTop
+     * @attr name com.tdr.registrationv3:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
@@ -21609,7 +21609,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:titleMargins
+     * @attr name com.tdr.registrationv3:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
@@ -21621,7 +21621,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:titleTextAppearance
+     * @attr name com.tdr.registrationv3:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
@@ -21632,7 +21632,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:titleTextColor
+     * @attr name com.tdr.registrationv3:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -21644,9 +21644,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.tdr.registrationV3:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.tdr.registrationV3:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme com.tdr.registrationV3:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.tdr.registrationv3:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.tdr.registrationv3:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme com.tdr.registrationv3:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -21698,7 +21698,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:paddingEnd
+     * @attr name com.tdr.registrationv3:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
@@ -21711,7 +21711,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:paddingStart
+     * @attr name com.tdr.registrationv3:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
@@ -21723,7 +21723,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:theme
+     * @attr name com.tdr.registrationv3:theme
      */
     public static final int View_theme=4;
     /**
@@ -21734,8 +21734,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.tdr.registrationV3:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.tdr.registrationV3:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.tdr.registrationv3:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.tdr.registrationv3:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -21767,7 +21767,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:backgroundTint
+     * @attr name com.tdr.registrationv3:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
@@ -21788,7 +21788,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:backgroundTintMode
+     * @attr name com.tdr.registrationv3:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**
@@ -21852,15 +21852,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ViewfinderView_inner_corner_color com.tdr.registrationV3:inner_corner_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewfinderView_inner_corner_length com.tdr.registrationV3:inner_corner_length}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewfinderView_inner_corner_width com.tdr.registrationV3:inner_corner_width}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewfinderView_inner_height com.tdr.registrationV3:inner_height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewfinderView_inner_margintop com.tdr.registrationV3:inner_margintop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewfinderView_inner_scan_bitmap com.tdr.registrationV3:inner_scan_bitmap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewfinderView_inner_scan_iscircle com.tdr.registrationV3:inner_scan_iscircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewfinderView_inner_scan_speed com.tdr.registrationV3:inner_scan_speed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewfinderView_inner_width com.tdr.registrationV3:inner_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewfinderView_inner_corner_color com.tdr.registrationv3:inner_corner_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewfinderView_inner_corner_length com.tdr.registrationv3:inner_corner_length}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewfinderView_inner_corner_width com.tdr.registrationv3:inner_corner_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewfinderView_inner_height com.tdr.registrationv3:inner_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewfinderView_inner_margintop com.tdr.registrationv3:inner_margintop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewfinderView_inner_scan_bitmap com.tdr.registrationv3:inner_scan_bitmap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewfinderView_inner_scan_iscircle com.tdr.registrationv3:inner_scan_iscircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewfinderView_inner_scan_speed com.tdr.registrationv3:inner_scan_speed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewfinderView_inner_width com.tdr.registrationv3:inner_width}</code></td><td></td></tr>
      * </table>
      * @see #ViewfinderView_inner_corner_color
      * @see #ViewfinderView_inner_corner_length
@@ -21885,7 +21885,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:inner_corner_color
+     * @attr name com.tdr.registrationv3:inner_corner_color
      */
     public static final int ViewfinderView_inner_corner_color=0;
     /**
@@ -21898,7 +21898,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:inner_corner_length
+     * @attr name com.tdr.registrationv3:inner_corner_length
      */
     public static final int ViewfinderView_inner_corner_length=1;
     /**
@@ -21911,7 +21911,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:inner_corner_width
+     * @attr name com.tdr.registrationv3:inner_corner_width
      */
     public static final int ViewfinderView_inner_corner_width=2;
     /**
@@ -21924,7 +21924,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:inner_height
+     * @attr name com.tdr.registrationv3:inner_height
      */
     public static final int ViewfinderView_inner_height=3;
     /**
@@ -21937,7 +21937,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:inner_margintop
+     * @attr name com.tdr.registrationv3:inner_margintop
      */
     public static final int ViewfinderView_inner_margintop=4;
     /**
@@ -21949,7 +21949,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tdr.registrationV3:inner_scan_bitmap
+     * @attr name com.tdr.registrationv3:inner_scan_bitmap
      */
     public static final int ViewfinderView_inner_scan_bitmap=5;
     /**
@@ -21959,7 +21959,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tdr.registrationV3:inner_scan_iscircle
+     * @attr name com.tdr.registrationv3:inner_scan_iscircle
      */
     public static final int ViewfinderView_inner_scan_iscircle=6;
     /**
@@ -21968,7 +21968,7 @@ public final class R {
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tdr.registrationV3:inner_scan_speed
+     * @attr name com.tdr.registrationv3:inner_scan_speed
      */
     public static final int ViewfinderView_inner_scan_speed=7;
     /**
@@ -21981,7 +21981,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:inner_width
+     * @attr name com.tdr.registrationv3:inner_width
      */
     public static final int ViewfinderView_inner_width=8;
     /**
@@ -21991,10 +21991,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #WaveSwipeHeader_wshAccentColor com.tdr.registrationV3:wshAccentColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #WaveSwipeHeader_wshPrimaryColor com.tdr.registrationV3:wshPrimaryColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #WaveSwipeHeader_wshShadowColor com.tdr.registrationV3:wshShadowColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #WaveSwipeHeader_wshShadowRadius com.tdr.registrationV3:wshShadowRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #WaveSwipeHeader_wshAccentColor com.tdr.registrationv3:wshAccentColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #WaveSwipeHeader_wshPrimaryColor com.tdr.registrationv3:wshPrimaryColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #WaveSwipeHeader_wshShadowColor com.tdr.registrationv3:wshShadowColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #WaveSwipeHeader_wshShadowRadius com.tdr.registrationv3:wshShadowRadius}</code></td><td></td></tr>
      * </table>
      * @see #WaveSwipeHeader_wshAccentColor
      * @see #WaveSwipeHeader_wshPrimaryColor
@@ -22012,7 +22012,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:wshAccentColor
+     * @attr name com.tdr.registrationv3:wshAccentColor
      */
     public static final int WaveSwipeHeader_wshAccentColor=0;
     /**
@@ -22023,7 +22023,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:wshPrimaryColor
+     * @attr name com.tdr.registrationv3:wshPrimaryColor
      */
     public static final int WaveSwipeHeader_wshPrimaryColor=1;
     /**
@@ -22034,7 +22034,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:wshShadowColor
+     * @attr name com.tdr.registrationv3:wshShadowColor
      */
     public static final int WaveSwipeHeader_wshShadowColor=2;
     /**
@@ -22047,7 +22047,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:wshShadowRadius
+     * @attr name com.tdr.registrationv3:wshShadowRadius
      */
     public static final int WaveSwipeHeader_wshShadowRadius=3;
     /**
@@ -22057,13 +22057,13 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #pickerview_wheelview_dividerColor com.tdr.registrationV3:wheelview_dividerColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #pickerview_wheelview_dividerWidth com.tdr.registrationV3:wheelview_dividerWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #pickerview_wheelview_gravity com.tdr.registrationV3:wheelview_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #pickerview_wheelview_lineSpacingMultiplier com.tdr.registrationV3:wheelview_lineSpacingMultiplier}</code></td><td></td></tr>
-     * <tr><td><code>{@link #pickerview_wheelview_textColorCenter com.tdr.registrationV3:wheelview_textColorCenter}</code></td><td></td></tr>
-     * <tr><td><code>{@link #pickerview_wheelview_textColorOut com.tdr.registrationV3:wheelview_textColorOut}</code></td><td></td></tr>
-     * <tr><td><code>{@link #pickerview_wheelview_textSize com.tdr.registrationV3:wheelview_textSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #pickerview_wheelview_dividerColor com.tdr.registrationv3:wheelview_dividerColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #pickerview_wheelview_dividerWidth com.tdr.registrationv3:wheelview_dividerWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #pickerview_wheelview_gravity com.tdr.registrationv3:wheelview_gravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #pickerview_wheelview_lineSpacingMultiplier com.tdr.registrationv3:wheelview_lineSpacingMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #pickerview_wheelview_textColorCenter com.tdr.registrationv3:wheelview_textColorCenter}</code></td><td></td></tr>
+     * <tr><td><code>{@link #pickerview_wheelview_textColorOut com.tdr.registrationv3:wheelview_textColorOut}</code></td><td></td></tr>
+     * <tr><td><code>{@link #pickerview_wheelview_textSize com.tdr.registrationv3:wheelview_textSize}</code></td><td></td></tr>
      * </table>
      * @see #pickerview_wheelview_dividerColor
      * @see #pickerview_wheelview_dividerWidth
@@ -22085,7 +22085,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:wheelview_dividerColor
+     * @attr name com.tdr.registrationv3:wheelview_dividerColor
      */
     public static final int pickerview_wheelview_dividerColor=0;
     /**
@@ -22098,7 +22098,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:wheelview_dividerWidth
+     * @attr name com.tdr.registrationv3:wheelview_dividerWidth
      */
     public static final int pickerview_wheelview_dividerWidth=1;
     /**
@@ -22116,7 +22116,7 @@ public final class R {
      * <tr><td>right</td><td>5</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tdr.registrationV3:wheelview_gravity
+     * @attr name com.tdr.registrationv3:wheelview_gravity
      */
     public static final int pickerview_wheelview_gravity=2;
     /**
@@ -22125,7 +22125,7 @@ public final class R {
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tdr.registrationV3:wheelview_lineSpacingMultiplier
+     * @attr name com.tdr.registrationv3:wheelview_lineSpacingMultiplier
      */
     public static final int pickerview_wheelview_lineSpacingMultiplier=3;
     /**
@@ -22136,7 +22136,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:wheelview_textColorCenter
+     * @attr name com.tdr.registrationv3:wheelview_textColorCenter
      */
     public static final int pickerview_wheelview_textColorCenter=4;
     /**
@@ -22147,7 +22147,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tdr.registrationV3:wheelview_textColorOut
+     * @attr name com.tdr.registrationv3:wheelview_textColorOut
      */
     public static final int pickerview_wheelview_textColorOut=5;
     /**
@@ -22160,7 +22160,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tdr.registrationV3:wheelview_textSize
+     * @attr name com.tdr.registrationv3:wheelview_textSize
      */
     public static final int pickerview_wheelview_textSize=6;
   }

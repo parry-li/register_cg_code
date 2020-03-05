@@ -41,7 +41,7 @@ public class BaseConstants {
     public static final String VehicleConfig = APP_NAME + "VehicleConfig";
     public static final String PhotoConfig = APP_NAME + "PhotoConfig";
     public static final String NbLabelConfig = APP_NAME + "NbLabelConfig";
-    public static final String RegisterConfig = APP_NAME + "RegisterConfigBean";
+    public static final String RegisterConfig = APP_NAME + "RegisterConfig";
     public static final String ManagerConfig = APP_NAME + "ManagerConfig";
     public static final String AuditConfig = APP_NAME + "AuditConfig";
 

@@ -25,6 +25,7 @@ import com.tdr.registrationv3.ui.fragment.base.NoCacheBaseFragment;
 import com.tdr.registrationv3.utils.ActivityUtil;
 import com.tdr.registrationv3.utils.ConfigUtil;
 import com.tdr.registrationv3.utils.LogUtil;
+import com.tdr.registrationv3.utils.UIUtils;
 import com.tdr.registrationv3.view.CustomOptionsDialog;
 import com.tdr.registrationv3.view.CustomWindowDialog;
 
@@ -106,6 +107,9 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
                 if(!getPermission()){
                     return;
                 }
+                if (!UIUtils.isFastClick()) {
+                    return;
+                }
                 Bundle bundle = new Bundle();
                 bundle.putString("rolePower", rolePower);
                 if (BaseConstants.funJurisdiction[1].equals(rolePower)/*车牌补办*/
@@ -131,6 +135,9 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
     public void onViewClicked(View view) {
         if(!getPermission()){
           return;
+        }
+        if (!UIUtils.isFastClick()) {
+           return;
         }
         Bundle bundle = new Bundle();
         switch (view.getId()) {
@@ -188,7 +195,7 @@ public class HomeFragment extends NoCacheBaseFragment implements EasyPermissions
 
                 }
 
-                optionsDialog = new CustomOptionsDialog(HomeFragment.this.getContext(), "请选择车辆类型");
+                optionsDialog = new CustomOptionsDialog(HomeFragment.this.getActivity(), "请选择车辆类型");
                 optionsDialog.setPickerData(strings);
                 optionsDialog.setOnCustomClickListener(new CustomOptionsDialog.OnItemClickListener() {
                     @Override

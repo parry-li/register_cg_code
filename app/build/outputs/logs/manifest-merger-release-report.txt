@@ -187,7 +187,7 @@ MERGED from [it.sephiroth.android.library.easing:library:1.0.2] C:\Users\kwz\.gr
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:76:9-44
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:73:9-50
-activity#com.tdr.registrationV3.ui.activity.LoginActivity
+activity#com.tdr.registrationv3.ui.activity.LoginActivity
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:84:9-92:20
 	android:label
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:86:13-45
@@ -203,68 +203,132 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:90:17-77
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:90:27-74
-activity#com.tdr.registrationV3.ui.activity.CityPickerActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:95:9-90
+activity#com.tdr.registrationv3.ui.activity.CityPickerActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:95:9-159
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:95:89-125
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:95:127-157
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:95:19-87
-activity#com.tdr.registrationV3.ui.activity.home.HomeActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:96:9-89
+activity#com.tdr.registrationv3.ui.activity.home.HomeActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:96:9-158
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:96:87-123
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:96:125-155
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:96:19-86
-activity#com.tdr.registrationV3.ui.activity.car.CarQueryActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:97:9-92
+activity#com.tdr.registrationv3.ui.activity.car.CarQueryActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:97:9-161
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:97:91-127
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:97:129-159
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:97:19-89
-activity#com.tdr.registrationV3.ui.activity.car.CarChangeActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:98:9-93
+activity#com.tdr.registrationv3.ui.activity.car.CarChangeActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:98:9-162
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:98:92-128
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:98:130-160
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:98:19-90
-activity#com.tdr.registrationV3.ui.activity.car.RegisterMainActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:99:9-96
+activity#com.tdr.registrationv3.ui.activity.car.RegisterMainActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:99:9-165
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:99:95-131
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:99:133-163
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:99:19-93
-activity#com.tdr.registrationV3.ui.activity.scan.QRCodeScanActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:100:9-95
+activity#com.tdr.registrationv3.ui.activity.scan.QRCodeScanActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:100:9-164
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:100:94-130
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:100:132-162
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:100:19-92
-activity#com.tdr.registrationV3.ui.activity.car.CarTransferActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:101:9-95
+activity#com.tdr.registrationv3.ui.activity.car.CarTransferActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:101:9-164
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:101:93-129
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:101:131-161
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:101:19-92
-activity#com.tdr.registrationV3.ui.activity.CodeTableActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:102:9-89
+activity#com.tdr.registrationv3.ui.activity.CodeTableActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:102:9-159
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:102:88-124
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:102:126-156
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:102:19-86
-activity#com.tdr.registrationV3.ui.activity.car.CarScrapActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:103:9-92
+activity#com.tdr.registrationv3.ui.activity.car.CarScrapActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:103:9-161
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:103:91-127
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:103:129-159
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:103:19-89
-activity#com.tdr.registrationV3.ui.activity.insurance.InsuranceActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:104:9-99
+activity#com.tdr.registrationv3.ui.activity.insurance.InsuranceActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:104:9-168
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:104:98-134
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:104:136-166
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:104:19-96
-activity#com.tdr.registrationV3.ui.activity.car.ChangeRegisterMainActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:105:9-102
+activity#com.tdr.registrationv3.ui.activity.car.ChangeRegisterMainActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:105:9-171
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:105:101-137
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:105:139-169
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:105:19-99
-activity#com.tdr.registrationV3.ui.activity.me.PasswordActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:106:9-91
+activity#com.tdr.registrationv3.ui.activity.me.PasswordActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:106:9-160
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:106:90-126
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:106:128-158
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:106:19-88
-activity#com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:9-103
+activity#com.tdr.registrationv3.ui.activity.insurance.InsuranceWaitActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:9-172
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:102-138
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:140-170
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:107:19-100
-activity#com.tdr.registrationV3.ui.activity.insurance.InsuranceWaitChangeActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:9-109
+activity#com.tdr.registrationv3.ui.activity.insurance.InsuranceWaitChangeActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:9-178
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:108-144
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:146-176
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:108:19-106
-activity#com.tdr.registrationV3.ui.activity.home.PersonageStatisticsActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:109:9-104
+activity#com.tdr.registrationv3.ui.activity.home.PersonageStatisticsActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:109:9-173
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:109:103-139
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:109:141-171
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:109:19-101
-activity#com.tdr.registrationV3.ui.activity.home.StatisticsUnitActivity
-ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:110:9-99
+activity#com.tdr.registrationv3.ui.activity.home.StatisticsUnitActivity
+ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:110:9-168
+	android:screenOrientation
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:110:98-134
+	android:launchMode
+		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:110:136-166
 	android:name
 		ADDED from E:\tiandiren\android_cg_app\register_cg_code\app\src\main\AndroidManifest.xml:110:19-96
 provider#android.support.v4.content.FileProvider

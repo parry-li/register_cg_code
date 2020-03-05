@@ -82,22 +82,70 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.tdr.registrationv3.ui.activity.CityPickerActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.home.HomeActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.car.CarQueryActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.car.CarChangeActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.car.RegisterMainActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.scan.QRCodeScanActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.car.CarTransferActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.CodeTableActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.car.CarScrapActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.insurance.InsuranceActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.car.ChangeRegisterMainActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.me.PasswordActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.insurance.InsuranceWaitActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.insurance.InsuranceWaitChangeActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.home.PersonageStatisticsActivity" />
-        <activity android:name="com.tdr.registrationv3.ui.activity.home.StatisticsUnitActivity" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.CityPickerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.home.HomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.car.CarQueryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.car.CarChangeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.car.RegisterMainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.scan.QRCodeScanActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.car.CarTransferActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.CodeTableActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.car.CarScrapActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.insurance.InsuranceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.car.ChangeRegisterMainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.me.PasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.insurance.InsuranceWaitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.insurance.InsuranceWaitChangeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.home.PersonageStatisticsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tdr.registrationv3.ui.activity.home.StatisticsUnitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
 
         <!-- <activity -->
         <!-- android:name="com.tdr.chongwu.ui.map.TencentMapActivity" -->

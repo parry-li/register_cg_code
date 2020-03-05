@@ -12,6 +12,7 @@ import com.parry.pickerview.listener.OnTimeSelectListener;
 import com.parry.pickerview.view.TimePickerView;
 import com.tdr.registrationv3.R;
 import com.tdr.registrationv3.utils.TimeUtil;
+import com.tdr.registrationv3.utils.UIUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -55,7 +56,6 @@ public class CustomTimeDialog {
 
     /**
      * @param context
-     *
      */
     public CustomTimeDialog(Context context, String title) {
 
@@ -91,7 +91,7 @@ public class CustomTimeDialog {
                     public void customLayout(final View v) {
 
                         //自定义布局中的控件初始化及事件处理
-                       tvTitle = (TextView) v.findViewById(R.id.tv_title);
+                        tvTitle = (TextView) v.findViewById(R.id.tv_title);
                         final TextView tvConfirm = (TextView) v.findViewById(R.id.tv_confirm);
                         ImageView ivCancel = (ImageView) v.findViewById(R.id.iv_cancel);
                         if (!TextUtils.isEmpty(title)) {
@@ -100,8 +100,10 @@ public class CustomTimeDialog {
                         tvConfirm.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                pvTime.returnData();
-                                pvTime.dismiss();
+                                if (UIUtils.isFastClick()) {
+                                    pvTime.returnData();
+                                    pvTime.dismiss();
+                                }
                             }
                         });
                         ivCancel.setOnClickListener(new View.OnClickListener() {
@@ -120,6 +122,7 @@ public class CustomTimeDialog {
                 .setType(new boolean[]{true, true, true, isShowHour, isShowHour, isShowHour})
                 .isCenterLabel(true) //是否只显示中间选中项的label文字，false则每项item全部都带有label。
                 .setDividerColor(context.getResources().getColor(R.color.module_main))
+                .setOutSideCancelable(false)//点击外部dismiss default true
                 .build();
     }
 
@@ -143,8 +146,8 @@ public class CustomTimeDialog {
 
     }
 
-    public void setTitle(String title){
-        tvTitle.setText("请选择"+title);
+    public void setTitle(String title) {
+        tvTitle.setText("请选择" + title);
     }
 
     OnItemClickListener onItemClickListener;

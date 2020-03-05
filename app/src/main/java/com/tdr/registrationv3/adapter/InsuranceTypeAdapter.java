@@ -39,7 +39,7 @@ public class InsuranceTypeAdapter extends BaseQuickAdapter<InsuranceBean.Package
 
         final int position = helper.getLayoutPosition();
         final ImageView checkBox = helper.getView(R.id.check_label);
-        helper.setText(R.id.check_tv,  item.getPrice() + "元/"+item.getDeadline() + "年");
+        helper.setText(R.id.check_tv,  item.getName());
         mapList.get(position).setCheck(item.isCheck());
         if (item.isCheck()) {
             checkBox.setImageResource(R.drawable.chang_select);
